@@ -1,0 +1,81 @@
+,title,content,pub_time,src
+0,同济大学区块链研究院院长马小峰：疫情物资管理已经运用了区块链思维 封面区块链该文章已上链 >,"(image_address=""//comment.10jqka.com.cn/sourcepic/12/textagLD5tDCzsUtsay.png"")记者蔡世奇
+新冠肺炎来势汹汹，防疫救治前期不但多地救援物资储备和分配频频陷入紧张状态，多数企业也面临着返工难的困难。
+2月5日，(image_address=""//comment.10jqka.com.cn/sourcepic/12/textagLD5tDCzsUtsay.png"")记者独家采访了同济大学区块链研究院院长马小峰，他用区块链技术的原理，分析了疫情救援物资的调度机制，并对企业在疫情面前的自救给出了建议。
+物资点对点的支援模式和区块链思维异曲同工
+在几天前，湖北多地医用救援物资告急，一些负责统一管理物资并分配的权威中间机构受到了舆论的强烈关注。越来越多的人呼吁捐助者和受捐者直接建立联系，点对点捐赠，避免中间环节过多造成的信息不透明。
+马小峰表示，从第三方统一管理调配，到越来越多的点对点援助，这次疫情下捐助者和受捐者使用的物资调配模式就经历了从中介化到点对点网络化的变化，这其实就是区块链思维下的新模式。
+中心化调配物资的模式在这次疫情中之所以受到诟病，马小峰指出主要是因为这次疫情是突发性的大规模复杂事件，带来的物资和信息吞吐量过于庞大和多源，统一管理物资的第三方机构并没有管理这么大规模物资管理和调配的经验，暴露出来的是过去的基于中间人的应急社会治理模型在突发高负载下的应急能力不足，所以大家开始采用新的方式寻找更高效和可信的解决办法。区块链具有点对点、防丢失、难篡改和易追溯的技术特点，通过设计区块链治理模式及实时监管节点等机制，可以改进目前基于中间人管理缺点。
+“点对点捐助的好处是快速且透明，如果有其他监管节点，可高效可信的追溯所有动向，这给捐赠物资管理带来公开、透明和可信，对疫情工作是很关键的因素。”马小峰说。
+除了物资，区块链技术也可助力准确地追踪感染路径
+物资的调配只是运用区块链思维，但马小峰表示，如果能更高效地连接物理世界和数字世界，那么区块链技术也可以更好地追踪病毒的感染路径。
+马小峰以目前多地对新冠肺炎病毒诊断的方式举例：多地都在对进出者进行医学上的鉴定，判断是否为病毒感染者，这是一个分散且重复性较高的工作，初筛的工作被重复了很多次，也有很多不同的机构参与。由相关部门统一指挥，这么做的好处是部署和执行很快，也是当下情况下疫情防治的最优解。如果疫情过去之后，所有参与检测的各地机构能自主共识搭建一个病毒检测的区块链网络，各个节点采集不同的数据，在需要的情况下，可以快速通过授权的方式实现节点间跨区域/行业间交叉验证和查询调用数据，相对传统方式，可以快速精准的识别出有问题的环节，从而找出感染路径。
+马小峰也坦言，区块链防疫是比较理想状况下的疫情治理模式，尽管理论上可扩展性更好，但实施难度和所需周期较大；目前采用的中心化统一管理模式是能最快最有效实施的，也更符合实际情况。区块链防疫治理机制和模式可以作为疫情过后，我国社会综合治理模式发展的一个新方向去探索。
+企业自救需主动拥抱变化
+谈及疫情下的企业自救，马小峰表示最重要的还是“拥抱变化”。比如这次受疫情影响比较直观的餐饮、零售和制造业等行业，已经有盒马联合餐饮企业“共享员工”的全新合作模式出现，这样的变化是之前大家很难想象到的。
+本次疫情造成的延期复工也带动了远程办公、在线协同领域的飞速发展，其中涉及的加密、通信等技术也有区块链的身影。
+“疫情中很多企业开始‘被迫’远程办公，这个过程中很多传统行业的企业管理者会意识到数字化对企业与运营管理哪些方面的效率有所提升，创新的企业会探索和采用一些新的高效的企业管理模式和流程。”马小峰告诉记者。
+区块链技术不能对传统行业的核心业务恢复起到直接帮助，比如餐饮行业核心厨师、食材等方面，区块链很难有用武之地，但中小企业管理的上下游管理等环节，例如合同、质量追溯、信用、融资等方面，区块链可以发挥赋能的作用。
+“比如现在一些地方，例如苏州，要对疫情中受影响的中小企业进行扶持，但需要甄别最需要帮助的、诚信的企业，如果有区块链的信用网络，就会降低这个鉴别成本，使得真正需要帮助的中小企业能更快地获得扶持。”马小峰说。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-02-06 20:56:39,同花顺
+1,共抗疫情 苏宁物流协助西安高新区运营防疫仓库,"2月6日，西安高新区正式委托西安苏宁物流协助代运营3000平方米防疫物资仓库，集中专业物流力量共抗疫情。据悉，该防疫物资仓库存放包含医用防护口罩（N95）、护目镜、防护服、治疗药物等在内的86个SKU近80万件紧急防疫物资，供给高新区各一线定点医院防疫和救治使用。苏宁物流今日将完成货物接收、库存盘点、库区规划、货物分类管理等工作，并紧急完成系统对接。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cjh",2020-02-06 20:54:48,同花顺
+2,重庆出台8项措施保障快递投送安全,"新华社重庆2月6日电（记者周文冲）对重点区域寄来的邮件快件要及时进行外包装消毒处理，严禁收寄野生动物，不建议寄递生冷鲜物品……重庆市出台8项措施，加强疫情期间快递小哥安全防护，保障寄递服务渠道畅通运行。
+这是记者从6日召开的重庆市新型冠状病毒感染的肺炎疫情防控工作新闻通气会上获悉的。
+这些措施包括：快递小哥每日上岗前要测量体温、戴口罩、勤洗手、勤消毒，体温正常等方可上岗；投递人员归班后，要再次进行体温检测和消毒；操作场地每日不少于两次消毒处理；快递小哥收寄物品时，要切实提高防护意识，并与客户保持1米以上距离；尽可能投送至智能快件（信包）箱，实施“无接触投递”，避免感染风险。
+重庆市要求，对重点区域寄来的邮件快件要及时进行外包装消毒处理，确保安全后再进行投递；严禁收寄野生动物；由于邮件快件要采取消毒处理等因素，不建议客户在此期间寄递生冷鲜物品。
+此外，重庆市还要求各区县及乡镇有关部门开通绿色通道，保障邮政快递企业运输车辆在区县及乡镇通行，确保群众急需的邮件快件及应急物资及时配送到位。
+重庆市邮政管理局市场监管处处长杨夏介绍，春节期间正常运营的重庆邮政公司、重庆顺丰、重庆京东等企业，有1.75万人坚守岗位，日平均收寄快件量约22.6万件，投递快件约67.62万件。重庆邮政、申通、圆通等企业累计向武汉运送应急物资100余吨。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-02-06 20:46:10,同花顺
+3,保障供给 有序流通 北京上线“农产品供求信息填报平台”,"(image_address=""http://e.thsi.cn/img/895320b15eb348e7"")
+北京商报讯(记者闫岩赵驰)2月6日，北京商报记者获悉，北京市农业农村局上线“北京市农产品供求信息填报平台”，为疫情期间保障农产品的有效供给和农产品精准销售提供支撑。
+据了解，在疫情防控的关键时期，各个生产企业、合作社、协会、联合社、联盟、超市、电商、供销社、农资经营企业等相关单位，均可登录平台，进行农产品的销售或需求信息的填报，以此来保障农产品的有效供给和有序流通。
+(image_address=""http://e.thsi.cn/img/fc00ad48475482f3"")
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-02-06 20:43:19,同花顺
+4,辽宁本溪公安机关侦破多起销售假冒伪劣口罩案,"新华社沈阳2月6日电（记者张非非、李铮）新型冠状病毒感染的肺炎疫情发生以来，辽宁省本溪市公安机关以“零容忍”的态度，重拳打击市场上以假充真、哄抬物价等涉疫情的违法犯罪行为，已破获3起销售不符合标准的医用器材案件，抓获犯罪嫌疑人12人，涉案价值共计50余万元。
+2月3日，平山分局得到线索：有人在微信朋友圈售卖假冒伪劣“3M”口罩。随即，平山分局食药侦大队、经侦大队、网警大队、预审大队及相关派出所开展侦查工作。经查，犯罪嫌疑人范某某、董某某从非法渠道大量购进假冒伪劣“3M”等品牌口罩，通过微信已向多人售出1万余只假口罩，销售额达20余万元，获利3.5万余元，假口罩仅外观有呼吸阀，但呼吸阀根本起不到过滤空气的作用。目前，犯罪嫌疑人范某某、董某某因涉嫌销售不符合标准的医用器械罪和非法经营罪被依法采取刑事强制措施。
+经查，犯罪嫌疑人林某、张某、周某某、孔某某（女）、陈某某、何某某、赵某某、赵某某（女）从非法渠道大量购进假冒伪劣医用一次性、“3M”“N95”等口罩，已通过微信向多人售出5万余只假口罩，销售额达30余万元，获利6万余元，目前，犯罪嫌疑人林某、张某、周某某等8人因涉嫌销售不符合标准的医用器械罪被依法采取刑事强制措施，当场扣押假口罩1万余只。
+2月4日，本溪市平山区市场监管局向公安部门移交线索：本溪市平山区鑫德康保健品商行销售无厂名厂址、无生产日期、无产品质量合格证的“三无”医用口罩。接到线索后，东明派出所立即派出侦查员前往现场，经平山区市场监管局现场确认，该批次医用口罩确属“三无”产品，当场扣押“三无”医用口罩1150片。经进一步工作查明，陈某某伙同其丈夫姜某，在全国人民抗击新型冠状病毒感染的肺炎疫情的关键时期，为牟取不法利益，于1月25日从天津购进“三无”医用口罩2000片，已销售850片，获利1700元。目前，上述两名犯罪嫌疑人已被平山分局依法采取取保候审强制措施。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cjh",2020-02-06 20:22:05,同花顺
+5,冷水江市领导督查市场和超市疫情防控工作,"(image_address=""//comment.10jqka.com.cn/sourcepic/12/uuzNextagAtsaytsay.png"")时刻2月6日讯（冷水江站记者 罗艳）2月4日上午，娄底市委常委、统战部部长阳卫龙深入冷江市场、锑都超市、信和步步高（002251）超市等地，对人员密集区公共场所的疫情防控举措落实情况进行督查。
+在冷江市场，阳卫龙实地察看当前防疫工作落实情况。目前，市场内所有商贩均按要求关闭到位，工作人员轮班值守，并安排专人进行区域内的消毒清理工作。在锑都超市和信和步步高超市，阳卫龙详细了解超市物资储备、市民体温监测、卖场消毒等情况，并向市民询问菜价是否稳定等。
+阳卫龙指出，超市是人员密集的公共场所，也是疫情防控的重要区域，一定要严格落实公共场所的通风、消毒、体温检测等防控措施，每天定时进行深度消毒杀菌保洁，所有进场市民必须进行体温监测和规范佩戴口罩，切实维护好群众健康安全的购物环境，同时，要做好工作人员自我安全防范工作，坚决杜绝出现哄抬物价、市民哄抢现象的发生，共同履行好疫情防控的责任和义务，全力保障市民生活需求。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cjh",2020-02-06 20:16:21,同花顺
+6,上清所：减免全国民营企业以及疫情流行地区机构相关费用,"上证报中国证券网讯(记者张骄)2月6日，上海清算所(下称上清所)发布通知称，为贯彻落实《关于进一步强化金融支持防控新型冠状病毒感染肺炎疫情的通知》精神，充分发挥金融基础设施对疫情防控支持作用，维护金融市场平稳有序运行，上清所决定减免疫情流行地区机构及专项抗击疫情债券相关费用。
+具体来看，上清所对注册地在湖北省的发行主体2020年产生的发行登记费及付息兑付服务费，100%全额减免；对募集资金专项用于抗击疫情的债券的发行登记费和付息兑付服务费，100%全额减免；对注册地在湖北省的机构2020年清算会员年费，100%全额减免；对注册地在湖北省的机构2020参与外汇询价、外汇竞价、跨境外汇、利率互换、标准债券远期、信用违约互换集中清算及双边清算费用，100%全额减免。
+与此同时，上清所还表示，为支持民营企业降低融资成本、拓宽融资渠道，决定减免民营企业相关费用：对符合国家政策的民营企业发行债券的发行登记费、付息兑付服务费，100%全额减免；对投资人在一、二级市场认购和交易民营企业所发债券产生的结算过户费，100%全额减免；对民营企业债券融资支持工具的创设初始登记服务费，100%全额减免，支持专业机构向民营企业提供市场化融资增信。
+通知称，以上费用减免均自2020年1月1日起至2022年12月31日止有效。自生效日起，市场参与者已实际支付的相关费用，上清所将退还适用上述规定的减免部分。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-02-06 20:14:23,同花顺
+7,上坤集团捐款+减租积极抗“疫” 旗下物业“软硬兼施”升级服务模式,"(image_address=""//comment.10jqka.com.cn/sourcepic/12/1tC5extags34ssaextagrQtsaytsay.png"")2月6日讯 新型冠状病毒感染肺炎疫情防控形式依然严峻，众多房企主动承担社会责任，持续增加驰援武汉力度，上坤集团就是其中一员。
+1月28日，上坤集团宣布捐赠100万元人民币，用于购买医疗前线急需的口罩、手套、防护服等物资，以实际行动支援抗击新型冠状病毒感染的肺炎疫情。
+除此之外，上坤商用还宣布对旗下所有在营商业项目(上坤上街、上坤红街、上大城市广场、1919创意园区等)的商户2020年1月25日至2月22日间的租金减半，与商户携手并肩，共渡难关。
+对于房企而言，应对疫情的行动并不止于捐款、捐物，旗下的物业在这场突如其来的疫情面前，更是冲在了第一线。就目前的疫情来看，社区是业主健康安全的第一道防线，随着疫情的变化和业主宅在家里时间的不断增长，背负在物业身上的压力不断增加。
+为保障每一位业主在居家期间的健康，上坤物业全方位升级疫情期间服务模式，做到“软硬兼施”。在“硬防控”方面，上坤物业做好两个“必须”，一个是内部员工及外来人员必须查体温，二是社区重点区域每日不少于一次消杀；并对小区出入口、康体游乐设施、楼栋大堂、电梯等人流密集、高频次活动场所增加消杀频次。除此之外，在疫情期间，上坤物业取消一切业主聚集类等社区文化活动，减少疫情传播渠道，直至疫情解除。
+同时，上坤集团也制定了相应的举措，避免因人员聚集造成的疫情传播，力求将疫情导致的影响降至最小。上坤集团积极响应号召暂停开放全国在售项目售楼处，同时开启线上营销中心，96位置业顾问24小时在线服务，足不出户便可在线看房、咨询房屋相关信息，并提供线上签约服务。据了解，上坤集团下一步将继续创新销售模式，推广线上直播等销售模式；并将在防疫期间积极关怀好业主和老客户，进一步提高良好的客户口碑。
+售楼处受疫情影响暂停营业，开盘、看房等工作也被迫中止，对房地产销售产生了不可避免的影响。上坤集团在接受(image_address=""//comment.10jqka.com.cn/sourcepic/12/1tC5extags34ssaextagrQtsaytsay.png"")记者采访时表示：“短期内，疫情将对房地产行业造成一定影响，但目前行业发展进入平稳期，从中长期看，地产行业依旧会保持健康稳定发展。此外，上海市近期发布的关于推迟职工社会保险缴费年度、延长社会保险缴费期等政策，可以为企业减轻一定的的短期内预算支出；2月6日，上海市政府又宣布将出台综合政策扶持企业，共克时艰。对于公司来说，是实质性的利好。相信在党和各级政府的坚强领导下，此次疫情将很快可以得到控制。虽然疫情短期对国内经济的发展造成一定影响，但是随着各类财政货币政策的出台及疫情的褪去，经济长期稳定向好发展的趋势不变，我们对未来公司、行业及社会经济的发展依然充满信心。”
+根据克而瑞目前公布的1月销售榜单，上坤集团今年1月的销售业绩表现平稳，稳居90位。上坤集团预计，受本次疫情影响，2020年第一季度的经营业绩可能会略逊色于往年，但等疫情平稳甚至基本好转之后，市场还是会迅速复苏，成交量层面也会出现明显的反弹。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cjh",2020-02-06 20:09:06,同花顺
+8,上清所：减免民营企业和重点疫区机构相关费用,"各市场成员：
+为贯彻落实《关于进一步强化金融支持防控新型冠状病毒感染肺炎疫情的通知》精神，充分发挥金融基础设施对疫情防控支持作用，维护金融市场平稳有序运行，银行间市场清算所股份有限公司(以下简称上海清算所)决定减免重点疫区机构及专项抗击疫情债券相关费用。现通知如下：
+一、对注册地在湖北省的发行主体2020年产生的发行登记费及付息兑付服务费，100%全额减免。
+二、对募集资金专项用于抗击疫情的债券的发行登记费和付息兑付服务费，100%全额减免。
+三、对注册地在湖北省的机构2020年清算会员年费，100%全额减免；对注册地在湖北省的机构2020参与外汇询价、外汇竞价、跨境外汇、利率互换、标准债券远期、信用违约互换集中清算及双边清算费用，100%全额减免。
+四、以上费用减免自2020年1月1日起至2020年12月31日止有效。自生效日起，市场参与者已实际支付的相关费用，上海清算所将退还适用上述规定的减免部分。
+五、本通知发布后收费标准如有调整，上海清算所将另行通知。
+银行间市场清算所股份有限公司
+2020年2月6日
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：yc",2020-02-06 20:03:00,同花顺

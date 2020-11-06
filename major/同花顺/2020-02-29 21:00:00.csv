@@ -1,0 +1,8 @@
+,title,content,pub_time,src
+0,2019年江西快递业增速高于全国,"经济日报-中国经济网南昌2月29日讯据江西省统计局网站消息，2019年，江西省快递服务企业业务量累计完成77719.88万件，同比增长25.5%，高于全国平均增速0.2个百分点。其中：同城快递业务量累计完成9432.56万件，下降2.5%；异地快递业务量累计完成67757.24万件，增长30.9%；国际/港澳台快递业务量累计完成530.08万件，增长8.6%。
+2019年，全省快递服务企业业务收入累计完成84.30亿元，同比增长25.7%，高于全国平均增速1.5个百分点。其中：同城快递业务收入累计完成7.30亿元，下降10.5%；异地快递业务收入累计完成53.49亿元，增长27.0%；国际/港澳台快递业务收入累计完成3.00亿元，增长13.5%。
+2019年，全省11个设区市，快递业务量完成前三位的是：南昌市32734.93万件，占全省总量的42.1%；赣州市8638.81万件，占11.1%；九江市8329.87万件，占10.7%。快递业务收入完成前三位的是：南昌市41.80亿元，占全省总量的49.6%；赣州市9.96亿元，占11.8%；九江市6.40亿元，占7.6%。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-02-29 21:34:10,同花顺

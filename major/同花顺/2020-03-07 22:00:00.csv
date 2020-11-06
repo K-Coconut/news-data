@@ -1,0 +1,4 @@
+,title,content,pub_time,src
+0,民航局：各航空公司已安排复工复产航班超过490班,"在现有航班的基础上，民航企业已经专门安排复工复产航班超过490班，包括超过2.6万人次复工复产出行。多家民航企业在多个城市，正在面向全社会推出复工复产点对点包机服务，同时做到复工路上“零传播”“零感染”。在国际方面，国际航班旅客人数骤减，但国际航线绝大多数不断航。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-07 22:54:02,同花顺

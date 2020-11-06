@@ -1,0 +1,9 @@
+,title,content,pub_time,src
+0,GlobalFoundries完成22FDX技术开发 将批量生产eMRAM芯片,"原标题：GlobalFoundries完成22FDX技术开发将批量生产eMRAM芯片来源：(image_address=""//comment.10jqka.com.cn/sourcepic/12/Y25CZXRh.png"").COM GlobalFoundries周四表示，它已经完成了22FDX(22nm FD-SOI)技术开发。这项技术用于生产嵌入式磁阻非易失性存储器(eMRAM)。该技术可用于多种应用，包括汽车，工业级MCU和物联网(IOT)。GlobalFoundries的几个客户已准备在今年用eMRAM推出其首批22FDX芯片。
+访问购买页面:
+AMD旗舰店
+与当今广泛使用的eFlash相比，eMRAM具有许多优势，它不涉及电荷或电流，而是使用磁存储元件，并依赖于读取由薄势垒分隔的两个铁磁膜的磁各向异性。该方法在写入数据之前不需要擦除周期，这意味着更高的性能。此外，可以使用现代工艺技术生产MRAM，并且具有很高的耐久性。该技术有一些缺点，最终将通过使用ReRAM的制造工艺来解决，但GlobalFoundries和三星Foundry认为MRAM在绝大多数应用中都具有巨大潜力。
+GlobalFoundries表示，使用其22FDX和eMRAM工艺技术生产的测试芯片，在ECC关闭模式下，在-40°C到125°C的工作温度下，具有10万个周期的耐久性和10年的数据保持能力。此外，公司的eMRAM测试产品还可以通过标准可靠性测试，包括LTOL(168小时)、HTOL(500小时)和5x焊料回流，故障率<1ppm。此外，GlobalFoundries还解决了(依赖于磁存储元件的产品)的磁抗扰性问题。
+GlobalFoundries在德国德累斯顿的Fab1中使用22FDX技术生产这种芯片。这种差异化eMRAM部署在业界最先进的FDX平台上，在易于集成的eMRAM解决方案中提供了高性能RF，低功耗逻辑和集成电源管理的独特组合，使客户能够交付新一代的超高性能，低功耗MCU的物联网应用。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-02-28 01:18:15,同花顺

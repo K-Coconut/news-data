@@ -1,0 +1,205 @@
+,title,content,pub_time,src
+0,Conflux：着眼未来可采用区块链技术改进传染病监测预警网络,"今年春节，全国上下人民的心都被疫情困扰。新型冠状病毒疫情来势汹汹，湖北省受影响程度尤为严重。疫情不仅威胁了人民的生命健康安全，也对经济平稳发展造成创伤，区块链产业同样无法独善其身。
+疫情之下，区块链企业生存现状如何？(image_address=""//comment.10jqka.com.cn/sourcepic/12/vfDJq7LGvq0tsay.png"")对此连线交易平台、矿业、安全公司、投资机构等行业细分领域的多家头部企业，一览产业现状，共谋产业发展未来。
+本文为(image_address=""//comment.10jqka.com.cn/sourcepic/12/vfDJq7LGvq0tsay.png"")独家采访Conflux实录。
+(image_address=""//comment.10jqka.com.cn/sourcepic/12/vfDJq7LGvq0tsay.png"")：您认为区块链技术能为抗击疫情做些什么？具体将在哪些方面可开拓发展空间？
+Conflux：
+1.最简单的当然是直接捐钱捐物，甚至派人去当志愿者；
+2.其次是使用区块链技术为救援物资和善款等提供溯源和公示服务，让各种信息变得公开透明；
+3.更深远一些的则是着眼未来，采用区块链技术和去中心化理念改进传染病监测预警网络和决策流程，避免因为少数关键的中心节点瞒报疫情而造成重大损失
+4.众所周知，区块链具有不可篡改的特性，正是一切非法修改的克星。因此只需要采用区块链存证的思路把用户的行程信息固定下来，就可以避免将来伪造或篡改的风险。这样，有区块链存证加持的证据，其可信程度又上了一个台阶。如果确诊记录了历史行程的患者，他们的行程信息又可以被用来做下一步的筛查，直接为控制疫情扩散做出贡献。
+(image_address=""//comment.10jqka.com.cn/sourcepic/12/vfDJq7LGvq0tsay.png"")：在疫情当下，您所在的企业面临了那些问题？是否开工，是否正常经营，是否裁员？(成本问题、现金流问题、办公问题)又去了哪些应对措施？
+Conflux：疫情之下我们选择了在家办公，大家效率都比较高，困难之下，我们的各项经营指标都很正常，我们不会选择裁员。
+(image_address=""//comment.10jqka.com.cn/sourcepic/12/vfDJq7LGvq0tsay.png"")：在您的观察中，区块链产业将在此期间产生哪些变化？对于众多区块链企业安全度过疫情，您有哪些建议？
+Conflux：可能对于咱们行业来说，比较明显变化是线下活动停止了。大家也开始思考，区块链技术可以为疫情做点什么。安全度过疫情的建议就是尽量分布式办公，减少非必要的外出。同时分布式办公考验的正是员工的职业素养、自觉性、主动性、规划能力。
+(image_address=""//comment.10jqka.com.cn/sourcepic/12/vfDJq7LGvq0tsay.png"")：展望2020年，您对您所在的企业和区块链产业有怎样的期望？
+Conflux：2020我们主网上线在即，希望能响应政府号召，真正的让区块链技术落地。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-02-11 17:59:53,同花顺
+1,大幅提升AI性能！ARM发布面向物联网芯片,"2月11日，ARM正式发布了针对物联网设备的AI芯片设计——Cortex-M55。
+Cortex-M55是一款面向嵌入式市场的芯片设计，是首款基于ARMHelium技术的处理器核心架构的方案，全新架构让Cortex-M55拥有了执行SIMD指令的能力，得益于此，它的数字信号处理能力提升了5倍之多，而机器学习的性能提升高达15倍。
+此外ARM还发布了一款神经处理单元Ethos-U55，Ethos-U55NPU旨在加快机器学习，而U55的设计将更加精简，且只能与较新的Cortex-M处理器(如M55、M33、M7和M4)协同工作，其处理单元的规模也是可扩展的，最小只有32个MAC引擎，最大可以配置到256个MAC引擎。
+ARM高级副总裁兼汽车及物联网业务总经理DiptiVachani表示，让人工智能在相对低功耗的设备上运行，而不是必须与基于云的数据中心保持持续通信，这对数据安全和隐私至关重要。目前，大多数人工智能的工作负载都在这些数据中心中运行。
+ARM强调，这些芯片技术功耗相当之低，只要一块电池就能工作数年，并且只有在有需要时才会进行联网。
+搭载该设计的芯片产品将于2021年上市。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-02-11 17:59:50,同花顺
+2,生意社：聚合MDI行情观望整理,"(image_address=""//comment.10jqka.com.cn/sourcepic/12/yfrS4snn.png"")02月11日讯
+一、价格走势
+(image_address=""http://e.thsi.cn/img/8de208d9a3aab51f"")
+根据(image_address=""//comment.10jqka.com.cn/sourcepic/12/yfrS4snn.png"")价格监测，截至2月11日，国内聚合MDI市场均价报13150元/吨，价格较上月同期环比上涨1.15%，较去年同期同比上涨1.94%。总体市场行情观望整理。
+二、行情分析
+产品：聚合MDI市场继续保持安静气氛，弱势整理观望中。供方厂家迫于库存的压力，均减产降负，瑞安装置受当地疫情严重影响，获悉近期一个月内难复工。下游企业多数未复工，市场需求方面难言乐观。贸易环节随都在线办公但也是“纸上谈兵”，物流各方面受限，询盘的客户少之又少。
+市场方面，华南聚合MDI市场淡稳观望。贸易商在线办公为主，下游少有询盘，终端下游开工时间延期，场内气氛安静继续。华北地区聚合MDI安静维稳。供方压力大，降负或停车，贸易商多云开工，在家自行隔离状态。下游偶尔有询盘，短期暂无采买意向。华东地区聚合MDI市场淡稳观望。华东区域疫情较为严重，下游开工时间继续推后。贸易商大部分云复工，暂不报盘或延续节前报盘为主。
+产业链：原料方面，纯苯重心下滑，气氛僵持。目前各地汽运物流依旧受限，炼厂及下游面临出货压力。后续华东地区内贸船货到港较多，但下游受终端未能复工影响，现货采购意向偏弱。
+(image_address=""http://e.thsi.cn/img/2f70c174b29fc74"")
+苯胺：苯胺工厂及下游企业关停或降负较多，市场供需皆疲软，工厂出货一般，市场稳定为主，华北主流商谈价格参考在6540元/吨承兑，华东市场主流参考6750元/吨。
+(image_address=""http://e.thsi.cn/img/d598cd42b33ae848"")
+三、后市预测
+(image_address=""//comment.10jqka.com.cn/sourcepic/12/yfrS4snn.png"")观点：(image_address=""//comment.10jqka.com.cn/sourcepic/12/yfrS4snn.png"")聚合MDI分析师预计，聚合MDI市场盘稳整理为主。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cyf",2020-02-11 17:58:12,同花顺
+3,AI计算能力暴增！Arm推新物联网智能平台IP设计,"Arm在2月11日宣布其人工智能平台新增重要生力军，这其中就包括全新机器学习Arm Cortex-M55处理器和Arm Ethos-U55神经网络处理器(NPU)，后者也是针对Cortex-M平台推出的业界首款微神经网络处理器(microNPU)。这样的设计(Cortex-M55结合Ethos-U55)为微控制器带来480倍的机器学习性能飞跃。全新的IP与搭配的开发工具，能够让AI硬件与软件开发人员以更多的方式进行创新，从而为数十亿个小型、低功耗的物联网与嵌入式设备带来前所未有的终端机器学习处理能力。
+(image_address=""http://e.thsi.cn/img/625ddc243418fe43"")
+Arm资深副总裁暨车用与物联网事业部总经理Dipti Vachani表示：“要让AI无所不在，设备制造商与开发人员必须在数十亿、乃至数万亿个设备上实现终端机器学习能力。我们的AI平台增添这些生力军后，即便在最小的设备上，终端机器学习也将成为新常态，不会再有遗珠之憾，从而让AI的潜力可以在范围宽广的、正在改变我们生活的应用当中得以安全、有效地发挥。”
+随着物联网的发展与AI和5G的发展相互交织，更多的终端智能意味着更小型且成本敏感的设备会愈来愈智能、功能也愈来愈强，同时因为对云端与网络的依赖较小，也将具备更高的隐私性与可靠度。Arm通过新的设计为微处理器带来更加安全的智能，为想要有效提升终端数字信号处理(DSP)与机器学习能力(ML)的产品制造商降低芯片与开发成本，同时显著加快他们产品的上市速度。
+Arm Cortex-M55:Arm人工智能能力最强大的Cortex-M处理器
+Cortex-M处理器已经成为开发人员运算平台的最佳选择，Arm的合作伙伴已经出货超过500亿片基于Cortex-M的芯片，用于各种客户应用。新增的Cortex-M55是Arm历来AI能力最为强大的Cortex-M处理器，也是首款基于Armv8.1-M架构、内建Arm Helium向量处理技术的处理器，它可以大幅提升DSP与ML的性能，同时更省电。与前几代的Cortex-M处理器相比，Cortex-M55的ML性能最高可提升15倍，而DSP性能也可提升5倍，且具备更佳的能耗比。
+此外，客户也可以使用Arm Custom Instructions(Arm自定义指令集)延伸处理器的能力，对特定工作负载进行优化，而这也是Cortex-M处理器的全新功能。
+Ethos-U55:Arm针对Cortex-M推出的首款microNPU
+针对需求更高的ML系统，可将Cortex-M55与Ethos-U55搭配，后者是Arm首款微神经处理器(microNPU)，与现有的Cortex-M处理器相比，两者结合后可使产品ML性能提升480倍。
+Ethos-U55具有高度的可配置性，旨在加速空间受限的嵌入式与物联网设备的ML推理能力。它先进的压缩技术可以显著节省电力并缩小ML模型尺寸，以便运作之前只能在较大型系统上执行的神经网络运算。
+简化的软件使得所有开发人员都能获取安全的AI功能
+Arm非常清楚，开发人员的经验对于推动AI革命是至关重要的。因此，Cortex-M55与Ethos-U55得到了Arm业界领先的Cortex-M软件开发工具链的全力支持。如此一来，我们针对传统DSP与ML等工作负载，有了一致的开发流程；同时从TensorFlow Lite Micro开始，针对先进机器学习框架进行特定的整合与优化，确保开发人员拥有无缝的开发体验，并能够在任何一种Cortex-M与Ethos-U55的配置上，获取最佳性能。
+Arm认为安全不应该是事后弥补措施，它对于物联网的普及极为重要。为了确保最安全的设计并顺利通过PSA认证，这些处理器和搭配的Corstone参考设计都可以与Arm TrustZone一起工作，以确保安全性可以更为简易地整合到完整的片上系统中。
+赋能生态系统
+全新的Cortex-M CPU与Ethos microNPU凸显了Arm对推动物联网发展的承诺：致力于协助芯片设计人员与设备制造商，即便在最小的终端设备上，也能利用Arm架构进行创新，并为物联网点燃新一波创造力与创新性。这一技术正获得生态系统合作伙伴与业界的广泛支持，其中包括亚马逊(Amazon)、Alif半导体(Alif Semiconductor)、恒玄科技(Bestechnic)、赛普拉斯(Cypress)、杜比(Dolby)、Google、恩智浦半导体(NXP)、三星(Samsung)、意法半导体(STMicroelectronics)等。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-02-11 17:52:13,同花顺
+4,生意社：利好出尽 油脂行情一波三折,"(image_address=""//comment.10jqka.com.cn/sourcepic/12/yfrS4snn.png"")02月11日讯
+(image_address=""http://e.thsi.cn/img/91d11eaf2a6cbff7"")
+2月11日大豆油商品指数为63.84，较昨日下降了0.29点，较周期内最高点100.51点(2011-09-12)下降了36.48%，较2018年12月18日最低点50.02点上涨了27.63%。(注：周期指2011-09-01至今)
+(image_address=""http://e.thsi.cn/img/872969eb7146b515"")
+2月11日棕榈油商品指数为77.25，较昨日下降了1.34点，较周期内最高点112.88点(2012-04-10)下降了31.56%，较2018年12月16日最低点51.54点上涨了49.88%。(注：周期指2012-03-01至今)
+(image_address=""http://e.thsi.cn/img/eaa40d4e0aae916c"")
+(image_address=""http://e.thsi.cn/img/20d6dd1a184d240b"")
+据(image_address=""//comment.10jqka.com.cn/sourcepic/12/yfrS4snn.png"")监测，2月以来，油脂跳水过后迎来反弹，反弹过后再次下行，一波三折。截止2月11日，豆油均价6526元/吨，价格较月初下跌了6%。棕榈油市场均价6104元/吨，价格较月初下跌了5.8%。
+市场分析
+豆油：春节过后，受终端需求大幅下滑影响，期货大幅走跌，豆油现货价格下跌接近8%。2月5日开始，企业复工延迟，物流受限，期货行情拉涨，豆油现货价格迎来反弹，日涨幅超过2%。2月10日当周，大豆油企业陆续开工，终端需求持续低迷，期货再次下行，豆油现货价格陆续走低，价格跌破6600元大关，日跌幅0.46%。
+棕榈油：节后，餐饮需求不佳，马盘棕榈油价格下行，棕榈油期货跟盘大幅下跌，现货价格下跌了接近7%。2月5日开始，马盘棕榈油价格上涨，棕榈油期货跟盘大幅上涨，现货价格上涨超过2%。2月10日当周，由于终端餐饮集中消费需求大幅锐减，大豆油企业陆续开工，油脂供应压力好转，马来棕榈油产量大幅下滑利好消息兑现，棕榈油价格再次跳水，部分地区价格跌至6000元/吨，日跌幅1.71%。
+数据：MPOB数据显示，马来西亚1月棕榈油产量较上月下滑12.6%，至117万吨。1月出口下滑13.2%，至121万吨。
+后市展望
+(image_address=""//comment.10jqka.com.cn/sourcepic/12/yfrS4snn.png"")农产品分析师李冰认为：短期内餐饮行业需求难改低迷之势，预计后市豆油及棕榈油行情上涨依旧承压。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：xr",2020-02-11 17:49:58,同花顺
+5,MRI：疫情对家电行业影响几何,"受NCP疫情的影响，全国各地节后复工时间推迟，原计划大部分地区在10号以后正式开工，疫情最为严重的湖北则延后至14号。但由于近期疫情尚未进入尾声，因此许多地区延后复工时间，部分行业甚至延后至3月初。而湖北要想在14号开工可能性微乎其微，全省停工状态将持续。
+根据Mysteel的调研，家电行业中，部分企业已在10号复工，但是并未全员到岗，且生产节奏有所控制；部分企业继续推迟复工时间，最早的也要到12日；部分企业由于上游供应商仍未复工，原材料库存无法支撑正常生产而选择继续停工。因此可以看出，全国一季度的家电企业生产将受到较大影响。但是从全年来看，各家电品种一季度产量占比不大。根据统计局公布的数据显示，四大家电2019年一季度的产量占全年的比重在23%-24%，空调的生产集中在二季度，冰箱和洗衣机全年分布较为平均，彩电的生产则集中在四季度，因此可以看出一季度并非生产旺季，其产量受限可以在其他季度加大生产，疫情对于行业全年的生产影响较小。
+而在需求端，疫情对于各家电品种的影响预计会有所分化。对于线下市场占主流的家电产品来说，比如四大家电，因疫情防治的需要，消费者很难到店体验购买，即使在线上购买，也无人上门安装，从而对短期的需求形成冲击。但是需求在短期受到抑制后，预计会在疫情结束后集中爆发。由于这类产品多为耐用品，已经成为消费者生活中不可或缺的东西，短时期的无法购买或者替换并不会影响需求的存在。而且一季度并不是家电消费的高峰期，等到了618、双十一等促销期时，以目前全国的控制力度，疫情或已经结束。因此即使是以线下市场为主的家电，从全年来看受到疫情的影响也较为有限。而对于线上市场占主流的家电产品来说，其受到的影响可能就更小了。在疫情持续期间，消费者线下购物受到制约，线上采购成首选，而京东、苏宁和国美等电商平台均维持正常送货，极大地方便了人们的生活，这也导致了这类产品的线上零售的占比显著提升，弥补了线下市场所带来的缺口。即使疫情的持续时间较长，也不会对这类产品产生影响。另外，疫情对于健康除菌类的家电产品的需求反而起到了刺激的作用。洗手机、消毒柜、空气净化器等产品在春节期间销量暴增。大家除了通过戴口罩、消毒等方式来保护自身健康外，净化器也成为家庭首选产品，短期内恐慌性购买将仍会持续。据奥维云网线上监测显示，净化器线上市场在04周和05周销售额同比29.1%和120.8%，市场持续稳定增长，从渠道反馈情况来看，线上平台净化器检索量也在持续增加。
+综上所述，疫情对于家电行业的生产短期有影响，但长期有限。而疫情对于家电的需求影响有所分化，以线下为主的产品短期需求将受到抑制，但疫情结束后会爆发。以线上为主的产品则因网购的便利和平台的正常送货，预计能弥补线下市场带来的空缺。另外，健康除菌类家电产品的需求反而因疫情得到大幅扩张，对行业形成利好。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：xr",2020-02-11 17:46:40,同花顺
+6,共享单车在穗配额调整：哈啰增加1万 摩拜青桔减少,"信息时报讯(记者刘俊通讯员交通宣)近日，市交通运输局公布了2019年第四季度广州市互联网租赁自行车企业服务质量考核评价结果及运营配额调整情况。其中，哈啰单车得分为63.98分，排名第一，运营配额调整为13万辆；青桔单车得分为58.52分，排名第二，运营配额调整为9.5万辆；摩拜单车得分为54.79分，排名第三，运营配额调整为16.1万辆。此前，三家运营商的配额分别为摩拜18万辆、哈啰12万辆和青桔10万辆，调整后，除哈啰增加了1万配额外，其余两家均相应减少。
+(image_address=""http://e.thsi.cn/img/17bb5b3f0d38eaa1"")
+三家企业各项指标得分率情况
+三家企业2019第四季度考核评分情况
+低于60分扣减运营配额的5%
+记者从市交通运输局了解到，本次是2019年运营商招标后的首次企业服务质量考核，同时也是第一次根据考核结果对企业运营配额实施动态调整。评分由市、区、街三级政府共同完成，包括市交通运输、城管、交警部门，以及中心六区(越秀区、荔湾区、海珠区、白云区、天河区、黄埔区)的属地区、街两级政府管理部门。
+据介绍，本次考核指标共四大项18小项，覆盖了运营服务、企业管理、秩序管理、信息上报等方面。从单项得分占该项总分的比值(得分率)来看，得分率最高的三项指标分别为骑行保险购买情况、用户资金安全及政府整改工单完成情况，均为100%；而得分率低于60%的四项指标分别为企业运维体系、车辆投放管理、用户违章骑行的企业监管机制和信息共享，企业超量投放、运维体系不健全、车辆数据未按要求接入行业监管平台是目前互联网租赁自行车运营管理存在的突出问题，这也是当前市内部分区域和路段乱停放、超量淤积等现场乱象反复的重要原因。
+同时，市交通运输局还与各企业协商确定了奖优惩劣的企业运营配额动态调节机制，并与摩拜单车、哈啰单车、青桔单车三家企业以补充协议的形式签署确认。根据协商确定的规则，各企业的运营配额将按照每季度考核的得分、排名情况动态调整。其中得分方面，低于60分(不含60分)的，扣减现有运营配额的5%，得分在60分至80分之间的，不做调整得分，高于80分(不含80分)的，奖励增加现有运营配额的5%(在中心六区40万辆总量规模仍有余量的情况下)；排名方面，排名第三名的企业，扣减1万辆的运营配额，排名第二名的企业，不做调整，排名第一名的企业，奖励增加1万辆的运营配额。各企业的最终配额调整结果根据得分、排名情况分别计算后相加得出，并在公布考核结果的当月内调整完毕。
+共享单车超量投放仍然严重
+市交通运输局相关负责人表示，2019年7月完成运营商招标后，哈啰单车、青桔单车两家新企业首次进入广州运营，摩拜单车也启动了旧车置换更新，新企业进入和新车辆投放，为市民出行提供了更多选择、更舒适的骑行使用体验。但目前行业总体情况仍然不容乐观，三家企业的考核评分情况都不理想，仅有一家略超60分。
+该负责人补充道，三家企业在遵守行业管理秩序、落实管理主体责任上仍存在很大不足，集中表现为不同程度超量投放、区域车辆投放不均衡、现场停放秩序管理不到位、车辆数据未按要求接入行业监管平台等；其中六区车辆总数方面，根据综合核查，摩拜超量非常严重，青桔也存在不小规模的超量；而空间分布及区域超量方面，三家企业都存在明显问题，越秀、天河、荔湾、海珠四区车辆过分集聚严重超过区域限量，车辆淤积、乱停放乱堆放影响行人和车辆通行的情况时有发生，而白云、黄埔两区部分区域则经常“一车难求”。
+数据接入方面，市交通运输局开发了扫码核查功能，并在1月1日至7日之间组织集中扫码核查约20万辆次(其中市区街三级政府管理人员扫码约6.5万次)，核查结果中哈啰接入率超过90%，摩拜、青桔接入率不足80%，此外青桔接入的数据还存在频率和质量问题，此前日常检查中发现车码不对应情况，集中核查时还发现车辆定位严重漂移等问题。
+未按要求整改将认定企业失信
+前期，市交通运输局针对上述问题多次向三家企业发出了限期整改通知。下一步，市交通运输局将督促企业针对本次考核中暴露出来的问题进行专项整改。同时，对未按要求落实整改的，将根据有关法律法规认定为企业失信行为，纳入行业企业信用档案并按照相关规定实施信用约束管理。
+对于此次考核获得的肯定和更多配额，哈啰单车广东负责人彭俊表示感谢，而对于此次市交通运输局指出的不足之处，哈啰将严格落实有关部门的要求，不断优化运营管理，引领广州共享单车行业向前发展；此外，哈啰单车还将不断提升精细化管理水平，持续不分品牌地做好广州共享单车的消毒工作。
+摩拜方面表示，在穗运营三年以来，随着时间及骑行里程的增加，部分旧款单车在同一时间陆续到了报废节点，接下来，将严格按照相关主管部门要求，提高旧车报废速度，同时做好车辆更新数据对接。同时会努力升级自身运维水平，更好地为羊城市民服务。
+青桔单车广州区域相关负责人告诉记者，他们会积极配合政府要求，已作出包括技术、车辆投放等在内的一系列改善措施。除此之外，面对目前复工后市民的上下班出行问题，他们也会加强调度和车辆消毒，保障广大用户的骑行安全与便利。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-02-11 17:43:02,同花顺
+7,MWC 2020共有8大主题和趋势 包括5G人工智能安全与隐私,"2月11日消息，据国外媒体报道，按计划，再过不到两周的时间，2020年度的世界移动通讯大会（Mobile World Congress，简称MWC），就将在西班牙的巴塞罗那举行。
+世界移动通讯大会是全球移动通讯行业最大的展会，参会者包括了众多行业领先的移动运营商、设备制造商、技术提供商等，大量的新产品、新技术也会在这一展会上亮相，并会举办多场热点领域的论坛。
+今年的世界移动通讯大会，计划2月24日开始，持续到27日，共4天，世界移动通讯大会组织方GSMA（全球移动通信系统协会）官网所公布的信息显示，今年的展会围绕八大主题和趋势。
+从GSMA官网所公布的信息来看，今年的八大主题和趋势分别是人工智能，客户参与，媒体与娱乐，安全与隐私，互联互通：5G时代，行业X，我们的星球。
+官网的介绍显示，行业X这一主题，主要探讨通过与工业互联网、大数据、分析、人工智能、机器人、3D打印和机器学习等新技术的融合，行业可同客户、员工和合作伙伴解锁的新的收入和参与模式，行业X也将审视工业互联网和数字化转型的挑战、机遇、可扩展性和无限潜力。
+不过，今年的界移动通讯大会所面临的情况略有不同，虽然组织方此前已表示展会将按计划如期举行，但在昨日发给参与者的邮件中，其也给出了相关的措施，他们也在密切关注当前的状况，并表示计划可能会有调整，但他们希望展会不会推迟或者取消。
+MWC 2020官网的信息显示，预计今年将有超过2400家厂商参展，参会者将超过10万人，将举办多场聚焦行业热点的论坛。但目前已有爱立信、LG、英伟达和亚马逊等多家科技就够宣布退出，其中英伟达是人工智能这一主题的赞助方。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-02-11 17:43:00,同花顺
+8,多地出台复工政策 工业气体下游企业表现各异,"2月8日，国务院发布了有关做好企业复工复产工作的《通知》。《通知》指出，各地区各部门和有关企业既要切实做好春节后返程和复工复产后的疫情防控工作，确保人民生命安全和身体健康；又要及时协调解决复工复产中的困难和问题，尽早恢复正常生产，为疫情防控提供充足的物资保障，为稳定经济社会大局提供有力支撑。
+在此之前，全国不少省市亦多举措做好了企业复工工作，并颁布相应政策：
+黑龙江：企业复工复产总的要求是实行“错峰返程、错峰开工、错时上下班”。
+江西：鼓励灵活处理劳动用工问题，采取多种措施减轻企业负担，有条件的企业可安排职工通过电话、网络等灵活的工作方式在家上班完成工作任务。
+山东：要求各地及相关部门，引导各类生产企业根据市场需求和生产条件，合理安排复工节奏，迅即组织各类企业全部恢复正常生产。
+浙江：积极助力企业平稳过渡，逐步恢复正常生产经营秩序，并为企业疫情防控和复工提供力所能及的支持。
+河南：对于出省务工人员，河南省将利用与长三角、珠三角、京津冀等各输入地的劳务协作关系，协调交通部门采取输出地包车输送、企业灵活接送等方式点对点组织乘运，引导省内农民工有序安排务工行程。
+广东：各地级以上市政府要强化主体责任，指派专人指导企业完成复工复产准备工作，确保企业在疫情防控达标前提下复工复产。
+……
+其它省市政策相仿。
+2月10日，全国各个行业陆续复工，不过与工业气体相关的钢铁、不锈钢、机械加工、光伏等行业表现略有差异。
+钢材方面：
+据我的钢铁网了解，邯郸、聊城、柳州、昆明等钢材市场仍未开市，多数商家暂时还没开工，部分开工商家也是居家办公，部分下游复工时间再次延后，市场成交寥寥，商家对于后市较为悲观。仓库和码头作为钢材流转的重要环节，未完全复工导致大量资源无法从钢厂转移至社会市场，并且由于仓库积港严重使得在途资源增多，占用资金额度较大，增加了市场一定风险。与此同时，由于资源无法从仓库出库也导致下游需求也没有办法启动。
+不锈钢方面：
+目前无锡市场无锡大明、无锡浦新于2月10日复工，能正常发货，其他小部分企业复工也只是居家办公，少量接单但无法发货，加工仓暂时无法复工；而佛山市场部分物流已开始恢复，可以开始接单，报价较少，和年前持平，但因加工厂多数仍未返工，因而询单、订单情况皆较为一般。因毕竟下游企业大部分还未正常运转。预计大量复工将要到2月底。
+光伏方面：
+目前不少光伏企业都在2月10日恢复了生产，复工情况较为乐观。晶科、东方日升（300118）、隆基、天合太阳能等龙头企业均保持了较高的产能利用率。单晶硅片环节主要企业保持正常生产，隆基、中环、晶科、晶澳基本保持正常，其中隆基虽然部分工业园区受政府监管加强的影响进出受阻碍，但对2月的影响不会超过10%。多晶硅片环节复工率不高，不过2月10日后也将陆续开工复产。
+综合来看，工业气体下游市场开工情况正逐渐往好的方向发展，近期对于气体的需求部分地区已经开始出现明显好转，不过目前企业面临的最大问题仍是“运输”问题，运距、运时、运费增多多少会对正常生产有些影响，所以下游企业对副产品的采购力度和周期短期不会有快速提升，随着后期对疫情的控制以及道路管制放松，市场将稳步复苏，对气体需求也将有一定好转。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：xr",2020-02-11 17:39:32,同花顺
+9,交易商获胜，美国出台较为温和的计划遏制原油投机,"(image_address=""http://e.thsi.cn/img/7ab819ac73e83661"")
+海外动态
+美国商品期货交易委员会(CFTC)提议对对冲基金的原油及金属衍生品投机能力实施新的限制。法规将在联邦层面加强对16个新合约交易的监督，包括5个交易频繁的金属期货，4个能源期货和7个农产品期货。然而，CFTC官员预计该计划将影响400多个涉及以上期货的合约，以及已经限制投机的9个农产品衍生品。与奥巴马执政时期较为严格的规定不同，此次法规仅对于马上到期的能源及金属期货交割月合约实施限制。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-02-11 17:38:17,同花顺
+10,Pepperstone首席执行官称ASIC行使产品干预权不利于行业创新,"外汇天眼APP讯:知名外汇经纪商Pepperstone的首席执行官Tamas Szabo近日出现在澳大利亚金融技术和监管技术特别委员会面前，讨论其对金融科技行业以及ASIC行使其产品干预权的担忧。
+(image_address=""http://e.thsi.cn/img/aa999da86988726e"")
+据此前报道,Tamas Szabo在去年10月份写给委员会的信件中，提出了一个问题，即ASIC行使其产品干预权，包括对差价合约交易进行严格的杠杆限制，是否有利于外汇行业的最佳发展。
+Tamas Szabo对委员会强调，澳大利亚之所以因创新出名，是因为其能够有原则地进行金融服务监管，然而，现在的监管更多的是指令性的。
+Tamas Szabo称:“当某个产品在网上的提供渠道受限时，客户会倾向于在其他地方搜索该产品。已经有大量的客户转移到其它离岸司法管辖区，那里的产品很容易获得。这里面有很多问题。其中之一是:很明显，它影响了当地的税收和就业。还有很重要的一点是，这样做会把客户推向离岸监管机构，推向监管可能不如澳大利亚的司法管辖区。”
+Tamas Szabo说:“我并不是说大家都可以自由展业，但是需要谨慎地保持平衡。我认为，世界各地有一些监管机构没有认识到这种平衡”。
+Tamas Szabo还强调ASIC产品干预权的行使违反了金融系统调查(FSI)提出的建议。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-02-11 17:31:44,同花顺
+11,千亿只蝗虫来袭 联合国宣布进入紧急戒备,"专题摘要:
+据报道，从一月份开始，数千亿的蝗虫在非洲肯尼亚国家肆虐。并且很有趋势向非洲其他国家以及亚洲蔓延。为此，联合国宣布全球进入紧急戒备。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-02-11 17:28:39,同花顺
+12,印尼能矿部：疫情并未对镍矿采矿业产生重大影响,"新冠疫情的爆发引发了人们对世界大宗商品价格走势的情绪，即便如此，印尼ESDM矿业和煤炭部部长Bambang Gatot Ariyono表示，病毒的爆发尚未对印尼采矿业产生重大影响。
+Bambang表示，尽管中国是印尼矿业商品出口的主要市场，无论是在运营上还是在投资上，但矿产行业并没有受到疫情情绪的干扰。但是他表示，不排除如果长时间发生病毒爆发采矿业受到影响的可能性。
+尽管总的来说并没有太大的影响，但Bambang透露，新的疫情影响已在煤炭商品中感受到。 2020年2月参考煤炭价格(HBA)反映了这一点，该价格与上月相比略有上涨。
+在镍等其他商品中，疫情并未产生重大影响，Bambang表示，中国的疫情并未对镍衍生产品如镍生铁(NPI)的出口产生重大影响，Bambang对此也表示乐观，该国的采矿企业将根据今年的目标计划进行投资和生产。“我们只是按照(计划)进行生产，没有任何预期，这是正常的。”
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：xr",2020-02-11 17:23:15,同花顺
+13,复工首日打车通勤成首选 网约车企业严阵以待,"“史上最长”春节假期结束，2月10日多地迎来企业正式复工的第一天。(image_address=""//comment.10jqka.com.cn/sourcepic/12/1tC5extagsnMsagtsay.png"")记者在采访中发现，虽然多地公共交通防控新冠肺炎疫情的措施不断升级，但受疫情影响，选择乘坐出租车、网约车通勤的上班族也不在少数，早高峰期间甚至出现打车难的情况。面对疫情的复杂形势以及返工高峰，多家网约车企业也已严阵以待。
+(image_address=""http://e.thsi.cn/img/604a441d6d60df10"")
+“我的单位在北京市东城区崇文门，早上八点半出门后，我同时用滴滴打了拼车、快车、专车，但等了20分钟都没有应答。”某银行职工李宜对(image_address=""//comment.10jqka.com.cn/sourcepic/12/1tC5extagsnMsagtsay.png"")记者表示，“后来我是去路边拦的出租车，复工第一天差点迟到。”
+“今天确定是工作日吗？怎么都没人接单？”身处长沙市岳麓区的张雅芹在微信朋友圈感慨道。她对(image_address=""//comment.10jqka.com.cn/sourcepic/12/1tC5extagsnMsagtsay.png"")记者说，自己在高德打车平台上呼叫了包括滴滴、旅程专车、曹操、及时用车、首汽等平台共计18种车型的网约车，但等了约五分钟才有司机应答。
+李强就职于某知名互联网公司，该公司采取了错峰上下班工作制。“我出门的时候大约九点半，打的是滴滴快车，司机接单很快，和往常没有区别。司机佩戴了口罩，但不知道车里是否消毒了，还是有点担心。”李强对(image_address=""//comment.10jqka.com.cn/sourcepic/12/1tC5extagsnMsagtsay.png"")记者表示。
+除了网约车，出租车的订单量也随着复工人员的增加逐步回升。以上海市为例，强生出租统计数据显示，2月3日，出租车日均订单(截至上午十点)仅有600辆左右，2月10日的日均订单已经达到2200辆左右。与去年复工首日的3300辆订单相比，出租车的订单恢复情况还算不错。
+记者在采访中发现，部分人选择了更为个人化的出行方式，比如租车、骑共享单车、步行等，担心交叉感染是他们避乘公共交通、出租车、网约车的主要原因。
+面对疫情的复杂形势以及返工高峰，多家网约车企业也已严阵以待。2月9日，滴滴宣布所有返程复工司机均需配合有关部门开展体温测量，如实填报健康状况信息，主动向所在社区、单位或酒店等居住场所报备。滴滴还主动筛查疫情高发区域返回的司机，要求他们做好隔离工作(通常为14天)，结束隔离且身体无异常后再接单。
+首汽约车实施“三大三小”多重消毒保障策略，要求平台运营车辆每三天到指定消毒站点进行一次“大消毒”，网约车司机自行使用消毒喷壶一天三次“小消毒”。同时，首汽约车还开通了面部识别监测系统，严格监测上岗司机是否佩戴口罩等。
+携程专车则宣布，为满足用户激增的接送机、打车和包车需求，启动首批“战疫津贴”。自今年2月10日至2月29日，所有顺利完成接送订单的携程自营专车司机，完单后均可获得5元补贴。同时该公司要求，司乘双方均必须佩戴口罩出行，并建议司机每天对车进行全面消毒。
+对于早晚用车高峰运力偶有不足的问题，一位不愿具名的网约车从业人员表示，早晚高峰期用车的供需矛盾可能会存在，但现阶段各平台首要关注的还是安全问题，要符合当地监管部门的要求，配合做好防疫工作。
+原标题：复工首日打车通勤成首选网约车企业严阵以待
+(责任编辑：徐悦)
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-02-11 17:10:00,同花顺
+14,商务部：武汉供应网络逐渐恢复 两大批发市场正常营业,"2月10日，商务部首次召开网上新闻发布会，就新冠肺炎疫情市场保障与供应问题进行了详细介绍。
+“自疫情发生以来，商务部与发展改革委联合成立了武汉生活物资保障工作小组，快速联动、互通有无、协手合作，点对点解决了大量物流不畅、批零脱节、人员短缺、购物排队等突出问题。”商务部市场建设司司长朱小良表示。
+朱小良表示，工作小组建立了九省联保联供机制，协调湖北、安徽、江西等周边九省区共建联保联供机制，湖北紧缺什么，周边省区快速响应，第一时间组织调运。
+据悉，自1月23日以来，重庆、广西等八省区累计向湖北运送蔬菜6800多吨、食用油20多吨、速冻和方便食品200多吨。
+近日，工作小组还走访了武汉市白沙洲和四季美两大农副产品批发市场，武商、中商、中百等零售商超，对有序做好武汉保供工作，提出了具体指导意见和建议，想方设法帮助企业解决供应链断裂、防护用品短缺等突出问题。
+在多方支援下，武汉市场供应网络正在逐渐恢复。
+数据显示，在武汉封城前，近400家农贸市场是蔬菜零售的主渠道，占比达70%-80%。在医学隔离后，中心城区农贸市场全部关闭，零售主要由武商、中商、中百三大商超承担。
+朱小良指出，当下正积极推动三大商超优化进货渠道，增加从白沙洲和四季美等批发市场进货，建立批发市场和商超联动保供机制，努力满足特殊时期武汉生活必需品的需要。
+记者了解到，近日武汉市在做好疫情防控的前提下，正在有序恢复农贸市场经营、组织露天马路市场，以更好地满足防疫工作需要，以及市民的多样化、多层次消费需求。
+“根据地理位置和可调运能力，我们在河南、重庆等地选定三个批发市场作为调出基地。目前，这些市场具备每日向武汉调运约1万吨蔬菜的能力。一旦武汉提出需求，我们将立即组织对接调运。”朱小良表示。
+疫情发生以来，全国各地各企业形成众志成城、共同保供的格局，社会各界也给予了无私的支持。1月29日以来，武汉已累计向市场投放4000多吨捐赠蔬菜，后续还有3500多吨捐赠货源可用于投入市场，为保障武汉地区蔬菜供应发挥了重要作用。
+朱小亮表示，在各方共同努力下，目前，武汉生活必需品供应基本正常，除冷鲜肉、鲜叶菜等少数品种存在结构性短缺外，大部分重要生活物资供应充足，品种较为丰富，价格波动不大，未出现明显市场异常波动，未发生明显抢购或脱销断档情况。
+同时，白沙洲和四季美两大批发市场正常营业，商户开业率超过80%，日交易量上升至3000吨以上，动态库存维持在8000吨左右。武商、中商、中百三大商超1100多个门店，克服人手少、防护用品紧缺等困难坚持营业，蔬菜日销售量在1000吨左右，库存保持在2300吨左右。
+原标题：商务部：武汉供应网络逐渐恢复两大批发市场正常营业
+(责任编辑：徐悦)
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-02-11 17:08:01,同花顺
+15,自如回应疫情时期涨租现象 称租客长租短续导致个例,"中国经济网北京2月11日讯(记者魏京婷)针对近期媒体关注自如租客租金上涨一事，2月10日，自如对外回应称，多为原长租客临时希望短期续约引起的。
+据环球网报道，有网友此前爆料：在疫情期间，有自如工作人员趁租客不便搬家换租，并哄抬租金，租金续租普遍增长10%-30%，最高竟达38.3%。
+据中国网报道，在各大投诉平台上，租客对自如的投诉除了涨价之外，还包含不减免租金，春节没人打扫仍照收服务费。网友反映，因不少地方封城、封村情况下导致无法出行，其他平台都在减免2月份房租情况下，但自如照样要求缴纳房租。如果不交想要解约就付一个月房租费违约金。
+2月10日，自如回应称，目前媒体关注到个例，公司确认多为原长租客临时希望短期续约引起的。我们本来是鼓励长租，更稳定也有利于安全管理。但现在是特殊时期，有短续需求，我们可以理解，也会尽快推出相应便利措施。还有可能因为业主合约变动等其他因素引起的价格浮动，我们也会根据租客实际跟进解决。
+据了解，短续指的是长租公寓租客的合约到期后，未决定是否继续长租,临时出现的短期续约情况。但由于短续结束后，可能会出现空置期、房源重新配置、保洁与维修等情况，房屋租赁机构需承担相对较高的成本。因此，短续的租金价格一般要高于长期租赁。
+据界面新闻报道，自如等二房东模式企业的盈利方式，一般是通过收房、融资、租房使用的租金贷，获得租金差、利率差和资金差。但归根结底，盈利逻辑还是基于预期中的租金上涨。但从目前的情况来看，不管是租金差还是租金上涨都不如预期。
+今年1月，新浪商学院在报道中称，近日自如调整组织架构，成立“止血”部门，旨在同房东进行交涉，“压低”收房价格，为此自如还调动了全国收房高手来到北京支持新部门的业务。知名经济学家宋清辉在接受采访时提出，自如此次调整组织架构的原因，或是为了降低成本，此举对自如的成本结构、运营、全国布局有较大的影响，但具体效果如何尚待进一步观察。
+(责任编辑：蔡情)
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-02-11 17:07:27,同花顺
+16,钟南山：全国疫情拐点无法预测 但峰值应该在二月中下旬出现,"11日，广东医疗队武汉前方ICU团队与后方广州医科大学附属第一医院举行远程视频会诊。钟南山院士参与会诊并回答公众关心的问题。钟南山表示，目前看疫情拐点还无法预测，但是峰值应该在二月中下旬出现。(环球网)
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-02-11 17:03:14,同花顺
+17,海底小纵队学英语完成1000万人民币Pre-A轮融资,"2月11日消息，海底小纵队学英语获投1000万人民币Pre-A轮融资，该轮融资由月恒资本投资。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-02-11 17:02:42,同花顺

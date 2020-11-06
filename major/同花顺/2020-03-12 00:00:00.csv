@@ -1,0 +1,99 @@
+,title,content,pub_time,src
+0,风暴升级！与特朗普通电话后 沙特宣布再增产至1300万桶/日,"(image_address=""http://e.thsi.cn/img/b80f646d5f42cadf"")
+(image_address=""http://e.thsi.cn/img/266593fbcaf7997"")
+周二将供应量提升到1230万桶/日之后，沙特阿美周三最新宣布：收到沙特能源部的指示，将公司的最大可持续产能(MSC)从1200万桶/日增加到1300万桶/日。
+沙特阿美CEO表示，将把石油产能提高到1300万桶/日，并将尽最大努力尽快实施这一指令。
+沙特阿美CEO表示，将把石油产能提高到1300万桶/日，并将尽最大努力尽快实施这一指令。
+消息传出后，美、布两油短线下挫，截止发稿，美、布两油均跌超3%，WTI原油报33.84美元/桶，布伦特原油报36.74美元/桶。
+据外媒报道，两名知情人士透露，在沙特王储周二通过增加产量加剧石油价格战之前，美国总统特朗普通过电话与穆罕默德.本.萨勒曼(Mohammed bin Salman)进行了交谈。这通电话发生在华盛顿的凌晨5点之前。白宫证实了这次通话，但并没说当时王储是否向特朗普说明自己的计划。通话之前，美国能源部曾指责一些“国家行为体”操纵油价，导致市场大幅波动。
+周二下午，白宫宣布特朗普总统曾就油市问题与沙特王储沟通后，市场情绪持续回暖，油价反弹。
+需要注意的是，捍卫美国石油和页岩产业的对于特朗普2020年竞选连任至关重要，因为石油行业是德克萨斯州的主要产业和雇主之一，而德克萨斯州是总统大选中的关键选举州之一。按照高盛的预测，如果油价过度下跌或者跌到20美元区间，将给美国页岩行业带来灾难，并可能在未来几个月内导致数百万页岩工人失业，垃圾债券将遭到灾难性抛售，而信贷面临的极端压力将动摇整个金融体系的基础。
+接下来，可以关注特朗普会否再次尝试干预市场，给沙特施加压力。
+但自从周末宣布降价、增产计划以来，沙特的态度一直十分强硬，似乎没有“可谈的空间”。消息人士称，沙特阿拉伯已要求政府部门递交将预算削减20%-30%的提案。而且，上周末沙特财政部的官员就被要求准备一份预算方案，预算要基于布伦特原油价格将跌至每桶12至20美元。所有沙特大臣都被要求大幅削减开支，准备好应对低油价。
+而俄罗斯，则一直把“坏角色”都留给沙特，一边表示可以增产，但同时暗示“合作大门依然敞开”。俄罗斯能源部长诺瓦克表示，继续与欧佩克保持对话，俄罗斯将参加3月的欧佩克+委员会会议，俄罗斯与欧佩克+保持良好关系符合俄罗斯的宗旨。但诺瓦克称他没有和沙特前能源大臣法利赫进行过交流。此前外媒援引知情人士称，诺瓦克周二与法利赫在进行斡旋，如果斡旋成功可能在4月召开紧急会议。这一度令市场认为油价战还有逆转的希望。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-12 00:49:20,同花顺
+1,NVIDIA安培游戏GPU上了10nm工艺 RTX 3080 Ti显卡性能提升40%,"3月底的GTC大会上已经改成只发新闻稿了，最大的悬念就是会不会有7nm安培(Ampere)GPU了。
+对于安培GPU，最近泄露的消息太多了，各种混乱，消息一会让人振奋，一会让人失望，现在最新的爆料又给出了完全不同的说法了。
+用于GeForce游戏卡的安培GPU会有至少5个核心，分别是GA102、GA103、GA104、GA106及GA107，其中GA103是之前没有的系列，看起来显卡档次分的更细了。
+GA102核心拥有84组SM单元，总计5376个CUDA核心，配备384bit显存，容量12GB，其性能比RTX2080Ti高出40%。
+GA103核心、GA104分别拥有60组、48组SM单元，CUDA核心数3840、3072个，配备320bit、256bit显存位宽，容量10GB、8GB，性能分别比RTX2080Ti显卡高出10%、低5%。
+其他GA106、GA107核心规格相对现在的TU106、TU107提升就不大了，性能也没得对比。
+在上面的GPU中，GA102核心的应该会是RTX3080Ti，相比11GB显存、4352个CUDA核心的RTX2080Ti来说，它性能升40%倒是符合正常预期。
+不过5376个CUDA核心相比现在的TU102核心满血版提升并不大，后者也有4608个，增加了15%，说明安培GPU的架构性能还是有比较明显提升的。
+更关键的是，爆料称游戏用的安培GPU使用的是三星10nm工艺——这个说法简直让人喷出一口老血，从早前的预期的7nm EUV到7nm再到8nm LPP，现在进一步降至10nm工艺。
+不过话说回来，考虑到CUDA核心规模提升并不大，使用三星10nm工艺还真的是有可能，毕竟现在了10nm工艺代工便宜多了，比12nm工艺怎么着也是先进一代的工艺了。
+上面强调的是GeForce Ampere，也就是游戏安培，传闻中的7nm安培GPU依然是有可能存在的，而且会比游戏GPU更舍得下本，爆料中的8000+CUDA核心也不是没可能，毕竟数据中心市场现在日趋受到重视。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-12 00:44:50,同花顺
+2,国家药监局发布半导体激光脱毛机注册技术审查指导原则,"(image_address=""//comment.10jqka.com.cn/sourcepic/12/1tC5extagtbKwb/Qws7Fzfgtsay.png"")讯据国家药品监督管理局网站2020年3月10日消息，为加强医疗器械产品注册工作的监督和指导，进一步提高注册审查质量，国家药品监督管理局组织制定了半导体激光脱毛机注册技术审查指导原则，现予发布。
+附件：半导体激光脱毛机注册技术审查指导原则
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-12 00:43:42,同花顺
+3,国家药监局发布植入式左心室辅助系统注册技术审查指导原则,"(image_address=""//comment.10jqka.com.cn/sourcepic/12/1tC5extagtbKwb/Qws7Fzfgtsay.png"")讯据国家药品监督管理局网站2020年3月10日消息，为加强医疗器械产品注册工作的监督和指导，进一步提高注册审查质量，国家药品监督管理局组织制定了植入式左心室辅助系统注册技术审查指导原则，现予发布。
+附件：植入式左心室辅助系统注册技术审查指导原则
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-12 00:43:39,同花顺
+4,国家药监局发布EB病毒核酸检测试剂等4项注册技术审查指导原则,"(image_address=""//comment.10jqka.com.cn/sourcepic/12/1tC5extagtbKwb/Qws7Fzfgtsay.png"")讯据国家药品监督管理局网站2020年3月10日消息，为加强医疗器械产品注册工作的监督和指导，进一步提高注册审查质量，国家药品监督管理局组织制定了《EB病毒核酸检测试剂注册技术审查指导原则》《乙型肝炎病毒e抗原、e抗体检测试剂注册技术审查指导原则》《地中海贫血相关基因检测试剂注册技术审查指导原则》《乙型肝炎病毒耐药相关的基因突变检测试剂注册技术审查指导原则》，现予发布。
+附件：
+1.EB病毒核酸检测试剂注册技术审查指导原则
+2.乙型肝炎病毒e抗原、e抗体检测试剂注册技术审查指导原则
+3.地中海贫血相关基因检测试剂注册技术审查指导原则
+4.乙型肝炎病毒耐药相关的基因突变检测试剂注册技术审查指导原则
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-12 00:43:38,同花顺
+5,国家药监局发布医疗器械安全和性能基本原则,"(image_address=""//comment.10jqka.com.cn/sourcepic/12/1tC5extagtbKwb/Qws7Fzfgtsay.png"")讯据国家药品监督管理局网站2020年3月10日消息，为加强医疗器械产品注册工作的监督和指导，进一步提高注册审查质量，国家药品监督管理局组织制定了医疗器械安全和性能的基本原则，现予发布。
+附件：医疗器械安全和性能的基本原则
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-12 00:43:37,同花顺
+6,国家药监局发布用于放射治疗的X射线图像引导系统等2项注册技术审查指导原则,"(image_address=""//comment.10jqka.com.cn/sourcepic/12/1tC5extagtbKwb/Qws7Fzfgtsay.png"")讯据国家药品监督管理局网站2020年3月10日消息，为加强医疗器械产品注册工作的监督和指导，进一步提高注册审查质量，国家药品监督管理局组织制定了《用于放射治疗的X射线图像引导系统注册技术审查指导原则》和《正电子发射/X射线计算机断层成像系统注册技术审查指导原则》，现予发布。
+附件：
+1.用于放射治疗的X射线图像引导系统注册技术审查指导原则
+2.正电子发射/X射线计算机断层成像系统注册技术审查指导原则
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-12 00:43:34,同花顺
+7,省融资担保公司5项措施为企业“输血”,"本报讯本报记者昨日从云南省工业和信息化厅获悉，省融资担保公司5项措施助力疫情防控，重点保供企业复工复产。
+据了解，为深入贯彻省委、省政府关于做好新冠肺炎疫情防控物资保障的决策部署，贯彻落实我省《关于应对新冠肺炎疫情稳定经济运行22条措施的意见》，省融资担保公司积极采取“免收担保费、免除反担保措施、建立绿色审批通道、放宽审查准入条件、抓紧对接并落地一批项目”等5项措施，支持疫情防控重点保供企业恢复和稳定生产经营。
+截至目前，已为疫情防控重点保供企业名单内10户企业出具担保意向函，担保金额1.41亿元，其中已有4户、5笔实现放款，合计担保贷款7500万元，减免担保费182.5万元。下一步，随着更多的担保项目落地，省融资担保公司的助力作用将进一步显现。
+(记者李锦兰)
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-12 00:37:52,同花顺
+8,从“云复工”到门店复工 店长带头“云销售”,"美心南坪西路店已开门营业记者张旭摄
+上游新闻记者张旭
+“哎哟，郑姐，你这照片、视频拍得越来越好了哟。”3月11日下午，重庆市南岸区南坪西路，美心门店店长郑万琴正在跟客户微信沟通，向对方发去的样本实图是她现场拍摄的。店员看到店长拍摄的图片，由衷地夸赞“拍得好”。
+新冠肺炎疫情发生以后，他们经历了“云复工”到“门店复工”，客户面对面的接触比以前少了，线上联系多了。
+46岁的郑万琴进入这个行业近三十年了，“上个世纪九十年代，通过应聘进入美心工作，当门店店长也已经十多年了。”
+南坪西路店3月2日复工(开门营业)，为此，他们做了不少准备。“严格按照防疫的相关要求来，消毒措施、物资到位，每个员工的渝康码符合要求、通过钉钉‘锁定’行动轨迹，体温检测……”
+按照公司的统一规定，门店上午8点半开门营业，下午5点半关门歇业。门店正式复工前，他们还实行了一段时间的“云复工”，与顾客线上沟通，处理各种问题。“虽然我们没有回到店里来上班，可是精神、专注力，都在门店的经营上……”
+郑万琴说，目前门店上门的客人少。“但是，并不意味着客户就没有需求。而且，绝大多数还是刚性的需求。”3月9日，一位顾客急匆匆地上门，要买一块门回家。对方表示，家里的门坏了，十万火急。
+顾客选定门之后，当天，郑万琴就安排了工人送货上门安装。“临走的时候，顾客不停地感谢，说如果没得我们的话，他真的不知道怎么办了。”
+受疫情影响，门店的销售额下滑。为了开拓市场，郑万琴和同事们想了很多办法。“我们通过公司的商城，通过微信朋友圈、抖音，推出各种优惠活动。”他们把这些销售方式统称为“云销售”。有趣的是，得益于此，郑万琴拍摄图片、视频的水平越来越高。
+“我们必须积极主动，不能以为只是你在找客户，客户可能也在找你。关键在于，机会偏爱有准备的人。”
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-12 00:22:56,同花顺
+9,湖南省春季造林稳步有序推进,"中国林业网3月12日讯2020年，湖南省计划完成人工造林面积155万亩。各市州、县市区林业局努力克服新冠肺炎疫情影响，积极组织复工复产，全省春季造林实现了稳步有序推进。根据各地上报数据，截至3月6日，14个市州共完成整地面积155.85万亩，为计划任务的100.55%；完成造林面积126.355万亩，为计划任务的81.52%。在整地方面，衡阳市、湘西自治州超额完成任务，分别为计划任务的126.02%、111.07%；长沙市、株洲市、湘潭市、邵阳市、岳阳市、益阳市、张家界市、怀化市等8市已全部完成整地。在造林方面，衡阳市已超额完成任务，为计划任务的110.57%，张家界市、长沙市也完成较快，分别达到96.22%、93.33%。(湖南省林业局)
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-12 00:10:51,同花顺
+10,2月份居民存款下降1200亿是因为居民收入减少,"(image_address=""http://e.thsi.cn/img/3a5f5a95b2077fab"")
+1月份，不论是狭义货币M1还是广义货币M2都出现了比较大幅度的反弹。M1同比增长4.8%，增速分别比上月末和上年同期高4.8个和2.8个百分点；广义货币(M2)同比增长8.8%，增速分别比上月末和上年同期高0.4个和0.8个百分点。
+M1主要指的是企业活期存款，1月M1同比零增长，主要是今年1月末是春节，企业集中给职工发放奖金和工资，这些钱都成了居民储蓄，居民储蓄不计算在M1里。而同时又因为疫情和过年在月末没花出去，没有回流到企业。再加上去年春节在二月，今年在一月，去年基数大，今年M1就没增加。
+而且今年1月流通中货币(M0)余额9.32万亿元，同比增长6.6%，M0增幅较大，说明发奖金工资很集中，再则，在M0增幅如此之大的情况下，M1增幅也是如此之低，可见企业活期存款下降幅度之大。
+而到了2月，正是去年的春节，去年春节期间，狭义货币(M1)余额52.72万亿元,同比增长2%，增速比上月末高1.6个百分点，比上年同期低6.5个百分点。这说明去年春节期间奖金工资刚刚下发尚未花出去，M1增速较低，基数较低，导致今年2月尽管受疫情影响，M1的增速就显得比较高。
+再说M2，去年2月末，广义货币(M2)余额186.74万亿元，同比增长8%，增速分别比上月末和上年同期低0.4个和0.8个百分点，M2的这个增速可谓创了历史新低，增速较低是因为春节影响也是因为去年经济下行压力较大，这个基数也很低，导致今年2月M2增速较高。
+我们说货币反应的是经济的活力，是经济增长的潜力，M1反应的是企业流动性，是企业对未来的预期，M2反应的是整个经济体内部的信用状况，商业银行创造货币的结果。但影响货币数据的因素太多，尤其是春节。从今年2月货币增长看，主要还是由于去年低基数导致今年2月增速比较高，并不表明今年的经济活动比去年好，信用环境有所改善。
+其实从信贷和社融上可以看出来，今年2月受新冠疫情影响，信贷和社融的增长都低于预期，信用活动有所收缩。
+2月份的存款数据值得重视，央行披露：2月当月人民币存款增加1.02万亿元，同比少增2845亿元。其中，住户存款减少1200亿元，非金融企业存款增加2840亿元，财政性存款增加208亿元，非银行业金融机构存款增加4924亿元。
+有研究机构认为2月人民币存款减少是2007年以后没有过的事，可能原因是居民收入减少，是这样吗？
+其实，去年以来存款增速下降的情况已经有所改善，其主要的原因就是居民存款增加幅度比较大，而今年2月居民存款竟然减少了，这个看看1月的居民存款数据就知道了，1月份人民币存款增加2.88万亿元，同比少增3935亿元。其中，住户存款增加4.24万亿元，1月居民存款的增加是相当夸张的，为什么会这样？还是因为春节错位，今年春节在一月份，企业发奖金工资都给了个人，这部分资金就成了居民存款，而到了2月份，居民存款由于春节过后要消费，花出去了成为企业存款了，居民存款因此减少，因此，居民存款减少跟居民收入减少没有关系。
+看看今年1月非金融企业存款减少的数据多么夸张，减少1.61万亿元，春节因素严重影响中国货币信贷供应数据，万不可就数据表面得出结论。
+(image_address=""http://e.thsi.cn/img/7a8195b7c9475e33"")
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-12 00:00:54,同花顺

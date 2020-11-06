@@ -1,0 +1,5 @@
+,title,content,pub_time,src
+0,王毅谈华为5G问题：相信欧洲国家会自主做岀明智选择,"当地时间2020年2月15日，国务委员兼外长王毅在德国第56届慕尼黑安全会议发表演讲后回答提问。
+王毅表示，华为5G问题是个老问题了。很多欧洲国家包括英国、徳国对此采取了冷静、客观、科学态度。毫无疑问，各国都会维护自身信息基础设施安全，同时也应给所有企业提供一个公平的竞争平台，一个非歧视的营商环境，这才是公正的作法，也符合市场经济的原则。相信欧洲国家都会独立自主地做出明智选择。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-02-15 22:27:50,同花顺

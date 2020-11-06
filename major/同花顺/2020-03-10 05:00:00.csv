@@ -1,0 +1,72 @@
+,title,content,pub_time,src
+0,商场人气正在回归,"昨天，一对父女来到闵行区南方商圈一家商场游玩，选择在一处花团锦簇的休息区坐下赏景。
+随着本市疫情防控形势呈向好态势，各大商场人气逐步回归。本报记者李茂君摄
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-10 05:50:51,同花顺
+1,“5G标准”发热门诊树立新标杆,"■本报记者黄杨子
+2月20日，在上海市第一人民医院松江院区，一座小楼在原本的停车场区域内拔地而起。3月3日，这一占地总建筑面积1417平方米，共设置23间隔离留观病房、4间诊室及抢救室、药房、检验室、CT机房、B超室、心电图室等于一体的5G智能管理的标准发热门诊启用，承担收治新冠肺炎疫情期间的不明原因发热患者工作。这是全市在疫情防控期间，整体新建、规模最大的综合性医疗机构发热门诊，为本市117家发热门诊树立了新标杆。
+一场新冠肺炎疫情，让城市公共卫生应急体系建设成为当务之急。数据显示，六成新冠肺炎确诊病例从各大医疗机构的发热门诊筛查而出，九成疑似患者源自发热门诊。这个承担着抗疫“哨兵”重任的重要部门，究竟应如何做好“平战结合”的市民健康保障？该发热门诊提供了一个“市一方案”。
+对标火神山新建发热门诊
+我国发热门诊源于17年前的抗击“非典”战役，可“非典”结束之后的多年间，不少发热门诊一度成了“临时搭建建筑”，硬件软件均存在缺口。能否真正解决医护人员人手不足、硬件设备落后、院感管理存在难度等各种障碍？
+1月24日，上海宣布启动重大突发公共卫生事件一级响应机制。刚刚送走了首批支援武汉医疗队主力队员的市一医院院长郑兴东便召集职能部门，说出了想法：必须新建符合目前公共卫生应急需求的发热门诊。“市一医院松江院区地处G60、G15等主干高速公路出口，是上海市西南重要交通枢纽与门户。本次疫情暴发以来，辖区内有多个隔离聚集点，还承担青浦、金山等部分发热门诊筛查工作。复工后，松江也是返沪人员的聚集地，这些需求都迫使我们未雨绸缪。”
+说干就干。1月28日，项目完成方案论证与设计；30日，完成地面平整基础实现开工；2月16日，全面完工具备收治条件。副院长吴锦华说：“由于春节和疫情的关系，工人紧张，材料也紧张，大家想尽办法克服，对标火神山的建设速度和质量，打造了一座‘小火神山’。”
+短短18天，一座白墙黑顶的简约单层板材小楼平地而起。“我还记得疫情刚暴发时，南部院区最多一日收治了18名疑似患者，我们的老发热门诊隔离病房也仅有18张床位。”吴锦华说，如今新发热门诊投入使用后，原来的病床依旧保留，41张床位已达到主管部门要求的发热留观核定床位数的4倍，占全院核定床位数比例也提高至8%。
+智能机器人当医生“替身”
+用一句形象的话来说，医护人员在发热门诊，犹如在防护级别最高的区域内“抓特务”。为此，市一医院5G标准发热门诊打造了一座封闭的“小医院”，发热患者挂号、检验、检查、取药、治疗“五不出”大门；而区分清晰的隔离区、门诊区、检查区、辅助区等4个区域和清晰标识指引的穿脱、手消、干消、物品放置等院感流程，也为医护人员零感染提供了保障。
+但这还远远不够。副院长钟力炜介绍了几个细节，“发热门诊既然是独立建筑，那么在建造时，其防护距离要大于20米；发热门诊对空调循环系统要求颇高，因此我们安装了独立单体空调；远程会诊往往专家组人数较多，考虑到目前防护用品依然紧平衡，也为保证会诊更高效、及时，我们特别在污染区外设置了5G会诊中心，同时解决了院感管理、物资紧张等多个难题。”
+“体温心率看起来不错，你现在感觉如何？还咳嗽吗？请把听诊器的听筒放到胸口，我听一下呼吸音。”3月6日上午，记者在发热门诊亲历了一场会诊。呼吸科主任医师贲素琴面对着4K高清的显示屏戴上了蓝牙耳机，屏幕的另一头，是在隔离病房内接受医学观察的新冠肺炎疑似患者。在护士的指导下，患者将听筒放到肺部，呼吸音清晰地传入隔离区外的贲素琴耳中。结合之前屏幕上显示的实时体温、心率和血氧饱和度，贲素琴很快完成了一次远程查房。
+钟力炜说，这台沪上率先采用的5G智能医护机器人，可以作为医生的“替身”部署在隔离病房内，同时支持多方接入，可轻松实现跨院区、多学科专家会诊。“由于本次疫情与呼吸系统密切相关，智能听诊功能与可穿戴式温度贴、心率贴可将生命体征信息传出来，便于医生对患者病情的判断更加准确。”
+这不是唯一的智能医护装备。在市一医院5G标准发热门诊，还有不少机器人成员——5G云端智能运输机器人承担病房内送药、送餐等工作；消毒机器人喷洒过氧化氢消毒液代替保洁人员，自主清洁指定区域；隔离病房的患者床前，还配置智能娱乐终端，患者手机扫码登录后，即可在5G网络支持下免费观影、游戏、阅读等。
+发热门诊不可进入沉睡期
+“设备陈旧、流程不畅、临时搭建的发热门诊必须被淘汰。”钟力炜直言，如今的上海乃至全国，都需要永久长效、规范标准、舒适安全的发热门诊体系。在此基础上，再进一步对医护人员强化公共卫生相关培训，如甄别新发未知传染病的能力，在关键时刻守好传染病防控的关口。“这场战疫后，发热门诊是不是又进入沉睡期？绝非如此。”郑兴东坦诚道，“从财务角度来看，发热门诊对医院来说是性价比不高的。但它是市级医疗机构必须承担的城市公共卫生体系中不可推卸的责任。”他说，在抗疫进入常态化之后，市一医院将继续重视发热门诊运营，把它作为医院工作的主要组成部分。
+从员工通道离开发热门诊时，墙上的一幅手绘漫画让记者感慨万千。“差不多了，病人要来了，我要进舱了。”“最后再确认一下。”画面上穿着防护服的医生“大白”平举双手，穿着隔离服的院感专员护士为其仔细检查，不容一丝闪失。郑兴东表示，这幅画的作者，是市一医院支援武汉雷神山医疗队员、95后护士邹芳草。“我们希望，无论在武汉前线，还是上海发热门诊的第一线，医护人员们都能感受到支持与陪伴，大家在一起，共同应战。”
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-10 05:50:15,同花顺
+2,“云签约”推进进博会筹办 将安排系列措施支持湖北企业参展,"本报讯(记者吴卫群)为积极履行社会责任，与全国人民一道坚定信心、同舟共济，以实际行动支持湖北抗击新冠肺炎疫情，3月7日，国家会展中心(上海)有限责任公司宣布，向湖北省慈善总会捐款500万元，驰援湖北决战决胜防控疫情阻击战。
+另悉，目前，中国国际进口博览局、国家会展中心(上海)正在通过“云签约”等“非接触”方式，积极推进第三届进口博览会筹办工作。为重点支持湖北省，他们已经提出了举办专场展前供需对接会、优先安排组织活动、提供相关便利和优惠等系列措施。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-10 05:50:11,同花顺
+3,美国能源部指责某些国家试图操纵油市 石油行业组织呼吁不要对油价单日暴跌反应过度,"美国石油协会(API)声称，不希望对(原油)市场单日暴跌作出过度的反应，并没有要求特朗普政府现在就采取任何具体的行动，销售战略石油储备(SPR)的时间节点远远没那么理想、但已经具备法律授权。美国众多石油生产商具备灵活性，美国的石油开采商将经受住市场动荡。美国能源部(DOE)则表示，能源部正密切留意市场影响。美国能够、也将“经受住当前的市场波动”，某些国家正试图操纵、震撼原油市场。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-10 05:44:06,同花顺
+4,物价涨幅有望平稳回落,"□本报记者倪铭娅
+2月物价数据公布在即，分析人士认为，疫情导致需求减弱，叠加翘尾因素的影响下降，预计2月CPI同比涨幅显著回落。随着经济活动逐渐恢复，供给不足约束得到缓解，未来几个月食品价格将持续回落，主要消费品和服务价格也将逐步回归季节性波动，物价涨幅平稳回落态势将显现。
+综合多重因素分析，2月CPI涨幅料回落至5%以下。从食品项看，一是猪肉价格上涨势头得到控制。一方面，据农业农村部监测，1月能繁母猪存栏环比增长1.2%，已连续4个月增长，这将持续缓解猪肉价格上涨压力。另一方面，国家持续投放中央储备冻猪肉平抑市场价格波动。2月农业农村部监测口径猪肉均价基本在49元/公斤至50元/公斤附近小幅波动。随着保供政策的出台以及物流的恢复，猪价继续上涨势头得到一定控制，食品CPI同比涨幅将放缓。二是鲜菜、鲜果价格趋稳。鲜菜、鲜果等需求刚性商品在1月至2月上旬趋于涨价，但随着保障供应措施落地，其价格于2月中旬小幅回落。
+从非食品项看，2月国内成品油价有过两次下调；另外，减免交通收费等降成本措施推出，将拉低交通工具燃料价格。疫情导致需求减弱，衣着、旅游、服务等非食品价格也将下降。
+从翘尾因素和基数因素看，据交通银行金融研究中心测算，2月翘尾因素下降到2.93%，比上个月下降1个百分点，对CPI同比抬升作用减弱。未来几个月基数因素抬升将逐步压低CPI同比涨幅。
+此外，PPI向CPI传导压力明显减轻。从2月流通领域主要生产资料价格看，超过80%的产品价格下降。在工业需求减弱、大宗商品价格和国际油价下降背景下，2月PPI可能再次跌入负值。
+整体上看，疫情等因素可能会对物价形成扰动，但我国经济运行总体平稳，总供求基本平衡，全年物价水平温和可控。货币政策在“稳增长”和“稳物价”之间做出平衡，有望继续在稳健的基础上，保持灵活适度，妥善应对经济短期下行压力，同时坚决不搞“大水漫灌”，保持广义货币M2和社会融资规模增速与国内生产总值名义增速基本匹配，保持物价水平基本稳定，防范信用收缩与经济下行叠加共振。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-10 05:42:20,同花顺
+5,沈阳下半年适时开展“证照分离”改革全覆盖试点工作,"本报讯((image_address=""//comment.10jqka.com.cn/sourcepic/12/yfLR9MjVsagtsay.png"")、沈报全媒体记者邱菊)近日，《沈阳市自贸区“证照分离”改革全覆盖试点工作实施计划》(以下简称《计划》)公布，征求社会各界意见。《计划》提出，自2019年12月1日起至2020年6月，在中国(辽宁)自由贸易试验区沈阳片区(以下简称自贸区)开展“证照分离”改革全覆盖试点，对528项行政许可事项实行全覆盖清单管理，按照直接取消审批、审批改为备案、实行告知承诺、优化审批服务等四种方式推进改革；今年下半年，适时在全市范围内推进“证照分离”改革全覆盖试点工作。
+《计划》提出，取消审批后，企业办理营业执照后即可开展相关经营活动，主管部门不得将其转移至行业协会、社会组织变相保留。对审批改为备案事项，推行备案事项当场办结，不得将实地勘察、检验检测、专家评审等作为备案事项的办理前提。对企业登记注册信息能够满足监管需求的审批改为备案事项，实行“多证合一”，由市场监管部门及时将企业登记信息推送至主管部门。对实行告知承诺的，主管部门要依法准确完整列出可量化可操作，不含兜底条款的经营许可具体条件，明确监管规则和违反承诺的后果，一次性告知企业，并提供告知承诺书示范文本。企业自愿作出承诺并按要求提交材料的，主管部门要当场作出审批决定。对企业承诺已具备经营许可条件的，企业领证后即可开展经营；对企业尚不具备经营许可条件但承诺领证后一定期限内具备的，企业达到经营许可条件并按要求提交材料后，方可开展经营。对优化审批服务的事项，要将审批权限下放或委托给自贸区所在地主管部门；压减审批要件和环节；经营许可条件基本不变的要延长或取消有效期限；公布总量控制条件和存量情况，方便企业自主决策。
+《计划》提出，要加强信息归集共享。推进“互联网+政务服务”，推动涉企经营许可事项从申请、受理到审核、发证全流程“一网通办”“最多跑一次”。深入推进电子营业执照在全国一体化在线政务服务平台跨地区、跨部门、跨层级的应用，实现电子营业执照对市场主体的统一身份认证。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-10 05:30:47,同花顺
+6,加大投资力度创新产品和运营模式 助力郑州城市品质提升实现高质量发展,"扫二维码看郑州
+《新闻联播》视频
+本报讯(记者张昕刘俊礼)3月9日下午，省委常委、市委书记徐立毅会见绿地控股（600606）集团董事长、总裁张玉良一行，双方就加强城市开发建设合作进行交流，达成广泛共识。
+徐立毅对张玉良一行在疫情防控的特殊时期来郑访问表示欢迎和感谢。他说，郑州地处中原腹地，文化积淀深厚，人力资源、市场空间和交通枢纽优势明显，在国家区域发展大局中处在重要位置、被赋予重大责任。当前，我们正按照“东强、南动、西美、北静、中优、外联”的城市功能布局，以黄河流域生态保护和高质量发展核心示范区建设为带动，高品质推进城市建设，促进城市、生态、科技、文化融合发展。近年来，绿地集团立足河南和郑州，发挥企业优势、植入新的理念、深化合作共赢，为郑州城市建设作出了积极贡献。希望绿地集团继续在郑州加大投资力度，创新产品和运营模式，做出更多优质项目，助力郑州城市品质提升、实现高质量发展。
+张玉良感谢长期以来郑州市对绿地集团发展的关心和支持。他表示，郑州城市发展潜力巨大，前景广阔，各界普遍看好。绿地集团将充分发挥自身优势，以城市功能性、产业性项目为重点，积极参与城建、交通、会展等方面建设和运营，为郑州发展贡献力量。
+市领导牛卫国、吴福民参加会见。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-10 05:16:43,同花顺
+7,德国1月出口环比保持稳定,"新华社柏林3月9日电(记者朱晟张雨花)德国联邦统计局9日公布的数据显示，经价格、季节和工作日调整后，德国今年1月商品出口额与此前一个月持平，同比下降2.1%；商品进口额环比增加0.5%，同比减少1.8%。
+初步统计数据显示，从地区来看，当月德国对欧盟成员国出口额和进口额同比分别下降2.2%和2.5%，对欧盟以外国家和地区出口额和进口额同比分别下降2.0%和0.9%。
+数据还显示，调整前当月德国外贸顺差约为139亿欧元，同比下降约6亿欧元；而经工作日和季节调整后，1月德国外贸顺差约为185亿欧元。
+德国批发和外贸协会主席霍尔格.宾曼日前表示，全球经济正面临包括贸易争端、英国“脱欧”、新冠肺炎疫情等多重挑战，“我们处于一种比以往更加迫切需要政治支持以减轻(负面)影响的状况下”。
++1
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-10 05:01:24,同花顺

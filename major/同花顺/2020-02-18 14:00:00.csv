@@ -1,0 +1,126 @@
+,title,content,pub_time,src
+0,狐狸金服上线智能贷款云平台助小微企业“零接触”战疫,"【(image_address=""//comment.10jqka.com.cn/sourcepic/12/VGVjaFdlYgtsaytsay.png"")】2月18日，新冠肺炎疫情爆发，目前，疫情仍处在尚未完全阻断传播的关键性阶段。全国各省市启动一级响应，采取了封闭交通、封闭小区等措施，人人闭门不出，经济活动受到较大影响。对小微金融企业而言，借款人行动受限，金融机构线下环节工作也大幅度缩减，借款人在线下活动受限的情况下想要快速走完信贷流程几乎成为不可能完成的任务，小微企业贷困境更加加深。
+针对疫情下小微企业贷困境，狐狸金服紧急上线一站式小微企业贷交易云平台。据介绍，该平台一方面赋能小微企业可在线完成抵押信贷流程，实现了在线进件、线上审批、视频下户、在线面审、在线面签等环节的在线服务，让小微企业主足不出户即可快速申请金融机构借款；另一方面赋能传统金融机构拓展小微企业贷市场，重塑小微金融生态。
+狐狸金服创始人兼CEO何捷介绍：“基于狐狸金服多年普惠金融业务的实战经验，我们利用大数据、区块链、人工智能等领先科技搭建一站式小微企业贷交易云平台。通过对贷款业务关键环节进行自动化、科技化改造，实现全流程业务线上化、规范化，帮助全国贷款经纪人拓展客户及提升服务质量，同时协助金融机构拓展小微企业贷市场。一站式小微企业贷交易云平台创新地将借款人、贷款经纪人和金融机构连结成为一个健康稳固的生态信用系统，改善了贷款全流程中的诸多痛点，每个参与方都将受益于这个平台带来的效率提升和便捷体验。”
+具体而言，小微企业贷交易云平台上的每一个线上环节都融入了多项金融科技。比如在营销获客上，线上进单工具——推客平台，融入了大数据、人工智能技术，应用在身份识别、信用预评估等领域，可以大大简化贷款办理流程，将行业平均耗时7天的收单流程缩短至10分钟，将平均耗时十几天的贷款流程缩短至最快两天放款，大大提高了贷款客户的体验度与用户粘性。在客户评估方面，风控模型对用户多维度数据分析，最快秒级得出较为准确的评估结果。在信审环节，对于房屋抵押贷款，线下审核繁琐，而小微企业贷交易云平台上拥有独创开发的信审线上系统，可在线完成下户审查环节。金融机构信审人员可以通过在线系统创建视频直播在线审核。在面审和面签的环节中，融入了身份识别、数字身份签章等技术。
+何捷表示，一站式小微企业贷交易云平台，实现了在线进件、线上审批、视频下户、在线面审、在线面签等环节的在线服务，形成一条完整的线上房屋抵押信贷流程，打破了传统抵押物审核只能线下办理的单一途径，让小微企业主足不出户即可快速申请金融机构借款，希望能够助力小微企业度过难关。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-02-18 14:58:48,同花顺
+1,防疫复工两不误 近百家金融机构采用阿里云数字防疫系统,"在做好疫情防控的同时，金融机构开始有序复工。2月18日，记者获悉，节后有近100家银行、保险、证券等金融机构采用阿里云提供的“数字防疫系统”实现安全复工，以保障金融业务的正常服务。
+据了解，阿里云提供的“数字防疫系统”是一套整体解决方案，以钉钉为主要载体，并融合了阿里云、达摩院等部门的云计算及数据智能技术，能够实现员工健康打卡、在线办公、视频会议、直播培训、疫情信息智能同步等功能，帮助企业实现防疫和复工，正常开展金融业务。
+广东农信是广东省最大的银行业金融机构，据该机构总部相关负责人介绍，疫情期间钉钉的提醒功能大显身手，很好的满足了众多紧急通知的下发提醒。
+从2月1日起，广东农信在人员较为集中的机构部门要求员工每日进行钉钉健康打卡，精准获取员工每日健康情况，为复工后每人的复工安排提供了充足的数据支持，真正做到精细化管理。疫情期间下属机构需要进行频繁的疫情相关情况统计报送，而钉钉IM、钉提醒、协同编辑等功能，大大提高了统计报送的效率。
+保险行业依赖代理人的线下业务模式在疫情期间受到了较大冲击，阿里云“数字防疫系统”成为800多万代理人运营管理的技术支撑。
+信泰保险启用钉钉健康打卡，即时了解每一名员工的健康状况及各级机构的防疫应对情况。该公司总部还利用钉钉直播功能，培训全国数千名业务伙伴、管理干部，保障业务正常开展。包括中国太平洋保险、新华保险（601336）(行情601336)、中华保险、中再巨灾管理公司、华夏人寿、中韩人寿等保险企业也使用这套解决方案开展线上拜访客户、线上介绍产品、新招募代理人等工作。
+据了解，春节复工之后，在线金融服务需求出现了快速增长，为保障银行、保险、证券等诸多行业的远程办公需求，阿里云为钉钉扩容超过10万台云服务器，并为很多金融客户扩容了云计算资源。
+阿里云新金融团队还推出了线上营业厅解决方案，其中包括远程视频开户、远程视频面签、金融级生物核身、音视频智能双录、视频柜员等功能，助力金融机构不依托物理网点也能提供7*24小时在线服务。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-02-18 14:57:06,同花顺
+2,Wccftech游戏大奖公布：《只狼》再获年度最佳,"原标题：Wccftech游戏大奖公布：《只狼》再获年度最佳来源：3DMGame 
+在各大媒体公布了2019年的年度最佳游戏之后，Wccftech在今日(2月18日)才公布了自家评选的年度游戏大奖。在获得了TGA2019和Gamespot两项年度游戏大奖之后，宫崎英高的《只狼》再次获得了Wccftech的年度游戏大奖。
+(image_address=""http://e.thsi.cn/img/a0c5bcba6d1ea510"")
+但是与Wccftech评选的年度游戏不同，Wccftech的玩家社区评选的2019年度游戏则是EA旗下Respawn工作室的首款动作游戏《星球大战绝地：陨落的武士团》。
+(image_address=""http://e.thsi.cn/img/63863875555f8887"")
+其他获奖游戏
+最佳动作游戏：《只狼》
+最佳射击游戏：《Apex英雄》
+最佳角色扮演游戏：《极乐迪斯科》
+最佳冒险游戏：《奇异人生2》
+最佳恐怖游戏：《生化危机2：重制版》
+最佳格斗游戏：《真人快打11》
+最佳平台跳跃游戏：《超级马里奥制造2》
+最佳策略/模拟游戏：《全面战争：三国》
+最佳体育/赛车游戏：《尘埃拉力赛2.0》
+最佳多人游戏：《怪物猎人世界：冰原》
+最佳独立游戏：《星际拓荒》
+访问购买页面:
+游戏外设自营专区
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-02-18 14:56:46,同花顺
+3,汇丰控股杜嘉祺：2020年环球经济将略为回落,"【财华社讯】汇丰控股(00005-HK)主席杜嘉祺于2019年业绩报告中表示，汇丰是一家环球银行，但业务与中国内地、香港及英国联系密切，而这些国家/地区则仍然面对多项重大挑战。
+集团继续密切监察冠状病毒疫情的发展。集团时刻以客户和员工的健康为先，并会竭尽所能保障他们的安全，在此艰难时刻为他们提供支援。
+香港社会动荡不安，对当地经济造成压力和严重影响。集团反对一切暴力，并支持在「一国两制」框架下寻求和平解决方案。
+英国现已正式脱离欧盟，双方如今可以就未来关系展开谈判。这虽然令局势稍为明朗，但贸易谈判从来并非一蹴而就，关键在于最终协议能否保障及促进为英国及欧盟提供金融服务的众多裨益。与此同时，英国与欧洲虽然仍关系密切，但亦必须加强与美国、中国及东南亚国家等其他关键伙伴的联系。期待与各国政府携手合作达成此目标。
+整体宏观经济环境尚未明朗。鉴于冠状病毒疫情爆发所带来的影响，集团已调低对2020年亚洲经济增长的预测。第一季度的表现将受到主要冲击，但预计疫情受控后，经济状况将有所改善。中美贸易谈判达成「第一阶段」协议是有利的开局，但由于彼此的分歧仍未解决（特别是在科技领域），集团对于中美达成更广泛协议的前景持审慎态度。预期美国经济增长依然强劲，唯较2019年有所放缓。
+整体而言，集团预期环球经济增长于2020年期间将会稳定下来，但增长率会较近年略为回落。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：wz",2020-02-18 14:53:11,同花顺
+4,四川与广东、浙江两省建立健康检测互认工作机制 助力务工人员尽快返岗就业,"央广网北京2月18日消息据中央广播电视总台中国之声《新闻和报纸摘要》报道，为保障务工人员返岗就业，助力企业复工复产，四川、广东、浙江三省建立起健康检测互认工作机制。上万农民工在体检合格后顺利、有序返岗。
+四川省是劳务输出大省，外出务工人员超过1100万人，为保障他们的健康安全，四川全省施行健康码出行，外出务工人员在健康审核后，可以通过支付宝申领健康码，凭健康码在四川省内跨市州流动。四川省卫生健康委副主任宋世贵说，健康证明需要本人和医生共同填报，并同步录入四川外出务工人员健康申报和查询系统平台。
+宋世贵：外出务工人员如实填写本人基本信息后，乡镇卫生院、社区卫生服务中心的家庭医生确定本人健康状况是否适宜外出务工。
+四川省还与广东、浙江两省建立了健康检测互认工作机制，双向认可健康证明材料。
+四川省就业局局长黄晓东：信息共享，结果互认，用工企业所在地在实施健康复检过程中，进一步优化流程，缩短时间，帮助务工人员尽快上岗。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-02-18 14:50:16,同花顺
+5,上海中小学3月2日起开展在线教育,"上证报中国证券网讯 据上海发布2月18日消息，在今天举行的上海市疫情防控工作领导小组新闻发布会上，上海市教委公布：为确保师生安全和健康，决定3月份起，上海市大中小学开展在线教育（中小学在线教育从3月2日起开始），学生不到校。后续到校学习时间，将视疫情情况，经科学评估后确定。同时，疫情期间，各类培训机构和托育机构不得开展线下培训和托育工作。此前，上海已宣布全市各级各类学校2月底前不开学。
+基础教育方面，由市级层面制定统一的覆盖全市中小学的教学方案。不同年级的教学方案，充分考虑了不同年龄段学生的身心发展和学习规律，每节课的长短、每天总课时的多少以及教学容量上都有所差别。市教委按照“同一学段、同一课表、同一授课老师”的原则，组织了全市各学段、各学科一千多名优秀骨干教师按照课程标准录制相关课程。这些课程以电视播放为主，包括有线电视和IPTV，共分为12个频道，从小学一年级到高中三年级每个年级一个频道，除了首播外，还会安排重播。无法收看电视的学生，可以通过电脑、平板（Pad）、手机等多种终端听课。还会在相关网站上提供课程视频下载。听课后，学生可通过多种信息平台，与本校教师进行互动交流。
+中职教育方面，根据“专业课+公共课”课程结构特点，公共课程由市级统筹提供优质在线课程资源，专业课程由学校综合使用国家、上海市和本校各类在线课程资源，任课教师同步做好在线辅导。
+高等教育方面，由高校根据自身特点和情况，“一校一策”开展在线授课，市教委指导高校综合用好教育部和上海市各类在线精品课程资源和学校课程资源，协调部分公共课程在线资源全市高校共享。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：wyj",2020-02-18 14:48:44,同花顺
+6,厦门建行出台“加减乘除”十大举措 紧抱实体共同战“疫”,"人民网厦门2月18日电 近日，厦门市发布进一步强化金融支持防控疫情实施方案，支持企业共渡难关。为贯彻落实厦门市委、市政府决策部署，在建行总行支持疫情防控及金融服务保障十大举措的基础上，厦门建行再推“加减乘除”十大金融服务组合拳，加大信贷支持力度、减少企业经营成本，以百折不挠的姿态向前奔跑，紧抱实体经济与企业共渡难关，助力政府坚决打赢疫情防控阻击战和经济发展攻坚战。
+加大投放战“疫”情 减少成本促发展
+厦门建行开辟了疫情防控信贷绿色通道，全力支持疫情防控所需药品、医疗器械及相关物资的科研、生产、购销等企业的信贷需求，执行快速审批流程，确保贷款足额满足；同时，对于受疫情影响暂时受困的企业，不抽贷、断贷、压贷，采取调整贷款期限和结息频率、征信保护等方式。
+对疫情防控重点领域执行优惠贷款利率、对普惠型小微企业的贷款利率在现行基础上再下调0.5个百分点，全面降低企业融资成本。对1月31日-3月3日间到期的小微企业贷款，提供28天的还款宽限期，降低企业还款压力。对疫情防控的相关企业，在防疫期间减免结算费用；对向慈善机构账户或防疫专用账户的转账汇款业务、防疫相关取现业务减免服务手续费。同时，对受疫情影响出现还款困难的个人贷款、信用卡透支客户，灵活调整还款计划、延后还款期限、调整违约金。
+7*24小时服务有保障 暖心除疫不松懈
+厦门建行推出了一系列线上支付结算服务保障用户需求，包括“龙易开”对公账户管家服务、“企业线上经营工具箱”、“商户线上服务导航”等，并为中小微企业和个人提供手机银行法律咨询、房产评估和在线公证等非金融服务。
+为做好疫情防控工作，厦门建行加强了营业场所和自助设备每日清洁消毒，自助设备回笼现金经严格消毒后才对外投放，同时立足“劳动者港湾”和营业网点线下阵地，结合多个线上服务平台，开展一体化疫情防控宣传。
+“疫情就是命令、防控就是责任。”厦门建行相关负责人表示，“厦门建行将紧跟市委市政府决策部署，在防疫的战场、在支持实体经济发展的阵地，做出我们实实在在的贡献。”（陈博 康瑞）
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-02-18 14:46:08,同花顺
+7,浙江平湖市市场监管局出台十八条措施服务企业开复工,"(image_address=""//comment.10jqka.com.cn/sourcepic/12/1tC5extagtbKwb/Qws7Fzfgtsay.png"")讯为全力支持疫情防控期间企业开复工，统筹防控要求和民生需求，进一步加大政策服务供给，减少开复工企业困难，浙江平湖市市场监管局结合监管职能和平湖实际，推出5个方面，18条措施服务企业开复工。
+“不见面、网上办”，提供高效的准入许可服务
+实行商事登记“网上办、掌上办、寄递办、预约办”，实行药械经营许可及第二类医疗器械经营备案“线上线下协同”办理，实行食品企业生产许可“减时间、免现场”办理等登记注册许可服务，大力推进企业刻制印章免单覆盖面，进一步降低企业开办费用。对复工复产企业精准推送近期出台的惠企政策，使企业尽快享受政策红利。
+强化服务指导，帮助企业科学高效组织生产管理
+为拟申请疫情防控需要的第二类医疗器械审批的企业提供全程指导，为涉疫设备使用单位提供上门服务，对防疫产品生产企业免费提供线上查询国家、行业标准服务。
+深化助企帮困解难“三服务”，帮助企业科学高效组织生产管理，对于企业和市场开复工过程中遇到的问题和困难，及时了解并协调解决。
+优化检验检测服务，为企业创新发展提供技术支持
+对疫情期间为保障市场供应的食品生产企业委托检测，100%减免检测费用，为企业开辟检验检测绿色通道，提供“浙里检”在线咨询服务。
+优化特种设备检验维保和作业人员复审(换证)手续，对开复工企业的特种设备优先保障检验，实行检验“一次不跑，报告寄达”。作业人员未能按时办理复审的，在疫情解除后的3个月内持证人可以重新申请证书复审。
+坚持履职尽责，服务开复工企业优化经营环境
+畅通企业使用数字证书或电子营业执照报送年报渠道，全面实行网上、电话办理。减少行政强制措施干预，最大限度降低对开复工市场主体、管理人员正常生产经营活动的影响。
+有效发挥投诉举报服务热线作用，24小时值班，专人值班值守，确保投诉举报渠道畅通、高效运行。从快从严查处涉疫违法案件，依法严惩制售假冒伪劣口罩、防护服等疫情防控物资的违法行为。
+严格落实防控措施，服务企业实现生产防疫两不误
+加强摸排、主动介入，指导企业开复工前对照法律法规和有关标准要求自查评估，符合条件的可开复工生产。食品生产经营从业人员所持健康证明在1月23日以后有效期届满的，可延期使用到本次新冠肺炎疫情一级响应解除后90日内。
+指导商品交易市场落实管理责任，对发现存在疫情防控隐患的，做到及时报告。指导监督食品生产经营企业安全稳定运行，加强对特殊食品、乳制品、肉制品等高风险品种开复工企业生产条件的监督检查，帮助企业发现和消除食品安全风险。(鲁利军)
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-02-18 14:34:00,同花顺
+8,截至2月14日乌克兰谷物出口已超3800万吨,"据乌克兰农业行业分析网站发布的数据显示，截至2月14日，乌克兰2019/20年度(7月到次年6月)已经出口3823.9万吨谷物和豆类作物，比上年同期增加779.8万吨。
+同期小麦出口量为1622万吨，大麦出口量396.9万吨，玉米1756.8万吨，黑麦5000吨。
+截至2月14日，乌克兰所有面粉出口量为24.04万吨，比上年同期增加8.23万吨。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：wz",2020-02-18 14:29:32,同花顺
+9,力拓考虑采用可再生能源为蒙古铜矿供电,"原标题：力拓考虑采用可再生能源为蒙古铜矿供电来源：SMM 
+今日，Oyu Tolgoi向蒙古政府提交了Oyu Tolgoi电力供应项目(TTPP项目)的可行性研究报告，项目涉及建设一个300兆瓦的燃煤发电厂。同时，力拓正探索采用其他可替代性资源发电，例如可再生能源。
+根据加拿大矿物勘探和开发公司Turquoise Hill，蒙古政府以及力拓签订的协议，力拓有义务在2023年6月30日之前完成对蒙古铜矿Oyu Tolgoi的电力供应项目的建设，项目成本估算约为9.24亿美元。
+力拓钻石和铜部门CEO Arnaud Soirat表示：“力拓，Turquoise Hill和蒙古政府都致力于为Oyu Tolgoi提供长期可靠的电力，并正在共同努力实现这一目标”。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-02-18 14:23:28,同花顺
+10,汇丰未来3年最多可能裁员35000人,"(image_address=""http://e.thsi.cn/img/aa171aa50df912e0"")
+汇丰控股大规模重组商誉减值73亿美元
+汇丰控股临时CEO去年薪酬总额为198万英镑
+2月18日消息，汇丰代理行政总裁祈耀年称，汇丰未来3年最多可能裁员35，000人。汇丰预料员工总数将从235，000下降至接近200，000，裁员人数约占总人力的15%。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-02-18 14:08:10,同花顺
+11,港航协同长三角区域建立内河运输船舶白名单运行机制,"为贯彻落实中央和省委省政府关于疫情防控最新部署以及省防控工作领导小组1号令、2号令精神，省港航管理中心坚持“人要管住、物要畅通”原则，按照“一断三不断”、“三不一优先”要求，积极对接相邻省市港航(地方海事)管理部门，加强长三角疫情水上管控信息互通，在确保船上人员健康、受控的前提下，建立运行跨省定线航行的内河集装箱及重点物资运输船舶白名单信息通报机制。
+2月17日，第一批浙江省内河货船白名单信息(265艘)已报送江苏省地方海事管理机构。对列入白名单的船舶，江苏省地方海事管理机构将实行免查验放行，大大便利船舶航行。浙江省地方海事管理机构将进一步强化船籍港监管，督促指导相关白名单船舶严格落实在过境江苏内河期间非紧急情况且未经同意不停泊、人员不上下船等制度，压实相关航运企业、船舶疫情防控责任。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-02-18 14:07:21,同花顺
+12,高德地图上线公交地铁满载查询 可实时查看客流,"(image_address=""//comment.10jqka.com.cn/sourcepic/12/0MLAy7/GvLwtsay.png"")讯2月18日下午消息，本周起越来越多的城市迎来复工潮，公共出行尤其是关键的防疫战场。为此，高德地图近期接连推出多项新举措，上线“返程直通车”一站式服务，在北京上线地铁、公交的实时满载客流查询，联合众多网约车平台启动“安心出行月”，共同承诺每日消毒测温上岗，保障用户在疫情期间出行更安全。
+在公交地铁方面，为了帮助民众及时了解车厢内的客流满载和运行状况，继上周北京市交通委员会与高德地图政企合作，上线了地铁满载情况查询后，今日高德又上线了公交满载客流查询服务。现在，不论是公交还是地铁，北京市民在出门前，均可以通过高德地图查看实时的客流情况，了解车厢内是否拥挤，从而尽量避开人群聚集，做出更合理的出行安排。
+目前，客流满载实时查询服务已覆盖北京市所有的地铁线路以及市区绝大部分的公交线路和车辆。市民打开最新版的高德地图App，输入起点和终点查询公交地铁换乘方案，使用“实时公交”服务，或者查看“地铁图”，均可以查看实时的客流满载情况。据悉，高德地图正积极与其他城市接洽，希望能在更多城市上线该服务。
+在打车方面，2月17日，高德地图与中国交通运输协会共享出行分会及47家网约车平台，共同发出“同心战疫安心出行”倡议，在全国范围启动“安心出行月”活动，承诺运营车辆每日消毒，上岗司机每日测温，运营期间全程佩戴口罩，并在车辆内张贴消毒测温公示。乘客通过高德打车时，可认准标有“测温消毒”标签的平台下单。如果发现司机未戴口罩，乘客可以免责取消订单，并通过高德打车在线举报。
+在自驾方面，2月15日，高德地图上线“返程直通车”一站式服务，通过疫情信息提醒、防疫检查站及高速收费站实时车流信息、返程人员信息在线登记等多项功能，帮助自驾返程用户更好规划行程，减少返程途中在疫情检查站的停留和等待时间。在通勤出行时，高德地图也会提示用户最新的禁限行措施，并结合实时交通情况规划最优路线。
+“自疫情发生以来，高德地图已快速上线了发热门诊地图、防疫地图、返程直通车、入境信息在线登记、北京地铁公交满载查询、救援物资货车专用导航等多项功能，未来还将陆续上线更多新功能，和广大用户一起打赢这场疫情阻击战。“高德地图相关负责人表示。(张俊)
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-02-18 14:06:06,同花顺
+13,广东省佛山市知识产权保护中心迎来首个一次授权的发明专利,"(image_address=""//comment.10jqka.com.cn/sourcepic/12/1tC5extagtbKwb/Qws7Fzfgtsay.png"")讯2月14日，广东能强陶瓷有限公司的一件发明专利申请获得国家知识产权局授权。该申请是中国(佛山)知识产权保护中心(以下简称“佛山市知识产权保护中心”)运营以来第1件一次授权的发明专利(“一次授权”指发明专利经国家知识产权局审查没有发现驳回理由且无其它缺陷，未发出审查意见直接授予专利权)。
+佛山市知识产权保护中心于2019年12月11日受理该发明专利预审申请，申请人根据预审意见对申请文件进行了修改，并于12月17日向国家知识产权局正式提交专利申请，于2020年2月14日获得授权。
+该申请的快速授权凸显了佛山市知识产权保护中心对提升专利申请质量、加强源头保护的强大支撑作用。在预审阶段，佛山市知识产权保护中心可以发现专利申请文件的各种形式问题及实质性缺陷，申请人经过修改完善，在国家知识产权局实质审查阶段，可有效减少审查意见发出次数、压缩审查周期、提高专利授权率。数据显示，经过佛山市知识产权保护中心预审审结的专利申请授权率超过90%，远高于普通申请。
+截至2月14日，佛山市知识产权保护中心全年累计接收预审申请71件，获得授权40件，在调知识产权纠纷案件40件。
+下一步，佛山市知识产权保护中心将坚定信心、同舟共济、科学防治、精准施策，有序有力助推各类创新主体复工复产，实施最严格的知识产权保护，为佛山经济建设贡献知识产权力量。(供稿：佛山市市场监管局)
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-02-18 14:00:15,同花顺

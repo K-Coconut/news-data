@@ -1,0 +1,8 @@
+,title,content,pub_time,src
+0,美国财政部宣布制裁俄罗斯石油公司一下属企业,"新华社华盛顿2月18日电(记者刘晨刘品然)美国财政部18日宣布，对俄罗斯最大石油企业俄罗斯石油公司下属的一家石油贸易公司实施制裁。
+据美国财政部当天发表的一份声明，被制裁的这家石油贸易公司成立于2011年，在瑞士注册，负责俄罗斯石油公司的海外项目。声明称该公司帮助委内瑞拉运输及销售原油。
+声明说，同时受到制裁的还有该石油贸易公司董事会主席兼总裁迪迪埃.卡西米罗。根据美国相关规定，受制裁对象在美国境内的资产将被冻结。
+美国财政部当天还发布了一个通用许可，允许相关企业在5月20日前逐步终止与该石油贸易公司的业务往来，否则将会成为美国的制裁对象。
+此前，美国已因乌克兰问题对俄罗斯石油公司实施制裁。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-02-19 05:19:55,同花顺
