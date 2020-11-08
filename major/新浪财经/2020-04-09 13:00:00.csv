@@ -1,0 +1,272 @@
+,title,content,pub_time,src
+0,"视频|10派50元 ""土豪""吉比特分红率实际并不高","视频加载中，请稍候...
+自动播放
+(image_address=""//p2.ivideo.sina.com.cn/video/331/246/901/331246901_400_300.jpg"")
+play
+许鸣鸣：最“豪气”吉比特分红率实际并不高 但分红增加市场吸引力
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 331246901,
+pid:1,
+url: '',
+title:'许鸣鸣：最“豪气”吉比特分红率实际并不高 但分红增加市场吸引力'//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=331246901/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+原标题 许鸣鸣：最“豪气”吉比特分红率实际并不高 但分红增加市场吸引力
+责任编辑：王涵",2020-04-09 13:46:44,新浪财经
+1,杰瑞股份副总裁鲍某被指涉强奸案：还任中兴通讯独立董事,"(image_address=""//image.sinajs.cn/newchart/new_daily/n/sz002353.gif"")
+热点栏目
+自选股
+数据中心
+行情中心
+资金流向
+模拟交易
+客户端
+华夏时报
+原标题：杰瑞股份副总裁鲍某被指涉强奸案：警方已立案调查，还任中兴通讯独立董事
+华夏时报（www.chinatimes.net.cn）记者 李继远 济南报道
+近日，有媒体报道称，烟台一上市公司高管以“养女”名义控制一名女孩长达四年之久，并多次对其进行性侵。报道称，女孩在2019年4月在一次性侵并被殴打后，选择报警，目前警方已经立案调查。
+据《华夏时报》记者从知情人士处了解，女孩今年19岁，也就是说在其遭到性侵害时尚未成年。此外，记者多方求证证实，该名涉嫌犯罪的人员为烟台上市公司杰瑞股份以及附属公司杰瑞集团副总裁兼首席法务官鲍某。
+9日，本报记者多次拨打鲍某电话，始终无人接听。不过，杰瑞股份负责宣传人员回复《华夏时报》记者采访表示，涉案人员非上市公司董监高，面对突发情况，公司正在了解情况，如果属实会严肃处理。
+多次遭性侵，警方已立案
+据媒体报道，该女孩自称从2016年起被“养父”鲍某长期控制在山东烟台某公寓里，遭多次性侵，其在遭到性侵时尚未成年。女孩母亲称，女孩从小一直不顺，听从迷信说法认个养父养母能冲灾气，遂从网络上寻找，最终与鲍某取得联系。
+据报道，女孩在2019年4月在一次性侵并被殴打后，选择报警，但是此后该案曾因缺乏犯罪事实而遭撤销。
+2019年10月份，女孩再次报警，警方已经立案侦办此案。
+据媒体披露的立案通知书显示，烟台当地公安部门认为有犯罪事实发生，需要追究刑事责任，决定立案侦查。
+3月9日，记者多次拨打该案办案民警电话，电话始终无人接听。
+涉案人员系杰瑞股份副总裁
+据媒体报道，涉嫌犯罪人员系烟台上市公司杰瑞股份副总裁鲍某。
+本报记者从知情人士处了解，鲍某的具体职务为杰瑞股份以及附属公司杰瑞集团副总裁兼首席法务官。此外，记者调查发现，鲍某还是上市公司中兴通讯的独立非执行董事。
+9日杰瑞股份负责宣传人员回复《华夏时报》记者采访表示，涉案人员非上市公司的董事、监事、高级管理人员，面对突发情况，公司正在了解情况，如果属实会严肃处理。
+另据中兴通讯披露的履历显示，鲍某，1972年出生，于1994 年毕业于天津大学获工学学士学位，1999年获天津大学管理科学与工程专业硕士学位；2001年于美国桥港大学获得计算机硕士学位；具有中国律师资格与美国联 邦最高法院出庭律师资格。鲍先生自1996年起从事律师工作，先后在京津地区律 师事务所任合伙人，驻美国纽约和加州工作近十年，曾任美国思科、美国新闻集团、香港南华集团等跨国企业资深法律顾问。
+中兴通讯2019年年报披露显示，鲍某现任烟台杰瑞石油服务集团股份有限公司(一家在深圳证券交易所上市的公司)及其附属公司(合称“杰瑞集团”) 副总裁兼首席法务官；2018年6月至今任中兴通讯独立非执行董事。
+责任编辑：徐芸茜 主编：秦岭
+责任编辑：陈悠然 SF104",2020-04-09 13:46:27,新浪财经
+2,“高管性侵养女”涉案人员非杰瑞股份、万华化学董监高,"来源：证券时报·e公司
+原标题：“高管性侵养女”视频震动资本圈 涉案人员非杰瑞股份、万华化学董监高
+e公司讯，8日，有媒体爆出一则《上市公司高管被指性侵养女四年 警方立案》的新闻，网络传言，涉案高管或为万华化学、杰瑞股份高管。9日，e公司从两家上市公司独家获悉，涉案高管并非万华化学和杰瑞股份董监高人员。该案件已经在烟台当地“闹”了多年，暂没有结果。涉案高管名为鲍毓明，自2018年起任中兴通讯独立董事，为杰瑞股份及附属公司（合称“杰瑞集团”）副总裁，负责杰瑞集团法务工作。
+责任编辑：陈悠然 SF104",2020-04-09 13:37:54,新浪财经
+3,陆正耀或考虑辞去神州租车董事长 切割与瑞幸联系,"(image_address=""//image.sinajs.cn/newchart/hk_stock/min_660/00699.gif"")
+热点栏目
+自选股
+数据中心
+行情中心
+资金流向
+模拟交易
+客户端
+新浪港股讯 4月9日消息，据外媒《金融时报》报道，由于瑞幸咖啡造假事件持续发酵，公司高管们透露，陆正耀将考虑辞去神州租车董事长一职，这是说服投资者相信该集团独立于瑞幸的一系列举措之一。
+神州租车的投资者关系总监Emily Paau表示，“我们认为，这是他正在考虑的事项，但最终决定是什么，我们无法置评。”
+神州租车首席执行官宋一凡表示，瑞幸与这家租车公司没有股权或业务关系。
+复牌之前，神州租车便开始切割和瑞幸联系。神州租车4月7日澄清，公司没有持有瑞幸咖啡任何美国存托股份或其他证券，亦无参与瑞幸咖啡的任何商业交易，并强调集团与金融机构的业务关系及营运保持正常。
+该公司又指，大股东兼主席陆正耀尽管同为瑞幸咖啡股东及主席，但他于2016年4月辞任公司首席执行官并改任非执行董事，并无参与公司的日常管理。此外，瑞幸咖啡的首席运营官刘剑已于2015年起不再于公司担任部门总监一职。
+上周四晚间，瑞幸咖啡发起的一项调查显示，公司2019年二季度至四季度期间，伪造了22亿元人民币的交易额，相关的成本和费用也相应虚增。值得注意的是，瑞幸咖啡董事长陆正耀正是神租租车董事局主席，根据神州租车年报，陆正耀夫妇持有神州租车29.76%的股份。
+受此次事件波及，神州租车和神州优车不断开启暴跌模式。其中，港股上市公司神州租车首日暴跌54%之后，最近两日再度暴跌10%-20%之间，最新报价1.97港元，相对瑞幸爆雷之前股价已经暴跌54%，市值腰斩。
+责任编辑：张海营",2020-04-09 13:23:10,新浪财经
+4,“口罩一哥”道恩股份从11元涨到46元 口罩到底有多赚钱,"口罩是新冠疫情暴发以来最刚需的产品之一，口罩概念股应声大涨。以“口罩一哥”道恩股份为例，股价自1月底开始启动，彼时股价不过11元左右。截至今日午间收盘，道恩股份报46.36元。
+(image_address=""//n.sinaimg.cn/sinakd202049s/177/w800h977/20200409/3f0f-iryninw8515017.jpg"")
+道恩股份近日走势  来源：Wind
+4月8日晚间，“口罩一哥”道恩股份发布一季报。今日开盘，道恩股份逼近跌停，后续拉升上行，跌幅收窄，截至午间收盘，尚未翻红。为何盈利大增，市场却不买账？
+“口罩一哥”到底多吸金？
+道恩股份一季报显示，2020年一季度实现营收6.19亿元，同比下滑8.02%；实现归属于母公司净利润6939.89万元，同比增长91.60%。
+记者翻阅了公司上市以来的财报，此前不论是年度还是单季度，公司净利润增速最高不过45%，2019年全年净利润增速仅为35.75%，这样来看，道恩股份2020的“开年红”十分亮眼。
+道恩股份处于口罩产业链的上游熔喷料环节，即口罩用聚丙烯，属于口罩生产环节的源头。虽然公司没有在定期报告中透露熔喷料的过多细节，但从公司一季度扩产情况可以一探“口罩一哥”的吸金能力到底有多强。
+目前市场上口罩用熔喷料报价多在14000-15000元/吨之间，公司曾经在一月份就对市场表明不涨价，并且敞开供给。按照公司在投资者互动平台上的口径，公司熔喷料目前日产能已经有340吨，而公司1月26日的产能仅有120吨。两个月有余，公司产能增了近2倍。
+(image_address=""//n.sinaimg.cn/sinakd202049s/464/w800h1264/20200409/f70d-iryninw8515325.jpg"")
+阿里巴巴熔喷料报价
+记者致电道恩股份，公司证券部人士回应：“公司熔喷料业务融合在改性塑料业务板块中，并没有单独分拆计算，熔喷料扩产是影响一季度业绩的重要因素之一。”
+据公司2019年报显示，改性塑料业务占公司总营收的比例约72.59%，目前熔喷料占比多少，公司暂时还没有最新统计数据。上述证券部人士表示：“一季度营收下滑主要系公司将部分产线进行调整，影响了除熔喷料外的其他产能，并且疫情一定程度上影响公司其他产品的销售，净利润大幅增长，主要是由于公司对产线进行技改，降低了成本。”
+公司熔喷料一直处于供不应求的状态，按照现如今340吨日产能、1.45万元/吨的市场均价计算，公司仅在熔喷料这一个业务上的每日营收就在500万元左右，每个月的营收近1.5亿元。
+(image_address=""//n.sinaimg.cn/sinakd202049s/217/w800h217/20200409/24ae-iryninw8515322.jpg"")
+原来机构都撤了
+道恩股份股价于3月10日最高曾达到62.50元，较新年前的11.46元涨了近5倍。股东数据显示，截至2019年12月31日，公司股东人数为10081户。到了2020年3月31日，这一数据已达77541户。
+与此同时，机构投资者悉数离场，公司一季报前十大股东中，除了大股东道恩集团外，全部更迭。
+(image_address=""//n.sinaimg.cn/sinakd202049s/570/w800h570/20200409/0128-iryninw8515564.jpg"")
+道恩集团前十大股东明细
+“带头大哥“为何是它？
+先看一下4月8日龙虎榜，盘后数据显示，参与道恩股份角逐的都是游资席位，不乏有游资在盘中完成对倒。
+(image_address=""//n.sinaimg.cn/sinakd202049s/350/w800h350/20200409/2918-iryninw8515550.jpg"")
+道恩股份4月8日龙虎榜
+受到资金追捧，稳坐“口罩龙一“席位，道恩股份不仅仅靠其熔喷料龙头的江湖地位，主要系其产线全，产品用途覆盖面广，海外疫情爆发后，公司率先受到海外客户追捧。
+公司大股东道恩集团在今年多次公开表示，要完成熔喷布、无纺布、口罩生产线的全方位布局。3月底，大股东旗下道恩模具的口罩生产线已经落地，待4条生产线全部达产后，日产能40万只。
+近期二级市场爆炒的呼吸机，也跟道恩股份扯上了关系，公司在互动平台上如此回复：
+(image_address=""//n.sinaimg.cn/sinakd202049s/175/w800h175/20200409/75b2-iryninw8515699.jpg"")
+“呼吸机外壳原材料？以后叫他原材料之王吧！”有投资者感叹道，近期抗“疫”炒作逻辑已经“出海”，作为“带头大哥”，道恩股份自然不甘落后，除了互动平台透露已有海外订单外，公司大股东在其官方微信上也晒了一下公司的“国际范”。
+(image_address=""//n.sinaimg.cn/sinakd202049s/533/w800h533/20200409/84ee-iryninw8515702.jpg"")
+印度国家电视台关注道恩股份
+(image_address=""//n.sinaimg.cn/sinakd202049s/11/w800h1611/20200409/20b6-iryninw8515879.jpg"")
+意大利《24小时太阳报》关注道恩股份
+公司表示，3月份，海外访客和询盘量较上个月明显增多，并且很多客户都是通过当地媒体报道，主动与其联系，截至4月2日，公司已经接到近千吨海外订单。
+如今国内疫情趋于稳定，但公司对国内客户出货量依然稳定，满产满销的状态得以延续。开启出口贸易后，道恩力量的海外大单会不会如期而至，公司持续盈利能力能延续多久，这些都需要继续跟踪。
+编辑：邱江
+往期回顾
+]article_adlist-->智慧屏、音箱、眼镜……华为一口气推出多款5G终端新品！概念股今天会有表现？
+美国确诊病例超过42万例，意大利目前死亡病例最多
+为几千块钱就把银行对公账户卖了，小心背锅洗钱罪！
+本期责任编辑：陈梦娜 赵唯佳
+▼
+]article_adlist-->版权声明
+上海证券报微信保留本文的所有权利，未经书面授权，任何人不得转载、编辑、重新发布，否则将被依法追究法律责任；联系我们：021-38967805。
+]article_adlist-->好看，你就点一下！
+]article_adlist-->
+责任编辑：陈悠然 SF104",2020-04-09 13:03:46,新浪财经

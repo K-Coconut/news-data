@@ -1,0 +1,193 @@
+,title,content,pub_time,src
+0,【两分钟读财报】迟到的600万年销量 雅迪控股营销费用激增,"视频加载中，请稍候...
+自动播放
+(image_address=""//p3.ivideo.sina.com.cn/video/331/787/290/331787290_400_300.jpg"")
+play
+【两分钟读财报】雅迪股份的2019
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 331787290,
+pid:1,
+url: '',
+title:'【两分钟读财报】雅迪股份的2019'//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=331787290/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+新浪财经重磅推出小视频解读上市公司财报表现，直观生动地展示上市公司经营境况。本期，新浪财经《两分钟视频读财报》聚焦香港上市的国产电动车品牌雅迪控股的2019，在2018年600万年销量跳票后，雅迪控股终于在2019年完成了销售目标，但是股价早已下跌27%，市值持续低迷。
+大家好，这里是新浪财经2分钟解读财报栏目，今天我们要聚焦的是雅迪控股，一家在香港上市的国产电动车品牌，也是首家年营收破百亿元的两轮电动车厂商。
+作为国内首家上市的电动车品牌，雅迪控股以高端定位著称，售价略高于新日、爱玛等国产品牌。目前旗下拥有100款电动踏板车和62款电动自行车，其设计、款式及功能各不相同，覆盖各类消费人群。
+2019年雅迪控股实现营业收入119.68亿元，相比较于2018年的99.17亿元增长了20.7%，实现了电动车行业营收百亿元的新突破；实现净利润5.16亿元，相比较于2018年的4.32亿元增长19.8%。
+同样实现历史性突破的还有电动车的销量，达到609.37万辆，用扎实的数据回应了外界对于雅迪控股业绩和销量的担忧。
+不过可惜的是雅迪控股的股价却没能延续上涨的趋势，反而在2019年大幅下跌，从年初的2.84港元/股下跌到年末的2.07港元/股，跌幅达到27%，市值一度被老对手新日股份超越。
+究其原因，很大程度上和雅迪控股销量与净利润率不达预期有关。
+早在2017年底电动车年销量突破400万辆之际，雅迪控股就高调宣称要在2018年冲刺600万辆的目标，为此雅迪控股不惜发起“价格战”、打出营销组合拳，但是结果是令人失望的，其2018年的销量仅为503万台，远低于600万台的目标。
+如今推迟了一年，雅迪控股终于完成了600万销量的目标，不过也付出了一定的“代价”。根据财报资料显示，占收入大头的电动踏板车均价由2018年的1698元下降至2019年的1690元，延续此前的降价下沉策略。
+同时销售和分销费用飙升，从2018年的5.82亿元增加至2019年的7.7亿元，增长了32.3%，远超营收的增长速度，说明在新日、爱玛、小刀等国产品牌的围剿下，雅迪控股的销售成本日益增长。
+均价的下调、营销成本的上升直接会导致雅迪控股净利率的下降，这也是雅迪控股最被市场诟病的地方：盈利质量开始下降。根据财报资料显示，2019年雅迪控股的净利率为4.35%，相比较于2018年的4.36%略有下降，相比较于2017年的5.15%下降了0.8个百分点。
+【视频读财报】
+好未来财务造假超1亿美元 K12竞争激烈致净利下滑
+趣读美团2019财报：399万骑手人均年薪1.03万
+视频解读探路者2019年：扭亏为盈避免退市 经营门店关店240家
+珀莱雅2019股价翻番 市值超行业大哥 高管忙减持
+B站2019净亏13.04亿 2020布局领域频遭巨头狙击
+责任编辑：张恒星 SF142",2020-04-13 11:14:58,新浪财经

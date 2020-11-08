@@ -1,0 +1,448 @@
+,title,content,pub_time,src
+0,中国国航：2019年净利润64.1亿元 同比下降13%,"新浪财经讯 3月31日消息，中国国航晚间公告，2019年全年净利润64.1亿元人民币，同比下降13%。
+责任编辑：陈志杰",2020-03-31 17:55:49,新浪财经
+1,投资150亿元 格力电器高栏产业园动工,"来源：证券时报·e公司
+格力电器31日宣布，投资150亿元的格力电器高栏产业园即日起动工。据悉，随着格力全球市场规模进一步扩大，现有的生产基地已无法满足产量拓容的需求。因此格力投资建设的高栏产业园，以家用空调生产为主，定位为“智能电器、出口为主、兼顾内销”，以满足全球化市场销售需求。
+责任编辑：王帅",2020-03-31 17:42:35,新浪财经
+2,视频解读探路者的2019：实控人夫妇年末套现3.1亿元,"视频加载中，请稍候...
+自动播放
+(image_address=""//p1.ivideo.sina.com.cn/video/330/093/766/330093766_400_300.jpg"")
+play
+探路者董事长讲述2019经营境况
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 330093766,
+pid:1,
+url: '',
+title:'探路者董事长讲述2019经营境况'//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=330093766/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+新浪财经讯 新浪财经重磅推出小视频解读上市公司财报表现，直观生动地展示上市公司经营境况。本期视频解读探路者的2019年。2019年，探路者扭亏为盈避免退市、经营门店关店240家以及实控人盛发强和王静夫妇年末套现3.1亿元。
+探路者公告2019 年年报，成功扭亏为盈。公司2019 年实现营收15.11亿元，同比下降24.12%，归母净利润1.13 亿元，同比增长162.16%。
+据悉，公司营业收入下降主要由于公司主动缩减利润率较低的旅行服务业务，相关收入大幅减少。公司2019 年户外用品主业收入12.75 亿元，同比下降4.67%，旅行服务业务收入2.33 亿元，同比下降64.34%。户外用品主业收入略有下降主要由于加大低效店铺关闭力度，公司2019 年门店数量1173 家，较上年减少240 家，但经营质量有所改善，直营店铺平均月店效同比上升4%，另外也受到2019 年暖冬不利影响。公司2019 年线上收入2.13 亿元，同比下降10.91%，主要是折扣有所控制。
+责任编辑：张恒星 SF142",2020-03-31 17:40:47,新浪财经
+3,天翔环境：因资金状况紧张 致使部分债务逾期,"新浪财经讯 3月31日消息，天翔环境（维权）公告，公司因资金状况紧张，致使部分债务逾期。截至2020年4月30日，公司及子公司金融机构借款累计将逾期约35.48亿元，占公司最近一期经审计的净资产的2691.13%。目前公司正在全力筹措偿债资金，如无法妥善解决，公司可能会面临进一步的诉讼、仲裁、银行账户被冻结、资产被冻结等事项，也可能影响公司的生产经营和业务开展，进一步加大公司资金压力，并对公司业绩产生不利影响。
+责任编辑：陈志杰",2020-03-31 17:40:44,新浪财经
+4,视频解读探路者2019年：扭亏为盈避免退市 实控人套现,"视频加载中，请稍候...
+自动播放
+(image_address=""//p2.ivideo.sina.com.cn/video/330/093/524/330093524_400_300.jpg"")
+play
+视频解读探路者的2019年
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 330093524,
+pid:1,
+url: '',
+title:'视频解读探路者的2019年'//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=330093524/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+新浪财经讯 新浪财经重磅推出小视频解读上市公司财报表现，直观生动地展示上市公司经营境况。本期，新浪财经视频解读探路者的2019。
+2019年探路者扭亏为盈避免退市、经营门店关店240家以及实控人盛发强和王静夫妇年末套现3.1亿元。探路者公告2019 年年报，成功扭亏为盈。公司2019 年实现营收15.11亿元，同比下降24.12%，归母净利润1.13 亿元，同比增长162.16%。
+据悉，公司营业收入下降主要由于公司主动缩减利润率较低的旅行服务业务，相关收入大幅减少。公司2019 年户外用品主业收入12.75 亿元，同比下降4.67%，旅行服务业务收入2.33 亿元，同比下降64.34%。户外用品主业收入略有下降主要由于加大低效店铺关闭力度，公司2019 年门店数量1173 家，较上年减少240 家，但经营质量有所改善，直营店铺平均月店效同比上升4%，另外也受到2019 年暖冬不利影响。公司2019 年线上收入2.13 亿元，同比下降10.91%，主要是折扣有所控制。
+责任编辑：张恒星 SF142",2020-03-31 17:34:50,新浪财经
+5,呼吸机上游零部件需求爆炸式增长 有哪些厂商在生产？,"炒股就看金麒麟分析师研报，权威，专业，及时，全面，助您挖掘潜力主题机会！
+原标题：呼吸机上游零部件需求爆炸式增长，国内都有哪些厂商在生产？
+记者 徐宁
+全球新冠肺炎疫情蔓延，呼吸机需求量急剧攀升。
+3月30日，工信部产业政策与法规司司长许科敏在国务院联防联控机制新闻发布会上表示，3月19日以来，中国已紧急向国外提供有创呼吸机1700多台，达到今年以来提供国内总量的一半。
+截至3月29日，主要呼吸机企业累计向全国供应呼吸机2.7万多台。其中，有创呼吸机3000多台。
+据许科敏介绍，目前，中国有创呼吸机生产企业共有21家，其中8家的主要产品（周产能约2200台）取得了欧盟强制性CE认证，约占全球产能五分之一，目前已签订单量约2万台，每天还有大量的国际意向订单在洽谈。
+呼吸机是一种能代替、控制或改变人正常生理呼吸的装置，它能增加患者肺部通气量，改善呼吸功能，节约心脏储备能力。
+有创呼吸机属于呼吸机的一类，又称为多功能呼吸机。相对于无创呼吸机，有创呼吸机的体积较大，面板复杂。
+呼吸机的组成部件主要包括压缩机、涡轮、流量传感器、电路板、过滤器和阀门等。其中，压缩机是呼吸机空压机模块的核心部件。
+英格索兰精密科学与技术医疗事业部旗下位于江苏无锡的托玛斯（Thomas）工厂，是国内外压缩机的主要供应商之一，也是中国国务院疫情联控机制医疗物资保障组首批核准的保障呼吸机装备配套生产企业。
+英格索兰精密与科学技术医疗事业部亚太区市场经理田怡辰向界面新闻记者表示，目前，无锡工厂的订单呈爆炸式增长，某一国际呼吸机客户释放出的压缩机需求，该公司预计将排产至2021年。
+田怡辰表示，压缩机上游原材料整体供应链成熟，工厂员工加班加点，可以满足生产需求。但上游原材料中有个别核心零部件仍需进口，若这部分零件供应短缺，公司则需要协调全球各地工厂进行供应调配。
+呼吸机中同样需要进口的零部件，还有涡轮、流量传感器等。
+据新华网报道，中国呼吸机中的传感器等关键零部件仍很大程度上依赖进口，海外疫情暴发后，物流、供应链受到较大影响。
+流量传感器是呼吸机气路系统中的重要部件。它负责将吸入和呼出的气体流量转换成电信号，可以计算出吸入和呼出潮气量、每分钟通气量等，监控系统和医护人员可以由此判断是否有异常。
+汉威科技集团股份有限公司（300007.SZ，下称汉威科技）是国内生产半导体类、催化燃烧类、电化学类、红外光学类等主要种类气体传感器的企业。
+汉威科技子公司郑州炜盛电子科技有限公司生产的F1031微流量传感器等，可以应用于呼吸机上，用来监测控制气流、压力等指标。
+汉威科技董秘办公室工作人员向界面新闻记者表示，每台呼吸机上约用到两只流量传感器。受疫情影响，公司短期内有关呼吸机传感器的订单确有大比例增长，但公司整体销售量级还不大。
+该工作人员表示，公司正在调动可以匹配呼吸机的传感器条线，员工加班加点生产，目前流量传感器产能充足。
+森霸传感科技股份有限公司（300701.SZ，下称森霸传感）的主要产品为热释电红外传感器系列和可见光传感器系列两大类。
+去年11月，森霸传感收购了美国阿尔法公司（Alpha Instruments，Inc．）100%股权。据收购公告介绍，阿尔法公司是一家微差压传感器专业供应商，在核心材料、结构设计、加工工艺等方面具有独特核心技术。
+森霸传感在互动平台中表示，从理论上分析，阿尔法公司生产的微差压传感器可应用于呼吸机，但客户的实际应用情况尚不清楚。
+此外，为呼吸机提供配件的生产厂商还包括安徽中鼎密封件股份有限公司（000887.SZ，下称中鼎股份）、常州天晟新材料股份有限公司（300169.SZ，下称天晟新材）等。
+呼吸机相关产品还需要应用高端特种硅胶密封技术。密封系统是中鼎股份核心业务板块之一。
+3月25日，中鼎股份发公告称，近期收到客户通知，公司成为美国通用呼吸机项目精密橡胶密封产品的批量供应商。
+中鼎股份后又发布公告补充说明，该笔订单总配套20万套，预计收入总金额约5978.37万元。对公司本年度的经营业绩不会产生较大的影响。
+天晟新材则因疑蹭呼吸机热点，收到了深圳证券交易所的关注函。
+2月19日，天晟新材在交流会和披露信息表示，为应对疫情，公司全面支持生产呼吸机配件，此产品主要应用于武汉火神山医院、雷神山医院等其他医院急需的氢氧雾化（呼吸）机。此外，公司注重与医疗器械企业加大合作，为国内以及国际知名的医疗器械与设备厂家氢氧雾化呼吸机、重症监护仪等提供核心零部件配套。
+证监局发函称，天晟新材披露的信息未完整介绍和反映提供呼吸机配件等业务实际情况以及对公司业绩的具体影响，违反了有关规定。
+2月26日，天晟新材发公告回复称，公司提供的呼吸机配件产品名称为功能组合件配件，主要是起到保温、降噪、过滤、杀菌、除臭作用。因该产品是功能组合件，具有较高的技术门槛，该产品目前竞争对手以外企为主。
+天晟新材称，从去年12月开始，公司分批接收订单、分批交货，目前已收到功能组合件配件订单量合计5.8万套，销售额为150万元，正在紧急生产和分批交货进行中。
+天晟新材预计今年全年功能组合件配件订单总量约30万套，年销售额约1000万元，不会对公司业绩产生重大影响。
+责任编辑：陈志杰",2020-03-31 17:31:39,新浪财经
+6,西王食品：西王集团债权人会议表决通过和解协议,"新浪财经讯 3月31日消息，西王食品晚间公告，收到控股股东西王集团通知，西王集团债权人会议表决通过了《西王集团和解协议（草案）》。《和解协议》在获债权人会议表决通过后，西王集团管理人将会向法院提交裁定批准《和解协议》的申请。西王集团作为公司控股股东，《和解协议》执行过程中可能对公司股东股权结构方面产生一定影响。《和解协议》获债权人会议表决通过，有利于解决西王集团的流动性问题，优化资产负债结构。
+责任编辑：陈志杰",2020-03-31 17:29:21,新浪财经
+7,万科A：公司事业合伙人继续购买公司A股股票,"来源：财联社
+万科A：公司事业合伙人继续购买公司A股股票，本次购买股票价格25元/股，共使用约16.25亿元资金。
+责任编辑：王帅",2020-03-31 17:23:04,新浪财经
+8,曾陷暴力催收的51信用卡去年巨亏11亿 股价触及低点,"原标题：曾身陷暴力催收的51信用卡去年巨亏11亿，股价以已触及上市以来最低点
+记者 苗艺伟
+去年10月身陷暴力催收风波的51信用卡交出了一份巨亏的年度成绩单。
+3月30日晚间，51信用卡（2051.HK）公布了2019年财报，大幅亏损的业绩，让财报公布后的第一个交易日股价报收0.68港元，跌幅5.56%，触及上市以来最低点。
+对于金融科技行业来说，2019年面临的形势比2018年显然更加严峻。中国金融监管机构出台了一系列文件，明确P 2 P行业以良性清退和转型发展为主基调，各地的监管部门也加快了P 2 P转型清退力度，特别是2019年10月份以后，陆续有12个省份公布取缔辖区内所有P 2 P平台；同时，伴随着扫黑除恶运动的深入开展，贷后催收业务受到广泛影响，多种因素导致个人消费信贷市场在短期内风险上升。
+作为P 2 P行业的代表性公司，51信用卡对上述风险均未能幸免。
+缘何大幅转亏？
+2019年财报显示，51信用卡全年营收为20.45亿元人民币，较2018年同期28.12亿元同比减少27.3%；扣非后归属母公司股东的净亏损11.29亿元，去年同期净利润为21.51亿元，同比大幅转亏，这是继2018年首次盈利后再次陷入亏损。
+51信用卡在财报中表示，信贷撮合规模减少和撮合借款余额的违约风险上升成为导致财务报告预期信用损失增加的重要原因。
+具体来看，2019年51信用卡的信贷撮合及服务费收入为11.71亿元，同比2018年的20.55亿元减少达42.9%。 2019年，第四季度的撮合信贷违约风险上升，为了应对波动，主动降低了信贷撮合规模并缩短主要信贷产品的平均借款期限，也造成了信贷撮合及服务费的下降。
+此外，虽然51信用卡没有披露具体违约金额，但年报显示： 51信用卡2019年全年亏损净额高达15.59亿元，同比2018年的6.29亿元增长147%。其中，金融资产价值亏损、质量保证金、预期信用等项目亏损几乎成倍增长。
+(image_address=""//n.sinaimg.cn/spider2020331/198/w580h418/20200331/4b0f-irpunah9097343.png"")
+“1021事件”余波未平　
+2019年10月21日，51信用卡位于杭州的办事处接受了中国有关部门的现场调查，多名员工，包括本集团数名主要管理人员被要求协助调查，一时间震惊整个网贷行业，也被51信用卡称为“1021事件”。
+对此，杭州市公安在网站上当日便发布公告，称该调查于犯罪指控与集团委托的外包催收公司涉嫌“寻衅滋事”的犯罪行为有关，但51信用卡第二天恢复正常业务运营。
+年报披露，51信用卡至今并未受到有关部门与1021事件相关的正式调查，资产也未被罚没或冻结，但截至公告日，公司尚不确定1021事件有关的调查是否已经完结，以及本集团和员工是否会因为1021事件调查产生的任何负面法律后果被定罪定责，将继续跟进事件发展并评估对财务的影响。
+“1021事件”也成为51信用卡从P 2 P业务全面转型助贷的催化剂。
+据年报披露，“1021事件”后，51信用卡的所有新增贷款撮合业务资金均由金融机构提供，并申请转型网络小贷公司。2019年第四季度，借款余额的违约风险明显上升，公司便主动采取了相较于2018年更谨慎的策略，主动降低信贷撮合业务规模，停止P 2 P资金的新增撮合。
+51信用卡透露，截至2019年末，P 2 P网贷业务规模已经由2018年末的132亿元人民币下降至56.3亿元，并于2020年2月末进一步下降至35亿；同时，51信用卡借贷撮合业务资金来源中，机构资金的占比由2018年的13.6%增加至39.2%，来自P 2 P平台51人品的个人投资者的资金占比由2018年年底的86.4%降至60.8%。
+在合规方面，51信用卡表示，为确保催收业务风险可控，从2019年7月起不再将逾期30天以上贷款催收交给第三方进行，全部由自己专业团队直接进行，进一步提高合规意识。
+2020年1月末，新型冠状病毒引发的肺炎疫情将在短期内对个人消费金融市场产生不利影响。 51信用卡预计，疫情结束后个人消费需求将迎来反弹，将带来消费金融市场的进一步反弹，同时，预期中国政府将出台更宽松的货币政策刺激经济发展，包括加大个人消费信贷领域的资金投放力度，降低资金成本等，预期疫情结束后信贷撮合业务和信用卡科技服务业务将直接受益于个人消费金融市场的回暖而有所改善。
+责任编辑：陈志杰",2020-03-31 17:11:15,新浪财经
+9,张明辞任平安证券首席经济学家：给朋友推荐过平安股票,"原标题：凡是过去 皆为序章
+来源：张明宏观金融研究
+(image_address=""//n.sinaimg.cn/finance/crawl/162/w550h412/20200331/3bc6-irpunah9116468.jpg"")
+从2020年3月起，我已不再兼任平安证券首席经济学家。
+日子过得很快，从2017年3月至2020年2月，我已经在平安证券工作整三年。在这里工作的三年里，非常愉快，是我人生中难得的一段经历。
+感谢谢永林、何之江、刘世安、张汉玉、朱益勇、常新功等公司领导的信任与支持，感谢韦毓、甯正宇、魏伟、陈骁、杨璇、薛威、郭子睿等研究所同事的合作与帮助。感谢平安证券、平安银行、平安养老险、平安租赁、平安资管等机构中各位朋友的大力支持。就我在平安的体验而言，这的确是中国非常难得的、竞争力很强与调整速度很快的综合型金融机构，且真正在向科技型金融公司转型。我已经给我身边的很多朋友，大力推荐过中国平安与平安银行的股票。这两只股票，只有市场波动的风险，基本上没有公司基本面的风险。
+在与市场上各家基金公司的投研总监、基金经理、研究员不断交流的过程中，我的思维缜密性、表述清晰性与讲段子能力均有显著提高，感谢这些买方的朋友们。在与市场上各位卖方首席经济学家的互动中，我也学到了很多，感谢这些卖方的同行们。
+我把最近三年在平安证券工作期间撰写与指导撰写的报告做了一下梳理。
+首席宏评  86篇（全部为自己撰写）；
+兼听则明资本市场交流系列  7篇（全部为自己撰写）；
+宏观研究框架专题  6篇（通货膨胀、跨境资本流动、长期增长、短期波动、原油、黄金）；
+房地产专题  4篇（周期、分化、风险、调控）；
+贸易战专题  3篇（历史、情景、升级情景）；
+新时代区域经济一体化专题  6篇（粤港澳大湾区、长三角、京津冀、中三角、西三角、综合）；
+海上丝绸之路专题  3篇（中国、东盟、印度）；
+新时代股份制商业银行转型专题  7篇（演变、利率市场化、国际经验、对外开放、金融科技、表外业务、资本金）；
+半年度与年度报告（纠正金融改革与实体改革的节奏错配、消费升级、宏观经济三难选择、系统性金融风险等）。
+在上述专题报告中，在市场上影响较大或前瞻性较强的，大致有房地产专题、贸易战专题、新时代区域经济一体化专题等。
+平安证券研究所不参加新财富评选，且近年来越来越强调对内服务。但尽管如此，这几年平安证券宏观团队还是取得了如下荣誉：Wind金牌分析师2018年宏观经济第5名；Wind金牌分析师2019年宏观经济第4名；2018年金牛奖最具价值分析师（陈骁）；2019年远见杯全球市场预测第一名。
+在平安证券工作的三年时间里，我尝试着将学术研究、政策研究与市场研究相结合，做既具前瞻性、也接地气的宏观研究。这三年时间的研究心得，可以参见我今年即将出版的新著《中国宏观经济分析：长期增长、周期波动与资产配置》。这三年的财经评论文章，可以参见我今年即将出版的评论集《前有险滩》。
+凡是过去，皆为序章。念念不忘，必有回响。青山不改，绿水长流，咱们后会有期。
+免责声明：自媒体综合提供的内容均源自自媒体，版权归原作者所有，转载请联系原作者并获许可。文章观点仅代表作者本人，不代表新浪立场。若内容涉及投资建议，仅供参考勿作为投资依据。投资有风险，入市需谨慎。
+责任编辑：陈志杰",2020-03-31 17:07:21,新浪财经

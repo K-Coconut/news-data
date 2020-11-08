@@ -1,0 +1,237 @@
+,title,content,pub_time,src
+0,【两分钟读财报】呷哺呷哺翻座率下降 快速扩张致增收不增利,"视频加载中，请稍候...
+自动播放
+(image_address=""//p.ivideo.sina.com.cn/video/332/196/089/332196089_400_300.jpg"")
+play
+[两分钟读财报] 呷哺呷哺翻座率下降 快速扩张致增收不增利
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 332196089,
+pid:1,
+url: '',
+title:'[两分钟读财报] 呷哺呷哺翻座率下降 快速扩张致增收不增利'//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=332196089/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+新浪财经重磅推出小视频解读上市公司财报表现，直观生动地展示上市公司经营境况。
+大家好，这里是新浪财经2分钟解读财报栏目，今天我们聚焦的是呷哺呷哺。呷哺呷哺1998年诞生于北京，2014年12月17日，呷哺呷哺登陆港交所上市，成为国内“火锅第一股”。
+不久前，呷哺呷哺发布2019年年度报告。年报显示，2019年公司实现营业收入60.84亿元，同比增长27.83%。但与此同时令人担忧的是，2019年呷哺呷哺净利润仅2.88亿元，同比减少37.71%，为上市6年以来首次净利润负增长，陷“增收不增利”困境。
+呷哺呷哺“增收不增利”一方面源于公司下行的翻座率。据披露，呷哺呷哺翻座率由2018年的2.8倍降至2019年的2.6倍，或折射出呷哺呷哺对到店顾客的吸引力正在下降；相比而言，海底捞虽然翻座率也由2018年的5.0倍下降至4.8倍，但依然明显高于呷哺呷哺。
+另一方面，门店高速扩张所带来的人力成本、折旧与摊销也挤压了公司的利润空间。2017年-2019年，公司旗下的门店数分别为738家、886家、1022家，近两年门店扩张明显加速。门店扩张加快导致公司员工成本、折旧与摊销、所用原材料及耗材等支出增速加快，2019年分别同比增长25.6%、13.9%、36.9%。
+此次新冠疫情对餐饮行业影响显著，海底捞在日前闹出“提价道歉”风波，在一定程度上印证了餐饮行业面临的经营压力。在这样的前提下，呷哺呷哺或很难通过提价来补充自己的盈利空间，预计2020年将面临更大挑战。
+【视频读财报】
+好未来财务造假超1亿美元 K12竞争激烈致净利下滑
+趣读美团2019财报：399万骑手人均年薪1.03万
+视频解读探路者2019年：扭亏为盈避免退市 经营门店关店240家
+珀莱雅2019股价翻番 市值超行业大哥 高管忙减持
+B站2019净亏13.04亿 2020布局领域频遭巨头狙击
+【两分钟读财报】迟到的600万年销量 雅迪控股营销费用激增
+责任编辑：公司观察",2020-04-16 09:41:24,新浪财经
+1,4月16日新股提示：芯瑞达、北摩高科、贵州三力申购,"原标题：4月16日新股提示：芯瑞达、北摩高科、贵州三力申购 成都先导上市 财富趋势、湘佳股份、万泰生物公布中签率 来源：上海证券报
+上证报中国证券网讯 据交易所公告，芯瑞达、北摩高科、贵州三力今日申购。成都先导今日在上海证券交易所科创板上市。财富趋势、湘佳股份、万泰生物公布中签率，网上发行最终中签率分别为0.0399%、0.0240%、0.0409%。
+【新股提示】
+申购：芯瑞达 北摩高科 贵州三力
+上市：成都先导
+中签号：无
+中签率：财富趋势 湘佳股份 万泰生物
+缴款：无
+【申购】
+芯瑞达今日申购 顶格申购需配市值10.5万元
+上证报中国证券网讯 据交易所公告，芯瑞达今日申购，本次公开发行股份35，420，000股，申购代码：002983，发行价格：12.97 元/股，单一账户申购上限10500股，顶格申购需配市值10.5万元。
+(image_address=""//n.sinaimg.cn/sinakd2020416s/458/w1052h206/20200416/362e-iskepxs4544897.png"")
+【公司简介】
+发行人前身为安徽芯瑞达电子科技有限公司，成立于2012年5月15日，成立时注册资本1000.00 万元。2017年1月18日，有限公司以经审计的净资产整体变更为安徽芯瑞达科技股份有限公司，并取得合肥市工商行政管理局颁发的统一社会信用代码为91340100595739962H的《营业执照》，目前注册资本为10626.00万元人民币。
+【主营业务】
+新型显示光电系统、健康智能光源系统的研发、设计、生产、销售及技术服务，提供从光源设计、光电系统设计、显示设计、控制系统设计、外观设计、产品制造及技术服务的一体化解决方案。
+【筹集资金将用于的项目】
+(image_address=""//n.sinaimg.cn/sinakd2020416s/434/w1050h184/20200416/46a8-iskepxs4544896.png"")
+北摩高科今日申购 顶格申购需配市值15万元
+上证报中国证券网讯 据交易所公告，北摩高科今日申购，本次公开发行股份37，540，000股，申购代码：002985，发行价格：22.53元/股，单一账户申购上限15000股，顶格申购需配市值15万元。
+(image_address=""//n.sinaimg.cn/sinakd2020416s/457/w1052h205/20200416/f432-iskepxs4544958.png"")
+【公司简介】
+北摩高科由北摩有限整体于2016年6月1日整体变更设立的股份有限公司。公司自成立以来一直深耕刹车制动领域，以刹车盘（副）为基础，逐步向飞机机轮、刹车控制系统、起落架着陆全系统延伸，并朝着集成化和智能化的方向发展。作为我国航空航天高端装备起落架着陆系统及坦克装甲车辆刹车制动领域的专业厂商，公司研发的产品陆续列装陆、海、空三军部队，参加了“纪念抗战胜利阅兵”和“朱日和军演”等多项重大军事行动，获得了原中国人民解放军总装备部颁发的“建国六十周年国庆阅兵突出贡献奖”及“抗战胜利70周年阅兵突出贡献奖”。
+【主营业务】
+军、民两用航空航天飞行器起落架着陆系统及坦克装甲车辆、高速列车等高端装备刹车制动产品的研发、生产和销售。
+【筹集资金将用于的项目】
+(image_address=""//n.sinaimg.cn/sinakd2020416s/435/w1053h182/20200416/bf3e-iskepxs4544960.png"")
+贵州三力今日申购 顶格申购需配市值12万元
+上证报中国证券网讯 据交易所公告，贵州三力今日申购，本次公开发行股份40，740，000股，申购代码：732439，发行价格：7.35元/股，单一账户申购上限12000股，顶格申购需配市值12万元。
+(image_address=""//n.sinaimg.cn/sinakd2020416s/460/w1052h208/20200416/4388-iskepxs4545030.png"")
+【公司简介】
+贵州三力制药股份有限公司成立于1995年，是一家集研究、开发、生产、营销于一体的现代化中药制药企业，属国家高新技术企业，全国民族特需商品定点生产企业，贵州民营企业100强。公司主营业务为药品的研发、生产及销售。主要产品有开喉剑喷雾剂（儿童型）、开喉剑喷雾剂和强力天麻杜仲胶囊等。
+【主营业务】
+药品的研发、生产及销售。主要产品有开喉剑喷雾剂（儿童型）、开喉剑喷雾剂和强力天麻杜仲胶囊等。
+【筹集资金将用于的项目】
+(image_address=""//n.sinaimg.cn/sinakd2020416s/412/w1050h162/20200416/ee5c-iskepxs4545031.png"")
+【上市】
+成都先导今日上市 发行价格20.52元/股
+上证报中国证券网讯 据交易所公告，成都先导今日在上海证券交易所科创板上市，公司证券代码：688222，发行价格20.52/股，发行市盈率为110.77倍。
+主营业务：专注于原创新药的早期链段研发——苗头化合物和先导化合物的发现。公司具体业务包括DEL筛选服务、DEL库定制服务、化学合成服务、新药研发项目转让等。
+【中签率】
+财富趋势网上发行最终中签率为0.0399%
+上证报中国证券网讯 据交易所公告，财富趋势公布申购情况及中签率。本次网上发行有效申购户数为3，736，993户，有效申购股数为16，077，839，000股。回拨机制启动后，网下最终发行数量为969.9393万股，占扣除最终战略配售数量后发行数量的60.20%；网上最终发行数量为641.20万股，占扣除最终战略配售数量后发行数量的39.80% 。回拨机制启动后，网上发行最终中签率为0.03988098%。
+湘佳股份网上发行最终中签率为0.0240%
+上证报中国证券网讯 据交易所公告，湘佳股份公布申购情况及中签率。本次网上发行有效申购户数为14，742，380户，有效申购股数为96，011，326，500股。回拨机制启动后，网下最终发行数量为256.30万股，占本次发行总量的10%；网上最终发行数量为2，306.70万股，占本次发行总量90%。回拨后，本次网上定价发行的中签率为0.0240252904%。
+万泰生物网上发行最终中签率为0.0409%
+上证报中国证券网讯 据交易所公告，万泰生物公布申购情况及中签率。本次网上发行有效申购户数为13，194，714户，有效申购股数为96，057，090，000股。回拨机制启动后，网下最终发行数量为436万股，占本次发行总量的10%；网上最终发行数量为3，924万股，占本次发行总量90%。回拨后，本次网上定价发行的中签率为0.04085071%。
+责任编辑：常福强",2020-04-16 09:21:04,新浪财经

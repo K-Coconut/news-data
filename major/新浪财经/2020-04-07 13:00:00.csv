@@ -1,0 +1,192 @@
+,title,content,pub_time,src
+0,威诺律师团队：接受中国投资者起诉瑞幸咖啡的民事赔偿诉讼案,"原标题：威诺律师团队：开始接受中国投资者起诉瑞幸咖啡的民事赔偿诉讼案件 
+国内威诺律师团队表示，开始接受中国投资者起诉瑞幸咖啡的民事赔偿诉讼案件。其中事实依据有两个：一是瑞幸咖啡承认存在重大造假行为。2020年4月2日晚，瑞幸咖啡发布公告承认其在2019年二季度至四季度内存在伪造交易行为，涉及销售额达22亿元人民币。二是瑞幸咖啡股价大幅度下跌，投资者受到损失。
+中国投资者若起诉瑞幸咖啡，在新《证券法》中也能找到法律依据。新《证券法》第二条规定：“在中华人民共和国境外的证券发行和交易活动，扰乱中华人民共和国境内市场秩序，损害境内投资者合法权益的，依照本法有关规定处理并追究法律责任。”
+美国联邦法院注册出庭律师、瑞幸咖啡集体诉讼案在美国代理律师刘龙珠向外界表示，已经接到十几个客户就证券欺诈希望提起集体诉讼，正在选诉讼代表，瑞幸咖啡涉嫌财务造假不大可能是个别高管行为，如果造假属实，董事会及高层管理成员都将会被追究法律责任，美国证监会一定会进入调查。（中国证券报）
+责任编辑：陈悠然 SF104",2020-04-07 13:40:45,新浪财经
+1,【两分钟读财报】珀莱雅2019股价翻番 市值超行业大哥 高管忙减持,"视频加载中，请稍候...
+自动播放
+(image_address=""//p1.ivideo.sina.com.cn/video/330/949/317/330949317_400_300.jpg"")
+play
+#两分钟读财报#珀莱雅2019年股价翻番、市值超越上海家化
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 330949317,
+pid:1,
+url: '',
+title:'#两分钟读财报#珀莱雅2019年股价翻番、市值超越上海家化'//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=330949317/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+新浪财经重磅推出小视频解读上市公司财报表现，直观生动地展示上市公司经营境况。本期，新浪财经视频解读珀莱雅的2019。阿布达比投资局和韩国银行首次重仓珀莱雅，2019年股价翻番、市值超越老大哥上海家化，高管却忙减持。
+大家好，这里是新浪财经2分钟解读财报栏目，今天我们要聚焦的是珀莱雅，一家国内知名的化妆品公司，旗下拥有品牌珀莱、优资莱、悦芙媞、韩雅等，业务涉及护肤、洁肤和美容彩妆类产品。
+2019年，珀莱雅在营业收入上实现了强劲的增长，财报资料显示其2019年实现营业收入31.24亿元，相比较于2018年的23.61亿元增长32.28%，珀莱雅的高增长得益于线上渠道的持续扩展。
+财报资料显示，2019年珀莱雅天猫、京东等线上渠道收入16.55亿元，占总营收的比重为53.54%，首次超越线下的收入，成为第一大收入来源。尤其是部分爆品销售状况较为理想，比如黑海盐泡泡面膜，天猫旗舰店单月销量超过100万盒，打破天猫美妆销量的历史纪录。
+在盈利能力方面，珀莱雅的净利润已经实现了三连升，从2017年的2.01亿元增长至2019年的3.92亿元，几近翻番。业绩数据增长的背后是珀莱雅对经营促销活动的依赖，反映财报数据上是销售费用率连续三年增长，从2017年的35.67%增加至2019年的39.15%。
+在国内化妆品行业里，珀莱雅的市值、行业规模虽然弱于上海家化，但是这几年的成长性却优于上海家化。以2019年的股价表现来看，珀莱雅年内股价从43.69元/股窜升至88.05元/股，市值也翻番至177亿元；而上海家化年内的股价从27.38元/股上涨至30.94元/股，仅增长13%。
+截止到2020年4月3日收盘，上海家化的股价报收24.62元/股，市值165亿元；而珀莱雅股价报收于118.2元/股，市值为237亿元，远超上海家化。
+股价和业绩的良好表现，让珀莱雅受到了资本市场的追捧，尤其是外资的重金押注。根据其2019年半年报，阿布达比投资局和韩国银行首次出现在前十大股东名单上，分别持有珀莱雅0.55%和0.49%的股份。
+业绩打底、外资加持带动股价飞涨，珀莱雅的高管们却忙着减持。根据公告资料显示，公司高管曹良国、金衍华和王莉都陆续发布了减持计划，欲在股价高位之际套现。
+【视频读财报】趣读美团2019财报：399万骑手人均年薪1.03万
+视频解读探路者2019年：扭亏为盈避免退市 经营门店关店240家
+责任编辑：张恒星 SF142",2020-04-07 13:30:51,新浪财经

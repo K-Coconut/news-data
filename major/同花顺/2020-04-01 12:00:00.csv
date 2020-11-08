@@ -1,0 +1,41 @@
+,title,content,pub_time,src
+0,如何实现储能的充分利用,"国际可再生能源机构(IRENA)正试图定义储能的价值，促使决策者引入财政奖励，从而推动技术的应用，加速能源转型。
+由于投资者对储能价值不甚了解导致项目无法启动，电力储能评估机构ESVF正试图解决资金不足”的问题。
+尽管IRENA预测如果原材料需求量减少、生产过程实现原材料充分利用，那么到2030年总安装成本可能会下降50-60%。但是，锂电池系统的发展和大规模储能设备的高额成本依然使得要让投资者意识到安装这些设施的价值所在一事更为迫切。
+IRENA说，提供能源储存等多种服务是开启这项技术价值的关键。获得的价值是通过提供能源套利——当电价处于低位时购入,而后存储并在高需求的时候售出，特别是通过提供电网辅助服务,例如频率调节、电压控制和黑启动支持——快速能源供应,特别是如果这些服务获得财政上的保障，那么获利将得以显著提高。例如，一个设施的部分能源存储能力可以从套利中扣除，并保留作为电力输送储备。
+(image_address=""http://e.thsi.cn/img/6fd01f27845d71df"")
+该报告的作者接受这样的容量如何被用来备份网格的建模，这是一个棘手的问题，因此ESVF框架只考虑可量化的存储所能提供的服务(见上面的图12，红色部分)。报告中对存储项目的调度进行了建模，并对其当前的经济可行性进行了评估，以确定是否需要额外的政策杠杆来吸引投资者(参见下面的图11)。
+(image_address=""http://e.thsi.cn/img/9d881650de8fb3a9"")
+IRENA的报告接下来分析了真实案例，重点了那些因为有更快速的频率响应需求而受到激励的地区的存储部署。
+例如，2016年8月，英国国家电网启动了一项200兆瓦的拍卖，以提供紧急第一响应(EFR)服务。此次招标共收到64份投标书，其中61份为电池设施，2份为需求响应项目，1份为热能发电资产。英国国家电网(National Grid)选择了8个电池存储项目，这些项目将获得每小时9.44英镑(合10.14欧元)的EFR拨款，以确保为期四年的201兆瓦的电池存储服务。
+巨大的收入来源
+在其他地方，南澳大利亚州100兆瓦/129兆瓦的“特斯拉大电池”(Tesla Big Battery)提供的频率控制辅助服务(FCAS)为项目所有者Noen在去年第四季度56%的收入增长贡献了大部分。极端天气、连接器故障、孤岛风险、不断变化的电力负荷和燃煤发电中断，这些因素共同推高了FCAS的需求，Noen的电池系统安装在使这家拥有安装在309兆瓦的霍恩斯代尔(Hornsdale)风电场附近，这些因素共同推动了Noen这家法国可再生能源公司获得盈利。
+去年，Neoen的电池存储业务收入增长了14%。在运行的第一年，特斯拉大电池在电网稳定成本上节省了近4000万澳元(2150万欧元)。在2018年上半年，该设施为Noen从与南澳大利亚政府签订的供应合同和独立销售储存的电力中获得了约810万欧元的利润，帮助偿还了5600万欧元标价中的一大部分。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-04-01 12:18:15,同花顺
+1,网上谈、云签约 中企国云与北京时间签署合作协议 “加码”中国网基地科技金融创新,"中国网4月1日讯日前，中国网文化科技金融融合示范基地(下称“中国网基地”)运营公司北京时间中国网科技有限公司与中企国云能源科技有限公司(下称“中企国云”)签署合作协议。根据协议，中企国云将在中国网基地范围内设立基金，用于中国网基地和国际传播大厦以及国际传播中心的建设。双方还将在智慧能源、大数据、金融服务等方面开展深度合作。这标志着中国网基地招商引资工作已全面展开。
+据了解，中企国云股东为四家央企投资机构，业务涵盖智慧能源、能源大数据、能源金融服务、能源生态环保等四大板块，公司整合央企相关资源，推进互联网、大数据和新技术等在能源企业的应用。中国网基地是中国网近年来构建新兴产业形态，助力地方经济文化发展和科技金融创新的新型创新平台。此次合作，中国网基地将依托中企国云在新能源和金融服务等方面的优势，不断优化自身布局，丰富合作内容，秉承“共创.共享.共赢”的发展理念，在文化、科技和金融领域深入开展合作，实现跨越式发展。
+据悉，中国网基地自启动以来，得到了天津各级政府政策支持，在企业招商、外宣及文化项目策划、对外拓展等方面取得了不俗成绩。下一步将重点抓实天津基地，形成机制、模式，并以天津合作为模板，逐步将中国网基地推广到全国，建立新兴支柱产业，助力地方经济发展。届时，中国网基地还将在全国重要省份建设国际传播大厦，积极挖掘地方故事，将产业发展与对外传播相结合，大力推动提升地方经济，打造地方名片，宣传地方特色，讲好中国故事。
+本次签约仪式全部采用线上远程操作，将传统的“面对面”签约变为依托互联网技术的“屏对屏”签约。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-04-01 12:15:41,同花顺
+2,京东物流联手格力研发国产“抗疫”机器人,"4月1日消息，据京东方面消息，近日，京东物流集团和珠海格力智能装备有限公司宣布达成战略合作。双方将共同打造三款组合式“抗疫”机器人，可助力完成机场、商超、火车站、办公楼以及室外公共环境等人员聚集场所的消杀、巡检、发热预警等工作。京东集团副总裁、京东物流X事业部总裁肖军表示，这三款机器人将于本月投入量产。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-04-01 12:10:36,同花顺
+3,联合国粮农组织、世界卫生组织和世界贸易组织共同发布声明呼吁 将疫情对食品贸易和市场影响降至最低,"近一周时间，多个国家开始限制农产品出口，使粮食安全面临挑战。联合国粮农组织、世界卫生组织和世界贸易组织3月31日共同发布声明表示，全世界有数百万人依靠农产品贸易来维持其粮食安全和生计。各国在采取行动遏制日益加剧的新冠肺炎大流行过程中，必须将对粮食供应的潜在影响或对全球贸易和粮食安全的意外影响降至最低。
+声明表示，各国在采取行动保护其公民健康和福祉的同时，应确保任何与贸易有关的措施都不会破坏食品供应链。这种破坏包括阻碍农业和食品工业工人流动以及延长食品货物在边境滞留时间，导致易腐烂的粮食变质、增加粮食浪费。对食品施加贸易限制也可能与对粮食安全的不合理担忧有关。如果这种情况成为现实，将破坏粮食供应链，对最脆弱和粮食不安全的人口产生特别明显的后果。
+声明表示，粮食供应的不确定性可能引发一波限制出口浪潮，导致全球市场粮食短缺。这种措施会改变粮食供求平衡，导致价格飙升、加剧价格波动。以前的危机现象已证明，这些措施对低收入、缺粮国家和人道机构为采购粮食的努力尤其有害。
+声明表示，必须防止再次采取这种破坏性措施。在这样的时刻，更应加强国际合作。在新冠肺炎疫情流行期间，必须尽一切努力确保贸易尽可能自由地流动，特别是避免粮食短缺。同样，保护食品生产者和食品加工和零售从业者也至关重要，以最大程度地减少病毒在该部门的传播并维持食品供应链。消费者，尤其是最脆弱的消费者，必须继续在绝对安全条件下在其社区内获取食物。
+声明表示，必须确保实时向所有人提供与粮食有关的贸易措施、粮食生产、消费和库存水平以及粮食价格信息。这能够减少不确定性，并使生产商、消费者和贸易商能够作出明智的决定。最重要的是，它有助于遏制“恐慌性购买”以及囤积食物和其他必需品。
+声明强调，现在是保持团结、开展负责任行动并秉持共同的目标，即加强粮食安全和营养，改善世界各地人民总体福祉的时候。必须确保应对新冠肺炎疫情不会在无意之中造成不必要的必需品短缺，并加剧饥饿和营养不良。(经济日报-中国经济网记者高伟东)
+(责任编辑：何欣)
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-04-01 12:07:09,同花顺
+4,受疫情影响 新加坡房价创三年多最大跌幅,"(image_address=""http://e.thsi.cn/img/e5e55f850c2646d3"")
+北京时间31日消息，新加坡市区重建局周三发布的数据显示，新加坡一季度房价环比下跌0.2%，创三年多以来最大跌幅。
+为了防止新冠病毒传播，新加坡下令禁止10人以上聚集，所有人在公共场所必须保持一米间隔。新的社会隔离规则也影响了一些新住宅单位的销售，因为中介无法带尽可能多的客人看房。在二手房市场上，一些所有者也拒绝了潜在买家，因为担心他们可能会传播病毒。
+新加坡正面临自1965年建国以来最严重的经济萎缩，政府上周公布了第二轮刺激计划，将刺激措施的总规模提高到了相当于GDP的11%。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-04-01 12:00:43,同花顺

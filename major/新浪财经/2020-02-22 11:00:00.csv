@@ -1,0 +1,255 @@
+,title,content,pub_time,src
+0,雅戈尔高管治愈出院！独家披露他住院的24天和出院第1天,"视频加载中，请稍候...
+自动播放
+(image_address=""//p.ivideo.sina.com.cn/video/324/619/004/324619004_400_300.jpg"")
+play
+雅戈尔高管治愈出院！独家披露他住院的24天和出院第1天……
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 324619004,
+pid:1,
+url: '',
+title:'雅戈尔高管治愈出院！独家披露他住院的24天和出院第1天……'//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=324619004/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+原标题：雅戈尔高管治愈出院！独家披露他住院的24天和出院第1天……
+来源：宁波晚报
+2月13日，医生告诉王升平，恭喜，你可以出院了。
+此时，距离他被确诊为新冠肺炎过了24天。24天很短，一个月都不到，王升平还能清楚记得那个喜欢笑的护士叫小郭，这个在帮他打针时小心翼翼的护士叫小卓；24天也很长，他管理的雅戈尔服饰中原公司的业务近乎停摆。
+疫情如同一场风暴，席卷了绝大多数的普通人，他们当中，有人被刺骨的寒冷裹挟，还有人在努力地钻木取火。
+于是，从鄞州人民医院隔离病房出来的第一天，他给中原公司的40多位中高管开了一次电话会议，2个小时20分钟时间里，他似乎要把这24天的人生经历和人生感悟都一并给抒发出来。他说的最多的是，信心比黄金更重要。
+01
+活着
+事实上，王升平至今都没搞明白，自己究竟是在什么时候感染上的新冠肺炎病毒。
+中原公司负责湖北和安徽两个省的雅戈尔服饰业务，公司总部在安徽，有千余名员工。1月15日到18日这三天，总经理王升平走过湖北和安徽的不少地方，开过会，去过商场里参加拜年活动，也见过太多人了，认识的，不认识的。唯一印象深刻的是，他在一家日本企业谈合作的时候，人人都戴上了口罩。
+他开始警觉。从日企出来后，他跑去药店买了一只口罩，“那时候，到处都买得到口罩。”
+1月20日晚，他回到宁波家中，开始发烧，家里人说，要不吃点退烧药吧，被他拒绝了，他打算第二天就去鄞州二院，一刻也不能耽搁。也正是当晚，钟南山院士在接受央视采访的时候，明确“新型冠状病毒肺炎是肯定的人传人”。
+1月21日，38.7℃的高温，CT肺部毛玻璃状，有过武汉旅行史，鄞州二院的医生判断，王升平几乎可以确定感染上了新冠肺炎。
+“他们当即把我留在了急诊室里隔离，我想回家，或者去宾馆住一晚，因为急诊室太冷了。修主任知道后，帮我拿了一台他自己用的油汀、一瓶矿泉水和一床厚被子，他说，挨过一晚后，明天就要把我送去鄞州人民医院隔离病房治疗。”王升平说，油汀吹得他暖烘烘的，却没怎么合眼。
+1月22日，入院。
+治疗的过程很痛苦，从早上九点睁眼开始，他们这些确诊病人要一直吃药、打点滴，十几种药连续不断地用在身上。王升平的症状还要再严重一点，他自述，高烧不退半个月，晕过去两次，没力气说话，“心理上已经做好了再也醒不过来的准备。”
+最难受的时候，他整整一天都吃不下东西，妻子送来的白粥也只是沾了沾嘴唇而已。边上的医护人员，看在眼里，急在心里。
+护士小郭凌晨12点下了夜班，她打的回家，煮了一碗面又带回了医院，托同事送进病房。一碗清汤挂面，上面浮着几片青菜叶子，和面一起送进来的，还有一张纸条，上面写着，“王总，加油，一定要吃下去”。
+“我一下子就哭了。一碗面，吃了三分之一，那是我进病房以来，吃得最多的一次，我必须要对得起白衣天使的善意和温暖。这么多人在帮助我们，我们有什么理由不坚持呢？”
+2月初，王升平的情况有些好转，能说话了。他决定，给中原公司里另外10名和他一样确诊了新冠肺炎的“战友”打一通电话，10个人里，有中高层，也有仓库管理员这样的一线员工。
+“我是整个中原公司的总经理，是他们的领导，我也跟他们一样躺在病房里，我能对他们此刻在遭遇的困境感同身受，当我跟他们聊的时候，他们说的那种难受、痛苦、煎熬、压抑，我能完完全全地理解。”
+电话打一个，哭一个，每说一句，字眼都是三三两两往外蹦：
+“我今天好多了，你呢？”
+“饭一定要吃，不能因为身体难受而不吃饭。”
+“吃药很痛苦，但是只有药才能治好我们的病。”
+“我们一起加油，要相信，春天一定会来的。”
+……
+(image_address=""//n.sinaimg.cn/spider2020222/300/w1080h1620/20200222/4718-ipvnsze6025812.jpg"")
+（王升平）
+02
+活下去
+2月8日，中原公司的一名同事没能抢救过来，去世了。
+“这对我的打击是巨大的。一个月前，我们还在一起吃饭，一起开会，一起并肩作战。这天以前，新闻播报中新增的死亡病例还仅仅停留在数字上，这天以后，我对死亡有了新的触动。”采访中，怀念起这名同事，王升平几度哽咽。
+随后的几天里，中原公司发起了一次募捐，而雅戈尔集团也已计划设立救助基金，研究一系列措施帮助该员工家庭渡过难关——这场疫情中，前线的医护人员在努力地医治病患生理上的疼痛，后方的普通人们也在尽其所能，守护那些被新冠肺炎阴影笼罩的心灵。
+不过，即便如此，王升平还是敏锐地觉察到，中原团队人心惶惶，很多年前回家过节的员工都不愿意再回到湖北。
+他认为，中原地区的商业运营在上半年受到疫情波及已经是大概率事件了，目前，商场开门、专卖店开业，甚至雅戈尔正在推动的降租金、让扣等工作，在谁都不知道疫情什么时候结束的前提下，他们的合作单位均无法确认答复，“更重要的是，疫情对湖北老百姓的心理影响是非常大的，大家所有生活工作都被打乱，如何活下来、不被感染成为首要目的。”
+因此，2月13日，他转院进行出院后的14天隔离。一到病房安顿下来，他便组织召开了中原公司2020年的第一次电话会议，他提出自己从这天开始进入工作状态，积极推进线上分销等工作，特别是为疫后恢复再生产做好所有的准备工作，包括重视奥莱、临时特卖等。
+“信心比黄金更重要！我希望包括我在内的领导干部，在保护好自己的前提下，像白衣天使一样成为雅戈尓的逆行者，以此来给我们所有员工树立榜样，树立最为宝贵的信心。”王升平说。
+雅戈尔集团董事长李如成还告诉他，一旦湖北允许商场复工开业，中原团队要尝试开出几家门店来，员工不上班就没有收入来源，他们都有一家子要养。在李如成的支持下，他们还将和湖北工会联系，看看能不能举行几场义卖，号召员工为疫情做点力所能及的事情，卖来的钱，捐给医护人员。
+在王升平看来，这些都是雅戈尔在想尽办法地让员工有事做！
+03
+拥抱希望
+动荡不安的时代里，人是企业最大的财富。正如李如成说的那样：“也许5万人团队在服装业板块创造的利润，只相当于50人团队在金融业板块创造的利润、150人团队在房地产业板块创造的利润。但雅戈尔并不迷茫，持守初心，我们依然执著于一件衬衣、一套西服。品牌就是最好的实业，雅戈尔人就是要用一针一线打响品牌，坚守实业。”
+很快，王升平的电话会议中的一小段话语被员工做成了视频，发到了抖音上，也转到了微信群和朋友圈里，雅戈尔员工纷纷表态，有鼓劲的，有感动的，也有思考的：
+(image_address=""//n.sinaimg.cn/front20200222ac/344/w124h220/20200222/31a1-ipvnsze6809672.jpg"")
+雅戈尔高管治愈出院！独家披露他住院的24天和出院第1天……
+“步履不停，逆风奔跑，雅戈尔加油！中原团队加油！”
+“疫情可怕，我们一定能够战胜，还是挺感谢这次疫情，感谢这次急刹车给了我们这种雅戈尔新生代响亮的一巴掌，从来没有像现在一样充满危机感。”
+“希望中原公司各位领导同事都能安全出院，我们雅戈尔是一个大家庭，我们会一起共渡难关。”
+…
+作为一个拥有近千万人口、百万市场主体的城市，宁波在疫情的严峻大考中，全民动员、众志成城，防疫有力，复工有序！这个城市正恢复成熟悉的模样，全国各地亦是如此。
+我们的政府在努力，我们的企业在努力，所以请相信，守望相助，孤岛也将连成大陆，拥抱希望，普通人也能照亮普通人。毕竟，王升平的人生已经亮起炽热，那是无数陌生人曾用力挥舞过手中的灯筒。
+责任编辑：刘万里 SF014",2020-02-22 11:33:13,新浪财经
+1,小米高层调整:王川担任首席战略官 “老人”退居幕后,"(image_address=""//image.sinajs.cn/newchar/png/k/hk/daily_660/01810.png"")
+热点栏目
+自选股
+数据中心
+行情中心
+资金流向
+模拟交易
+客户端
+原标题：小米高层调整：王川担任首席战略官，年轻一代接任业务一线 来源：界面新闻
+编辑 |1
+2月21日晚间，小米集团宣布重要人事任命，联合创始人王川担任小米集团首席战略官（CSO），协助CEO统筹集团质量委员会、集团技术委员会、集团采购委员会的工作。
+对于王川而言，此次任命是再次从台前走到幕后。
+2018年9月，也即上市后的两个月，小米迎来重大调整。小米集团新设立了集团参谋部和集团组织部，并宣布由联合创始人、高级副总裁王川任参谋长。这在当时被视为王川由一线退居二线的信号。
+不过这个状态没能持续太久。在2018年小米有所下滑后，王川成为由销售部和服务部改组的中国区总裁，接手汪凌鸣手中的线下业务。
+半年后的2019年5月，小米集团再次调整组织架构，CEO雷军兼任中国区总裁，全面负责中国区业务开展和团队管理。同时成立大家电事业部，王川被任命为大家电事业部总裁，负责除电视之外的空调、冰箱、洗衣机等大家电品类的业务开展和团队管理，向CEO汇报。
+(image_address=""//n.sinaimg.cn/spider2020222/213/w2048h1365/20200222/f04c-ipvnsze6712388.jpg"")
+不单如此，7月时，长期负责小米供应链的集团副总裁张峰被委任为集团参谋长，接任王川的旧职。
+这一系列调整显示了小米的方向。在明确“手机+AIoT”双引擎战略后，大家电事业部在小米占据了越来越高的地位。
+作为曾经的电视部领军人，王川参与了小米电视的产品研发、生产、渠道、销售等全链条的工作，把小米电视业务带上过第一的位置。对小米集团而言，由王川再次领命大家电业务，是稳扎稳打的一步。
+事实上，随着王川再次走向偏宏观的职能位，大家电事业部在小米AIoT战略中的地位丝毫没有降低。尤其在小米今年冲击高端手机市场后，大家电业务的营收体量将显得更为重要。
+目前，大家电事业部总经理由电视部总经理李肖爽兼任，向CEO汇报。
+小米上市后，雷军曾任命了10名总经理和4名副总经理，总经理向雷军直接汇报。这14人多以80后为主，其中就包括今年36岁的电视部总经理李肖爽。
+李肖爽被认为是小米电视业务的新秀，也称得上受到了王川的栽培和提拔。在担任电视部总经理之前，李肖爽是小米电视产品副总裁，参与开发小米电视的人工智能产品。更早的时候，在王川2010年创办的多看科技有限公司里，他就在此担任过用户体验部门经理、产品设计总监。
+显然，李肖爽的业务能力已经得到了高层的一定认可。据悉，2018年小米电视全球出货量840万台，同比增长225%，2019出货量超过一千万台。
+王川再次离开一线的真实意义不得而知。不过据小米集团组织部长刘德曾经透露，小米集团自从2018年9月以来，进行了一系列组织任命，这些调整来自于IPO前完成的一整套策略规划，先强化小米总部职能，增强小米的大脑。然后逐步把业务结构梳理得更清晰、合理，在配置公司重要战略方向上做足组织、人才和资源三个方面的保障。
+为强化总部职能，小米集团已设立集团参谋部与集团组织部，王川成为小米首席战略官，将继续加强总部规划力。
+此外，小米“老人”退居幕后、各职能部门更换新鲜血液的动作也十分明显。不单是李肖爽、屈恒、范典等年轻一代得到提拔，林斌、王川等人也逐渐远离了一线。",2020-02-22 11:05:46,新浪财经

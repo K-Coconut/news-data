@@ -1,0 +1,96 @@
+,title,content,pub_time,src
+0,小米10在2月13日线上发布 雷军：这是一个艰难的决定,"(image_address=""//image.sinajs.cn/newchar/png/k/hk/daily_660/01810.png"")
+热点栏目
+自选股
+数据中心
+行情中心
+资金流向
+模拟交易
+客户端
+2月8日消息，小米官方微博宣布小米10系列新机将于2月13日下午两点发布，这是小米旗舰首次纯直播发布，官方还表示有更多精彩的“第一次”将会揭晓。
+SinaPage.loadWidget({
+trigger: {
+id: 'wb01'
+},
+require: [
+{
+url: ""//n.sinaimg.cn/finance/fe/doT.min.js""
+},
+{
+url: ""//finance.sina.com.cn/other/src/sinapagewidgets/SinaPageWeibo2017.js""
+}
+],
+onAfterLoad: function () {
+new SinaPageWeibo.WeiboCard({
+wrap:'wb01',
+id:'4469634114156078'
+});
+}
+});
+此后，小米董事局主席雷军发布微博表示，“这是一个艰难的决定：小米10 新品发布会，最后定在 2月13日，采用‘纯网上直播’的方式。这是旗舰手机第一次纯网上直播发布会，难度非常大，大家有啥建议？”
+SinaPage.loadWidget({
+trigger: {
+id: 'wb11'
+},
+require: [
+{
+url: ""//n.sinaimg.cn/finance/fe/doT.min.js""
+},
+{
+url: ""//finance.sina.com.cn/other/src/sinapagewidgets/SinaPageWeibo2017.js""
+}
+],
+onAfterLoad: function () {
+new SinaPageWeibo.WeiboCard({
+wrap:'wb11',
+id:'4469636080665195'
+});
+}
+});
+根据小米集团副总裁，中国区总裁，红米Redmi品牌总经理卢伟冰通过微博透露的消息，“本来计划的线下3000人大型发布会改为纯线上直播发布，对一款年度旗舰非常非常挑战。 团队们正在抓紧时间做巨大调整，希望精彩呈现，不负米粉们期待！ 共克时艰，我们一起加油”
+SinaPage.loadWidget({
+trigger: {
+id: 'wb21'
+},
+require: [
+{
+url: ""//n.sinaimg.cn/finance/fe/doT.min.js""
+},
+{
+url: ""//finance.sina.com.cn/other/src/sinapagewidgets/SinaPageWeibo2017.js""
+}
+],
+onAfterLoad: function () {
+new SinaPageWeibo.WeiboCard({
+wrap:'wb21',
+id:'4469636759860075'
+});
+}
+});
+卢伟冰随后发微博表示，前天美光科技发微博说：“行业需要一场旗舰发布会，激活高端5G手机市场，提振业界信心，期待#小米10#的发布”！
+今天众多供应链合作伙伴说 ：“行业急需一场旗舰发布会打破阴霾，提振信心，复苏产业。#小米10#发布会大家急切期待”。
+他表示，“感谢所有人的信任和支持，我们对于产业拥有充分的信心，我们对于#小米10#拥有十足信心！”
+SinaPage.loadWidget({
+trigger: {
+id: 'wb31'
+},
+require: [
+{
+url: ""//n.sinaimg.cn/finance/fe/doT.min.js""
+},
+{
+url: ""//finance.sina.com.cn/other/src/sinapagewidgets/SinaPageWeibo2017.js""
+}
+],
+onAfterLoad: function () {
+new SinaPageWeibo.WeiboCard({
+wrap:'wb31',
+id:'4469645392688893'
+});
+}
+});
+值得注意的是，小米股价自疫情以来不断走高，2月以来股价大涨11.46%，1月也涨了7%，自低点以来，小米股价已经累计涨55%，最新报价12.84港元，市值3083亿港元。
+中金公司最近发布研报表示，2月5日，小米集团举行了分析师会议，讨论“新冠”疫情对公司的影响。认为公司受到疫情的影响小于同业，主要因为公司线上销售占比较高，同时互联网服务业务稳健。 
+由于现阶段疫情对公司的影响还无法量化，暂时维持盈利预测不变，维持跑赢行业评级和目标价13.50港元，对应22倍2020年市盈率，较目前股价具备7%上行空间。
+2月4日中信证券表示，考虑到手机业务触底回暖以及有利5G周期支撑，适当上调小米公司盈利预测，并上调目标价至15.6港元，维持“买入”评级。 
+责任编辑：张海营",2020-02-08 11:26:29,新浪财经

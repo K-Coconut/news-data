@@ -1,0 +1,901 @@
+,title,content,pub_time,src
+0,云南：正是春暖花开时,"https://player.v.news.cn/api/v1/getPlayPage?uuid=1_1a20e72966714fc295a9d816818dc691&vid=f33aea17554ff7ca3f7f6e673a93af98&playType=0
+海棠花娇艳动人。供图
+三月云南，繁花似锦，处处洋溢着花香。在大理白族自治州宾川县，火红的木棉花挂满枝头，点缀着街道；在曲靖市会泽县，梨花与古玉兰竞相绽放，小镇春光无限好；在德宏傣族景颇族自治州芒市，人们漫步桃园，桃花开得灿烂夺目，清香扑鼻。百花装点着云南大地，人们一起赞美春天，一起看春暖花开。(完)(刘云)
+古玉兰开满枝头。(image_address=""//comment.10jqka.com.cn/sourcepic/12/0MK7qs34.png"")发(徐汝枞摄)
+漫山杜鹃花开。供图
+桃花初绽。供图
+油菜花开。供图
+游人漫步桃园。供图
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-18 08:59:55,同花顺
+1,疫情推动互联网医疗“入春”：医生资源告急 不及用户数万分之一,"过去的两个月，新冠疫情给各行各业都带来不小的冲击。3月16日国家统计局公布的数据显示，2020年1、2月份规模以上工业增加值同比下降13.5%，全国服务业生产指数同比下降13.0%。
+在一片寒冬中，互联网医疗行业却在疫情的推动下提前迎来了春天。据易观千帆监测数据显示，2020年春节期间(腊月二十九至正月初六)，互联网医疗在线问诊领域独立APP日活最高峰达到了671.2万人，最大涨幅接近160万人，涨幅高达31.28%。
+各大互联网医疗平台都迎来数据暴涨。截至3月17日，微医新冠肺炎实时救助平台累计访问量已经突破1.2亿人次，累计免费咨询人次超过了163万;企鹅医生平台在线问诊已服务咨询患者超过600万人次平台，总注册用户数量1700万，其中付费患者数环比增长122.66%;平安好医生疫情期间平台累计访问人次达11.1亿，APP新注册用户量增长10倍。
+有了流量加持的互联网医疗是要走上发展的快车道了?
+市场扩容，盈利拐点或将提速
+“这次新冠肺炎疫情，我们相信是互联网医疗的市场认知拐点。”微医集团董事长兼CEO廖杰远对蓝鲸财经表示，“全社会确确实实地第一次对互联网医疗真正形成了一致的共识。尤其对我们这个行业来讲，可能30天的时间，对整个行业的推动可能都超过3年。”
+对于互联网医疗企业而言，市场渗透率过低一直是行业发展路上拦路虎。长期以来，互联网医疗企业依托营销获客，但与网约车、外卖等业务不同，烧钱在医疗赛道上并不奏效，几年时间过去，大部分人对线上问诊仍抱有疑虑。
+以阿里健康为例，2014年港股借壳上市以来连年亏损。其2019年中期业绩报告显示，公司实现营收41.17亿元人民币，同比增长119.1%;净利润亏损762.9万元，同比收窄91.5%。其中，销售及市场推广开支3.3亿元人民币，同比增长52.85%。
+新冠疫情给长期陷于获客困境的互联网医疗企业带来一场受众以亿计的用户教育，长达几个月的时间也培养了用户的习惯，多家研报都认为2020年互联网医疗渗透率会创下新高。
+除此之外，一位业内分析师对蓝鲸财经指出，疫情期间有关互联网医疗的政策也在逐步放开，尤其是纳入医保的相关政策落地，对于整个行业而言是长期重大利好，持续亏损的互联网医疗行业的盈利拐点可能因此提前到来。
+2018 年以来，互联网医疗发展路径逐渐清晰，国家相继发布了互联网医疗的纲领性文件及互联网诊疗、互联网医院、远程医疗三个配套文件，但尚缺医保支付关键一环。中国医保在医疗总支出中占比71.4%(2018 年)，医保能否覆盖的重要性不言而喻。
+3月2日，国家医保局、国家卫生健康委印发《关于推进新冠肺炎疫情防控期间开展“互联网+”医保服务的指导意见》(以下简称《意见》)。《意见》指出，经卫生健康行政部门批准设置互联网医院或批准开展互联网诊疗活动的医疗保障定点医疗机构，按照自愿原则，与统筹地区医保经办机构签订补充协议后，其为参保人员提供的常见病、慢性病“互联网+”复诊服务可纳入医保基金支付范围。
+微医方面对蓝鲸财经表示，互联网诊疗纳入医保支付，这是湖北武汉、山东泰安等试点地区的一小步，却是全行业的一大步。医保支付的放开，会极大扩大在线诊疗的服务人群和服务内容，互联网医疗行业真正进入一个加速发展的时代，这也意味着，能够打通在线问诊、开药、支付等闭环的服务被纳入了政府购买服务范围，这对产业市场空间是一次大扩容。
+企鹅杏仁集团总裁马丁认为，医保作为“付费方”，需要考虑如何在有限的资源里，最大限度的提供最大的保障。常见病、慢性病线上复诊服务纳入互联网医保，对互联网医疗行业发展确实是十分利好的便民措施，而对医保本身而言，也是很好的节约成本的方式。
+接下来的发展似乎也佐证了这些观点。日前，国家医疗保障局局长胡静林在2020年出版的第六期《求是》杂志上发表署名文章。文章称，武汉针对门诊重症慢病患者的需求，每日纳入医保支付的“互联网+”医疗服务费用超过1300单，向定点零售药店流转处方超过1100单。
+政策的开放，流量的支持，互联网医疗行业走上了一个快速扩容的道路，但这条路真的好走么?
+难啃的骨头在供给能力
+互联网医疗行业快速扩容一方面说明具有其广阔的市场前景，但另一方面也对其医疗供给能力提出巨大的挑战。
+目前，中国优质医疗资源主要集中在大型公立医院。 原先由于没有医保接入，大型实体医院推进互联网医院建设的动力不强，只有部分病源相对缺乏的中小型医院愿意开展互联网医疗业务，截止2019 年11 月，互联网医院牌照仅发放269 家，而全国二级以上医院有12801家。
+同样的，作为医疗资源核心的医生群体也处于紧缺状态。疫情期间，各大互联网医疗平台问诊需求激增，微医、阿里健康、企鹅医生等在推出在线义诊的同时，也都在不断号召动员更多医生加入进来。
+据丁香园创始人李天天近日透露，丁香园现有医生用户存量为200多万，但实际参与在线问诊的医生数量仅有1.5万多人。医生与用户的比例还没达到万分之一。
+多位业内资深人士对蓝鲸财经表示，丁香园的情况并不是特例，而是业内常态。同时他们指出，医生资源的紧缺也迫使各家互联网医疗平台探索更多线上线下的合作可能性，高效地打通线上线下医疗资源、扩张自身医疗资源供给能力可能就是未来互联网医疗平台的核心竞争点。
+连接了超过3200多家医疗机构、36万多医生的微医也表示依托实体医疗机构是其开展服务的基础，而且它认为接下来互联网医院与实体医疗机构会长期保持这种线上线下密切合作的关系。
+同时微医方面对蓝鲸财经强调，未来数字健康服务的关键在于“通”，只有在线上把医疗、检查检验、药品、医保和数字化五个要素打通，打造更多线上线下结合、医药保健养贯通的一站式服务，才能满足人们的不断增长的就医需求、健康需求。
+与此同时，聚集了45万医生的企鹅医生平台则将目光转向基层医疗。企鹅医生方面对蓝鲸财经表示，这次疫情的爆发，让其意识到医疗供给还是非常的稀缺，尤其基层医疗在整个环节中作用的缺失。
+企鹅医生方面认为，对于互联网医疗行业来说，当下直接帮助大型三甲医院是不太奏效的策略。因为它的能力既受限于线上诊断能力，也受限于它线下检验检测闭环的能力，还受限于线上远程治疗的服务能力，这三个受限可能意味着真正的主战场是在基层医疗。
+对此，企鹅医生未来希望能够加速培养更多的家庭医生，以家庭医生为联结纽带推动分级诊疗，促进优质服务资源下沉到社区卫生服务中心，助力基层医疗的健康发展，形成线上线下融合的一站式医疗健康服务体系，才能提高医疗资源利用效率，帮助更多家庭。
+各家互联网医疗平台未来策略不同，但都致力于推动线上线下融合，提高自身医疗供给能力。在搭上疫情带来的流量快车后，互联网医疗行业会驶向何方，蓝鲸财经将持续关注。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：xr",2020-03-18 08:58:55,同花顺
+2,纽约大学打造创新聚合物材料 让氢燃料电池具备更高能量/降低价格,"盖世汽车讯据外媒报道，亚马逊等公司、中国等国家以及丰田、本田和现代等汽车制造商都在大举投资氢燃料电池技术和基础设施，而且对销售以及实现聚合物电解质燃料电池非常感兴趣，可能会给交通带来革命性的变化，到时街道上到处都是只排放水蒸气的汽车。不过，清洁、绿色汽车和卡车的实现遇到了阻碍，因为不仅需要大规模投资建造基础设施，还需要对氢燃料电池本身进行更高效的处理。降低生产成本，即让氢燃料电池的标价更低将为更多汽车细分市场(包括高性能汽车)打开大门，可能会推动绿色汽车更广泛地得到普及。
+纽约大学坦顿工程学院(NYU Tandon School of Engineering)的一组研究人员在化学和生物分子工程系教授Miguel Modestino的领导下，与劳伦斯伯克利国家实验室(Lawrence Berkeley National Laboratory)合作打造了一种创新聚合物材料，能够解决上述两个问题。
+该项研究关注于一种混合材料，能够将大气中的氧气大量输入电池的电极反应区，让燃料电池产生更多的能量，同时大量减少燃料电池所需的铂等昂贵材料，可能能够解决该行业面临的一个主要挑战。
+氢燃料电池包括阳极和阴极，两者之间还有一层电解质膜。氢气在阳极中以及与阴极中氧气反应的过程会产生电力。在氢气与阴极中氧气发生反应时，氢核会与氧结合产生电和水。离子导电聚合物(离聚物)被用于将氢核带到反应区，反应区的氧气需要穿透离子导电聚合物以驱动发电反应。
+目前，市面上的离聚物通常是全氟磺酸(PFSA)聚合物，由聚四氟乙烯(PTFE)基质线性链状主链和附着在PTFE主链上的悬垂磺酸基组成，而PTFE主链使其具备离子导电性。虽然这种与特氟隆分子结构相似的复杂组合具有较高的机械强度，但研究表明，它的氧渗透性较低，导致燃料电池的能量损失较大。
+(image_address=""http://e.thsi.cn/img/c7228f60b3cdc6bf"")
+因此，研究人员通过将线性PTFE聚合物链与庞大的氟化链交换，同时解决了几个问题。氟化链增加了基质的自由体积，极大地增强了其在燃料电池中运输氧气的能力。
+Modestino解释表示，此种混合材料包括一种离子导电聚合物以及具有高渗透性的基质。“我们打造了一种创新共合物，将两种成分结合在一起，其中一部分传导离子，另一部分具备高渗透性，可以渗透氧气。”(文中图片均来自纽约大学)
+(责任编辑：HN666)
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-18 08:58:38,同花顺
+3,首批小尺寸OLED！能当显示器用的LG电视来了：完美大屏,"近日，据外媒报道，LG2020年OLED电视新品即将在美国上市。
+此次上市的新品共有12款，全部为OLED产品，将于本月开始陆续上市。尺寸有48、55、65、77、85英寸可选，分辨率有4K、8K可选，价格最低为1499美元，最高为29999美元(约合人民币21万元)。
+(image_address=""http://e.thsi.cn/img/c2c513604d6ce35b"")
+其中最值得一提的是48英寸OLED电视OLED48CXPUA，这是首批推出的小尺寸OLED电视，也是一款可以当做PC显示器使用的电视产品。
+规格上，OLED48CXPUA搭载了一块48英寸4K分辨率(3840x2160)OLED面板，120Hz刷新率，支持G-Sync防撕裂技术，支持Dolby Vision、Dolby Vision IQ、HDR10、HLG、技术，内置第三代α9处理器。
+凭借着48英寸的大小，上手过的外媒表示其可以很轻易的放在桌子上，而且4K+OLED+120Hz也可以满足绝大多数PC玩家的需求，想要超大屏显示器的玩家可以关注一下。
+至于价格OLED48CXPUA售价1499美元(约合人民币1万元)。
+图源Trusted Reviews 
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-18 08:58:24,同花顺
+4,美国将推万亿美元刺激计划 或每人发放1000美金,"周二，美国白宫正在寻求一项价值8500亿到超过1万亿美元的刺激计划。
+一位政府官员表示，方案可能包括5000亿至5500亿美元的补助或减税方案；2000亿至3000亿美元的小型企业援助；500亿到1000亿美元航空业补助。官员表示，或有2500亿美元将直接支付给受到影响的美国民众。
+美国财政部长姆努钦在新闻发布会上表示美国人现在需要现金，在发布会上，姆努钦介绍了美政府为抗击近期事件做出的一系列努力。
+目前白宫需要就此刺激计划与美国国会谈判，政府已明确表示，航空业至关重要。美国总统特朗普和姆努钦还指出，随着旅游业的停滞，邮轮和酒店业面临着特殊的挑战。不过，民主党人指出，对行业的任何支持都必须落实到工人身上。
+犹他州参议员米特·罗姆尼在周一建议政府直接向每一位美国人提供1000美元，以减轻近期事件所带来的影响。同时，议员正在努力推动更多紧急支出计划。总统特朗普在三月初签署了一项83亿美元的计划。第二项救助法案目前正在国会讨论，国会就该法案中的带薪休假产生争议，该法案目前尚未通过参议院。
+参议院少数党领袖查克·舒默(Chuck Schumer)的办公室周一表示，他将提出第三项提案，该提案将花费至少7500亿美元。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：xr",2020-03-18 08:58:04,同花顺
+5,“代客”理财“风险”多 资产管理是正道,"(image_address=""http://e.thsi.cn/img/b0cc9b5b6cd318f0"")
+(image_address=""http://e.thsi.cn/img/7a7fb8833e14ac4b"")
+(image_address=""http://e.thsi.cn/img/663421c4c3ce4b6e"")
+特别声明：本长图文根据人民日报《违规理财隐患多资产管理是正道》案例改编，所述案例仅供参考。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-18 08:57:17,同花顺
+6,波音呼吁美国政府向航空制造业提供600亿美元援助,"北京时间18日消息，波音公司周二呼吁美国政府向陷入困境的美国航空航天制造业提供600亿美元援助，该行业正因为新冠病毒疫情面临巨额损失。
+此前有报道称，波音正在寻求“数百亿美元”的美国政府贷款担保和其他援助，因为由于新冠病毒对航空业的影响，该公司面临着迫在眉睫的流动性紧缩。
+波音发言人(Gordon Johndroe随后表示，该公司“支持提供至少600亿美元的公共和私人流动性，包括给航空航天制造业的贷款担保。”
+据知情人士透露，波音已告诉美国议员，它需要大量的政府支持来满足流动性需求，因为在目前的市场环境下，其无法筹集资金。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-18 08:56:37,同花顺
+7,三星电子：预计2020年5G储存芯片需求将增加,"(image_address=""//comment.10jqka.com.cn/sourcepic/12/0MLAy7/GvLwtsay.png"")讯3月18日早间消息，据外媒报道，韩国三星电子近日表示，预计在2020年，5G和数据中心的储存芯片需求将增加。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-18 08:55:55,同花顺
+8,越南将暂停签发旅游签证30天,"格隆汇3月18日丨越南政府在其网站上发布声明称，由于新冠疫情蔓延，越南将暂停向所有国家的旅客发放签证，为期30天，出于外交或商业目的入境越南的旅客除外。该决定于3月18日生效。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：xr",2020-03-18 08:54:39,同花顺
+9,刘尚希：建议今年减税降费由中央承担 不宜过度扩大专项债规模,"疫情对我国经济造成冲击，随着疫情在世界范围的蔓延，其负面影响可能放大。为了对冲疫情影响，促进经济运行在合理区间，宏观政策力度需要加大。
+其中，积极的财政政策要更加积极有为。围绕积极财政政策如何发力，市场机构有诸多建议，包括加大减税降费力度、提高赤字率、扩大地方专项债规模等。
+我国政策空间依然充足，但空间也在缩小。像2019年2万亿大规模减税降费，带来部分地方财政的短收，多个省份出现了财政收入负增长。而今年受疫情影响，一方面企业经营困难会影响其税收贡献，财政收入增长余地更小；另一方面企业困难加大，需要财政加大支持力度，这会进一步加剧地方财政收支矛盾。
+如何看待疫情对经济的影响？财政政策如何发力稳经济？如何应对地方财政困境？带着这些问题，21世纪经济报道记者专访了中国财政科学研究院院长刘尚希。
+刘尚希指出，包括减税降费在内的宏观政策，对经济的拉动作用在减弱，需要推进重点领域改革，来提振市场信心，进而更好地拉动经济。不宜过度扩大地方专项债规模，这可能造成对市场投资的挤出效应。他还建议，2020年减税降费可由中央财政承担，以减轻地方负担，相应适当扩大2020年赤字规模来弥补减收缺口。
+高度不确定性下需要新预案
+《21世纪》：2月数据陆续公布，当前怎样衡量疫情对中国经济的影响？中国疫情防控工作不断取得积极成绩，但疫情又在全世界范围内蔓延开来，WHO确定其为大规模流行病，这会对中国经济造成什么影响？
+刘尚希：衡量疫情对经济的影响，要放在全球来看，放在中国来看已经远远不够。按照世卫组织的说法，这次疫情是全球大流行，风险级别是最高的。
+在经济全球化的背景下，全球产业链、供应链都会受疫情影响。以前疫情防控主要在中国，会造成我们出口交货的不及时。现在疫情在全球蔓延，其他国家疫情越来越严重，国产化还不能替代的零部件、原材料等进口会受到影响，有些产品出口也会受到影响。当然，与抗疫所需产品相关联的出口会扩大，但无法弥补全球经济下挫的负面影响。
+当前国内和全球都受冲击的局势下，疫情对经济的影响程度在加深，风险也在升级。
+《21世纪》：这是否会对我们完成2020年既定经济社会目标造成影响，尤其是2020年GDP相较2010年要翻一番的目标？
+刘尚希：面对高度不确定性，毫无疑问应该实事求是，对2020年经济社会发展目标、和宏观政策目标，应该要有新的预案和做出新的考虑。
+经济增长合理区间应瞄准就业目标
+《21世纪》：中央明确，宏观政策要加大力度，防止经济运行滑出合理区间，防止短期冲击演变成趋势性变化。当前，宏观政策的着力点应该放在哪里，如何防止滑出合理区间？
+刘尚希：经济增长的合理区间，应该瞄准就业目标。能保证充分就业、高质量就业、平等就业的经济增速，就是合理的经济运行区间，单就经济增速本身无法判断其是否合理。
+我们一直强调，发展要以人民为中心，核心是要解决人的问题，所以经济发展应以“就业状态（包括就业充分、稳定、平等）”改善为中心。经济增速定在哪里要视情况而定，只要有较高质量的就业，经济增速高一点、低一点都不是问题。就业状态的改善事关经济和社会两个方面，是我国高质量发展的基础。
+《21世纪》：2019年我国城镇调查失业率虽有小幅攀升，但仍在预期范围内。在人口老龄化、服务业占比不断提升的背景下，就业问题值得担忧吗？
+刘尚希：在人口老龄化的背景下，就业不存在总量问题，主要是结构问题。
+随着我国服务业比重不断提高，这能吸纳相当规模的就业，但制造业的“机器替代人”的进程，部分就业岗位随之消失。就业的结构性矛盾，在数字化转型、产业结构升级过程中可能会愈发凸显，加之人力资本积累在城乡间差距较大，像农民工很多都只有初中以下学历，对于低学历、缺乏劳动技能的群体而言，未来找工作会越来越困难。
+当前，高校毕业生也是很重要的群体，教育机构的专业设置如何更好地与现实需要匹配，怎么更好地与高质量发展、数字化转型、产业升级相匹配至关重要。这需要加快深化教育体制改革，以此来增强人才培养机构与经济社会发展需要相匹配的自适应能力。
+结构性就业矛盾，可能会成为疫情之后的头号公共风险。就业问题一边连着社会，一边连着经济。居民收入来自就业，加上收入分配的问题，如果造成社会阶层快速分化，可能带来其他社会问题。
+劳动力是生产要素，从资源配置的角度来看，结构性就业矛盾意味着部分劳动力出现闲置，同时部分企业招不到人，生产线无法满负荷运转。这种资源的低效配置，会影响经济产出，影响全要素生产率的提高。就业的结构性矛盾会拖累经济增长，在这种条件下，任何经济刺激手段、宏观政策都无法发挥作用。
+在疫情冲击下，可能有几千万人自愿待业，因为担心染病，而选择待在家里，这会影响他们的收入。与此同时，企业招不到人，选择涨工资吸引更多人来，可能带来用工成本的进一步上升。疫情下，就业风险在加大。
+赤字空间没有看起来那么大
+《21世纪》：2月份很多企业未能正常开工，3月份还在积极推进复工复产，加上疫情期间允许困难企业税款缓缴，以及2019年大规模减税降费的翘尾因素，地方财政收入是否会受到很大影响？有什么举措可以应对财政困难？
+刘尚希：地方财政现在非常困难，不是一般的困难。大部分地方主要靠中央的转移支付过日子。中央的钱从何而来？从较发达地区来。这意味着全国财政困难整体加剧。
+在这种情况下，中央、地方政府都要过紧日子。政府刚性支出在加大，但财政收入增长很有限，需要对现有支出按照轻重缓急来排队。当前首先要保证疫情防控的经费开支，再就是地方保基本民生、保工资、保运转的“三保”支出。现在压缩一般性支出的空间越来越小，其他项目支出也要有保有压，要趁这个机会加快调整财政支出结构。
+调整财政支出结构，和政府机构改革是一体两面的。近年来，放管服改革取得一定成绩，但政府职能转变推进起来仍然困难重重，在这种情况下，要优化政府支出结构也是比较困难的。
+当然，地方政府还是可以想一些办法，比如盘活公共资产和资源，来缓解当前的支出压力。另外，很重要的是借助市场力量，部分原本政府提供的服务，可以让市场来参与，避免政府直接投资带来的压力，有的可通过购买服务的方式来实现。
+还应该鼓励政府和社会资本合作（PPP模式），地方专项债规模的扩大实际挤出了部分PPP项目，可以通过市场化改革的方式，通过规范政府与社会资本合作来缓解当前财政支出压力。
+这种情况下，2020年的赤字要扩大一些。但实事求是地讲，我国赤字扩大的空间，并没有表面看到的那么大。
+减税降费下还需加快改善营商环境
+《21世纪》：外界对于更积极有为的财政政策有颇多期待，提到最多的是呼吁加大力度减税降费。目前，阶段性降低企业社保缴费，获得较为普遍的欢迎。后续减税降费该如何推进，其提振经济的效果如何？
+刘尚希：疫情期间，一些企业没有营业收入、增加值、利润所得，税源都没有，减税对于休眠的企业没有实质意义。但是，社保减费是有用的，因为员工工资要继续支付，减少企业社保缴费，相当于减少企业的固定支出，对于企业维持资金链、维持生存是有帮助的。
+疫情过后，减税降费有一定作用，但也需要配合企业预期改善等，才能较好地提振经济。从实际情况来看，减税降费对经济的拉动作用在减弱。像2019年2万多亿减税降费，拉动经济增长0.8个百分点，去年GDP规模接近100万亿元，也就是说2万多亿减税降费带来了不足8000亿元的经济增量。
+减税降费是能减轻企业负担，但企业是否增加相应投资或支出，更重要的是取决于企业预期和企业信心。影响企业预期的因素有很多，很重要是预期利润率，还有营商环境是否公平，生产要素、金融服务供给是否平等、充分，民营企业“弹簧门”“玻璃门”现象是否减少等。如果体制环境改善了，投资者、民营经济有信心了，减税降费的作用就很明显。如果只是减税降费，其他方面没有改善，税收乘数效应会非常低，可能还会给财政带来很大压力，这样的政策“性价比”很低。
+不宜过度扩大专项债规模
+《21世纪》：中央明确要扩大专项债发行规模。部分机构建议将2020年专项债规模提升至3万亿元，用以支持基建、新基建工程。扩大专项债规模，对提振经济能起到什么作用?
+刘尚希：一味地扩大地方专项债的规模，不是很好的办法。符合地方专项债的项目，需要有足够的现金流，这样的项目越来越难找，部分地方出现了“资金等项目”的现象。部分专项债项目，可以交给市场来做，一味扩大专项债规模还可能挤出市场投资。
+扩大专项债规模，能增加投资支出，进而拉动经济增长。这是需求刺激政策，在疫情条件下，物流尚未恢复、复工复产还在过程中，需求刺激政策是无效的。等到疫情过后，拉动基建投资的政策，也面临乘数效应下降，拉动作用越来越弱的状况。我们测算的政府投资乘数小于1 ，这与2009年大相径庭。
+2020年财政支出结构应该优化，不宜过度扩大地方专项债规模，建议2020年的减税降费由中央财政承担，不要让地方来分担，因为减税降费会加大地方财政平衡压力，可以适当扩大2020年赤字规模，来弥补减税降费带来的减收缺口。
+此外，针对当前尤为重要的就业问题，积极财政政策应该发挥作用。扩大政府投资当然能解决一定就业问题，但要解决当前结构性就业矛盾，并不是单纯上基建项目就能实现的，尤其是对年轻人就业，其作用很小。
+只要改革立马可以见效
+《21世纪》：宏观政策的作用有限，是否需要其他举措加以配合?
+刘尚希：面对经济、社会问题相互交织，国内、国外风险彼此叠加。我们这个社会共同体变得越来越复杂了，经济体系也越来越具有不确定性，单一的宏观经济政策，政策效用的确在减弱，解决不了多少问题。
+宏观政策要和改革措施结合起来，通过改革来改善市场预期、增加投资者信心。像国企混改、支持民营经济发展、土地制度改革、财税金融体制改革等，这些重要领域的改革，有实质推进，能更好地发挥市场配置资源的作用。
+认为改革短期没法见效的想法是错误的，只有改革才能增强信心，立马可以见效，改革才能从根本上扭转信心不足的问题。
+解决任何一个局部的问题，防范化解任何一类公共风险，都需要从整体着眼才能奏效。当前形势下，完善制度，提高治理效能变得更为紧迫。 (编辑：李博)
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：xr",2020-03-18 08:53:52,同花顺
+10,在倒闭的照相馆发现来不及发出的照片他通过网络寻找照片的主人,"今年早些时候，因为工作原因，美国堪萨斯城男子布瑞恩.波诺尼前往清理一家已经倒闭的照相馆。他在房间里发现了大量还没来得及发出的家庭照片。波诺尼说，他本可以无视这些照片，只做好自己的工作。不过，这些照片中有毕业照、结婚照，也有新生儿的照片。换作是自己，肯定无法丢弃这些照片。于是，波诺尼和妻子挑选了167张照片，将这些照片用车运回家中，然后通过网络寻找照片的主人。至今，波诺尼至少已经帮40张照片找到了主人。
+(责任编辑：王治强HF013)
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-18 08:53:26,同花顺
+11,研究人员研发吸收太阳光的单分子将太阳能转化为氢气供汽车使用,"盖世汽车讯 据外媒报道，科学家们首次研发了一种能够有效吸收阳光的单分子，而且该分子还可以作为一种催化剂，将太阳能转化为氢气，而氢气可作为清洁的燃料替代品，用于燃油汽车。该种新分子可以从整个可见光光谱中收集能量，与目前的太阳能电池相比，可以多利用50%的太阳能。这一发现可以帮助人们摆脱对化石燃料的依赖，转向使用不会对气候造成影响的能源。
+该研究团队由美国俄亥俄州立大学（The Ohio State University）化学与生物物理动力学中心主任兼化学教授Claudia Turro领导。Turro表示：“我们的想法是利用太阳光子，将其转化为氢气。简而言之，我们利用来自阳光的能源，并将其存储在化学键中，以便日后使用。”光子是阳光的基本粒子，包含能量。
+研究人员首次证明，可以从太阳光的整个可见光光谱（包括低能量红外光谱，也是太阳光光谱的一部分，以前很难收集该光谱的能量）中收集能量，并迅速且有效地将其转化成氢气。氢气是一种清洁燃料，在使用过程中不会产生碳或二氧化碳。
+Turro表示：“该理念得以实现是因为该系统能够让该分子处于激发状态，吸收光子，并存储两个电子，以制造氢气。在一个由两个光子产生的分子中存储两个电子，并合成制氢，这一做法前所未有。”
+将太阳能转化为汽车燃料首先需要利用一种机制收集能量，再将此类能量转化为燃料，而转化需要一种称为“催化剂”（能够加速化学反应）的东西，让太阳能转化为氢气等可使用的能源。
+以前的研究大多数是尝试收集紫外线等较高能量波长的阳光，再将此类太阳能转化为氢气。Turro表示，少数依靠单分子去收集能量的研究也非常低效，部分原因在于无法从整个可见光光谱中收集能量，而无法做到这一点的原因在于催化剂本身降解得很快。
+Turro的研究小组发现了如何用一个分子（元素铑的一种形式）制造催化剂，从而可以损失更少的能量。研究小组找到了方法，可以收集从红外线到紫外线整个可见光光谱的能量。该研究小组设计的系统与之前和紫外线光子工作的单分子系统相比，效率提高了24倍以上。
+在该项研究中，研究人员用LED灯照射含有活性分子的酸性溶液，发现制出了氢气。Turro表示：“该方法可行的原因是该分子很难被氧化。”
+Turro表示，在该研究小组将成果应用于现实世界之前，还有很多工作要完成。铑是一种稀有金属，以铑为原料制造催化剂的成本较高。目前，该研究小组正致力于改进该分子，使其能够在更长的时间段内制造氢气，并致力于利用更便宜的材料制造催化剂。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：xr",2020-03-18 08:53:21,同花顺
+12,拼团买菜点外卖后杭州人开始拼团理财了,"有网友说，杭州的银行人最近成了“博主”和“微商”，这一点也不夸张。当下正是银行的“开门红”，社区、写字楼、广场……这类传统的线下营销跑不出去，去了可能也没人，但考核指标不能打折，怎么办？那就线上营销吧，这一点，很多银行人也想到了：建客户微信群，各类基金、理财、保险等产品被搬到了朋友圈，再发点短视频，做做直播。大家利用自己的圈子，先拉拢老客户和挖掘潜在客户。
+据记者了解，最近线上理财比例大幅提升，多家银行转向社群营销，团购理财卷土重来。相比于普通理财，它的收益率比同期发售的产品高0.2个百分点左右。同时，银行理财子公司也正在加码线上，放开“面签”限制。也就是说，投资者首次购买理财产品不用亲自去网点，可以直接在网上完成风险评测。记者王潇潇
+拼团买理财产品银行花式社群营销
+为了吸引更多潜在客户，部分银行另辟蹊径，推出了“拼团理财”产品，只要成功组团，购买的收益率会略有提升。
+比如，某股份制银行的团购理财分2人团、3人团和4人团，人数越多，收益率越高。以最新一期拼团理财为例，半年期、1万元起购、50万元上限，有2人、3人和4人拼团款，业绩比较基准分别为4.33%、4.36%、4.40%。而最新一期半年期理财业绩比较基准为4.15%，也就是说，2人、3人和4人成团的收益率，能分别提升0.18个百分点、0.21个百分点和0.25个百分点。
+购买“拼团理财”产品也有部分限制，比如，发起者必须是老客，参与者必须是新客。“新客必须要来我行办卡，做风险评估测试，完成后就可以参与了。另外，拼团理财只能在手机上购买，需要投资者下载手机客户端。”该行理财经理介绍。
+如果参与团购的新客中途退出，邀请人的这部分收益也不会受到影响。
+上述理财经理介绍，新客完成开卡和风险评估，在拼团理财确认前临时退出，那么也算拼团成功，理财转让功能更不会受影响。需要提醒的是，拼团理财的办理时间需要在购买时间之前，因为涉及线下网点开卡，一定要打个提前量。
+“基本上，与普通理财产品差异不大。但是个人投资者在选择时，要看风险评级是否和自己的承受度相对应。”上述理财经理表示。
+有银行人士坦言，其实团购理财这种形式，几年前就出现过，只不过最近受疫情影响，很多银行在营销手段上有一些新尝试，本质上还是通过提高理财收益率吸引更多储户。
+银行理财子公司加码线上
+投资者可在网上做风险测评
+投资者初次购买理财产品，往往需要去网点做风险评估，这是一件时间成本较高的事。最近，紧跟着线上理财趋势，多家银行理财子公司开始加大线上营销，尝试线上测评。
+以光大银行为例，记者下载了该行手机银行，注册后登录，首页上选择了一款带有子公司理财标签的产品，点击购买，页面显示，购买需要进行风险评估，点击“风险评估”，跳转至测评界面，完成后就可以继续购买理财产品。
+据了解，最先尝试线上评估的是邮储银行（601658）、建设银行、工商银行等理财子公司。随后，部分股份制银行理财子公司也开始放开“面签”限制。
+资金面宽松
+银行理财产品收益率首次“破4”
+在资金面持续宽松的态势下，银行理财产品收益率出现下跌。
+据融360大数据监测显示，今年2月人民币非结构性理财产品平均收益率为3.98%，环比下降2个基点，创近39个月新低，是2016年12月以来首次跌破4%。其中，受投资者青睐的结构性理财产品，有三成未达预期最高收益率。
+此外，近期老百姓无法去银行网点购买理财产品，线上理财比例大幅提升，今后线上购买银行理财产品将成为主流方式。
+另外，工商银行、农业银行、建设银行、中国银行、交通银行、民生银行、华夏银行、光大银行等银行，纷纷发行“抗疫”主题理财产品。有的产品，面向特定人群，如医护人员、军人等，有的产品则面向特定地区，如湖北。这些“抗疫”主题理财产品均为1年期以内封闭式产品，一般不收取投资管理费。由于银行向投资者进行一定让利，所以产品收益率要高于同期发售的同类理财产品。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：ljh",2020-03-18 08:52:57,同花顺
+13,意大利总理要求欧盟领导人发行冠状病毒债券,"格隆汇3月18日丨意大利总理孔特据称要求欧盟领导人发行冠状病毒债券。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：ljh",2020-03-18 08:52:06,同花顺
+14,波音(BA.US)花光约138亿美元贷款额度 正向美政府寻求数百亿美元援助,"智通财经APP获悉，两名知情人士透露，因近期全球卫生事件造成的经济动荡严重影响了整个航空业，造成流动性紧缩，波音(BA.US)正在寻求数百亿美元的美国政府贷款担保和其他援助。
+知情人士表示，波音已经告诉国会议员，需要大量的政府支持来满足流动性需求，在目前的市场状况下，公司无法从外界获得这一需求。
+周一波音证实，正在与美国政府进行谈判，而美国总统特朗普周二表示，美国政府将提供支持。波音公司指出，其收入通常有70％流向合作的17000家供应商，如果无法获得帮助，整个美国航空制造业可能会面临崩溃。
+波音公司还表示，至3月13日已用掉约138亿美元贷款额度。公司的总债务在2019年几乎翻了一番达到273亿美元，原因是波音补偿了航空公司并努力应对737 MAX复飞所产生的额外生产成本。周一，标准普尔将波音公司信用评级从“A-”下调两级，至“BBB”，这在标准普尔的评级系统中，距离垃圾级就隔着一个最低投资级评级“BBB-”。
+波音周二收跌4.39%，报123.92美元。周一该股收跌23.85%，抹去了前CEO穆伦伯格在任期间(2015年7月至2019年12月)的所有涨幅。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：ljh",2020-03-18 08:51:42,同花顺
+15,意大利：所有从国外入境的意大利人必须自我隔离14天,"格隆汇3月17日丨意大利交通部长说，在3月25日之前，所有从国外入境的意大利人必须自我隔离14天。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：ljh",2020-03-18 08:51:21,同花顺
+16,扑朔迷离的中蒙边境口岸蒙煤出口,"之前蒙古格日消息称，综合3月9日蒙通社新闻：根据蒙古国家特别委员会会议作出的决定，从3月15日开始，恢复向中国出口运输煤炭和石油。
+但时至今日，最新消息显得有点扑朔迷离。
+蒙古格日消息称，从3月15日上午正式开启，蒙古国的煤炭即将从嘎顺苏海图（甘其毛都）和西伯库伦（策克）口岸等向中国出口。
+得出这一结论的依据有两点。
+一是，3月16日蒙古国额尔登斯塔本陶勒盖公司总经理Б·钢呼亚格举行新闻发布会表示，依据蒙古国家特别委员会3月15日作出的决定，中蒙边境口岸自3月15日上午正式恢复开关。煤炭运输公司的司机们将穿上特殊的防护服，对车辆消毒后开展煤炭的运输工作。大约有90多个公司的1000多名司机上岗，采取不下车和不在中国境内过夜的方式运输煤炭。
+二是，据南戈壁省省长那仁巴特尔和该省边检部门的工作人员3月16日在接受记者采访时称，经过一段时间紧张有序地工作，目前，蒙古国向中国运输出口煤炭的车辆，经由嘎顺苏海图（甘其毛都）和西伯库伦（策克）口岸通关的各项准备工作已全部就绪。通关确定的基本原则是：蒙古国的货运车辆于每天的8时至14时期间出关，要求司机们必须当天返回蒙古国境内，不准在中国境内过夜。其中，恢复初期计划每天经由西伯库伦（策克）口岸通关的运煤车辆保持在200多台，由嘎顺苏海图（甘其毛都）口岸通关的运煤车辆保持300-350台左右。等运行一段时间稳定后，视情再增加通关车辆的台次。
+但据煤圈子报道，3月16日甘其毛都口岸、策克口岸均没有煤车入境。
+蒙古国家特别委员在3月16日又提出在4月1日开始恢复煤炭运输。
+3月16日早晨7点，蒙古国首都乌兰巴托解除封城，两个口岸大部分司机来源于乌拉巴托市，司机没有及时到达，没有解决司机住宿问题等。目前蒙古对特殊情况下煤炭运输企业所需的资质正在严格审核。
+目前蒙古西伯库伦口岸和嘎顺苏海图口岸保障设施、消毒能力、相关物资每天最多只能保障400辆车通行，而且蒙古国要求煤炭运输车辆必须在当天返回，保障不大量聚集人员以防御新冠病毒感染。
+中国煤炭资源3月17日从相关人员处了解到，因蒙古国在3月16日又新增确诊新冠病毒3例，且均为蒙古国公民，因此蒙煤通关日期再次推迟到了4月1日。
+甘其毛都口岸原计划15日恢复通关，由于等待蒙古国汽运验收场地等原因，3月17日暂时未恢复，目前了解到，原则上在蒙方滞留的车辆可以通关，国内车辆出关仍未明确。同时据部分贸易商反映，即使恢复通关，通关车数也将处于低位。
+蒙古国海关总署（MCGA）日前发布的数据显示，今年2月份，蒙古国煤炭出口量仅35.49万吨，较上年同期的190.69万吨大降81.39%，较1月份的242.55万吨大降85.37%，出口量降至历史低点。
+2月份，蒙古国向中国出口煤炭35.01万吨，同环比分别大降81.1%和84.88%。蒙古国出口中国煤炭量占该国总出口量的95%以上。
+1-2月份，蒙古国煤炭出口总量为278.04万吨，较上年同期的402.53万吨下降30.93%；出口额为2.29亿美元，同比下降31.15%。
+今年前两个月，蒙古国向中国出口煤炭266.49万吨，同比下降32.39%，出口额为2.18亿美元，同比下降33.19%。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：jdm",2020-03-18 08:50:49,同花顺
+17,万科总裁祝九胜：疫情整体对公司影响相当大 但也在逐步改善,"上证报中国证券网讯（记者 张良）3月17日晚间，万科总裁祝九胜在万科2019年度业绩发布会上表示，这场疫情整体上对公司的影响还是相当大的，体现在销售、交付、现金流、开复工等方方面面。销售方面，万科2-3月份的认购同比降低了510亿元，1月份抢了开门红，基本上没受到影响，万科在湖北进入了武汉、宜昌和鄂州，这三个城市1月23日以后基本就没有新的销售，尽管在集团占比只有3.1%-3.2%之间。另外给交付带来了压力，这次疫情让万科对10000个客户有交付延缓的可能性，全年的影响可能涉及到3.9万户。对开复工的影响也很直接，今年的开工比以往晚了40天。这些影响最终体现在现金流，对现金流的影响也很明显，由于销售的减少，导致销售回款的减少，由于疫情增加的防疫成本，万科每天至少5.3万人在抗疫一线，也增加了加班费等支出。总体来看，这次疫情对公司的影响相当大，销售回款的大幅度下降，并且也给未来1-3年产生结算压力。
+祝九胜表示，从目前的情况看，也有一些往好的方面改善的迹象，一个是客户来访量逐渐增加，绝大多数售楼处都开放了，恢复到1月份来访量的五成左右，在南方区域表现得更好一些，到了六成，在北方区域稍差一点，达到三成左右。另外，复工的情况也有所提升，到今天为止复工率已经达到八成，工地上的工友返岗人数已经达到了72%，当然这个比例还会进一步提升。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：xr",2020-03-18 08:50:31,同花顺
+18,英国四大运营商全部遭遇网络瘫痪！或因首相呼吁更多人在家办公,"据外媒报道，包括O2、EE、沃达丰以及Three在内的所有英国大型移动网络均陷入瘫痪状态。数百万在家办公的英国人受到影响，无法打电话、发短信和上网。
+许多用户在社交媒体上抱怨他们整个上午都无法打电话，有些人声称业务受到巨大影响。网友们表示：“我们不能为没有使用的服务付费。我们的手机上没有网络，不应该付费。你在抢劫我们。”
+EE发言人最初称，他们认为这是02网络的问题，但后来承认，这是“将英国移动网络连接在一起的设备发生的技术事故，导致许多客户今天打电话时出现了问题。”02的发言人表示，这是个“跨行业问题”，全面服务正在恢复。
+此前，当地时间3月16日，英国首相约翰逊呼吁民众尽量在家工作、减少外出。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-18 08:49:48,同花顺
+19,助力企业复工复产 四川省发展改革委、邮储银行30亿专项优惠贷款与您共克时艰,"近日，为贯彻落实四川省委省政府决策部署，一手抓疫情防控，一手抓复工复产，在保持经济社会正常运转中加强疫情防控，在做好疫情防控前提下实现经济社会发展目标，四川省发展和改革委员会与中国邮政储蓄银行四川省分行联合发布《关于深化“信易贷”融资服务支持疫情期间中小微企业复工复产有关工作的通知》，进一步加大“信易贷”融资服务对疫情期间中小微企业复工复产的支持力度。
+《通知》中提到，疫情期间，邮储银行（601658）拟提供不低于30亿元“信易贷”高信用额度、低融资利率、绿色通道专项额度，确保积极复工复产中小微企业的融资需求。同时，邮储银行还专门推出支持中小微企业复工复产的“复工贷”、“信易贷”、“工程信易贷”等专属信贷产品，有效扶持有关企业渡过难关，尽快复工复产。2月至今，邮储银行“复工贷”已投放11.19亿元，惠及企业309家。其中，“信易贷”新增投放86笔，5292万元；“工程信易贷”授信2.15亿元，已发放755万元。利率优惠，企业平均付息成本同比降幅超10%。
+此次“政银合作”推出专项融资支持，将极大提振全省中小微企业共克时艰信心，为确保就业，帮助企业复工复产，恢复经济动能提供了有效保障。下一步，四川省发展改革委和四川省邮储银行将继续发挥自身职能优势，主动协同各方资源力量，全力推动各类企业复工复产，切实解决企业在复工复产过程中遇到的困难和问题，为四川省经济社会发展做出积极贡献。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：jdm",2020-03-18 08:49:40,同花顺
+20,重庆加快推进市属国有企业支持5G通信网建设行动,"近日，重庆市通信管理局联合重庆市国有资产监督管理委员会召开联系沟通会，正式成立重庆市属国有重点企业5G领导小组，并印发《重庆市通信管理局重庆市国有资产监督管理委员会关于加快推进市属国有企业支持5G通信网建设的通知》。
+双方将贯彻落实重庆市委、市政府工作部署，紧紧抓住国家和重庆未来发展关键机遇期，大力推进5G通信基础设施建设各项工作，推动通信企业与市属国有重点企业全面对接并开放相关公共资源，加快重庆市5G网络部署、产业发展和商用步伐，推动数字经济和实体经济深度融合。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-18 08:49:29,同花顺
+21,黑龙江通信管理局局长赴哈尔滨移动数据中心调研新型基础设施建设情况,"2020年3月16日，黑龙江省通信管理局局长乔发民、副局长姜玉波赴哈尔滨移动数据中心调研新型基础设施建设情况。
+调研过程中，乔发民认真听取数据中心工作汇报，了解数据中心园区规划建设和新冠肺炎疫情防控情况。乔发民指出，加快5G、大数据中心等新型基础设施建设，是党中央的决策部署，黑龙江省信息通信行业必须抢前抓早，抓好落实。要坚持统筹谋划，做好规划衔接、工作对接。要坚持因地制宜，做到以用促建、建用并举。要坚持问题导向，切实为企业解决建设中的难题。乔发民要求继续发挥行业优势，运用大数据分析为疫情防控提供有力支撑，继续做好通信服务保障，借助信息化手段推进复工复产。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-18 08:49:25,同花顺
+22,新冠疫情带火南美洲外卖服务 创企Rappi送餐量增30%,"(image_address=""http://e.thsi.cn/img/1625b20b807c23f2"")
+(image_address=""//comment.10jqka.com.cn/sourcepic/12/0MLAy7/GvLwtsay.png"")讯北京时间3月18日早间消息，由于新冠疫情迫使许多学校停课、公司居家办公，使得南美洲很多国家的外卖服务得到了促进。
+哥伦比亚创业企业Rappi得到了日本软银的支持，在9个南美洲国家拥有约20万名外卖送餐员。与2019年最后两个月相比，他们2020年头两个月的送餐量增长了30%。
+Rappi在一份声明中说：“我们注意到超市订单数量显着增加，我们认为这是因为用户担心不确定性，并为应对不同城市采取的防疫措施而做出的反应。”
+Rappi说，仅考虑药房订单，自2月中旬新型冠状病毒大流行开始以来，其哥伦比亚市场的送货量增加了28%。该公司还补充说，巴西是该地区最大的市场。
+专门在大城市提供即食餐点的巴西应用iFood表示，衡量冠状病毒传播对其业务的影响为时过早。
+网约车服务Uber旗下外卖部门Uber EATS也拒绝提供巴西订单增长速度的数据，并强调“正在积极监测新型冠状病毒的状况”。
+同时，这些外卖企业都在采取预防措施来保护送餐员和用户。例如，除了测试非接触式交付外，iFood还创建了一个100万雷亚尔(约合20万美元)的基金，为员工的隔离提供支持。
+此外，Uber EATS将为确诊新冠肺炎或已被卫生当局隔离的驾驶员或送货员提供长达14天的财务援助。(樵夫)
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-18 08:49:24,同花顺
+23,财政部完成四期国债做市操作 规模共计28.1亿元,"新华财经北京3月17日电(王菁)财政部17日对四期国债进行了做市支持操作，其中两期为随买，规模共7.2亿元，另外两期为随卖，规模为20.9亿元；标的券期限包括1年期、3年期、7年期和10年期，期限分布均匀，参考收益率均低于二级市场。
+公开资料显示，本次操作标的券分别为2019年记账式附息(三期)、2019年记账式附息(五期)、2018年记账式附息(二十八期)和2019年记账式附息(六期)，操作规模分别为4.5亿元、2.7亿元、10.4亿元和10.5亿元。
+招标结果显示，这四期券参考收益率分别为2.1248%、1.6285%、2.6593%和2.7201%，据中债到期收益率曲线，3月17日，市场上1年期、3年期、7年期和10年期的国债收益率分别为1.8954%、2.2507%、2.7044%和2.7135%，本批次中标利率均低于市场交投水平。
+自2017年6月开始，财政部按月开展国债做市支持操作。据悉，国债做市支持运用随买、随卖等工具操作，其中随买是财政部在债券二级市场买入国债，相当于提前兑付，随卖是财政部在债券二级市场卖出国债，相当于小额续发。
+业内人士指出，财政部对这四期国债开展随买和随卖操作，有助于增加该券供给，提升流动性水平。目前国债收益率曲线较前期稍陡峭，多期限品种做市操作，既受益于资金面的确定性，相比单期国债又提供了更高的收益。
+此外，统计数据显示，今年前两个月，财政部均开展的是随卖操作，标的券也均为5年期的2019年第四期记账式附息国债，规模分别为13.7亿元和17.2亿元。
+编辑：史可
+声明：新华财经为新华社承建的国家金融信息平台。任何情况下，本平台所发布的信息均不构成投资建议。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-18 08:49:22,同花顺
+24,"特朗普据称寻求向美国人直接发放超过1,000美元","知情人士称，作为抗疫经济救助计划的一部分，特朗普总统想要给每个美国人直接发放超过1，000美元。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：ljh",2020-03-18 08:48:41,同花顺
+25,湖北：做好“指尖服务”助税收优惠政策落地红利落袋,"新华社武汉3月17日电（记者侯文坤）“我试了试，软件能自动计算免税销售额和免税额，该享受多少税收优惠。动动手指就一清二楚，太实用了”！近日，呷哺呷哺餐饮管理（上海）有限公司武汉长宜路店财务人员通过手机微信“尝鲜”使用“轻松填―疫情防控版”后欣喜地说。
+为了抗击新冠肺炎疫情，国家出台了支持疫情防控的防护救治、物资供应、公益捐赠、复工复产等一系列税收优惠政策，纳税申报变化较多。为了方便企业及时申报，帮助纳税人早熟悉、早享受优惠政策，湖北省、武汉市税务部门2月以来抓紧设计研发了增值税纳税申报指引“轻松填―疫情防控版”。
+“团队15个人白天下沉社区防疫，晚上挤时间研究，细心查找疫情防控优惠政策容易漏填、填错的内容，精心设计了电脑版、微信版‘轻松填’。”研发团队的负责人、武汉市税务局货物和劳务税处副处长张学东介绍，“轻松填―疫情防控版”有若干实用功能：一是模拟纳税申报，一般纳税人和小规模纳税人均只需填写关键数据，软件自动计算防疫增值税免税额，极大方便了纳税人；二是申报案例演示，制作了包括无偿捐赠、防疫生产留抵退税等9类业务案例和支持小规模纳税人复工复业优惠政策11类业务案例，每类案例都包含政策依据、税款计算、账务处理、填表要点等，供纳税人“对号入座”；三是防疫新政汇编，分税种汇集国家最新支持疫情防控财税优惠政策，供纳税人、缴费人便捷查询学习应用；四是常见问题解答，汇集疫情期间重点热点问题的答复，帮助纳税人缴费人判断掌握减税、免税优惠政策内涵、涉税事项处理、申报表填写等。
+“在广泛征求税务业务骨干、纳税人代表、注册税务师的意见基础上，研发团队数十次测试修正模块，为抗疫保供企业和企业复工复产提供了精准的税收政策支持。”湖北省税务局货物和劳务税处处长王泽民介绍说。
+据悉，3月以来，湖北税务部门推出的“轻松填―疫情防控版”经过网络视频培训和微信公众号推送后，“吸粉”10万多人次，成为纳税人轻松办理纳税申报、应享快享疫情防控税收优惠政策的贴心好帮手。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：ljh",2020-03-18 08:48:35,同花顺
+26,普京：俄罗斯成功抑制新冠病毒在俄大规模传播,"新华社莫斯科3月17日电（记者吴刚）俄罗斯总统普京17日表示，俄成功抑制了新冠病毒在俄境内大规模传播。
+普京17日发表电视讲话说，病毒从来都没有边界。考虑到当前人员流动频繁，整个世界都受到新冠病毒威胁，俄罗斯也未能幸免。当前俄抗击新冠肺炎疫情整体上可控，俄成功抑制了新冠病毒在俄境内大规模传播。
+普京表示，俄联邦和地方各级机构采取了有效的抗击新冠病毒的措施，这些措施必须得到严格执行。
+普京号召俄罗斯全体公民对这些措施表示理解和支持。他表示，目前需要的是团结、责任、纪律和互相帮助，正是这些品质帮助俄罗斯在历史上战胜了任何困难。
+截至17日，俄境内累计新冠肺炎确诊病例114例，其中治愈5例。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：xr",2020-03-18 08:47:48,同花顺
+27,战“疫”向春天 复工复产进行时,"图集
+(image_address=""//comment.10jqka.com.cn/sourcepic/12/0MK7qs34.png"")南昌3月18日电(王凯丰)企业车间、建筑工地、乡间田野……随着疫情防控形势持续向好，眼下复工复产的春潮正在赣鄱大地涌动。严防疫情，狠抓生产，江西省新余市在做好疫情防控的同时，出台多项帮扶政策，春耕备耕和复工复产工作正全面展开。
+近日，新余日报社新媒体中心策划专题微视频《战“疫”向春天》，向所有坚守复工复产岗位人员致敬。截至3月12日，新余市复工复产规上工业企业达368户，全市规上工业企业复工率达94.5%。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-18 08:47:09,同花顺
+28,因新冠肺炎大流行 Lime宣布暂停美加州、华盛顿州电动滑板车业务,"原标题：因新冠肺炎大流行Lime宣布暂停美加州、华盛顿州电动滑板车业务来源：(image_address=""//comment.10jqka.com.cn/sourcepic/12/Y25CZXRh.png"").COM 
+据外媒报道，为了应对新型冠状病毒大流行，Lime暂停了其在加利福尼亚州、华盛顿州以及意大利、法国和西班牙的服务。此前，旧金山及其周边各县制定了一项留家的命令，旨在遏制疾病蔓延。
+(image_address=""http://e.thsi.cn/img/13490a34ee573f77"")
+图片来源：The Verge 
+据《旧金山纪事报》报道，由于旧金山湾区的留家命令实际上禁止了“步行、自行车、踏板车、汽车或公共交通工具”等不必要的出行，对于Lime来说它可能别无选择，所以只能暂停其在加州的服务。但这对于刚刚起步的微移动领域，该公司在华盛顿和三个欧洲国家停止服务的决定却是迄今为止前所未有的。
+“和你们一样，我们也担心我们热爱并称之为家的城市、担心我们为之服务的人们、担心我们在路面上的同事，”Lime CEO Brad Bao在一篇博客文章中写到的，“热爱城市也意味着保护它们。现在，我们暂停Lime服务从而帮助人们留在原地、保持安全。”
+截止到目前，Bird、Spin、Skip、Uber和Lyft等其他大型电动滑板车公司尚未采取类似的举措。在回应记者的置评请求时，这些公司的发言人表示，他们尚未做出决定或正在密切关注情况。
+所有的电动滑板车公司都表示，他们已经加强了清洁程序并建议用户在骑车时戴上手套保护自己。
+对电动滑板车租赁行业来说，新冠大流行可能是一场灾难，尤其是在冬季刚刚过去的时候，因为大多数公司都认为冬季的客流量和收入会大幅下降。
+跟Bird、Uber和Lyft等竞争对手一样，Lime也一直在努力让共享电动滑板车盈利。多数专家认为，该市场市场已经饱和、需要整合。最近几个月，Lime加入了Bird、Skip、Scoot和Lyft的行列，裁掉了与Scoot相关的员工。今年1月，该公司宣布裁员14%并退出了12个市场。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-18 08:46:22,同花顺
+29,北京市发展改革委参加本市新闻发布会 详解“10条措施”,"3月16日，北京市政府新闻办举办新闻发布会，北京市发展改革委林恩全副主任参加，系统介绍《关于全力做好疫情防控工作保障企业有序复工复产的若干措施》(简称“10条措施”)相关考虑和主要内容。
+当前疫情防控形势积极向好的态势正在拓展，按照北京市委、市政府统一部署，北京市在全力做好疫情防控的同时，积极保障企业有序复工复产。截至目前，16区和经济技术开发区共报告规上工业企业2281家，已复工2028家、复工率达到88.9%、到岗率67.6%；全市4386栋商务楼宇，已复工4050栋，复工率达到92.3%、到岗率38.1%。为了进一步提高复工复产的整体效益和水平，针对疫情防控期间企业复工复产遇到的实际困难，北京市发展改革委会同市商务局、北京市经济和信息化局、北京市财政局、北京市人力社保局、北京市金融监管局等25个部门，研究制定了《关于全力做好疫情防控工作保障企业有序复工复产的若干措施》。
+一、出台背景和起草考虑
+3月4日，习近平总书记主持召开中央政治局常务委员会会议，指出当前已初步呈现疫情防控形势持续向好、生产生活秩序加快恢复的态势，要加快建立同疫情防控相适应的经济社会运行秩序，促进上下游、产供销、大中小企业整体配套、协同复工。3月10日，李克强总理主持召开国务院常务会议，强调要在分区分级实施精准防控的同时，有序推动全产业链加快复工复产。落实党中央、国务院的决策部署，结合北京的工作实际，制定“10条措施”，主要有以下几点考虑：
+一是坚持防疫在前、有序复工。北京作为首都，地位特殊、责任重大。政策制定过程中，我们始终强调把落实防疫安全工作放在首位，督促企业落实防疫主体责任，抓紧抓实抓细健康检查、降低人员密度、落实检查抽查等各项防控工作，市、区各行业主管部门和疾控部门加强对企业在防疫方面的指导和帮助。
+二是积极回应企业关切。针对企业反映比较突出的用工、住宿、餐饮、快递物流和上下游产业链物资材料供应等关键问题，经与各区各部门反复研究，提出保物资保用工保运输、推动产业链协同复工等一系列举措，打通复工复产的堵点难点，确保员工回得来、原料供得上、产品出得去。充分利用保障房等存量资源提供临时宿舍，加强对企业疫情防控指导，让企业敢开工、愿开工、想开工。
+三是注重搭平台、建机制。今天发布实施的10条政策措施既考虑了为重点企业提供精准服务，又突出通过搭建平台、信息共享的机制解决共性问题，既强调发挥政府兜底保障作用，又注重发挥企业和市场的作用，北京市有关部门搭建了企业用工、防疫物资保障、原材料供应、用餐保障等方面的供需对接平台和协调机制，为复工复产企业提供对接服务。
+四是突出科技创新支撑。紧密结合北京的经济特点和创新优势，强化科技手段助力企业复工复产，比如，使用“北京健康宝”每天检查员工与防疫相关健康状况，推动网络办公服务商为中小微企业提供疫情期间优惠服务，支持孵化器、创业基地等各类载体购买云服务、协同办公软件，免费或低成本提供给入驻企业，鼓励企业采取网络办公。
+通过这份文件的制定，与2月3日发布的《关于进一步支持打好新型冠状病毒感染的肺炎疫情防控阻击战若干措施》(京政办发〔2020〕5号)、2月5日发布的《关于应对新型冠状病毒感染的肺炎疫情影响促进中小微企业持续健康发展的若干措施》(京政办发〔2020〕7号)形成促进复工复产和经济发展的政策“组合拳”，后续还将根据疫情防控和经济社会发展实际需要，继续完善政策体系，全力以赴夺取疫情防控和经济发展“双胜利”。
+二、主要内容
+10条措施都是企业复工复产所急所需，所以在文件发布之前，部分措施就已经开始实施了。首先强调要严格落实防疫安全要求，履行企业防疫主体责任，实行街道和楼宇物业“双楼长”制，核定企业每日上班人员上限，提倡错时上班、轮流到岗、居家办公等灵活办公方式。然后从“食、住、用、行”4个方面为企业提供复工服务保障，实实在在帮助企业解决复工复产中遇到的困难和问题。
+“食”，就是服务好企业基本用餐需求。在首都之窗公布并更新本市具有“点对点”配送能力的食材供应配送企业、蔬菜直通车企业名单，为企业提供常规配送或应急采购服务。分批推荐公布提供餐品外送服务的餐饮门店和具备资质的集体用餐配送企业名单，帮助企业精准对接餐饮服务单位，目前已组织100余家餐饮企业2700余个餐厅推广团餐预订，发布了64家集体用餐配送单位名单和联系方式。同时搭建食材采购、团体订餐在线服务平台，为复工复产企业提供高效对接服务。
+“住”，就是多渠道帮助企业解决员工临时住宿问题。鼓励市管企业全资、控股的经济型酒店以优惠价格为外地务工人员提供临时住宿服务，将内部培训中心作为集中医学观察点，北京市财政给予适度奖励。各区利用辖区内已经具备交用条件、尚未分配入住的整建制公租房(安置房)，以低租金、短租期的方式为驻区企业提供临时宿舍、周转住房和集中医学观察点。
+“用”，就是为企业做好生产要素保障。努力协助企业采购防疫物资，建立口罩、体温探测仪等必备防疫物资市、区两级政府供应保障机制。对有防疫物资特定需求的企业，建立区行业主管部门对口服务机制，各区服务保障不足部分可向北京市物资保障部门申请补充。加大企业用工保障力度，精准摸排用工需求，协调安排开通专车、专列，目前已“点对点”协调开通77辆专车、8个列车专厢，从山东、四川、陕西、江苏等省运送2735名农民工返京返岗。通过“输出有组织、健康有检测、乘运有防护、到达有交接、全程可追溯”，保证了农民工“从家门到车门、从车门到厂门”安全顺利复工。推广“就业超市”急聘在线、“HELO共享用工”两个平台，解决暂时性用工缺口问题。引导医院体检机构在做好防疫前提下为企业提供员工入职体检服务。推动产业链协同复工协调运行，系统梳理产业链龙头企业配套需求，充分利用京津冀新冠肺炎疫情联防联控联动工作机制，共同推动京津冀区域内重点配套企业恢复生产。目前已通过该机制为北京市重点企业协调解决津冀地区的300余家配套企业复工复产问题，北京奔驰41家一级供应商已全部取得复工批复，京东方34家周边供应商全部复工复产。搭建产业链需求对接平台，服务企业发布原材料、零部件、设备等供需信息。
+“行”，就是保障物流通畅和复工人员便利出行。组建包括100余家货物运输企业、1000余辆各类货运车辆的应急保障车队，为企业复工复产运输需求提供应急保障。保快递配送，允许和规范快递、外卖人员进入社区(村)利用无接触配送设施进行配送。指导快递、外卖企业相对固定各社区(村)配送人员，向社区(村)报备并办理出入手续。上线“北京定制公交升级版”微信小程序，推出“复工定制公交”，为企业提供线上预约、快速直达的定制公交通勤服务。完善慢行系统，加强对共享单车、公共自行车清洁消毒，鼓励企业员工骑车出行。
+下一步，我们将认真落实党中央、国务院决策部署和市委、市政府的工作安排，毫不松懈抓好疫情防控，精准有序推动复工复产。我们坚信，经过党委、政府、企业在内的社会各界共同努力，我们一定能够早日打赢疫情防控的人民战争、总体战、阻击战。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-18 08:46:14,同花顺
+30,法国下调一季度经济增长预期至0.1%,"本报巴黎电 记者李鸿涛报道：受新冠病毒蔓延影响，法国央行近日将法国第一季度经济增长预期由此前的0.3%下调至0.1%。近期法国月季商业调查显示，法国银行与商业领袖普遍认为，法国工业与服务业活动将在3月份出现显著衰退。对此，法国央行也作出类似预测，认为受疫情传播影响，法国3月份的商业活动前景正持续恶化，2月份的实际收益也将远低于此前预测。
+法国央行认为，面对疫情导致的全球供应链分工体系断裂、部分国家需求下降及区内疫情形势严峻，法国经济正遭受综合负面冲击。在工业领域，疫情引发的商业活动衰退主要体现在汽车制造、电气设备、计算机产品及制药等行业。在服务业领域，酒店、餐饮、运输及相关临时工种也正遭受重大冲击。同时，疫情的传播正日益阻碍法国国内生产，加之国内防控存在的诸多不确定性，将使国内消费日益承压。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：xr",2020-03-18 08:45:12,同花顺
+31,美国经济进入充满挑战时期,"在特朗普政府推出一系列财政刺激政策及美联储强势出台货币政策“组合拳”情况下，市场表现远远不及预期。特朗普表示，美国经济可能正走向衰退，这是其首次承认新冠肺炎疫情在美国暴发可能带来的可怕后果。
+当地时间3月15日，美联储突然宣布将联邦基金利率目标区间下调到0%至0.25％的超低水平，并重新启动7000亿美元的量化宽松（QE）。美联储认为，“新冠肺炎疫情暴发扰乱了包括美国在内的多个国家和地区，全球金融市场也受到明显影响，美国经济已经进入充满挑战的时期”。
+多次喊话美联储降息的美国总统特朗普在降息后称：“不得不说，我非常高兴。美联储没有选择在很长一段时间里分四步完成降息，而是选择一步到位。”“我认为，市场人士应该感到非常兴奋。”
+但是，市场表现远不及美联储和特朗普预期。3月16日，美股开盘后，道琼斯工业平均指数低开超过2200点，标普500指数下跌超过8%，纳斯达克指数下跌超过9%，迅速触发6个交易日内第3次熔断。暂停交易15分钟后，标普500跌幅一度超过11%，纳斯达克指数跌幅一度达到12%，道琼斯工业平均指数跌幅达12%。
+3月16日下午3点30分，白宫召开新闻发布会公布更严格的防疫指导意见。特朗普在发布会上表示，新冠肺炎疫情可能会持续到七八月份，他还建议美国人今后15天不要从事10人以上的聚集活动，避免在餐馆、酒吧聚餐，避免探亲访友等。他说：“我们每个人都在阻断疫情传播上扮演重要角色。”特朗普称，美国经济可能正走向衰退，这是其首次承认新冠肺炎疫情在美国暴发可能带来的可怕后果。
+在特朗普发表上述讲话后，三大股指随之进入急速下跌通道。截至3月16日收盘，三大股指皆暴跌超过11%，道琼斯工业平均指数跌2997.10点，跌幅12.93%，收报20188.52点；纳斯达克指数跌970.29点，跌幅12.32%，收报6904.59点；标普500指数跌324.89点，跌幅11.98%，收报2386.13点。道琼斯工业平均指数较今年2月份跌幅已达31.7%，标普500指数跌幅已达29%，标志着美股长达11年的牛市正式进入技术性熊市，且近期内难以反弹。
+在特朗普政府推出一系列财政刺激政策及美联储强势出台货币政策“组合拳”情况下，之所以仍未能阻止美股在6个交易日内3次熔断，三大股指跌幅和道琼斯工业平均指数下跌点数纷纷创下历史新高，关键在于这些措施无法“治本”，即无法消除新冠肺炎疫情在美国特别是在全球金融中心――纽约加速蔓延所带来的“极度恐慌”。衡量投资者恐慌情绪的芝加哥期权交易所波动指数（又称“华尔街恐慌指数”）3月16日大涨40%以上，升破82点，再创历史新高。
+分析人士认为，美股创纪录暴跌凸显了投资者在面对新冠肺炎疫情恶化之际有多么恐慌，且投资者更加确信美国经济衰退的危险正在到来。特朗普和欧洲国家一些领导人3月16日都承认，美欧经济可能正在走向衰退。法国兴业银行策略师杰森·道恩称，通常情况下，美联储如此大手笔对策会给风险资产筑底，支持美股反弹。但是，当前美国经济增长所受冲击是指数级的。市场正在质疑，除了货币政策还有什么招数可用，货币政策缓和新冠肺炎疫情冲击的效果正在递减。
+美国保德信金融集团首席市场策略师昆西·克罗斯比指出，美联储的行动结合特朗普财政刺激政策应该会有助于缓冲新冠肺炎疫情对美国经济活动的下行压力，但市场情绪主要受新冠病毒影响，他质疑美国抗击新冠肺炎疫情政策能否奏效。
+凯丽博金融伙伴公司的创始人兼总裁帕特里克·希利称，三大股指创纪录暴跌与美联储3月15日做了什么或者本可以做什么无关，市场交易活动反映的是恐惧和不确定，今后唯一能平息市场的是新冠肺炎疫情病例数下降。
+然而，新冠肺炎疫情在美国尤其是纽约正在加速蔓延，前景难料。纽约州已是全美新冠肺炎病例确诊最多的州。纽约市市长白思豪3月15日宣布，从3月16日起，关闭纽约市1800多所公立学校，110万名学生受到影响，目前最早可能开放的日期为4月20日，最坏的情况可能在2020年大半年内保持关闭状态；从3月16日晚上8点起，纽约市所有餐厅、咖啡店只限外卖，停止对外营业；酒吧和夜店也一律关闭，不得饮酒作乐；电影院、小型剧场、大型演唱会也全部取消。
+纽约抗击新冠肺炎疫情的战役刚刚打响，但疫情对美国经济走势特别是美国股市前景的影响无法估量。白思豪3月16日说：“我担心这场危机将在4月份、5月份开始加剧，到6月份以后才开始好转。”白思豪警告说，新冠肺炎疫情造成的一系列危机，包括经济、社会和其他后果，最终可能堪比美国大萧条时期。如若其所料，美股后市将更加暗淡无光。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：xr",2020-03-18 08:45:07,同花顺
+32,瑞典将临时关闭边境以防控疫情,"新华社斯德哥尔摩3月17日电（记者和苗）瑞典内政大臣米卡埃尔·丹贝里17日宣布，为防控新冠肺炎疫情，瑞典将临时关闭边境30天。
+丹贝里当天晚间在首都斯德哥尔摩举行新闻发布会说，此项措施将从19日开始实施，30天之后是否延续将根据具体情况而定。瑞典公民和有居留权的人在此期间可以通过边境回到瑞典，同时货运渠道也保持畅通。
+瑞典首相勒文当天下午召开新闻发布会，宣布瑞典全国高中、大学及成人教育学院将全部改为远程授课。此外，瑞典政府将为航空和海运业提供50亿瑞典克朗（约合5.12亿美元）的信贷保证金以缓解其遭受的经济重创，其中15亿瑞典克朗（约合1.54亿美元）专门提供给北欧航空公司。
+瑞典公共卫生局17日表示，目前瑞典全国已有约1.2万人接受了新冠病毒检测。根据瑞典各地区独立统计数据，截至目前，瑞典全国新冠肺炎确诊病例升至1196例，死亡8例。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：jdm",2020-03-18 08:43:16,同花顺
+33,日本央行扩大资产购买计划,"日本银行，即日本中央银行16日决定扩大资产购买计划，通过增加购买交易型开放式指数基金(ETF)和企业债来稳定金融市场。
+日本央行当天提前召开货币政策例会，会后宣布，将把ETF的年购买规模从目前的6万亿日元增至12万亿日元，房地产投资信托基金(J-REIT)年购买规模增加至1800亿日元，同时承诺到今年9月底，增加购买2万亿日元的商业票据和企业债。
+美国联邦储备委员会前一天宣布，将联邦基金利率目标区间下调1个百分点到0%至0.25%之间，同时启动7000亿美元量化宽松计划，以应对新冠肺炎疫情冲击。
+日本央行当天没有进一步下调短期利率，当前利率为-0.1%。外界批评，这种货币政策有损商业银行的利润。
+由于销售税率上调和台风灾害，日本去年第四季度经济折合成年率萎缩7.1%，为5年多来最大降幅。预期疫情将进一步打击日本经济。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：jdm",2020-03-18 08:43:10,同花顺
+34,特朗普拟推万亿拯救经济措施道指跌穿二万点关后强势反弹终升1048点,"【财华社讯】多国央行先后运用金融或财政政策向市场注入资金，美股先跌后回稳，道指早段曾低见19882点，跌穿二万点关，为2017年2月以来首次，其后反复回升，全日收报21,237点，升1048点或5.19%。标指收报2529点，升143点或6%；纳指收报7334点，升430点或6.23%。
+总统特朗普表示，有关病毒的检测工作正在有序进行，他昨日表示，美国的经济可能会衰退，他随后补充，相信美国经济会迅速复元。美国财长努钦证实，华府提出总值1万亿美元(7.8万亿港元)救经济建议，希望缓解受新冠病毒大流行冲击的经济压力。努钦表示，总统特朗普向他作出指示，希望在未来两星期，向国民寄出支票，透过经济补助民众打击疫情。
+此外，联储局表示，将通过建立商业票据融资机制，以支持信贷流向家庭和企业，帮助家庭、企业与就业市场。
+信贷评级机构标普全球评级警告，压抑新型冠状病毒疫情的措施令经济突然陷入停顿，今年全球经济将陷入衰退，未来12个月美国企业违约率可能升至10%以上。标普的报告指出，企业现金流大幅下降、融资条件大幅收紧，以及同时出现的油价冲击，将损害企业信誉。
+经济数据方面，美国2月零售销售下跌0.5%，与市场预期增长相反，扣除汽车、汽油、建筑材料同食品服务，上月零售销售按月持平。美国2月工业生产上升0.6%，但制造业生产上升0.1%，差过市场预期。美国1月企业库存下跌0.1%，符合市场预期。
+《东方日报》引述橡树资本(Oaktree Capital)董事长及联合创办人马克斯(Howard Marks)表示，根据往绩，金融市场抛售潮约完成了60%。他指出，美股现已反映了最坏情景，认为投资价值已开始显现，把部分资金入市并非不理性，但因为抛售潮只完成了60%，不适合全面入市。
+不过，「大淡友」的摩根士丹利跨资产策略主管Andrew Sheets撤回对美股审慎的投资建议，理由是价格水平，并称现时所有投资，由交投活跃股份到信贷违约掉期，以至机构按揭债券，均见吸引。
+「鳄王」达利奥警告，美国货币政策几乎失去效用，如同日本和欧洲央行般，已陷入「货币政策黑洞」。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：jdm",2020-03-18 08:42:51,同花顺
+35,大基金二期要动手了！这些细分领域或成重点投资目标,"日前有媒体报道称，国家集成电路产业投资基金(二期)(以下简称“大基金二期”)将于3月底开始实质投资。相比于一期，大基金二期资金规模显著提升，资金来源更加多样。大基金二期吸引了包括中央财政资金、地方政府背景资金、央企资金、民企资金以及集成电路领域等各路资金投资入股，其中财政部出资225亿元，占比11.02%，中国烟草认缴150亿元，三大运营商合缴125亿元。
+那么哪些集成电路类公司尤其是上市公司，有望获得大基金二期的投资呢？“大基金二期”成立后，国内芯片“自主可控”进程有望加速，重点关注受益行业龙头股，重点投向芯片制造以及设备材料、芯片设计、封装测试等产业链各环节，支持行业内骨干龙头企业做大做强。
+01
+产线、设备与材料或是重点
+《国家集成电路产业发展推进纲要》(简称“《纲要》”)的目标是：到2030年，集成电路产业链主要环节达到国际先进水平，一批企业进入国际第一梯队。
+大基金为实现《纲要》而设立，重点投资芯片制造业，兼顾芯片设计、封装测试、设备和材料等产业。
+“制造依然是大基金投资的重点。”对照纲要，有业内人士分析认为，虽然前期大基金已经投资了中芯国际、华力微电子、长江存储等，但鉴于集成电路制造的重要性、投资重大，大基金还要持续给予这些公司以及更多的相关公司支持。
+公开资料显示，在存储制造领域，除了长江存储，兆易创新（603986）参股的合肥长鑫近期在DRAM上进展良好。兆易创新近期在接受机构调研时表示，公司与合肥长鑫签署了3亿元的债转股协议。后续，公司会根据合肥长鑫融资方案确定出资情况。
+此外，结合大基金此前的公开表态及市场分析人士观点，设备、材料等很可能是大基金二期投资的重点。
+2019年9月3日，半导体集成电路零部件产业峰会在佛山举行，丁文武在会上透露，大基金二期一是支持龙头，将对在刻蚀机、薄膜设备、测试设备和清洗设备等领域已布局的企业保持高强度的持续支持，加快开展光刻机、化学机械研磨设备等核心设备以及关键零部件的投资布局；二是组团出海，培育中国大陆“应用材料”或“东电电子”的企业苗子；三是加速装备从验证到“批量采购”的过程，为本土装备材料企业争取更多的市场机会。
+在A股公司中，除了已经获得大基金一期投资的北方华创（002371）、长川科技（300604）、中微公司、精测电子（300567）、万业企业（600641）外，芯源微、华峰测控、赛腾股份（603283）、天通股份（600330）、华兴源创等具有半导体装备业务的公司颇有看点。
+(image_address=""http://u.thsi.cn/imgsrc/input/fd686586cc46b61a1d4c5b414de0dff8.jpg"")
+在半导体材料方面，光刻胶、靶材、硅片等重要材料领域的公司持续被市场关注。
+在靶材领域，江丰电子（300666）已经在部分产品上实现“国产替代”。在硅片领域，中环股份（002129）已经具备成熟的8英寸半导体硅片供应能力。而A股的光刻胶概念股军团尤为“庞大”，包括江化微（603078）、晶瑞股份（300655）、南大光电（300346）、飞凯材料（300398）、上海新阳（300236）等。
+(image_address=""http://u.thsi.cn/imgsrc/input/4a49e9dc5a2fd7ffabf7eb52018c6bce.jpg"")
+但也有业内人士提醒，“光环之下”，不少公司的光刻胶不过是用于LED/LCD领域，还不能称之为半导体光刻胶公司，投资价值更是云泥之别。即便是产品已经应用于集成电路封装领域，但与集成电路前道用光刻胶在技术难度上依然“不可同日而语”。对于光刻胶概念股，投资者还需擦亮眼睛，仔细甄别。
+02
+15只高ROE小市值绩优股有望受益
+此外，通过对“大基金一期”持股的18家上市公司分析发现，公司规模、业绩以及研发投入强度三方面特征明显。相比于第一期，第二期更注重产业整体协同发展+填补技术空白。“大基金二期”有望加快芯片行业的发展，推动行业盈利能力进一步改善。
+根据条件，最新市值低于300亿，2019年前三季净资产收益率超过5%，且研发投入强度超过10%，经过筛选，15股浮出水面，包括圣邦股份（300661）、星网锐捷（002396）、晶晨股份、北京君正（300223）等。
+(image_address=""http://u.thsi.cn/imgsrc/input/92f0752ae9ef66cfc02ae46e768b0437.jpg"")
+除以上4股外，其余11股市值均低于百亿，包括富瀚微（300613）、鼎信通讯（603421）等。从盈利能力来看，6股2019年前三季净资产收益率超过10%，科创板公司聚辰股份最高，超过20%，中颖电子（300327）接近15%，圣邦股份及星网锐捷超过12%。研发投入强度最高的是科创板公司宝兰德，超过30%，景嘉微（300474）及晶晨股份均超过20%。
+上述15股中，2019年度净利润增幅最高的是北京君正，有望超过300%，康拓红外（300455）、乐鑫科技及富瀚微等5股2019年净利润增幅有望增超50%。在最近3个交易日陆股通持股净流出的背景下，圣邦股份逆势获加仓，最新持股比例1.48%，较3日前增加0.03个百分点。另外，北京君正、圣邦股份及星网锐捷在去年三季度获社保基金增持。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：qxb",2020-03-18 08:42:10,同花顺
+36,蓬佩奥：美国务院出现多例新冠感染病例,"中国日报网3月18日电（孙若男）美国国务卿蓬佩奥17日首次承认，美国国务院有少数工作人员新型冠状病毒检测呈阳性。
+据美国有线电视新闻网报道，蓬佩奥在国务院的新闻发布会上说：“我们有几名员工的检测结果是阳性的。我们对此的处理方式，正如我们要求每个美国人的应对方式一样，不管他们在世界上的哪个地方。”蓬佩奥并未提供确诊新冠病毒人员的细节。
+他表示国务院将继续为海外的美国公民提供服务，“这不仅仅意味着在遥远地方服务的官员要保护好自己和我们的团队，还要确保为美国人民做正确的事。”然而有一些美国人称无法获得海外美国大使馆的援助。
+（编辑：党超峰）
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：xr",2020-03-18 08:41:41,同花顺
+37,重庆销售纯枪销售逐步恢复 非油收入稳步增长,"中国石油网消息(记者李东平)3月8日上午，重庆销售丰都经营部16名女职工放弃节日休息来到滨江路加油站，在加油现场向客户推广新业务——移动支付，不到1个小时，就增加17笔有效移动支付交易。
+疫情期间，重庆销售一手抓防疫、一手抓生产，各项工作健康稳定协调发展。截至3月8日，公司实现销售55.64万吨，最高日销量纯枪达6197吨，已恢复到同期销量的81.2%；进入3月后，非油第一周收入851万元，环比增长24.9%。
+为抢抓近期春耕和生产需求恢复的有利时机，重庆销售深入开展油卡非润一体化营销，突出油非互动，加大客户开发和维护。非油业务结合疫情期间客户需求的变化，及时组织畅销商品，扎实推进昆仑好客运营体系落地。2月中旬以来，非油店销收入环比增长113.2%。所属万州分公司从2月12日组织开展时令鲜果线上销售专项劳动竞赛活动，截至3月10日，时令鲜果线上累计销售突破14万元，日均销售较竞赛前环比增加1.5倍以上。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-18 08:39:45,同花顺
+38,1.2万亿美元刺激大招 美联储重启金商票工具 美股反弹,"原标题：1.2万亿美元！特朗普再放刺激大招，美联储重启金商票工具；美股从暴跌中反弹
+周二(3月17日)美国股市从1987年以来最严重的暴跌中反弹，标普500指数上涨6%，道琼斯工业平均指数上涨5.2%，收复昨日半数跌幅。因美联储和美国政府采取进一步措施提振流动性，缓解冲击全球经济的公共卫生事件造成的损失。
+为遏制公共卫生事件蔓延对经济的影响，特朗普政府正在讨论一项计划，可能涉及多达1.2万亿美元的支出，包括两周内直接向每个美国人至少支付1000美元。此外，美联储将重新启用金融危机时期采用过的工具，在商业票据市场因公共卫生事件遭受“巨大压力”的情况下，帮助美国公司在商票市场融资。
+根据美联储周二发布的声明，美联储将在得到财政部长批准的情况下动用紧急权力设立商业票据融资工具，财政部将从外汇稳定基金中拿出100亿美元用作信贷保护。
+(image_address=""http://e.thsi.cn/img/bd7b286325695b70"")
+特朗普考虑1.2万亿美元刺激方案
+努钦周二在白宫简报会上表示，“美国人现在需要现金，而总统想立即提供现金。我的意思是，现在，在接下来的两周内，这是一个很大的数字。对美国来说，现在是一个非常重大的时期。我们提出了一项提案，该提案将为经济体注入1万亿美元。”
+知情人士透露，财政司司长努钦提议，4月底之前派出2500亿美元的支票，如果美国仍处于国家紧急状态，将在四周后再寄出总额5000亿美元的支票。
+特朗普表示：“我认为要做些事情尽快把钱送到国民手里。”他仍然赞成减免薪酬税，但表示他愿意将这个问题交由自己的顾问和越来越多支持派现的议员来处理。
+据悉，特朗普政府一直在讨论一个总规模8500亿美元的一揽子援助计划，但后来讨论的花费高达1.2万亿美元。派现将是努钦与国会洽谈的刺激计划的一部分。据悉特朗普政府尚未确定派现金额，但希望能超过每人1000美元。
+努钦表示，政府不打算将支票寄给百万富翁，但他强调了这个计划的紧迫性。姆努钦称，他周二早上和众议院议长南希.佩洛西商谈过，后来他在国会大厦会晤了共和党参议员。
+美国政府打算保持股市开放，美国财政部将报税截止日期从4月15日推迟90天，参议院周二将对众议院通过的经济救济措施进行投票。该方案是由努钦和佩洛西上周谈判后达成，并得到了特朗普的支持。措施包括提供免费病毒检测，支持就业和粮食援助，向各州提供数百亿美元的新援助。
+尚不清楚参议院是否会尝试在该立法中增加其他条款，还是试图单独提出一个规模更大的刺激法案。共和党参议员第二号人物John Thune表示，“除非有充分的理由，否则我们不会拖慢众议院通过的一揽子方案的进程。”尚未确定在众议院法案之外增加刺激措施的道路，但各种方案正在讨论。
+(image_address=""http://e.thsi.cn/img/90583bcd92b311f1"")
+美联储重启金融危机时期的商票工具
+美联储将重新启用金融危机时期采用过的工具，在商业票据市场因公共卫生事件遭受“巨大压力”的情况下，帮助美国公司在商票市场融资。根据美联储周二发布的声明，美联储将在得到财政部长批准的情况下动用紧急权力设立商业票据融资工具。财政部将从外汇稳定基金中拿出100亿美元用作信贷保护。
+美联储表示将为一项特殊目的工具(SPV)提供资金，购买合格公司评级为A1/P1的商业票据，在不延长该计划的情况下这项操作将持续一年。定价将基于当时的3个月隔夜指数掉期利率加码200个基点，每个发行人还必须支付相当于SPV可能持有其商业票据最大金额10个基点的费用。
+该央行宣布了一项针对一级交易商的紧急贷款计划，这是其在公共卫生事件持续恶化的局势之际促使现金流入美国经济的又一举措。声明指出，一级交易商信贷工具“将提供隔夜和定期融资，期限最长90天，将于2020年3月20日推出。该工具将运行至少六个月，并且可能延长。
+纽约联储宣布本周进行额外的隔夜回购操作
+根据周二的一份声明，纽约联邦储备银行计划在本周余下时间每天下午进行额外的隔夜回购协议操作，最高限额为5000亿美元。
+还将上午的隔夜操作的最高限额提高到5000亿美元，由于回购市场动荡，该行扩大了周二上午的隔夜发行规模。
+(image_address=""http://e.thsi.cn/img/adc3d09489534c1b"")
+美股反弹，因美联储和美国政府采取进一步措施提振流动性
+美国股市从1987年以来最严重的暴跌中反弹，标普500指数周二上涨6%，道琼斯工业平均指数上涨5.2%，收复昨日半数跌幅。因美联储和美国政府采取进一步措施提振流动性，缓解冲击全球经济的公共卫生事件造成的损失。
+截至纽约收盘，道琼斯工业指数收涨1048.86点，或5.2%，至21，237.38点；标普500指数收升143.06点，或6.00%，至2529.19点；纳斯达克指数收高430.19点，或6.23%，至7334.78点。
+New River Investments的投资组合经理Conor Sen表示，我们现在看到的是，面对病毒传播指数级的加快，政策反应也指数级增加，在疫情使全球经济陷入停滞、各国央行加紧稳定资本市场和流动性之际，特朗普政府要求国会提供超过1万亿美元的资金来对抗病毒的影响，这也是政府第三次推动增加财政支出。
+Saxo Capital Markets的市场策略师Eleanor Creagh称，熊市并不排除反弹，最大的反弹可能发生在熊市中。当前的高波动性和紧张的流动性状况加剧了震荡。由于VIX仍远高于长期均衡水平，警钟仍在敲响，交易者应警惕市场纾缓性的上涨。
+美元LIBOR创十多年最大涨幅，全球资金压力再现暗示央行行动未奏效
+资金市场再次出现承压迹象，在流动性担忧情绪下，获取美元兑几种主要货币的成本飙升。这表明尽管决策者最近几天向市场注入流动性，但投资者获取美元依然困难重重。
+3个月美元伦敦银行同业拆借利率(LIBOR)飙升，创2008年以来最大涨幅，反映获取美元成本的欧元/美元交叉货币掉期基点达到2011年以来最高。
+美元兑日元掉期也接近创纪录水平，英镑兑美元掉期达到2008年来未见水平。
+德意志银行货币研究负责人George Saravelos表示，“我们低估了美元资金压力的严重程度，我们担心解决美元短缺问题可能比政策制定者设想的更难。”
+(image_address=""http://e.thsi.cn/img/2b6a0704db857766"")
+(责任编辑：崔晨HX015)
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-18 08:36:46,同花顺
+39,交通运输厅精准施策加快续建公路项目复工,"2020年新疆维吾尔自治区续建国省干线、BF、地方重要专用公路等共35个项目，建设里程6452公里，项目总投资约1881.88亿元，计划今年完成投资425.9亿元，占年度计划投资的78.6%，交通运输厅科学精准谋划，加快推进项目复工建设。一是逐项目落实复工时间。按照“一项目一方案”的原则，及时成立片区指导组，建立“一项目一领导一方案”的复工复产诉求响应机制，逐项目落实开工计划和保障方案，采取日报制，做到底数清，情况明。目前，已明确26个项目(南疆地区10个项目、东疆地区6个项目、北疆地区10个项目)可在3月中下旬复工，其余9个项目可在4月中下旬全面复工。二是积极争取当地复工支持。加强与各地州协调对接，协调解决重大项目第一批管理人员返岗复工问题，如G0711线乌尉项目通过采取包专机、G7京新高速PPP项目采取包车方式等，已陆续组织792名人员返疆，为项目尽早开工奠定了基础。三是制定项目推进激励措施。对开复工时间早、复工率高的地区，在项目申报、资金补助上予以倾斜；对人员进场快、准备工作充分、实物工作量完成较好的施工单位，通过在全疆通报表扬、信用等级评价等方式予以激励。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-18 08:36:38,同花顺
+40,中泰证券：预计2020年新基建规模3.3万亿元 同比增长26%,"中泰证券发文称，新基建包含七大领域：5G、数据中心、人工智能、工业互联网、特高压、城际高速铁路和城际轨道交通、新能源汽车充电桩。根据测算，预计2020年新基建规模3.3万亿元，同比增长26%。至2025年新基建保持年均15%复合增长，显著高于基建总体投资增速，预计到2025年新基建规模将增至6.25万亿元。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：jdm",2020-03-18 08:35:48,同花顺
+41,那些转产口罩的车企 现在做得怎样了,"突如其来的一场新冠肺炎疫情，让曾经不被重视的口罩、防护服等用品走进了人们的视野，更一度成为短缺物资。根据中国纺织品商业协会安全健康防护用品委员会会长雷利民的估计，截至2月底，我国的口罩日产已经达到了1.8亿只；但即便如此，口罩供应在短期内仍存在缺口。
+而在这场疫情中，车企的表现尤为抢眼，其中又以数家转产口罩的车企为甚。自2月6日开始，就陆续有车企转产口罩，支援前线、一线医护人员以及惠及大众的消息传出。那么时至今日，这些曾转产口罩的车企，到底做得怎么样了呢？
+五菱牌口罩正式上线，广受好评
+2月6日，上汽通用五菱官方微信和微博正式宣布：将联合供应商通过改建生产线的方式转产口罩支援防疫一线，预计日产量将达到170万只以上。据悉，此次转产口罩，从想法提出到具体的实施阶段，上汽通用五菱仅仅花了5天时间，可谓高效。
+而根据五菱口罩生产的时间线也可以得知，自2月6日官宣之后的两天，即2月8日就已经有首批20万只口罩下线，但这20万只口罩主要是联合供应商生产的。其后在2月10日，五菱自建口罩生产线，随着2月13日的到来，五菱自产的第一批口罩出货，离自建生产线仅过去3天。次日，即2月14日，五菱已经实现全自动生产线的组装和调试工作，正式交付100万只五菱口罩！
+除了生产口罩以外，五菱也在其他方面为抗疫出一份力。在生产口罩的过程中，“五菱”牌口罩机和智能移动测温车也相继投产，并在短短的15天实现出货。后续生产的口罩，一部分将交给柳州市政府统一调配，用于支援防疫一线；另一部分则会陆续赠送给防疫一线奋斗者和上下游产业链等合作伙伴。比如在前段时间，五菱就曾送出1000万只口罩给经销商和供应商等一线员工，支持他们安全复工复产。
+不甘其后，比亚迪投产口罩消毒液
+如果说五菱速度让人叹为观止，那么比亚迪（002594）电子事业群第九部也让人刮目相看。2月8日，比亚迪官宣调配资源，着手生产口罩和消毒液。而如今，比亚迪所生产的口罩和消毒液均已开始出货。据介绍，比亚迪的口罩产能可达500万只/天。而这一切，都来自原本名不见经传的比亚迪电子事业群第九部。
+2月8日，比亚迪官宣转产消毒凝胶与口罩；仅8天之后，首批下线的消毒凝胶于2月16日当天发货，提供给奋战在一线的抗疫人员。次日，比亚迪口罩正式量产下线。相比之下，比亚迪转产的速度其实并不弱于五菱。从1月31日，比亚迪下达生产消毒凝胶任务，到2月6日的研发成功，再到2月12日的生产线设备组装完成，仅用了13天的时间。正常情况下，要完成这一系列流程，所花时间应该是2个月。
+目前，比亚迪免洗手消毒凝胶已顺利获得卫生许可证，且在满负荷生产状态中；继2月20日比亚迪宣布补加生产线后，原计划10万瓶/天的产能已被扩大至30万瓶/天。比亚迪相关负责人说：“比亚迪量产口罩后，将以政府、医院、疫情严重地区及战略合作伙伴的供应为主，暂不对外销售。”可见，目前比亚迪生产后的口罩流向与五菱基本相同，主要为供应一线抗疫人员，以及供应链上下游，暂不以此牟利。
+日产100万只口罩，
+广汽集团改造多条生产线
+广汽集团（601238）从转产口罩这一件事上，它已然站在了许多企业前面。而且广汽集团从2月13日试生产开始，到2月19日5条生产线安装完毕，再到2月20日的自制口罩批量生产，这中间没有一丝偷懒，一直在争分夺秒，可见其援助一线的诚心。
+自批量生产之后，广汽集团目前已经向广州慈善会、广东省钟南山医学基金会分别捐赠了首批自制口罩100万只和现金人民币500万元，同时还捐赠了价值人民币500万元的防疫用车。为了进一步提升产能，广汽集团还计划自制30台设备，预计完成后日均产能将能达到口罩日产100万只。
+广汽集团表示，广汽自制的口罩将由广州市政府统筹、不对外零售，会优先支援医疗、公交、出租车、地铁等防控疫情和公共服务的一线人员使用，同时也会提供给广汽集团员工以及广汽旗下整车品牌的车主、上下游合作伙伴使用。换而言之，其同样不用于赚取盈利。
+综上可见，如今转产口罩、消毒液等防护用品的车企皆有一定成效，且相关的防护物资均用在一线防疫工作上，其余物资则交由政府统一调配，或者以赠送和积分等形式提供给供应链、供应商上下游和车主等。
+如今疫情防控已经初见成效，经济也在有序复苏。但是疫情的影响并未消失，我们依旧需要佩戴口罩出门，且更换频率并没有降低，一线的防疫工作也依旧艰辛。正如开头所言，即便产能完全恢复，口罩依旧是供不应求，因此在疫情被完全控制之前，我们应该做到团结一心，共同抗疫！
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：jdm",2020-03-18 08:34:46,同花顺
+42,招商策略：国常会再提数字经济 数字基建加码先行,"3月17日，国务院常务会议指出，要对“互联网+”、平台经济等加大支持，壮大数字经济新业态，依托工业互联网促进传统产业加快上线上云，发展线上线下融合的生活服务业，支持发展共享用工平台。招商策略指出，数字经济的蓬勃发展依托于以5G、大数据中心、人工智能、工业互联网等在内的“新基建”。数字经济和数字基建是“兵马”和“粮草”的关系，所谓兵马未动、粮草先行，建议投资者继续关注“数字基建”、“新基建”领域的投资机会。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：xr",2020-03-18 08:33:35,同花顺
+43,鸡泽11个 重点项目集中开工,"本报讯(通讯员荣安李岩)近日，鸡泽县好运八方区域物流港项目建设现场，施工设备整齐划一排列，大型挖掘机、工程车整装待发，总投资27.9亿元的11个重点项目集中开工，吹响项目建设“集结号”。
+11个项目涉及现代物流、食品加工、新材料等多个领域，这些项目无论是单体规模，还是功能结构，都体现了高质量发展要求，必将为该县优化产业结构、增强发展后劲注入强劲动力。据悉，鸡泽县将以项目集中开工为契机，开足马力、大干快上，迅速掀起大上项目、上大项目的新热潮。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-18 08:32:49,同花顺
+44,推动在线教育向纵深发展,"内容摘要：中国社会科学报讯(记者张译心)3月14—15日，“未来在线教育云端论坛”以网络直播互动的形式举行。论坛以“非常时期北京师范大学副校长、教育学部教授陈丽表示，新冠肺炎疫情迫使教育工作者不得不在教和学时空分离的情况下，设法完成人才培养的任务。
+关键词：
+作者简介：
+中国社会科学报讯(记者张译心)3月14—15日，“未来在线教育云端论坛”以网络直播互动的形式举行。论坛以“非常时期，非常教学；做好当下，筹划未来”为主题，旨在分析盘点当前全国在线教育发展的新态势，研讨如何基于互联网开展更加高效、有价值的在线教育教学活动。
+北京师范大学副校长、教育学部教授陈丽表示，新冠肺炎疫情迫使教育工作者不得不在教和学时空分离的情况下，设法完成人才培养的任务。当前的局面给教育带来了挑战，同时也带来了发展机遇。第一，在线教育领域已经形成了很多研究成果，尤其是在高等教育、继续教育方面，这些可以为一线在线教学提供经验借鉴；第二，在线教育改变了教育供给方式，很可能成为未来破解原有教育问题的重要途径；第三，互联网不仅是技术通道，更是全新的空间，互联网融入教育实践之后，未来人类的教育实践将会呈现三个空间共同支撑的情景，这三个空间分别是物理空间、社会关系空间和网络空间。
+与会专家认为，新冠肺炎疫情对在线教育的整体发展有着非常深远的影响。首先，大量师生进行集中化在线教学实践，其信息化素养得到了快速提升。其次，创新的在线互动教学模式，对教育信息化纵深发展具有重要意义，为未来运用5G技术开展教育教学探索提供了非常好的案例。“互联网+教学”将深入到教育教学场景中，渗透到高校的实际教学中去。
+论坛由北京师范大学未来教育高精尖创新中心与腾讯教育联合举办。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-18 08:32:48,同花顺
+45,邯郸十项措施助企渡难关,"邯郸市政府制定出台十项有力措施，从强化产业链帮扶、推动三产服务业开业、支持交通物流恢复、实施缓缴减免政策、争取信贷资金支持等方面发力，对冲新冠肺炎疫情影响，切实帮助企业渡过难关
+本报讯(记者方尚俊)日前，邯郸市政府发布《关于进一步做好疫情防控期间支持企业复工复产工作的意见》，制定出台十项有力措施，从强化产业链帮扶、推动三产服务业开业、支持交通物流恢复等方面发力，对冲新冠肺炎疫情影响，切实帮助企业渡过难关。
+强化产业链帮扶。对1301家规模以上工业企业，按照市县领导分包原则，实现帮扶全覆盖。重点成立钢铁生产、装备制造、白色家电、食品加工、化工企业、电子信息、纺织服装7个产业链帮扶小组，帮助解决原材料采购、库存积压、资金紧缺、用工紧张等难题。
+推动三产服务业开业。市财政设立专项资金，对重点商贸流通企业持续开展“幸福邯郸欢乐购”等活动给予奖补；各县(市、区)设立专项资金，对限额以上批零住餐企业给予奖补。除影剧院、网吧、KTV、洗浴、会展、室内健身、线下培训等人员聚集经营类行业外，其他服务行业由验收制改为承诺制，鼓励商场超市、农贸市场、临街门店及敞开式公共空间应开尽开。所有餐饮饭店实行餐位减半就餐，宾馆酒店实行单人单间住宿。对承租国有资产类经营用房的餐饮住宿百货业中小企业免收1个月房租，减半收取2个月房租。鼓励大型商务楼宇、商场、市场运营方适度减免疫情期间租金。
+支持交通物流恢复。继续实施大宗商品仓储用地城镇土地使用税减半征收政策。鼓励出租车服务中心(公司)阶段性减免服务费，车主阶段性减免租赁费。
+加快建筑房地产业复工。建筑工地自3月起，全面开始复工。土地出让竞买保证金设定比例不高于竞买起始价的50%，缴清全部价款的期限调整为3至6个月；房地产项目疫情期间资本金予以缓缴。已经领取施工许可证的房地产开发项目，单栋楼预售形象进度达到正负零，即可办理预售许可证。
+力促员工尽快返岗。各县(市、区)政府(管委会)组织调查统计本辖区内未返岗的员工，上门帮办健康证明，动员早日返岗；负责帮助辖区内企业员工返岗，开展“点对点、一站式”运输。
+降低企业运行成本。对因疫情影响经营暂时困难的企业，经主管部门认证后，可缓缴1个月用水、用气费用，缓缴期实行“欠费不停供”措施。除高耗能行业用户外，现执行一般工商业及其他电价、大工业电价的电力用户，自2020年2月1日起至6月30日止，统一按原到户电价水平的95%结算；因满足疫情防控需要扩大产能的企业，按实收取超过部分电费；非居民用气门站价格提前执行淡季价格政策。
+实施缓缴减免政策。疫情防控期间新开工的工程项目，农民工工资保证金可延缓至6月30日前缴纳。自2月起，可根据情况和基金承受能力，免征中小微企业养老保险、失业保险、工伤保险三项社会保险单位缴费部分，免征期限不超过5个月；对大型企业等其他参保单位(不含机关事业单位)三项社会保险单位缴费部分可减半征收，减征期限不超过3个月。对企业职工基本医疗保险单位缴费部分实行减半征收，减征期限不超过5个月。
+争取信贷资金支持。积极帮助受疫情影响较大的行业以及小微企业、商店，争取融资专项。帮助企业争列国家疫情防控重点保障企业名单目录，争取专项再贷款和中央财政贷款利率50%贴息的政策支持。
+加大金融服务力度。继续做好金融顾问对口帮扶，力争获贷时在原基础上压减三分之一左右。鼓励金融机构积极增加疫情期间困难企业贷款额度，降低贷款利率。协调推动金融机构通过贷款展期、续贷等方式，给予中小微企业(含小微企业主、个体工商户)一定期限的临时性延期还本和延期付息安排，不得盲目抽贷、断贷、压贷。
+优化政务服务流程。对企业复工复产执行告知承诺制，达到复工复产条件的即可组织复工复产。鼓励通过“不见面”方式办理政务服务事项，不得要求申请人到现场办理，对确需提交纸质材料的可以实行容缺受理、先行办理。对疫情防控期间到期的许可证，可延期到疫情结束后一定期限内再办理延续、变更、换发等业务。与企业复工复产、群众生活密切相关的政务服务事项，鼓励下放到基层办理，推进“就近办、一趟清”。
+《意见》指出，企业复工复产十项措施执行截止日期为6月30日。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-18 08:32:35,同花顺
+46,中国援助比利时口罩运抵列日机场,"本报布鲁塞尔3月17日电（记者任彦）当地时间3月16日中午，来自中国的30万只口罩搭乘菜鸟包机运抵比利时列日机场。这是欧洲新冠肺炎疫情暴发以来，比利时首次得到大规模外来援助。
+这批物资由阿里巴巴公益基金会和马云公益基金会捐赠。据了解，这两个基金会计划向比利时捐赠50万只口罩和3万份检测试剂，其余物资将于本周内抵达。这批防护口罩将首先分发给比利时国家公共卫生研究所。
+“团结就是力量”，在这批紧急支援的医疗物资包装上，用法文、荷兰文、中文三种文字写着这样一句格言作为寄语。这句印在比利时国徽上的格言，在中国同样深入人心。列日机场大屏幕也用这三种文字打出这句格言作为回应。
+比利时卫生大臣玛吉·德布洛克发表声明对中国的捐赠表示感谢，她说，这批口罩将为比利时医护人员提供关键保护，检测试剂也非常重要，有了这些试剂，比利时可以对更多的疑似患者进行快速检测。
+3月13日晚，这两家基金会首批援欧物资到达列日机场，随即运往疫情最严重的欧洲国家意大利。两家基金会捐赠欧洲的200万个口罩和其他物资正陆续抵达。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：xr",2020-03-18 08:32:27,同花顺
+47,山东：防控不放松 复工出实招（统筹抓好改革发展稳定各项工作）,"核心阅读
+新冠肺炎疫情发生以来，山东坚持疫情防控与复工复产两手抓两手都要硬，以复工复产保防控、保市场、保供给，以疫情防控促生产、促市场、促供应，将疫情对经济运行的影响降到最低。
+全程戴口罩、登记测体温、车间消毒、分餐而食、安全距离操作……复工一个月来，复工率接近100%，青岛南涯电子有限公司的防疫措施始终严格执行。
+在这之前，缺乏防疫物资、技术人员无法到岗、原材料供应不足，这三道坎让公司总经理郑泰春很烦恼。如今，顺利复工复产，订单如期交付，郑泰春松了口气。问其有何妙招，他说：“哪有什么妙招，是政府帮我跨过了三道坎。”
+应急保障，加大防疫物资生产供应力度
+对日照三奇医疗卫生用品有限公司来说，这个年充满别样意味。
+为抗击新冠肺炎疫情，日照三奇被工信部确定为重点生产供应单位。本是阖家团圆的春节，该公司的生产车间却已机器轰鸣，昼夜不停忙生产。
+接到紧急通知，车间组长闫云霞放弃春节假期，迅速到岗，组织工人生产医用防护物资。车间里，新添了不少陌生面孔。在闫云霞的培训和指挥下，大家尽快熟悉生产流程，全身心投入到生产当中。时值春节，用工短缺，复产困难，日照三奇也不例外。山东省工信厅与日照市成立工作专班，发动党员干部、返乡大学生、纺织工人等200余人帮助日照三奇组织临时应急生产。
+兵马未动，粮草先行。医疗防护物资能否供得上，直接关系疫情防控工作大局。山东省工信厅紧急启动疫情防控应急物资生产供应保障工作机制，成立12个驻企工作组对医用口罩、防护服、护目镜、消毒产品等重点生产企业，加大服务保障力度，全力帮助企业解难题、扩产能、提产量。山东还开辟审批绿色通道，支持有条件的企业对标改造提升，临时转产扩产，最大限度释放产能，提升防疫物资保障能力。
+据介绍，目前，山东省口罩日产量由120万只扩大到800万只；医用防护服日产量由0.5万件扩大至4.7万件。
+“我们统筹协调解决复工复产企业的防疫物资需求，优先保障关系国计民生的重点行业企业防疫物资需求。”山东省工信厅副厅长王晓说，山东坚决完成国家下达的调拨任务，截至3月9日，已累计执行国家调拨任务及发往湖北各类口罩3212.05万只、防护服63.96万套、消毒用品3161吨。
+山东还督促企业精准强化复工复产疫情防控措施，建立职工体温日监测制度，全面实行厂区封闭管理，对厂区定期消毒，确保职工生产生活环境安全。
+靠前服务，解决企业复工复产燃眉之急
+“李书记，打扰了，企业现在进原料遇到困难了，能不能帮忙想想办法？”2月17日一大早，山东力诺特种玻璃股份有限公司董事长孙庆法给他的驻企联络人――商河县玉皇庙镇党委书记李孝玉打电话求助。疫情防控期间，老孙的工厂正加紧生产医用包装玻璃，可原料石英砂告急，位于安徽省凤阳县大庙镇的原料企业存量也不足。
+李孝玉琢磨，既然老孙从凤阳县大庙镇进原料，和当地党委政府联系，有望解决。几经辗转，李孝玉拨通了大庙镇党委书记张荣耀的电话。原来当地石英砂存量告急，好在已有好几家石英砂生产企业复工，产量会短时间提升。经过协商，张荣耀答应先帮玉皇庙镇解决石英砂短缺难题。2月20日，满载石英砂的3辆运输车到达玉皇庙镇，解了老孙的后顾之忧。
+这是山东推动党员干部帮扶企业复工复产的缩影。按照省委、省政府要求，山东实施分区分级精准防控策略，打通人流、物流、资金流堵点，尽最大努力保证员工回得来、原料供得上、产品出得去。
+搭建平台搞好供需对接。王晓介绍说，山东开发了“工业企业疫情防控复工达产服务平台”，可提供对全省规模以上工业企业每日疫情防控情况的动态监测预警，为企业复工复产提供人力、设备、原料、工艺、物流、政策等全要素对接，以及防护物资、生产要素和物流资源供需对接三种服务。目前，各级工信部门正指导企业利用平台及时反映企业生产情况，发布供需信息，拓宽销售渠道，努力减少疫情对企业复工复产带来的损失。
+“我们生产手持红外线测温仪，订单突然大量增加，需要大量原材料，流动资金紧张。”青岛雅世医疗器械公司负责人张风琴说：“青岛农商银行西海岸分行主动为我们开辟绿色通道，及时批复贷款2000万元，解决了资金周转难题。”山东通过实施贷款风险补偿政策、加大融资担保力度、落实贷款贴息政策等措施缓解中小企业复工复产中的融资困难。仅2月份，全省转贷服务体系就完成转贷业务196笔，转贷业务额34.3亿元，解决了企业的燃眉之急。
+此外，山东还积极协调员工返岗。截至3月10日，全省规模以上工业企业复工人数达461.9万人，占职工总数的87.7%。
+全力协调，推动全产业链协同复产
+“现在复工人数有多少？原材料和产品的运输情况怎么样？还存在哪些困难？”在青岛可隆车业有限公司车间，复工初期，胶州市胶莱街道办干部曲文琨询问。
+得知企业的原材料供应商未复工，不能按时供应后，曲文琨第一时间与青岛三洋皮革有限公司包企干部刘建昌取得联系，组织现场办公，按照“六步走”工作法，即企业申请、政府约谈、企业承诺、政府压实责任、模拟运营、通过验收等6个步骤，仅用半天时间就完成企业复工准备，正式投入生产。
+“配套厂商三洋皮革如果不能复工，自己作为下游厂家，也将面临‘有人干、没料产’的窘境。”青岛可隆车业有限公司总经理助理李善子感慨，如今，公司正式复工以来，已有490名工人返岗，产能已基本恢复正常，订单预计比去年增长5%。
+胶莱街道一方面派驻企业服务团分赴企业问需、把脉、会诊；一方面通过网络平台、包企机关干部点对点发信息等途径，收集重点企业供应链配套企业未复工情况，全力协调配套企业尽早复工，保障重点企业尽快恢复产能。
+为了解决复工复产企业面临上游原材料供应不足、下游产品销售不畅等问题，山东建立规模以上工业企业联络员制度，“一对一”精准联系重点企业，及时掌握企业生产经营动态，研究制定有效措施，全面做好协调服务，努力做到问题早发现、早报告、早协调、早解决。
+山东组织省内原材料、设备等生产企业对接，建立配套供应关系，为企业复工复产提供全要素对接和疫情防护物资服务。同时，山东还充分发挥龙头企业和重大项目的带动作用，梳理产业链配套企业名单，组建产业链“联盟”，通过协调联系江苏、浙江、广东等地工信部门，推动产业链协同复工复产，带动企业去库存、促生产、提效益。
+截至3月10日，全省26175家规模以上工业企业复产2.6万余家，复产率达99.7%，全省规模以上工业企业基本实现应开尽开、能复尽复。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：xr",2020-03-18 08:32:18,同花顺
+48,巴基斯坦总理呼吁民众团结一致战胜疫情,"新华社伊斯兰堡3月17日电（记者李浩）巴基斯坦总理伊姆兰·汗17日呼吁本国民众团结一致，以负责任的态度共同战胜新冠肺炎疫情。
+伊姆兰·汗当晚首次就新冠肺炎疫情发表全国电视讲话。他说，中国在疫情防控方面为巴基斯坦提供了帮助，巴基斯坦还需要向中国学习更多，因为“中国在控制新冠病毒传播方面取得了巨大成功”。
+据巴基斯坦卫生部门17日发布的数据，该国当天新增52例新冠肺炎确诊病例，累计确诊病例235例。巴南部的信德省是确诊病例最多的地区，为172例，大多数患者为近期由伊朗返回巴基斯坦的朝圣者。
+巴基斯坦政府13日宣布升级全国范围内的疫情防控措施，包括所有教育机构停课至4月5日、禁止举行大型会议和大型文体活动等。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：xr",2020-03-18 08:32:12,同花顺
+49,俄总理表示俄国内食品供应稳定,"新华社莫斯科3月17日电（记者吴刚）俄罗斯总理米舒斯京17日表示，俄国内食品供应稳定，没有必要恐慌。
+今日俄罗斯通讯社17日援引米舒斯京的话报道说，在当前抗击新冠肺炎疫情的背景下，俄国内食品供应稳定，没有必要恐慌和大规模囤积食品。此外，俄政府每天都在线监督从批发到零售各个环节的食品平均价格，严厉打击囤积居奇和哄抬物价。
+俄罗斯副总理戈利科娃说，截至17日，俄境内共发现114例新冠肺炎确诊病例，其中5人治愈出院。戈利科娃表示，不存在新冠病毒在俄大规模传播的可能性。
+目前，俄罗斯已成立由总理领导的抗击新冠病毒协调委员会，以全面协调联邦、地方权力机关的抗疫工作，防止疫情在俄境内扩散。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：xr",2020-03-18 08:32:06,同花顺
+50,科技股短期波动不改科技产业前景,"今年一季度，以科技股为代表的A股上演了一轮过山车行情。年初，在市场热捧下，科技股大涨，带动股市上行；近期，新冠肺炎疫情在全球蔓延，海外资本市场剧烈波动，受此影响，科技股也出现了大幅度的回调。如何看待科技股的剧烈波动？
+为重点支持战略新兴产业，去年推出了科创板。今年3月4日，中共中央政治局常务委员会召开会议，提出加快5G网络、数据中心等新型基础设施建设进度。科技产业在当前极受重视也是富有前景的。
+科技行业的美好前景，一旦遭遇资本的贪婪与恐惧，剧烈波动在所难免。2019年底以来，赚钱效应让越来越多资金涌入科技股和科技类基金，半导体、芯片、5G、新能源车等科技主题爆款基金频出，科技股加速上涨，导致科技股整体估值偏高，客观上有价值回归的需要。
+科技股本身的特性，也使得科技股的股价波动更大。相对传统行业的股票，科技股具有更高的成长性与不确定性，一项新技术、新模式的开发应用，或者是一款新药的研发，都可能使股票价值大幅提升，但一项技术路径的错误也可能导致公司面临倾覆。资本在逐利过程中的羊群效应与情绪化，则更加放大了这种波动性。
+但我们不能因为科技股的波动性，就否定科技股的前景，科技股的长期向好趋势仍在。从市场结构看，细分行业龙头在估值合理之下仍会受到追捧，这也正是不少主流投资机构正在挖掘的机会。
+从产业角度而言，科技股适度活跃，有利于资金涌向科技公司，推动科技产业的发展，泡沫过后往往会涌现伟大的公司；从投资的角度而言，树不能长到天上去，高位买入科技股，可能要被套或亏损，年内发行的多只热门科技类基金已经跌破面值，更有爆款基金净值跌至0.8元附近，投资者追高科技股需谨慎。
+沉舟侧畔千帆过。2000年美股科技股泡沫破裂后，以脸书、亚马逊、苹果、奈飞、谷歌为代表的互联网科技巨头崛起，成为美股核心权重股，带领美股走出十年长牛。相信中国的资本市场，也必将孕育越来越多伟大的科技公司。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：xr",2020-03-18 08:32:00,同花顺
+51,多措并举 欧洲应对经济衰退,"新冠肺炎疫情在欧洲的蔓延，让欧洲经济面临更大的下行压力。欧洲各国纷纷推出有针对性的刺激措施，欧盟也宣布一揽子货币政策，并呼吁各成员国协调一致，共克时艰。欧洲央行行长拉加德表示，如应对得当，疫情带来的经济冲击将是“短暂和有限的”。
+多国下调经济增长预期
+随着疫情防控形势日趋严峻，欧洲各国逐步强化防控措施，包括限制公众出行，暂时关闭学校，加大边境管控力度等。这些举措在阻止疫情进一步扩散的同时，也对欧洲旅游业、餐饮业及航空业等第三产业造成了较大冲击。
+欧盟工业政策负责人布雷顿表示，受疫情影响，未来一段时间欧盟地区的旅游业损失将高达每个月10亿欧元（1欧元约合7.8元人民币）。德国酒店与餐饮业工会最近一份调查显示，76.1%的协会成员订单数量急剧下降。在法国，自2月中旬以来，餐饮业的营业额下降了25%，酒店业的营业额下降了近40%。
+国际航空运输协会表示，自意大利疫情发生以来，前往欧洲的国际航班数量减少了近八成。游客数量减少导致许多大型航空公司减少了航班安排。德国汉莎航空计划在未来几周削减运力至50%，并决定在3月底前停飞150架飞机，取消约7100次航班。“新冠肺炎疫情对人员、企业和供应链均带来巨大挑战。”英国莎士比亚·马蒂诺律师事务所合伙人迈克尔·穆里根表示：“航空业将在未来几周或者几个月遭受沉重打击。”
+目前，欧洲各国纷纷下调经济增长预期。欧洲央行已将欧元区今明两年的经济增速从1.1%和1.4%分别下调至0.8%和1.3%。法兰西银行也将法国今年第一季度的经济增长预期从0.3%下调至0.1%。德国智库基尔世界经济研究所则将今年德国经济增长预期下调1.2个百分点至负0.1%。
+受市场预期低迷的影响，欧洲金融市场也出现大幅波动。欧洲央行行长拉加德表示：“疫情的蔓延对欧元区经济的增长前景带来严重冲击，进一步增加了市场的不稳定性。”
+推出多项应对危机举措
+面对当前形势，欧洲理事会主席米歇尔认为，应对新冠肺炎疫情对经济带来的冲击，已成为欧盟最主要的政策方向之一。欧盟及一些欧洲国家纷纷通过建立专项基金、出台扶持政策等方式，助力抗击新冠肺炎疫情，帮助中小企业渡过难关。
+3月10日，欧委会宣布设立总额为250亿欧元的“危机应对基金”，主要用于支持公共医疗体系、中小企业及劳动力市场，预计将于未来几周内开始投入运营。欧洲央行决定，将在今年年底前额外增加1200亿欧元资产购买计划，重点确保私人部门购买债券，并支持银行向受疫情影响较大的实体部门特别是中小企业提供贷款。
+3月12日，欧洲央行召开货币政策会议，宣布为今年6月至明年6月实施的定向长期再融资操作提供更加优惠的贷款条件，并降低欧元区银行的资本准备金率等关键政策门槛。这些举措旨在通过扩大量化宽松、使用流动性工具以及灵活银行业监管等措施，为欧元区市场注入额外流动性。目前，欧洲央行决定暂维持欧元区主导利率不变。分析人士认为，这是为了避免负利率对欧元区银行业造成更大压力。
+德国政府计划向企业提供不设上限的贷款，并在未来4年每年新增投资31亿欧元。法国政府也已允许企业延期缴纳社会保险金，并加强国家投资银行对中小企业的资金扶持。处于“脱欧”过渡期的英国政府为改善企业和家庭的现金流，将基准利率下调50个基点至历史最低值0.25%，还表示将投入120亿英镑（1英镑约合8.6元人民币）用于支持英国国民健康服务体系，对餐饮、娱乐等产业进行税费减免，并在未来12个月为中小企业提供为期4年的低利率融资。
+需要成员国协调一致行动
+经济合作与发展组织近期发布的《新冠疫情：危机中的世界经济》报告中称，统一的财政政策将是最有效的促进增长的方式。有分析人士指出，疫情造成欧元区供需两端萎缩、消费投资信心下滑和金融市场震荡。除了超宽松货币政策，欧洲各国还需推出更有力的财政政策。
+据统计，截至目前，欧元区各国已宣布的财政刺激总规模约270亿欧元，仅占欧元区国内生产总值的0.25%左右。此外，欧元区私营部门承受巨大压力，对金融市场稳定构成风险。
+瑞银集团经济学家斯特尼斯认为，欧洲国家在应对疫情造成的经济挑战时，首要任务是确保金融市场的稳定。单纯的货币政策不足以确保经济恢复，欧盟应做好准备，出台更加全面的财政计划。斯特尼斯认为，对于欧元区来说，经济政策的有效性需建立在两个基础之上，即确保成员国层面政策间的协调一致，以及更强的政策针对性。
+拉加德也给出类似建议。她强调，欧洲央行的政策工具只有在得到成员国政府支持的基础上才能发挥效果。她呼吁各国采取强有力的财政应对措施，并将政策重点放在确保银行和资本市场的信贷流量、帮助企业减轻成本压力以及保证劳动者利益三个方面。
+当前，很多欧盟国家领导人表达了采取一致行动的意愿。法国总统马克龙表示，欧盟成员国应协调一致，应对经济衰退。德国总理默克尔称，德国愿随时根据需要采取相应措施。米歇尔认为，在疫情冲击欧洲经济的特殊时刻，“需要灵活执行”欧盟的财政纪律。这一表态预示着欧盟各国或可暂时突破“赤字率不得超过3%”的红线，利用更多财政资源稳定经济。
+拉加德认为，如应对得当，疫情带来的经济冲击将是“短暂和有限的”，欧元区经济增长势头有望在中期内得到恢复。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：jdm",2020-03-18 08:31:21,同花顺
+52,疫情阴影下 东京奥运会焦灼难定 若取消日本经济今年或萎缩1.5%,"3月17日深夜消息，据新华社报道，国际奥委会从17日开始将陆续与国际单项体育联合会、国家（地区）奥委会和运动员代表等利益相关方召开电话会，讨论东京奥运会筹办和备战事宜。据了解，目前各方仍按照东京奥运会如期举办的想法安排筹备工作，而目前的当务之急是商讨奥运资格赛和参赛配额分配事宜。
+在新冠疫情“全球大流行”的阴影笼罩之下，2020年东京奥运会能否如期举行疑云重重。
+3月17日深夜消息，据新华社报道，国际奥委会从17日开始将陆续与国际单项体育联合会、国家（地区）奥委会和运动员代表等利益相关方召开电话会，讨论东京奥运会筹办和备战事宜。据了解，目前各方仍按照东京奥运会如期举办的想法安排筹备工作，而目前的当务之急是商讨奥运资格赛和参赛配额分配事宜。
+当天早些时候，据央视新闻援引日媒报道，对于东京奥组委理事高桥治之提出的东京奥运会延期到2022年举行的方案，已有多名奥组委理事表示同意。这样的话，即夏季奥运会和冬季奥运会同年举办，2022年将成为引人注目的“奥运年”。奥组委理事会在3月30日将召开会议讨论该问题，核心议题是在7月24日东京奥运会顺利开幕的原计划外，讨论是否有备选方案。
+21世纪经济报道就此向东京奥组委发去了询问，东京奥组委在3月17日并没有正面回应是否会推迟到2022年，只表示“奥组委理事会将在本月底召开会议，但还未敲定具体日期和会议主题。”而从最新消息来看，会议时间似乎提前了。
+3月17日傍晚，又传来一条与东京奥运会有关的重磅消息，据央视新闻，国际足球联盟理事、日本足协主席、日本奥委会副会长田岛幸三确诊感染新冠病毒。他在2月下旬到3月上旬之间为了参加会议以及女足世界杯的相关活动前往了英国、荷兰和美国。
+3月12日，在日本东京，一名戴着口罩的男子经过2020年东京奥运会主体育场附近的五环标志。-新华社
+是否如期举行仍悬而未决
+随着全球的疫情持续蔓延，奥运会能否如期举行已成为国际社会的一大悬念。尽管此前日本官方一再强调奥运会将如期举行，正按计划推进准备工作，但目前全球的舆论风向似乎已开始转变。
+在世卫组织宣布疫情已构成“世界性大流行”（pandemic）后，相关分析指出，日本政府肩上的压力似乎轻了些，因为倘若改变计划那就不单单是安倍政府的原因了，3月16日举行的七国集团（G7）首脑视频会议认为，目前疫情已成为全球性的健康危机。
+日本政府的口径在近日也似乎发生了微妙的变化。3月17日，日本首相安倍晋三就G7会议召开了发布会，安倍没有正面回应有关奥运会举办时间的提问，而是表示“将力争以完整的形式呈现东京奥运会和残奥会，这将是人类战胜新冠病毒的证明。这也得到了G7其他国家首脑的支持”。
+就在上周，美国总统特朗普针对东京奥运会问题表示，“如果在空空如也的体育馆里、完全没有观众的情况下举办奥运会，那还是推迟一年举行比较好，但这完全是我的个人想法。”
+日本官方多次强调，奥运会能否如期举行的最终决定权还是在国际奥委会（IOC）手里。相关分析称，从日本官方与IOC签订的合同内容来看，有条款指出，若出现足以严重威胁参与者安全的充分依据，那么IOC有权中止比赛。在程序方面，IOC将先通知中止的具体理由，然后给出60天的整改、补救期限。若补救结果不足以令人满意，那么将终止合同。分析进一步指出，如果从60天的期限来倒推的话，为了能够如期举办奥运会（计划7月24日开幕），日本需要在5月控制住疫情。而目前变量已不止日本本土疫情了，还包括欧美多地的形势发展。
+此前，IOC高级成员迪克·庞德在2月时表示，判断东京奥运会是否举办的期限为5月下旬。不过，东京奥组委此前向21世纪经济报道表示，“窗口期”说法并非IOC的共识。监督2020年东京奥运会筹备状况的IOC协调委员会主席约翰·科茨在3月16日对媒体表示，对判断奥运会举办与否不设期限，他还称，目前选手选拔活动暂停是一大问题，但同时称“为7月24日如期开幕推进着一切工作”。
+另据新华社报道，IOC将在3月17日、18日分别与国际单项体育联合会和运动员委员会进行电话会，讨论新冠肺炎疫情应对，并就东京奥运会资格赛等事宜进行沟通。
+本土赞助收入创历史新高
+让我们来算算东京奥运会的“经济账”，东京奥运会对日本经济到底意味着什么？
+根据东京奥组委在2019年底公布的最终预算显示，和奥运会运营直接相关的经费为1.35万亿日元（约合126亿美元），其中包括永久设施等在内的会场总经费为8230亿日元，包括运输和安保等在内的比赛相关经费为5070亿日元，还有200亿日元的其他费用。总体来看，2020东京奥运组委会承担的费用为6030亿日元，东京都政府为5970亿日元，日本中央政府为1500亿日元。
+除了日本官方外，日本企业界也投入巨大。对东京奥运会，日本国内赞助费总计达3480亿日元，约合30亿美元，创历史新高，据IOC公布的数据显示，赞助收入是2012年伦敦奥运会（当时英国国内赞助为11亿美元）的三倍左右。
+东京奥运会国内赞助分为三个等级，目前已经签署15家顶级黄金合作伙伴、32家官方合作伙伴和18家官方供应商，总计65家赞助商。其中，每家顶级黄金合作伙伴需要支付过亿美元的费用。
+此外，还有与IOC签署全球顶级合作伙伴协议的普利司通、松下、丰田、三星和阿里巴巴等国际企业，这部分合同价值分别达到数亿美元。
+若奥运取消日本今年GDP或萎缩1.5%
+新冠疫情对于目前的日本经济来说，可以说是“雪上加霜”，下行风险进一步加剧。2019年，受外部贸易局势影响，日本经济增速出现放缓。而到了第四季度又遭遇了“上调消费税”，增长出现“急刹车”，上周公布的最终数据显示日本四季度GDP同比下降7.1％，超过此前的初值6.3％，为2014年二季度以来最大降幅。
+相关分析称，加上疫情变量后，日本经济存在陷入技术性衰退（即连续两个季度经济负增长）的风险。
+日本央行在3月16日召开紧急货币政策会议，并决定加大目前的宽松力度，将年度ETF购买目标增加6万亿日元，总规模达12万亿日元。将日本房地产投资信托基金（J-REITs）购买目标提升至1800亿日元。该行还下调了对于日本经济景气程度的判断，把景气判断下调为“弱势”，为近三年来首次转变“扩张”的判断，该行行长黑田东彦同日表示，疫情蔓延将继续影响经济形势，全球的增长前景变得更不明朗。
+3月17日，又有日本高官强调疫情对日本经济打击严重，日本经济再生担当相西村康稔表示，疫情对消费者和企业心理的冲击堪比2008年金融危机。
+星展银行近日发布的分析指出，疫情全方位打击内外部需求，日本经济大概率将在今年一季度出现萎缩。鉴于欧美的疫情升级，预计日本一季度对主要目的地的出口都将下降。鉴于本土疫情升级、股市暴跌及东京奥运会取消或者推迟的可能性，日本本土消费也将遭遇冲击。
+野村证券近日发布的研报指出，预计疫情的影响将首先波及日本入境旅游业，且第一季度的影响几乎是板上钉钉的，预计今年一季度日本的入境游客数量会同比下跌4成，入境游客下跌将造成日本一季度出口环比损失2个百分点。野村预计日本一季度出口将受疫情影响而出现季度下跌3%。
+野村进一步分析指出，鉴于前期的准备工作及主要投资都已完成，如果取消或者推迟奥运会，那么入境旅游将损失惨重。
+野村基于组委会的售票预测等数据，若在正常情况下，东京奥运会预计至少将吸引500万的观众，其中2成将为外国游客，基于外国游客人均消费20万日元的数据，野村估算，由奥运会所产生的入境旅游需求总规模约为2400亿日元（约合22.8亿美元），将提振日本第三季度GDP增速0.3%，或全年GDP增速的0.1%。
+凯投宏观(Capital Economics）的相关分析也表达了类似观点，就前期投入而言，早已发生支出，尤其是场馆建设部分已计入近几年的GDP当中，奥运会的取消或者推迟的影响将主要集中体现在旅游及消费上。
+而除了入境消费，影响还会传导至本土消费。根据野村预测，2020年日本的增速预计为-0.7%，若奥运会遭到取消，那么全年可能会发生1.5%的经济萎缩。
+另外，日兴证券估计正常情况下有30万外国游客将在东京奥运会期间访日，但如果奥运会遭到取消且疫情得不到控制，那么日本将遭遇1.4%的负增长。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：xr",2020-03-18 08:29:09,同花顺
+53,莘庄硬核“出招”支撑企业复工复产,"高架上出现了久违的黄色拥堵，工厂的机器又开动了，写字楼的白领进进出出，商场的大门也逐渐开起来了，就连地铁高峰时候的人流也明显多了……这两天，莘庄人想念的“宜居宜业的美丽城市”正在回来。然而，随着有序的复工复产，开工要采取哪些防护措施？有哪些扶持政策可以享受吗？面对既要打赢防控阻击战，也要打好经济保卫战的局面，莘庄的企业该如何出招呢？
+“线上+线下”破解难题
+“您好，请问有什么可以帮到您的吗？”自2月29日起，每天8：30至17：00，这样的开场白便在这间由莘庄镇总工会、经发办、财政所、受理中心、信访办、司法所人员组成的莘庄镇企业复工复产咨询服务办公室里上演了不下百遍。
+职能部门的工作人员纷纷使出“小妙招”，通过微信、电话、来访接待等方式，“线上+线下”为企业提供各项涉及复工复产、帮扶政策等的咨询，对企业遇到的困难诉求、劳资纠纷、法律事务等给予援助解答，为特殊时期企业保驾护航。
+莘庄镇还在微信服务号“莘企政策咨询”特地开设了复工复产专栏，积极提供相关政策推送，并在后台对企业提出的问题在线给予解答，完善落实全方位的企业帮扶措施。截至目前，已接受来电来访三十余次。
+奔赴现场 按下“复工键”
+莘庄镇企业复工复产咨询服务办公室在积极帮助企业复工复产的同时，建立驻楼联络制度，对督查人员进行了集中统一培训，落实“一人一楼宇”对接负责制，安排专人做好与企业的日常协调对接，进一步加强对企业督查指导。
+办公室成员在督查指导的同时，听取企业生产经营面临的影响、困难和意见建议，做好市、区、镇陆续出台的防控期间支持服务企业发展的相关政策宣传解读。对发现的问题，当场开具督查整改意见。并在近期会再次巡查，落实闭环管理。向镇域内的所有企业推送简单明了、易操作的《企业复工防控措施对照自查指引》。办公室成员还会以不间断抽查方式，继续落实对企业的督指导工作。
+截至目前，全镇已有近4000家企业复工，复工超七成，其中：生产性企业复工企业3000余家，沿街商户500多家，仲盛、龙之梦、维璟广场、彩生活广场、东苑丽宝等5家商业综合体均已营业。
+给企业发展服下“定心丸”
+为使镇域内一些符合条件的企业应享尽享、应享快享税收优惠政策，莘庄镇研究制定了《莘庄镇减免中小企业房产租金的实施办法》，对租赁镇国有、镇级集体房产的企业免收2020年2月、3月两个月租金；对租赁村集体经济组织的房产参照镇级集体减免租金方案执行，预计将为企业减免租金共计约4000万元。及时通过“莘企政策咨询”微信平台及领导大走访送至企业，方便企业及时了解并享受政策帮扶红利，鼎力支持企业复工复产。
+上海巨星贸易有限公司、上海八融食品有限公司等企业负责人表示，只要市、区颁布了惠企政策，办公室的工作人员第一时间通过电话、微信为他们辅导讲解公司可以获得哪些优惠，有哪些材料需要准备，其中有什么注意事项，事无巨细，不仅大大减轻了公司的资金负担，还为公司未来发展和规划打造了一个比较好的地基。这让公司觉得很贴心，很感动，你我同心同力，无往而不胜！
+抓防控是硬任务；抓发展是硬道理。莘庄镇在做好防控的前提下，掌握平衡，既满足防疫防控的大势要求，也保障经济活动的正常有序进行，尽可能答好防控和精准复工复产两张“考卷”。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：xr",2020-03-18 08:28:58,同花顺
+54,1月份哈油气出口减少9亿美元,"据哈萨克斯坦资本网3月17日报道，据统计，2020年1月，哈对外贸易总额为68亿美元，同比下降11.3%。其中，出口43亿美元，同比下降19%；进口24亿美元，同比增长6.7%；实现贸易顺差19亿美元，同比下降38%。
+出口下降主要原因在于能源出口减少。其中，原油出口额同比减少7.44亿美元，出口量同比下降13.2%；出口额下降较多的国别依次为法国（3.39亿美元）、瑞士（2.81亿美元）、意大利（2.43亿美元）。天然气出口额同比减少1.35亿美元，出口量同比下降18%。主要原因是对华天然气出口大幅下降，较上年同期减少1.29亿美元。
+进口增长较快的商品包括天然气（增长1.13亿美元）、电话机（0.46亿美元），进口下降的商品包括成品油（0.28亿美元）、轿车（0.16亿美元）。哈前三大进口来源国依次为俄罗斯（9.41亿美元，占比38.8%）、中国（5.51亿美元，占比22.7%）和美国（1.09亿美元，占比4.5%）。上述三国在哈进口总额中占比达65.9%。其中，哈自俄、美进口同比下降0.3%，自华进口同比增长5%。（驻哈萨克斯坦使馆经商处）
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：xr",2020-03-18 08:28:07,同花顺
+55,中医药抗“疫”产生三大积极效应,"“中医药全过程、全方位、深度介入新冠肺炎救治，将产生三大积极效应。从经济成本来看，采用中医药治疗方案，费用低且治愈率高，采用中西结合治疗，支出为西医治疗支出的30%-40%；从治疗效果来看，中医药治疗可最大限度减少副作用和后遗症；从稳定社会方面来看，中医药能够治疗新冠肺炎，可迅速缓解社会恐慌心理。”中国国际经济交流中心研究员张瑾在接受《(image_address=""//comment.10jqka.com.cn/sourcepic/12/vq28w7LOv7yxqAtsaytsay.png"")》记者专访时称。
+“从经济成本来看，采用中医药治疗方案，费用低且治愈率高，国家应该划拨出中医药专项经费，保障中医待遇，保障中药供应。”张瑾表示。
+张瑾介绍，中医治疗新冠肺炎使用的都是价格低廉而且容易获得的中药材，依据病程严重情况和疗程长短，轻症花费约0.8万元/人，重症约3万元/人以内。“采用中西结合治疗，支出仅为西医治疗支出的30%-40%。”
+截至3月17日10时，我国累计确诊81116例，现有2830例。张瑾根据这些公开数据给记者估算了一笔账：不包括医疗队伍自身费用，采用中西医结合治疗，花费将会降到纯西医治疗费用的30%-40%；采用中医治疗，花费将相当于纯西医治疗费用的20%-30%，且治疗效果和患者后遗症都优于西医，还可以为国家节省下大笔的救治资金。
+张瑾表示，据官方介绍，目前湖北确诊病例的治疗中，中医药参与度在75%以上；全国其他地区的比例达到90%以上，多省有效率达到70%，有的甚至达到80%以上。“既然中医药已经被证明有效且成本低，在传染病防控方面，国家就应把中西医并重作为主要救治方法，特别是在控制轻症向重症转化方面，中医药可发挥更大作用。”
+“国家应该划拨出中医药专项经费，保障中医待遇，将道地中药材源源不断地送往前线，让每位患者尽快吃上中药，充分发挥中医药‘简便验廉’的特点，以同样成本救治更多患者。”张瑾表示。
+张瑾特别指出，包括针灸、八段锦、耳穴贴敷、耳穴压豆、易筋经、太极拳等在内的中医传统疗法，具有调和气血、疏通经络、调节脏腑的作用，能明显缓解患者的焦虑、失眠、腹胀、食欲差等症状，特别是针灸，可以快速有效缓解呼吸困难。中医传统疗法非但没有副作用，还能明显增强患者体质，提高免疫力，调节心理和精神状态，加快康复，对患者的恢复非常有益。临床调查显示，有80%的重症患者愿意接受中西医结合治疗，有90%的轻症患者愿意用中药进行干预，中医药深受患者喜爱。
+“在中医药深度参与救治的同时，大力宣传中西医结合治疗新冠肺炎，可降低死亡率，降低轻症向重症的转化率，提高治愈率，还可以迅速缓解社会恐慌心理。”张瑾表示。
+张瑾介绍说，中医认为，病毒细菌千变万化，不断变异，防不胜防，我们能做的就是在患病后帮助患者提升免疫系统的能力。通过人与自然时令变化的适应性，观察病毒侵犯人体后的不同反应，采取四诊合参、辨证论治，无论疫情处于什么阶段，都能够把握疫病的演变规律，达到及时快速控制病情发展、有效预防和治疗的目的。
+张瑾表示，中医和西医各有所长，都发挥着为人民健康保驾护航的作用，应相互学习对方的长处，为我所有。当前，亟须构建中西医结合的医药卫生新体制，以抗击新冠肺炎疫情为契机，真正建立中西医并举、并重、并跑的医疗卫生新体系，构建具有中国独特优势的运行机制，充分发挥集成优势和比较优势，才能永保中华民族的繁荣昌盛。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：ljh",2020-03-18 08:27:47,同花顺
+56,越来越多境外人士认可中医药战“疫”,"全球战“疫”已经全面展开，3月11日，世界卫生组织（WHO）经过疫情评估后认为，新冠肺炎已构成全球流行病。世卫组织实时统计数据显示，截至欧洲中部时间16日16时（北京时间16日23时），全球新冠肺炎确诊病例累计达到168019例，死亡病例6610例，已报告病例的国家和地区达148个，境外确诊病例已超国内总确诊病例。
+此时，已经历经战“疫”形成的中国方案和经验越发受到关注与肯定。世卫组织总干事谭德塞此前在日内瓦表示，中国是目前全球应对新冠肺炎疫情最具经验与成果的国家，中国抗“疫”经验值得借鉴。而在中国的战“疫”方案中，发挥中医药优势、坚持中西医结合是最显著特征之一，在尚未有特效西药和疫苗的情况下，中医药治疗新冠肺炎的明显疗效正在被越来越多人认可。
+“每天少则十个八个、多则二三十个，都是来自华人的医疗咨询。”英国中医论坛主席、英国东伦敦大学针灸专业原全职高级讲师王天俊介绍，疫情来袭，英国各种提高免疫力的中草药以及清肺排毒汤和连花清瘟胶囊等部分中药需求快速上升。最近，他平时进货的3个中医药公司订单大幅增加，比疫情发生前增加了5到10倍，有的中药已经缺货，需要大量进货，甚至通过空运紧急进药。
+《(image_address=""//comment.10jqka.com.cn/sourcepic/12/vq28w7LOv7yxqAtsaytsay.png"")》记者调查发现，英国伦敦的一些中药店在疫情期间销售额均有所增加。不少华人希望通过中医药来增强身体免疫力、对抗病魔。位于伦敦唐人街的同仁堂（600085）药店的工作人员告诉记者，疫情发生后，拿着药方来店里抓药的顾客人数明显增多。
+“疫情在欧洲迅速扩散后，不少英国华人都忧心忡忡，对中医药的作用也有很高期待。”王天俊说，为了帮助在英的华人同胞缓解疫情压力和焦虑，他们发起了英国抗“疫”中医援助活动，把在英国具有各自行业协会认证资质的40多名中医医师组织起来，为华人开展免费医疗咨询和优惠中药援助活动。
+这种状况并非个例。近日，多家境外媒体报道称，自2月以来，美国不少地区用于缓解流感症状以及增强免疫力的中药订单数量几乎翻了一番，纽约民众甚至开始抢购中药。目前板蓝根、金银花等中药已出现脱销现象，部分中草药一货难求，价格也涨得飞快。旧金山一家中药企业在其网站上称，它经历了“异乎寻常的订单数增长”，并要求其客户控制订单。
+在疫情严重的意大利，中药也成为部分市民的首选。意大利岐黄中医学院院长何骏日前接受采访时表示，意大利疫情开始以来，不少中药店根据中国国内专家总结的配方调配了方剂销售，不仅是华人，不少意大利人也购买服用。荷兰莱顿大学生命科学学院莱顿欧洲中医药与天然产物研究中心主任王梅也表示，自疫情开始以来，有的意大利中医诊所门庭若市，每日前来就诊或寻求预防的当地人络绎不绝。
+3月14日，武汉防疫一线的张伯礼、仝小林、黄璐琦三位院士介绍，目前正在积极展开国际合作，让中医药走出国门，帮助国际社会抗击新冠疫情。
+“中医治疗新冠肺炎的经验，应该是中国方案里的一大亮点。”中央指导组专家、天津中医药大学校长、中国工程院院士张伯礼透露，目前韩国、日本、意大利部分科研院校已经来信，希望中国分享抗击新冠肺炎疫情的经验，分享中医药使用的经验，并请求援助中成药。他表示，目前已经将使用经验翻译成英文给到对方。
+张伯礼同时表示，中国医疗专家组也带了金花清感颗粒和连花清瘟颗粒两种中成药支援伊拉克和意大利。
+中央指导组专家、国家中医药管理局专家组组长、中国中医科学院首席研究员、中国科学院院士仝小林介绍，目前他们跟伊朗当地的卫生官员、意大利的华侨中医师接触了解到，从当地病人舌苔呈现的状态来看，与我们国家病人症状“非常相似”，发热、乏力、咳嗽、食欲不振的比例都很相似。
+中央指导组专家、国家中医药管理局专家组组长、中国中医科学院院长、中国工程院院士黄璐琦介绍，目前韩国方面很希望借鉴中医药预防、治疗新冠肺炎的经验。尤其是借鉴参考防治新冠肺炎有效方剂临床筛选研究的模型、实战实效性的体现。韩国方面希望从韩国本土产的药材里面找到预防、治疗新冠肺炎有功效的药材，组成方子。“更希望中国把成功的经验、有效的方子更加直接快速地让他们使用。”
+中医药正在获得越来越多境外专业人士的认可。加拿大《环球邮报》网站此前报道称，德国研究人员2003年的一项研究发现，一种甘草根提取物可能会对抵御SARS有帮助。这项研究报告的作者之一、病毒学家因德里希·奇纳特尔说，武汉建议使用中药“是有道理的”，它应与西药结合使用。他在采访中说：“在西方医学中，我们的药物仅能攻击一个具体目标。而用中医疗法，则可以防止病毒吸附细胞、病毒复制等。”
+据法新社报道，法国中医学术委员会委员马克·弗雷亚尔认为，中国有两种医学体系，即传统医学和西方医学。中国使用中西医结合的方法对抗疫情。中医药可以帮助退烧或排痰，发热或咳痰正是病毒性肺炎的两种症状。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：xr",2020-03-18 08:27:24,同花顺
+57,保时捷将很快为911或718车主提供座椅3D打印服务,"原标题：保时捷将很快为911或718车主提供座椅3D打印服务来源：(image_address=""//comment.10jqka.com.cn/sourcepic/12/Y25CZXRh.png"").COM 
+据外媒报道，保时捷希望为客户的跑车带来更多一点赛车的灵感。当地时间周二，这家德国品牌表示，它将推出一个新的3D打印项目，它将允许客户将他们的汽车座椅部分通过3D打印技术制作出来。
+这可不仅仅是为了酷点，保时捷表示，该技术将允许客户选择三种不同的硬度等级(硬、中、软)并在制作过程中减轻重量。这种叫做3D-printed bodyform full-bucket seat座椅虽然一开始作为标准轻量级斗式座椅使用，但它的结构却非常独特。
+基础支撑包括膨胀聚丙烯跟聚氨酯基材料的混合物，该混合物通过3D打印机输入然后创建出目标材料。保时捷的“Racetex”材料覆盖最终产品，它有助于调节温度和为乘客提供凉爽感。
+(image_address=""http://e.thsi.cn/img/6e31d2ab9e42826e"")
+保时捷计划从今年5月开始提供这项服务，目前还处于原型阶段。首先，它将为40辆911和718辆车型配备这种用于赛道的座椅。之后它将根据反馈继续完善流程并可能在2021年年中开始向所有911或718Boxster/Cayman客户提供该选配选择。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-18 08:26:32,同花顺
+58,"广电总局部署""12条""政策 听听官方、专家怎么说","》》》相关阅读：
+广电总局公布12条政策措施推动广电行业有序复工复产
+独家:5G进军战“疫”一线广电总局12条政策措施官方解读来了
+当前，国内疫情防控形势持续向好、复工复产稳步推进。为支持广播电视和网络视听行业积极开展疫情防控、有序做好复工复产、实现行业平稳发展，国家广播电视总局3月13日通过官网发布《国家广播电视总局关于统筹疫情防控和推动广播电视行业平稳发展有关政策措施的通知》(以下简称《通知》)。
+《通知》包含12条措施，从支持宣传引导、支持创作生产、优化审批流程、完善政务服务、提升应急能力、促进产业发展、落实优惠政策、鼓励担当作为等多个方面提供政策支持。就《通知》的出台及相关内容，人民网传媒频道独家专访了国家广播电视总局规划财务司副司长金北宁，中国传媒大学电视学院党委书记、博士生导师曾祥敏教授和中国人民大学新闻学院视听传播系主任、博士生导师高贵武教授。
+总结经验、回应关切
+《通知》出台“十分必要、及时”
+2020年伊始，新冠肺炎疫情来势汹汹，给经济运行、社会运转带来较大冲击，也影响了各级各类广播电视和网络视听机构的正常工作秩序及经营活动。
+“对这一情况，广电总局党组明确提出要发挥广播电视和网络视听行业特色和优势，精准做好疫情防控宣传，提升内容服务质量，改造提升传统产业，培育壮大新兴产业，努力为夺取疫情防控和实现经济社会发展目标双胜利作出积极贡献。”金北宁表示。
+经过艰苦努力，疫情防控形势持续向好，各地区、各行业复工复有序推进。
+2月23日，统筹推进新冠肺炎疫情防控和经济社会发展工作部署会议召开，习近平总书记出席会议并发表重要讲话。金北宁说，“广电总局深入学习贯彻习近平总书记的重要讲话精神，坚决把思想和行动统一到党中央决策部署上来，组织指导全国广播电视行业迅速行动，统筹做好疫情防控和广电行业发展工作。”
+此时出台《通知》，在金北宁看来是“深入总结了全国广电行业好的经验做法，积极回应行业和社会关切”。
+曾祥敏认为《通知》是具体有针对性的“指导性意见”，“这是作为监管和指导部门促进广电视听行业在新形势下如何发展所给出的政策指向、宣传导向上的一个指导性意见。”
+在疫情防控态势积极向好发展、全国各地复工复产逐渐展开之际，“出台《通知》是十分必要也是十分及时的”，高贵武直言，《通知》对广播电视和网络视听媒体的下一部工作作出部署，既有利于巩固广电媒体和网络媒体在战疫中已经积累起来的舆论宣传优势，也有利于广电媒体和网络媒体根据形势更好开展今后工作，为争取防控的最后胜利和经济社会发展发挥更大的作用。
+《通知》涵盖了支持宣传引导、支持创作生产、优化审批流程、完善政务服务、提升应急能力、促进产业发展、落实优惠政策、鼓励担当作为等12个方面的内容，“为增强行业发展信心、有序做好复工复产、注入行业发展新动能提供了政策支持。”金北宁表示。
+“因为是非常时期出台的‘非常’《通知》”，高贵武认为，其中最大的亮点也体现在“非常”方面，比如在“优化业务审批流程和方式”以及“进一步提升政务服务效率和水平”方面，特别提到要简化程序、通过网上办公来开展工作等，“这都体现出广电管理部门在非常时期‘特事特办’的方法和思路”。
+曾祥敏分析指出，《通知》对未来一段时间广电视听内容提出明确的指向，“未来一大批反映防疫抗疫、支持复工复产的故事题材以及讲好中国抗疫故事的国际传播作品会大量涌现。”
+行业“战疫”十分给力
+复工复产丝毫不能松劲
+面对新冠肺炎疫情，全国广电行业在总局指导下迅速行动起来。“坚决贯彻落实党中央、国务院各项决策部署，履行宣传舆论工作职责，做好疫情防控宣传报道，加大权威信息发布，加强防疫科普宣传，加强精品内容供给，组织全国性公益展播，发挥应急广播作用，努力为全国疫情防控提供舆论支持和广播电视服务。”金北宁总结说。
+各省级卫视和重点网络视听平台调整节目编排，开办专题专栏，突出疫情防控宣传报道；在广电总局协调下，《大江大河》《精英律师》等热播剧版权方向湖北捐赠播出版权；7家互联网电视平台、6家重点网络视听网站和湖北IPTV分平台开展“湖北人民免费看”网络视听公益展播活动……广电与网络视听行业动员力量，调动资源，尽锐出战，纷纷发挥各自优势，在“战疫”行动中交出了优异成绩单。
+高贵武认为，广电行业在疫情宣传报道中方面所发挥出的主流媒体主流引导作用非常显著，也非常有成效。他说：“各级广播电视台派出大批记者奔赴抗疫前线、利用各种媒体手段向社会公众报道和提供了各种信息内容，增强了全社会抗击疫情的信心和决心，为全国战胜疫情形成合力发挥了非常积极的舆论引导作用。”
+曾祥敏表示，特殊时期，电视媒体作为守正清源、凝聚共识，澄清谬误的功能凸显。“此次疫情，电视媒体对疫情的现场及时呈现、信息的权威发布、问题的追责以及群众关切的回应，都使其成为用户最依赖的信息渠道之一。”此外，在曾祥敏看来，动态陪伴成为疫情期间用户使用电视媒体的主要诉求，“电视媒体作为陪伴式的娱乐载体起到了很好的精神陪伴和情绪抚慰作用。疫情期间，从电视节目的点播类型看，电视剧和少儿节目两个品类占据最大比例。”
+针对下一阶段稳妥有序推动复工复产，广电总局一方面要求全国广播电视和网络视听机构加大宣传报道力度，一方面指导行业按照“分区分级精准防控”原则推动复工复产。“广电总局党组要求，既要打赢疫情防控宣传引导战斗，又要坚决完成今年发展任务目标，要按照年初工作部署，深入实施‘舆论引导能力提升’工程、‘新时代精品’工程、‘智慧广电’建设工程、‘视听中国’播映工程、‘安全播出’工程、‘管理优化’工程等六大工程，为夺取双胜利作出积极贡献。”金北宁介绍说。
+高贵武表示，全国广电和网络视听行业应按照总局指导，围绕党和国家的工作部署，积极总结前面的工作经验，继续加大力度，生产出更多、更优的节目内容，并积极发挥媒体在社会服务等方面的优势和功能，为加强疫情防控和复工复产更好地提供有力支持。曾祥敏则指出，除了在信息和内容上服务疫情防控和复工复产，广电和网络视听行业还应该思考在平台连接、技术架构中，提供更多满足于用户实际需求和场景需求的技术和平台服务。
+应急广播堪称“防疫奇兵”
+现实需求助推广电5G建设
+疫情期间，“村长大喇叭”频频在网络上“刷屏”，全国各地网友纷纷晒出自己家乡基层干部的“硬核喊话”。应急广播信息传播面广、传播速度快、连接了田间地头，在应急响应、政策宣讲、信息发布、卫生防疫、资源调度、心理疏导等方面取得了显著效果，成为了“宣传最后一公里”的“防疫奇兵”。
+曾祥敏表示，在网络上可以看到许多乡村用无人机喊话，其实也是因地制宜的广播个性化宣传。在突发公共事件下，广播展现了信息传达的便利、广泛、甚至精准。应根据这次疫情充分研究，结合现代技术，建立起规范、系统、多层级的突发应急广播体系，在必要时能迅速起到很大作用。“这也说明我们不能忽视任何一种媒介手段在特定区域、特定时间的效用，要研究开发它们的功能。”
+关键时刻，“村村响”“大喇叭”能发挥有效作用，离不开国家对全国应急广播体系建设给予的大力支持。金北宁向我们透露了一组数字，2018-2020年共计安排中央财政专项资金18亿元，对全国442个深度贫困县应急广播体系建设给予支持，其中，2020年财政部提前下达资金8.32亿元，支持197个深度贫困县加快建设进度。
+“研究制订《应急广播管理暂行办法》。加快深度贫困县应急广播体系建设，克服疫情影响，尽早建成发挥效益”。对此，国家广播电视总局规划财务司副司长金北宁回应称，下一步，广电总局将继续积极争取中央财政对全国老少边穷地区应急广播建设给予支持，也将进一步加强指导全国各地广电部门争取本级财政投入，大力完善各级应急广播平台和传输覆盖系统，扩大覆盖面，提升智能化水平和应急能力，以更好发挥应急广播的作用。“《应急广播管理暂行办法》2020年将抓紧完成理论研究，并同步开展调研和起草工作，力争2021年以部门规章形式对外发布实施。”
+这次新冠肺炎疫情，是新中国成立以来在我国发生的传播速度最快、感染范围最广、防控难度最大的一次重大突发公共卫生事件。《通知》提出“将此次疫情防控中广电领域相关经验和举措体现在国家层面立法之中。”曾祥敏观察认为，“此次疫情也提升了广电行业应对重大突发事件的能力和水平”，广电行业如何发挥技术和媒介特点，充分利用广播声音的灵活性、电视画面的直观性、移动媒体的场景触达，更好地服务于国家应急管理，指导公众科学有效防疫抗疫，这些都应该加以总结。
+疫情期间，在5G技术的支持下，无接触新闻发布会创造了记者远程提问等新模式；72小时完成雷神山医院广电5G基站建设和网络覆盖……在广电总局党组指挥部署下，中国广播电视网络有限公司开展的广电5G建设及应用取得了可喜进展。此次《通知》也指出“根据疫情防控和复工复产助学需要，指导中国广电优先在疫情严重和相关重点地区布局推动广电5G建设。”对此，曾祥敏分析称，此次疫情激发了远程办公，远程教学、远程录制等大量现实需求，这必将促进技术的开发和应用。因时而动，顺势而为，这是必然趋势。“疫情之后，5G的落地和商用将会极大发展。相关重点地区的基础设施都比较好，有利于5G的建设铺开。也有利于更好地培育和发展’智慧广电’新产品、新业态和新模式。”
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-03-18 08:25:42,同花顺
+59,瓦楞及箱板纸：规模纸企二轮下调 纸企下坡路何时到头,"导语：2020年3月13日龙头纸业玖龙降价消息发出不久，第二轮降价消息却在昨日再次发出，中小企业纷纷跟跌，目前瓦楞及箱板纸市场跌势抵挡不住，多数企业担忧恐慌，频频发问下坡路还需多久？接下来，(image_address=""//comment.10jqka.com.cn/sourcepic/12/wqHW2tfK0bYtsay.png"")将为大家一一讲解分析。
+(image_address=""//comment.10jqka.com.cn/sourcepic/12/wqHW2tfK0bYtsay.png"")监测调研，目前规模纸企于连续两轮下调，中小企业持续下调成品纸。截止发稿前所调研的中小企业中，部分企业价格调整情况如下：
+地区
+省份
+样本名称
+累计下调幅度（元/吨）
+华南
+广东
+东莞玖龙纸业
+350
+东莞双洲纸业
+700-800
+东莞旭丰纸业
+700-750
+东莞上隆纸业
+600-700
+东莞建航纸业
+500-600
+东莞金洲纸业
+700-800
+福建
+泉州玖龙纸业
+350
+福建漳州港兴纸业
+450-500
+西南
+重庆
+重庆玖龙纸业
+150-200
+重庆润民纸业
+300-400
+四川
+乐山玖龙纸业
+250
+四川金田纸业
+300-400
+四川丹棱万平纸业
+300-400
+华中
+江西
+江西柯美纸业
+600-700
+江西新洪兴纸业
+400-500
+河南
+河南龙源纸业
+700-800
+河南亨利纸业
+500-600
+河南许昌宏伟纸业400-500
+华东
+江苏
+江苏飞翔纸业
+300-400
+太仓玖龙纸业
+350-400
+山东
+临沂利华纸业
+600-700
+临沂华星纸业
+500-600
+淄博仁丰纸业
+300
+山东天地缘纸业
+600-750
+山东贵和纸业
+700
+华北
+河北
+河北唐山顺发纸业
+350
+河北昌泰纸业
+400-500
+河北华兴纸业
+400-500
+河北宝石纸业
+400-500
+河北锦新纸业
+450-500
+天津
+天津玖龙纸业
+350-400
+目前影响成品纸价格影响因素中，供需影响程度最大，占比40%，其次是市场情绪，占比30%，原料成本占比20%，政策方面占比10%。
+(image_address=""http://e.thsi.cn/img/b0ad89efc2e3de2a"")
+终端需求不足是纸价下滑本质原因。
+据国家统计局2020年1-2月社会消费品零散总额来看，1-2月份，社会消费品零售总额52130亿元，同比下降20.5%。，其中，饮酒类同比下滑15.7%，服装类下滑30.9%，家电用品类下滑30%，与包装纸相关终端需求减弱明显，引发三级厂、二级厂订单跟进不足，进而导致成品纸企接单量严重不足，据了解，多数中小企业销量仅达到产量的4-5成，在成品纸产量未减产情况下，库存呈现增加趋势。
+成品纸供应多、库存充足是纸价下滑主要原因。
+目前国内纸企开工率在53%左右，较去年同期相比下滑23.11%，产量虽较去年下滑较多，但考虑到需求不济影响，成品纸供应总体偏高。另外(image_address=""//comment.10jqka.com.cn/sourcepic/12/wqHW2tfK0bYtsay.png"")通过对50家瓦楞及箱板纸中大型纸企调研显示，40%企业表示库存已有压力，通过降价来吸引订单，促进货源出货降低库存，60%企业表示前期消化部分库存，目前库存压力还能接受，但若后期下游订单依旧跟进不足，则会出现压力。
+市场情绪持续是纸价下滑直接原因。
+受终端需求不济，三级厂表示订单量少，成品纸、纸板厂价格对于三级厂来说依旧较高，因此对上游纸板厂补仓拿货暂无意愿，二级厂订单进而影响成品纸订单，买跌不买涨心态传导整个产业链，市场看空情绪浓厚。
+那么成品纸还将继续下跌嘛？
+1.终端市场订单尚未恢复，且目前往年需求小淡季，成品纸订单依旧不客观。
+2.进口成品纸陆续到货。据悉，目前来自东南亚、日本、美国、俄罗斯的成品纸于3月下旬陆续到货；加之进口成品纸价格较低，导致国内成品纸价格优势不再。
+3.据了解，少数价格低的企业已在成本线边缘徘徊，但大部分企业成品纸盈利空间在100-200元/吨，考虑到订单出货等因素，成品纸价还有下调空间。
+4.成品纸市场从上游到下游，业者心态普遍看跌。
+综上所述，利空消息集中笼罩市场，(image_address=""//comment.10jqka.com.cn/sourcepic/12/wqHW2tfK0bYtsay.png"")预计短期内成品纸市场还将有一轮下调走势，下调空间100-200元/吨。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：jdm",2020-03-18 08:25:40,同花顺
