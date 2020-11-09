@@ -1,0 +1,321 @@
+,title,content,pub_time,src
+0,济南高新区建成山东省首个高企培育库网络平台,"本报讯 近日，济南高新区科技经济运行局完成了山东省首个高新技术企业培育库网络平台建设任务，并成功组织实施首批企业入库申报。截至目前，入库培育企业达430家，在山东省各国家高新区高企培育方面名列前茅。
+今年以来，按照《山东省创新型省份建设实施方案》中实施高新技术企业培育计划要求，济南高新区科技经济运行局坚持以培育促申报、以培育促发展、以培育促创新的工作理念，在山东省各国家高新区中率先启动高企培育库网络平台建设项目，力争做到上年度高企认定与本年度高企培育无缝衔接，为助力科技型中小微企业升级高企夯实基础。新冠肺炎疫情期间，济南高新区科技经济运行局克服重重困难，在严格落实疫情防控要求的基础上，有序高效推进高企培育库建设项目招标，并同步开展网络平台建设整体方案制定工作。在顺利完成招标程序后，完成了高企培育库网络平台规划设计、功能开发、调试维护、上线运行等各关键环节工作任务，保障了高企认定申报与培育入库工作协同推进，创出高企培育的高新速度。
+2020年5月7日，高企培育库网络平台正式上线，首批次重点针对拟于本年度首次申报认定高企的科技型中小微企业开放入库，试运行首日入库企业过百家，主要涉及电子信息、生物医药、智能制造等高新技术领域，为科技部门和各专业园区统筹企业资源、细化培训方案、加速培育进程打下良好基础。
+下一步，济南高新区科技经济运行局将持续创新工作模式，营造一流高企培育氛围，做好入库企业信息统计汇总和分析研究，制定差异化、精准化、高效化培育措施，充分利用各类线上线下平台载体，提升科技部门在政策宣讲、培训辅导、技术成果转移转化等方面的服务水平，为科技型中小微企业通过自主研发、受让受赠、并购重组等方式获得核心知识产权牵线搭桥，加快科研成果落地和产业化，强化高新技术产品和服务在企业高质量发展过程中的核心支持作用，为园区内企业早日成长为“瞪羚企业”“独角兽企业”贡献科技力量。孙菡含
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：lg",2020-05-18 12:59:44,同花顺
+1,大唐移动5G终端节能技术：树立5G商用体验新标杆,"(image_address=""//comment.10jqka.com.cn/sourcepic/12/t8nP8834.png"")讯（一飞/文）5G要取得商业上的成功，不仅要提供大带宽、广连接、低时延，还要全方位提升用户体验。然而为了做到大带宽、广连接，5G终端的功耗也比LTE终端增加很多，这对用户体验有显著的影响。因此，为了有效保障5G终端用户体验，必须要设法延长5G终端能耗、增加电池续航能力。业界一直在积极探索5G终端节能技术，一种可行的方案是通过基站向终端发送节能信号，辅助终端大大降低监听控制信道的功耗，再结合时/频/天线域随业务变化自适应调整技术，从而降低终端能耗。
+中国信科集团旗下的大唐移动在终端节能方面有着深厚的技术积累与研究经验，率先在3GPP提出了利用基站发送低功耗的节能信号，辅助5G终端降低能耗。没有业务传输时，基站发送信号帮助终端从“网络接入”模式切换到节能的“ 睡眠”状态；有业务到达时，基站可以再发送信号，将终端接收机从节能模式“唤醒”，进入高功耗的网络接入模式。这种忙时接通、闲时睡眠的模式，可以显著降低5G终端功耗。
+大唐移动的提案得到了众多终端与基站厂家的支持，2018年6月，在美国拉荷亚召开的3GPP RAN Meetings #80上，大唐移动的提案成功立项“New SID: Study on UEPower Saving in NR”。大唐移动成为该项目的报告人，主导了后续3GPPNR Rel-16 终端节能项目的研究。3GPP首先开展了物理层的节能研究，从2018年8月到2019年3月，RAN1先后召开了四次会议，完成了该项目的研究与评估工作。在此期间，大唐移动主导了节能方案的识别与评估工作，完成了基于时域、频域、空域的节能方案研究与识别，搭建了终端功耗模型，并对节能方案进行了节能增益评估，输出了大唐移动起草的NR终端节能技术报告TR38.840，为后续的标准化打下了坚实的基础。
+2019年3月，大唐移动在深圳召开的3GPP RAN#83会议上成功推动该项目结题，并一致通过了由大唐移动提出的题为“New WID:UE Power Saving in NR” 的WI立项，开始了5G终端节能标准化的进程。
+在大唐移动及其它3GPP成员的共同努力下，节能信号在激活期外触发非连续接收自适应“睡眠”行为、节能信号在激活期内辅助终端执行跨时隙调度节能技术、终端最大多输入多输出层数自适应节能技术、基站辅助终端放宽无线资源管理测量等节能技术，均被成功的纳入NR Rel-16标准。2019年12月，在西班牙锡切斯召开的3GPP RAN#86会议上，与会者通过了大唐移动提交的结项报告，完成了Rel-16 NR终端节能技术的标准化。实践证明，大唐移动主导的5G终端节能技术可以在不损害用户体验的前提下，比Rel-15终端大幅度降低功耗，延长终端续航时间，加快5G的全面商业化。
+随着2020年全球5G继续扩大商用规模，5G终端的使用量也会直线上升，因此降低5G终端的能耗不仅有利于提升用户体验，还可以在相当大的程度上减少5G网络的整体能耗。这不仅可以帮助电信行业降低成本、增加对消费者的吸引力，还可以在全球树立5G环境友好的形象，促进5G早日获得商业成功。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：lg",2020-05-18 12:59:20,同花顺
+2,三天内从27元涨到120元 头盔抢购风因何而起,"中国商报/(image_address=""//comment.10jqka.com.cn/sourcepic/12/1tC5extagsnMzfgtsay.png"")（记者 李孟）最近头盔成了抢手货，在短短几天时间内，骑行头盔已经价格翻倍，并出现断货情况。
+北京的李女士最近刚买了一辆电动车，为了骑行安全，5月15日，她在淘宝购买了一个头盔，但卖家并未按照约定的时间发货。当李女士再次点击商品链接时，却发现商品已经下架，甚至整个店铺的产品也已全部下架。“不知道是卖完了还是什么原因，联系店铺没有人回应，至今没有发货。”李女士说道。
+李女士5月15日的购买记录，但这个价格如今已经很难买到相似的头盔
+当李女士意识到店铺无法发货，想要重新购买一个头盔时，却发现在短短几天时间内，头盔的价格却像“坐火箭一样飞升”。5月14日，李女士在电商平台看到的某款头盔价格为27元，但5月17日其价格却涨到了120元，且部分颜色和款式都已经售空。
+这种价格的飙升或许与供应相关。中国商报记者在某电商平台查询了解到，此前头盔的价格在20元到上千元不等，但随着头盔抢购风的掀起，50元以下的头盔已经很难买到，不少头盔还处于缺货状态。有淘宝店家告诉记者，近期头盔需求骤增，厂家已经在加班加点生产发货，但目前头盔仍处于紧缺状态。
+“全网都在涨价。没有涨价的也都缺货。我之前买头盔还会挑单镜还是双镜，要求颜色和图案好看。现在根本没得挑，能买到价格合适的头盔就不错了。”李女士说道。
+今年4月，公安部交通管理局部署在全国开展“一盔一带”安全守护行动。行动期间，公安交管部门加强执法管理，依法查纠摩托车、电动自行车骑乘人员不佩戴安全头盔以及汽车驾乘人员不使用安全带行为，助推公众养成安全习惯。
+随着各地开展“一盔一带”安全守护行动，部分地区立法明确驾驶、乘坐电动自行车要佩戴头盔，一股头盔抢购风在全国各地掀起。5月15日，江苏省十三届人大常委会第十六次会议审议通过了《江苏省电动自行车管理条例》，规定自7月1日开始，驾驶、乘坐电动自行车应当按照规定佩戴安全头盔，违规者将处警告或者二十元以上五十元以下罚款。除江苏外，同日，浙江也通过《浙江省电动自行车管理条例》，要求电动自行车驾驶人及搭载人应当佩戴安全头盔，该条例将于今年7月1日起正式实施。
+有江苏的网友表示，尽管政策还未实施，但自己在看到骑电动自行车需要戴头盔的新闻后，立刻购买了一顶头盔。然而自己看中的品牌旗舰店已经缺货，只能购买预售商品，预计收到头盔将是30天之后。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：lg",2020-05-18 12:58:42,同花顺
+3,日本GDP一季度萎缩3.4% 连续两季负增长,"北京商报讯（记者 陶凤 汤艺甜）日本内阁府周一发布的数据显示，日本今年前三个月的国内生产总值（GDP）折合年率环比下降3.4%，这是自2011年第二季以来首次连续两季负增长。
+去年最后三个月，受到消费税上调和具有极大破坏力的台风的影响，日本经济原已出现了大幅萎缩。随着政府实施的一系列社交疏离措施使消费者支出受到打压，供应链中断和出口的下滑使得制造业受到重创，经济学家先前预计日本一季度GDP降幅会高达4.5%。
+国际游客是日本经济的重要拉动力之一，但受疫情影响，到访日本的游客数量大大减少。日本国家旅游局数据显示，今年3月，到访日本的游客数量仅有19万人，较去年同期下降了93%。经济学家普遍预期，日本经济经济最坏的情况还在后面。
+日本经济学家预期，今年第二季度，日本GDP同比将下降20%。日本经济财务大臣西村泰敏在报告公布后表示，经济状况自第一季以来已经恶化，政府正致力于迅速通过第二项额外预算，以提供额外的刺激。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：lg",2020-05-18 12:58:28,同花顺
+4,北京市市场监督管理局决定将圣益科贸有限公司列入严重违法失信企业名单,"(image_address=""//comment.10jqka.com.cn/sourcepic/12/1tC5extagtbKwb/Qws7Fzfgtsay.png"")讯 从国家企业信用信息公示系统获悉，2020年5月14日，北京市市场监督管理局发布了关于圣益科贸有限公司列入严重违法失信企业名单的决定京市监京严列字〔2020〕4555号。
+经查，圣益科贸有限公司（统一社会信用代码/注册号：911101083065934868）因通过登记的住所或者经营场所无法联系的情形被列入经营异常名录届满3年仍未履行相关义务，依据《严重违法失信企业名单管理暂行办法》第五条第一款第（一）项的规定，北京市市场监督管理局现决定将圣益科贸有限公司列入严重违法失信企业名单，并通过企业信用信息公示系统向社会公示。圣益科贸有限公司应主动纠正相关违法行为，并于2025年05月14日后申请移出严重违法失信企业名单。
+圣益科贸有限公司如对本决定有异议，可以自公示之日起三十日内向北京市市场监督管理局提出书面申请并提交相关证明材料，要求核实。也可在接到本决定书之日起六十日内向国家市场监督管理总局或者北京市人民政府申请行政复议；或者六个月内向北京市海淀区人民法院提起行政诉讼。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：lg",2020-05-18 12:58:14,同花顺
+5,我国首个氘代药物获批,"信息时报讯（记者廖温勃）记者获悉，梯瓦医药信息咨询（上海）有限公司于5月18日宣布旗下创新药物安泰坦（氘代丁苯那嗪片）经中国国家药品监督管理局优先审评审批后，正式获批用于治疗与亨廷顿病（HD）有关的舞蹈病及成人迟发性运动障碍（TD）。中国是美国之后全球第二个批准该药物的国家。
+记者了解到，亨廷顿病是一种罕见的致命的神经退化性疾病，亚洲每十万人中大约有0.4人患病，平均发病年龄为40岁。舞蹈病（无意识的，随机和突然的，扭动和/或转动的运动 ）是这种疾病最为显著的表现之一，并发生在大约90%的病人当中。
+而迟发性运动障碍是一种使人衰弱的运动紊乱，以舌头、嘴唇、脸、躯体和四肢部位的重复且不可控的运动为特征。TD在长期接受抗精神病药治疗的中国的精神分裂症患者当中的患病率为33.7%， 可能是由某些用于治疗精神健康状况的药物引起的，这意味着使用这些药物的精神分裂症患者中有三分之一可能患有TD。这种疾病不仅影响患者的治疗依从性，也影响患者的生活质量和他们的社会功能。目前在中国尚无对TD明显有效的治疗。
+“与亨廷顿病有关的舞蹈病以及成人迟发性运动障碍均属于严重的神经系统疾病，影响着患者的日常生活功能和生活质量。由于传统治疗方案极为有限且缺乏循证指南依据，患者亟待安全且高效的新型疗法出现。”中山大学附属第一医院神经内科裴中教授表示，“安泰坦拥有经临床试验验证的数据，是首个被FDA批准为突破疗法的TD治疗。该药为中国HD和TD患者提供了新的治疗方法，使他们的生活质量进一步提高成为可能。”
+安泰坦使用的氘代技术给予了活性成分良好的药代动力学曲线，从而允许减少给药频率，同时显示出对HD舞蹈病和成人迟发性运动障碍患者的有效性和可接受的安全性和耐受性。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：lg",2020-05-18 12:58:04,同花顺
+6,广州9号通告：社区解封 密闭娱乐场所逐步开放,"今日，广州发布《广州市新型冠状病毒肺炎疫情防控指挥部关于做好新冠肺炎疫情常态化防控工作的通告(第9号)》。通告明确，除了明确继续采取健康码查验等措施的社区，其他社区解除封闭式管理、恢复日常管理措施。
+此外，在落实防控措施前提下，全面开放商场、写字楼、超市、宾馆、餐馆、农贸市场等工作生活场所；采取预约、限流等方式，开放公园、旅游景点、运动场所、影剧院，以及图书馆、博物馆、美术馆等室内场馆，可举办各类必要的会议、会展活动等。在确保防控措施落实到位的前提下，逐步稳妥开放密闭式娱乐休闲场所。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-05-18 12:57:01,同花顺
+7,软银谈判出售T-Mobile US大量股份,"(image_address=""http://e.thsi.cn/img/881fb0632efaacf4"")
+北京时间18日消息，据外媒报道，知情人士称，日本软银集团正谈判将其所持美国移动运营商T-Mobile US的“大量股份”售予德国电信。
+如果交易达成，将使德国电信在T-Mobile US的持股增至50%以上。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-05-18 12:53:20,同花顺
+8,用党的创新理论武装头脑 切实发挥财政监管职能作用,"近日，辽宁监管局召开专题会议，认真学习传达贯彻2020年全国财政党风廉政建设工作会议精神，研究部署全面从严治党和党风廉政建设工作任务，并要求各支部要认真贯彻落实部领导讲话精神，创新履职方式方法，在统筹推进疫情防控工作中积极发挥监管局就地就近监管的职能优势。
+一是牢固树立内控意识，进一步规范权力约束。将内控意识贯穿于日常工作全程，按照新时期做好财政工作的要求，结合“不忘初心、牢记使命”主题教育，学习研读《习近平关于不忘初心牢记使命重要论述摘编》有关“增强忧患意识、防范风险挑战要一以贯之”的重要论述，从财政干部的初心和使命出发，引导全局干部职工牢固树立依法行政理念和内控观念，强化风险防控意识和纪律规矩意识，营造务实高效的管理环境。同时对内部管理制度、议事规则及工作程序定期进行清理，进一步细化工作流程及对工作事项的监管标准，将工作责任分解落实到各个处室和每个岗位上，并按照内控检查工作计划进行抽查，明确机关纪委做好全程监督，打造执行坚决、监督有力的制约机制。
+二是多措并举，切实强化财政资金监管。结合辽宁省实际，积极创新履职方式方法，采取非现场信息化手段，及时掌握中央财政疫情防控资金下达及拨付情况，了解中央和辽宁省出台的疫情防控经费保障、减免税费、政府采购“绿色通道”、支持重点保障企业和受疫情影响中小企业生产经营等财税政策，积极跟进资金使用及政策执行情况，确保疫情防控资金用到刀刃上，确保财政资金使用规范安全高效，推动各项财税政策措施落实落细、落地见效。在日常监管工作中，密切跟踪复产复工企业面临的问题，积极征求、研究和报告企业提出的突出问题及建议，为支持企业渡过难关、谋求发展提供优质服务，为支持地方经济社会平稳运行发展积极建言献策。
+三是充分发挥就地就近监管优势。深入贯彻落实习近平总书记关于新冠肺炎疫情防控工作的重要讲话和批示精神，全面落实部党组对财政系统提出的工作要求，在统筹推进疫情防控工作中发挥好机构职能作用。密切关注疫情防控形势，在日常监管工作中利用多种方式宣讲应对新冠肺炎疫情出台的财税政策措施，做好财政宣传服务。也注重加强疫情对地方经济发展和财政运行情况的调查研究和分析预测，聚焦地方财政尤其是基层财政运行风险，密切关注财力薄弱县级财政运转状况，进一步摸清收支矛盾突出的重点县区情况，协调省市财政增加财力支持保障。积极应对基层财政收支矛盾，大力支持地方经济社会平稳运行，切实保障人民群众切身利益。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cjh",2020-05-18 12:52:42,同花顺
+9,北京市消协乡村网购调查：13次有7次订单被提前签收,"北京商报讯(记者闫岩赵驰)5月18日，北京市消费者协会发布2019年北京乡镇(村)居民网购消费调查报告，报告显示，乡镇(村)居民网购物流“最后一公里”问题仍然有待完善，调查员网购体验13次，有7次遭遇订单被提前签收。
+网站截图
+具体来看，调查中发现，7次存在订单提前签收问题主要是有的电商平台网购体验存在未经允许就把商品放到代收点问题。下单时填写的地址是居住地址，但快递物流只将包裹送到代收点，离填写收货地址还有数十公里，需要消费者自己去取，物流人员甚至说送到家要加运费；还有个别物流快递人员因天气影响，未与消费者协商就擅自取消订单，然后打电话让消费者拒收。
+此外，针对网购物流配送速度的问题，近半受访者希望完善乡镇(村)网购物流配送速度问题，四成多受访者希望完善质量和售后问题，近四成受访者希望购物流程简单化，三成多受访者希望支付安全快捷，近三成受访者希望完善信息和资源对称问题，两成多受访者希望建立可信的信誉评价体系。
+对此，北京市消协认为，电商经营者和快递物流公司应整合乡村或偏远地区物流资源，不断提高物流配送能力水平，按时把乡镇(村)居民网购的商品送到约定的收件地址，并告知收件人或者代收人当面验收，切实解决乡镇(村)居民网购快递物流“最后一公里”问题。
+据了解，本次调查主要采用问卷调查和体验调查两种方式，共计收回有效调查问卷3192份，完成体验调查案例13个。其中，问卷调查主要通过延庆、昌平、密云、怀柔、顺义、平谷、通州、大兴、房山、门头沟等10个北京郊区的消协志愿者，针对北京郊远乡镇(村)地区居民定向发放和回收调查问卷；体验人员分别从京东、天猫、苏宁易购（002024）和拼多多4个平台下单购物，重点体验4个平台的网购快递物流“最后一公里”问题。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-05-18 12:50:24,同花顺
+10,宁波高新区提升发展能级有高招,"洪恒飞 秦羽 江耘
+一排排机床设备飞速运转，机器轰鸣声扑面而来……近日，位于浙江宁波北仑大碶高端汽配模具园区的宁波臻至机械模具有限公司的生产车间内，一派繁忙驱散了新冠肺炎疫情的阴霾。
+北仑大碶高端汽配模具园区是宁波高新区“一区十园”的北仑分园重要部分。这个面积不大的园区集聚了70多家企业，90%都是压铸模及其上下游配套企业，全国压铸模具企业前20强中，这里占了11席，有很多“隐形冠军”。
+“经过这几年的发展，我们与10个分园之间形成了以产业为纽带的联动发展机制，与分园所在区(县、市)形成了资源共享、优势互补的联动发展格局，这为培育宁波市战略性新兴产业、引领产业转型升级提供了有力支撑。”宁波高新区党工委书记、管委会主任黄利琴表示。
+耕耘七年 开垦十个分园
+“宁波高新区紧邻宁波市中心城区，随着开发建设规模扩大，土地等资源要素制约了高新区的发展空间。”黄利琴介绍说，与此同时，宁波工业园区原先“小而散”局面也限制着各产业园区创新能级的提升。
+早在2013年，宁波市政府就决定实施宁波高新区“一区多园”发展战略，成立了由市长任组长的领导小组，出台分园发展政策，设立1亿元的专项资金，并出台了科技信贷代偿补偿政策等。
+“一区多园”发展战略实施7年来，宁波高新区已形成了包括海曙、鄞州、江北、北仑、慈溪、余姚、宁海、象山、奉化、大榭的“一区十园”格局，产业涵盖了智能制造、高端装备、汽配模具、软件产业、生物医药等众多领域。
+目前，宁波高新区“一区十园”已拥有高新技术企业963家，集聚中科院宁波材料所、北方材料科学与工程研究院等科研院所30家，并涌现了均胜电子（600699）、奥克斯集团、华翔集团等一批行业龙头企业。
+错位发展 走差异化之路
+当下，诸多国家高新区相继走上“一区多园”的道路。如何优化管理机制，防止因企业转移、资源分流等原因造成园区平均发展、质量下降，是摆在园区管理者面前的必答题。
+以“一区多园”为平台，宁波高新区重点开展联动招商、园区互动、项目扶持等工作，促进了分园主导产业快速集聚，发展能级不断提升。
+“2010年成立时，我们是宁波江北高新技术产业园内的第一家企业，如今已实现反射膜技术的国产化替代。”宁波长阳科技股份有限公司办公室主任周秋帆介绍说，随着宁波高新区的协调部署，一批膜材料企业先后入驻，联合园区高端动力装备制造业，构成了江北膜幻动力小镇。
+据了解，该小镇已形成了从基膜到功能膜的完整产业链，年产能达到5亿平方米，占到全球光学膜总产能的30%。
+北仑分园“主攻”汽配模具;江北分园“兼修”光学膜材料和高端装备制造;奉化分园通过品牌资源共享引进苏氏精密机械以及比亚迪（002594）、德朗能动力电池等智能制造项目……据不完全统计，多年来，宁波高新区转移到分园和周边地区的优质企业达300余家，总投资超过200亿元，有力地支持了分园集群化发展。
+拧成合力构建全域创新格局
+2018年2月，国务院批复同意宁波、温州高新区建设国家自主创新示范区。
+如今，以宁波高新区为核心，宁波市正在全市域推进建设国家自主创新示范区，将提升“一区多园”的创新力量拧成一股合力，使之成为宁波市科技创新的重要策源地和自创区建设的示范载体。
+“我们将充分发挥专项资金作用，引导分园加大科技投入，加快培育高新技术企业，建设企业研发中心、科技企业孵化器等平台载体。”黄利琴表示，宁波高新区正研究出台新一轮扶持政策，探索建立联动招商、项目跨区转移、分园合作开发等机制，构建高新区创新引领、全市域产业协同的利益共同体。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cjh",2020-05-18 12:49:30,同花顺
+11,自营投行双双发力 上市券商4月业绩显著改善,"得力于行情升温带来的自营业务和投行业务的高增长，4月业绩显著改善，龙头券商地位明显。
+截至5月15日，37家上市券商均公布了4月经营业绩。38家上市券商净利润环比增长55.61%。4月38家券商合计实现营业收入335.94亿元，环比增长48.04%；净利润144.19亿元，环比增长55.61%。可比券商累计净利润同比增长11.21%。
+机构分析认为，券商板块目前估值处于历史估值低位，政策红利显著提升了行业增长预期。
+数据显示，可比券商中有5家前四月累计净利润同比涨幅超过50%，增速排名前三位分别是华林证券（002945）(+81%)、国海证券（000750）(+81%)和中信建投（601066）(+63%)。四月各家券商均为盈利状态，26家券商单月净利润环比正增长，环比增速前三名分别是红塔证券（601236）(+587%)、西部证券（002673）(+585%)和财通证券（601108）(+530%)。单月净利润排名前三的分别是中信证券（600030）、申万宏源（000166）和中信建投。
+国开证券分析师程凌分析认为，除了3月低基数的影响，行业业绩环比大幅增长的主要原因是券商自营业务的拉动和投行业务的高增长。
+程凌分析，从近期行业业绩数据来看，自营业务对业绩的贡献度和弹性不断提升，行业以传统通道业务为主的经营模式正在改变，重资本业务的地位越来越高。在业务模式转型过程中，券商融资也迎来高增长。从资产负债管理的角度来看，负债端和净资本的补充多为业务驱动的被动的行为，提高资产端收益率是券商的核心竞争力。除了传统的两融和自营等重资本业务，建议关注衍生品和科创板跟投业务的发展。
+程凌指出，当前券商PB在1.6倍左右，处于历史中低位。政策红利显著提升了行业增长预期，且近期流动性宽松，预计行业业绩和估值均有增长空间。综合考虑资产负债管理能力、重资本业务发展、创新业务开展和行业监管导向，龙头券商的优势均比较明显，建议关注中信证券、华泰证券（601688）和招商证券（600999）。
+粤开证券分析师李兴指出，券商板块目前估值处于历史估值低位。当前货币政策保持相对宽松态势，监管逆周期调节效果显著，创业板注册制改革持续推进，新证券法实施进一步完善证券市场基础制度，行业对外开放提升服务水平。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：ljh",2020-05-18 12:47:45,同花顺
+12,安徽启动残疾人毕业生专场招聘 236家用人单位参加,"人民网合肥5月18日电（汪瑞华）5月17日，正值第30次“全国助残日”。由安徽省残疾人联合会、安徽省人力资源和社会保障厅、安徽省教育厅主办的“就有未来”残疾人大中专毕业生就业专场网络招聘会活动当天全面上线。
+据介绍，今年安徽籍高校残疾人毕业生有1208人，其中省内高校本省籍残疾人毕业生854人。
+此次网络招聘从5月17日持续到5月31日，省、市、县残联、人社、教育等部门三级联动，线上线下同步举办，开通网络招聘“空中通道”，实现用人单位招聘与残疾人求职的精准对接，帮助广大残疾人毕业生足不出户解决就业难题，助推贫困残疾人脱贫攻坚。
+截至目前，安徽全省已有236家用人单位踊跃参加，91家用人单位已面向高校残疾人毕业生启动了咨询招聘。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cjh",2020-05-18 12:47:01,同花顺
+13,湖北赴沪确诊新冠肺炎病例密接者已隔离观察,"人民网武汉5月18日电 据潜江发布消息，该市新型冠状病毒肺炎疫情防控指挥部今天上午发布《关于上海市报告一例涉潜新冠肺炎确诊病例处置情况通报》。通报中说：患者任某某，被上海市浦东新区疾控中心确定为新冠肺炎确诊病例。截至5月18日上午，我市已将追查到的13名在潜密切接触者送至市应急医院进行集中隔离医学观察，并进行血常规、肺部CT、血清抗体检测，检测结果均无异常，且无其它不适症状，正在进行核酸检测。对2名在汉密切接触者已函告武汉市洪山区新冠肺炎疫情防控指挥部排查处置。
+(image_address=""http://e.thsi.cn/img/36c2298dccced29c"")
+潜江市人民政府办公室官方微信截图
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cjh",2020-05-18 12:45:09,同花顺
+14,李宝君任滁州市委常委、宣传部长,"人民网合肥5月18日电（高飞跃）人民网安徽频道获悉，李宝君已任滁州市委常委、宣传部长。
+5月18日，滁州市南谯区人民政府发布消息：5月17日，安徽省文联主席、书协主席吴雪率队深入我区开展 “到人民中去”文艺志愿服务走进南谯活动。市委常委、宣传部长李宝君，南谯区委副书记、区长姚志江，市文联主席张毅，区委常委、宣传部长朱邦超，省、市、区相关单位负责人等参加活动。
+上述信息显示，李宝君已任滁州市委常委、宣传部长。
+据4月30日安徽省委组织部发布的干部任前公示显示：李宝君，男，汉族，52岁，籍贯天津，出生地淮南，省委党校研究生学历，中共党员，现任滁州市政府副市长，拟任滁州市委常委。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cjh",2020-05-18 12:42:46,同花顺
+15,5个现代化种猪养殖项目落户平谷5个村,"新京报讯（记者 曹晶瑞）5月18日，新京报记者从平谷区获悉，平谷区结合自身农科创工作要求，在全区范围内开展养殖规划布局，遴选养殖地块，优选了新希望（000876）、首农中育等五家专业养殖企业，建设5个规模化种猪场，全面推动生猪产业转型升级。5个种猪场全部投产后，平谷区生猪养殖存栏量将稳定在15万头，年出栏生猪将达到26.9万头。
+其中，由新希望集团投资建设的新希望5S智能猪场项目位于东高村镇大庄户村，按照5S的建设理念，计划建成融合云计算、大数据、人工AI智能及物联网技术，实现近乎无人化养殖，并设置独立封闭式可参观通道的现代化、智能化猪场。
+首农平谷原种猪场建设项目位于峪口镇胡家营村，在种猪选育和猪场生物安全体系建设等方面进行科技创新，通过科学合理规划布局，建设封闭式、单元式、立体式标准化智能核心原种猪场。
+大伟嘉种猪项目位于南独乐河镇甘营村，采用“疫病净化，智能自动化生产，精准营养、种养结合、生态循环，全程追溯”的标准化生猪养殖，实行“猪―肥―桃”农牧循环生态模式，建设绿色循环、智能化生态养殖的综合技术集成与示范基地。
+位于夏各庄镇魏太务村的六马种猪项目则集低碳、环保、安全、自动化为一体，计划引进高品质、高健康度、高生产性能的优良种猪，为平谷以及北京市场提供高品质种猪。
+四方红种猪项目位于夏各庄镇南太务村，将依托中国农业国际合作促进会、动物福利国际合作委员会，中国农业科研院校等单位的专家资源，计划采用福利高床饲养技术，提高全场生猪福利水平。
+平谷区表示，将围绕5个种猪养殖项目，在全区建成一批种质优良、技术领先、装备智能、生态安全的现代化种猪繁育场，形成饲料生产、籽种繁育、屠宰加工、产品调运、市场销售全产业链发展模式。建立联农带农、共议共建、共责共利的新型养殖合作模式，通过“企业+村集体+农户”等多方合作，带动农民增收致富。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cjh",2020-05-18 12:41:47,同花顺
+16,金豆子资管俞武艺：坚持将风险控制放在首位,"近日，由证券时报、东方证券联合主办的东方证券杯“逐鹿东方”衍生品基金经理擂台赛2020年3月榜单全新出炉。在该月的股票对冲组中，广东金豆子资产管理有限公司管理的“金豆子汇富一期证券私募投资基金”拔得头筹。
+当下，海外疫情仍如火如荼，资本市场也是风云莫测，这对每一家私募公司的风控能力提出了严峻考验。日前，证券时报记者独家对话金豆子资管核心团队。总经理俞武艺对记者表示，“风险第一”是公司的第一理念，把客户本金安全放在首位，才能真正获得绝对收益。
+首批证券经纪人投身私募
+对于证券从业者来说，“不准炒股”的红线长期令业内颇有微词，这也侧面促成了一批优秀的证券从业者“奔私”，金豆子资管的总经理俞武艺就是其中一员。据悉，俞武艺是中国证券行业第一批证券经纪人，行业经验超过17年。
+在“奔私”之前，俞武艺曾就职于方正证券、华泰证券等上市券商，积累了丰富的客户开发经验和客户资源。在历经A股数次牛熊更替后，他在市场趋势和股价波动判断方面积累了宝贵的经验，形成了独到的交易体系。
+谈及宏观投资策略，俞武艺给出的心得是：始终坚持将风险控制放在第一位，在风险可控的前提下，根据市场估值变化自上而下进行大类资产配置，追求长期稳定的收益。在微观产品策略上，俞武艺介绍，金豆子资管主要采用稳健型股票配置策略，主动寻求市场趋势性机会，灵活增减仓位。
+公开信息显示，金豆子资管成立于2017年3月，虽然创建时间短，但是“麻雀虽小，五脏俱全”，金豆子资管组织架构完整，拥有投资研究部、市场服务部、运营管理部、合规风控部等多个部门。“我们希望建设一支专业、敬业、有活力的投资和管理团队”，俞武艺表示，“努力为客户提供更高效的财富服务。”
+看好科技类板块机会
+“汇富一期”为何赢得了此次月度冠军？对此，该产品基金经理陈铭然介绍，主要原因是分析了猪肉、农业、5G、锂电池等热点后果断介入，抓住了2019年年初的猪肉和5G行情，以及今年年初春节后的科技股行情（主要是锂电池）。
+对于市场行情，陈铭然也给出了自己的判断。他认为，由于疫情的影响，预计今年上半年大盘大概率会维持震荡为主的走势，下半年随着国家对经济刺激和行业扶持政策的逐步落地和成效显现，下半年行情有望逐步走高。
+在板块机会上，陈铭然表示，比较看好科技类板块和消费类板块。“科技自主创新依然是国家重要的发展方向，而下半年疫情控制和经济回暖也很大程度会对消费类个股产生积极的业绩带动机会。”
+在年后的一段时间，金豆子资管因疫情原因布局了医疗器械、食品和农产品这类估值得到提升的板块。“这类因是必选消费，受疫情影响是正面的，业绩波动不大，同时也回避了一些受外需影响的旅游、酒店等部分可选消费类行业。”
+对于科技行业，陈铭然表示，其少量配置中长期预期较好的新基建板块。此外也关注一些稳增长的旧基建板块，例如建材、工程机械等。产品组合呈行业结构多样化特征，产品的稳定性和合理性得到增强，在不确定性中寻找市场机会。
+在风控方面，风控总监刘剑荣表示。“我们会根据相关建仓标的进行移动止盈和止损，单笔交易原则上-8%就进行止损，单个标的的仓位原则上不超30%，总仓位原则上不超过80%，会根据市场强弱进行相关的调整。”他介绍，如遇较长的节假日，会在节前进行减仓或运用50ETF融券对冲风险，避免长假期间海外市场冲击影响。
+另外，在产品仓位的调整上，“如果想要对投资标的进行大幅建仓或加仓（10%），投资经理需提交投资计划，并通过投资决策委员会的审核后才能进行操作。”俞武艺表示，风控部门会对相关标的进行监控（跟踪和预警），触及该标的/净值的预警线时会提出止损/部分或全部平仓的投资建议，有效控制该产品的投资风险，从而避免净值大幅波动。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cjh",2020-05-18 12:38:36,同花顺
+17,马化腾建议提升医疗服务和医务人员获得感,"证券时报e公司讯，今年全国两会，马化腾计划提出书面建议《推进制度与技术创新，提升医疗卫生服务、增加医务人员获得感的建议》，称应进一步深化医疗卫生体制改革，推进制度与技术创新，提升医疗卫生服务、增加医务人员的获得感，免除后顾之忧，夯实“健康中国”建设的人力基础，“我们对医生的关注不单单因为这次疫情，更因为我国医疗卫生事业与人民健康需求已发展到新阶段，医生的安全与健康是全民健康的坚实基础”，马化腾建议重建医患和谐关系。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-05-18 12:33:01,同花顺
+18,美国3.5万个检测结果“不可靠”，大部分人需重新检测,"AdventHealth表示，他们将免费为需要二次检测的人提供检测。
+新京报快讯(记者谢莲)据CNN17日报道，美国佛罗里达州一医疗系统近日发布声明称，由于一家第三方合作实验室检测出现问题，超过35000人的检测结果被认为是“不可靠的”。
+美国AdventHealth在声明中称，超过33000个测试来自佛罗里达州。但声明并未表明，另外2000个测试来自哪个地方。AdventHealth暂未公开到底是哪个实验室出现问题。AdventHealth CEO泰瑞.肖称，“我们和多个州的许多实验室合作良好，为我们的社区提供新冠病毒检测。目前我们将和这个实验室终止合同，同时对此事表示非常失望”，“对于此事造成的不便和不确定性，我们深感抱歉”。
+据《国会山报》报道，大约25000个“不可靠”的检测结果来自佛罗里达州中部地区。AdventHealth佛罗里达州中部地区分部负责人达里尔.托尔称，“我们将夜以继日地工作以纠正这种情况。我们将承担责任，保护每一个信任我们、委托我们照顾他们的人”。
+AdventHealth称，他们将立即通过邮件或电话通知那些受影响的人。据报道，AdventHealth要求那些检测结果呈阳性的人再次接受检测；检测结果呈阴性但出现症状的人立即寻求治疗，同时他们也可能需要重新检测；检测结果呈阴性且未出现任何症状的人，根据情况也可以再次接受检测。AdventHealth表示，他们将免费为需要二次检测的人提供检测。
+对于那些正在等待这个实验室检测结果的人，他们将不会收到检测结果，而他们提供的检测样品将“依法销毁”。
+美媒指出，对于那些检测结果呈“假阴性”的人，他们事实上可能已经感染了新冠病毒，这可能会导致更大的问题。卫生专家指出，自5月18日起，佛罗里达州将逐步开放，如何防止这些“假阴性”及无症状感染者引发聚集性疫情，显得至关重要。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-05-18 12:32:54,同花顺
+19,财经观察：德国推动复工复产 疫情风险犹存,"新华社柏林5月18日电财经观察：德国推动复工复产疫情风险犹存
+新华社记者朱晟田颖张毅荣
+德国联邦政府与各州日前达成协议，在保留关于社交距离和佩戴口罩等规定的前提下，进一步放松防控措施，德国各地开始逐步复工复产，尝试重启日常经济社会生活。专家认为，解禁过程中风险仍存，须谨慎对待。
+据德国疾控机构罗伯特.科赫研究所17日报告，截至17日零时，德国单日新增确诊病例583例，累计确诊新冠病例174355例，累计死亡7914例。
+罗伯特.科赫研究所副所长拉尔斯.沙德说，目前德国每日新增病例数已进入稳定期。他同时提醒，德国目前面临的疫情危险虽然比之前显著降低，但风险依然存在，如果民众不继续保持社交距离、不继续遵守卫生措施，德国在七八月份可能出现第二波疫情。
+在德国各地进一步放松限制措施之际，16日北威州海因斯贝格县发生快递员集体感染事件。在此之前，北威州一家肉制品厂和石荷州一家屠宰场已经发生聚集性感染，造成数百名员工确诊感染。
+即便如此，德国柏林、慕尼黑、斯图加特等多地16日仍然发生抗议政府限制措施的游行，引发人群大规模聚集。
+分析人士指出，由于分步解禁过程仍需民众佩戴口罩、继续保持社交距离等，加上为遏制疫情而采取的停工停产措施导致经济下滑和失业增加，一些民众正逐渐对个人防护和社交规定失去耐心。
+德国联邦统计局15日公布的数据显示，德国今年第一季度国内生产总值环比下滑2.2%，创国际金融危机以来最大季度降幅。经济下滑还导致失业人数猛增，据德国联邦劳工局数据，4月德国失业人数环比增加37.3万人，当月失业率从3月份的5.0%升至5.8%。
+受疫情影响，德国4月份通货膨胀率为0.9%，连续第二个月出现下降，比3月份通胀率低0.5个百分点。其中，能源价格同比下降5.8%，是当月通胀率下降的主要原因；此外，当月食品价格同比上涨4.8%。
+欧洲央行设定的欧元区通胀率目标是略低于2%。但自2019年年初以来，欧元区最大经济体德国的通胀率仅在2019年4月份达到2%。通胀率持续低于目标水平，将影响企业投资和个人消费，进而阻碍经济增长。
+德国科隆经济研究所高级经济学家马库斯.德马里对新华社记者表示，油价是导致通胀变化的重要驱动力，由于疫情造成出行活动减少，汽油和煤油需求保持较低水平，低油价会抑制德国整体物价水平上涨。
+德国贝塔斯曼基金会经济学家蒂斯.彼得森表示，疫情凸显数字经济的重要性，比如在线商务。多年来，数字化技术正越来越多地用于企业生产，疫情加速了这种数字化趋势。
+彼得森说，计算机、机器人、自动化和其他数字技术运用的不断增加，将降低下一场流行病暴发时停产的风险。
+德国联邦外贸与投资署投资部执行董事阿希姆.哈尔蒂希也认为，疫情极大地推动了德国的数字化发展。他说，与疫情暴发前相比，只需从眼下在超市以电子方式付款的人数增多，就可看出德国人对数字解决方案的接受度正在不断提高。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-05-18 12:27:07,同花顺
+20,总投资26.6亿元 平谷17项重点工程集中开工,"新京报讯(记者曹晶瑞)“生态桥”治理工程项目、现代化猪场建设项目、美丽乡村建设、环长城100项目……5月18日，平谷区重点工程项目集中开工仪式在平谷区刘家店镇“生态桥”治理工程项目基地举办，平谷区包括“生态桥”治理工程在内的17项重点工程项目启动建设，总投资26.6亿元。
+平谷区重点工程项目集中开工仪式现场。受访者供图
+新京报记者从开工仪式上了解到，平谷区重点项目集中开工目的是在疫情防控常态化的情况下，力促重点项目早开工、快建设、早投运，进一步释放积极信号，营造全区复工复产的有利氛围。数据显示，目前，平谷全区规上工地、规上工业企业、农业企业、规上超市、商务楼宇复工率均已达到100%，重点餐饮复工率达到92%，经济社会秩序逐步恢复正常水平。
+“生态桥”治理工程将年产2.5万吨有机肥
+平谷是农业大区，每年产生31万吨果园废弃物，“生态桥”治理工程能让这些果园废弃物“变废为宝”。此次启动仪式在平谷区刘家店镇寅洞村东举办，此地也是16个重点工程项目之一的“生态桥”治理工程施工现场。“生态桥”治理工程按照“生态立区、绿色发展”理念，将果园废弃物变废为宝，以解决基层治理问题为导向，以废弃物资源化利用为突破口，以生态循环农业为主要内容，通过“专业化、社会化、市场化、企业化”运作，搭建金融、行政、运营、产业、信息等链条，打通各主体间断头路，形成各部门合力，架设起一座联通发展的“生态桥”。
+此次开工的“生态桥”治理工程将于2021年5月底竣工。受访者供图
+此次开工的“生态桥”治理工程总占地面积71.34亩，总建筑面积19117平方米，总投资1.25亿元，将于2021年5月底竣工，年产2.5万吨有机肥。
+17个重点工程涉及农业科技创新乡村振兴等多领域
+此次集中启动建设的项目共17个，除“生态桥”治理工程外，其余16个分别为新希望北京智能猪场项目、首农食品平谷原种猪场建设项目、北京六马大好河山原种猪基因育种基地(平谷)项目、四方红(平谷)种猪福利示范农场项目、北京大伟嘉原种猪全基因组选育育种基地项目、启迪加速器建设项目、休闲大会大华山分会场基础设施项目、峪口镇西樊各庄村土地整理项目、环长城100休闲步道建设项目、夏各庄新城截洪沟治理工程、金海湖镇平蓟路项目、金海湖镇中心区城市支路道路工程、大兴庄幼儿园改扩建工程、第三幼儿园改扩建工程、台城路南延(二期)道路工程、2020年美丽乡村建设，总投资26.6亿元。这些重点项目涵盖了平谷区农业科技创新、全域旅游、民生保障、乡村振兴等各个领域。
+此外，目前，轨道交通平谷线等5个市级重点工程也已全部开工，各区级重大项目的开复工率远超历年同期水平。
+防疫复工如何两手抓？
+从疫情发生至今，平谷区始终保持着“零确诊病例”的记录，成为北京唯一零感染区。
+复产复工的同时，如何保证疫情防控安全？新京报记者了解到，平谷区在落实“外防输入、内防扩散”防疫策略，将防疫工作抓实抓细抓到位的同时，制定并持续更新各行业、场所导则40个，及复工复产企业通用的应急处置预案，宣传落实到企业。数据显示，该区应急、城管、住建、市场监管等部门加大执法力度，疫情以来累计检查18084次，发现问题419个，全部按照“核实不过夜、整改不过天”的要求进行整改，实现防控工作管理系统化、网络化、全覆盖。
+实际上，为了助力企业复产复工，早在2月2日疫情初期，平谷区就推出了《平谷区支持疫情防控服务保障企业安全有序复工复产政策包方案》，包括防控物资温暖服务包、就业服务包、培训服务包、金融服务包、征税缴税服务包、住宿服务包、用餐配送服务包、防疫情况下的重点企业服务包等8个政策服务包。此后，根据疫情防控形势和有序抓好企业复工复产工作的需要，出台政策包《补充方案》《平谷关于进一步促进中小微企业平稳发展的若干措施》，同时，全面承接转化市级“19条”“16条”“10条”和“9条”政策，助力企业渡过难关。
+为了让企业吃上“定心丸”，平谷区通过政银企对接的方式“解难题”，组织和指导银行、担保等金融机构积极与百余家企业对接；六批次组织16家企业列入国家或市级信贷支持名单，为全区37家企业争取发放低利率、支农支小、央行再贷等贷款4.88亿元，有效解决了企业融资需求；援企稳岗“促就业”，出台疫情期间保障企业用工若干措施实施细则，减征或免征11260家企业三项保险3.18亿元；建立企业用工需求、求职人员需求清单，依托“智慧就业服务系统”就业平台，提供简历投递、岗位推送等服务。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-05-18 12:20:33,同花顺
+21,绿叶制药(02186)：治老年性痴呆药LY30410上市申请已获欧盟主管部门受理,"绿叶制药(02186)发布公告，有关集团在研产品Rivalif—利斯的明透皮贴片多天剂型(“利斯的明多天贴片”或“LY30410”)的开发情况。集团创新药物利斯的明多天贴片于欧洲境内的上市申请已获欧盟主管部门受理。该产品是针对老年性痴呆的创新给药途径产品。
+该项上市申请是基于第2001/83/EC号指令第10(3)条下的非集中审评程序，德国联邦药品与医疗器械研究所(BfArM)作为其参考成员国。该上市申请已获正式验证，审批流程亦已启动。相关临床试验已在开发阶段与欧洲药品管理局(EMA)和BfArM的科学咨询过程中讨论，并成为此次上市申请的基础。
+两项临床试验被认为是关键性的，第一项为开放性、随机、两周期、两序列的交叉研究，以评估9.5mg/24h规格下集团的利斯的明多日贴片与参比制剂Exelon(单日贴片)达稳态后的生物等效性。第二项关键性试验设计是用来测试利斯的明多天贴片与Exelon在年龄为55至90岁的老年受试者(目标人群)的贴片粘附度和皮肤刺激性方面的比较。两项临床试验均符合方案设定的终点。
+利斯的明多天贴片是集团开发的一周两次利斯的明贴片剂型。该产品是由公司子公司Luye Pharma AG(绿叶德国)的透皮贴片研究及开发平台开发，针对中枢神经系统疾病的重点产品。绿叶德国曾为美国和欧洲市场开发利斯的明单天贴片，拥有产品研发成功的良好记录。
+相比市售的利斯的明单天贴片，利斯的明多天贴片具有较低的使用频率，能够提高患者的用药依从性。该产品及其制剂工艺受到多个专利的全球保护。除德国以外，公司亦準备在欧洲其他国家、中国、美国、日本及其他国家注册该产品。
+随着全球老龄化趋势的推进，董事会相信，利斯的明多天贴片未来会有良好的市场前景，并将丰富集团的未来产品组合。
+除利斯的明多天贴片外，集团还有多个中枢神经系统的在研项目，同步在中国及海外市场进行开发，如已在中国、美国提交NDA并在美国通过上市批准前检查(PAI)的LY03004(关于精神分裂症和双向情感障碍)、LY03003(关于帕金森病)、LY03005(关于抑郁症)、LY03010(关于精神分裂症和分裂情感性障碍的治疗)和LY03012(关于慢性疼痛)等项目。上述在研产品在中国、美国、欧洲和日本等战略市场注册进展良好，未来将在这些国家上市并进一步扩展到全球市场。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-05-18 12:17:19,同花顺
+22,国际丨美联储主席：美国经济完全恢复要靠疫苗,"5月17日，美联储主席鲍威尔在采访中表示，美国经济完全恢复有赖于疫苗的研发。他表示，要使经济完全复苏，人们将必须充满信心，那可能需要等待疫苗的到来。他称新冠疫情对美国经济的影响可能持续到明年年底，但具体时间仍无法得知。但他表示，新冠疫情冲击和金融危机不同，不存在房地产泡沫那样固有的问题，一旦疫情过去，经济可以很好恢复。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-05-18 12:16:43,同花顺
+23,联合北京环卫集团 北汽福田年底前推氢燃料电池和纯电动环卫车,"北京商报讯(记者钱瑜刘晓梦)5月18日，北京商报记者从北汽福田获悉，环卫集团京环装备公司与北汽福田将联合推动氢燃料电池车示范推广应用。
+同时，双方还将引入清华大学、北京理工大学、亿华通、京城机电天海公司等氢燃料产业链上的合作伙伴，致力于打通产、学、研、用全链条，计划在2020年底前，推出氢燃料电池和纯电动环卫车系列产品。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-05-18 12:16:24,同花顺
+24,陈茂波估计四月香港失业率将会大幅度攀升,"5月18日，香港财政司司长陈茂波于网志上表示，上星期再次出现了数宗本地新型肺炎确诊个案，为香港正在好转的疫情添上不确定性。本地经济目前仍然严峻，上季GDP按年收缩8.9%，是有纪录以来最差的季度，今季情况仍然未许乐观。就业情况同步转差，失业率在今年头三个月的升幅，由0.1个百分点加速至0.5个百分点，三月份的失业率已升至4.2%。
+而随着多项限制社交距离的防疫措施于三月底开始实施，多个行业的经营受到严重影响，估计四月份失业率将无可避免会更大幅度攀升，就业不足的问题亦很可能会进一步恶化，意味着打工仔的收入受压，面对更沉重的生活及养家压力。
+陈茂波又指，已联络零售及食肆等业界，希望其可为消费者提供不同的消费优惠，以营造良好的刺激消费气氛。百分百担保中小企特惠贷款截至上星期已收到超过2,500宗申请，涉及贷款额超过44亿港元，他指一般而言，只要申请文件齐备，三个工作天内便可批出，其中约60%申请更于即日批出。
+另他说，将与超过20间参与银行正式就派发1万港元签署合约，透过银行及香港邮政发放款项，相信可于6月底开始接受登记，若以最快捷的渠道、即透过电子方式经银行登记及以个人户口收款，料可于7月中收到款项。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-05-18 12:15:35,同花顺
+25,苹果公司将重启美国25家门店,"证券时报e公司讯，美国消费者新闻与商业频道(CNBC)17日消息称，苹果公司当日晚间公布了重启计划蓝图，称本周将有25家美国门店重新开张。据美媒报道，苹果公司在全球拥有510家零售店，其中271家在美国，截至目前已重启全球近100家门店。(海外网)
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-05-18 12:15:00,同花顺
+26,「今日油价」涨幅“两连涨”，离油价上调只差8美元,"国内油价
+今日是新一轮油价调整的第2个工作日，目前预计上调油价330元/吨，相比上个工作日预计涨幅增加90元/吨，但是目前国际油价依旧低于地板价，国内成品油价格依旧呈搁浅状态，不涨不跌。
+预计涨幅“两连涨”，离油价上调只差8美元/桶
+(image_address=""http://e.thsi.cn/img/d2f65aca2d72bef4"")
+今日预计涨幅已超过300元/吨，实现涨幅“两连涨”，虽然国际油价还未突破地板价，但是已经很接近了。
+随着原油价格的上涨，现在布油已经突破32美元/桶，距离突破40美元地板价，只有不到8美元的距离，要是继续大涨的话，在接下来的8个工作日中是足够让国际油价涨8美元的。
+不过，要是这期间原油能够下跌，那么月底前依然很有希望继续实现原油低于40美元的情况，再次实现搁浅的调整，保持5月份不涨的情况。
+虽然近来油市利多因素不少，沙特表示，在减产协议的基础之上，额外减产100万桶，阿联酋和科威特也表示将额外减产。此外，随着欧美逐步解除封锁，原油需求也有所改善。再者就是，上周公布的三大油市报告显示，当前供应过剩的情况有所改善。这些因素支撑油价强势上扬。
+但是，投资者也需要警惕，因为全球疫情还有很大的不确定性，如果第二波疫情爆发，全球经济衰退的前景将会在中长期持续打压原油市场的需求。
+因此，疫情一天不控制，油价能否继续上涨也就尚未确定，何时油价能突破地板价？让我们持续关注~
+国际油价
+截至5月16日收盘，纽约商品交易所6月交货的轻质原油期货价格上涨1.87美元，涨幅为6.79%，收于每桶29.43美元。
+7月交货的伦敦布伦特原油期货价格上涨1.37美元，涨幅为4.40%，收于每桶32.50美元。
+本轮油价调整时间：5月28日24时
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-05-18 12:11:28,同花顺
+27,摩根资产管理认为美国还远不到实施负利率的时候,"【摩根资产管理认为美国还远不到实施负利率的时候】“如果经济仍然处于非常疲软的状态，那么三四年后，美联储可能会考虑负利率，”摩根资产管理在伦敦的全球利率负责人Seamus Mac Gorain说。“就目前而言，他们更关注资产负债表，而不是负利率。”该公司管理着1.7万亿美元资产。“就对银行业的影响而言，他们在当前利率水平已经看到了负利率的成本，”Gorain表示，“总的来说，转变离负利率还有点距离。”
+延伸阅读
+中微公司：目前没有光刻机的研发计划或并购计划英大臣称新冠疫苗研制进展顺利将再投8400万英镑午评：指数震荡走高沪指涨0.61%黄金板块领涨            
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-05-18 12:08:03,同花顺
+28,商务部：今年将加大电商扶贫力度，带动500万农民就业增收,"(image_address=""//comment.10jqka.com.cn/sourcepic/12/1tDQwr6tzrMtsay.png"")客户端5月18日电18日，国新办举行稳住外贸外资基本盘推动商务高质量发展发布会，商务部部长钟山表示，今年商务部将加大电商扶贫力度，推动贫困地区电商发展，带动贫困地区500万农民就业增收。
+(image_address=""http://e.thsi.cn/img/3f1ed9ac8253fad7"")
+资料图(image_address=""//comment.10jqka.com.cn/sourcepic/12/1tDQwr6tzrMtsay.png"")摄
+有记者问，商务部在助力应对疫情的影响，打赢脱贫攻坚战方面，特别是推动电商精准扶贫方面做了哪些工作，取得了哪些成效？
+对此，钟山表示，三年多来，商务部持续推进五项商务扶贫举措，取得积极成效。第一项是电商扶贫。去年，我们会同有关部门推动电商扶贫实现了对国家级贫困县的全覆盖，所有的贫困县都已经开通了电商。去年，全国贫困县网络零售额达到2392亿元人民币，同比增长33%。
+第二项是家政扶贫。我们开展了“百城万村”家政扶贫，帮助100多个城市家政企业与广大的贫困村进行供需对接，带动农村和贫困地区50多万人就业。今年家政扶贫力度要进一步加大，要带动农村和贫困地区就业达到70万人。
+此外，钟山介绍，商务部还有对外劳务扶贫、产业扶贫、边贸扶贫，这些工作都在全面展开，比如对外劳务扶贫方面，去年在境外的劳务人员99.2万人，其中贫困县超过5万人。产业扶贫方面，商务部开展农超农批对接，解决农产品“卖难”问题。边贸扶贫方面，去年边境贸易额达到了515亿美元。同时，我们还为边境经济合作区提供帮助，带动就业超过18万人，也促进了兴边富民。
+钟山最后强调，脱贫攻坚任务紧迫艰巨。商务部将扎实做好五项商务扶贫工作，为决战决胜脱贫攻坚和全面建成小康社会多做贡献。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-05-18 12:07:56,同花顺
+29,关于印发《支持引导黄河全流域建立横向生态补偿机制试点实施方案》的通知,"财资环〔2020〕20号
+山西、内蒙古、山东、河南、四川、陕西、甘肃、青海、宁夏省(自治区)财政厅、生态环境厅、水利厅、林草局：
+为深入贯彻黄河流域生态保护和高质量发展座谈会及中央经济工作会议精神，加快推动黄河流域共同抓好大保护、协同推进大治理，财政部、生态环境部、水利部和国家林草局研究制定了《支持引导黄河全流域建立横向生态补偿机制试点实施方案》，请遵照执行。
+附件：支持引导黄河全流域建立横向生态补偿机制试点实施方案
+财政部生态环境部水利部国家林草局
+2020年4月20日
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-05-18 12:05:41,同花顺
+30,商务部：稳外资要做好三项重点工作,"(image_address=""http://e.thsi.cn/img/98f3c6791041f012"")
+商务部部长钟山(摄影/本报记者车亮)
+中证网讯(记者倪铭娅)关于如何稳外资，商务部部长钟山18日在国新办举行的新闻发布会上表示，稳外资要做好三项重点工作。
+第一，要进一步扩大开放。要不断放宽市场准入，缩减负面清单，扩大服务业开放。这些工作有些已经在做，有些即将开展。要增强区域协同开放，全面推进京津冀协同发展、长江经济带、粤港澳大湾区等重大战略实施，促进区域互动开放，带动全面开放。要加大中西部地区和老工业基地的对外开放，这些地区的发展环境越来越好，而且国家对这些地区还有很多支持政策，商务部鼓励更多的外商到中西部地区、东北老工业基地进行投资。
+第二，建好开放平台。自由贸易试验区、自由贸易港是新时代改革开放的新高地，要把这些开放平台建好，发挥好示范引领作用。2013年以来，建立了自贸试验区18家，这18家自贸试验区利用外资占全国的15%，形成了一批可复制、可推广的试验成果。下一步，要扩大自贸试验区的范围，赋予自贸试验区更大的改革自主权，推动出台新的开放举措。同时，要进一步加快海南自由贸易港建设。
+第三，优化营商环境。今年商务部要重点把《外商投资法》落实好，营造公平竞争的市场环境，保护外商合法权益，保护知识产权，增强外商长期在中国投资的信心，让外商愿意来、留得住、有发展。
+同花顺上线「疫情地图」
+点击查看：新型肺炎疫情实时动态地图>>>
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-05-18 12:00:30,同花顺

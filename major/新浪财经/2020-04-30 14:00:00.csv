@@ -1,0 +1,185 @@
+,title,content,pub_time,src
+0,ST辅仁一季度业绩大幅下滑 “分红爽约”后经营受重创,"4月30日，因“分红爽约”后被中国证监会立案调查的ST辅仁（维权）发布2020年第一季度报告，报告期内，公司营收和净利润同比大幅下滑，分别为60.55%和88.23%。经营活动产生的现金流量净额也同比下滑98.83%。辅仁药业表示，公司目前资金短缺可能造成产能不足，并影响相关产品销售。
+因“分红爽约”牵扯出违规担保、控股股东违规占用公司资金等问题，辅仁药业被立案调查，经营遭受重创。今年一季度，由于疫情影响及公司资金周转紧张，辅仁药业部分产品生产受到影响，营业收入5.4亿元，同比下滑60.55%。同时，公司的营业总成本、销售费用、研发费用、经营活动产生的现金流量净额、筹资活动产生的现金流量净额等均出现大幅下滑，主要是因为收入下降、资金周转紧张等原因造成。而财务费用却因为利息支出增长而同比上涨22.46%。
+2019年，辅仁药业营收和净利润也是同比下滑，降幅分别为18.42%和27.69%。公司控股股东辅仁集团所持股份全部遭冻结，占辅仁药业总股份数的45.03%。
+2019年7月16日，辅仁药业发布《2018年年度权益分派实施公告》，利润分配以方案实施前的公司总股本627157512股为基数，每股派发现金红利0.1元（含税），共计派发现金红利约6271.58万元。但3日后，辅仁药业却因资金安排原因，未按有关规定完成现金分红款项划转，无法按照原定计划发放现金红利。“分红爽约”后，辅仁药业回复上交所问询函称，截至2019年7月19日，公司及子公司拥有现金总额1.27亿元，其中受限金额1.23亿元，未受限金额377.87万元。而在辅仁药业此前披露的2019年一季度报中，其货币资金期末余额为18.16亿元。18.16亿元变1.27亿元，两者之间相差巨大，现金总额蒸发16.89亿元，此举也引发了业内对其财务造假的质疑。2019年7月26日，中国证监会对辅仁药业启动了立案调查，截至目前仍在调查中。2019月3日，辅仁药业股票名称变更为“ST辅仁”。
+2019年12月25日，上交所通报了辅仁药业违规事项和有关处分情况，列出了公司“六宗罪”，包括控股股东辅仁集团及关联方违规占用公司超16亿元的非经营性资金、为控股股东及其关联方违规提供1.4亿元担保、未及时披露多起重大诉讼等。
+截至今年4月21日，辅仁药业控股股东辅仁集团预期债务估计为38.45亿元。辅仁药业偿还所欠控股股东及其关联方款项后，向控股股东及关联方提供借款余额约16.36亿元；公司向控股股东及关联方提供连带责任担保1.4亿万元，尚有担保余额5980万元。辅仁药业表示，公司发现违规担保和资金占用事项后，已于第一时间向控股股东辅仁集团发函核实并督促其采取有效措施积极筹措资金尽快偿还债务、解除担保、解决占用资金以消除对公司的影响。辅仁集团承诺，将积极与债权人沟通，通过包括但不限于处置相关资产、合法贷款、转让股权等形式筹措资金，偿还债务、解决诉讼，尽快解决上市公司的对外担保和资金占用问题。
+记者 王卡拉
+责任编辑：陈志杰",2020-04-30 14:58:42,新浪财经
+1,视频丨比亚迪一季度利润大幅下挫 股价为何大涨？,"视频加载中，请稍候...
+自动播放
+(image_address="""")
+play
+比亚迪一季度利润大幅下挫 股价为何大涨？丨解财报
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 334115987,
+pid:1,
+url: '',
+title:'比亚迪一季度利润大幅下挫 股价为何大涨？丨解财报'//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=334115987/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+原标题：比亚迪一季度利润大幅下挫 股价为何大涨？丨解财报
+责任编辑：田原",2020-04-30 14:57:01,新浪财经
