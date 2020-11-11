@@ -1,0 +1,1774 @@
+,title,content,pub_time,src
+0,视频|长华汽车家族持股96%涉诸多风险 拟募投项目停摆为何仍闯IPO,"视频加载中，请稍候...
+自动播放
+(image_address=""//p.ivideo.sina.com.cn/video/339/583/975/339583975_220_124.jpg"")
+play
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 339583975,
+pid:1,
+url: 'https://finance.sina.com.cn/wm/2020-06-13/doc-iirczymk6734353.shtml',
+title:''//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=339583975/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+来源：新投资者网
+疫情期间，全国汽车的销量出现大幅度下滑。但长华汽车却选择在这样的市场行情下上市选择逆风而行。长华汽车成立于1993年11月，主要从事汽车金属零部件的研发、生产和销售2020年更新的招股书披露，该公司拟募集资金6.67亿元用于四个项目。但目前，长华汽车的武汉项目计划建设期36个月。
+可如今，正值疫情期间，该项目也处于停滞状态。后续的生产情况也将成为未知，此外，长华汽车营业毛利率与净资产收益率也双双下滑。招股书显示，2016年至2019年上半年长华汽车的主营业务毛利率分别为29.24%、26.04%、25.16%、22.29%，同期公司的净资产收益率分别为22.56%、22.21%、19.06%、5.94%，均呈现下降趋势。
+但在这样的背景之下，长华汽车仍坚持上市，最终胜算几何，尚且难定。
+（本文仅供参考，不构成投资建议，市场有风险，投资须谨慎）
+精选/Editor‘s Picks
+一定要活下来！走过危机杀出重围做赢家
+(image_address=""//n.sinaimg.cn/sinakd2020613s/731/w1080h451/20200613/933d-iuvaazp8406217.jpg"")
+]article_adlist-->
+我们与中国经济一起 站在下一个12年的起点]article_adlist-->
+(image_address=""//n.sinaimg.cn/sinakd2020613s/643/w1044h399/20200613/0f99-iuvaazp8406227.jpg"")
+]article_adlist-->地产价值TOP50榜：16万亿后50强房企转型真相
+(image_address=""//n.sinaimg.cn/sinakd2020613s/644/w1080h364/20200613/e0a7-iuvaazp8406226.jpg"")
+]article_adlist-->商务合作 · tzzb@tzzw.cn
+内容合作 · gaofangfang@tzzw.cn
+官方网站 · www.investorchina.cn
+▣
+◆
+招聘
+◆
+产经行业研究员               前台行政
+金融行业研究员               公关经理
+研究院 · 研究员               新媒体销售经理
+医药产经分析师             美编
+微商城/小程序运营专员
+▣
+◆
+联系方式
+◆
+招聘电话：021-33833319
+加入我们：tzzbhr@tzzw.cn
+]article_adlist-->
+(image_address=""http://n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陶然",2020-06-13 07:50:20,新浪财经
+1,视频|长华汽车家族持股96%涉诸多风险 拟募投项目停摆为何仍闯IPO,"视频加载中，请稍候...
+自动播放
+(image_address=""//p.ivideo.sina.com.cn/video/339/583/975/339583975_220_124.jpg"")
+play
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 339583975,
+pid:1,
+url: 'https://finance.sina.com.cn/wm/2020-06-13/doc-iirczymk6734353.shtml',
+title:''//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=339583975/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+来源：新投资者网
+疫情期间，全国汽车的销量出现大幅度下滑。但长华汽车却选择在这样的市场行情下上市选择逆风而行。长华汽车成立于1993年11月，主要从事汽车金属零部件的研发、生产和销售2020年更新的招股书披露，该公司拟募集资金6.67亿元用于四个项目。但目前，长华汽车的武汉项目计划建设期36个月。
+可如今，正值疫情期间，该项目也处于停滞状态。后续的生产情况也将成为未知，此外，长华汽车营业毛利率与净资产收益率也双双下滑。招股书显示，2016年至2019年上半年长华汽车的主营业务毛利率分别为29.24%、26.04%、25.16%、22.29%，同期公司的净资产收益率分别为22.56%、22.21%、19.06%、5.94%，均呈现下降趋势。
+但在这样的背景之下，长华汽车仍坚持上市，最终胜算几何，尚且难定。
+（本文仅供参考，不构成投资建议，市场有风险，投资须谨慎）
+精选/Editor‘s Picks
+一定要活下来！走过危机杀出重围做赢家
+(image_address=""//n.sinaimg.cn/sinakd2020613s/731/w1080h451/20200613/933d-iuvaazp8406217.jpg"")
+]article_adlist-->
+我们与中国经济一起 站在下一个12年的起点]article_adlist-->
+(image_address=""//n.sinaimg.cn/sinakd2020613s/643/w1044h399/20200613/0f99-iuvaazp8406227.jpg"")
+]article_adlist-->地产价值TOP50榜：16万亿后50强房企转型真相
+(image_address=""//n.sinaimg.cn/sinakd2020613s/644/w1080h364/20200613/e0a7-iuvaazp8406226.jpg"")
+]article_adlist-->商务合作 · tzzb@tzzw.cn
+内容合作 · gaofangfang@tzzw.cn
+官方网站 · www.investorchina.cn
+▣
+◆
+招聘
+◆
+产经行业研究员               前台行政
+金融行业研究员               公关经理
+研究院 · 研究员               新媒体销售经理
+医药产经分析师             美编
+微商城/小程序运营专员
+▣
+◆
+联系方式
+◆
+招聘电话：021-33833319
+加入我们：tzzbhr@tzzw.cn
+]article_adlist-->
+(image_address=""http://n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陶然",2020-06-13 07:50:20,新浪财经
+2,视频|长华汽车家族持股96%涉诸多风险 拟募投项目停摆为何仍闯IPO,"视频加载中，请稍候...
+自动播放
+(image_address=""//p.ivideo.sina.com.cn/video/339/583/975/339583975_220_124.jpg"")
+play
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 339583975,
+pid:1,
+url: 'https://finance.sina.com.cn/wm/2020-06-13/doc-iirczymk6734353.shtml',
+title:''//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=339583975/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+来源：新投资者网
+疫情期间，全国汽车的销量出现大幅度下滑。但长华汽车却选择在这样的市场行情下上市选择逆风而行。长华汽车成立于1993年11月，主要从事汽车金属零部件的研发、生产和销售2020年更新的招股书披露，该公司拟募集资金6.67亿元用于四个项目。但目前，长华汽车的武汉项目计划建设期36个月。
+可如今，正值疫情期间，该项目也处于停滞状态。后续的生产情况也将成为未知，此外，长华汽车营业毛利率与净资产收益率也双双下滑。招股书显示，2016年至2019年上半年长华汽车的主营业务毛利率分别为29.24%、26.04%、25.16%、22.29%，同期公司的净资产收益率分别为22.56%、22.21%、19.06%、5.94%，均呈现下降趋势。
+但在这样的背景之下，长华汽车仍坚持上市，最终胜算几何，尚且难定。
+（本文仅供参考，不构成投资建议，市场有风险，投资须谨慎）
+精选/Editor‘s Picks
+一定要活下来！走过危机杀出重围做赢家
+(image_address=""//n.sinaimg.cn/sinakd2020613s/731/w1080h451/20200613/933d-iuvaazp8406217.jpg"")
+]article_adlist-->
+我们与中国经济一起 站在下一个12年的起点]article_adlist-->
+(image_address=""//n.sinaimg.cn/sinakd2020613s/643/w1044h399/20200613/0f99-iuvaazp8406227.jpg"")
+]article_adlist-->地产价值TOP50榜：16万亿后50强房企转型真相
+(image_address=""//n.sinaimg.cn/sinakd2020613s/644/w1080h364/20200613/e0a7-iuvaazp8406226.jpg"")
+]article_adlist-->商务合作 · tzzb@tzzw.cn
+内容合作 · gaofangfang@tzzw.cn
+官方网站 · www.investorchina.cn
+▣
+◆
+招聘
+◆
+产经行业研究员               前台行政
+金融行业研究员               公关经理
+研究院 · 研究员               新媒体销售经理
+医药产经分析师             美编
+微商城/小程序运营专员
+▣
+◆
+联系方式
+◆
+招聘电话：021-33833319
+加入我们：tzzbhr@tzzw.cn
+]article_adlist-->
+(image_address=""http://n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陶然",2020-06-13 07:50:20,新浪财经
+3,视频|长华汽车家族持股96%涉诸多风险 拟募投项目停摆为何仍闯IPO,"视频加载中，请稍候...
+自动播放
+(image_address=""//p.ivideo.sina.com.cn/video/339/583/975/339583975_220_124.jpg"")
+play
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 339583975,
+pid:1,
+url: 'https://finance.sina.com.cn/wm/2020-06-13/doc-iirczymk6734353.shtml',
+title:''//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=339583975/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+来源：新投资者网
+疫情期间，全国汽车的销量出现大幅度下滑。但长华汽车却选择在这样的市场行情下上市选择逆风而行。长华汽车成立于1993年11月，主要从事汽车金属零部件的研发、生产和销售2020年更新的招股书披露，该公司拟募集资金6.67亿元用于四个项目。但目前，长华汽车的武汉项目计划建设期36个月。
+可如今，正值疫情期间，该项目也处于停滞状态。后续的生产情况也将成为未知，此外，长华汽车营业毛利率与净资产收益率也双双下滑。招股书显示，2016年至2019年上半年长华汽车的主营业务毛利率分别为29.24%、26.04%、25.16%、22.29%，同期公司的净资产收益率分别为22.56%、22.21%、19.06%、5.94%，均呈现下降趋势。
+但在这样的背景之下，长华汽车仍坚持上市，最终胜算几何，尚且难定。
+（本文仅供参考，不构成投资建议，市场有风险，投资须谨慎）
+精选/Editor‘s Picks
+一定要活下来！走过危机杀出重围做赢家
+(image_address=""//n.sinaimg.cn/sinakd2020613s/731/w1080h451/20200613/933d-iuvaazp8406217.jpg"")
+]article_adlist-->
+我们与中国经济一起 站在下一个12年的起点]article_adlist-->
+(image_address=""//n.sinaimg.cn/sinakd2020613s/643/w1044h399/20200613/0f99-iuvaazp8406227.jpg"")
+]article_adlist-->地产价值TOP50榜：16万亿后50强房企转型真相
+(image_address=""//n.sinaimg.cn/sinakd2020613s/644/w1080h364/20200613/e0a7-iuvaazp8406226.jpg"")
+]article_adlist-->商务合作 · tzzb@tzzw.cn
+内容合作 · gaofangfang@tzzw.cn
+官方网站 · www.investorchina.cn
+▣
+◆
+招聘
+◆
+产经行业研究员               前台行政
+金融行业研究员               公关经理
+研究院 · 研究员               新媒体销售经理
+医药产经分析师             美编
+微商城/小程序运营专员
+▣
+◆
+联系方式
+◆
+招聘电话：021-33833319
+加入我们：tzzbhr@tzzw.cn
+]article_adlist-->
+(image_address=""http://n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陶然",2020-06-13 07:50:20,新浪财经
+4,上市公司掀拆分热潮 促进企业融资还是为了“一夜暴富”,"《投资者网》容毅灵
+]article_adlist-->
+来源：新投资者网
+拆分上市的过程实质上是二级市场投资者的财富被二次分配给了拆分以后的上市公司股东，本身并不能增加新的财富，但是分拆以后子公司的市值却急剧膨胀，于是“分拆上市”变成部分已上市公司高管层寻求一夜暴富的手段
+2019年12月证监会发布分拆上市新规（《上市公司分拆所属子公司境内上市试点若干规定》），分拆上市在国外已经屡见不鲜，国内规定也不断开放，相比意见稿分别在盈利要求、募集资金用途、子公司董事及高管的持股上线放宽条件。一时间不少A股上市公司纷纷蠢蠢欲动。
+A股境内分拆上市“破冰”，是资本市场改革中的重要一环，有望促进优质化企业融资，更好服务实体经济。但也有一些公司分拆上市的操作，引发了投资者关于公司“管理层只为暴富”的质疑。
+(image_address=""//n.sinaimg.cn/sinakd2020613s/274/w912h162/20200613/8ccd-iuvaazp8406435.png"")
+金山软件带头拆分上市
+金山软件（03888.HK）早有分拆意图，新规一经发布便在科创板上市子公司金山办公（688111.SH）。不到半年的时间，金山软件先后拆分两家公司分别在上海科创板和纳斯达克上市。
+金山办公于2019年11月18日于上海科创板上市，一上市市值就达到将近600亿元，上市半年后市值仍居高不下，维持在1254.47亿元；金山云（KC.O）则在2020年5月8日于纳斯达克上市，股价一开盘就大涨20%，之后股价也一路走高，涨幅超过40%，截至收盘金山云市值达到47.74亿美元（约338亿元人民币）。
+金山软件的主营业务由三大业务板块——网络游戏、云服务、办公软件及服务，变更成只剩下网络游戏业务，当前市值维持在358.97亿元。
+最新拆分的两家公司市值都高于金山软件，尤其金山办公市值将近是金山软件的3.5倍，金山系公司总市值为1981.5576亿元，金山办公占比高达63%，金山软件仅占18%。
+(image_address=""//n.sinaimg.cn/sinakd2020613s/630/w707h723/20200613/3651-iuvaazp8406487.png"")
+拆分上市后金山软件第一季度营业收入达到11.7亿元，同比增长了32%，净利润相比去年同期大幅扭亏达到625.7万元，金山云的剥离上市使得经营利润达到3.85亿元，同比增加124%，经营利润呈现出大幅改善，但因为该季度金山云仍然被列入非持续性经营业务，金山云的业务扩张在损益上也影响了金山软件非持续性业务损失，近而影响了净利润表现。
+(image_address=""//n.sinaimg.cn/sinakd2020613s/326/w698h428/20200613/8262-iuvaazp8406488.png"")
+剥离云业务和金山办公以后，网络游戏自然成为金山软件的主要收入来源。2020年第一季度网络游戏业务收入达到7.807亿元，占总体营业收入的66.7%，同比增长30%。 
+(image_address=""//n.sinaimg.cn/sinakd2020613s/449/w758h491/20200613/1112-iuvaazp8406521.png"")
+虽然2020年金山软件游戏业务带来的营收较2019年下半年有所增长，但拆分使得游戏业务的占比越来越高，加之网易和腾讯两大巨头的挤压效果逐渐明显，未来的营收不容乐观。据《2019年1-6月中国游戏产业报告》显示，2019年中国游戏用户规模已经达到6.4亿人，反观金山软件每日平均最高同步用户人数，2019年只有60万左右，不过冰山一角。可见金山软件在游戏板块的竞争力还需商榷，盈利能力也有待培养。
+游戏市场及监管环境也在不断变化，不仅相关监管政策频出，游戏业务遭遇寒流；整个国内游戏市场同时也正处在增速放缓的大趋势中，虽然受疫情影响，游戏用户规模有了新的增长。但在这样的大环境下，金山软件在锁定老用户群的同时创造新用户群似乎难上加难。
+首个在境内拆分上市“吃螃蟹”的金山系公司市值翻了5倍，可谓“一夜暴富”，但新的融资是否能推动企业走向更优质的未来，只能交给时间回答了。
+“赶趟儿”的公司市场反应相对平淡
+拆分上市的过程实质上是二级市场投资者的财富被二次分配给了拆分以后的上市公司股东，新规发布后有26家上市公司纷纷发布公告称要将子公司拆分上市。其中21家公司股价都在发布预案当日呈上涨趋势，其中市场反应最好的当属江苏国泰（002091.SZ），当日股价涨幅达到10.06%，一路涨停。联美控股（600167.SH）、岭南股份（002717.SZ）和紫江企业（600210.SH）当日也同样涨停；与之相反延安必康（维权）（002411.SZ）股价当日反倒跌停。
+值得注意的是，预案发布后一周的平均收盘价几乎都呈现回落，尤其是安正时尚（603839.SH）股价下跌10.4%。。
+比较预案发布日收盘价和6月10日收盘价，披露分拆上市预案的26家公司中只有10家股价上涨，其中涨幅最大的是广电运通（002152.SZ），从预案发布时的9.74元每股涨到11.79元每股，涨幅达到21.05%。
+剩余16家上市公司6月10日收盘价相较预案发布当日收盘价均不同幅度下跌，长春高新（000661.SZ）近两日股价波动较大，但并非由拆分预案的发布而引起，因此作为偏离值剔除。其中延安必康股价跌幅最明显，从预案发布时的8.84元每股跌至6.91元每股，跌幅为21.83%。
+由此可见，市场反应平淡，投资者对拆分上市并非全盘买账。
+(image_address=""//n.sinaimg.cn/sinakd2020613s/699/w714h785/20200613/3bec-iuvaazp8406545.png"")
+新规条件放宽不等于监管放宽
+有市场人士炮轰“分拆上市”，认为分拆本身并不能增加新的财富，子公司分拆前后并没有本质上的区别，但是分拆以后子公司的市值却急剧膨胀。“分拆上市”恐变成部分已上市公司高管层寻求一夜暴富的手段。
+新规确实放宽了分拆条件，但这并不意味着监管也同时放开。
+新规首先就规定上市公司要具备一定的盈利能力，要求最近3个会计年度连续盈利，且最近3个会计年度扣除按权益享有的拟分拆所属子公司的净利润后，归属上市公司股东的净利润以扣除非经常性损益后孰低值计算，累计不低于6亿元，下表是26家上市公司三年报告期内的净利润，其中安正时尚三年累计的净利润较低，，是否能成功拆分还是未知数。此外，厦门钨业、紫江企业、延安必康虽然累计超过6亿元，但最近两年净利润都呈下降趋势，拆分后盈利能力或受影响。
+其中延安必康还于5月22日收到深圳证券交易所关于年报的问询函，延安必康在6月5日就在建工程、固定资产、应收帐款等一系列问题给出回复。
+(image_address=""//n.sinaimg.cn/sinakd2020613s/536/w688h648/20200613/8916-iuvaazp8406567.png"")
+数据来源：同花顺数据整理统计
+保利地产期望将物业板块拆分上市、大全新能源（DQ.US）考虑未来两年内将主要运营子公司新疆大全在上海证券交易所科创板上市、比亚迪也预计2022年将电池业务拆分上市。
+26家上市公司拆分上市前路还未知，后继者已在路上，拆分热潮还在继续。（思维财经出品）■
+（本文仅供参考，不构成投资建议，市场有风险，投资须谨慎）
+精选/Editor‘s Picks
+一定要活下来！走过危机杀出重围做赢家
+(image_address=""//n.sinaimg.cn/sinakd2020613s/731/w1080h451/20200613/933d-iuvaazp8406217.jpg"")
+]article_adlist-->
+我们与中国经济一起 站在下一个12年的起点]article_adlist-->
+(image_address=""//n.sinaimg.cn/sinakd2020613s/643/w1044h399/20200613/0f99-iuvaazp8406227.jpg"")
+]article_adlist-->地产价值TOP50榜：16万亿后50强房企转型真相
+(image_address=""//n.sinaimg.cn/sinakd2020613s/644/w1080h364/20200613/e0a7-iuvaazp8406226.jpg"")
+]article_adlist-->商务合作 · tzzb@tzzw.cn
+内容合作 · gaofangfang@tzzw.cn
+官方网站 · www.investorchina.cn
+▣
+◆
+招聘
+◆
+产经行业研究员               前台行政
+金融行业研究员               公关经理
+研究院 · 研究员               新媒体销售经理
+医药产经分析师             美编
+微商城/小程序运营专员
+▣
+◆
+联系方式
+◆
+招聘电话：021-33833319
+加入我们：tzzbhr@tzzw.cn
+]article_adlist-->
+(image_address=""http://n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陶然",2020-06-13 07:50:12,新浪财经
+5,上市公司掀拆分热潮 促进企业融资还是为了“一夜暴富”,"《投资者网》容毅灵
+]article_adlist-->
+来源：新投资者网
+拆分上市的过程实质上是二级市场投资者的财富被二次分配给了拆分以后的上市公司股东，本身并不能增加新的财富，但是分拆以后子公司的市值却急剧膨胀，于是“分拆上市”变成部分已上市公司高管层寻求一夜暴富的手段
+2019年12月证监会发布分拆上市新规（《上市公司分拆所属子公司境内上市试点若干规定》），分拆上市在国外已经屡见不鲜，国内规定也不断开放，相比意见稿分别在盈利要求、募集资金用途、子公司董事及高管的持股上线放宽条件。一时间不少A股上市公司纷纷蠢蠢欲动。
+A股境内分拆上市“破冰”，是资本市场改革中的重要一环，有望促进优质化企业融资，更好服务实体经济。但也有一些公司分拆上市的操作，引发了投资者关于公司“管理层只为暴富”的质疑。
+(image_address=""//n.sinaimg.cn/sinakd2020613s/274/w912h162/20200613/8ccd-iuvaazp8406435.png"")
+金山软件带头拆分上市
+金山软件（03888.HK）早有分拆意图，新规一经发布便在科创板上市子公司金山办公（688111.SH）。不到半年的时间，金山软件先后拆分两家公司分别在上海科创板和纳斯达克上市。
+金山办公于2019年11月18日于上海科创板上市，一上市市值就达到将近600亿元，上市半年后市值仍居高不下，维持在1254.47亿元；金山云（KC.O）则在2020年5月8日于纳斯达克上市，股价一开盘就大涨20%，之后股价也一路走高，涨幅超过40%，截至收盘金山云市值达到47.74亿美元（约338亿元人民币）。
+金山软件的主营业务由三大业务板块——网络游戏、云服务、办公软件及服务，变更成只剩下网络游戏业务，当前市值维持在358.97亿元。
+最新拆分的两家公司市值都高于金山软件，尤其金山办公市值将近是金山软件的3.5倍，金山系公司总市值为1981.5576亿元，金山办公占比高达63%，金山软件仅占18%。
+(image_address=""//n.sinaimg.cn/sinakd2020613s/630/w707h723/20200613/3651-iuvaazp8406487.png"")
+拆分上市后金山软件第一季度营业收入达到11.7亿元，同比增长了32%，净利润相比去年同期大幅扭亏达到625.7万元，金山云的剥离上市使得经营利润达到3.85亿元，同比增加124%，经营利润呈现出大幅改善，但因为该季度金山云仍然被列入非持续性经营业务，金山云的业务扩张在损益上也影响了金山软件非持续性业务损失，近而影响了净利润表现。
+(image_address=""//n.sinaimg.cn/sinakd2020613s/326/w698h428/20200613/8262-iuvaazp8406488.png"")
+剥离云业务和金山办公以后，网络游戏自然成为金山软件的主要收入来源。2020年第一季度网络游戏业务收入达到7.807亿元，占总体营业收入的66.7%，同比增长30%。 
+(image_address=""//n.sinaimg.cn/sinakd2020613s/449/w758h491/20200613/1112-iuvaazp8406521.png"")
+虽然2020年金山软件游戏业务带来的营收较2019年下半年有所增长，但拆分使得游戏业务的占比越来越高，加之网易和腾讯两大巨头的挤压效果逐渐明显，未来的营收不容乐观。据《2019年1-6月中国游戏产业报告》显示，2019年中国游戏用户规模已经达到6.4亿人，反观金山软件每日平均最高同步用户人数，2019年只有60万左右，不过冰山一角。可见金山软件在游戏板块的竞争力还需商榷，盈利能力也有待培养。
+游戏市场及监管环境也在不断变化，不仅相关监管政策频出，游戏业务遭遇寒流；整个国内游戏市场同时也正处在增速放缓的大趋势中，虽然受疫情影响，游戏用户规模有了新的增长。但在这样的大环境下，金山软件在锁定老用户群的同时创造新用户群似乎难上加难。
+首个在境内拆分上市“吃螃蟹”的金山系公司市值翻了5倍，可谓“一夜暴富”，但新的融资是否能推动企业走向更优质的未来，只能交给时间回答了。
+“赶趟儿”的公司市场反应相对平淡
+拆分上市的过程实质上是二级市场投资者的财富被二次分配给了拆分以后的上市公司股东，新规发布后有26家上市公司纷纷发布公告称要将子公司拆分上市。其中21家公司股价都在发布预案当日呈上涨趋势，其中市场反应最好的当属江苏国泰（002091.SZ），当日股价涨幅达到10.06%，一路涨停。联美控股（600167.SH）、岭南股份（002717.SZ）和紫江企业（600210.SH）当日也同样涨停；与之相反延安必康（维权）（002411.SZ）股价当日反倒跌停。
+值得注意的是，预案发布后一周的平均收盘价几乎都呈现回落，尤其是安正时尚（603839.SH）股价下跌10.4%。。
+比较预案发布日收盘价和6月10日收盘价，披露分拆上市预案的26家公司中只有10家股价上涨，其中涨幅最大的是广电运通（002152.SZ），从预案发布时的9.74元每股涨到11.79元每股，涨幅达到21.05%。
+剩余16家上市公司6月10日收盘价相较预案发布当日收盘价均不同幅度下跌，长春高新（000661.SZ）近两日股价波动较大，但并非由拆分预案的发布而引起，因此作为偏离值剔除。其中延安必康股价跌幅最明显，从预案发布时的8.84元每股跌至6.91元每股，跌幅为21.83%。
+由此可见，市场反应平淡，投资者对拆分上市并非全盘买账。
+(image_address=""//n.sinaimg.cn/sinakd2020613s/699/w714h785/20200613/3bec-iuvaazp8406545.png"")
+新规条件放宽不等于监管放宽
+有市场人士炮轰“分拆上市”，认为分拆本身并不能增加新的财富，子公司分拆前后并没有本质上的区别，但是分拆以后子公司的市值却急剧膨胀。“分拆上市”恐变成部分已上市公司高管层寻求一夜暴富的手段。
+新规确实放宽了分拆条件，但这并不意味着监管也同时放开。
+新规首先就规定上市公司要具备一定的盈利能力，要求最近3个会计年度连续盈利，且最近3个会计年度扣除按权益享有的拟分拆所属子公司的净利润后，归属上市公司股东的净利润以扣除非经常性损益后孰低值计算，累计不低于6亿元，下表是26家上市公司三年报告期内的净利润，其中安正时尚三年累计的净利润较低，，是否能成功拆分还是未知数。此外，厦门钨业、紫江企业、延安必康虽然累计超过6亿元，但最近两年净利润都呈下降趋势，拆分后盈利能力或受影响。
+其中延安必康还于5月22日收到深圳证券交易所关于年报的问询函，延安必康在6月5日就在建工程、固定资产、应收帐款等一系列问题给出回复。
+(image_address=""//n.sinaimg.cn/sinakd2020613s/536/w688h648/20200613/8916-iuvaazp8406567.png"")
+数据来源：同花顺数据整理统计
+保利地产期望将物业板块拆分上市、大全新能源（DQ.US）考虑未来两年内将主要运营子公司新疆大全在上海证券交易所科创板上市、比亚迪也预计2022年将电池业务拆分上市。
+26家上市公司拆分上市前路还未知，后继者已在路上，拆分热潮还在继续。（思维财经出品）■
+（本文仅供参考，不构成投资建议，市场有风险，投资须谨慎）
+精选/Editor‘s Picks
+一定要活下来！走过危机杀出重围做赢家
+(image_address=""//n.sinaimg.cn/sinakd2020613s/731/w1080h451/20200613/933d-iuvaazp8406217.jpg"")
+]article_adlist-->
+我们与中国经济一起 站在下一个12年的起点]article_adlist-->
+(image_address=""//n.sinaimg.cn/sinakd2020613s/643/w1044h399/20200613/0f99-iuvaazp8406227.jpg"")
+]article_adlist-->地产价值TOP50榜：16万亿后50强房企转型真相
+(image_address=""//n.sinaimg.cn/sinakd2020613s/644/w1080h364/20200613/e0a7-iuvaazp8406226.jpg"")
+]article_adlist-->商务合作 · tzzb@tzzw.cn
+内容合作 · gaofangfang@tzzw.cn
+官方网站 · www.investorchina.cn
+▣
+◆
+招聘
+◆
+产经行业研究员               前台行政
+金融行业研究员               公关经理
+研究院 · 研究员               新媒体销售经理
+医药产经分析师             美编
+微商城/小程序运营专员
+▣
+◆
+联系方式
+◆
+招聘电话：021-33833319
+加入我们：tzzbhr@tzzw.cn
+]article_adlist-->
+(image_address=""http://n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陶然",2020-06-13 07:50:12,新浪财经
+6,上市公司掀拆分热潮 促进企业融资还是为了“一夜暴富”,"《投资者网》容毅灵
+]article_adlist-->
+来源：新投资者网
+拆分上市的过程实质上是二级市场投资者的财富被二次分配给了拆分以后的上市公司股东，本身并不能增加新的财富，但是分拆以后子公司的市值却急剧膨胀，于是“分拆上市”变成部分已上市公司高管层寻求一夜暴富的手段
+2019年12月证监会发布分拆上市新规（《上市公司分拆所属子公司境内上市试点若干规定》），分拆上市在国外已经屡见不鲜，国内规定也不断开放，相比意见稿分别在盈利要求、募集资金用途、子公司董事及高管的持股上线放宽条件。一时间不少A股上市公司纷纷蠢蠢欲动。
+A股境内分拆上市“破冰”，是资本市场改革中的重要一环，有望促进优质化企业融资，更好服务实体经济。但也有一些公司分拆上市的操作，引发了投资者关于公司“管理层只为暴富”的质疑。
+(image_address=""//n.sinaimg.cn/sinakd2020613s/274/w912h162/20200613/8ccd-iuvaazp8406435.png"")
+金山软件带头拆分上市
+金山软件（03888.HK）早有分拆意图，新规一经发布便在科创板上市子公司金山办公（688111.SH）。不到半年的时间，金山软件先后拆分两家公司分别在上海科创板和纳斯达克上市。
+金山办公于2019年11月18日于上海科创板上市，一上市市值就达到将近600亿元，上市半年后市值仍居高不下，维持在1254.47亿元；金山云（KC.O）则在2020年5月8日于纳斯达克上市，股价一开盘就大涨20%，之后股价也一路走高，涨幅超过40%，截至收盘金山云市值达到47.74亿美元（约338亿元人民币）。
+金山软件的主营业务由三大业务板块——网络游戏、云服务、办公软件及服务，变更成只剩下网络游戏业务，当前市值维持在358.97亿元。
+最新拆分的两家公司市值都高于金山软件，尤其金山办公市值将近是金山软件的3.5倍，金山系公司总市值为1981.5576亿元，金山办公占比高达63%，金山软件仅占18%。
+(image_address=""//n.sinaimg.cn/sinakd2020613s/630/w707h723/20200613/3651-iuvaazp8406487.png"")
+拆分上市后金山软件第一季度营业收入达到11.7亿元，同比增长了32%，净利润相比去年同期大幅扭亏达到625.7万元，金山云的剥离上市使得经营利润达到3.85亿元，同比增加124%，经营利润呈现出大幅改善，但因为该季度金山云仍然被列入非持续性经营业务，金山云的业务扩张在损益上也影响了金山软件非持续性业务损失，近而影响了净利润表现。
+(image_address=""//n.sinaimg.cn/sinakd2020613s/326/w698h428/20200613/8262-iuvaazp8406488.png"")
+剥离云业务和金山办公以后，网络游戏自然成为金山软件的主要收入来源。2020年第一季度网络游戏业务收入达到7.807亿元，占总体营业收入的66.7%，同比增长30%。 
+(image_address=""//n.sinaimg.cn/sinakd2020613s/449/w758h491/20200613/1112-iuvaazp8406521.png"")
+虽然2020年金山软件游戏业务带来的营收较2019年下半年有所增长，但拆分使得游戏业务的占比越来越高，加之网易和腾讯两大巨头的挤压效果逐渐明显，未来的营收不容乐观。据《2019年1-6月中国游戏产业报告》显示，2019年中国游戏用户规模已经达到6.4亿人，反观金山软件每日平均最高同步用户人数，2019年只有60万左右，不过冰山一角。可见金山软件在游戏板块的竞争力还需商榷，盈利能力也有待培养。
+游戏市场及监管环境也在不断变化，不仅相关监管政策频出，游戏业务遭遇寒流；整个国内游戏市场同时也正处在增速放缓的大趋势中，虽然受疫情影响，游戏用户规模有了新的增长。但在这样的大环境下，金山软件在锁定老用户群的同时创造新用户群似乎难上加难。
+首个在境内拆分上市“吃螃蟹”的金山系公司市值翻了5倍，可谓“一夜暴富”，但新的融资是否能推动企业走向更优质的未来，只能交给时间回答了。
+“赶趟儿”的公司市场反应相对平淡
+拆分上市的过程实质上是二级市场投资者的财富被二次分配给了拆分以后的上市公司股东，新规发布后有26家上市公司纷纷发布公告称要将子公司拆分上市。其中21家公司股价都在发布预案当日呈上涨趋势，其中市场反应最好的当属江苏国泰（002091.SZ），当日股价涨幅达到10.06%，一路涨停。联美控股（600167.SH）、岭南股份（002717.SZ）和紫江企业（600210.SH）当日也同样涨停；与之相反延安必康（维权）（002411.SZ）股价当日反倒跌停。
+值得注意的是，预案发布后一周的平均收盘价几乎都呈现回落，尤其是安正时尚（603839.SH）股价下跌10.4%。。
+比较预案发布日收盘价和6月10日收盘价，披露分拆上市预案的26家公司中只有10家股价上涨，其中涨幅最大的是广电运通（002152.SZ），从预案发布时的9.74元每股涨到11.79元每股，涨幅达到21.05%。
+剩余16家上市公司6月10日收盘价相较预案发布当日收盘价均不同幅度下跌，长春高新（000661.SZ）近两日股价波动较大，但并非由拆分预案的发布而引起，因此作为偏离值剔除。其中延安必康股价跌幅最明显，从预案发布时的8.84元每股跌至6.91元每股，跌幅为21.83%。
+由此可见，市场反应平淡，投资者对拆分上市并非全盘买账。
+(image_address=""//n.sinaimg.cn/sinakd2020613s/699/w714h785/20200613/3bec-iuvaazp8406545.png"")
+新规条件放宽不等于监管放宽
+有市场人士炮轰“分拆上市”，认为分拆本身并不能增加新的财富，子公司分拆前后并没有本质上的区别，但是分拆以后子公司的市值却急剧膨胀。“分拆上市”恐变成部分已上市公司高管层寻求一夜暴富的手段。
+新规确实放宽了分拆条件，但这并不意味着监管也同时放开。
+新规首先就规定上市公司要具备一定的盈利能力，要求最近3个会计年度连续盈利，且最近3个会计年度扣除按权益享有的拟分拆所属子公司的净利润后，归属上市公司股东的净利润以扣除非经常性损益后孰低值计算，累计不低于6亿元，下表是26家上市公司三年报告期内的净利润，其中安正时尚三年累计的净利润较低，，是否能成功拆分还是未知数。此外，厦门钨业、紫江企业、延安必康虽然累计超过6亿元，但最近两年净利润都呈下降趋势，拆分后盈利能力或受影响。
+其中延安必康还于5月22日收到深圳证券交易所关于年报的问询函，延安必康在6月5日就在建工程、固定资产、应收帐款等一系列问题给出回复。
+(image_address=""//n.sinaimg.cn/sinakd2020613s/536/w688h648/20200613/8916-iuvaazp8406567.png"")
+数据来源：同花顺数据整理统计
+保利地产期望将物业板块拆分上市、大全新能源（DQ.US）考虑未来两年内将主要运营子公司新疆大全在上海证券交易所科创板上市、比亚迪也预计2022年将电池业务拆分上市。
+26家上市公司拆分上市前路还未知，后继者已在路上，拆分热潮还在继续。（思维财经出品）■
+（本文仅供参考，不构成投资建议，市场有风险，投资须谨慎）
+精选/Editor‘s Picks
+一定要活下来！走过危机杀出重围做赢家
+(image_address=""//n.sinaimg.cn/sinakd2020613s/731/w1080h451/20200613/933d-iuvaazp8406217.jpg"")
+]article_adlist-->
+我们与中国经济一起 站在下一个12年的起点]article_adlist-->
+(image_address=""//n.sinaimg.cn/sinakd2020613s/643/w1044h399/20200613/0f99-iuvaazp8406227.jpg"")
+]article_adlist-->地产价值TOP50榜：16万亿后50强房企转型真相
+(image_address=""//n.sinaimg.cn/sinakd2020613s/644/w1080h364/20200613/e0a7-iuvaazp8406226.jpg"")
+]article_adlist-->商务合作 · tzzb@tzzw.cn
+内容合作 · gaofangfang@tzzw.cn
+官方网站 · www.investorchina.cn
+▣
+◆
+招聘
+◆
+产经行业研究员               前台行政
+金融行业研究员               公关经理
+研究院 · 研究员               新媒体销售经理
+医药产经分析师             美编
+微商城/小程序运营专员
+▣
+◆
+联系方式
+◆
+招聘电话：021-33833319
+加入我们：tzzbhr@tzzw.cn
+]article_adlist-->
+(image_address=""http://n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陶然",2020-06-13 07:50:12,新浪财经
+7,上市公司掀拆分热潮 促进企业融资还是为了“一夜暴富”,"《投资者网》容毅灵
+]article_adlist-->
+来源：新投资者网
+拆分上市的过程实质上是二级市场投资者的财富被二次分配给了拆分以后的上市公司股东，本身并不能增加新的财富，但是分拆以后子公司的市值却急剧膨胀，于是“分拆上市”变成部分已上市公司高管层寻求一夜暴富的手段
+2019年12月证监会发布分拆上市新规（《上市公司分拆所属子公司境内上市试点若干规定》），分拆上市在国外已经屡见不鲜，国内规定也不断开放，相比意见稿分别在盈利要求、募集资金用途、子公司董事及高管的持股上线放宽条件。一时间不少A股上市公司纷纷蠢蠢欲动。
+A股境内分拆上市“破冰”，是资本市场改革中的重要一环，有望促进优质化企业融资，更好服务实体经济。但也有一些公司分拆上市的操作，引发了投资者关于公司“管理层只为暴富”的质疑。
+(image_address=""//n.sinaimg.cn/sinakd2020613s/274/w912h162/20200613/8ccd-iuvaazp8406435.png"")
+金山软件带头拆分上市
+金山软件（03888.HK）早有分拆意图，新规一经发布便在科创板上市子公司金山办公（688111.SH）。不到半年的时间，金山软件先后拆分两家公司分别在上海科创板和纳斯达克上市。
+金山办公于2019年11月18日于上海科创板上市，一上市市值就达到将近600亿元，上市半年后市值仍居高不下，维持在1254.47亿元；金山云（KC.O）则在2020年5月8日于纳斯达克上市，股价一开盘就大涨20%，之后股价也一路走高，涨幅超过40%，截至收盘金山云市值达到47.74亿美元（约338亿元人民币）。
+金山软件的主营业务由三大业务板块——网络游戏、云服务、办公软件及服务，变更成只剩下网络游戏业务，当前市值维持在358.97亿元。
+最新拆分的两家公司市值都高于金山软件，尤其金山办公市值将近是金山软件的3.5倍，金山系公司总市值为1981.5576亿元，金山办公占比高达63%，金山软件仅占18%。
+(image_address=""//n.sinaimg.cn/sinakd2020613s/630/w707h723/20200613/3651-iuvaazp8406487.png"")
+拆分上市后金山软件第一季度营业收入达到11.7亿元，同比增长了32%，净利润相比去年同期大幅扭亏达到625.7万元，金山云的剥离上市使得经营利润达到3.85亿元，同比增加124%，经营利润呈现出大幅改善，但因为该季度金山云仍然被列入非持续性经营业务，金山云的业务扩张在损益上也影响了金山软件非持续性业务损失，近而影响了净利润表现。
+(image_address=""//n.sinaimg.cn/sinakd2020613s/326/w698h428/20200613/8262-iuvaazp8406488.png"")
+剥离云业务和金山办公以后，网络游戏自然成为金山软件的主要收入来源。2020年第一季度网络游戏业务收入达到7.807亿元，占总体营业收入的66.7%，同比增长30%。 
+(image_address=""//n.sinaimg.cn/sinakd2020613s/449/w758h491/20200613/1112-iuvaazp8406521.png"")
+虽然2020年金山软件游戏业务带来的营收较2019年下半年有所增长，但拆分使得游戏业务的占比越来越高，加之网易和腾讯两大巨头的挤压效果逐渐明显，未来的营收不容乐观。据《2019年1-6月中国游戏产业报告》显示，2019年中国游戏用户规模已经达到6.4亿人，反观金山软件每日平均最高同步用户人数，2019年只有60万左右，不过冰山一角。可见金山软件在游戏板块的竞争力还需商榷，盈利能力也有待培养。
+游戏市场及监管环境也在不断变化，不仅相关监管政策频出，游戏业务遭遇寒流；整个国内游戏市场同时也正处在增速放缓的大趋势中，虽然受疫情影响，游戏用户规模有了新的增长。但在这样的大环境下，金山软件在锁定老用户群的同时创造新用户群似乎难上加难。
+首个在境内拆分上市“吃螃蟹”的金山系公司市值翻了5倍，可谓“一夜暴富”，但新的融资是否能推动企业走向更优质的未来，只能交给时间回答了。
+“赶趟儿”的公司市场反应相对平淡
+拆分上市的过程实质上是二级市场投资者的财富被二次分配给了拆分以后的上市公司股东，新规发布后有26家上市公司纷纷发布公告称要将子公司拆分上市。其中21家公司股价都在发布预案当日呈上涨趋势，其中市场反应最好的当属江苏国泰（002091.SZ），当日股价涨幅达到10.06%，一路涨停。联美控股（600167.SH）、岭南股份（002717.SZ）和紫江企业（600210.SH）当日也同样涨停；与之相反延安必康（维权）（002411.SZ）股价当日反倒跌停。
+值得注意的是，预案发布后一周的平均收盘价几乎都呈现回落，尤其是安正时尚（603839.SH）股价下跌10.4%。。
+比较预案发布日收盘价和6月10日收盘价，披露分拆上市预案的26家公司中只有10家股价上涨，其中涨幅最大的是广电运通（002152.SZ），从预案发布时的9.74元每股涨到11.79元每股，涨幅达到21.05%。
+剩余16家上市公司6月10日收盘价相较预案发布当日收盘价均不同幅度下跌，长春高新（000661.SZ）近两日股价波动较大，但并非由拆分预案的发布而引起，因此作为偏离值剔除。其中延安必康股价跌幅最明显，从预案发布时的8.84元每股跌至6.91元每股，跌幅为21.83%。
+由此可见，市场反应平淡，投资者对拆分上市并非全盘买账。
+(image_address=""//n.sinaimg.cn/sinakd2020613s/699/w714h785/20200613/3bec-iuvaazp8406545.png"")
+新规条件放宽不等于监管放宽
+有市场人士炮轰“分拆上市”，认为分拆本身并不能增加新的财富，子公司分拆前后并没有本质上的区别，但是分拆以后子公司的市值却急剧膨胀。“分拆上市”恐变成部分已上市公司高管层寻求一夜暴富的手段。
+新规确实放宽了分拆条件，但这并不意味着监管也同时放开。
+新规首先就规定上市公司要具备一定的盈利能力，要求最近3个会计年度连续盈利，且最近3个会计年度扣除按权益享有的拟分拆所属子公司的净利润后，归属上市公司股东的净利润以扣除非经常性损益后孰低值计算，累计不低于6亿元，下表是26家上市公司三年报告期内的净利润，其中安正时尚三年累计的净利润较低，，是否能成功拆分还是未知数。此外，厦门钨业、紫江企业、延安必康虽然累计超过6亿元，但最近两年净利润都呈下降趋势，拆分后盈利能力或受影响。
+其中延安必康还于5月22日收到深圳证券交易所关于年报的问询函，延安必康在6月5日就在建工程、固定资产、应收帐款等一系列问题给出回复。
+(image_address=""//n.sinaimg.cn/sinakd2020613s/536/w688h648/20200613/8916-iuvaazp8406567.png"")
+数据来源：同花顺数据整理统计
+保利地产期望将物业板块拆分上市、大全新能源（DQ.US）考虑未来两年内将主要运营子公司新疆大全在上海证券交易所科创板上市、比亚迪也预计2022年将电池业务拆分上市。
+26家上市公司拆分上市前路还未知，后继者已在路上，拆分热潮还在继续。（思维财经出品）■
+（本文仅供参考，不构成投资建议，市场有风险，投资须谨慎）
+精选/Editor‘s Picks
+一定要活下来！走过危机杀出重围做赢家
+(image_address=""//n.sinaimg.cn/sinakd2020613s/731/w1080h451/20200613/933d-iuvaazp8406217.jpg"")
+]article_adlist-->
+我们与中国经济一起 站在下一个12年的起点]article_adlist-->
+(image_address=""//n.sinaimg.cn/sinakd2020613s/643/w1044h399/20200613/0f99-iuvaazp8406227.jpg"")
+]article_adlist-->地产价值TOP50榜：16万亿后50强房企转型真相
+(image_address=""//n.sinaimg.cn/sinakd2020613s/644/w1080h364/20200613/e0a7-iuvaazp8406226.jpg"")
+]article_adlist-->商务合作 · tzzb@tzzw.cn
+内容合作 · gaofangfang@tzzw.cn
+官方网站 · www.investorchina.cn
+▣
+◆
+招聘
+◆
+产经行业研究员               前台行政
+金融行业研究员               公关经理
+研究院 · 研究员               新媒体销售经理
+医药产经分析师             美编
+微商城/小程序运营专员
+▣
+◆
+联系方式
+◆
+招聘电话：021-33833319
+加入我们：tzzbhr@tzzw.cn
+]article_adlist-->
+(image_address=""http://n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陶然",2020-06-13 07:50:12,新浪财经
+8,上市公司掀拆分热潮 促进企业融资还是为了“一夜暴富”,"《投资者网》容毅灵
+]article_adlist-->
+来源：新投资者网
+拆分上市的过程实质上是二级市场投资者的财富被二次分配给了拆分以后的上市公司股东，本身并不能增加新的财富，但是分拆以后子公司的市值却急剧膨胀，于是“分拆上市”变成部分已上市公司高管层寻求一夜暴富的手段
+2019年12月证监会发布分拆上市新规（《上市公司分拆所属子公司境内上市试点若干规定》），分拆上市在国外已经屡见不鲜，国内规定也不断开放，相比意见稿分别在盈利要求、募集资金用途、子公司董事及高管的持股上线放宽条件。一时间不少A股上市公司纷纷蠢蠢欲动。
+A股境内分拆上市“破冰”，是资本市场改革中的重要一环，有望促进优质化企业融资，更好服务实体经济。但也有一些公司分拆上市的操作，引发了投资者关于公司“管理层只为暴富”的质疑。
+(image_address=""//n.sinaimg.cn/sinakd2020613s/274/w912h162/20200613/8ccd-iuvaazp8406435.png"")
+金山软件带头拆分上市
+金山软件（03888.HK）早有分拆意图，新规一经发布便在科创板上市子公司金山办公（688111.SH）。不到半年的时间，金山软件先后拆分两家公司分别在上海科创板和纳斯达克上市。
+金山办公于2019年11月18日于上海科创板上市，一上市市值就达到将近600亿元，上市半年后市值仍居高不下，维持在1254.47亿元；金山云（KC.O）则在2020年5月8日于纳斯达克上市，股价一开盘就大涨20%，之后股价也一路走高，涨幅超过40%，截至收盘金山云市值达到47.74亿美元（约338亿元人民币）。
+金山软件的主营业务由三大业务板块——网络游戏、云服务、办公软件及服务，变更成只剩下网络游戏业务，当前市值维持在358.97亿元。
+最新拆分的两家公司市值都高于金山软件，尤其金山办公市值将近是金山软件的3.5倍，金山系公司总市值为1981.5576亿元，金山办公占比高达63%，金山软件仅占18%。
+(image_address=""//n.sinaimg.cn/sinakd2020613s/630/w707h723/20200613/3651-iuvaazp8406487.png"")
+拆分上市后金山软件第一季度营业收入达到11.7亿元，同比增长了32%，净利润相比去年同期大幅扭亏达到625.7万元，金山云的剥离上市使得经营利润达到3.85亿元，同比增加124%，经营利润呈现出大幅改善，但因为该季度金山云仍然被列入非持续性经营业务，金山云的业务扩张在损益上也影响了金山软件非持续性业务损失，近而影响了净利润表现。
+(image_address=""//n.sinaimg.cn/sinakd2020613s/326/w698h428/20200613/8262-iuvaazp8406488.png"")
+剥离云业务和金山办公以后，网络游戏自然成为金山软件的主要收入来源。2020年第一季度网络游戏业务收入达到7.807亿元，占总体营业收入的66.7%，同比增长30%。 
+(image_address=""//n.sinaimg.cn/sinakd2020613s/449/w758h491/20200613/1112-iuvaazp8406521.png"")
+虽然2020年金山软件游戏业务带来的营收较2019年下半年有所增长，但拆分使得游戏业务的占比越来越高，加之网易和腾讯两大巨头的挤压效果逐渐明显，未来的营收不容乐观。据《2019年1-6月中国游戏产业报告》显示，2019年中国游戏用户规模已经达到6.4亿人，反观金山软件每日平均最高同步用户人数，2019年只有60万左右，不过冰山一角。可见金山软件在游戏板块的竞争力还需商榷，盈利能力也有待培养。
+游戏市场及监管环境也在不断变化，不仅相关监管政策频出，游戏业务遭遇寒流；整个国内游戏市场同时也正处在增速放缓的大趋势中，虽然受疫情影响，游戏用户规模有了新的增长。但在这样的大环境下，金山软件在锁定老用户群的同时创造新用户群似乎难上加难。
+首个在境内拆分上市“吃螃蟹”的金山系公司市值翻了5倍，可谓“一夜暴富”，但新的融资是否能推动企业走向更优质的未来，只能交给时间回答了。
+“赶趟儿”的公司市场反应相对平淡
+拆分上市的过程实质上是二级市场投资者的财富被二次分配给了拆分以后的上市公司股东，新规发布后有26家上市公司纷纷发布公告称要将子公司拆分上市。其中21家公司股价都在发布预案当日呈上涨趋势，其中市场反应最好的当属江苏国泰（002091.SZ），当日股价涨幅达到10.06%，一路涨停。联美控股（600167.SH）、岭南股份（002717.SZ）和紫江企业（600210.SH）当日也同样涨停；与之相反延安必康（维权）（002411.SZ）股价当日反倒跌停。
+值得注意的是，预案发布后一周的平均收盘价几乎都呈现回落，尤其是安正时尚（603839.SH）股价下跌10.4%。。
+比较预案发布日收盘价和6月10日收盘价，披露分拆上市预案的26家公司中只有10家股价上涨，其中涨幅最大的是广电运通（002152.SZ），从预案发布时的9.74元每股涨到11.79元每股，涨幅达到21.05%。
+剩余16家上市公司6月10日收盘价相较预案发布当日收盘价均不同幅度下跌，长春高新（000661.SZ）近两日股价波动较大，但并非由拆分预案的发布而引起，因此作为偏离值剔除。其中延安必康股价跌幅最明显，从预案发布时的8.84元每股跌至6.91元每股，跌幅为21.83%。
+由此可见，市场反应平淡，投资者对拆分上市并非全盘买账。
+(image_address=""//n.sinaimg.cn/sinakd2020613s/699/w714h785/20200613/3bec-iuvaazp8406545.png"")
+新规条件放宽不等于监管放宽
+有市场人士炮轰“分拆上市”，认为分拆本身并不能增加新的财富，子公司分拆前后并没有本质上的区别，但是分拆以后子公司的市值却急剧膨胀。“分拆上市”恐变成部分已上市公司高管层寻求一夜暴富的手段。
+新规确实放宽了分拆条件，但这并不意味着监管也同时放开。
+新规首先就规定上市公司要具备一定的盈利能力，要求最近3个会计年度连续盈利，且最近3个会计年度扣除按权益享有的拟分拆所属子公司的净利润后，归属上市公司股东的净利润以扣除非经常性损益后孰低值计算，累计不低于6亿元，下表是26家上市公司三年报告期内的净利润，其中安正时尚三年累计的净利润较低，，是否能成功拆分还是未知数。此外，厦门钨业、紫江企业、延安必康虽然累计超过6亿元，但最近两年净利润都呈下降趋势，拆分后盈利能力或受影响。
+其中延安必康还于5月22日收到深圳证券交易所关于年报的问询函，延安必康在6月5日就在建工程、固定资产、应收帐款等一系列问题给出回复。
+(image_address=""//n.sinaimg.cn/sinakd2020613s/536/w688h648/20200613/8916-iuvaazp8406567.png"")
+数据来源：同花顺数据整理统计
+保利地产期望将物业板块拆分上市、大全新能源（DQ.US）考虑未来两年内将主要运营子公司新疆大全在上海证券交易所科创板上市、比亚迪也预计2022年将电池业务拆分上市。
+26家上市公司拆分上市前路还未知，后继者已在路上，拆分热潮还在继续。（思维财经出品）■
+（本文仅供参考，不构成投资建议，市场有风险，投资须谨慎）
+精选/Editor‘s Picks
+一定要活下来！走过危机杀出重围做赢家
+(image_address=""//n.sinaimg.cn/sinakd2020613s/731/w1080h451/20200613/933d-iuvaazp8406217.jpg"")
+]article_adlist-->
+我们与中国经济一起 站在下一个12年的起点]article_adlist-->
+(image_address=""//n.sinaimg.cn/sinakd2020613s/643/w1044h399/20200613/0f99-iuvaazp8406227.jpg"")
+]article_adlist-->地产价值TOP50榜：16万亿后50强房企转型真相
+(image_address=""//n.sinaimg.cn/sinakd2020613s/644/w1080h364/20200613/e0a7-iuvaazp8406226.jpg"")
+]article_adlist-->商务合作 · tzzb@tzzw.cn
+内容合作 · gaofangfang@tzzw.cn
+官方网站 · www.investorchina.cn
+▣
+◆
+招聘
+◆
+产经行业研究员               前台行政
+金融行业研究员               公关经理
+研究院 · 研究员               新媒体销售经理
+医药产经分析师             美编
+微商城/小程序运营专员
+▣
+◆
+联系方式
+◆
+招聘电话：021-33833319
+加入我们：tzzbhr@tzzw.cn
+]article_adlist-->
+(image_address=""http://n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陶然",2020-06-13 07:50:12,新浪财经
+9,兆易创新43亿定增完成 需求增长但主营业务存被替代风险,"来源：新投资者网
+(image_address=""//n.sinaimg.cn/sinakd2020613s/152/w1080h672/20200613/3fb6-iuvaazp8406373.jpg"")
+《投资者网》 李杰
+6月4日，兆易创新公告完成43亿定增，近年来NOR Flash行业需求持续增长，供需格局改善，但行业存在被替代的风险。
+6月4日，兆易创新发布《非公开发行股票发行结果暨股本变动公告》，公告了其定增发行结果。
+公司向GIC（新加坡政府投资有限公司）、葛卫东、毕永生、博时基金、青岛城投科技发展有限公司非公开发行2121.91万股股份，募资43.24亿元，其中，葛卫东豪掷15亿元。
+完成43亿定向增发
+2019年9月30日，兆易创新公告了《非公开发行A股股票预案》。2020年3月3日，兆易创新公告了《非公开发行A股股票预案（修订稿）》，2020年4月3日，公司非公开发行股票的申请获得中国证监会发行审核委员会审核通过。
+根据《非公开发行A股股票预案（修订稿）》，兆易创新拟向不超过35名特定投资者发行不超过6409.86万股，不超过本次发行前公司股份总数的20%，发行价格不低于定价基准日前 20 个交易日公司股票交易均价的 80%（即发行底价）。限售期为6个月。募集资金总额（含发行费用）不超过人民币 43.24亿元，其中33.24亿元用于DRAM 芯片研发及产业化项目，10亿元用于补充流动资金。
+6月4日，兆易创新公告《非公开发行股票发行结果暨股本变动公告》，兆易创新向新加坡政府投资有限公司（GIC）、葛卫东、毕永生、博时基金管理有限公司、青岛城投科技发展有限公司共5名发行对象非公开发行2121.91万股，发行价格203.78元/股，募资总额43.24亿元。截至2020年5月25日，本次非公开发行的 5 家发行对象已将认购资金全额汇入保荐机构（主承销商）中金公司指定账户。5月25日当天兆易创新收盘价为199.00，发行价格较当日收盘价还高出2.4%。
+在此次非公开发行中，期货大佬葛卫东豪掷15亿元获配736.09万股，持股比例将从3.06%提升至4.48%，成为兆易创新第五大股东。在参与兆易创新定增之前，葛卫东已经多次大手笔投资科技股，根据wind数据，截至2020年一季度末，葛卫东至少还上榜了用友网络、科大讯飞和锐科激光的前十大流通股东名单。
+需求持续增长供需格局改善
+2005年4月5日，朱一明和启迪孵化器签订《公司章程》， 共同出资设立了芯技佳易（兆易创新前身），其中朱一明以非专利技术“超高速静态随机存储器技术”出资120万元，出资占比为60%。朱一明在2005年4月出资设立芯技佳易之前，曾经在iPolicy Networks Inc．任职工程师，在Monolithic System Technologies Inc．任职项目主管，于2004年3月在美国发起设立美国技佳并任总经理。截至2020年6月3日，朱一明持股9.56%，依然为公司实控人。
+公司为一家芯片设计公司，主要产品有NOR闪存芯片、微控制器、传感器芯片等。·NOR Flash即代码型闪存芯片，主要用来存储代码及少量数据，2019年公司NOR Flash产品营收占比约为70%。公司NOR Flash产品广泛应用于PC主板、数字机顶盒、路由器、家庭网关、安防监控产品、人工智能、物联网、穿戴式设备、汽车电子等。兆易创新也是AirPods2的主力供应商，公司的NOR Flash产品应用于AirPods2中。由于没有物理线材，TWS耳机为了能够实现“秒连”蓝牙，就需要采用响应速度更快的NOR闪存，减少主芯片等待时间，提升运行效率。
+由于NOR Flash仅占据存储市场1%的市场份额，近年来，存储大厂纷纷退出或者减产NOR Flash业务，三星在2010年完全退出Nor Flash市场，将所有存储产能集中于市场空间更大的Nand和DRAM存储器；Mircon在2016年取消了8英寸生产线，将全部8英寸和部分12英寸线产能转移给Nand；2017年，Cypress出售在美国Bloomington的Nor Flash圆晶厂，同时与客户的Nor Flash协议价格到期，Cypress重新提高产品价格；2019年，旺宏和华邦实际均减产5%~10%，华邦未达成2017年预定的在2019年达产3万片/月产能计划。
+目前，NOR Flash的驱动力主要来自于TWS无线耳机、智能手机AMOLED 和 TDDI，在TWS无线耳机的普及与手机全面屏趋势的拉动下，NOR Flash市场规模将保持增长，东北证券研报预测，全球Nor Flash市场规模，在2019年至 2021年将分别达到173.8 亿元、192.3 亿元、212.4 亿元，增长率分别为6.43%、10.64%、10.45%。
+由于大厂纷纷退出或减产NOR Flash业务，而NOR Flash的需求仍在继续增长，兆易创新受益于供需格局的改善，以及切入苹果AirPods2供应链，全球市占率快速提高，据CINNO Research对2019年第三季度存储产业研究报告显示，兆易创新Nor Flash市场份额提升到18.3%，超越赛普拉斯排名全球第三，前二名分别为华邦电子和旺宏电子。
+主营业务存被替代风险
+NOR 闪存一般容量较小，NOR 闪存主要功能是存储代码和部分数据，通常用于 1MB-512MB 容量的闪存市场， 而NAND 闪存主要功能存储数据，通常用于 512MB-16GB 甚至更高的容量市场。同时，NOR Flash的单位成本更高。因此，在2007年智能手机出现后，随着智能手机的功能增多，智能手机对数据存储的容量相应提高，智能手机厂商如三星逐渐使用 NAND Flash替代 NOR Flash芯片，NOR Flash的全球市场规模由2006年的110亿美元一路下滑到2018年的26亿美元。NOR Flash目前主要应用于功能手机、TWS无线耳机、全面屏手机等市场。
+行业巨头美光科技 NAND闪存资深市场经理吕向东曾表示：“NOR 闪存终将被 NAND 取代，业界认为NAND 不适合进行代码存储是一种错误的观点”。2018年，中国台湾存储芯片龙头华邦电已经研发出首款高速度车用NAND Flash芯片，其可存储容量高于 NOR Flash，预期可以取代传统NOR Flash在车用市场应用。
+根据Objective Analysis和Coughlin Associates发表的最新年度报告《Emerging Memories Ramp Up》显示：MRAM和STT MRAM将在未来几年内开始取代一些NOR，SRAM，也可能取代DRAM。STT-MRAM和MRAM功能的发展速度将导致其价格逐渐降低，而用高速和高耐久性的非易失性存储器取代易失性存储器的吸引力使这些技术具有很强的竞争力，前提是它们的容量增加以降低生产成本（从而降低购买价格）。
+(image_address=""//n.sinaimg.cn/sinakd2020613s/655/w930h525/20200613/5bbc-iuvaazp8406406.png"")
+兆易创新近几年也在拓展Nand与DRAM业务，Nand产品集中在中低容量 SLC Nand（1-4 Gb），而旺宏和华邦与公司在SLC Nand产品线的重合度较高，是公司的主要竞争对手。SLC Nand市场规模也很小，2018年SLC Nand 市场规模为 79.35亿元，占比不足Nand 全球规模的2%，大型存储厂商逐渐退出或减少 SLC Nand业务。在DRAM领域，前四大厂商牢牢占据全球DRAM市场99%份额，国产DRAM份额不足1%，公司在DRAM领域的进展将面临四大巨头的竞争。（思维财经出品）■
+（本文仅供参考，不构成投资建议，市场有风险，投资须谨慎）
+精选/Editor‘s Picks
+一定要活下来！走过危机杀出重围做赢家
+(image_address=""//n.sinaimg.cn/sinakd2020613s/731/w1080h451/20200613/933d-iuvaazp8406217.jpg"")
+]article_adlist-->
+我们与中国经济一起 站在下一个12年的起点]article_adlist-->
+(image_address=""//n.sinaimg.cn/sinakd2020613s/643/w1044h399/20200613/0f99-iuvaazp8406227.jpg"")
+]article_adlist-->地产价值TOP50榜：16万亿后50强房企转型真相
+(image_address=""//n.sinaimg.cn/sinakd2020613s/644/w1080h364/20200613/e0a7-iuvaazp8406226.jpg"")
+]article_adlist-->商务合作 · tzzb@tzzw.cn
+内容合作 · gaofangfang@tzzw.cn
+官方网站 · www.investorchina.cn
+▣
+◆
+招聘
+◆
+产经行业研究员               前台行政
+金融行业研究员               公关经理
+研究院 · 研究员               新媒体销售经理
+医药产经分析师             美编
+微商城/小程序运营专员
+▣
+◆
+联系方式
+◆
+招聘电话：021-33833319
+加入我们：tzzbhr@tzzw.cn
+]article_adlist-->
+(image_address=""http://n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陶然",2020-06-13 07:50:11,新浪财经
+10,兆易创新43亿定增完成 需求增长但主营业务存被替代风险,"来源：新投资者网
+(image_address=""//n.sinaimg.cn/sinakd2020613s/152/w1080h672/20200613/3fb6-iuvaazp8406373.jpg"")
+《投资者网》 李杰
+6月4日，兆易创新公告完成43亿定增，近年来NOR Flash行业需求持续增长，供需格局改善，但行业存在被替代的风险。
+6月4日，兆易创新发布《非公开发行股票发行结果暨股本变动公告》，公告了其定增发行结果。
+公司向GIC（新加坡政府投资有限公司）、葛卫东、毕永生、博时基金、青岛城投科技发展有限公司非公开发行2121.91万股股份，募资43.24亿元，其中，葛卫东豪掷15亿元。
+完成43亿定向增发
+2019年9月30日，兆易创新公告了《非公开发行A股股票预案》。2020年3月3日，兆易创新公告了《非公开发行A股股票预案（修订稿）》，2020年4月3日，公司非公开发行股票的申请获得中国证监会发行审核委员会审核通过。
+根据《非公开发行A股股票预案（修订稿）》，兆易创新拟向不超过35名特定投资者发行不超过6409.86万股，不超过本次发行前公司股份总数的20%，发行价格不低于定价基准日前 20 个交易日公司股票交易均价的 80%（即发行底价）。限售期为6个月。募集资金总额（含发行费用）不超过人民币 43.24亿元，其中33.24亿元用于DRAM 芯片研发及产业化项目，10亿元用于补充流动资金。
+6月4日，兆易创新公告《非公开发行股票发行结果暨股本变动公告》，兆易创新向新加坡政府投资有限公司（GIC）、葛卫东、毕永生、博时基金管理有限公司、青岛城投科技发展有限公司共5名发行对象非公开发行2121.91万股，发行价格203.78元/股，募资总额43.24亿元。截至2020年5月25日，本次非公开发行的 5 家发行对象已将认购资金全额汇入保荐机构（主承销商）中金公司指定账户。5月25日当天兆易创新收盘价为199.00，发行价格较当日收盘价还高出2.4%。
+在此次非公开发行中，期货大佬葛卫东豪掷15亿元获配736.09万股，持股比例将从3.06%提升至4.48%，成为兆易创新第五大股东。在参与兆易创新定增之前，葛卫东已经多次大手笔投资科技股，根据wind数据，截至2020年一季度末，葛卫东至少还上榜了用友网络、科大讯飞和锐科激光的前十大流通股东名单。
+需求持续增长供需格局改善
+2005年4月5日，朱一明和启迪孵化器签订《公司章程》， 共同出资设立了芯技佳易（兆易创新前身），其中朱一明以非专利技术“超高速静态随机存储器技术”出资120万元，出资占比为60%。朱一明在2005年4月出资设立芯技佳易之前，曾经在iPolicy Networks Inc．任职工程师，在Monolithic System Technologies Inc．任职项目主管，于2004年3月在美国发起设立美国技佳并任总经理。截至2020年6月3日，朱一明持股9.56%，依然为公司实控人。
+公司为一家芯片设计公司，主要产品有NOR闪存芯片、微控制器、传感器芯片等。·NOR Flash即代码型闪存芯片，主要用来存储代码及少量数据，2019年公司NOR Flash产品营收占比约为70%。公司NOR Flash产品广泛应用于PC主板、数字机顶盒、路由器、家庭网关、安防监控产品、人工智能、物联网、穿戴式设备、汽车电子等。兆易创新也是AirPods2的主力供应商，公司的NOR Flash产品应用于AirPods2中。由于没有物理线材，TWS耳机为了能够实现“秒连”蓝牙，就需要采用响应速度更快的NOR闪存，减少主芯片等待时间，提升运行效率。
+由于NOR Flash仅占据存储市场1%的市场份额，近年来，存储大厂纷纷退出或者减产NOR Flash业务，三星在2010年完全退出Nor Flash市场，将所有存储产能集中于市场空间更大的Nand和DRAM存储器；Mircon在2016年取消了8英寸生产线，将全部8英寸和部分12英寸线产能转移给Nand；2017年，Cypress出售在美国Bloomington的Nor Flash圆晶厂，同时与客户的Nor Flash协议价格到期，Cypress重新提高产品价格；2019年，旺宏和华邦实际均减产5%~10%，华邦未达成2017年预定的在2019年达产3万片/月产能计划。
+目前，NOR Flash的驱动力主要来自于TWS无线耳机、智能手机AMOLED 和 TDDI，在TWS无线耳机的普及与手机全面屏趋势的拉动下，NOR Flash市场规模将保持增长，东北证券研报预测，全球Nor Flash市场规模，在2019年至 2021年将分别达到173.8 亿元、192.3 亿元、212.4 亿元，增长率分别为6.43%、10.64%、10.45%。
+由于大厂纷纷退出或减产NOR Flash业务，而NOR Flash的需求仍在继续增长，兆易创新受益于供需格局的改善，以及切入苹果AirPods2供应链，全球市占率快速提高，据CINNO Research对2019年第三季度存储产业研究报告显示，兆易创新Nor Flash市场份额提升到18.3%，超越赛普拉斯排名全球第三，前二名分别为华邦电子和旺宏电子。
+主营业务存被替代风险
+NOR 闪存一般容量较小，NOR 闪存主要功能是存储代码和部分数据，通常用于 1MB-512MB 容量的闪存市场， 而NAND 闪存主要功能存储数据，通常用于 512MB-16GB 甚至更高的容量市场。同时，NOR Flash的单位成本更高。因此，在2007年智能手机出现后，随着智能手机的功能增多，智能手机对数据存储的容量相应提高，智能手机厂商如三星逐渐使用 NAND Flash替代 NOR Flash芯片，NOR Flash的全球市场规模由2006年的110亿美元一路下滑到2018年的26亿美元。NOR Flash目前主要应用于功能手机、TWS无线耳机、全面屏手机等市场。
+行业巨头美光科技 NAND闪存资深市场经理吕向东曾表示：“NOR 闪存终将被 NAND 取代，业界认为NAND 不适合进行代码存储是一种错误的观点”。2018年，中国台湾存储芯片龙头华邦电已经研发出首款高速度车用NAND Flash芯片，其可存储容量高于 NOR Flash，预期可以取代传统NOR Flash在车用市场应用。
+根据Objective Analysis和Coughlin Associates发表的最新年度报告《Emerging Memories Ramp Up》显示：MRAM和STT MRAM将在未来几年内开始取代一些NOR，SRAM，也可能取代DRAM。STT-MRAM和MRAM功能的发展速度将导致其价格逐渐降低，而用高速和高耐久性的非易失性存储器取代易失性存储器的吸引力使这些技术具有很强的竞争力，前提是它们的容量增加以降低生产成本（从而降低购买价格）。
+(image_address=""//n.sinaimg.cn/sinakd2020613s/655/w930h525/20200613/5bbc-iuvaazp8406406.png"")
+兆易创新近几年也在拓展Nand与DRAM业务，Nand产品集中在中低容量 SLC Nand（1-4 Gb），而旺宏和华邦与公司在SLC Nand产品线的重合度较高，是公司的主要竞争对手。SLC Nand市场规模也很小，2018年SLC Nand 市场规模为 79.35亿元，占比不足Nand 全球规模的2%，大型存储厂商逐渐退出或减少 SLC Nand业务。在DRAM领域，前四大厂商牢牢占据全球DRAM市场99%份额，国产DRAM份额不足1%，公司在DRAM领域的进展将面临四大巨头的竞争。（思维财经出品）■
+（本文仅供参考，不构成投资建议，市场有风险，投资须谨慎）
+精选/Editor‘s Picks
+一定要活下来！走过危机杀出重围做赢家
+(image_address=""//n.sinaimg.cn/sinakd2020613s/731/w1080h451/20200613/933d-iuvaazp8406217.jpg"")
+]article_adlist-->
+我们与中国经济一起 站在下一个12年的起点]article_adlist-->
+(image_address=""//n.sinaimg.cn/sinakd2020613s/643/w1044h399/20200613/0f99-iuvaazp8406227.jpg"")
+]article_adlist-->地产价值TOP50榜：16万亿后50强房企转型真相
+(image_address=""//n.sinaimg.cn/sinakd2020613s/644/w1080h364/20200613/e0a7-iuvaazp8406226.jpg"")
+]article_adlist-->商务合作 · tzzb@tzzw.cn
+内容合作 · gaofangfang@tzzw.cn
+官方网站 · www.investorchina.cn
+▣
+◆
+招聘
+◆
+产经行业研究员               前台行政
+金融行业研究员               公关经理
+研究院 · 研究员               新媒体销售经理
+医药产经分析师             美编
+微商城/小程序运营专员
+▣
+◆
+联系方式
+◆
+招聘电话：021-33833319
+加入我们：tzzbhr@tzzw.cn
+]article_adlist-->
+(image_address=""http://n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陶然",2020-06-13 07:50:11,新浪财经
+11,兆易创新43亿定增完成 需求增长但主营业务存被替代风险,"来源：新投资者网
+(image_address=""//n.sinaimg.cn/sinakd2020613s/152/w1080h672/20200613/3fb6-iuvaazp8406373.jpg"")
+《投资者网》 李杰
+6月4日，兆易创新公告完成43亿定增，近年来NOR Flash行业需求持续增长，供需格局改善，但行业存在被替代的风险。
+6月4日，兆易创新发布《非公开发行股票发行结果暨股本变动公告》，公告了其定增发行结果。
+公司向GIC（新加坡政府投资有限公司）、葛卫东、毕永生、博时基金、青岛城投科技发展有限公司非公开发行2121.91万股股份，募资43.24亿元，其中，葛卫东豪掷15亿元。
+完成43亿定向增发
+2019年9月30日，兆易创新公告了《非公开发行A股股票预案》。2020年3月3日，兆易创新公告了《非公开发行A股股票预案（修订稿）》，2020年4月3日，公司非公开发行股票的申请获得中国证监会发行审核委员会审核通过。
+根据《非公开发行A股股票预案（修订稿）》，兆易创新拟向不超过35名特定投资者发行不超过6409.86万股，不超过本次发行前公司股份总数的20%，发行价格不低于定价基准日前 20 个交易日公司股票交易均价的 80%（即发行底价）。限售期为6个月。募集资金总额（含发行费用）不超过人民币 43.24亿元，其中33.24亿元用于DRAM 芯片研发及产业化项目，10亿元用于补充流动资金。
+6月4日，兆易创新公告《非公开发行股票发行结果暨股本变动公告》，兆易创新向新加坡政府投资有限公司（GIC）、葛卫东、毕永生、博时基金管理有限公司、青岛城投科技发展有限公司共5名发行对象非公开发行2121.91万股，发行价格203.78元/股，募资总额43.24亿元。截至2020年5月25日，本次非公开发行的 5 家发行对象已将认购资金全额汇入保荐机构（主承销商）中金公司指定账户。5月25日当天兆易创新收盘价为199.00，发行价格较当日收盘价还高出2.4%。
+在此次非公开发行中，期货大佬葛卫东豪掷15亿元获配736.09万股，持股比例将从3.06%提升至4.48%，成为兆易创新第五大股东。在参与兆易创新定增之前，葛卫东已经多次大手笔投资科技股，根据wind数据，截至2020年一季度末，葛卫东至少还上榜了用友网络、科大讯飞和锐科激光的前十大流通股东名单。
+需求持续增长供需格局改善
+2005年4月5日，朱一明和启迪孵化器签订《公司章程》， 共同出资设立了芯技佳易（兆易创新前身），其中朱一明以非专利技术“超高速静态随机存储器技术”出资120万元，出资占比为60%。朱一明在2005年4月出资设立芯技佳易之前，曾经在iPolicy Networks Inc．任职工程师，在Monolithic System Technologies Inc．任职项目主管，于2004年3月在美国发起设立美国技佳并任总经理。截至2020年6月3日，朱一明持股9.56%，依然为公司实控人。
+公司为一家芯片设计公司，主要产品有NOR闪存芯片、微控制器、传感器芯片等。·NOR Flash即代码型闪存芯片，主要用来存储代码及少量数据，2019年公司NOR Flash产品营收占比约为70%。公司NOR Flash产品广泛应用于PC主板、数字机顶盒、路由器、家庭网关、安防监控产品、人工智能、物联网、穿戴式设备、汽车电子等。兆易创新也是AirPods2的主力供应商，公司的NOR Flash产品应用于AirPods2中。由于没有物理线材，TWS耳机为了能够实现“秒连”蓝牙，就需要采用响应速度更快的NOR闪存，减少主芯片等待时间，提升运行效率。
+由于NOR Flash仅占据存储市场1%的市场份额，近年来，存储大厂纷纷退出或者减产NOR Flash业务，三星在2010年完全退出Nor Flash市场，将所有存储产能集中于市场空间更大的Nand和DRAM存储器；Mircon在2016年取消了8英寸生产线，将全部8英寸和部分12英寸线产能转移给Nand；2017年，Cypress出售在美国Bloomington的Nor Flash圆晶厂，同时与客户的Nor Flash协议价格到期，Cypress重新提高产品价格；2019年，旺宏和华邦实际均减产5%~10%，华邦未达成2017年预定的在2019年达产3万片/月产能计划。
+目前，NOR Flash的驱动力主要来自于TWS无线耳机、智能手机AMOLED 和 TDDI，在TWS无线耳机的普及与手机全面屏趋势的拉动下，NOR Flash市场规模将保持增长，东北证券研报预测，全球Nor Flash市场规模，在2019年至 2021年将分别达到173.8 亿元、192.3 亿元、212.4 亿元，增长率分别为6.43%、10.64%、10.45%。
+由于大厂纷纷退出或减产NOR Flash业务，而NOR Flash的需求仍在继续增长，兆易创新受益于供需格局的改善，以及切入苹果AirPods2供应链，全球市占率快速提高，据CINNO Research对2019年第三季度存储产业研究报告显示，兆易创新Nor Flash市场份额提升到18.3%，超越赛普拉斯排名全球第三，前二名分别为华邦电子和旺宏电子。
+主营业务存被替代风险
+NOR 闪存一般容量较小，NOR 闪存主要功能是存储代码和部分数据，通常用于 1MB-512MB 容量的闪存市场， 而NAND 闪存主要功能存储数据，通常用于 512MB-16GB 甚至更高的容量市场。同时，NOR Flash的单位成本更高。因此，在2007年智能手机出现后，随着智能手机的功能增多，智能手机对数据存储的容量相应提高，智能手机厂商如三星逐渐使用 NAND Flash替代 NOR Flash芯片，NOR Flash的全球市场规模由2006年的110亿美元一路下滑到2018年的26亿美元。NOR Flash目前主要应用于功能手机、TWS无线耳机、全面屏手机等市场。
+行业巨头美光科技 NAND闪存资深市场经理吕向东曾表示：“NOR 闪存终将被 NAND 取代，业界认为NAND 不适合进行代码存储是一种错误的观点”。2018年，中国台湾存储芯片龙头华邦电已经研发出首款高速度车用NAND Flash芯片，其可存储容量高于 NOR Flash，预期可以取代传统NOR Flash在车用市场应用。
+根据Objective Analysis和Coughlin Associates发表的最新年度报告《Emerging Memories Ramp Up》显示：MRAM和STT MRAM将在未来几年内开始取代一些NOR，SRAM，也可能取代DRAM。STT-MRAM和MRAM功能的发展速度将导致其价格逐渐降低，而用高速和高耐久性的非易失性存储器取代易失性存储器的吸引力使这些技术具有很强的竞争力，前提是它们的容量增加以降低生产成本（从而降低购买价格）。
+(image_address=""//n.sinaimg.cn/sinakd2020613s/655/w930h525/20200613/5bbc-iuvaazp8406406.png"")
+兆易创新近几年也在拓展Nand与DRAM业务，Nand产品集中在中低容量 SLC Nand（1-4 Gb），而旺宏和华邦与公司在SLC Nand产品线的重合度较高，是公司的主要竞争对手。SLC Nand市场规模也很小，2018年SLC Nand 市场规模为 79.35亿元，占比不足Nand 全球规模的2%，大型存储厂商逐渐退出或减少 SLC Nand业务。在DRAM领域，前四大厂商牢牢占据全球DRAM市场99%份额，国产DRAM份额不足1%，公司在DRAM领域的进展将面临四大巨头的竞争。（思维财经出品）■
+（本文仅供参考，不构成投资建议，市场有风险，投资须谨慎）
+精选/Editor‘s Picks
+一定要活下来！走过危机杀出重围做赢家
+(image_address=""//n.sinaimg.cn/sinakd2020613s/731/w1080h451/20200613/933d-iuvaazp8406217.jpg"")
+]article_adlist-->
+我们与中国经济一起 站在下一个12年的起点]article_adlist-->
+(image_address=""//n.sinaimg.cn/sinakd2020613s/643/w1044h399/20200613/0f99-iuvaazp8406227.jpg"")
+]article_adlist-->地产价值TOP50榜：16万亿后50强房企转型真相
+(image_address=""//n.sinaimg.cn/sinakd2020613s/644/w1080h364/20200613/e0a7-iuvaazp8406226.jpg"")
+]article_adlist-->商务合作 · tzzb@tzzw.cn
+内容合作 · gaofangfang@tzzw.cn
+官方网站 · www.investorchina.cn
+▣
+◆
+招聘
+◆
+产经行业研究员               前台行政
+金融行业研究员               公关经理
+研究院 · 研究员               新媒体销售经理
+医药产经分析师             美编
+微商城/小程序运营专员
+▣
+◆
+联系方式
+◆
+招聘电话：021-33833319
+加入我们：tzzbhr@tzzw.cn
+]article_adlist-->
+(image_address=""http://n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陶然",2020-06-13 07:50:11,新浪财经
+12,兆易创新43亿定增完成 需求增长但主营业务存被替代风险,"来源：新投资者网
+(image_address=""//n.sinaimg.cn/sinakd2020613s/152/w1080h672/20200613/3fb6-iuvaazp8406373.jpg"")
+《投资者网》 李杰
+6月4日，兆易创新公告完成43亿定增，近年来NOR Flash行业需求持续增长，供需格局改善，但行业存在被替代的风险。
+6月4日，兆易创新发布《非公开发行股票发行结果暨股本变动公告》，公告了其定增发行结果。
+公司向GIC（新加坡政府投资有限公司）、葛卫东、毕永生、博时基金、青岛城投科技发展有限公司非公开发行2121.91万股股份，募资43.24亿元，其中，葛卫东豪掷15亿元。
+完成43亿定向增发
+2019年9月30日，兆易创新公告了《非公开发行A股股票预案》。2020年3月3日，兆易创新公告了《非公开发行A股股票预案（修订稿）》，2020年4月3日，公司非公开发行股票的申请获得中国证监会发行审核委员会审核通过。
+根据《非公开发行A股股票预案（修订稿）》，兆易创新拟向不超过35名特定投资者发行不超过6409.86万股，不超过本次发行前公司股份总数的20%，发行价格不低于定价基准日前 20 个交易日公司股票交易均价的 80%（即发行底价）。限售期为6个月。募集资金总额（含发行费用）不超过人民币 43.24亿元，其中33.24亿元用于DRAM 芯片研发及产业化项目，10亿元用于补充流动资金。
+6月4日，兆易创新公告《非公开发行股票发行结果暨股本变动公告》，兆易创新向新加坡政府投资有限公司（GIC）、葛卫东、毕永生、博时基金管理有限公司、青岛城投科技发展有限公司共5名发行对象非公开发行2121.91万股，发行价格203.78元/股，募资总额43.24亿元。截至2020年5月25日，本次非公开发行的 5 家发行对象已将认购资金全额汇入保荐机构（主承销商）中金公司指定账户。5月25日当天兆易创新收盘价为199.00，发行价格较当日收盘价还高出2.4%。
+在此次非公开发行中，期货大佬葛卫东豪掷15亿元获配736.09万股，持股比例将从3.06%提升至4.48%，成为兆易创新第五大股东。在参与兆易创新定增之前，葛卫东已经多次大手笔投资科技股，根据wind数据，截至2020年一季度末，葛卫东至少还上榜了用友网络、科大讯飞和锐科激光的前十大流通股东名单。
+需求持续增长供需格局改善
+2005年4月5日，朱一明和启迪孵化器签订《公司章程》， 共同出资设立了芯技佳易（兆易创新前身），其中朱一明以非专利技术“超高速静态随机存储器技术”出资120万元，出资占比为60%。朱一明在2005年4月出资设立芯技佳易之前，曾经在iPolicy Networks Inc．任职工程师，在Monolithic System Technologies Inc．任职项目主管，于2004年3月在美国发起设立美国技佳并任总经理。截至2020年6月3日，朱一明持股9.56%，依然为公司实控人。
+公司为一家芯片设计公司，主要产品有NOR闪存芯片、微控制器、传感器芯片等。·NOR Flash即代码型闪存芯片，主要用来存储代码及少量数据，2019年公司NOR Flash产品营收占比约为70%。公司NOR Flash产品广泛应用于PC主板、数字机顶盒、路由器、家庭网关、安防监控产品、人工智能、物联网、穿戴式设备、汽车电子等。兆易创新也是AirPods2的主力供应商，公司的NOR Flash产品应用于AirPods2中。由于没有物理线材，TWS耳机为了能够实现“秒连”蓝牙，就需要采用响应速度更快的NOR闪存，减少主芯片等待时间，提升运行效率。
+由于NOR Flash仅占据存储市场1%的市场份额，近年来，存储大厂纷纷退出或者减产NOR Flash业务，三星在2010年完全退出Nor Flash市场，将所有存储产能集中于市场空间更大的Nand和DRAM存储器；Mircon在2016年取消了8英寸生产线，将全部8英寸和部分12英寸线产能转移给Nand；2017年，Cypress出售在美国Bloomington的Nor Flash圆晶厂，同时与客户的Nor Flash协议价格到期，Cypress重新提高产品价格；2019年，旺宏和华邦实际均减产5%~10%，华邦未达成2017年预定的在2019年达产3万片/月产能计划。
+目前，NOR Flash的驱动力主要来自于TWS无线耳机、智能手机AMOLED 和 TDDI，在TWS无线耳机的普及与手机全面屏趋势的拉动下，NOR Flash市场规模将保持增长，东北证券研报预测，全球Nor Flash市场规模，在2019年至 2021年将分别达到173.8 亿元、192.3 亿元、212.4 亿元，增长率分别为6.43%、10.64%、10.45%。
+由于大厂纷纷退出或减产NOR Flash业务，而NOR Flash的需求仍在继续增长，兆易创新受益于供需格局的改善，以及切入苹果AirPods2供应链，全球市占率快速提高，据CINNO Research对2019年第三季度存储产业研究报告显示，兆易创新Nor Flash市场份额提升到18.3%，超越赛普拉斯排名全球第三，前二名分别为华邦电子和旺宏电子。
+主营业务存被替代风险
+NOR 闪存一般容量较小，NOR 闪存主要功能是存储代码和部分数据，通常用于 1MB-512MB 容量的闪存市场， 而NAND 闪存主要功能存储数据，通常用于 512MB-16GB 甚至更高的容量市场。同时，NOR Flash的单位成本更高。因此，在2007年智能手机出现后，随着智能手机的功能增多，智能手机对数据存储的容量相应提高，智能手机厂商如三星逐渐使用 NAND Flash替代 NOR Flash芯片，NOR Flash的全球市场规模由2006年的110亿美元一路下滑到2018年的26亿美元。NOR Flash目前主要应用于功能手机、TWS无线耳机、全面屏手机等市场。
+行业巨头美光科技 NAND闪存资深市场经理吕向东曾表示：“NOR 闪存终将被 NAND 取代，业界认为NAND 不适合进行代码存储是一种错误的观点”。2018年，中国台湾存储芯片龙头华邦电已经研发出首款高速度车用NAND Flash芯片，其可存储容量高于 NOR Flash，预期可以取代传统NOR Flash在车用市场应用。
+根据Objective Analysis和Coughlin Associates发表的最新年度报告《Emerging Memories Ramp Up》显示：MRAM和STT MRAM将在未来几年内开始取代一些NOR，SRAM，也可能取代DRAM。STT-MRAM和MRAM功能的发展速度将导致其价格逐渐降低，而用高速和高耐久性的非易失性存储器取代易失性存储器的吸引力使这些技术具有很强的竞争力，前提是它们的容量增加以降低生产成本（从而降低购买价格）。
+(image_address=""//n.sinaimg.cn/sinakd2020613s/655/w930h525/20200613/5bbc-iuvaazp8406406.png"")
+兆易创新近几年也在拓展Nand与DRAM业务，Nand产品集中在中低容量 SLC Nand（1-4 Gb），而旺宏和华邦与公司在SLC Nand产品线的重合度较高，是公司的主要竞争对手。SLC Nand市场规模也很小，2018年SLC Nand 市场规模为 79.35亿元，占比不足Nand 全球规模的2%，大型存储厂商逐渐退出或减少 SLC Nand业务。在DRAM领域，前四大厂商牢牢占据全球DRAM市场99%份额，国产DRAM份额不足1%，公司在DRAM领域的进展将面临四大巨头的竞争。（思维财经出品）■
+（本文仅供参考，不构成投资建议，市场有风险，投资须谨慎）
+精选/Editor‘s Picks
+一定要活下来！走过危机杀出重围做赢家
+(image_address=""//n.sinaimg.cn/sinakd2020613s/731/w1080h451/20200613/933d-iuvaazp8406217.jpg"")
+]article_adlist-->
+我们与中国经济一起 站在下一个12年的起点]article_adlist-->
+(image_address=""//n.sinaimg.cn/sinakd2020613s/643/w1044h399/20200613/0f99-iuvaazp8406227.jpg"")
+]article_adlist-->地产价值TOP50榜：16万亿后50强房企转型真相
+(image_address=""//n.sinaimg.cn/sinakd2020613s/644/w1080h364/20200613/e0a7-iuvaazp8406226.jpg"")
+]article_adlist-->商务合作 · tzzb@tzzw.cn
+内容合作 · gaofangfang@tzzw.cn
+官方网站 · www.investorchina.cn
+▣
+◆
+招聘
+◆
+产经行业研究员               前台行政
+金融行业研究员               公关经理
+研究院 · 研究员               新媒体销售经理
+医药产经分析师             美编
+微商城/小程序运营专员
+▣
+◆
+联系方式
+◆
+招聘电话：021-33833319
+加入我们：tzzbhr@tzzw.cn
+]article_adlist-->
+(image_address=""http://n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陶然",2020-06-13 07:50:11,新浪财经
+13,兆易创新43亿定增完成 需求增长但主营业务存被替代风险,"来源：新投资者网
+(image_address=""//n.sinaimg.cn/sinakd2020613s/152/w1080h672/20200613/3fb6-iuvaazp8406373.jpg"")
+《投资者网》 李杰
+6月4日，兆易创新公告完成43亿定增，近年来NOR Flash行业需求持续增长，供需格局改善，但行业存在被替代的风险。
+6月4日，兆易创新发布《非公开发行股票发行结果暨股本变动公告》，公告了其定增发行结果。
+公司向GIC（新加坡政府投资有限公司）、葛卫东、毕永生、博时基金、青岛城投科技发展有限公司非公开发行2121.91万股股份，募资43.24亿元，其中，葛卫东豪掷15亿元。
+完成43亿定向增发
+2019年9月30日，兆易创新公告了《非公开发行A股股票预案》。2020年3月3日，兆易创新公告了《非公开发行A股股票预案（修订稿）》，2020年4月3日，公司非公开发行股票的申请获得中国证监会发行审核委员会审核通过。
+根据《非公开发行A股股票预案（修订稿）》，兆易创新拟向不超过35名特定投资者发行不超过6409.86万股，不超过本次发行前公司股份总数的20%，发行价格不低于定价基准日前 20 个交易日公司股票交易均价的 80%（即发行底价）。限售期为6个月。募集资金总额（含发行费用）不超过人民币 43.24亿元，其中33.24亿元用于DRAM 芯片研发及产业化项目，10亿元用于补充流动资金。
+6月4日，兆易创新公告《非公开发行股票发行结果暨股本变动公告》，兆易创新向新加坡政府投资有限公司（GIC）、葛卫东、毕永生、博时基金管理有限公司、青岛城投科技发展有限公司共5名发行对象非公开发行2121.91万股，发行价格203.78元/股，募资总额43.24亿元。截至2020年5月25日，本次非公开发行的 5 家发行对象已将认购资金全额汇入保荐机构（主承销商）中金公司指定账户。5月25日当天兆易创新收盘价为199.00，发行价格较当日收盘价还高出2.4%。
+在此次非公开发行中，期货大佬葛卫东豪掷15亿元获配736.09万股，持股比例将从3.06%提升至4.48%，成为兆易创新第五大股东。在参与兆易创新定增之前，葛卫东已经多次大手笔投资科技股，根据wind数据，截至2020年一季度末，葛卫东至少还上榜了用友网络、科大讯飞和锐科激光的前十大流通股东名单。
+需求持续增长供需格局改善
+2005年4月5日，朱一明和启迪孵化器签订《公司章程》， 共同出资设立了芯技佳易（兆易创新前身），其中朱一明以非专利技术“超高速静态随机存储器技术”出资120万元，出资占比为60%。朱一明在2005年4月出资设立芯技佳易之前，曾经在iPolicy Networks Inc．任职工程师，在Monolithic System Technologies Inc．任职项目主管，于2004年3月在美国发起设立美国技佳并任总经理。截至2020年6月3日，朱一明持股9.56%，依然为公司实控人。
+公司为一家芯片设计公司，主要产品有NOR闪存芯片、微控制器、传感器芯片等。·NOR Flash即代码型闪存芯片，主要用来存储代码及少量数据，2019年公司NOR Flash产品营收占比约为70%。公司NOR Flash产品广泛应用于PC主板、数字机顶盒、路由器、家庭网关、安防监控产品、人工智能、物联网、穿戴式设备、汽车电子等。兆易创新也是AirPods2的主力供应商，公司的NOR Flash产品应用于AirPods2中。由于没有物理线材，TWS耳机为了能够实现“秒连”蓝牙，就需要采用响应速度更快的NOR闪存，减少主芯片等待时间，提升运行效率。
+由于NOR Flash仅占据存储市场1%的市场份额，近年来，存储大厂纷纷退出或者减产NOR Flash业务，三星在2010年完全退出Nor Flash市场，将所有存储产能集中于市场空间更大的Nand和DRAM存储器；Mircon在2016年取消了8英寸生产线，将全部8英寸和部分12英寸线产能转移给Nand；2017年，Cypress出售在美国Bloomington的Nor Flash圆晶厂，同时与客户的Nor Flash协议价格到期，Cypress重新提高产品价格；2019年，旺宏和华邦实际均减产5%~10%，华邦未达成2017年预定的在2019年达产3万片/月产能计划。
+目前，NOR Flash的驱动力主要来自于TWS无线耳机、智能手机AMOLED 和 TDDI，在TWS无线耳机的普及与手机全面屏趋势的拉动下，NOR Flash市场规模将保持增长，东北证券研报预测，全球Nor Flash市场规模，在2019年至 2021年将分别达到173.8 亿元、192.3 亿元、212.4 亿元，增长率分别为6.43%、10.64%、10.45%。
+由于大厂纷纷退出或减产NOR Flash业务，而NOR Flash的需求仍在继续增长，兆易创新受益于供需格局的改善，以及切入苹果AirPods2供应链，全球市占率快速提高，据CINNO Research对2019年第三季度存储产业研究报告显示，兆易创新Nor Flash市场份额提升到18.3%，超越赛普拉斯排名全球第三，前二名分别为华邦电子和旺宏电子。
+主营业务存被替代风险
+NOR 闪存一般容量较小，NOR 闪存主要功能是存储代码和部分数据，通常用于 1MB-512MB 容量的闪存市场， 而NAND 闪存主要功能存储数据，通常用于 512MB-16GB 甚至更高的容量市场。同时，NOR Flash的单位成本更高。因此，在2007年智能手机出现后，随着智能手机的功能增多，智能手机对数据存储的容量相应提高，智能手机厂商如三星逐渐使用 NAND Flash替代 NOR Flash芯片，NOR Flash的全球市场规模由2006年的110亿美元一路下滑到2018年的26亿美元。NOR Flash目前主要应用于功能手机、TWS无线耳机、全面屏手机等市场。
+行业巨头美光科技 NAND闪存资深市场经理吕向东曾表示：“NOR 闪存终将被 NAND 取代，业界认为NAND 不适合进行代码存储是一种错误的观点”。2018年，中国台湾存储芯片龙头华邦电已经研发出首款高速度车用NAND Flash芯片，其可存储容量高于 NOR Flash，预期可以取代传统NOR Flash在车用市场应用。
+根据Objective Analysis和Coughlin Associates发表的最新年度报告《Emerging Memories Ramp Up》显示：MRAM和STT MRAM将在未来几年内开始取代一些NOR，SRAM，也可能取代DRAM。STT-MRAM和MRAM功能的发展速度将导致其价格逐渐降低，而用高速和高耐久性的非易失性存储器取代易失性存储器的吸引力使这些技术具有很强的竞争力，前提是它们的容量增加以降低生产成本（从而降低购买价格）。
+(image_address=""//n.sinaimg.cn/sinakd2020613s/655/w930h525/20200613/5bbc-iuvaazp8406406.png"")
+兆易创新近几年也在拓展Nand与DRAM业务，Nand产品集中在中低容量 SLC Nand（1-4 Gb），而旺宏和华邦与公司在SLC Nand产品线的重合度较高，是公司的主要竞争对手。SLC Nand市场规模也很小，2018年SLC Nand 市场规模为 79.35亿元，占比不足Nand 全球规模的2%，大型存储厂商逐渐退出或减少 SLC Nand业务。在DRAM领域，前四大厂商牢牢占据全球DRAM市场99%份额，国产DRAM份额不足1%，公司在DRAM领域的进展将面临四大巨头的竞争。（思维财经出品）■
+（本文仅供参考，不构成投资建议，市场有风险，投资须谨慎）
+精选/Editor‘s Picks
+一定要活下来！走过危机杀出重围做赢家
+(image_address=""//n.sinaimg.cn/sinakd2020613s/731/w1080h451/20200613/933d-iuvaazp8406217.jpg"")
+]article_adlist-->
+我们与中国经济一起 站在下一个12年的起点]article_adlist-->
+(image_address=""//n.sinaimg.cn/sinakd2020613s/643/w1044h399/20200613/0f99-iuvaazp8406227.jpg"")
+]article_adlist-->地产价值TOP50榜：16万亿后50强房企转型真相
+(image_address=""//n.sinaimg.cn/sinakd2020613s/644/w1080h364/20200613/e0a7-iuvaazp8406226.jpg"")
+]article_adlist-->商务合作 · tzzb@tzzw.cn
+内容合作 · gaofangfang@tzzw.cn
+官方网站 · www.investorchina.cn
+▣
+◆
+招聘
+◆
+产经行业研究员               前台行政
+金融行业研究员               公关经理
+研究院 · 研究员               新媒体销售经理
+医药产经分析师             美编
+微商城/小程序运营专员
+▣
+◆
+联系方式
+◆
+招聘电话：021-33833319
+加入我们：tzzbhr@tzzw.cn
+]article_adlist-->
+(image_address=""http://n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陶然",2020-06-13 07:50:11,新浪财经
+14,兆易创新43亿定增完成 需求增长但主营业务存被替代风险,"来源：新投资者网
+(image_address=""//n.sinaimg.cn/sinakd2020613s/152/w1080h672/20200613/3fb6-iuvaazp8406373.jpg"")
+《投资者网》 李杰
+6月4日，兆易创新公告完成43亿定增，近年来NOR Flash行业需求持续增长，供需格局改善，但行业存在被替代的风险。
+6月4日，兆易创新发布《非公开发行股票发行结果暨股本变动公告》，公告了其定增发行结果。
+公司向GIC（新加坡政府投资有限公司）、葛卫东、毕永生、博时基金、青岛城投科技发展有限公司非公开发行2121.91万股股份，募资43.24亿元，其中，葛卫东豪掷15亿元。
+完成43亿定向增发
+2019年9月30日，兆易创新公告了《非公开发行A股股票预案》。2020年3月3日，兆易创新公告了《非公开发行A股股票预案（修订稿）》，2020年4月3日，公司非公开发行股票的申请获得中国证监会发行审核委员会审核通过。
+根据《非公开发行A股股票预案（修订稿）》，兆易创新拟向不超过35名特定投资者发行不超过6409.86万股，不超过本次发行前公司股份总数的20%，发行价格不低于定价基准日前 20 个交易日公司股票交易均价的 80%（即发行底价）。限售期为6个月。募集资金总额（含发行费用）不超过人民币 43.24亿元，其中33.24亿元用于DRAM 芯片研发及产业化项目，10亿元用于补充流动资金。
+6月4日，兆易创新公告《非公开发行股票发行结果暨股本变动公告》，兆易创新向新加坡政府投资有限公司（GIC）、葛卫东、毕永生、博时基金管理有限公司、青岛城投科技发展有限公司共5名发行对象非公开发行2121.91万股，发行价格203.78元/股，募资总额43.24亿元。截至2020年5月25日，本次非公开发行的 5 家发行对象已将认购资金全额汇入保荐机构（主承销商）中金公司指定账户。5月25日当天兆易创新收盘价为199.00，发行价格较当日收盘价还高出2.4%。
+在此次非公开发行中，期货大佬葛卫东豪掷15亿元获配736.09万股，持股比例将从3.06%提升至4.48%，成为兆易创新第五大股东。在参与兆易创新定增之前，葛卫东已经多次大手笔投资科技股，根据wind数据，截至2020年一季度末，葛卫东至少还上榜了用友网络、科大讯飞和锐科激光的前十大流通股东名单。
+需求持续增长供需格局改善
+2005年4月5日，朱一明和启迪孵化器签订《公司章程》， 共同出资设立了芯技佳易（兆易创新前身），其中朱一明以非专利技术“超高速静态随机存储器技术”出资120万元，出资占比为60%。朱一明在2005年4月出资设立芯技佳易之前，曾经在iPolicy Networks Inc．任职工程师，在Monolithic System Technologies Inc．任职项目主管，于2004年3月在美国发起设立美国技佳并任总经理。截至2020年6月3日，朱一明持股9.56%，依然为公司实控人。
+公司为一家芯片设计公司，主要产品有NOR闪存芯片、微控制器、传感器芯片等。·NOR Flash即代码型闪存芯片，主要用来存储代码及少量数据，2019年公司NOR Flash产品营收占比约为70%。公司NOR Flash产品广泛应用于PC主板、数字机顶盒、路由器、家庭网关、安防监控产品、人工智能、物联网、穿戴式设备、汽车电子等。兆易创新也是AirPods2的主力供应商，公司的NOR Flash产品应用于AirPods2中。由于没有物理线材，TWS耳机为了能够实现“秒连”蓝牙，就需要采用响应速度更快的NOR闪存，减少主芯片等待时间，提升运行效率。
+由于NOR Flash仅占据存储市场1%的市场份额，近年来，存储大厂纷纷退出或者减产NOR Flash业务，三星在2010年完全退出Nor Flash市场，将所有存储产能集中于市场空间更大的Nand和DRAM存储器；Mircon在2016年取消了8英寸生产线，将全部8英寸和部分12英寸线产能转移给Nand；2017年，Cypress出售在美国Bloomington的Nor Flash圆晶厂，同时与客户的Nor Flash协议价格到期，Cypress重新提高产品价格；2019年，旺宏和华邦实际均减产5%~10%，华邦未达成2017年预定的在2019年达产3万片/月产能计划。
+目前，NOR Flash的驱动力主要来自于TWS无线耳机、智能手机AMOLED 和 TDDI，在TWS无线耳机的普及与手机全面屏趋势的拉动下，NOR Flash市场规模将保持增长，东北证券研报预测，全球Nor Flash市场规模，在2019年至 2021年将分别达到173.8 亿元、192.3 亿元、212.4 亿元，增长率分别为6.43%、10.64%、10.45%。
+由于大厂纷纷退出或减产NOR Flash业务，而NOR Flash的需求仍在继续增长，兆易创新受益于供需格局的改善，以及切入苹果AirPods2供应链，全球市占率快速提高，据CINNO Research对2019年第三季度存储产业研究报告显示，兆易创新Nor Flash市场份额提升到18.3%，超越赛普拉斯排名全球第三，前二名分别为华邦电子和旺宏电子。
+主营业务存被替代风险
+NOR 闪存一般容量较小，NOR 闪存主要功能是存储代码和部分数据，通常用于 1MB-512MB 容量的闪存市场， 而NAND 闪存主要功能存储数据，通常用于 512MB-16GB 甚至更高的容量市场。同时，NOR Flash的单位成本更高。因此，在2007年智能手机出现后，随着智能手机的功能增多，智能手机对数据存储的容量相应提高，智能手机厂商如三星逐渐使用 NAND Flash替代 NOR Flash芯片，NOR Flash的全球市场规模由2006年的110亿美元一路下滑到2018年的26亿美元。NOR Flash目前主要应用于功能手机、TWS无线耳机、全面屏手机等市场。
+行业巨头美光科技 NAND闪存资深市场经理吕向东曾表示：“NOR 闪存终将被 NAND 取代，业界认为NAND 不适合进行代码存储是一种错误的观点”。2018年，中国台湾存储芯片龙头华邦电已经研发出首款高速度车用NAND Flash芯片，其可存储容量高于 NOR Flash，预期可以取代传统NOR Flash在车用市场应用。
+根据Objective Analysis和Coughlin Associates发表的最新年度报告《Emerging Memories Ramp Up》显示：MRAM和STT MRAM将在未来几年内开始取代一些NOR，SRAM，也可能取代DRAM。STT-MRAM和MRAM功能的发展速度将导致其价格逐渐降低，而用高速和高耐久性的非易失性存储器取代易失性存储器的吸引力使这些技术具有很强的竞争力，前提是它们的容量增加以降低生产成本（从而降低购买价格）。
+(image_address=""//n.sinaimg.cn/sinakd2020613s/655/w930h525/20200613/5bbc-iuvaazp8406406.png"")
+兆易创新近几年也在拓展Nand与DRAM业务，Nand产品集中在中低容量 SLC Nand（1-4 Gb），而旺宏和华邦与公司在SLC Nand产品线的重合度较高，是公司的主要竞争对手。SLC Nand市场规模也很小，2018年SLC Nand 市场规模为 79.35亿元，占比不足Nand 全球规模的2%，大型存储厂商逐渐退出或减少 SLC Nand业务。在DRAM领域，前四大厂商牢牢占据全球DRAM市场99%份额，国产DRAM份额不足1%，公司在DRAM领域的进展将面临四大巨头的竞争。（思维财经出品）■
+（本文仅供参考，不构成投资建议，市场有风险，投资须谨慎）
+精选/Editor‘s Picks
+一定要活下来！走过危机杀出重围做赢家
+(image_address=""//n.sinaimg.cn/sinakd2020613s/731/w1080h451/20200613/933d-iuvaazp8406217.jpg"")
+]article_adlist-->
+我们与中国经济一起 站在下一个12年的起点]article_adlist-->
+(image_address=""//n.sinaimg.cn/sinakd2020613s/643/w1044h399/20200613/0f99-iuvaazp8406227.jpg"")
+]article_adlist-->地产价值TOP50榜：16万亿后50强房企转型真相
+(image_address=""//n.sinaimg.cn/sinakd2020613s/644/w1080h364/20200613/e0a7-iuvaazp8406226.jpg"")
+]article_adlist-->商务合作 · tzzb@tzzw.cn
+内容合作 · gaofangfang@tzzw.cn
+官方网站 · www.investorchina.cn
+▣
+◆
+招聘
+◆
+产经行业研究员               前台行政
+金融行业研究员               公关经理
+研究院 · 研究员               新媒体销售经理
+医药产经分析师             美编
+微商城/小程序运营专员
+▣
+◆
+联系方式
+◆
+招聘电话：021-33833319
+加入我们：tzzbhr@tzzw.cn
+]article_adlist-->
+(image_address=""http://n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陶然",2020-06-13 07:50:11,新浪财经
+15,康泰生物市值逼近千亿 “疫苗之王”杜伟民跌宕人生引关注,"新投资者网
+文 | 蔡俊
+杜伟民有点无奈，看着手里康泰生物（300601.SZ）市值直逼千亿，但财富却缩水230亿元。
+这位现年57岁的“疫苗之王”最近因天价离婚案引发关注。他的加拿大籍前妻，因分家离婚，将拿到公司1.61亿股。这笔A股有史以来最高的“分手费”，再度将他推向公众视野。
+任职过长春长生（002680.SZ）、冲击过两次IPO、行贿过高官，杜伟民的人生跌宕起伏。原罪与资本、创业与梦想，从井冈山走出来的疫苗大佬，并不简单。
+1
+230.39亿元分手费
+因为一纸离婚公告，杜伟民成了中国版贝索斯。
+5月29日，杜伟民公开因解除婚姻关系，其本人将持有的康泰生物1.61亿股（占股比例23.99%）分割予以前妻。截至6月11日，公司收盘价143.1元/股，以此计算前妻袁莉萍将拿到230.39亿元“分手费”。
+经此变动，公司的股权结构发生逆转。杜伟民持股比例从51.26%降至27.27%，原本身无股权的袁莉萍一跃成为第二股东。
+为了保证不影响经营，两人签署《一致行动人与表决权委托协议》。杜伟民仍继续保持实际控制权，袁莉萍的股份表决权委托给前夫。
+对此，《投资者网》就离婚是否影响管理层经营问题，向公司求证，截至6月11日，对方尚未置评。
+夫妻本是同林鸟，曾共同进退的两人，一路走来耐人寻味。
+杜伟民原是江西省卫生防疫站的检验员，曾就读江西教育学院化学系，下海后开办生物公司。袁莉萍比其小8岁，毕业于对外经贸大学。功成名就前，无论学历还是背景，女方条件都优于男方。
+赚取第一桶金后，杜伟民举家移民加拿大。妻子持有香港居民身份证，加拿大国籍，儿女也都在国外生活。
+2014年，杜伟民破天荒接受外界采访，其本人回忆了一段往事。2007年旗下一家公司上市未果，心有不甘的他，变卖了加拿大的家产，回国继续创业疫苗领域。
+2012至2015年，袁莉萍担任康泰生物的副总经理。公司上市后，一直保留董事席位，直到2018年卸任。
+资料显示，袁莉萍还是康泰生物全资子公司，民海生物的副总经理。该企业在康泰生物的壮大过程中，起了关键作用。
+民海生物的官方网站上，“领导风采”一栏显示资料正在整理中，寄语有杜伟民定下的企业准则：不迁就、不侥幸、不拖拉，踏踏实实做事，老老实实做人。
+2
+狡兔有三窟
+狡兔有三窟，杜伟民先后在长春长生、延申生物、瑞源达（专用于收购的壳）、民海生物、康泰生物等几家公司打转，终成新一代“疫苗之王”。
+90年代下海后，杜伟民创办了广州盟源生物工程发展有限公司，之后企业入股长春长生，并出任市场部总监。
+出身江西井冈山的杜伟民，身上有两个特质：脑子活络、吃得起苦。
+长春长生风生水起时，杜伟民不甘寄人篱下。2003年，他的第一个“窟”搭建完成，牵头入股延申生物，很快将流感疫苗产品推到市场份额前列。之后冲刺IPO，付出了退出长春长生的代价。
+杜伟民该庆幸早早从长春长生退出，尽管后来也因该公司案发而陷入舆论漩涡，但十多年前的割席足以使其处之泰然。
+更何况，疫苗安全事故，杜伟民也不是第一次遭遇。
+延申生物冲刺IPO失败后，企业接连因生产违规、数据造假等行为，被相关部门予以处罚。2009年，杜伟民出售延申生物，全身而退开启第三次创业。
+这一次，他盯上了康泰生物，几度资产腾挪后，圆梦IPO。
+康泰生物成立于1992年，原股东因公司闯关IPO失败，将手中股份悉数挂牌。杜伟民用第二个“窟”，瑞源达买下股份后，成为实际控制人。
+这家当时濒临绝境的公司，在杜伟民的运作下，与民海生物业务重组，一跃反转成为全国最大的乙肝疫苗生产基地。
+民海生物是杜伟民的第三个“窟”，2004年，他从中国食品药品检定研究院拉来骨干一起操盘，很快引入了国外疫苗全套技术，打造成行业巨头。
+两家企业的合并，被誉为疫苗界的双剑合璧。虽然康泰生物2013年卷入一场风波，湖南3名婴儿被报道接种公司疫苗后有不良反应，其中2名死亡，但公司随即发出澄清公告，称致死原因与疫苗无关，是偶合症导致。
+2017年，康泰生物成功上市。杜伟民费尽10多年心血，站在深交所敲钟仪式现场，但他的飞黄腾达，才刚起步。
+3
+962.34亿市值
+新一代的“疫苗之王”，在业绩与市值间游刃有余。
+根据年报，公司去年营业收入19.4亿元，同比下降3.6%；归母净利润5.7亿元，同比增长31.9%，连续6年保持三成涨幅。
+股价方面，公司143.1元/股的最新价，较上市之初3.29元/股相比，已暴涨42.5倍，对应市值962.34亿元。
+资本市场爆炒康泰生物，一看基本面，二看消息面。
+国内疫苗领域，有一、二类疫苗分别。一类由政府买单，提供给国民强制接种，二类由个人出资。一类产品基本被央企垄断，毛利率较低；公司这些年的发力点，放在二类产品。
+截至2019年，公司二类产品的收入已达18.47亿元，占收入权重逾95%，毛利率93.7%。高利润有高门槛，很多药厂为疫苗上市，铤而走险行贿高官，世人称为原罪。杜伟民也不例外。
+中国裁判文书网显示，前国家食品药品监管局领导尹红章，曾分别单独、伙同他人收受杜伟民30万元、17万元钱款，为公司在药品申报审批事宜上提供帮助。
+然而，历史黑料阻止不了公司股价节节高升。杜伟民能卧薪尝胆10多年上市，在释放利好消息上，也轻车熟路。
+翻开公司公告栏，常见旗下药品的各种声明，小到注册受理、签发证明，大到临床试验总结、纳入审评。每一次消息释放，都推动股价水涨船高。
+今年疫情期间，公司更公告称，与艾棣维欣携手发挥各自优势，共同研究新冠DNA疫苗。艾棣维欣是一家“网红”企业，因宣称与国际药厂Inovio联合研发新冠疫苗，先后被苏州高新、瑞普生物、鹏鹞环保等A股上市公司注资。
+对此，《投资者网》就新冠疫苗的进度问题，向公司求证，截至6月11日，对方尚未置评。（思维财经出品）■
+（本文仅供参考，不构成投资建议，市场有风险，投资须谨慎）
+精选/Editor‘s Picks
+一定要活下来！走过危机杀出重围做赢家
+(image_address=""//n.sinaimg.cn/sinakd2020613s/731/w1080h451/20200613/933d-iuvaazp8406217.jpg"")
+]article_adlist-->
+我们与中国经济一起 站在下一个12年的起点]article_adlist-->
+(image_address=""//n.sinaimg.cn/sinakd2020613s/643/w1044h399/20200613/0f99-iuvaazp8406227.jpg"")
+]article_adlist-->地产价值TOP50榜：16万亿后50强房企转型真相
+(image_address=""//n.sinaimg.cn/sinakd2020613s/644/w1080h364/20200613/e0a7-iuvaazp8406226.jpg"")
+]article_adlist-->商务合作 · tzzb@tzzw.cn
+内容合作 · gaofangfang@tzzw.cn
+官方网站 · www.investorchina.cn
+▣
+◆
+招聘
+◆
+产经行业研究员               前台行政
+金融行业研究员               公关经理
+研究院 · 研究员               新媒体销售经理
+医药产经分析师             美编
+微商城/小程序运营专员
+▣
+◆
+联系方式
+◆
+招聘电话：021-33833319
+加入我们：tzzbhr@tzzw.cn
+]article_adlist-->
+(image_address=""http://n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陶然",2020-06-13 07:50:01,新浪财经
+16,康泰生物市值逼近千亿 “疫苗之王”杜伟民跌宕人生引关注,"新投资者网
+文 | 蔡俊
+杜伟民有点无奈，看着手里康泰生物（300601.SZ）市值直逼千亿，但财富却缩水230亿元。
+这位现年57岁的“疫苗之王”最近因天价离婚案引发关注。他的加拿大籍前妻，因分家离婚，将拿到公司1.61亿股。这笔A股有史以来最高的“分手费”，再度将他推向公众视野。
+任职过长春长生（002680.SZ）、冲击过两次IPO、行贿过高官，杜伟民的人生跌宕起伏。原罪与资本、创业与梦想，从井冈山走出来的疫苗大佬，并不简单。
+1
+230.39亿元分手费
+因为一纸离婚公告，杜伟民成了中国版贝索斯。
+5月29日，杜伟民公开因解除婚姻关系，其本人将持有的康泰生物1.61亿股（占股比例23.99%）分割予以前妻。截至6月11日，公司收盘价143.1元/股，以此计算前妻袁莉萍将拿到230.39亿元“分手费”。
+经此变动，公司的股权结构发生逆转。杜伟民持股比例从51.26%降至27.27%，原本身无股权的袁莉萍一跃成为第二股东。
+为了保证不影响经营，两人签署《一致行动人与表决权委托协议》。杜伟民仍继续保持实际控制权，袁莉萍的股份表决权委托给前夫。
+对此，《投资者网》就离婚是否影响管理层经营问题，向公司求证，截至6月11日，对方尚未置评。
+夫妻本是同林鸟，曾共同进退的两人，一路走来耐人寻味。
+杜伟民原是江西省卫生防疫站的检验员，曾就读江西教育学院化学系，下海后开办生物公司。袁莉萍比其小8岁，毕业于对外经贸大学。功成名就前，无论学历还是背景，女方条件都优于男方。
+赚取第一桶金后，杜伟民举家移民加拿大。妻子持有香港居民身份证，加拿大国籍，儿女也都在国外生活。
+2014年，杜伟民破天荒接受外界采访，其本人回忆了一段往事。2007年旗下一家公司上市未果，心有不甘的他，变卖了加拿大的家产，回国继续创业疫苗领域。
+2012至2015年，袁莉萍担任康泰生物的副总经理。公司上市后，一直保留董事席位，直到2018年卸任。
+资料显示，袁莉萍还是康泰生物全资子公司，民海生物的副总经理。该企业在康泰生物的壮大过程中，起了关键作用。
+民海生物的官方网站上，“领导风采”一栏显示资料正在整理中，寄语有杜伟民定下的企业准则：不迁就、不侥幸、不拖拉，踏踏实实做事，老老实实做人。
+2
+狡兔有三窟
+狡兔有三窟，杜伟民先后在长春长生、延申生物、瑞源达（专用于收购的壳）、民海生物、康泰生物等几家公司打转，终成新一代“疫苗之王”。
+90年代下海后，杜伟民创办了广州盟源生物工程发展有限公司，之后企业入股长春长生，并出任市场部总监。
+出身江西井冈山的杜伟民，身上有两个特质：脑子活络、吃得起苦。
+长春长生风生水起时，杜伟民不甘寄人篱下。2003年，他的第一个“窟”搭建完成，牵头入股延申生物，很快将流感疫苗产品推到市场份额前列。之后冲刺IPO，付出了退出长春长生的代价。
+杜伟民该庆幸早早从长春长生退出，尽管后来也因该公司案发而陷入舆论漩涡，但十多年前的割席足以使其处之泰然。
+更何况，疫苗安全事故，杜伟民也不是第一次遭遇。
+延申生物冲刺IPO失败后，企业接连因生产违规、数据造假等行为，被相关部门予以处罚。2009年，杜伟民出售延申生物，全身而退开启第三次创业。
+这一次，他盯上了康泰生物，几度资产腾挪后，圆梦IPO。
+康泰生物成立于1992年，原股东因公司闯关IPO失败，将手中股份悉数挂牌。杜伟民用第二个“窟”，瑞源达买下股份后，成为实际控制人。
+这家当时濒临绝境的公司，在杜伟民的运作下，与民海生物业务重组，一跃反转成为全国最大的乙肝疫苗生产基地。
+民海生物是杜伟民的第三个“窟”，2004年，他从中国食品药品检定研究院拉来骨干一起操盘，很快引入了国外疫苗全套技术，打造成行业巨头。
+两家企业的合并，被誉为疫苗界的双剑合璧。虽然康泰生物2013年卷入一场风波，湖南3名婴儿被报道接种公司疫苗后有不良反应，其中2名死亡，但公司随即发出澄清公告，称致死原因与疫苗无关，是偶合症导致。
+2017年，康泰生物成功上市。杜伟民费尽10多年心血，站在深交所敲钟仪式现场，但他的飞黄腾达，才刚起步。
+3
+962.34亿市值
+新一代的“疫苗之王”，在业绩与市值间游刃有余。
+根据年报，公司去年营业收入19.4亿元，同比下降3.6%；归母净利润5.7亿元，同比增长31.9%，连续6年保持三成涨幅。
+股价方面，公司143.1元/股的最新价，较上市之初3.29元/股相比，已暴涨42.5倍，对应市值962.34亿元。
+资本市场爆炒康泰生物，一看基本面，二看消息面。
+国内疫苗领域，有一、二类疫苗分别。一类由政府买单，提供给国民强制接种，二类由个人出资。一类产品基本被央企垄断，毛利率较低；公司这些年的发力点，放在二类产品。
+截至2019年，公司二类产品的收入已达18.47亿元，占收入权重逾95%，毛利率93.7%。高利润有高门槛，很多药厂为疫苗上市，铤而走险行贿高官，世人称为原罪。杜伟民也不例外。
+中国裁判文书网显示，前国家食品药品监管局领导尹红章，曾分别单独、伙同他人收受杜伟民30万元、17万元钱款，为公司在药品申报审批事宜上提供帮助。
+然而，历史黑料阻止不了公司股价节节高升。杜伟民能卧薪尝胆10多年上市，在释放利好消息上，也轻车熟路。
+翻开公司公告栏，常见旗下药品的各种声明，小到注册受理、签发证明，大到临床试验总结、纳入审评。每一次消息释放，都推动股价水涨船高。
+今年疫情期间，公司更公告称，与艾棣维欣携手发挥各自优势，共同研究新冠DNA疫苗。艾棣维欣是一家“网红”企业，因宣称与国际药厂Inovio联合研发新冠疫苗，先后被苏州高新、瑞普生物、鹏鹞环保等A股上市公司注资。
+对此，《投资者网》就新冠疫苗的进度问题，向公司求证，截至6月11日，对方尚未置评。（思维财经出品）■
+（本文仅供参考，不构成投资建议，市场有风险，投资须谨慎）
+精选/Editor‘s Picks
+一定要活下来！走过危机杀出重围做赢家
+(image_address=""//n.sinaimg.cn/sinakd2020613s/731/w1080h451/20200613/933d-iuvaazp8406217.jpg"")
+]article_adlist-->
+我们与中国经济一起 站在下一个12年的起点]article_adlist-->
+(image_address=""//n.sinaimg.cn/sinakd2020613s/643/w1044h399/20200613/0f99-iuvaazp8406227.jpg"")
+]article_adlist-->地产价值TOP50榜：16万亿后50强房企转型真相
+(image_address=""//n.sinaimg.cn/sinakd2020613s/644/w1080h364/20200613/e0a7-iuvaazp8406226.jpg"")
+]article_adlist-->商务合作 · tzzb@tzzw.cn
+内容合作 · gaofangfang@tzzw.cn
+官方网站 · www.investorchina.cn
+▣
+◆
+招聘
+◆
+产经行业研究员               前台行政
+金融行业研究员               公关经理
+研究院 · 研究员               新媒体销售经理
+医药产经分析师             美编
+微商城/小程序运营专员
+▣
+◆
+联系方式
+◆
+招聘电话：021-33833319
+加入我们：tzzbhr@tzzw.cn
+]article_adlist-->
+(image_address=""http://n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陶然",2020-06-13 07:50:01,新浪财经
+17,康泰生物市值逼近千亿 “疫苗之王”杜伟民跌宕人生引关注,"新投资者网
+文 | 蔡俊
+杜伟民有点无奈，看着手里康泰生物（300601.SZ）市值直逼千亿，但财富却缩水230亿元。
+这位现年57岁的“疫苗之王”最近因天价离婚案引发关注。他的加拿大籍前妻，因分家离婚，将拿到公司1.61亿股。这笔A股有史以来最高的“分手费”，再度将他推向公众视野。
+任职过长春长生（002680.SZ）、冲击过两次IPO、行贿过高官，杜伟民的人生跌宕起伏。原罪与资本、创业与梦想，从井冈山走出来的疫苗大佬，并不简单。
+1
+230.39亿元分手费
+因为一纸离婚公告，杜伟民成了中国版贝索斯。
+5月29日，杜伟民公开因解除婚姻关系，其本人将持有的康泰生物1.61亿股（占股比例23.99%）分割予以前妻。截至6月11日，公司收盘价143.1元/股，以此计算前妻袁莉萍将拿到230.39亿元“分手费”。
+经此变动，公司的股权结构发生逆转。杜伟民持股比例从51.26%降至27.27%，原本身无股权的袁莉萍一跃成为第二股东。
+为了保证不影响经营，两人签署《一致行动人与表决权委托协议》。杜伟民仍继续保持实际控制权，袁莉萍的股份表决权委托给前夫。
+对此，《投资者网》就离婚是否影响管理层经营问题，向公司求证，截至6月11日，对方尚未置评。
+夫妻本是同林鸟，曾共同进退的两人，一路走来耐人寻味。
+杜伟民原是江西省卫生防疫站的检验员，曾就读江西教育学院化学系，下海后开办生物公司。袁莉萍比其小8岁，毕业于对外经贸大学。功成名就前，无论学历还是背景，女方条件都优于男方。
+赚取第一桶金后，杜伟民举家移民加拿大。妻子持有香港居民身份证，加拿大国籍，儿女也都在国外生活。
+2014年，杜伟民破天荒接受外界采访，其本人回忆了一段往事。2007年旗下一家公司上市未果，心有不甘的他，变卖了加拿大的家产，回国继续创业疫苗领域。
+2012至2015年，袁莉萍担任康泰生物的副总经理。公司上市后，一直保留董事席位，直到2018年卸任。
+资料显示，袁莉萍还是康泰生物全资子公司，民海生物的副总经理。该企业在康泰生物的壮大过程中，起了关键作用。
+民海生物的官方网站上，“领导风采”一栏显示资料正在整理中，寄语有杜伟民定下的企业准则：不迁就、不侥幸、不拖拉，踏踏实实做事，老老实实做人。
+2
+狡兔有三窟
+狡兔有三窟，杜伟民先后在长春长生、延申生物、瑞源达（专用于收购的壳）、民海生物、康泰生物等几家公司打转，终成新一代“疫苗之王”。
+90年代下海后，杜伟民创办了广州盟源生物工程发展有限公司，之后企业入股长春长生，并出任市场部总监。
+出身江西井冈山的杜伟民，身上有两个特质：脑子活络、吃得起苦。
+长春长生风生水起时，杜伟民不甘寄人篱下。2003年，他的第一个“窟”搭建完成，牵头入股延申生物，很快将流感疫苗产品推到市场份额前列。之后冲刺IPO，付出了退出长春长生的代价。
+杜伟民该庆幸早早从长春长生退出，尽管后来也因该公司案发而陷入舆论漩涡，但十多年前的割席足以使其处之泰然。
+更何况，疫苗安全事故，杜伟民也不是第一次遭遇。
+延申生物冲刺IPO失败后，企业接连因生产违规、数据造假等行为，被相关部门予以处罚。2009年，杜伟民出售延申生物，全身而退开启第三次创业。
+这一次，他盯上了康泰生物，几度资产腾挪后，圆梦IPO。
+康泰生物成立于1992年，原股东因公司闯关IPO失败，将手中股份悉数挂牌。杜伟民用第二个“窟”，瑞源达买下股份后，成为实际控制人。
+这家当时濒临绝境的公司，在杜伟民的运作下，与民海生物业务重组，一跃反转成为全国最大的乙肝疫苗生产基地。
+民海生物是杜伟民的第三个“窟”，2004年，他从中国食品药品检定研究院拉来骨干一起操盘，很快引入了国外疫苗全套技术，打造成行业巨头。
+两家企业的合并，被誉为疫苗界的双剑合璧。虽然康泰生物2013年卷入一场风波，湖南3名婴儿被报道接种公司疫苗后有不良反应，其中2名死亡，但公司随即发出澄清公告，称致死原因与疫苗无关，是偶合症导致。
+2017年，康泰生物成功上市。杜伟民费尽10多年心血，站在深交所敲钟仪式现场，但他的飞黄腾达，才刚起步。
+3
+962.34亿市值
+新一代的“疫苗之王”，在业绩与市值间游刃有余。
+根据年报，公司去年营业收入19.4亿元，同比下降3.6%；归母净利润5.7亿元，同比增长31.9%，连续6年保持三成涨幅。
+股价方面，公司143.1元/股的最新价，较上市之初3.29元/股相比，已暴涨42.5倍，对应市值962.34亿元。
+资本市场爆炒康泰生物，一看基本面，二看消息面。
+国内疫苗领域，有一、二类疫苗分别。一类由政府买单，提供给国民强制接种，二类由个人出资。一类产品基本被央企垄断，毛利率较低；公司这些年的发力点，放在二类产品。
+截至2019年，公司二类产品的收入已达18.47亿元，占收入权重逾95%，毛利率93.7%。高利润有高门槛，很多药厂为疫苗上市，铤而走险行贿高官，世人称为原罪。杜伟民也不例外。
+中国裁判文书网显示，前国家食品药品监管局领导尹红章，曾分别单独、伙同他人收受杜伟民30万元、17万元钱款，为公司在药品申报审批事宜上提供帮助。
+然而，历史黑料阻止不了公司股价节节高升。杜伟民能卧薪尝胆10多年上市，在释放利好消息上，也轻车熟路。
+翻开公司公告栏，常见旗下药品的各种声明，小到注册受理、签发证明，大到临床试验总结、纳入审评。每一次消息释放，都推动股价水涨船高。
+今年疫情期间，公司更公告称，与艾棣维欣携手发挥各自优势，共同研究新冠DNA疫苗。艾棣维欣是一家“网红”企业，因宣称与国际药厂Inovio联合研发新冠疫苗，先后被苏州高新、瑞普生物、鹏鹞环保等A股上市公司注资。
+对此，《投资者网》就新冠疫苗的进度问题，向公司求证，截至6月11日，对方尚未置评。（思维财经出品）■
+（本文仅供参考，不构成投资建议，市场有风险，投资须谨慎）
+精选/Editor‘s Picks
+一定要活下来！走过危机杀出重围做赢家
+(image_address=""//n.sinaimg.cn/sinakd2020613s/731/w1080h451/20200613/933d-iuvaazp8406217.jpg"")
+]article_adlist-->
+我们与中国经济一起 站在下一个12年的起点]article_adlist-->
+(image_address=""//n.sinaimg.cn/sinakd2020613s/643/w1044h399/20200613/0f99-iuvaazp8406227.jpg"")
+]article_adlist-->地产价值TOP50榜：16万亿后50强房企转型真相
+(image_address=""//n.sinaimg.cn/sinakd2020613s/644/w1080h364/20200613/e0a7-iuvaazp8406226.jpg"")
+]article_adlist-->商务合作 · tzzb@tzzw.cn
+内容合作 · gaofangfang@tzzw.cn
+官方网站 · www.investorchina.cn
+▣
+◆
+招聘
+◆
+产经行业研究员               前台行政
+金融行业研究员               公关经理
+研究院 · 研究员               新媒体销售经理
+医药产经分析师             美编
+微商城/小程序运营专员
+▣
+◆
+联系方式
+◆
+招聘电话：021-33833319
+加入我们：tzzbhr@tzzw.cn
+]article_adlist-->
+(image_address=""http://n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陶然",2020-06-13 07:50:01,新浪财经
+18,凯撒文化与“头条”系深度绑定 控股股东计划减持2%股份,"□本报记者 于蒙蒙 
+凯撒文化6月12日盘后公告称，与北京朝夕光年信息技术有限公司（简称“朝夕光年”）签署战略合作协议，将发挥各自优势，整合资源，在游戏发行、渠道、运营、IP、衍生品、市场、广告、资本等方面实施全面战略合作。合作期限120个月。
+公司同时披露，控股股东拟减持股份。朝夕光年是“头条”系企业，系字节跳动有限公司全资孙公司。中国证券报记者注意到，凯撒文化当日涨停，且近期已走出一波行情。
+战略合作
+公告显示，本着“资源共享、优势互补、利益共享、共同发展”的原则，凯撒文化将作为朝夕光年在手游研发、运营方面的战略合作伙伴，朝夕光年将作为凯撒文化游戏发行等方面的战略合作伙伴。
+协议约定，双方共同在朝夕光年平台面向全球市场发行推广凯撒文化优质精品游戏；朝夕光年利用其平台和发行优势，为凯撒文化的游戏提供研发方向上的建议；凯撒文化定期向朝夕光年提供其研发、定制或代理的手机游戏，朝夕光年将就全球市场独家代理事项与凯撒文化进行协商或签约；朝夕光年或其关联方有权委托凯撒文化开发朝夕光年指定内容和标准的移动端、独立APP网络游戏；双方共同探索在游戏新型业态、新技术研发方面的合作，包括共同投资优秀的开发团队及合作开展游戏引擎、云游戏、人工智能平台等创新项目。
+凯撒文化表示，协议的签署将指导、促进双方在游戏发行、渠道、运营、IP、衍生品、市场、广告、资本等领域开展全面合作，有利于公司IP精品战略经济效益最大化，进一步提升公司整体核心竞争力，有利于公司长远发展。本次签署的战略合作协议对公司今年财务及经营状况不构成重大影响。
+中国证券报记者注意到，游戏《火影忍者：巅峰对决》已于近日开始预约公测，发行方正是朝夕光年，其中在游戏评分网站TapTap已经有超过10万玩家进行了预约。
+据了解，“头条”系正在加码游戏领域的动作。去年3月，字节跳动以朝夕光年为据点，并收购了原三七互娱子公司上海墨鹍以及上禾网络。今年2月，字节跳动调整组织架构，单独成立游戏部门。业务则从两条线推进，一是自研自发模式；二是独家代理模式：即代理其他厂商优质游戏，尤其是知名IP类游戏，提高发行成功率。
+控股股东计划减持2%股份
+凯撒文化近期股价大涨。中国证券报记者注意到，自4月底启动以来，截至6月12日收盘，公司股价涨幅达113%。
+因为股票交易价格连续三个交易日（6月8日、6月9日和6月10日）收盘价格涨幅偏离值累计超过20%，凯撒文化6月11日发布股价异常波动公告披露，公司与国内某大型游戏发行公司就游戏发行、渠道、运营、IP、衍生品、市场、广告、资本等方面的战略合作事项正在洽谈签署，尚未签订正式的战略合作协议，仍存在一定的不确定性。为避免过早透露、泄露有关信息，洽谈期间公司采取了严格的保密措施，严格控制知情人范围，双方商定、同意并承诺对本协议有关事宜采取严格的保密措施。后续公司将根据相关规定，对战略合作事宜情况履行信息披露义务。
+凯撒文化同时披露了大股东的减持计划。控股股东凯撒集团（香港）有限公司（简称“凯撒集团”）计划在未来六个月内通过集中竞价方式减持不超过2%股份。凯撒文化一季报显示，凯撒集团持有凯撒文化28.2%股份。
+(image_address=""http://n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陶然",2020-06-13 07:43:50,新浪财经
+19,凯撒文化与“头条”系深度绑定 控股股东计划减持2%股份,"□本报记者 于蒙蒙 
+凯撒文化6月12日盘后公告称，与北京朝夕光年信息技术有限公司（简称“朝夕光年”）签署战略合作协议，将发挥各自优势，整合资源，在游戏发行、渠道、运营、IP、衍生品、市场、广告、资本等方面实施全面战略合作。合作期限120个月。
+公司同时披露，控股股东拟减持股份。朝夕光年是“头条”系企业，系字节跳动有限公司全资孙公司。中国证券报记者注意到，凯撒文化当日涨停，且近期已走出一波行情。
+战略合作
+公告显示，本着“资源共享、优势互补、利益共享、共同发展”的原则，凯撒文化将作为朝夕光年在手游研发、运营方面的战略合作伙伴，朝夕光年将作为凯撒文化游戏发行等方面的战略合作伙伴。
+协议约定，双方共同在朝夕光年平台面向全球市场发行推广凯撒文化优质精品游戏；朝夕光年利用其平台和发行优势，为凯撒文化的游戏提供研发方向上的建议；凯撒文化定期向朝夕光年提供其研发、定制或代理的手机游戏，朝夕光年将就全球市场独家代理事项与凯撒文化进行协商或签约；朝夕光年或其关联方有权委托凯撒文化开发朝夕光年指定内容和标准的移动端、独立APP网络游戏；双方共同探索在游戏新型业态、新技术研发方面的合作，包括共同投资优秀的开发团队及合作开展游戏引擎、云游戏、人工智能平台等创新项目。
+凯撒文化表示，协议的签署将指导、促进双方在游戏发行、渠道、运营、IP、衍生品、市场、广告、资本等领域开展全面合作，有利于公司IP精品战略经济效益最大化，进一步提升公司整体核心竞争力，有利于公司长远发展。本次签署的战略合作协议对公司今年财务及经营状况不构成重大影响。
+中国证券报记者注意到，游戏《火影忍者：巅峰对决》已于近日开始预约公测，发行方正是朝夕光年，其中在游戏评分网站TapTap已经有超过10万玩家进行了预约。
+据了解，“头条”系正在加码游戏领域的动作。去年3月，字节跳动以朝夕光年为据点，并收购了原三七互娱子公司上海墨鹍以及上禾网络。今年2月，字节跳动调整组织架构，单独成立游戏部门。业务则从两条线推进，一是自研自发模式；二是独家代理模式：即代理其他厂商优质游戏，尤其是知名IP类游戏，提高发行成功率。
+控股股东计划减持2%股份
+凯撒文化近期股价大涨。中国证券报记者注意到，自4月底启动以来，截至6月12日收盘，公司股价涨幅达113%。
+因为股票交易价格连续三个交易日（6月8日、6月9日和6月10日）收盘价格涨幅偏离值累计超过20%，凯撒文化6月11日发布股价异常波动公告披露，公司与国内某大型游戏发行公司就游戏发行、渠道、运营、IP、衍生品、市场、广告、资本等方面的战略合作事项正在洽谈签署，尚未签订正式的战略合作协议，仍存在一定的不确定性。为避免过早透露、泄露有关信息，洽谈期间公司采取了严格的保密措施，严格控制知情人范围，双方商定、同意并承诺对本协议有关事宜采取严格的保密措施。后续公司将根据相关规定，对战略合作事宜情况履行信息披露义务。
+凯撒文化同时披露了大股东的减持计划。控股股东凯撒集团（香港）有限公司（简称“凯撒集团”）计划在未来六个月内通过集中竞价方式减持不超过2%股份。凯撒文化一季报显示，凯撒集团持有凯撒文化28.2%股份。
+(image_address=""http://n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陶然",2020-06-13 07:43:50,新浪财经
+20,凯撒文化与“头条”系深度绑定 控股股东计划减持2%股份,"□本报记者 于蒙蒙 
+凯撒文化6月12日盘后公告称，与北京朝夕光年信息技术有限公司（简称“朝夕光年”）签署战略合作协议，将发挥各自优势，整合资源，在游戏发行、渠道、运营、IP、衍生品、市场、广告、资本等方面实施全面战略合作。合作期限120个月。
+公司同时披露，控股股东拟减持股份。朝夕光年是“头条”系企业，系字节跳动有限公司全资孙公司。中国证券报记者注意到，凯撒文化当日涨停，且近期已走出一波行情。
+战略合作
+公告显示，本着“资源共享、优势互补、利益共享、共同发展”的原则，凯撒文化将作为朝夕光年在手游研发、运营方面的战略合作伙伴，朝夕光年将作为凯撒文化游戏发行等方面的战略合作伙伴。
+协议约定，双方共同在朝夕光年平台面向全球市场发行推广凯撒文化优质精品游戏；朝夕光年利用其平台和发行优势，为凯撒文化的游戏提供研发方向上的建议；凯撒文化定期向朝夕光年提供其研发、定制或代理的手机游戏，朝夕光年将就全球市场独家代理事项与凯撒文化进行协商或签约；朝夕光年或其关联方有权委托凯撒文化开发朝夕光年指定内容和标准的移动端、独立APP网络游戏；双方共同探索在游戏新型业态、新技术研发方面的合作，包括共同投资优秀的开发团队及合作开展游戏引擎、云游戏、人工智能平台等创新项目。
+凯撒文化表示，协议的签署将指导、促进双方在游戏发行、渠道、运营、IP、衍生品、市场、广告、资本等领域开展全面合作，有利于公司IP精品战略经济效益最大化，进一步提升公司整体核心竞争力，有利于公司长远发展。本次签署的战略合作协议对公司今年财务及经营状况不构成重大影响。
+中国证券报记者注意到，游戏《火影忍者：巅峰对决》已于近日开始预约公测，发行方正是朝夕光年，其中在游戏评分网站TapTap已经有超过10万玩家进行了预约。
+据了解，“头条”系正在加码游戏领域的动作。去年3月，字节跳动以朝夕光年为据点，并收购了原三七互娱子公司上海墨鹍以及上禾网络。今年2月，字节跳动调整组织架构，单独成立游戏部门。业务则从两条线推进，一是自研自发模式；二是独家代理模式：即代理其他厂商优质游戏，尤其是知名IP类游戏，提高发行成功率。
+控股股东计划减持2%股份
+凯撒文化近期股价大涨。中国证券报记者注意到，自4月底启动以来，截至6月12日收盘，公司股价涨幅达113%。
+因为股票交易价格连续三个交易日（6月8日、6月9日和6月10日）收盘价格涨幅偏离值累计超过20%，凯撒文化6月11日发布股价异常波动公告披露，公司与国内某大型游戏发行公司就游戏发行、渠道、运营、IP、衍生品、市场、广告、资本等方面的战略合作事项正在洽谈签署，尚未签订正式的战略合作协议，仍存在一定的不确定性。为避免过早透露、泄露有关信息，洽谈期间公司采取了严格的保密措施，严格控制知情人范围，双方商定、同意并承诺对本协议有关事宜采取严格的保密措施。后续公司将根据相关规定，对战略合作事宜情况履行信息披露义务。
+凯撒文化同时披露了大股东的减持计划。控股股东凯撒集团（香港）有限公司（简称“凯撒集团”）计划在未来六个月内通过集中竞价方式减持不超过2%股份。凯撒文化一季报显示，凯撒集团持有凯撒文化28.2%股份。
+(image_address=""http://n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陶然",2020-06-13 07:43:50,新浪财经

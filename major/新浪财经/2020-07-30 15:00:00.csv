@@ -1,0 +1,233 @@
+,title,content,pub_time,src
+0,被抖音取消合作又收深交所关注函 宝通科技：很尴尬,"视频加载中，请稍候...
+自动播放
+(image_address=""//p1.ivideo.sina.com.cn/video/345/788/953/345788953_400_300.jpg"")
+play
+被抖音取消合作又收深交所关注函，宝通科技：很尴尬丨热公司
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 345788953,
+pid:1,
+url: '',
+title:'被抖音取消合作又收深交所关注函，宝通科技：很尴尬丨热公司'//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=345788953/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+原标题：被抖音取消合作又收深交所关注函，宝通科技：很尴尬丨热公司
+宝通科技今日开盘一字跌停，截至发稿，跌停板上封单超18万手，市值相比前一交易日蒸发超11亿元。此前，宝通科技连续两日涨停，市值猛增超20亿。
+7月29日晚间，抖音称，字节跳动及抖音决定取消与哈视奇已经达成的所有合作。7月30日，深交所对宝通科技下发关注函。
+记者30日以投资者身份致电宝通科技投关部，相关工作人员表示，抖音确实已取消合作，目前正在核查相关事宜，上市公司是被误伤的，比较尴尬。
+抖音取消与哈视奇已经达成的所有合作
+抖音昨晚通过头条旗下的“抖音黑板报”官方信息发布账号表示，由于宝通科技参股公司北京哈视奇科技有限公司违反保密协议，夸大披露所谓“与字节跳动达成多款AR游戏独家合作”信息，字节跳动及抖音决定取消与哈视奇达成的所有合作。
+据悉，日前，宝通科技在官方微信公众号“无锡宝通”表示，参股公司哈视奇已与字节跳动达成多款AR游戏的独家合作，玩家即将在抖音平台玩到哈视奇研发的AR游戏。哈视奇成为抖音第一家合作开发AR游戏的公司，目前正在研发《我接假发贼溜》《汉堡小王者》2款AR游戏，预计将于8月中下旬正式上线抖音平台。游戏上线后，抖音会为哈视奇提供巨大的免费流量扶持。
+此外，28日，宝通科技在深交所互动易平台上还表示：“哈视奇继续与华为、抖音等平台深入布局AR/VR产业”。
+(image_address=""//n.sinaimg.cn/finance/crawl/783/w550h233/20200730/b6f5-iwxpesy3352879.png"")
+目前，宝通科技官方微信公众号这篇名为《抖音向宝通科技旗下哈视奇定制AR游戏，AR游戏或成产业趋势》的文章已被删除。
+深交所：是否夸大合作关系炒作股价
+7月30日上午，深交所下发关注函，表示对此高度关注，要求宝通科技补充说明投资哈视奇的具体情况以及与哈视奇的合作情况，包括但不限于投资金额、合作内容、双方主要的权利与义务、合作有效期等。
+深交所还要求说明，宝通科技是否在官方网站、微信公众号、互动易平台及接受媒体采访等回复过公司及哈视奇与字节跳动、抖音、华为等相关方的合作关系。
+关注函要求说明，字节跳动及抖音取消合作对哈视奇及宝通科技的业务经营和财务业绩的实际影响，并向投资者充分提示风险。关注函要求说明公司在相关信息披露及媒体报道中是否完整说明公司与哈视奇的关系，哈视奇与相关方的合作对公司业绩的影响并提示相关风险，是否真实、准确、完整地披露相关信息，是否存在误导性陈述，是否存在夸大与字节跳动及抖音的合作关系炒作股价的情形。
+(image_address=""//n.sinaimg.cn/finance/crawl/358/w471h687/20200730/8b2b-iwxpesy3352959.png"")
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：张熠",2020-07-30 15:48:29,新浪财经
+1,中信证券：王俊锋出任董事会秘书 董事长张佑君不再代为履行,"新浪财经讯 7月30日消息，中信证券晚间公告，自2020年7月30日起，王俊锋先生正式出任公司董事会秘书，董事长张佑君先生不再代为履行董事会秘书职责。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：张熠",2020-07-30 15:45:30,新浪财经
+2,近3年净利下滑引关注 赛隆药业否认依赖政府补助及存商业贿赂,"原标题：近三年净利下滑引关注 赛隆药业否认依赖政府补助及存在商业贿赂
+新京报讯（记者 王卡拉）赛隆药业近三年净利润及经营活动产生的现金流量净额均逐年下滑，引起深交所关注，要求其解释原因。7月30日，赛隆药业回复称，是主要产品被列入了药品重点监控目录导致销量下滑所致。
+净利润连续三年持续下滑
+2017年-2019年，赛隆药业经营活动产生的现金流量净额分别为8543万元、333万元、-4652万元，净利润分别为6450.51万元、6090.49万元、2748.32万元。
+赛隆药业解释称，公司主要产品注射用脑蛋白水解物、单唾液酸四己糖神经节苷脂钠注射液被列入重点监控药品目录，销量规模下滑较大，从而导致营业收入下滑，公司经营现金流入减少。同时，公司为应对市场环境的变化、稳定市场占有率，相应调整了公司销售政策，对部分信用良好的客户给予一定的信用期，也影响了现金回笼，应收账款额度同比增长较大，导致经营活动产生的现金流量净额与净利润出现差异。
+政府补助占归母净利润49%
+2019年，赛隆药业将政府的1347万元补助记入当期损益，这笔资金占公司该年归母净利润的49%。深交所要求公司说明是否对政府补助存在较大依赖。
+赛隆药业对此予以否认，并表示，2019年，医药行业继续深化落实各项改革举措，“一致性评价”“带量采购”“重点监控”等行业政策频出。在短期承压、长期利好的行业背景下，公司积极主动调整经营策略，加快注射用胸腺法新、阿加曲班注射液、注射用替加环素、门冬氨酸鸟氨酸注射液等新获批品种的生产和市场布局，努力为公司未来发展夯实基础，因此公司对政府补助不存在较大依赖的情况。
+销售费用占营收比为45.88%
+深交所注意到，赛隆药业2019年销售费用1.35亿元，占当期营收的45.88%，要求其说明是否存在商业贿赂或为商业贿赂提供便利的情形。
+对此，赛隆药业列举出5家同行业可比公司的销售费用及销售费用占营收比，认为公司与同行可比公司不存在重大差异。
+同时，赛隆药业称，公司制定了《反商业贿赂管理办法》，实行预防商业贿赂承诺制。经核查，在广东省卫生健康委官网、国家卫生健康委官网以及主要合作方所在省份卫生健康委官网上，均未发现公司或公司主要合作方存在被列入商业贿赂不良记录企业名单的情形，不存在商业贿赂或为商业贿赂提供便利的情形。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：张熠",2020-07-30 15:37:52,新浪财经
+3,业绩与股价齐飞 最牛医药股英科医疗年内涨幅近10倍,"炒股就看金麒麟分析师研报，权威，专业，及时，全面，助您挖掘潜力主题机会！
+原标题：强者恒强！业绩与股价齐飞：最牛医药股年内涨幅近10倍
+来源：财联社
+财联社（上海，研究员 张鹤仪）讯，今日医药制造板块延续昨日行情，迎来大涨。板块涨幅超2.7%，亚太药业（维权）、丰原药业、葫芦娃等数只个股涨停。多只个股股价更创历史新高。
+(image_address=""//n.sinaimg.cn/finance/crawl/715/w399h316/20200730/ed5a-iwxpesy3259416.png"")
+东财医药指数行情也在今日触达年内最高位。距年初，板块涨幅已近50%。
+(image_address=""//n.sinaimg.cn/finance/crawl/735/w550h185/20200730/fa1b-iwxpesy3259460.png"")
+财联社统计2020年上半年与7月内股价涨幅前十医药标的如下：
+(image_address=""//n.sinaimg.cn/finance/crawl/716/w345h371/20200730/4769-iwxpesy3259483.png"")
+(image_address=""//n.sinaimg.cn/finance/crawl/716/w345h371/20200730/8762-iwxpesy3259526.png"")
+英科医疗年内股价涨幅已超过900%，据英科医疗业绩快报，预计上半年净利润19-21亿元 ，比去年同期增长2581.8%-2864.1%。报告期内受疫情影响，全球一次性防护手套需求激增，推动了销售。
+全球新冠新增确诊病例再创新高，业绩受新冠疫情推动的个股不只英科医疗。对于医药板块的投资，海通证券在研报中称，目前多家企业发布中报业绩预报，医药板块业绩靓丽。疫情彰显医药防御属性，建议长期关注细分领域龙头，强者恒强。山西证券也建议，关注业绩超预期个股。
+(image_address=""//n.sinaimg.cn/finance/crawl/6/w453h353/20200730/b5df-iwxpesy3259567.png"")
+截至今日，已有179只医药股预告了中报业绩，其中，113家预喜，占比63%。年初至今大涨的英科医疗净利润增幅列板块第一，东方生物、达安基因次之，预计增幅上限也均超过1200%。英科医疗与另外27家企业2020年上半年预计净利润较同期上涨100%以上。
+下半年，光大证券建议“疫”后寻机，把握“长受益+快复苏”两大主线。后疫情时代，医药中的多个子行业有望借此实现快速普及、升级，建议关注CXO、疫苗、血制品、互联网医疗、医疗防护、医疗硬件等长受益方向。
+光大证券推荐关注药明康德、药石科技、凯莱英、智飞生物、双林生物、大参林、平安好医生（港股）、英科医疗、安图生物、迈瑞医疗、润达医疗。另外，因为疫情被暂时延后的需求可能在后疫情时代快速复苏，建议关注医疗服务和耗材、生长激素等快复苏方向，推荐欧普康视、康德莱、威高股份（港股）、长春高新。
+扫二维码 极速开户
+(image_address=""//n.sinaimg.cn/finance/512/w256h256/20200711/631c-iwasyek1648814.png"")
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：张熠",2020-07-30 15:16:42,新浪财经

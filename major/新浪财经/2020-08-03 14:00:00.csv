@@ -1,0 +1,188 @@
+,title,content,pub_time,src
+0,2分钟读财报|明月镜片IPO:经销商流失加快 关联交易依赖难解,"视频加载中，请稍候...
+自动播放
+(image_address=""//n.sinaimg.cn/front20200803ac/380/w540h640/20200803/64dd-ixeeirz7721342.jpg"")
+play
+视频|明月镜片
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 346289470,
+pid:1,
+url: 'https://video.sina.com.cn/p/finance/2020-08-03/detail-iivhvpwx8950088.d.html',
+title:'视频|明月镜片'//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=346289470/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+陈道明代言的明月镜片日前递交了招股说明书，拟登陆A股。
+资料显示，明月镜片成立于2002年，主要从事眼镜镜片、镜片原料、成镜、镜架等眼视光产品的研发、设计、生产和销售。公司大客户包括JINS等，内销包括直销、经销和代销模式，以销售给终端眼镜门店的直销方式为主，外销主要根据客户的需求提供贴牌产品。
+2017年-2019年，公司营业收入分别为4.26亿元、5.09亿元、5.53亿元，净利润分别为0.17亿元、0.33亿元、0.7亿元。
+虽然营收和净利润都稳步增长，但公司存在核心技术依赖采购、经销商数量减少、存大量关联交易等问题，未来发展充满较多不确定性。
+经销商方面，2017年-2019年公司经销模式实现的营业收入分别为9230.14万元、1.19亿元、1.49亿元，占比分别为22.09%、23.73%、26.98%，公司经销收入逐渐增加，但经销商数量来看却呈明显下滑的趋势。2017年-2019年，公司经销商数量分别为105家、95家、91家，三年新增数量分别为1家、2家、0家，2019年无新增经销商，但有4家退出。公司在招股书中称，经销商数量稳中有降主要系发行人进一步优化经销商结构所致，但从新增数量来看，这一说法一定程度上并不能站住脚，有减有增才是合理优化的一般表现形式，明月镜片经销商数量单边下降，不免让人质疑公司业务是不是不再受经销商青睐，自身竞争力堪忧。
+谈到核心竞争力，明月镜片的部分核心技术依赖采购。公司坦言，受限于上游精细化工原料供应状况、生产技术水平以及生产工艺中部分环节的环保要求，公司尚无法直接生产折射率1.67及以上的树脂单体，主要靠向韩国KOC及其关联方三井中国、丹阳KOC采购。2019年数据显示，折射率1.67及以上的镜片收入占比达26.18%，毛利率明显高于其余折射率镜片。据悉，韩国KOC与公司为关联企业，双方存在大量的关联交易。除与韩国KOC外，公司还存在大量其他的关联交易，2017年-2019年关联交易金额分别为384.36万元、391.14万元、521.39万元。
+另外，公司的产能利用率2019年也明显下滑，由2018年的99.43%下降至83.02%，明月镜片解释称主要系当年实施精益化生产管理所致，尽管如此，公司募投项目中仍拟新增高端树脂镜片产能1650万片/年，常规树脂镜片产能850万片/年。
+2分钟读财报|万科24亿伸援 能拯救负债500亿的泰禾吗？
+2分钟读财报|蹭抖音股价2涨停 宝通科技被打脸后一字跌停
+2分钟读财报|恐龙园IPO：重资产致现金流承压 依赖门票收入
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陶然",2020-08-03 14:56:55,新浪财经

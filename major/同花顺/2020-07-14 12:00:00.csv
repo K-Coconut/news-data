@@ -1,0 +1,117 @@
+,title,content,pub_time,src
+0,HIDGlobal助力墨西哥偏远地区纽蒙特多金属矿业实现安全身份验证,"全球可信身份解决方案领先者HID Global日前宣布，已与软件公司Alutel Mobility合作，为墨西哥东北部纽蒙特多金属矿业公司的员工提供数字化的身份验证解决方案。
+纽蒙特矿业公司是目前世界上最大的黄金生产商，总部设在美国科罗拉多州，业务遍及全球，其在美国、加拿大、墨西哥、多米尼加共和国、秘鲁、苏里南、阿根廷、智利、澳大利亚和加纳拥有重要的业务或资产。
+墨西哥偏远矿山地区带来的挑战
+纽蒙特在墨西哥的多金属矿位处东北部偏远的矿山地带，配套设施落后，这些地方通常无法配备读卡器，并且缺乏互联网连接。HID Global提供的OMNIKEY读卡器、Seos凭证技术，通过平板电脑和移动应用程序，使纽蒙特矿业公司能够对多个入口点以及农村和地下矿山位置的车辆和人员访问进行监控和管理。
+纽蒙特矿业的项目经理Daniel Tejeda说：“以前，作业现场无法进行控制。而现在我们已经从零控制变为完全控制。在HID Global和Alutel Mobility的帮助下，纽蒙特矿业已经建立一个现代化的创新的访问控制系统，该系统还针对我们的具体需求进行了优化。”
+数字化身份验证满足非常规空间的监控管理需求
+现在，纽蒙特矿业公司的工作人员只需将他们的Seos凭证卡轻触到带有HID Global的OMNIKEY阅读器的平板电脑上，应用程序就会即刻显示工人的照片和数据，以增强视觉验证，并与纽蒙特的访问控制平台连接以进行身份验证。平板电脑上会显示允许或拒绝网站访问的信号，如果没有互联网连接，移动设备将保存收集的数据，并在连接恢复后进行验证。
+员工身份验证解决方案在纽蒙特矿业公司位于墨西哥Zacatecas的Peasquito现场全面运行，是纽蒙特矿业公司内部数字转型计划的一部分。自实施以来，该公司每月使用HID Global的智能卡和移动id处理100000多个身份验证。
+HID Global扩展访问技术副总裁兼常务董事Steve Currie说：“纽蒙特的解决方案提供了一个高度安全的过程，满足了在非常规空间中监视、管理和验证员工身份的需要。HID Global致力于将创新技术结合在一起，为方便和安全的访问提供动力，使我们的客户能够满怀信心地履行其工作职责。”
+HID Global和纽蒙特之间的成功合作为公司研究未来简化各项流程的应用奠定了基础，如为员工膳食配送的问题。Tejeda说：“这将大大改善我们向工人提供午餐盒的方式，在我们利用该系统提高安全性和效率的作用时，还有许多其他潜在的效益可以发挥出来。”
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-07-14 12:39:08,同花顺
+1,超重磅！狂砸1500亿，全球第二大模拟芯片厂商出手了,"今年最大的半导体合并收购案诞生了！
+7月13日晚间，全球第二大模拟芯片厂商ADI(Analog Devices,Inc.)正式宣布，将以全股票交易的方式收购竞争对手，全球第七大模拟芯片公司Maxim Integrated，涉及交易金额达209.1亿美元(约人民币1463亿元)，合并后的公司估值将超680亿美元(约人民币4760亿)。
+该交易较此前传闻的170亿美金提高了22.9%。
+交易公告发布后，ADI低开后，震荡下行。尾盘跟随美股跳水，股价下跌5.82%至117.25美元，市值432亿美元。
+Maxim股价一度上涨超14%，随着美国科技股尾盘跳水，涨幅缩窄至8.11%，报收69.29美元，市值185亿美元。
+强强联合
+模拟IC市场分额占直逼巨头TI 
+在过去多年中，Maxim被收购的消息在坊间一直不断。
+早在2015年，彭博社就i报道，全球最大的模拟芯片厂商TI(Texas Instruments)与ADI分别与Maxim接触洽谈收购的可能性。但2016年初，彭博又报道称，TI、ADI已经各自放弃了收购Maxim的打算，主要原因是与Maxim在交易价上无法达成共识。
+本次收购案的早些时候，据传ADI计划以逾170亿美元收购Maxim。时隔一天，尘埃落定，ADI以209亿美元的高价收购Maxim，较之前的价格提高了23%。
+IC Insights数据显示，2019年ADI是全球第二大的模拟IC供应商，仅次于第一大厂TI。从模拟IC市场的营收和市场份额来看，ADI的营收为51.69亿美元，市场份额为10%；TI的营收达到102.23亿美元，市场份额高达19%。
+(image_address=""http://e.thsi.cn/img/a6c4f507d15b732b"")
+(2019年前十大模拟IC供应商排名)
+而2019年Maxim是全球第七大模拟IC供应商，其营收为18.5亿美元，市场份额为4%。
+两者合并之后，ADI预计年营收将达82亿美元,在模拟IC市场的份额降有望提升至14%,距离第一名TI的102亿美元营收和19%的市场份额仅一步之遥。
+半导体领域并购活跃
+监管层是最大阻碍
+一直以来，收购是半导体行业厂商寻求规模并扩展其产品组合的主要途径之一。
+近年来，半导体领域收购案件依旧频现。据IC Insights数据显示，2019年半导体行业的全球并购浪潮复苏，去年共计有30笔交易。中国企业的身影也闪现其中。
+(image_address=""http://e.thsi.cn/img/dcde4185d9840f94"")
+2019年电子半导体行业十大并购案例
+2019年，博通107亿美元收购赛门铁克企业安全业务，成为去年最大的并购案；中国公司中，闻泰科技（600745）39亿美元收购安世半导体；紫光国微（002049）以26亿美元收购了Linxens;韦尔股份（603501）以19.5亿美元收购了豪威科技。
+虽然并购意愿强烈，但是由于半导体收购案会受到全球各国监管的影响，特别是涉及大金额的交易，导致不确定性徒增。
+高通公司曾以440亿美元价格宣布收购恩智浦，根据相关要求，高通想要完成这笔交易，必须要得到美国、中国、欧盟、日本、韩国、俄罗斯等全球9个国家监管部门的批准，但最终该收购案由于未通过全部国家的审批，在2018年以失败告终。
+2019年，德国芯片制造商英飞凌(Infineon Technologies AG)以84亿欧元(约合94亿美元)的价格收购赛普拉斯半导体公司。这项交易刚刚在今年四月份完成，这也凸显了半导体领域的并购审核时长。
+据了解，ADI和Maxim的交易预计将在2021年夏季完成。不过，完成的前提是要满足惯例成交条件，包括收到监管批准、两家公司股东批准等。
+市场分析人士表示，这项交易也可能需要美国，中国和欧盟等监管机构的批准。
+“ 
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-07-14 12:31:05,同花顺
+2,上半年我国防疫物资出口增长较快,"上证报中国证券网讯（记者 陈芳）根据海关总署最新发布的数据，上半年我国包括口罩在内的纺织品出口增长32.4% ，医药材及药品、医疗仪器及器械出口分别增长23.6%、46.4%。
+上证报记者 史丽摄
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：qzw",2020-07-14 12:26:41,同花顺
+3,来了！上半年二甲苯市场供需分析,"新冠疫情背景下，2020上半年二甲苯市场供需关系脱离常规，对国内行情趋势的变化起到了显著影响作用，下面我们对二甲苯上半年供应以及需求数据做一下简单的盘点，来看看上半年市场供需面发生了哪些不同寻常的变化。
+一、开工率、产量变化
+上半年国内主要石化企业开工率先抑后扬，与去年同期趋势基本相逆，2-3月受疫情影响，下游需求、尤其是调油需求几乎消失，石化企业开工负荷快速降至6成左右。3月以后，随着需求的恢复，国内企业开工迅速拉升，但4-6月国内企业常规检修相对集中，尽管需求仍在恢复，但国内企业开工率出现一定降低。
+产量方面来看，上半年产量波动趋势基本与开工率吻合，但单月产量均较去年同期大幅度增长，这主要由于2019年下半年至2020年初新投产装置较多，尤其浙江石化等大型炼化一体化项目投产，使得二甲苯产能基数增长，尽管疫情背景下开工率下滑，但因总产能快速增长，二甲苯理论产量仍然出现了明显提升。
+二、内贸商品供应量变化
+上半年二甲苯内贸商品供应量的变化与产量不完全一致，如下图，1月商品量处于较高水平，一季度受疫情影响，国内产量下降的同时，商品量也出现降低，2-5月内贸商品供应量均低于去年平均水平。产量自4月起已经出现明显回升，这主要基于国内企业开工负荷的提升，但4-6月国内装置检修集中，检修的装置中，多数以供应商品量为主，这使得4-5月份国内商品供应量不升反降。
+(image_address=""http://e.thsi.cn/img/c0f4538510802763"")
+三、进口量变化
+上半年国内二甲苯进口量同比大幅度增长，截止6月末，二甲苯进口量约50万吨(估值)，同比增长16.5%，占2019年进口总量的56.4%。具体来看，1-4月二甲苯进口量较去年同期变化不大，去年5月开始二甲苯进口量大幅度下降，但今年5-6月进口仍在增长。受疫情影响，全球各地需求恢复节奏不一，上半年多数时间国内二甲苯价格远高于亚洲其他地区以及欧美，内外盘套利空间较大，使得二甲苯进口量大增。
+综合来看，进口的增长弥补了内贸商品供应量减少的部分，使得上半年二甲苯总体供应量处于较高水平，加重了供应面压力。
+四、PX开工需求变化
+上半年国内PX开工趋势变化与二甲苯基本一致，但总体负荷水平不算高，2月开工降低至68-70%左右，4月恢复至79.5%，与去年平均水平接近，但5-6月开工再度降低。整体来看，上半年PX对于混合二甲苯的消耗量在3-5月基本恢复至常规水平，主要企业外采二甲苯数量较以往并无明显降低，在疫情背景下，PX对于二甲苯的需求尚算稳固。不过6月PX开工降低后，导致市场二甲苯供应量增长，且因MX-PX长期亏损，PX工厂外采二甲苯积极性有所下降。
+五、混调需求变化
+上半年调油需求变化波动较大，除了传统的春节假期影响之外，调油需求受疫情影响最多。受疫情管制措施影响，2月国内汽油消费处于冰点，二甲苯混调需求几乎消失，3月份随着企业复工以及个人出行增加，汽油消费稍有恢复，但仍难有混调需求听闻。直至3月下至4月，国内疫情影响逐渐消失，汽油消费爆发性恢复，调油需求随之强势复苏，4-5月调油对于二甲苯的需求恢复到了常规水平的90%左右，对于行情的第一波反弹以及库存第一轮下降起到了重要作用。
+但自6月开始，国内汽油消费缺乏进一步增量空间，全球疫情拐点未至，汽油出口形势不佳，调油对于二甲苯的用量也难再出现增长，市场供需基本面矛盾再度加深。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-07-14 12:12:14,同花顺
+4,欧盟将终止对储能的“双重收费”，推动储能提高经济可行性,"欧盟刚刚公布了其能源系统整合战略，包括为了实现欧洲到2050年实现碳中和的目标，承诺支持可再生能源和储能。
+该战略通过欧盟委员会发布，提供了“绿色能源转型框架”，特别强调将交通、工业、天然气和建筑领域不同的能源供需情况结合起来，也被称为“多方位整合”。
+这意味着承认了包括像如家庭储能电池和电动汽车(ev)等需求侧资源可以帮助更好地管理配电网。欧盟委员会说，举例来说，根据一项新的研究，到2050年，电动汽车可以提供欧洲所需电力系统灵活性的20%。
+同时，包括抽水发电、电网电池储能以及氢气电解槽等更大规模的储能资源也可以提供极大的也为系统管理提供更多的灵活性。工业设施中的热能储能，紧密地结合了热量和电力，也可以成为一个大的灵活性供应商，允许利用实时的电价变化来响应需求。
+欧盟委员会认为，除了增加灵活性之外，能源系统一体化——对整个能源部门进行整体规划——还将带来多种好处，包括减少难以脱碳行业的温室气体排放、提高能效和减少需求、支持欧洲经济竞争力。这还将意味着“增强消费者权能、提高弹性和供应安全”。
+储能直接和直接关系的利益相关者是委员会的承诺,“支持吸收储能通过清洁能源计划的全面实施,”以及新创建的区域协调中心宣布将帮助计划和执行“地区和跨境协调成员国之间”。这些将于2022年建立的中心将研究包括基础设施规划、安全分析、应急协调和储能以及其他灵活选择在内的主题。
+停止“双重收费”或可消除储能实现经济可行的大难题
+在有关市场设计和监管制度的章节中，该委员会表示，电网使用费的“双重收费”不应适用于储能或氢资源。
+目前在欧洲许多地方,储能系统不管是从电网取电还是充电都必须支付一定款项。该历史遗留问题是公认的影响储能实现经济可行性的重大阻碍。欧洲议会(MEPs)成员组成的一个委员会此前曾强调，这是全欧洲网络代码的众多“缺陷”之一。
+欧洲能源税收指令还将进行其他修订，以“确保对储能和氢生产的税收协调一致”。与此同时，欧盟还指出，电费作为税收支付的比例远高于相应的煤炭或天然气的数字。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-07-14 12:11:33,同花顺
+5,32个文旅项目落户广州黄埔 升龙集团签约南湾文旅小镇,"7月13日，广州黄埔区、广州开发区文化旅游产业项目集中签约、揭牌活动在科学城会议中心举行。32个文化旅游产业项目落户黄埔，投资总额21.57亿元。
+其中，投资额度最大的是南湾文旅小镇和南方创意(天鹿湖)都市现代农业价值创新园两个文旅项目。
+观点地产新媒体了解到，南湾文旅小镇由广东升龙集团结合黄埔区穗东街南湾社区旧村改造开发，总建筑面积8.8万平方米，投资额7.4亿元。
+据媒体此前报道，5月15日，广州黄埔区穗东街南湾社区通过表决，通过升龙集团旧村改造项目的合作企业。
+资料显示，黄埔区穗东街南湾村，改造范围东至夏园村，南至西滘河，西至隔墙西路西侧，北至黄埔东路北侧，改造总用地面积68.38万平方米，改造后的建新范围约55.08万平方米。根据此前的招商公告，该村改造项目拆迁安置总投资额约人民币54亿元。
+此外，南方创意都市现代农业价值创新园，位于黄埔区天鹿湖山脉北端，总体占地约21万平方米，投资5018万元。规划建设农业产业试验基地、青少年素养研学游学基地、休闲垂钓试验实训基地。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-07-14 12:10:42,同花顺
+6,专家提醒警惕疫情后的经济风险,"本报讯在主题为“新冠疫情下的全球经济和金融市场展望”论坛上，与会专家提醒，需要警惕新冠肺炎疫情后对经济，特别是金融领域的冲击。
+摩根大通中国首席经济学家朱海斌表示，从全球平均数据来看，今年财政政策跟去年相比力度平均增加3.5%，已经超过了2009年全球金融危机时财政的刺激力度。中国也采取了很积极的财政和货币政策。
+“疫情带来经济冲击，各国推出巨额财政纾困措施，短期来讲救灾救难无可厚非，但也要客观清醒地认识到这些措施对于各个国家财政所造成的影响，但在这背后，需要警惕财政纾困政策带来的风险。”海通国际首席经济学家孙明春表示，接下来可能一些“内伤”在不同领域爆发，疫情短期造成的是从公共卫生危机导致的经济衰退，但是后面还可能会带来更大的一系列的冲击，经济可能是一个漫长的衰退，金融领域很多内伤还没有暴露出来，一旦暴露出来，金融领域将给实体经济造成再次冲击。
+朱海斌表示，全球金融危机之后，全球债务水平是直线上升的过程，未来经济修复需要注意债务问题。从历史上来讲，债务水平越高甚至突破一定水平之后，基本上回头的可能性非常小。必然出现极低利率水平维持非常长时间的情况，另外债务会从非政府部门债务向政府部门债务的转移。从更长远角度来讲，如果大家都不停地通过财政政策刺激，会不会诱发像大萧条之后或70年代布雷顿森林体系那样出现解体？或当前美元为主导的国家信用货币会不会出现重新寻锚的过程？这都是未来我们或要面临的巨大挑战。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-07-14 12:07:38,同花顺
+7,下半年外贸走势如何？ 海关总署回应,"中国网财经7月14日讯 国务院新闻办公室于2020年7月14日举行新闻发布会，请海关总署新闻发言人、统计分析司司长李魁文介绍2020年上半年进出口情况。
+以下为文字实录：
+海关总署新闻发言人、统计分析司司长李魁文：您关注的下半年外贸的走势及全年外贸发展情况，我认为，当前疫情仍在全球蔓延，世界经济严重衰退，国际贸易和投资大幅萎缩，根据国际货币基金组织的最新预测，今年世界经济将下降4.9%，世界银行预测全球经济将下降5.2%，为二战以来最严重的经济衰退。世界贸易组织也预计全球货物贸易将下降13%至32%，联合国贸发会议预计下降20%。我国外贸发展面临的不确定、不稳定因素明显增多，叠加中美经贸摩擦的影响，下半年进出口形势依然复杂严峻。但我们也要看到，我国外贸发展韧性足、回旋余地大，在以习近平同志为核心的党中央坚强领导下，随着一系列稳外贸政策措施效应的持续释放，我们有信心稳住外贸基本盘，努力实现进出口促稳提质。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cyf",2020-07-14 12:03:59,同花顺
+8,小红书CTO山丘：用户隐私保护是数据应用的第一前提,"7月14日消息，据TechWeb报道，在世界人工智能大会的多方安全计算圆桌论坛上，小红书CTO山丘表示，公司一直非常注重用户数据隐私，因此其对于多方安全计算、联邦学习等技术一方面表示很期待，但另一方面对于采用这些技术，他们的态度非常谨慎。
+山丘表示，用户隐私保护是数据应用的第一前提，尽管拥有大量数据，他们也对外部数据有需求，因为这样可以建立起更好的算法模型服务用户。但相较这些需求，小红书则更为注意如何确保用户数据隐私上。
+据《(image_address=""//comment.10jqka.com.cn/sourcepic/12/tefJzLGo.png"")》了解，小红书日前还成立了一家名为书刻信息科技(上海)有限公司的新公司，法定代表人为小红书合伙人曾秀莲，经营范围包括信息科技、智能科技、物联网科技领域内的技术开发、技术咨询、技术服务、技术转让等等。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-07-14 12:02:12,同花顺
+9,山西离石区：变“挖煤”为“挖数据”,"核心提示：山西吕梁市离石区将大数据产业确立为产业转型新动能，积极引进华为公司投资建设“华为云服务大数据山西中心”。全区政务、民生和经济等领域大数据运用日前广泛。
+近年来，山西吕梁市离石区将大数据产业确立为产业转型新动能，积极引进华为公司投资建设“华为云服务大数据山西中心”。全区政务、民生和经济等领域大数据运用日前广泛。
+离石是典型的资源型经济地区，“一煤独大”成为阻碍离石经济发展的瓶颈。面对困境，离石区化被动为主动，抢抓发展机遇，积极引进华为公司发展大数据产业。
+“华为云服务大数据山西中心”是华为云服务战略的全国重要节点之一，也是华为企业云数据中心在山西省内唯一的管理节点。这个项目于2016年7月落地离石区，建筑规划用地面积2.7万平方米，数据中心可布置928个标准服务器机柜，能够提供约8万T存储、1万台云主机、2万云桌面的服务能力。
+华为相关负责人介绍说，吕梁数据中心建成后将成为山西省云计算产业支撑中心、高端智能制造中心、现代服务业支撑中心、大数据处理中心和省内信息消费中心，华为围绕聚、通、赢为中心、构建开放共享的吕梁大数据产业生态，最终形成以政府为引导，市场为主题，数据充分共享交易，关键核心资产安全可控的大数据产业格局，形成共建智慧政务黑土地，共建智慧城市新视觉，共建智能制造新生态的解决方案，全部投入使用后年产值将达到5个亿。
+目前华为企业云山西中心项目在政府决策、交通、物流、金融、广告、电信、医疗、娱乐和农业等领域的应用越来越广泛。吕梁市政府网站、吕梁市卫计委所涉市级全民健康信息平台及扩展应用、基层卫生综合管理系统、村卫生室管理信息系统及数据迁移、基本公共卫生服务管理系统及数据迁移、乡村一体化管理等项目、吕梁市智慧食堂项目已陆续部署在华为云服务平台。
+吕梁市已连续三年举办“数谷吕梁智赢未来”大数据产业发展推进会。今年离石区将承办第四届“数谷吕梁智赢未来”大数据产业发展推介会。下一步，离石区将通过发展云计算大数据信息产业，力争建成782个5G站点，实现5G网络全覆盖。(王燕华宫平)
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-07-14 12:01:43,同花顺
+10,内蒙古引绰济辽工程保险项目正式签约,"核心提示：近日，内蒙古引绰济辽工程保险项目签约仪式在乌兰浩特市举行。引绰济辽工程保险项目的引入，为引绰济辽工程项目能够按时启动提供了重要保障。
+近日，内蒙古引绰济辽工程保险项目签约仪式在乌兰浩特市举行。引绰济辽工程保险项目的引入，为引绰济辽工程项目能够按时启动提供了重要保障。
+据了解，引绰济辽工程是为了缓解内蒙古西辽河流域缺水状况而开发的，是内蒙古自治区一号水利工程，投资额高达250亿元，其中保险投保资产高达125亿元。对促进兴安盟、通辽市地区水资源优化配置，改善提升水资源支撑保障能力，促进边疆少数民族地区经济社会可持续发展、筑牢北疆生态安全屏障具有十分重要的意义。
+中国大地保险内蒙古分公司总经理德勒格尔表示，作为本工程项目的首席承保人，中国大地保险将认真履行首席承保人职责，积极协调各共保体成员，为本项目提供全面、及时、高质的保险保障；同时严格履行风险防范和保障职责，为引绰济辽工程项目按时、安全完工保驾护航。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-07-14 12:01:37,同花顺

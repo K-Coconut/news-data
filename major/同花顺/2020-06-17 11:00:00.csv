@@ -1,0 +1,527 @@
+,title,content,pub_time,src
+0,OKEx携手Paxful为用户提供多种法币通道,"日前，加密货币交易所的OKEx宣布与交易平台Paxful合作，Paxful可作为OKEx的法币渠道，将允许用户使用包括欧元、英镑等160多种法币购买比特币。
+外汇天眼APP讯:日前，自称为全球最大的期货加密货币交易所的OKEx和点对点(P2P)交易平台Paxful携手合作，为加密交易员提供多种新的支付选择。
+从即日起，Paxful基于网络的虚拟比特币Kiosk将整合并直接提供给OKEx平台的新老用户。
+整合后，OKEx用户现在可以直接利用Paxful的点对点交易网络，用160种不同的法币购买比特币进入自己的账户。支持的货币包括俄罗斯卢布(RUB)、越南盾(VND)、印尼盾(IDR)、尼日利亚奈拉(NGN)、哥伦比亚比索(COP)、英镑(GBP)、墨西哥比索(MXN)、加元(CAD)、欧元(EUR)和阿根廷比索(ARS)。
+换句话说，Paxful现在是另一个OKEx菲亚特网关(fiat gateway)合作伙伴，加入了通过多样化支付方式提供法币到加密货币通道的类似供应商名单。OKEx声称在过去24小时内的加密交易量超过23亿美元，已经允许通过这些合作伙伴购买比特币。
+然而，Paxful对数百种支付方式的支持是关键的差异化因素，特别是在实行限制性银行规则的国家。在这样的国家，这个国家的居民可以通过Paxful使用礼品卡购买比特币，为他们的OKEx账户充值。
+OKEx首席执行官Jay Hao表示：“我们很高兴能与Paxful合作，我们有着非常相似的目标即让更多的人使用加密货币。通过这种合作关系，我们可以利用Paxful现有的基础设施和支付方式接触到更多发展中地区的用户，并让他们接触到OKEx先进的技术和多样化的产品套件的好处。这对我们双方和整个加密领域来说都是一个巨大的进步。”
+Paxful的虚拟比特币Kiosk让用户可以根据货币和支付方式，与符合其交易需求标准的卖家进行即时匹配。该公司的客户也将从与OKEx的合作中受益，他们将获得OKEx上的现货、保证金和期货等多种交易期权，并可通过OKEx的DEX平台直接进行期权交易。
+Paxful首席执行官兼联合创始人Ray Youssef表示：“Paxful的目标之一是帮助发展加密社区。我们钦佩OKEx的工作，并知道我们的价值观和战略是一致的。通过此次合作，我们希望继续共同构建生态系统，让加密技术作为一种现实世界的支付方式更容易获得。”
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-06-17 11:57:38,同花顺
+1,好扑受邀赴浙江德清县深度调研，探索区块链落地场景及实践,"原标题：好扑受邀赴浙江德清县深度调研，探索区块链落地场景及实践...
+2020年6月12-13日，北京好扑信息科技有限公司(以下简称“好扑”)作为首批与德清县政府签署“共建区块链小镇”框架协议的企业之一，受浙江德清县政府邀请，前往德清县进行实地调研并参加座谈会议。本次座谈会由高新区管委会、智能生态城建设发展局主办，德清县高新区管委会副主任、康乾街道党工委书记熊卓越，高新区智能生态城建设发展局局长王彤、副局长沈晨虹等领导出席了座谈会。
+▲ 好扑等区块链企业代表参加座谈会
+在德清县高新区党工委、智能生态城建设发展局相关领导的陪同下，好扑的企业代表实地考察了德清智能生态城、新田农庄、浙江欧诗漫集团、德清数据智能应用中心、德清地理信息科技馆和莫干山民国风情小镇等地，深入了解当前德清县在区块链应用、数字平台、地理信息产业、智能生态城等方面的进展与成就，并与德清县一同深入探索区块链落地场景及实践。
+座谈会上，好扑向与会领导及其他公司代表介绍了好扑的业务模型和技术突破，大家结合实践畅所欲言，针对未来德清如何推进区块链产业创新发展纷纷建言献策。德清县发改局、经信局、司法局等政府部门还提出了一些行业需求和痛点，如需要建立企业信用分级分类管理制度、打造供应链管理平台、利用区块链溯源、将区块链融入社会治理等。希望基于区块链去中心、去信任、交易透明、节点匿名、不可篡改、可追溯的技术优势，与上述领域实现深度融合，打造新业态，培育新动能，形成区块链技术和产业创新的新格局，服务县域高质量发展。后续，好扑可在防伪溯源、信用监督、法务存证等方面与德清政府进一步合作，共同加速项目的落地。
+当前，理性识别真正的区块链城市落地需求，摒弃不合理的城市落地需求，对于“区块链+城市”的落地发展具有重要意义。通过此次调研，好扑认为，可以利用ASMI四步法探索区块链落地场景及实践，即分析识别应用场景痛点，对业务痛点进行分类总结，将痛点原因与区块链价值匹配映射，最终确定区块链技术的适用度。城市落地场景的选择，需要在准确把握区块链技术特征和发展阶段的基础上，着重分析应用区块链技术能够解决的城市应用场景业务痛点，以判断该场景是否可以应用区块链技术。
+作为区块链技术领域的创新型科技企业，好扑一直积极响应国家对区块链行业“创新发展”的号召，探索区块链与传统领域的结合点，期望用区块链技术为传统行业赋予全新的竞争力。
+自2016年以来，好扑先后为海航生态科技集团、链家旗下第三方支付平台理房通提供服务，基于区块链技术进一步优化资源配置，不断协同创新并推动新业务模式的发展，并与苏州同济金融科技研究院合作，承研区块链自动化测评系统。2019年，由好扑自主研发的、面向企业级用户的整体区块链商业化解决方案aelf Enterprise正式推出，可为企业级用户提供一个更高效、便捷、优质的开发环境。
+未来，好扑将以此次调研为起点，围绕区块链技术服务等方面与德清县加强交流，积极探索创新，努力取得更多区块链应用的实质性成果，共促区块链行业生态繁荣创新发展，基于区块链技术助力德清数字经济高质量发展。
+(编辑：刘军)
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-06-17 11:52:11,同花顺
+2,15亿美元！孟加拉国太阳能安装商计划在医疗中心建设太阳能系统,"国际太阳能光伏网讯：近日，孟加拉国太阳能安装协会主席Munawar Misbah Moin呼吁启动一项15亿美元的项目，利用太阳能提高1.8万个社区诊所和医院对自然灾害的抵抗力。
+该组织负责向孟加拉国100多万户离网家庭提供太阳能家庭系统。
+Moin表示，如果能在医院和诊所安装大型太阳能系统，农村地区的医疗服务就不会因为缺电而中断。
+据悉，Moin提出了一个为期3-5年的计划，该计划包括安装10万个6kW太阳能灌溉泵和100万盏20W路灯，以及1.8万套10kW太阳能系统，为孟加拉国新增800MW光伏装机量。
+孟加拉国政府已宣布打算在所有公共建筑上安装太阳能，到明年可再生能源将占全国电力结构的10%。Moir指出，已根据灾难救济部的倡议安装250MW太阳能家庭系统。
+该合作组织发言人补充到，孟加拉国太阳能计划已帮助该国建立了22家太阳能电池制造商，9家面板制造商，74家太阳能充电控制器公司，83家太阳能LED灯制造商，22家太阳能路灯制造商，11家太阳能逆变器生产商。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-06-17 11:48:29,同花顺
+3,刘学忠学种“新庄稼”,"新华社石家庄6月17日电题：刘学忠学种“新庄稼”
+新华社记者王文化、李继伟
+20摄氏度，这是今年麦收时节种麦“老把式”刘学忠感受到的新温度。这温度来自恒温大棚，他去年开始在那学种“新庄稼”——共生的香菇和武昌鱼。这是刘学忠第二次学种“新庄稼”。
+54岁的刘学忠是河北省新河县刘秋口村人，种麦是当地村民主业，长期以来虽费力耕耘却难致富。2014年，这个不到千人的村子还有贫困人口204人。在那一年，刘学忠第一次学种“新庄稼”——香菇大棚。
+当时，新河县已被列为国家扶贫开发工作重点县，扶贫工作队进了村。工作队决定帮村民改变单一种粮模式，发展经济作物，先试点养香菇。但推广“新庄稼”并不容易，驻村干部马立辉记得，他找到刘学忠时，被回绝了，“瞎闹，到时候赔掉腚，还不如直接把钱发给俺。”
+村民们受过“新庄稼”的伤。村主任刘运才说，2003年村民筹钱建起20个蔬菜大棚，可缺乏技术和资金支持，赔了。
+扶贫干部反复上门讲扶贫政策和技术支持的办法，还组织外出参观学习。看到别人改种“新庄稼”挣钱，刘学忠也动了心：“有政策、有帮扶，一样都是人，不妨学一学、试一试。”
+2014年，大棚第二次出现在刘秋口村。这次是80个，刘学忠决定参与其中。向专家学习香菇种植技术，成了刘学忠每天的功课。一年后，他学会了种菇新技术，每月多了2000多元收入。
+2019年，村里耕地整体流转给了合作社，村民不用下地，每亩地每年有800元分红。种了几十年麦子的刘学忠告别麦田，这段时间刘学忠又一次学种“新庄稼”，香菇大棚升级为“鱼菇共生”。当扶贫干部讲起这“新庄稼”，老刘说：“你说咋干就咋干！”
+挖鱼塘、改建恒温棚、选择适应弱光的鱼苗……刘学忠忙前忙后。当麦田浇压冻水时，武昌鱼苗入了塘，塘上架起香菇菌棒，菌棒上方罩上恒温大棚，“新庄稼”拔节孕穗。
+麦子熟了、收了……刘学忠再不用去烈日下的麦地了，他在阴凉的大棚里查看调试温度，检查菌棒，给鱼放氧……“新庄稼”已成刘秋口村的日常，还有村民养起了本地原来没有的非洲雁。
+新河县委书记李群江说：“把老产业‘盘活’、因地制宜‘谋新’是新河县脱贫工作一大法宝。”2019年，新河退出贫困县序列。
+眼下，刘秋口村乡亲们正忙着为土特产品扩展新销路。听说直播、小视频能打开市场，刘学忠下载了App，准备再学一次种“新庄稼”。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-06-17 11:48:15,同花顺
+4,马来西亚发放1.76亿美元鼓励民众使用数字钱包,"(image_address=""http://e.thsi.cn/img/91ba190f73c66eff"")
+6月17日消息，据未央网消息，近日，马来西亚政府宣布了名为“PEJANA”的一系列财政刺激措施。该计划包含40个项目，总值350亿林吉特(约合82.5亿美元)。其中，马来西亚政府计划专门划拨7.5亿林吉特(约合1.76亿美元)，鼓励该国消费者使用数字钱包。
+据悉，从2020年7月起，所有年满18周岁且年收入低于10万林吉特(约合2.35万美元)的马来西亚公民均可参与这一计划，总量约为1500万人。参与计划的数字钱包用户将会收到50林吉特的资金，以及由数字钱包提供商提供的价值50林吉特的现金返还或折扣券。
+据《(image_address=""//comment.10jqka.com.cn/sourcepic/12/tefJzLGo.png"")》了解，2019年12月，马来西亚政府选择GrabPay，Boost和Touch'n Go eWallet三家电子钱包服务提供商，以实施4.5亿林吉特(约合1.09亿美元)的e-Tunai Rakyat计划。
+随后，马来西亚国家银行(BNM)发布数字银行(digital banks)牌照框架的意见征询草案，打算发放最多5张数字银行牌照。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-06-17 11:46:16,同花顺
+5,北京疫情防控升级 两大机场取消1000多次航班 取消率近7成,"6月16日晚，北京市举行新型冠状病毒肺炎疫情防控工作第121场新闻发布会。北京市政府副秘书长陈蓓在会上宣布：即时起，北京市突发公共卫生事件应急响应级别由三级调至二级，并严格进出京管控；中高风险街乡、新发地市场相关人员禁止出京。非必要不出京，必须出京持核酸证明。
+为配合疫情防控工作，铁路部门决定：自6月17日0时起，旅客办理了6月16日24时前已购的进出北京地区各次列车有效车票退票时，均不收取退票手续费，购买铁路乘意险的一同办理。
+南都记者查询飞常准机场信息了解到，6月16日当晚直到目前，北京两大机场大量航班取消，6月17日凌晨，两机场进出港取消航班量就已超900架次。航班管家统计称，截止到6月17日9:10，北京两机场共取消航班达1255架次；其中已取消615架出港航班，取消率67.14%，取消进港航班640架，取消率68.38%。
+(image_address=""http://e.thsi.cn/img/7d4c4c1f00072f7b"")
+据报道，6月15日，北京市交通委下发通知要求，暂停北京巡游出租车、网约车、顺风车的出京运营业务，恢复时间另行通知。此外，北京市部分省际长途客运班线也将陆续暂停运营。
+据悉，目前中国国际航空、南方航空（600029）已对部分北京相关航班免收退票手续费。东航相关客服人员表示，暂无关于涉北京航线的特殊退改方案，后续可留意官方发布的信息。此外，国航6月15日公告提到，根据疫情防控需要，国航北京中转住宿产品（豪华酒店）暂停服务，具体恢复时间待定。如旅客已预订相应的国航北京中转住宿产品，将无法办理入住。
+南都记者从携程、同程艺龙、飞猪等在线旅游平台了解到，平台一直密切关注北京疫情防控动态，同时高度关注国家文旅部、民航铁路等部门退订政策的变化，确保第一时间为用户提供更优质的服务。目前各个航空公司已陆续出台针对北京出港航班的特殊保障方案，将协助消费者按照航空公司最新政策办理相关退改手续。
+事实上，从6月13日开始，北京进出港航班量和客座率已较此前有显著下滑。据航班管家的统计数据，6月15日北京首都机场进出港航班量639架次，较上一日环比下降16.90%，较上周一环比下降13.06%；北京首都机场进出港客座率44.99%，较上一日环比下降7.26%，较上周一环比下降12.8%；以6月15日北京-上海航线为例，当日往返航班45班，较上周一锐减50%。
+(image_address=""http://e.thsi.cn/img/f662c87b7a0de2cb"")
+(image_address=""http://e.thsi.cn/img/c3082fb305a3c2c"")
+此前受武汉疫情影响，今年1月下旬，民航局、铁路局、多个酒店/航司、在线旅游平台均发布了涉武汉的火车/航线班次等各类旅游出行产品无损退改政策，自愿改变出行并取消预订或退票的，可不收取手续费。
+采写：南都记者 傅晓羚
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cyf",2020-06-17 11:45:59,同花顺
+6,国家版权局等四部门启动“剑网2020”专项行动,"近日，国家版权局、工业和信息化部、公安部、国家互联网信息办公室四部门联合启动打击网络侵权盗版“剑网2020”专项行动，这是全国持续开展的第16次打击网络侵权盗版专项行动。自2005年起，国家版权局等部门针对网络侵权盗版的热点难点问题，先后开展了网络视频、音乐、文学、新闻及网络云存储空间、应用程序商店等领域的版权专项整治，集中强化对网络侵权盗版行为的打击力度，相继查处了一批侵权盗版大案要案，有效打击和震慑了网络侵权盗版行为，改变了网络视频、网络音乐、网络文学等领域版权秩序混乱的局面，得到国内外权利人的充分肯定。
+本次专项行动于6月至10月开展，针对网络版权保护面临的新情况新问题，聚焦5个重点领域：一是开展视听作品版权专项整治，深入开展院线电影网络版权专项保护，严厉打击短视频领域存在的侵权盗版行为，严厉打击通过流媒体软硬件传播侵权盗版作品行为；二是开展电商平台版权专项整治，加强对大型电商平台的版权监管工作，严厉打击网店销售盗版图书、音像制品、电子出版物、数据库及盗版网络链接和存储盗版作品的网盘账号密码等行为，严厉整治网店设计、经营中使用盗版图片、音乐、视频等行为；三是开展社交平台版权专项整治，加大新闻作品版权保护力度，进一步规范图片市场版权传播秩序，关闭一批恶意侵权社交平台账号；四是开展在线教育版权专项整治，加大“学习强国”学习平台版权保护力度，大力整治在线教育培训中存在的侵权盗版乱象，切断盗版网课的灰色产业链条；五是巩固重点领域版权治理成果，严厉打击网络游戏私服、外挂等侵权盗版行为，推动完善网络音乐版权授权体系，强化对大型知识分享平台的版权监管力度，继续巩固网络文学、动漫、网盘、应用市场、网络广告联盟等领域取得的工作成果。
+国家版权局有关负责人表示，本次专项行动将突出查办案件，进一步加大对网络侵权盗版案件的处罚力度，对人民群众意见强烈、社会危害大的侵权盗版分子一律依法从严查处。欢迎广大网民积极投诉举报，提供侵权盗版案件线索。各级版权相关执法部门将推动网络企业积极履行主体责任，共同构建打击网络侵权盗版社会共治格局。
+通知详情""阅读原文""
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-06-17 11:45:53,同花顺
+7,收藏！电缆电压损失如何计算,"(image_address=""http://e.thsi.cn/img/392b42851e41801b"")
+什么是电压损失
+电压损失是指电路中阻抗元件两端电压的数值差，在工程计算中，电压损失近似取为电压降落的纵分量。
+线路的电压损失可以分为两部分：
+1.有功功率在线路电阻R上造成的，其表达式为PR/U 
+2.由无功电流由线路的电抗引起的，为QX/U。110千伏及以上线路，X与R之比约为4～10，所以电抗造成的电压损失占主要部分。
+(image_address=""http://e.thsi.cn/img/167514c37f114cde"")
+电缆电压损失如何计算
+1、一般照明回路电压损失计算(供电距离最长的回路)
+1)B2F变电所至SOHO办公强电井一般照明配电箱：
+【输入参数】：
+线路工作电压U=0.38(kV)
+线路密集型母线1600A 
+计算工作电流Ig=850(A)
+线路长度L=0.200(km)
+功率因数cosφ=0.85
+线路材质：铜
+【中间参数】：
+电阻r=0.033(Ω/km)
+电抗x=0.020(Ω/km)
+【计算公式及结果】：
+0.38KV-通用线路电压损失为：
+ΔU1%=(173/U)*Ig*L*(r*cosφ+x*sinφ)
+=(173/(0.38*1000))*850*0.2*(0.033*0.85+0.020*0.53)
+=2.99
+2)一般照明配电箱至SOHO办公室配电箱：
+【输入参数】：
+线路工作电压U=0.22(kV)
+线路型号：导线
+线路截面S=10(mm2)
+计算工作电流Ig=16(A)
+线路长度L=0.050(km)
+功率因数cosφ=0.85
+线路材质：铜
+【中间参数】：
+电阻r=2.25(Ω/km)
+电抗x=0.087(Ω/km)
+【计算公式及结果】：
+0.38KV-通用线路电压损失为：
+ΔU2%=(173/U)*Ig*L*(r*cosφ+x*sinφ)
+=(173/(0.38*1000))*16*0.050*(2.25*0.85+0.087*0.53)
+=0.72
+3)SOHO办公室配电箱至最远灯具：
+【输入参数】：
+线路工作电压U=0.22(kV)
+线路型号：导线
+线路截面S=2.5(mm2)
+计算工作电流Ig=4.5(A)
+线路长度L=0.020(km)
+功率因数cosφ=0.85
+线路材质：铜
+【中间参数】：
+电阻r=8.97(Ω/km)
+电抗x=0.1(Ω/km)
+【计算公式及结果】：
+0.22KV-通用线路电压损失为：
+ΔU3%=(200/U)*Ig*L*(r*cosφ+x*sinφ)
+=(200/(0.22*1000))*4.5*0.020*(8.97*0.85+0.1*0.53)
+=0.59
+4)B2F变电所至SOHO办公最远灯具的电压损失合计
+ΔU%=ΔU1%+ΔU2%+ΔU3%=2.99+0.72+0.59=4.3
+结论：电压损失小于5%，满足规范要求。
+2、公共照明电压损失计算(供电距离最长的回路)
+1)B2F变电所至SOHO办公强电井公共照明配电箱
+【输入参数】：
+线路工作电压U=0.38(kV)
+线路型号：预分支电缆
+线路截面S=95(mm2)
+计算工作电流Ig=129(A)
+线路长度L=0.200(km)
+功率因数cosφ=0.85
+线路材质：铜
+【中间参数】：
+电阻r=0.229(Ω/km)
+电抗x=0.077(Ω/km)
+【计算公式及结果】：
+0.38KV-通用线路电压损失为：
+ΔU%=(173/U)*Ig*L*(r*cosφ+x*sinφ)
+=(173/(0.38*1000))*129*0.2*(0.229*0.85+0.077*0.526783)
+=2.76
+2)公共照明配电箱至最远灯具：
+【输入参数】：
+线路工作电压U=0.22(kV)
+线路型号：导线
+线路截面S=2.5(mm2)
+计算工作电流Ig=4.5(A)
+线路长度L=0.030(km)
+功率因数cosφ=0.85
+线路材质：铜
+【中间参数】：
+电阻r=8.97(Ω/km)
+电抗x=0.1(Ω/km)【计算公式及结果】：
+0.22KV-通用线路电压损失为：
+ΔU3%=(200/U)*Ig*L*(r*cosφ+x*sinφ)
+=(200/(0.22*1000))*4.5*0.030*(8.97*0.85+0.1*0.526783)
+=0.88
+3)B2F变电所至SOHO办公最远灯具的电压损失合计
+ΔU%=ΔU1%+ΔU2%=2.76+0.88=3.64
+结论：电压损失小于5%，满足规范要求.
+电缆电压损失表
+1140VMYP、MCP、MCPJ电缆每千瓦公里负荷矩的电压损失%表
+(image_address=""http://e.thsi.cn/img/be50b71bbf08d847"")
+660V铜芯电缆每千瓦公里负荷矩的电压损失%表
+(image_address=""http://e.thsi.cn/img/948fc5e306b010c5"")
+1kV以下矿用橡套电缆在空气中使用长期允许载流量
+(image_address=""http://e.thsi.cn/img/55e42a4cddac1126"")
+橡套电缆按机械强度要求的最小截面
+输电线路经济电流密度(A/mm2)
+(image_address=""http://e.thsi.cn/img/85c2c78a4eb8192c"")
+供电电压与输送容量的关系
+(image_address=""http://e.thsi.cn/img/dc55b85a3c9450a0"")
+6～10kV配电变压器熔丝选择表
+(image_address=""http://e.thsi.cn/img/c4a8d8e332d0525d"")
+按照变压器的不同，高压侧熔丝可参照下列要求选择：
+1.容量大于400kVA的变压器高压熔丝的额定值为高压侧额定电流的1.5倍；
+2.容量在125～400kVA的变压器高压熔丝的额定值为高压侧额定电流的1.5～2倍；
+3.容量小于125kVA的变压器高压熔丝的额定值为高压侧额定电流的2～3倍；
+4.若变压器高压侧额定电流在5A以下，应选5A的熔丝，以满足机械强度的要求；
+5.选择低压侧熔丝电流一般选等于低压侧额定电流，若需选大一级，最大不能超过额定电流的30%。
+(image_address=""http://e.thsi.cn/img/b8d32929305b776b"")
+懂得分享，收获更多
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-06-17 11:43:01,同花顺
+8,北海道西瓜高价拍卖1个22万日元 仅为去年的三分之一,"(image_address=""http://e.thsi.cn/img/44b2ecc920a66688"")
+NHK电视台视频截图。
+人民网东京6月16日电 据日本共同社报道，15日早晨，日本北海道当麻町特产---以黑色皮为特征的高级西瓜“田助西瓜”，在旭川和札幌两市的蔬菜果品市场举行了首次竞拍。最终，“田助西瓜”在旭川市场的最高拍卖价为1个22万日元（100日元约合6.599元人民币），不到去年最高价格(1个75万日元)的3分之1。市场相关人士表示:“新冠肺炎疫情所带来的影响很大，田助西瓜和预想中的一样价格下跌了”。
+早晨6点50分，为防止感染，拍卖者带着口罩于旭川的果品市场开始拍卖。71个西瓜接连被竞拍买走。其中最高的拍卖价格来自于旭川的一家邮购公司“North 物产”的WEB事业部长佐藤先生。他笑着表示，自己是抱着支持农户的心情前来竞拍的。（编译：薛孟娇 校对：陈建军）
+(责编：许文金、陈建军)
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cyf",2020-06-17 11:40:31,同花顺
+9,遭遇激烈的全球化价格竞争 三菱电机退出液晶面板的生产领域,"人民网东京6月16日电 据日本《MONOist》报道，日本三菱电机于6月15日宣布，将于2022年6月结束子公司“Melco Display Technology（”以下简称MDTI）的TFT液晶模块生产，并结束液晶面板的生产业务。
+目前，三菱电机的液晶业务部门主要是涉足工业和汽车用途的中小型TFT LCD模块，以搭载尖端技术的高附加值产品为主。然而，该公司至今一直作为强项的高显示性能和可靠性产品的生产，遭遇了比预想更加激烈的全球化价格竞争，从而难以保持产品的竞争力。因此，公司决定相继停止对TFT LCD模块的生产，并结束液晶事业部。
+今后，三菱电机及MDTI的液晶业务相关的经营资源将转移到电力设备等拉动发展的业务部门方面。（编译：薛孟娇 校对：陈建军）
+(责编：许文金、陈建军)
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cyf",2020-06-17 11:36:04,同花顺
+10,印度铁路公司发起400MW光伏项目招标！投标截止9月16日,"国际太阳能光伏网讯：近日，由印度铁路公司(Indian Railways)和工程咨询公司(Rites Ltd)成立的合资企业铁路能源管理公司(The Railway Energy Management Company)发起招标，以在铁路附近的闲置土地开发400MW光伏项目。
+据悉，招标将于6月20日开始，投标截止日期为9月16日。中标商将有420天的时间在全国各地印度铁路所有的土地上开发光伏电站。
+竞标商将必须提供40万卢比的银行担保，并将在资本支出的基础上开发这些并网项目，然后将项目产出出售给印度铁路公司。
+印度铁路公司已委托铁路能源管理公司在其土地上招标3GW太阳能项目，在2022-2023年分三个阶段建设，每个阶段装机量为1GW。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-06-17 11:33:40,同花顺
+11,数据告诉你疫情下用户的金融需求变化有哪些,"疫情爆发以来，多家调查机构发布了与疫情相关的研究成果，帮助政府决策部门和金融行业更好地了解社会经济变化和民生民情。近日，微众银行.银行用户体验联合实验室(以下简称“实验室”)发布专题研究报告——《疫情下用户金融需求研究》。据了解，研究以线上调研的方式开展，通过比对近8000名用户在疫情影响下的生活生产状况，研究用户在理财、贷款和保险三方面的需求。
+与同期其他研究成果更加侧重宏观研究和政策分析不同，这份研究报告以用户需求为出发点，结合舆情数据和定量问卷的数据，从微观视角客观地解读特殊时期用户金融行为变化。
+贷款：小微企业主贷款意愿在增强，服务满意度有待提升
+疫情笼罩下，对小微企业主的影响是多方面的，中小企业盈利能力受到影响，但存货仓储费、办公场所租金和员工薪水福利等还在固定支出，收入锐减而支出照旧让超过6成的小微企业主面临资金周转问题。相较2019年，他们更愿意从互联网平台和银行贷款，而且更倾向选择长期贷款产品，通过延长还款期限缓解短期的资金压力。调研发现，在政府和金融机构减税降费、下调贷款利率和延长还款期限等一系列贷款优惠措施的刺激下，小微企业主的贷款意愿相较2019年明显更加强烈。贷款意愿增强的背后，是小微企业主对未来经营的乐观预期，接下来对金融机构的考验是有效落实政策、优化服务办理流程、增强服务的可获得性，从根本上提升小微企业主对企业贷款的满意度。
+保险：商业保险更受重视，保险机构的抗“疫”善举能有效拓展市场
+一场疫情让用户更加珍视健康，也让用户意识到商业保险的重要性，态度观念的转变给保险行业带来了新的机遇与挑战。实验室研究发现，相较2019年，用户更加重视商业保险，并且认为需要尽早配置。研究数据还显示，过半用户会在领取过赠险的机构购买保险，赠险活动获得了非常不错的推广效果，还有超过64%的用户在投保的过程中会选择承担社会责任、开展积极救助活动的保险机构，说明在重大社会事件中承担企业责任、开展公益性质的运营活动可以提升用户对企业产品的认可度。但需要强调的是，用户在疫情之后最关注的仍然是保险的基础服务项，比如简化理赔流程、优化理赔服务等。因此，保险机构在注重运营用户的同时不能忽视提升基础服务质量。
+据了解，实验室已经连续3年发布《银行业用户体验大调研报告》，并且还在拓宽研究领域和挖掘研究深度，坚持做和行业热点，业务发展相关的专题研究。这次在疫情期间开展的用户金融服务需求研究值得金融同业和其他研究机构参考借鉴。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-06-17 11:33:26,同花顺
+12,德国驻华官员进苏宁国际618直播间 安利的旅行箱秒光,"眼下，苏宁易购（002024）618已经进入最后的爆发阶段。苏宁易购放出的“双百亿补贴”、618超级秀直播晚会等福利一波又一波，牢牢吸引着消费者的目光。6月15日下午，苏宁国际618直播间里，因为四位神秘带货大咖的空降，这场苏宁国际星探首秀赢得网友强势围观，将苏宁易购618年中消费狂欢推向高潮。
+据悉，这四位神秘大咖分别是：意大利对外贸易委员会(ITA)副代表(Ms. Valentina Petroli)、澳大利亚驻上海总领事馆副总领事刘冰(Ms. Liu Bing)、德国北威州投资促进署南京代表处执行首席代表徐军(Ms. Xu Jun)、加拿大驻上海总领事馆副总领事贝杰思(Mr. Jean-Christian Brillant)。
+苏宁国际618直播间里，这四位带货大咖作为苏宁国际“全球星探”计划的全球超星探，不仅分享了本国的风土人情，更详细安利了本国的高品质爆款，为本国的超级爆款打call。而当天，苏宁国际也为消费者更发放了上万元现金红包，让消费者能尽情剁手。
+苏宁国际平台巨大的流量加持、四国驻华使领馆嘉宾的倾情推荐，让当天的直播带货成绩相当亮眼。据悉，当天，包括日默瓦旅行箱、雪本诗精华胶囊、Morning Fresh洗洁精等多款商品均受到热捧。如佩卓丽女士推荐的意大利咖啡粉，直播期间销量环比前一天增长413%;刘冰女士倾情安利的奔富酒庄的红酒，73%的用户都选择了直接囤货3瓶以上;以日销10倍备货的德国RIMOWA日默瓦旅行箱，因为徐军女士的安利，直播还未结束后台已显示售罄;而贝杰思先生赞许有加的加拿大渴望猫粮，卖出了数量足够上千只萌猫享用。
+这些苏宁易购苏宁国际618直播间的亮眼成绩，也让四国驻华使领馆嘉宾见识到了中国消费者的购买力。
+“感谢苏宁国际，让我们有机会将意大利的好品牌、好东西推荐给中国的消费者。今后，希望能有更多的好产品，能借助苏宁国际平台，被中国消费者喜爱。” 佩女士表示。
+据介绍，作为苏宁易购苏宁国际618期间的重要项目，苏宁国际“全球星探”计划的618大咖带货直播，旨在通过邀请国外内明星、网红、官员，通过直播的形式，将国外最新最爆的好物，加速引荐给中国的消费者。“我们苏宁国际希望通过这次活动，能帮助全球疫情影响下的各国经济复苏，也能满足国内消费者多样化的需求。”苏宁国际相关负责人表示。
+据悉，618期间，苏宁易购苏宁国际“全球星探”计划，还将继续加码，通过直播带货的形式，把更多好产品带给国内消费者。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cyf",2020-06-17 11:31:18,同花顺
+13,直播带货大爆发！天猫618淘宝直播诞生13个亿元直播间,"摘要:天猫数据显示，仅在6月16日0点1分，美妆和食品双双成交额破1亿，随后五分钟内，母婴亲子、个护、家清和医药保健陆续宣布成交额破1亿。
+自6月1日淘宝直播间以“成交金额超51亿元”强劲开启天猫618大促后，随着16日天猫618进入冲刺阶段，淘宝直播间再度爆发。
+天猫数据显示，仅在6月16日0点1分，美妆和食品双双成交额破1亿，随后五分钟内，母婴亲子、个护、家清和医药保健陆续宣布成交额破1亿。截止16日早上7点，淘宝直播引导成交金额同比增长超过250%，天猫618期间已经有13个直播间累计成交过亿，直播商家横跨3C数码、美妆、服装、家电、食品、快消、家装、母婴等多个行业，带货主播中既有刘涛、欧阳娜娜、林允等娱乐圈明星，亦有格力总裁董明珠、苏宁易购（002024）集团零售总裁侯恩龙等企业总裁。
+其中3C数码是淘宝直播成交增长最快的行业之一。6月5日华为成首个破1亿品牌淘宝直播间，直接带动华为全系产品增长100%以上。随后，海尔、荣耀、苏宁等品牌淘宝直播间成交纷纷突破1亿，成为继华为之后3C家电行业破亿的品牌直播间。与此同时，在家电领域，冰箱、洗衣机、电视、热水器等细分品类直播成交率同比大盘均实现200%增长。
+明星带货成天猫618新玩法
+在直播电商行业的火爆发展下，不只是朱广权、欧阳夏丹、康辉等知名新闻主持人入场直播，从杨幂、刘诗诗、鹿晗、等明星空降李佳琦、薇娅直播间，到湖南卫视《向往的生活》、东方卫视《极限挑战》、浙江卫视《王牌对王牌》三大热门综艺节目嘉宾组团直播带货；再到刘涛、陈赫、汪涵、李小璐等明星相继开设自己的直播间，明星成为带货主播，显然已成很普遍的现象。
+为给今年天猫618营销造势，淘宝直播间更是将掀起大规模的明星开播潮。天猫618期间，杨颖、李易峰、欧阳娜娜、林更新、朱一龙、迪丽热巴、王俊凯、许光汉、吴亦凡、王一博、郑爽、林允等300多位明星将上线淘宝直播。
+不过，艾媒咨询分析师认为，虽然明星带货能为直播带来关注度，但长久来看，仅靠名人效应是不够的，更需要通过对产品的谨慎选择，展现有特色的销售方式，提供较低的价格等提高直播质量；不同的用户群体需求特征也是值得深度匹配和挖掘。
+举办电商促销节日成为中国各大电商平台增流量的关键手段
+在中国国电商市场增长逐渐放缓，中国电商人口红利消失的环境下，电商促销节日成为各平台争夺用户、增加收益的关键手段。艾媒咨询此前发布的《2019中国电商平台促销节日专题研究报告》调查显示，在各主流电商平台举办的促销节日中，综合促销节日“双11”和“618”在节日活动期间的网络热度最高，平均热度指数分别达到3749.0和573.6。而其他垂直品类节日在活动期间的平均热度指数均处于20-40的区间。
+艾媒咨询分析师认为，阿里和京东举办的综合促销节日“双11”和“618”已形成一种行业现象，关于活动的战绩、反响、商品问题等均引起广泛讨论，因此热度较高。而垂直促销节日由于同质化问题较为严重，且节日种类繁多，网络热度处于较低水平，未来平台推出的垂直促销节日需要在创新玩法、优惠力度等方面打造差异化，才能更好地建立节日品牌形象。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-06-17 11:28:06,同花顺
+14,农发行靖安县支行完成存量浮动贷款定价基准转化工作,"核心提示：近日，农发行江西省靖安县支行主动与贷款企业协商存量浮动贷款定价基准转化为LPR事宜，并成功与4家企业签订《贷款定价基准转换补充协议》，涉及合同金额5亿元。
+为深化利率市场化改革，进一步推动贷款市场报价利率（LPR）运用。近日，农发行江西省靖安县支行按照中国人民银行相关公告精神，主动与贷款企业协商存量浮动贷款定价基准转化为LPR事宜，并成功与4家企业签订《贷款定价基准转换补充协议》，涉及合同金额5亿元。
+农发行靖安县支行相关负责人表示，本次存量浮动贷款定价基准转化工作，是农发行靖安县支行积极响应国家政策，推动贷款利率市场化的重要实践，充分体现了政策性银行的担当。(晏磊)
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：jdm",2020-06-17 11:27:16,同花顺
+15,灵武市布局数字化普惠金融创新县域服务模式,"(image_address=""//comment.10jqka.com.cn/sourcepic/12/0MK7qs34.png"")银川6月17日电 近日，宁夏灵武市与蚂蚁金服签署了“普惠金融+智慧县域”项目合作协议，创新实施普惠金融、智慧县域、产业金融等项目，以缓解“三农”产业发展中“小金额”“短周期”“无有效抵押物”的资金需求。
+“普惠金融”主要针对农村地域广阔、农民居住分散、金融机构难以实现全覆盖等突出问题推出的新型金融服务模式。灵武市农村地区群众只要通过手机App申请，就可以实现1000元至30万元快速小额贷款，可有效解决农户、农业经营主体融资难、融资贵、融资慢的实际问题，以灵活便利的金融服务方式降低农户发展多元化经营的门槛，激发乡村经济活力。
+“智慧县域”项目精准对接灵武市社区治理现代化试点工作和智慧城市建设工程，通过建立区域专属数据库和授信模型，开设“智慧灵武”服务APP，通过大数据、云计算等科技手段，着力构建“互联网+政务服务”“互联网+社会便民服务”体系，为县域经济发展和居民生活提供“互联网+”服务，让“信息多跑路，群众少跑腿”，提升城市公共服务水平。项目落地后，将全面整合疫情服务、生活缴费、公积金、社保、医保、医疗卫生公益环保、法律服务等资源，实现便民服务“一网通办”。
+“产业金融”项目依托网商银行数字技术优势，通过对涉农信息、卫星遥感数据和涉农主体信息的分析建立授信模型，服务规模农业和新型农业经营主体，有效解决企业在生产经营过程中的融资问题。产业金融项目完成后，将精准对接产业发展需求，立足企业规模、产业特点、抗风险能力等因素深入分析、准确研判，为企业提供定制化、个性化融资服务，进一步壮大灵武市产业发展力量，有效推动农业产业调结构、转方式、提质量。（完）
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cyf",2020-06-17 11:25:29,同花顺
+16,辽宁省市场监管局印发全省婴幼儿配方乳粉质量安全提升行动实施方案,"(image_address=""//comment.10jqka.com.cn/sourcepic/12/1tC5extagtbKwb/Qws7Fzfgtsay.png"")讯 按照辽宁省政府“食品安全放心工程建设攻坚十大行动”工作部署，近日，辽宁省市场监管局印发了《辽宁省婴幼儿配方乳粉质量安全提升行动实施方案》，组织全省开展婴幼儿配方乳粉质量安全提升行动，助力行业高质量发展。
+提升行动要求全省各级市场监管部门紧盯婴幼儿配方乳粉生产经营重点源头和监管薄弱环节，坚持补短板、固根基，多措并举，压实婴幼儿配方乳粉生产经营者主体责任，切实履行好监管职责，确保婴幼儿“口粮”安全。
+在生产环节，进一步抓实落好生产企业首负责任，督促企业实施良好生产规范，建立危害分析与关键控制点（HACCP）体系并确保其有效运行，组织开展体系检查和企业自查，指导企业做好全过程质量安全控制。在经营环节，切实管控好关键风险点和销售主渠道，对婴幼儿配方乳粉批发企业、母婴连锁店总部、大型商超等经营主体实行靶向监管和重点监管，要在相关经营场所广泛张贴《婴幼儿配方乳粉经营者落实主体责任“七必须”事项清单》和诚信经营、社会监督二维码，倒逼经营者接受消费者监督，把进货查验、专区专柜销售等管理制度落到实处。同时，要求各地制定婴幼儿配方乳粉质量安全监管主要事项及责任清单，进一步夯实属地监管责任体系。
+下一步，省市场监管局将通过调研、暗访等形式，掌握各地工作进展，适时开展工作调度，确保提升行动取得实效。同时建立婴幼儿配方乳粉消费提示制度，推进普法常态化，进一步开展政策解读，引导、教育消费者正确选购婴幼儿配方奶粉，共同打造诚信、合法经营的良好氛围。（供稿：辽宁省市场监管局）
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：jdm",2020-06-17 11:24:37,同花顺
+17,甘肃康乐：洮水河畔油菜花黄,"进入6月，甘肃省康乐县莲麓镇洮河岸边的油菜花陆续开放，遍地金黄、层次丰富，花丛间蝶舞蜂忙，在蓝天白云的映衬下美不胜收、令人陶醉。(视频：康乐融媒体中心王德祥牟亚斌张小虎)
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-06-17 11:24:36,同花顺
+18,打造企业数字化转型标杆 赛轮集团“橡链云”为工业互联网赋能,"随着2020年“新基建”首次写入政府工作报告,“发展工业互联网,推进智能制造”再次成为炙手可热的风口。这意味着,在如何推动社会经济高质量发展的语境中,“工业互联网”已成为了备受关注的时代议题。
+作为中国首家A股上市民营轮胎企业 [股票代码:601058],赛轮集团致力为轮胎行业的工业发展和中国橡胶工业的科技进步做出“赛轮贡献”。
+6月11日,全球首个投入使用的橡胶工业互联网平台,赛轮集团“橡链云”平台正式对外发布。
+作为国内轮胎行业首家国家工信部智能制造和工业互联网试点示范企业,赛轮集团经过近20年的迭代研发,针对传统轮胎行业存在的制造工艺复杂、上下游资源信息缺乏互通、数字化转型困难、迭代创新门槛高等痛点,联合橡胶行业智能制造领军企业软控股份（002073）,以及青岛科技大学、中国电信、阿里达摩院等合作伙伴,共同打造了“橡链云”工业互联网平台。
+该平台通过橡胶行业富的机理模型、大数据平台、物联集成,满足橡胶行业复杂的制造模式,为不同业务场景提供专业、丰富的软件服务和APP应用。现已在智能制造、数字营销、智慧供应链、协同目标研发体系、数字运营等主要领域实现相对成熟的产品应用和解决方案。
+目前,赛轮“橡链云”平台已经沉淀了成熟软件产品和橡胶行业解决方案近百套,并集成了ERP、CRM、PLM等主流企业管理软件。
+围绕核心工业智能制造,“橡链云”平台纵向上实现了所有工序的“人机料法环测”的全面互联,构建了行业内最完整、最丰富的机理模型库。目前在海量互联方面已经实现99%以上设备的互联互通,采集点高达百万级,年数据采集增长量达45亿条以上,在全面质量控制、自动排程、人工智能视觉识别等方面也有大量实践案例。横向上实现了企业内部运营和上下游企业的全面互通,平台现已入驻800余家供应商、1200余家经销商以及5000多家门店。
+在制造端,基于“橡链云”平台,赛轮构建了模块化、标准化、平台化的快速推广复制能力,以新建智能工厂为例,设备安装调试周期可以从常规的18个月缩短至3个月。在工厂管理方面,做到了全球所有工厂一套系统、一套数据、一张报表。基于“橡链云”平台打造的远程设备诊断运维平台,可为海外工厂的正常运转及产能稳定提升保驾护航。
+在渠道端,“橡链云” 通过与用友、速达、管家婆等行业主流软件厂商的战略合作,为海内外经销商提供营销模式、供应链优化等一站式服务解决方案,助力渠道实现全链路、全场景的数字化转型升级。实现了经销商与下属所有门店的订单、物流、库存、结算的在线协同。
+在消费端,“橡链云”可为不同类型的用户提供创新服务。对于野外矿区车主和商业运输车队,可提供胎温、胎压、行驶轨迹的实时服务,并支持按里程、按使用寿命收费的新型商业模式。对于普通车主来说,通过链接“橡链云”,可享受安全预警、快速救援、轮胎保险等服务。
+赛轮“橡链云”平台的发布,将助力企业数字化转型升级,促进产业链上下游企业的集聚、融合,实现产业链核心业务的一体化、平台化、多元化运营,形成一个“开放、共生、共赢”的生态系统,必将推动橡胶产业提质增效,实现高质量发展。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：jdm",2020-06-17 11:24:17,同花顺
+19,土豆每斤卖6元，北京拟对一商户重罚10万元以上,"据北京日报6月17日报道，位于北京市东城区的北京日易晶盛菜市场内，个体工商户郭某某竟将1.3元/斤购入的土豆，最高提价到每斤6元来卖。东城区市场监管局对郭某某哄抬价格的价格违法行为，拟罚款10万元以上。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-06-17 11:23:55,同花顺
+20,中国信保天津分公司制定系列举措“保小微、稳外贸”,"(image_address=""//comment.10jqka.com.cn/sourcepic/12/0MK7qs34.png"")天津6月17日电（记者李亭）记者近日从中国信保天津分公司获悉，根据中国信保日前启动的“2020年首届小微客户服务节”，天津分公司制定了一系列“保小微、稳外贸”方案，进一步提升小微客户服务水平，多措并举帮助小微企业稳订单、拓市场。
+今年以来，中国信保天津分公司不断加大政策支持力度，创新服务手段，支持小微企业保订单、拓市场、稳经营、促融资、防风险。1-5月，累计服务小微出口企业2300余家，占分公司服务支持客户总数的73.4%，支持保障小微企业出口总规模8.4亿美元；累计向小微外贸企业支付信保赔款超过1000万元，同比增长177%，有力保障了企业经营稳定。
+天津市津海特种涂料装饰有限公司董事长刘国海介绍，去年年底公司有一笔价值10万美元的出口订单，发货后迟迟收不到买家的付款，企业资金压力很大，通过信保理赔后，很快获得了赔付，缓解了企业的资金压力。
+中国信保天津分公司相关负责人介绍，公司开展“送培训、送专家、送融资、送赔款、送资信”等活动，为小微企业提供风险保障、开拓市场、便利融资等服务，同时，积极利用跨境电商平台助力小微企业开拓海外市场，精准支持成长型小微企业，培育新的外贸业务增长点。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cyf",2020-06-17 11:21:57,同花顺
+21,江西邮政与12家快递企业签订合作下乡进村协议,"6月17日消息，日前，江西省邮政分公司分别与顺丰、圆通、申通、中通、百世、韵达、京东、苏宁、德邦、优速、极兔等11家主要品牌快递企业正式签署了战略框架协议，标志着全省“邮快合作”由“共同下乡”迈进到“共同进村”的新阶段。
+江西局要求，各级邮政、快递企业要结合江西是传统农业大省、农产品资源丰富、农村快递物流的蓝海前景广阔的实际，坚持因地制宜、一地一策，以快递服务未覆盖的空白边远乡村为重点，积极探索在末端投递、金融服务、电商平台共享、农产品进城、旺季保障支撑等多领域开展合作，不断完善县乡村三级快递物流配送体系。
+据《(image_address=""//comment.10jqka.com.cn/sourcepic/12/tefJzLGo.png"")》了解，国家邮政局今年印发了《快递进村三年行动方案（2020-2022年）》。《行动方案》明确，到2022年底，我国农村快递服务深度显著增强，县、乡、村快递物流体系逐步建立，城乡之间流通渠道基本畅通，农村综合物流服务供给力度明显加大，符合条件的建制村基本实现“村村通快递”。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-06-17 11:19:39,同花顺
+22,新建水泥熟料生产线不要给淘汰竞争乏力生产线添堵,"《水泥玻璃行业产能置换实施办法》（工信部原[2017]337号）规定，确有必要新建的，必须实施减量或等量置换，制定产能置换方案。不能把这一条规定理解为只要有产能置换方案就可新建。就在昨天，工信部原材料工业司一级巡视员吕桂新在给本网主办的“2020中国水泥产业峰会暨TOP100颁奖典礼”专程录制致辞视频中强调，要继续坚持化解过剩产能，严禁新增产能，严肃产能置换。严肃就是要严格执行政策规定，确有必要新建项目要有利于有效压减水泥熟料过剩产能，推动技术进步，加快联合重组，优化结构布局，即要有利于推动产业结构调整和布局优化。
+刚有山东省工信厅公示淄博鲁中水泥有限公司2500t/d新型干法水泥熟料生产线暨300t/d协同处置城市污泥和生活垃圾生态环保项目产能置换方案。方案显示，拟拆除5座JT窑，通过减量置换，新建1条2500t/d新型干法水泥熟料生产线。
+《水泥行业规范条件（2015年本）》规定，水泥建设项目（包括水泥熟料和水泥粉磨），应符合主体功能区规划，国家产业规划和产业政策，当地水泥工业结构调整方案。
+工信部在对《实施办法》解读中指出，水泥行业日产2500吨及以下、竞争乏力的熟料生产线还有八百多条、产能五亿多吨。要下大力气综合施策压减过剩产能。为从源头把控好“严禁新增产能”的关口，要引导企业通过联合重组和产能置换，将竞争乏力的过剩产能尽快退出。
+一方面行业主管部门拟下大力气使竞争乏力的日产2500吨及以下熟料生产线尽快退出，而另一方面东部的水泥大省还在通过产能置换新建日产2500吨熟料生产线。这不是在添堵吗？难道当地水泥工业结构调整方案还在支持新上日产2500吨水泥熟料生产线？
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：jdm",2020-06-17 11:18:52,同花顺
+23,印度CCI折扣加大中国买家能否下单,"以下为个人观点，内容仅供参考，不代表(image_address=""//comment.10jqka.com.cn/sourcepic/12/1tC5extagsPeu6jNextagAtsaytsay.png"")，不构成对任何人的投资建议，否则一切后果由个人承担！
+据部分棉企、用棉企业反馈，虽然近日青岛、张家港等地6/8月船期2019/20年度印度棉M 1-1/8、M 1-5/32贸易商报价仍高达66-66.50美分/磅、68.50-69美分/磅，与6/7月船期美棉EMOT./MOT 1-1/8、EMOT 31-3 36的价差仅2-2.5美分/磅，但由于CCI最新调整印度棉花销售基准价并加大折扣幅度，使印度棉国内售价及FOB报价继续下滑，印度棉的竞争力得到巩固、提升。
+业内分析，一方面CCI收储的棉花等级、品质比较高，大力亏损抛售虽然对MCX、ICE期货盘面产生打压，但也吸引包括中国、孟加拉国、越南等采购商大量实单；另一方面2019/20年度CCI的累计将收购量将达到1000万包（超过印度棉年度产量的30%），而印度政府在无充足仓储条件、资金的情况下执行“当年轮入当年轮出”，考虑到新年度仍将按MSP价格收购、而国内棉花消费暴跌及印度棉出口不顺畅，因此6-10月份CCI销售压力非常突出。
+那么目前是否应该签约采购印度棉呢？笔者认为再等一等，逢低抄底。一是印度国内疫情刚刚引爆，对棉花消费、棉价的影响短期难以结束，回调仍是主基调；二是2020年印度棉花种植面积将大幅增长。受MSP上调、西南季风如约到来等因素利好推动，印度目前的植棉面积同比增长了24%，MCX期货“压力山大”；三是CCI即使大幅降价，10月份前后完成近170万吨棉花销售任务仍很艰巨；四是近期中印边境紧张，屡次发生肢体冲突，引发两国舆论的强烈反响，或对贸易、交流、运输等产生影响。（胡言）
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：jdm",2020-06-17 11:18:50,同花顺
+24,汇市利差交易再度盛行！这一货币风险回报最为诱人,"随着美联储(FED)承诺将利率维持在接近零的历史低位水平，外汇市场上利差交易再度成为关注焦点，而印尼盾眼下正成为最具吸引力的货币。
+随着美联储(FED)承诺将利率维持在接近零的历史低位水平，外汇市场上利差交易再度成为关注焦点，而印尼盾眼下正成为最具吸引力的货币。
+在彭博社分析的32种货币中，印尼盾的风险回报率最高。紧随其后的是土耳其里拉和印度卢比，这是根据美元的伦敦银行同业拆息和外汇远期隐含收益率计算得出的。
+由于对全球经济复苏的乐观情绪提振了风险偏好，发展中国家的套利交易已从有史以来最大的季度亏损中反弹。尽管在对疫情再度爆发的担忧中，股市能否进一步上涨还远未确定，但这一策略可能会继续受到投资者青睐，因投资者在投资回报不断下降的情况下试图寻找替代方案。
+Candriam驻伦敦的本币债券基金经理Julien Fabre表示，“风险偏好的回归，正促使投资者从低收益国家转向高收益国家。在疫情初期，印尼成功地协调了财政部和央行的努力，传达了一个现实的行动计划。”
+印尼盾的利差-风险比为0.85，土耳其里拉为0.73，印度卢比为0.56。在被分析的货币中，只有大约一半的利率高于美元。
+(image_address=""http://e.thsi.cn/img/31fcecac7918779d"")
+尽管土耳其里拉在货币远期隐含的名义收益率为12%，高于印尼盾的10%，但由于土耳其的经济预期表现不佳，通货膨胀率居高不下，印尼盾可能仍有优势。
+利差-风险比的计算方法是，用3个月期外汇远期隐含收益率减去3个月期伦敦银行间美元拆借利率。然后将利差除以隐含货币波动率来计算比率。采用了三个变量的月度平均值，以消除波动性。
+印尼盾本季度上涨了15%以上，在今年一季度表现落后于其他亚洲货币之后，本季度表现已领先于后者。印尼央行的支持对经济复苏起到了关键作用，干预和购买债券帮助稳定了市场。
+印尼央行行长Perry Warjiyo预计，由于通胀率低、利率溢价高以及经常项目赤字不断收窄，印尼盾还会进一步升值。
+渣打银行驻新加坡的量化策略师Melissa Chan表示，""当局口头上支持印尼盾走强，而市场仓位配置依然清淡。""
+在美联储向全球金融体系注入大量美元以避免信贷紧缩后，近期汇市波动性已从10年高位回落，利差交易重新受到关注。
+(image_address=""http://e.thsi.cn/img/2dec8d83b8b3b52d"")
+“除收益率外，利差交易具有吸引力的另一个先决条件是较低的波动性，”马来亚银行外汇策略师Tan Yanxi表示。“随着投资者继续调整他们对宏观复苏步伐的预期，这方面可能会受到越来越多的考验。”
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：jdm",2020-06-17 11:18:45,同花顺
+25,支付宝：银行入驻数字“办事处”数十家 小程序可直接查账单,"17日，支付宝宣布通过完成个人信息认证及授权用户可以在小程序上完成银行信用卡账单查询。目前，该服务支持平安银行、中国银行、广发银行、兴业银行、民生银行、光大银行、华夏银行等数十家银行。
+自支付宝升级成为数字生活平台以来，小程序数量达到170万，并开放首页应用中心、搜索框的流量入口。支付宝介绍，三个月以来，已经有1000家景区、300个市民中心、1000多企业等入驻支付宝开设数字“办事处”。(完)
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：zzx",2020-06-17 11:18:21,同花顺
+26,苏州工业园区进出口 集成电路贡献超四成,"原标题：苏州工业园区进出口集成电路贡献超四成来源：苏州日报
+日前，苏州工业园区举行1至5月经济形势分析会，发布了今年前五个月的重点经济指标数据。今年前5个月，园区完成规上工业产值1838亿元。其中，5月当月产值418.1亿元，同比增长10.8%。在集成电路等重点行业的支撑下，1至5月预计完成进出口344.9亿美元，降幅较1-4月收窄0.7个百分点，保持了回稳向好态势。值得注意的是，今年前四个月，园区进出口额超四成来自集成电路，显示出较高的行业集中度。
+今年以来，面对新冠疫情暴发等不利因素，园区统筹打好疫情防控阻击战、经济发展保卫战，努力化解消极面，稳定基本面，扩大积极面。前5个月，尤其是5月以来，园区工业生产增势向好、企业效益环比改善。医药、电子信息产业保持增长，汽车制造业明显回升。医药制造业同比增长110%；电子信息业增长3.5%，较1至4月提高3.3个百分点；汽车制造业产值同比增长1.7%，较1至4月提高4.2个百分点。
+1至5月，园区工业投资增长较快，完成44.81亿元，同比增长30.7%。省市重点项目推进提速，50个省市重点项目已开工41个，开工率82%；完成投资82亿元，投资完成率45.4%。在进出口方面，行业集中度提高，1至4月，集成电路行业进出口额达118.8亿美元，同比增长11.2%，占园区进出口44.2%，较去年同期提高5.9个百分点。
+随着生产、生活陆续恢复正常秩序，园区社会消费逐渐改善。1至5月，预计完成社会消费品零售总额332.5亿元，较1-4月收窄0.7个百分点。5月，辖区36家重点旅游饭店总营收1.1亿元，环比增长96.43%。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-06-17 11:16:39,同花顺
+27,上周全国生产资料价格小幅上涨 材价格略有波动,"摘要：据商务部监测，上周（6月8日至14日）全国生产资料市场价格比前一周上涨0.5%。钢材价格略有波动，其中高速线材、螺纹钢价格分别为每吨3989元和3888元，分别下降0.2%和0.1%，热轧带钢价格每吨4022元，上涨0.2%。
+据商务部监测，上周（6月8日至14日）全国生产资料市场价格比前一周上涨0.5%。
+有色金属价格以涨为主，其中铜、铝价格分别上涨4.5%和1.6%，锌价下降0.5%。
+成品油批发价格小幅上涨，其中92号汽油、95号汽油、0号柴油价格分别上涨0.7%、0.6%和0.1%。
+煤炭价格小幅波动，其中二号无烟块煤、炼焦煤价格分别为每吨909元和734元，分别上涨0.7%和0.4%，动力煤价格每吨551元，下降0.2%。
+钢材价格略有波动，其中高速线材、螺纹钢价格分别为每吨3989元和3888元，分别下降0.2%和0.1%，热轧带钢价格每吨4022元，上涨0.2%。
+橡胶价格略有下降，其中合成橡胶、天然橡胶价格分别下降0.2%和0.1%。
+化肥价格略有回落，其中尿素、三元复合肥价格均下降0.2%。
+基础化学原料价格以降为主，其中纯碱、甲醇、硫酸价格分别下降1.9%、0.5%和0.3%，聚丙烯价格上涨0.2%。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：jdm",2020-06-17 11:15:42,同花顺
+28,广西78家螺蛳粉加盟店成被告 “爱民”商标侵权不成立,"据广西南国今报6月16日报道，近日，自治区高级人民法院对“爱民螺蛳粉”注册商标侵权纠纷作出终审判决，驳回黄爱民的上诉，维持柳州市中级人民法院的原判：广西爱民餐饮管理有限公司、柳州市爱民餐饮管理有限公司、何某、梁某等被告不构成侵权。二审法院审理提到，从注册商标的显著性和知名度来看，“爱民”二字本身具有关爱百姓之意，属于普通词汇，显著性较弱。此外，被诉侵权标识和涉案注册商标“爱民”在视觉上有很大差别。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cyf",2020-06-17 11:15:17,同花顺
+29,福建宁德：强化征信服务 打好稳企业“组合拳”,"为切实保障信息主体征信权益，人民银行宁德市中心支行充分发挥征信服务保障优势，结合地方实际，精准施策、多点发力，为辖区企业提供便捷安全的征信服务，打出征信支持稳企业“组合拳”，切实为企业减轻负担。“费用减免”降低企业融资成本人民银行宁德市中心支行通过文件转发，地方媒体、互联网新媒体、商业银行网点LED屏多阵地宣传等方式，及时向10类征信查询机构和企业宣导减免收费政策。截至6月15日，共为辖区符合减免条件的11家金融机构减免企业征信查询费用0.7万元、个人征信查询费用17.4万元，有效降低企业和个人融资成本。同时，加强对辖内10类征信系统查询机构及应收账款质押登记企业减免期的管理和查询监测，防范出现查询量激增的情形。“信用救助”解除企业后顾之忧针对受疫情影响企业的征信问题，人民银行宁德市中心支行指导各金融机构结合业务实际进行逾期信用记录认定，设立受困企业逾期信用记录报送调整的绿色通道，并指导辖内征信接入机构落实减息、免息、展期、无本续贷、调整还款计划、调整逾期记录报送等系列帮扶措施，解除企业后顾之忧。截至6月15日，宁德市累计妥善处理征信异议45笔，对符合条件的企业调整还款安排或征信记录425笔，涉及金额2.26亿元。“绿色通道”优化企业征信服务疫情发生以来，为全力满足企业征信查询服务需求，人民银行宁德市中心支行优化“线上+线下”企业征信查询服务流程，加强征信查询岗位人力资源配置，为企业征信查询开通“绿色通道”。优化现场操作流程，在异议申请、司法查询等业务现场受理现场办理，积极引导企业通过互联网邮箱等线上渠道查询征信报告，认真做好材料初审、复核、退件答疑和征信报告打印、消毒封装、免费寄送等工作，平均为每家企业缩短查询服务3个小时。截至6月15日，人民银行宁德市中心支行通过互联网邮箱渠道线上为88家企业提供信用报告查询服务，线下为2291家企业提供信用报告查询服务。“线上融资”拓宽企业融资渠道人民银行宁德市中心支行与市工信局建立共同推进应收账款融资工作合作机制，通过8次工作协调会、2次线上推进会、20次企业推介会，广泛动员金融机构、核心企业和小微企业参与应收账款融资业务，并指导金融机构依托中征应收账款融资服务平台线上融资优势，为供应链企业提供融资便利，助力企业复工复产达产。积极指导福建海峡银行福安支行应用中征应收账款融资服务平台为辖内某电器、健身企业的上下游供应链小微企业分别提供800万元、1000万元的授信额度，缓解疫情期间企业融资需求，为企业复工复产达产提供有效征信支持服务。截至6月15日，宁德市累计通过中征平台促成融资业务84笔，金额31.50亿元。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-06-17 11:14:48,同花顺
+30,包头中板：资源短缺 价格继续平稳,"包头讯：10日，包头市场中厚板价格弱稳运行，资源短缺成交较差。现市场包钢产14-30mm普中板报价在3850-3870元/吨之间，40mm普板报价在4150元/吨左右，14-30mm低合金销售价格在4020元/吨左右，40mm低合金厚板报价在4300元/吨左右（以上价格均为检尺）。
+近期唐山钢坯价格弱势盘整，目前价格3310元/吨，较上周同期走弱10元/吨，受此影响近期唐山、邯郸等主导市场中厚板价格走势均盘整为主。观之本地，受外围主导市场价格盘整影响，本地商家报价亦盘整为主。据了解，近日唐山市场河钢普中板价格盘整运行，目前报价3730元/吨，较上周同期持平，与本地价差在150元/吨，价差较上周变化不大，主要由于近期唐山市场与本地价格走势均平稳为主。成交情况，商家反馈目前本地需求较差，加之资源短缺，成交偏差。
+对于后市，目前钢市震荡盘整，本地需求较差但资源也不多，所以预计短期内本地价格或继续盘整走势。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：jdm",2020-06-17 11:14:09,同花顺
+31,内蒙古煤矿智能化建设：到2021年建成50个智能工作面,"内蒙古九部门日前联合发布的《关于加快全区煤矿智能化建设的实施意见》提出，在已有11座煤矿实施智能化改造、2处露天煤矿无人驾驶卡车工业性试验成功的基础上，加快煤矿智能化实施进程。
+到2021年，建成50个智能工作面。重点在冲击低压、煤与瓦斯突出等灾害严重矿井、存在3种较大安全风险的煤矿、近两年竣工投产的300万吨/年以上煤矿实现智能化，实现掘进工作面减人增效、综采工作面少人或无人操作、大部分井下固定岗位实现无人值守、远程控制。
+到2025年，117处井工矿实现全部固定岗位机器人作业，38处露天矿实现智能连续运输。重点对75处安全风险较大煤矿、109处核定产能300万吨/年及以上的大型煤矿实施智能化改造。在安全实时通信及地下精准位置服务、巷道智能快速掘进、开采工作面智能协同控制、煤流及辅助运输、综合管理、煤炭洗选、煤矿厂区及绿色生态智能系统等方面实现智能化。
+到2035年，全面建成以智能煤矿为支撑的煤炭工业体系，实现各类煤矿智能化，构建多产业链、多系统集成的煤矿智能化系统，建成智能感知、智能决策、自动执行的煤矿智能化体系。
+为实现上述目标，自治区能源局会同自治区发展改革委、应急管理厅、工信厅、财政厅、科技厅、教育厅、内蒙古煤矿安全监察局、通信管理局等单位，共同推进煤矿智能化建设相关工作。适时召开现场会，组织观摩交流，推动工作开展。对列入年度计划的项目实行通报。总结智能化建设新典型、新模式和新机制，宣传推广智能化发展经验和成果，形成加快推进煤矿智能化建设工作的良好氛围。
+发展改革、工信、科技厅等部门利用现有资金渠道，支持开展煤矿智能化建设的技术创新、科研攻关等，对符合要求的相关建设项目予以支持；对验收通过的智能化示范煤矿，在产能置换、产能核增等方面优先予以支持；在煤矿安全改造资金安排上，对应用井下智能装备、机器人岗位替代、推进煤矿开采减人提效的煤矿予以重点支持；对新建智能化煤矿，在规划和年度计划中优先考虑；将煤矿相关智能化改造纳入煤矿安全技术改造范围，相关投入列入安全费用使用范围；金融机构要加大对智能化煤矿、煤矿智能化改造的支持；鼓励企业发起设立相关市场化基金，支持煤矿智能化发展。
+支持和鼓励高校加强煤矿智能化相关学科专业建设，培育具备矿业工程、软件工程、信息工程、机器人工程、人工智能等知识技能的复合型人才。鼓励高校和企业共建实践基地，搭建高校教师挂职锻炼平台，积极开展在职人员智能化和信息化培训，优化知识型、技能型、管理型人才发展体系。
+同时煤矿企业要牢固树立安全生产“红线”意识，依法依规推进智能化开采。煤矿安全监管、监察部门要加大执法检查力度，监督煤矿企业严格遵守法律、法规，严厉打击生产、建设矿井违规布置采掘工作面和超能力、超强度、超定员组织生产等违法违规行为。严厉打击手续不全矿井以推进智能化开采为由违法违规组织生产。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：jdm",2020-06-17 11:13:59,同花顺
+32,湖北恩施：扶贫工厂赶制订单促就业,"6月16日，在湖北省宣恩县高罗镇一间扶贫工厂的车间里，就业农民在制衣生产线上工作。
+自3月下旬以来，湖北省恩施土家族苗族自治州宣恩县通过优先复工复产、部门跟踪服务、畅通销售渠道等措施，确保当地57家建在易地扶贫搬迁安置点的扶贫工厂、车间正常有序生产销售，为农村低收入群体就业提供保障。新华社发(宋文摄)
+6月16日，在湖北省宣恩县高罗镇一间扶贫工厂的车间里，就业农民在制衣生产线上工作。新华社发(宋文摄)
+6月16日，在湖北省宣恩县高罗镇一间扶贫工厂的车间里，就业农民在制衣生产线上工作。新华社发(宋文摄)
+6月16日，在湖北省宣恩县高罗镇一间扶贫工厂的车间里，就业农民在制衣生产线上工作。新华社发(宋文摄)
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-06-17 11:13:43,同花顺
+33,华米科技举行首个技术开放日 面向全球招募人才,"【(image_address=""//comment.10jqka.com.cn/sourcepic/12/zajQxbL60rXNextagAtsaytsay.png"")讯】6月16日，华米科技在中国科学技术大学举行了首个技术开放日活动，并通过网络在线直播。来自国内外三所高校的四位专家，分别就智能物联网、脑科学、脑机接口以及运动健康的最新进展，和大家进行了分享和交流。
+就在前一日(15日)，华米科技刚刚在合肥举办了首届AI创新大会，并宣布正式成立人工智能研究院。大会还发布了新一代智能可穿戴芯片“黄山2号”、第二代PPG物追踪光学传感器BioTracker 2及一系列全新的健康大数据AI算法通过一整套AI健康管理技术架构，致力于搭建新型健康基础设施平台，重构全球健康医疗产业。
+中国科大信息与智能学部常务副部长、计算机学院执行院长、ACM杰出科学家李向阳演讲的主题是《智能物联网：无源，智能，安全初探》，他向大家介绍了智能物联网最新的进展，以及存在的不足、未来的发展空间等。
+清华大学软件学院副院长、华米人工智能研究院专家委员会委员丁贵广，则以《脑科学启发的AI模型》为主题，分享了脑科学领域的研究现状，并强调只有推动脑科学研究，结合人工智能的进展，才能解决更多人类面临的难题。
+中国科大电子工程与信息科学系执行主任、华米科技-中国科大先研院“脑机智能联合实验室”主任陈勋，在以《脑机接口研究进展》的主旨演讲中，解释了非侵入式、部分侵入式以及侵入式脑机接口的概念，并重点讲解了目前侵入式脑机接口技术方面的研究进展。
+除了上述三位专家之外，活动现场还在线邀请了挪威科技大学医学和健康科学学院教授乌尔里克.韦斯洛夫(Ulrik Wisloff)，进行了《PAI-人体健康评估新的世界标准》主题演讲。韦斯洛夫教授表示，PAI可以针对不同户，结合年龄、性别、静息率等数据，打造一套个性化的健康评估系统。由他主导的HUNT Fitness Study研究表明：当总PAI值≥100时，男性因心血管疾病(CVD)导致的死亡风险降低17%，女性降低23%。简单地说，如果PAI值能维持在100以上，就代表目前身体处于较好的状态。据悉，HUNT研究已历时超过35年，累计参与者多达230000名。
+中科大校长助理、类脑智能技术及应用国家工程实验室主任、华米科技人工智能研究院专家委员会主席吴枫，也出席了技术开放日活动。
+同时，华米科技还在现场宣布面向全球，为其新成立的人工智能研究院招募人才。招聘职位包括人工智能研究院副院长、主任研究员和硬件开发工程师、算法工程师、数据挖掘工程师等，而工作地点涵盖北京、上海、合肥、南京及美国。
+之前，华米科技创始人、董事长兼CEO黄汪在接受媒体采访时就解释说，在华米科技的整个研发体系中，人工智能研究院的专家委员会位于顶层，由中国科大、清华等高校的专家教授构成;下一层为主任研究员，他们将亲自带队，冲在一线做算法研究;再下一层，则是从高校吸纳的优秀毕业生，期望他们可以在专家带领之下快速取得成长，共同探索前沿技术，为医疗健康事业贡献力量。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-06-17 11:13:28,同花顺
+34,升级版“限塑令”能否扭转青海省塑料使用现状,"1月16日，国家发展和改革委员会、生态环境部印发《关于进一步加强塑料污染治理的意见》，整体部署塑料污染治理工作。今年4月，青海省发展和改革委员会、青海省生态环境厅结合青海省实际情况，制定了《关于进一步加强塑料污染治理的实施办法》，文件指出，到2020年底，青海省会西宁市城市建成区的商场、超市、药店、书店等场所及餐饮打包外卖服务和各类展会活动，禁止使用不可降解塑料袋，集贸市场规范和限制使用不可降解塑料袋。
+之前“限塑令”效果并不理想
+早在2008年，我国就已经实施了“限塑令”，然而这十余年来，“限塑令”的执行效果并不理想。
+近日，记者调查了青海省会西宁市的部分超市、商店以及农贸市场以，发现绝大多数的小型商贩为招徕顾客，会免费提供塑料袋；大型超市虽然实行塑料袋收费政策，但是对于多数超市的消费者而言，一毛、三毛的塑料袋钱并不能产生太大的约束力，并且超市中用来装散称商品及生鲜商品的“连卷袋”也是免费提供的。同时记者也注意到，外卖及快递行业也正在成为塑料包装的“重灾区”。
+市民希望加大宣传科普力度
+市民李先生告诉记者，他经常在外面不同的小餐馆里就餐，店主都提供一次性塑料杯。来吃饭的顾客也是习以为常地自己用一次性塑料杯倒茶水或者开水喝。好多人知道使用一次性塑料杯对人身体不好，对环境保护也不好。但人们还是习惯成自然，用了就用了。很多人买了外卖，对自己使用的一次性塑料餐具是可以降解还是不可降解，都不大了解。
+目前，市面上使用的标有PE(聚乙烯)、PE-HD(高密聚乙烯)标志的塑料袋，是一次性塑料袋，属于不可降解塑料袋，不可以循环利用回收。另一种塑料袋，有EPI的标志，在EPI字母右上角带有小花标志，这类塑料袋就是可降解塑料袋，可以循环使用。
+记者对超市、农贸市场塑料袋进一步了解发现，超市和农贸市场塑料袋上均印有PE(聚乙烯)和PE-HD(高密聚乙烯)的标志。采访中，超市收银员和顾客，对含有这类标志的塑料袋了解很少。“我一般拿自己保存的普通塑料袋买菜，这种可降解购物袋没见过。”市民白女士说。对于可降解购物袋，记者在调查中发现，很多摊主、市民对它的认知很少。
+“限塑”需要全社会共同配合
+据国家邮政局3月27日发布的《2019年中国快递发展指数报告》显示，2019年，全国快递企业日均快件处理量超1.7亿件，全国快递业务量累计完成635.2亿件。这些快递包装使用了大量塑料包装制品。另据美团点评2020年一季度财报显示，美团餐饮外卖业务在2020年一季度日均订单量1510万笔，而外卖包装通常采用一个或多个餐盒分别用塑料袋包装，再与一次性餐具放进一个大塑料袋中的包装形式，同样需要使用大量的塑料包装制品。
+有力的要素保障是有效治理塑料污染的关键，“限塑令”不能老是成为“纸上令”，还需有实招和妙招应对才是硬道理。首先，需有源头治理理念，公布了“限塑令”，关键在于落实，这就需要从源头上入手。其次，需纳入信用体系，可考虑把违规生产、销售和使用一次性不可降解塑料制品的企业、个人等相关违法行为纳入社会信用体系，其三，需跟进可替代品，需要尽快研发可替代品，鼓励全生物降解塑料产品的研发和生产，满足广大群众的基本生活需求，让广大市民不受“限塑”“禁塑”的框定而影响日常生活。（消息综合：人民法院报、东方证券、德州新闻网、西宁晚报、西海都市报）
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：zzx",2020-06-17 11:12:35,同花顺
+35,天津“智造”助力津企提升国际竞争实力,"(image_address=""//comment.10jqka.com.cn/sourcepic/12/vfLUxgtsaytsay.png"")新闻讯：为做好第127届广交会参展工作，天津交易团指导各参展企业加大研发投入，实行优胜劣汰动态调整，全力优化产品结构，注重开发和推出智能新品，全方位促进天津外贸竞争力整体提升。
+天津金锚公司坚持以扩大出口为导向，以开发高科技、低能耗和自主知识产权产品为重点，投入数千万元资金，联手国内科研院所，引进先进生产线，加快产品更新换代，做强做大“金锚”品牌。该公司研发生产的铝合金复合材料，获得国际权威机构认证，可直接销往欧美市场。本届展会，天津金锚集团在直播间多方位详细展示多款最新研制的专用新梯、概念梯独特性能，还专门为外商设计制造了组装及运输设备，将全套零部件打包出口，使其在当地组装后即可上市销售。直播刚刚开始，登录直播界面和交流洽谈的客户就迅速增加。
+升瑞包装机械公司推出的新型智能包装机械将意大利、德国等欧洲企业在结构设计、机械传动等方面的最新科技精华，与自行开发、具有完全自主知识产权的核心操控模块相互融合，突出人工智能技术，可实现粉末包装与颗粒包装同机加工，自动分拣、自动检验、自动除尘同机进行，大大提高了加工效率和成品率。同时，新型包装机械还安装了自动监测和互联网互动系统，对设备实时进行自动监测，随时将零部件损耗、故障情况等相关数据通过互联网自动传送给升瑞公司，升瑞公司能立即在线指导设备使用者调整参数、更换零部件、排除故障，最大限度保障设备的正常运行，智能化水平大大提升，引发了欧美采购商的高度关注。
+为了顺应全球抗击新冠肺炎疫情的需要，天津九安公司推出的红外额温计具有1秒快速测量、3色测量结果显示和自动关机等功能，体积小，操作简便，性能稳定；血氧仪体积只有81×68×49毫米，能直接套在手指上使用，体积小巧但测速快，精度高，操作简便，医院、家庭都可适用。此外，天津九安公司推出的电子血压仪、电子血糖仪等，将电子技术与互联网、大数据等“云”技术相互融合，测量结果可以直接传送到手机，方便对比检验，成为国外客商关注的热点。
+天津机械进出口公司推出的纸杯纸筒加工设备不仅具备有杯身粘合、底纸裁切、杯身和底纸粘合、底部滚花、杯口卷边等自动功能，而且实现了自动计数、自动包装入库，适用于多种规格的加工要求，加工速度更快，设备体积也明显偏小，深受东北欧、中南亚及南美客商的欢迎，直播界面登陆和信息交流十分踊跃。
+天津参展的各家自行车企业也在不断优化参展结构，充分利用广交会平台将出口基地建设与品牌打造宣传紧密结合，组团推出各类高档新品，充分展现出优势产业集聚区的集群发展效应。((image_address=""//comment.10jqka.com.cn/sourcepic/12/vfLUxgtsaytsay.png"")新闻记者赵颖妍通讯员程凤永王磊)
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-06-17 11:06:48,同花顺
+36,因不能按计划商业化 Bose宣布暂停其AR项目,"【环球网科技综合报道】根据外媒报道，由于未达到既定目标，Bose暂停了其增强现实项目，其AR团队主要技术员工也已于目前离开了公司。同时，Bose方面也已经开始通知相关合作伙伴将在未来几周内停止工作。
+“Bose AR并没有成为我们预想的那样。”公司一位发言人表示，“这并不是公司第一个不能按照计划进行商业落地的项目，不过它的技术将会在未来帮助Bose研发新产品。”
+知情人士向媒体透露, Bose的高级副总裁约翰·戈登(John Gordon)曾大力支持公司的增强现实项目，但他在去年夏季离职，而公司大多数从事增强现实工作的员工也在他走后相继离开。据报道，该公司在过去的几天里一直在告诉开发者，基于Bose AR的应用将陆续停止工作。
+今年1月，Bose表示，由于受在线零售冲击，他们将关闭北美、欧洲、澳大利亚和日本的所有零售店。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：jdm",2020-06-17 11:06:15,同花顺
+37,人人聚财启动第二期兑付兑付比例仅为确权本金的1%,"(image_address=""//comment.10jqka.com.cn/sourcepic/12/zfi0extag8zs0dstsay.png"")讯 6月17日，网贷平台人人聚财在官网发布了《关于人人聚财开展第二期兑付的公告》。
+公告中指出，平台于2020年6月15日启动第二期现金兑付，本期兑付比例为确权本金的1.00%，兑付总金额为2006.94万元。
+(image_address=""http://e.thsi.cn/img/e630d4affd9ccca"")
+附公告全文：
+根据原定兑付工作安排及催收回款情况，为保证现金兑付工作稳定有序推进，平台于2020年6月15日启动第二期现金兑付，相关兑付安排如下：
+1、兑付时间：2020年6月15日
+2、兑付对象：剩余本金＞0且已于6月12日18:00前准确填报并确认本人银行卡信息的出借人
+3、兑付金额：本期兑付比例为确权本金的1.00%，兑付总金额为2006.94万元。若以此兑付比例计算结果不足300元且出借人剩余本金大于或等于300元的，则本期兑付金额为300元；若以此兑付比例计算结果不足300元且出借人剩余本金低于300元或计算结果大于或等于剩余本金，则以剩余本金作为实际兑付金额。
+4、相关数据补充说明：
+（1）确权本金：与互金协会投票系统数据一致，该数据保持不变。
+（2）剩余本金：剩余本金=确权本金-2020年3月20日之后心悦币累计兑换数-2020年3月20日之后打折订单本金-累计转账兑付金额，该数据将于APP中持续更新。
+5、兑付方式：银行转账
+6、到账时间：不同银行到账时间不同，兑付款到账时间预计为1到2个工作日，具体以银行实际到账时间为准。
+7、其他说明：
+（1）由于银行卡信息填报错误而导致第一期未成功兑付的出借人，或未按时填报确认银行卡信息而导致第一期未成功兑付的出借人，其第一期兑付款将与本期兑付款合并后转账兑付，请出借人注意查收。
+（2）如出借人未能于6月12日18:00前提供准确完整的银行卡信息，平台会保留兑付权利，待出借人填报或更正并确认后，于下一期一并兑付。
+（3）银行卡开户行填写格式：XX银行XX市XX支行，如：中国农业银行深圳市西乡支行。若遗忘开户行信息，请自行联系银行获取。
+感谢广大财迷的理解与支持，如您有任何疑问，欢迎致电客服热线400-9690-900详询，我们将竭诚为您服务，祝您生活愉快！
+深圳市人人聚财金融信息服务有限公司
+2020年6月17日
+（责任编辑：季丽亚 HN003）
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：jdm",2020-06-17 11:06:04,同花顺
+38,Mymetal：宁波东浩年产铝铸件3000吨技改项目,"据(image_address=""//comment.10jqka.com.cn/sourcepic/12/ztK1xNPQyavNextagAtsaytsay.png"")了解，宁波市生态环境局鄞州分局，6月15日拟对宁波东浩铸业有限公司年产铝铸件3000吨、锌铸件1000吨技改项目环评作出审批并公示，该项目已投产，此次为补办环评手续。项目总占地面积约36120.3平方米，总建筑面积为24125.3平方米。
+(image_address=""http://e.thsi.cn/img/6018fb6e40fdcd08"")
+宁波东浩铸业有限公司是一家专门从事锌压铸件、铝制品、模具、五金件的制造、加工的企业，目前主要为汽车零部件（含发电机端盖和启动马达）、娱乐器材配件和五金配件。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：jdm",2020-06-17 11:05:05,同花顺
+39,疫情影响 巴西蔗糖乙醇能源展览将延期至2021年8月,"原标题：疫情影响 巴西蔗糖乙醇能源展览将延期至2021年8月
+YNTW.COM糖网讯 鉴于新冠肺炎疫情大流行及其影响，负责举办巴西蔗糖乙醇能源展Fenasucro＆Agrocana展览公司现已决定将此次活动推迟至2021年8月17日至20日。该决定是在疫情不可预测的情况下做出的，其主要目的是保护与会人员、参展商和合作伙伴的健康，同时考虑疫情对经济的影响。
+尽管目前无法按照传统模式举办展览，但该展览公司仍在努力为Fenasucro＆Agrocana的参展商和访客提供数字互动的机会，同时正在为明年的展会做准备。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：jdm",2020-06-17 11:04:49,同花顺
+40,法国、西班牙发布汽车激励政策,"人民网消息，近日，法国政府与西班牙政府陆续发布了针对汽车行业的消费刺激政策。法国将斥资逾13亿欧元(合14.5亿美元)用于激励措施，并将对电动和插电式混合动力汽车发放更高的补贴；西班牙则公布了一项37.5亿欧元(42亿美元)的经济刺激计划。
+法国方面，消费者在购买全新或二手内燃机车时，若家庭收入低于某个阈值，且所购买车型二氧化碳排放量低于WLTP（全球统一轻型汽车测试程序）规定的137克/千米(或109克/千米NEDC标准)，将有资格获得3000欧元以旧换新补贴；若车辆价格不超过5万欧元，消费者还将有资格获得额外的1000欧元退税；纯电池续航超过50公里(31英里)的电动汽车和插电式混合动力车，则可获得5000欧元的折价奖励。
+西班牙方面，政府公布了一项37.5亿欧元(42亿美元)的经济刺激计划。近70%的资金将投资于汽车行业的“产业链”，其他部分将用于推动公共交通的电气化；此外，资金还将用于将车龄10年以上的现有汽车替换为更新型、更节能的车型。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：jdm",2020-06-17 11:04:39,同花顺
+41,锡林郭勒盟自然资源局积极推进生态文明建设,"锡林郭勒盟自然资源局协调保护资源和保障发展的关系，推动生态文明建设与社会经济相互促进。一是将新建项目是否位于生态红线范围内作为用地报件必要条件，减少新增建设用地项目对生态环境的扰动。二是全面完成了自治区下达我盟“增存挂钩”工作任务，处置闲置土地108.24公顷、批而未供土地660.22公顷，有效缓解了建设用地供需矛盾，提升了节约集约用地水平。三是全力保障新能源风电项目用地需求，助力全盟能源结构持续调整，清洁能源占比持续提升。目前，36个特高压外送风电项目用地手续已全部获批。四是化解煤矿历史遗留用地问题，抓好现有煤矿稳定生产，保障我盟能源安全。在办好原有4家保供煤矿手续的基础上，继续用好保供煤矿手续办理支持性政策，做好5家新列保供煤矿手续办理工作。截至目前，芒来煤矿、白音华一号、四号矿先行用地已通过自然资源部部务会审查，白音华三号矿先行用地正在自然资源部审查，白音华二号矿先行用地正在自然资源厅审查。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-06-17 11:03:56,同花顺
+42,索尼 SIE 高管：PS5 独占游戏比以往更重要,"(image_address=""//comment.10jqka.com.cn/sourcepic/12/SVTWrrzS.png"")6月17日消息索尼PS5已经发布一段时间了，除了其本身强大的性能升级外，其所独占的游戏也是玩家津津乐道的话题。索尼SIE欧洲高管西蒙.拉特(Simon Rutter)在接受《卫报》采访时称，“PS5独占游戏非常重要，比以往任何时候都更重要。”
+对此，他表示：“通过与系统设计师的亲密接触，Playstation的工作室可以最大限度利用主机性能，这非常有价值。他们可以展现出想要呈现的创新效果。比如《蜘蛛侠：迈尔斯》《地平线2：禁忌西部》等PS5独占大作，它们就是玩家们想要玩的游戏。”
+此前SIE总裁兼CEO吉姆.瑞恩(Jim Ryan)也曾表示：“说到次世代主机，你就知道它会包含上一代不具备的功能和其它优势。我们认为大家应该开发出能充分利用其性能的游戏。无论是DualSense手柄、3D Audio音效、还是疾速的SSD……是时候给PlayStation社区提供一些崭新的、与众不同、只能在PS5才能享受到的东西了。”
+(image_address=""//comment.10jqka.com.cn/sourcepic/12/SVTWrrzS.png"")了解到，索尼已经公布了PS5部分游戏阵容，包括《地平线2：禁忌西部》《恶魔之魂：重制版》《漫威蜘蛛侠：迈尔斯》《GT赛车7》《瑞奇与叮当：分离》等新作。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-06-17 11:02:58,同花顺
+43,美联储主席警告美国经济复苏前景仍高度不确定,"新华社华盛顿6月16日电（记者许缘 高攀）美国联邦储备委员会主席鲍威尔16日警告，美国经济复苏前景存在“高度不确定性”，尤其是中小企业、低收入者以及少数族裔面临更多风险。
+鲍威尔当天出席美国国会参议院银行委员会关于半年度货币政策报告听证会时说，虽然近期部分指标显示美国经济有所改善，但距离完全复苏仍有很长的路要走。由于产出和就业水平仍远低于新冠疫情暴发之前，美国经济何时复苏、复苏力度如何均存在高度不确定性，前景将很大程度取决于疫情走势和控制措施的效果。在公众确信疫情得到控制之前，美国经济不太可能完全复苏。
+鲍威尔指出，疫情给中小企业带来重大风险，而这些企业是美国经济的核心。同时，在疫情影响下，低收入人群、非洲裔、拉丁裔和女性的失业状况较其他群体更为严重。“如果不加以控制和扭转，经济低迷将进一步拉大经济福祉的差距。”
+鲍威尔重申，美联储将运用所有工具，确保美国经济强劲复苏。同时，他再次敦促国会出台更多经济纾困法案，为美国家庭和企业提供必要援助，减轻疫情对经济的长期损害。
+美国商务部数据显示，今年第一季度美国国内生产总值按年率计算下降5%，是2008年国际金融危机引发经济衰退以来最大降幅。
+为应对疫情对美国经济的冲击，美联储3月份下调联邦基金利率目标区间到零至0.25%之间，并在6月份货币政策会议上维持了这一利率水平。美联储表示，将继续维持超低利率区间直至确信经济已承受住疫情冲击。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：zzx",2020-06-17 11:02:38,同花顺
+44,世茂、美的置业12.52亿元分摘沈阳平罗湾两宗涉宅用地,"6月17日，沈阳成功出让两宗涉宅用地，编号为YH2019-20号和YH2019-04，竞得人包括美的置业和世茂，合计成交价12.52亿元。
+观点地产新媒体了解到，美的置业以总价7.9亿元竞得YH2019-20号地块，折合楼面价3200元/㎡，溢价率32.23%；经8家房企激烈争夺，世茂以总价4.62亿元竞得YH2019-04号地块，折合楼面价3200元/㎡,溢价率33.33%。
+资料显示，YH2019-20号地块名称为平罗湾5号地块，目前地块为净地状态，土地面积13.67万㎡，容积率大于1.0且不大于1.8，绿地率不小于35%，商业比例不大于5%，建筑限高60米，起价为2420元/㎡。
+YH2019-04号地块名称平罗湾9号地块，用地性质为二类居住用地、商业用地，容积率大于1.0且不大于1.8，绿地率不小于35%，商业比例不大于15%，建筑限高60米，起价2400元/㎡。
+根据出让要求，两宗地块均采用“限地价、竞地块范围内产权无偿移交政府租赁住房”方式出让，最高限价3400元/㎡，其中平罗湾5号地块且须配建学校。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-06-17 11:02:20,同花顺
+45,OPPO获人工智能会议CVPR 2020两项第一,"【(image_address=""//comment.10jqka.com.cn/sourcepic/12/zajQxbL60rXNextagAtsaytsay.png"")讯】2020年6月17日，一年一度的全球计算机视觉顶级会议CVPR(Conference on Computer Vision and Pattern Recognition国际计算机视觉与模式识别会议)落下帷幕，该会议是由IEEE(国际计算机视觉与模式识别会议)举办的计算机视觉和模式识别领域的顶级会议。每年汇聚全球顶尖的相关专家、学者和研究者，共同关注和探讨计算机视觉技术的发展方向与趋势。
+在这届会议上，OPPO取得了非常优异的成绩：获得两项第一名、两项第三名，展现了OPPO在人工智能领域的科技领导力，以及新成立的智能感知与交互研究部门强大的研发实力。
+OPPO多项AI核心技术斩获大奖
+在本次大会上OPPO获得第一名的技术成果为将模糊图片”算“清晰的“极端超级分辨率感知”技术;此外，通过照片计算拍照方位的""手持设备视觉定位""技术则获得第三名和分项第一;通过读取录像智能识别其中人类行为的“长视频行为识别”技术，同时获得第三名。
+OPPO智能感知首席科学家郭彦东表示：“非常高兴能在今年的CVPR竞赛中取得优秀成绩，这是OPPO研究院智能感知与交互研究部成立以来首次公开展示研发成果，分别对应环境感知、以人为本的计算、以及数字生成三个核心研究方向，充分反映了OPPO在人工智能领域的深厚积淀与实力。”
+“图形界面和鼠标的使用造就了个人电脑，触屏成就了智能手机，每一次智能感知技术的突破、人机交互模式的提升，都在推进着全新的科技潮流。我们致力于让智能硬件更聪明，更理解用户，从而开发全新的人机交互方式，引领下一代科技潮流，”郭彦东更进一步说明，OPPO对于智能感知与交互领域的前沿探索，将在未来全面赋能OPPO的技术与产品，也将孕育更新的硬件产品，为用户提供更具创新性的交互方式与服务体验。
+除OPPO研究院智能感知与交互研究部之外，OPPO美国研究所也在CVPR上展露风采，取得“真实世界超分辨率图像处理技术”(Real-World Super-Resolution Challenge：Track1:Image Processing artifacts)第六名的成绩，OPPO美研所时空实验室主管孟子博在CVPR做了暗光影像技术演讲“穿透黑暗：从图像到视频”(Looking into the dark:from image to video)，美研所AI计算机视觉高级技术总监全书学做了“从零开始构建可在智能手机和AR眼镜上运行的统一SLAM系统”演讲(Building a unified SLAM system running on both smartphone and AR glass from scratch)，与全球学界分享OPPO在影像方面的最新成就。
+OPPO超分技术成果，凭空将模糊图片算清晰
+“极端超分辨率感知”(Perceptual Extreme Super-Resolution)是CVPR难度最高的赛项之一，要求从模糊的低分辨率图片中，获得细节更清晰、更接近真实情况的高清图像。这是计算机视觉技术中难度最大的领域之一，需要尽可能地平衡图像的画质与真实性。针对这项挑战，OPPO提出了独创的神经网络架构RFB-ESRGAN，通过更智能的方式提取原图特征，用分布式算法提高计算效率，以更多元的采样与计算模型配合，通过计算把模糊的图片清晰放大了16倍，从全球280多个顶尖参赛团队中脱颖而出，获得了第一名，其他参赛者，不乏来自脸书、百度、微软、亚马逊、中科院、UIUC等国际顶尖科技公司与院校的团队。
+这项技术将在未来为诸多应用场景提供帮助，例如将用户手机拍摄到的模糊影像处理成细节丰富的高清效果，修复图像受到损坏的老照片、老电影，或者对卫星、航天图像进行细节分析等工作。
+在“手持设备视觉定位”挑战(Visual localization for handheld devices challenge)中，OPPO获得了面向室外场景的数据集(Aachen Day-Night)第一名，与面向室内场景的数据集(InLoc)第三名。“视觉定位”是通过搜集和分析图像中的海量信息，对自身拍摄方位作出精确判断。OPPO团队自主设计的全新分析流程，可以智能分析图像信息的分类标签及图像深浅信息，大量排除错误结果，从而显著提升分析准确程度。这一技术对未来的AR眼镜，智能机器人，精准导航等应用都能起到重要作用。例如，当智能机器人助手安装了摄像头之后，就可以利用视觉定位技术对拍摄到的图像作运算分析，获得准确定位，从而精准的移动。
+此外，OPPO还在“长视频行为识别”(Activity detection in extended videos)赛项中获得了第三名。“视频行为识别”是指在某段视频中分析并判断人或物体对象的行为动作。OPPO的智能程序可高效识别并重组每一帧画面中的人物，辨别复杂动态视频中的人类行为。在一段数十人出镜的长视频中，它准确识别了视频中每个人走动或是聊天等的数十种动作。这项技术在未来能广泛应用在人机交互、运动分析等领域，例如未来的手机产品便可以自动识别正在运动的拍摄对象，并自动调节快门对焦。
+智能感知与交互研究部成立，赋能OPPO前沿技术探索
+2020年初，OPPO研究院正式成立智能感知与交互研究部，邀请行业领军人物郭彦东博士加盟并担任OPPO智能感知首席科学家，领导快速组建并逐步完善专业科研团队。
+目前，智能感知与交互研究部已初具规模，并引进了诸多顶尖科技公司与科研院校人才。此次OPPO参加CVPR2020的多项获奖成果均来自该团队。
+一直以来，OPPO都认为，人工智能与通信技术是相辅相成，既可以断地互相赋能与提升，也可以共同为万物互融打下坚实的技术基础，设备、服务与网络的智能化都将是未来的必然趋势。智能感知与交互研究部的成立，标志着OPPO对人工智能前沿科技探索的进一步深化，并将大力推动OPPO在智能感知及交互这两项核心领域的研发工作。
+重视人工智能研发，OPPO夯实技术领先地位
+自2015年起，OPPO就开始在人工智能领域投入研究，并成立了相关研发团队，主要关注语音语义、计算机视觉等领域，也屡次获得国内外权威竞赛的奖项肯定。同时，OPPO一直积极进行相关专利布局，截至2020年3月，OPPO在人工智能领域的全球专利申请已超过1,900件。
+OPPO创始人兼首席执行官陈明永曾在2019年OPPO未来科技大会上表示，未来三年将投入500亿人民币研发预算，推进5G、人工智能、AR、大数据等核心技术的研究，并构建底层硬件核心技术以及软件工程和系统能力。面向万物互融的未来，人工智能领域将是OPPO一如既往关注的研发重点，而基于这些前沿科技领域不断的研发投入，OPPO也将持续展开多智能终端生态的全方位布局。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-06-17 11:01:58,同花顺
+46,冀南钢铁集团文丰钢铁退城进园系统工程设计合同签订,"6月15日，中冶华天与冀南钢铁集团正式签订文丰钢铁退城进园系统工程设计合同。该项目是继2019年冀南钢铁集团华信高炉设计项目合作后，中冶华天与冀南钢铁集团战略合作、协同发展提升到新高度的历史见证。
+冀南钢铁集团文丰钢铁退城进园项目是《河北省钢铁产业结构调整方案》的退城进园重点项目之一，中冶华天主要承担该项目总体设计和烧结、炼铁、炼钢等主体工程设计。
+冀南钢铁退城进园项目
+总投资134亿元，主要建设1260立方米高炉2座、110吨转炉2座，炼铁产能232万吨、炼钢产能270万吨，通过实施该项目，完成文丰钢铁公司退城进园，主要生产热轧卷板、冷轧薄板。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：jdm",2020-06-17 11:01:11,同花顺

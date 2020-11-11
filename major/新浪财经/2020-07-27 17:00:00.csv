@@ -1,0 +1,288 @@
+,title,content,pub_time,src
+0,富春环保：控股股东转让股份 南昌市国资委将成实控人,"新浪财经讯 7月27日消息，富春环保晚间公告，控股股东通信集团与南昌水利投资发展有限公司（南昌水投）全资子公司水天集团，于7月27日签订股份转让协议，通信集团拟向水天集团转让所持有的公司1.77亿股，占公司总股本的19.94%，转让价款合计15.6亿元，转让价格为8.8元/股。交易完成后，水天集团将持有公司19.94%股份，成为公司控股股东，南昌市国资委成为公司的实际控制人。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：张熠",2020-07-27 17:55:07,新浪财经
+1,哈高科：公司中文名称拟变更为“湘财股份有限公司”,"新浪财经讯 7月27日消息，哈高科晚间公告，公司中文名称拟变更为“湘财股份有限公司”，本次重大资产重组完成后，湘财证券营业收入及资产规模占公司整体营业收入及资产规模的比重均超过70%，公司主营业务转型金融服务业。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：张熠",2020-07-27 17:54:39,新浪财经
+2,日海智能：公司实控人拟变更为珠海市国资委,"新浪财经讯 7月27日消息，日海智能晚间公告，控股股东润达泰与珠海九洲于7月27日签署《投票表决权委托协议》，润达泰将其持有公司13.32%股份所对应的表决权无条件且不可撤销地委托给珠海九洲行使。投票表决权委托生效后，珠海九洲将成为公司单一拥有表决权份额最大的股东，公司实际控制人将变更为珠海市国资委。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：张熠",2020-07-27 17:39:32,新浪财经
+3,美的集团：启动分拆子公司美智光电创业板上市前期筹备工作,"新浪财经讯 7月27日消息，美的集团晚间公告，为进一步推动美智光电业务增长，规范治理运作以及拓宽融资渠道，依据A股上市公司分拆所属子公司境内上市的相关规定，结合美智光电自身所属行业、主营业务情况及未来经营规划与发展战略，公司董事会授权公司经营层启动分拆美智光电创业板上市的前期筹备工作。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：张熠",2020-07-27 17:37:29,新浪财经
+4,世纪华通：获林芝腾讯举牌 持股比例达5%,"新浪财经讯 7月27日消息，世纪华通晚间公告，7月27日，林芝腾讯通过大宗交易增持公司股份1792万股，占股本总额的0.24%。本次权益变动前后，林芝腾讯持股比例上升至5%。林芝腾讯不排除在未来12个月内继续增持上市公司股份的计划。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：张熠",2020-07-27 17:35:51,新浪财经
+5,天际股份：控股股东持有公司部分股份被强制平仓,"新浪财经讯 7月27日消息，天际股份晚间公告，公司控股股东汕头天际质押给中信建投的部分公司股票被强制平仓导致被动减持。截至7月27日，中信建投已强制平仓266万股，占公司总股本的0.66%，剩余136万股尚未被强制平仓。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：张熠",2020-07-27 17:31:51,新浪财经
+6,2分钟读财报|贝壳赴美IPO:年成交总额2万亿，3年亏31亿,"视频加载中，请稍候...
+自动播放
+(image_address=""//n.sinaimg.cn/front20200727ac/72/w720h952/20200727/9ad8-iwxpesx3257759.jpg"")
+play
+视频|贝壳找房
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 345409547,
+pid:1,
+url: 'https://video.sina.com.cn/p/finance/2020-07-27/detail-iivhuipn5364292.d.html',
+title:'视频|贝壳找房'//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=345409547/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+近日包含链家、德佑，以及金融、装修等业务的贝壳提交了招股书，正式赴美上市。作为国内最大的居住服务商，贝壳2019年成交总额达2.13万亿元，依靠佣金也获得了460亿元收入。
+但是近三年贝壳始终未能实现盈利，累计亏损31.46亿元，所以贝壳IPO希望“补血”10亿美元。
+资料显示，链家创始人左晖个人持有贝壳28.9%股权，投票权为46.8%，加上其他管理层的持股牢牢控制着贝壳。同时腾讯持股为12.3%为第二大股东；软银持股10.2%，高瓴资本持股5.3%。
+商业模式正确、市场广阔的贝壳找房消费者层面口碑一直不佳，业务涉及的二手房、新房、租房、装修等多方面容易成为投诉重灾区。
+2分钟读财报|千万豪宅被拍卖 甘薇已被限制出境
+2分钟读财报|1825亿解禁潮来袭，科创板短期值得投资吗？
+2分钟读财报|立讯精密半年股价翻倍 实控人一举减持70亿
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：常福强",2020-07-27 17:27:39,新浪财经
+7,新亚制程：持股6.57%的股东沈培今所持股份将被司法拍卖,"新浪财经讯 7月27日消息，新亚制程晚间公告，持股6.57%股东沈培今持有的限售流通股份3308万股（占公司总股本的6.57%）将被司法拍卖。本次拍卖不会导致公司控股股东和实际控制人发生变化。深圳市福田区人民法院将于2020年8月25日10时至2020年8月26日10时止（延时除外）在广东省深圳市福田区人民法院京东司法拍卖网络平台上将其股份进行拍卖。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：张熠",2020-07-27 17:09:22,新浪财经
+8,九强生物：持股5%以上股东程辉拟减持不超1%股份,"新浪财经讯 7月27日消息，九强生物公告，持股5%以上股东程辉计划十五个交易日后的六个月内减持不超497万股，占公司有表决权股份比例1%。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：逯文云",2020-07-27 17:04:35,新浪财经
+9,上半年净利同比增9.7%、启动子公司分拆上市 3000亿海康威视涨停,"【券商直播间】
+太平洋证券肖垚：下半年家电行业配置思路解读
+掘金大消费|暖风徐至，气象一新——长江社服2020年度中期投资策略
+天风证券郭丽丽：污水资源化如何开启千亿市场规模？
+掘金大消费| 反转与双击——长江家电2020年度中期投资策略
+【基金直播间】
+银河基金陈伯祯：投资为什么要有龙头配置思维？
+海通荀玉根、中加李坤元：大变局时期的中国机遇——聚焦优势企业
+华泰张馨元、招商苏燕青：A股科技创新生态及未来走势展望
+融通基金彭炜：市场板块快速轮动，如何把握投资机会？
+东吴证券曾朵红、朱国广、金鹰基金陈立：内需成长双赛道，纵论投资攻守道
+原标题：分拆上市！3000亿科技龙头股，涨停了
+中国基金报记者 李智
+近日，“安防龙头”海康威视（002415）公布了2020年半年度报告，公司实现营业收入242.71亿元，净利润46.24亿元。另外，海康威视还表示已启动智能家居业务的分拆上市筹备工作。
+受上述消息影响，今日开盘海康威视高开高走，截至午间收盘涨停，报36.99元，成交额42.5亿元，换手率1.44%，最新总市值3457亿元。
+(image_address=""//n.sinaimg.cn/spider2020727/236/w828h1008/20200727/148c-iwxpesx3132139.jpg"")
+在海康威视所处的电子元件行业，截至发稿，安居宝、振华科技、雷赛智能、飞天诚信等纷纷涨停，另外惠伦晶体、恒宝股份等跟涨。
+上半年归母净利润同比增长9.7%
+前端产品仍为“主力军”
+海康威视是领先的视频产品和内容服务提供商，面向全球提供领先的视频产品、专业的行业解决方案与内容服务。
+7月25日，海康威视发布2020年半年度报告，报告期内，公司实现营业收入242.71亿元，比上年同期增长1.45%；实现归属于上市公司股东的净利润46.24亿元，比上年同期增长9.66%。同时，海康威视上半年销售毛利率为49.76%，比上年同期提高3.43个百分点。
+据悉，海康威视包括传统业务和创新业务两大部分。其销售毛利率的上升主要与其主营支柱前端产品有关。
+支撑着海康威视半壁江山的前端产品营收占比在走高，盈利能力也更强了。前端产品上半年实现营收121.25亿元，同比增长6.37%，营收占比49.96%，去年同期营收占比为47.65%。前端产品的毛利率也同比增加8.55%至60.18%。
+同时，后端产品营收下降24.76%，拖累了业绩，营收占比由去年同期的13.36%降至今年上半年的9.91%。
+(image_address=""//n.sinaimg.cn/spider2020727/728/w1033h495/20200727/179b-iwxpesx3132205.png"")
+从股价表现来看，海康威视年内表现可谓是大起大落。截至7月27日午间收盘，海康威视累计上涨15.84%，市值增长超195亿元。
+(image_address=""//n.sinaimg.cn/spider2020727/559/w893h466/20200727/021b-iwxpesx3132204.png"")
+分拆上市筹备工作已启动
+创新业务布局多年
+相比其业绩表现，海康威视抛出的分拆子公司境内上市的公告更引人关注。
+早在4月份，海康威视便公告显示，公司拟分拆杭州萤石网络有限公司（下称“萤石网络”）至深交所上市。
+(image_address=""//n.sinaimg.cn/spider2020727/669/w879h590/20200727/549a-iwxpesx3132296.png"")
+从股权结构来看，海康威视持有萤石网络60%股权，杭州海康威视股权投资合伙企业（有限合伙）持有萤石网络40%股权。跟投合伙企业是海康威视实施核心员工跟投创新业务的平台，代表公司员工出资跟投创新业务子公司。
+(image_address=""//n.sinaimg.cn/spider2020727/88/w1080h608/20200727/f0a6-iwxpesx3132298.png"")
+半年报中，海康威视表示公司启动智能家居业务的分拆上市筹备工作，机器人、汽车电子、智慧存储、海康微影等业务持续快速发展，海康消防、海康睿影等新创业务加入创新业务板块，创新业务的发展梯队逐渐形成，传统业务与创新业务协同发展，为公司成长打开新的空间。
+不过，智能家居业务其实在海康威视的业务板块中营收占比并不高。半年报显示，智能家居业务实现营业收入11.79亿元，同比增长3.52%，营收占比4.86%。这一业务在2019年发展优于今年，去年营收同比增长高达58.38%。
+智能家居业务的毛利率为37.11%，在海康威视各产品业务中属于中低水平，低于整体毛利率12.65个百分点。
+(image_address=""//n.sinaimg.cn/spider2020727/769/w1080h489/20200727/685a-iwxpesx3132388.png"")
+海康威视还在不断加码创新业务，7月24日，海康威视还发布了两则大力支持创新业务发展的消息，其中包括拟向海康机器人提供不超过10亿元的财务资助，拟以8.01亿元转让热成像事业部资产组予创新业务控股子公司等。
+东方证券称，海康威视的智能家居业务受疫情影响增速仅4%，达到11.8亿元，公司已启动分拆上市筹备工作。海康安检、智慧存储等业务持续快速发展，海康消防、海康睿影等新创业务加入创新业务板块。公司将以8亿元将热成像事业部转让给创新业务子公司海康微影，以实现两方面业务的协同发展。
+海康威视备受机构青睐
+从股东层面看，海康威视前十大流通股东中，第二季度只有香港中央结算有限公司（陆股通）增持海康威视5831.41万股，持股比例增加0.62%至5.95%。中信证券也有所增持作为公司第七大流通股东。同时高华-汇丰-GOLDMAN.SACHS &CO.LLC（高盛集团）新进并持股0.49%成为公司第九大流通股东、第十大股东。
+北上资金二季度增持5831万股海康威视，期末持股比例为5.95%，依然为海康威视第三大股东；中信证券增持779万股，期末持股比例为1.10%，依然为海天威视第八大股东。
+与此同时，还有多只基金重仓持股海康威视。Wind数据显示，截至二季度末，共有54家基金公司的163只基金持有海康威视，持股总数量为39026.45万股，较第一季度共减持6687.54万股，持股总市值118.45亿元。
+具体来看，东方证券持股数量最多，共1.54亿股，持股占流通股比1.91%，持股市值为46.82亿元。另外博时基金、富国基金、景顺长城等均持股超3000万股。从持仓变动来看，景顺长城的二季度增持最多为2714万股；而汇添富减持最多，二季度持股减少4203万股，目前仅持有378万股。
+(image_address=""//n.sinaimg.cn/spider20200727/682/w943h539/20200727/39db-iwxpesx3133860.png"")
+在机构评级方面，近半年内，18家券商给予海康威视买入建议，2家券商给予增持建议。
+国元证券表示，作为全球安防龙头，公司在技术、产品与解决方案等方面拥有全面优势，2020年市场的不确定性依然存在，但认为整体需求空间没有大的变化，公司仍有望保持稳健发展。
+华泰证券表示，公司毛利率再度提升，经营性现金流显著改善。另外，企业数字化需求和投入带动EBG实现高增长，创新业务蒸蒸日上。以视频为核心的智能物联网解决方案和大数据服务提供商，看好公司作为国内领先的智能物联网解决方案和大数据服务提供商在5GIoT时代的成长潜力。
+分拆上市潮下个股涨跌互现
+2019年12月13日，证监会正式发布《上市公司分拆所属子公司境内上市试点若干规定》。这一制度落地后，掀起了上市公司分拆上市潮。
+近日，融创中国传出其正在考虑分拆物业管理板块——融创服务赴港上市的消息，募资额或为10亿美元。
+7月21日，叶氏化工集团（00408.HK）发布公告表示，受限于若干条件，公司建议寻求洋紫荆浙江（于该公告日期为公司间接拥有91.76%的附属公司）的A股于深圳证券交易所独立上市。
+7月17日，水晶光电（002273.SZ）表示拟分拆夜视丽境内上市。
+7月15日，创维集团发布公告称，建议分拆非全资附属公司深圳市酷开网络科技有限公司之业务，并于联交所或包括深圳证券交易所的其他交易所独立上市事宜向联交所提交分拆申请。
+而诸如此类的分拆上市热潮还在继续……
+根据资本邦不完全统计，截至目前，今年至少有23家香港上市公司展开了分拆子公司上市的行动，其中有5家子公司已成功完成上市。分拆上市的地点也更多了，除了港交所本身外，不少去A股（主板、创业板和科创板），部分公司也会选择美国纳斯达克、印度、泰国等其他海外证券交易所。
+(image_address=""//n.sinaimg.cn/spider20200727/232/w749h1083/20200727/be40-iwxpesx3134079.png"")
+从上述个股披露分拆子公司上市预案后的股价走势来看，个股涨跌互现，难言分拆上市对公司估值的影响。所以，对于“安防龙头”海康威视来说，分拆上市后的表现还需投资者拭目以待。
+“
+]article_adlist-->Chinafundnews
+长按识别二维码，关注中国基金报
+版权声明：
+《中国基金报》对本平台所刊载的原创内容享有著作权，未经授权禁止转载，否则将追究法律责任。
+授权转载合作联系人：于先生（电话：0755-82468670）
+万水千山总是情，点个 “在看” 行不行！！！
+]article_adlist-->
+免责声明：自媒体综合提供的内容均源自自媒体，版权归原作者所有，转载请联系原作者并获许可。文章观点仅代表作者本人，不代表新浪立场。若内容涉及投资建议，仅供参考勿作为投资依据。投资有风险，入市需谨慎。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：逯文云",2020-07-27 17:02:49,新浪财经
