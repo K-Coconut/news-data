@@ -1,0 +1,189 @@
+,title,content,pub_time,src
+0,《大鳄之门》将上映：改编自银广夏和太平洋证券上市事件,"视频加载中，请稍候...
+自动播放
+(image_address=""//n.sinaimg.cn/front20200925ac/400/w1280h720/20200925/656b-izrvxmf6633551.jpg"")
+play
+财经影业股市揭黑力作《大鳄之门》即将上映
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 354305468,
+pid:1,
+url: 'https://video.sina.com.cn/p/finance/2020-09-25/detail-iivhvpwy8778613.d.html',
+title:'财经影业股市揭黑力作《大鳄之门》即将上映'//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=354305468/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+财经影业首部影片《大鳄之门》历经四年创作，即将与观众见面。
+影片改编自股市发生的真实事件，主要情节来自2001年《财经》杂志报道“银广夏陷阱”和2008年《证券市场周刊》报道“太平洋证券上市路径”。银广夏事件中，业绩骄人的“中国第一蓝筹股”被爆财务造假，多少股民血本无归；而“太平洋证券上市”合法性的研究，足可管窥资本市场“大鳄与公权部门中的利益中人”相互勾结、以所谓创新方式巧妙套取社会财富的冰山一角，其后利益中人更制造出建国以来首例也是唯一一例“绑架记者案”，将涉及股市的犯罪行为推向极致。
+(image_address=""//n.sinaimg.cn/spider2020925/95/w1080h1415/20200925/c3a5-izrvxmf6481047.jpg"")
+在世界电影范畴中，不乏表现坚持正义的媒体或个人与猖獗一时的黑恶势力殊死搏斗的类型片，如《永不妥协》、《真相》、《聚焦》、《真相至上》、《华盛顿邮报》等，这些影片受到不同阶层、不同年龄段观众好评，同时也在各大电影节斩获无数奖项。遗憾的是类似题材在中国大陆电影创作中一直空白，这也是中国影视创作人难以触及的一类电影题材。
+财经影业是联办旗下的影视投资公司，专注财经题材的影视作品创作与投资。作为中国资本市场的最早参与者之一，财经影业希望通过视觉产品见证资本市场30年来的跌宕起伏。导演叶大鹰被女主编的日记所感动，决心把这个故事搬上银幕。他反复采访当事人、集团领导及办案警官，剧本修改了九十多稿，最终，完成了中国大陆第一部关于揭露股市骗局的大银幕电影。
+电影取材于一个女主编被绑架的真实故事。从媒体人的角度观察中国资本市场制度建设的艰难过程，诠释这类案件的典型性，以及监管、司法打击股市黑幕的坚决性，在中国大陆尚属首创。叶大鹰表示，《大鳄之门》不仅是一部向媒体人致敬的影片，更是一部揭露真相的影片，一部绝不向黑恶势力妥协的影片。
+《大鳄之门》先导预告片
+2020是中国资本市场的而立之年。从1990年上海证券交易所挂牌开始，中国资本市场不断跨越式发展，在制度化、市场化、法治化的道路上不断迈进。然而银广夏与太平洋证券事件多年之后，中国上市公司仍时而爆出财务造假丑闻，造成恶劣公众舆论和负面国际评价。《大鳄之门》的破题，既是从人性的深处探究善良与贪婪的边界，也是从多个维度反映资本市场存在的问题，探求解决问题之路，镜鉴历史，方能砥砺前行。
+谨以此片向中国资本市场成立三十年致敬！
+扫二维码 3分钟开户 稳抓股市回调良机！
+(image_address=""//n.sinaimg.cn/finance/512/w256h256/20200807/333c-ixkvvuc9099771.png"")
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陈悠然 SF104",2020-09-25 14:40:44,新浪财经

@@ -1,0 +1,261 @@
+,title,content,pub_time,src
+0,安琪酵母：前三季度净利预增50%到55%,"10月12日消息，安琪酵母（600298）10月12日晚发布业绩预告，预计前三季度净利润在9.98亿元和10.32亿元之间，同比增加50%到55%。预计公司主营业务收入同比增长15%-16%，主要原因是公司家庭消费业务、电商业务增长迅速；下游衍生品中YE、动物营养、微生物营业、酿造、酶制剂等业务保持良好的增长态势。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陈志杰",2020-10-12 15:55:25,新浪财经
+1,5G格局巨变？中国第4大运营商中国广电来了 这些股嗨了（名单）,"视频加载中，请稍候...
+自动播放
+(image_address=""//p.ivideo.sina.com.cn/video/356/771/296/356771296_220_124.jpg"")
+play
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 356771296,
+pid:1,
+url: 'https://finance.sina.com.cn/wm/2020-10-12/doc-iivhuipp9219385.shtml',
+title:''//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=356771296/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+今日直播：
+嘉实基金胡永青：理财圈网红“固收+”是什么？
+华夏基金张帆：新一轮科技周期开启 把握科技股投资机遇
+嘉实基金交易两点钟：理财真心话，买基金要注意什么？
+南方基金骆帅：如何看待四季度市场？怎样精选行业？
+国投瑞银基金：揭开风险管理的神秘面纱
+原标题：5G格局巨变？中国第4大运营商来了！刚成立就是千亿巨无霸，阿里华为助力！这些股嗨了
+导读：注册资本高达1012亿元，中国广电网络股份有限公司正式在京成立，成为国内第四大运营商。将发行192号段的手机号码，除了5G业务外，也有望推出4G业务。
+10月12日，中国广电网络股份有限公司正式在京成立，成为国内第四大运营商。
+此前，2019年6月6日，工信部正式发布4张5G牌照，宣布我国正式进入5G时代。除中国移动、中国联通、中国电信三家运营商外，当时中国广电也正式入局拿到了5G牌照。
+5G192号段快来了！
+据北京日报，后续中国广电将发行192号段的手机号码。据了解，通过与中国移动签约实现基站共建共享，中国广电的运营商业务将实现较高的起点。今后，中国广电的手机用户除了可以使用广电自建的5G基站，还将可以共享使用移动的基站。据透露，后续中国广电除了5G业务外，预计也有望推出4G业务。
+为了加速自己的5G网络建设步伐，今年中国广电已经与中国移动签署协议，将开展5G共建共享以及内容和平台合作，共同打造“网络+内容”生态。在5G合作方面，双方将保持各自品牌和运营独立，但共同探索产品、运营的模式创新，开展内容、平台、渠道、客户服务的深入合作。
+此外，中国广电还联合华为在北京成功开通了全国首个基于700M的 2×30M频谱带宽的5G基站，可实现超300Mbps的5G网络下行速度。
+这些股嗨了
+机构认为中国广电目前已具备了快速推进5G建设的全部条件，未来广电系5G业务商业化有望加速，行业业绩体量将大幅提高，相关上市公司有望迎来基本面的持续改善。
+受该消息影响，广电系公司股价10月12日迎来普涨。截至收盘，歌华有线涨8.82%至13.08元/股。
+(image_address=""//n.sinaimg.cn/sinakd20201012s/110/w828h882/20201012/30c4-kakmcxe1500407.jpg"")
+(image_address=""//n.sinaimg.cn/sinakd20201012s/282/w828h1054/20201012/bb18-kakmcxe1500466.jpg"")
+注册资本1012亿
+11家A股公司参与组建
+今年9月25日，中国广电网络股份有限公司完成工商注册，领取营业执照，注册资本1012亿元。这一注册资本规模甚至超过了中国联通，位列运营商中的第三。
+股权结构方面，8月26日晚间，歌华有线（600037.SH）、电广传媒（000917.SZ）、东方明珠（600637.SH）等11家广电系上市公司集体发布公告称，将出资参与组建中国广电网络股份有限公司，同时还披露了出资持股情况。
+前五大股东包括中国广播电视网络有限公司、国网信通（600131.SH）、阿里创投、广东广电、北广传媒，其中国网信通和阿里创投均出资100亿元，持股9.8813%，并列中国广电网络第二大股东。
+(image_address=""//n.sinaimg.cn/sinakd20201012s/619/w384h235/20201012/7aab-kakmcxe1500555.jpg"")
+参与组建的11家A股公司如下：
+(image_address=""//n.sinaimg.cn/sinakd20201012s/478/w769h509/20201012/c3df-kakmcxe1500556.jpg"")
+在中国广电网络股份有限公司的股东中，除了中国广播电视网络有限公司、北京北广传媒投资发展中心有限公司、江苏省广电有线信息网络股份有限公司、天津广播电视台、湖南电广传播股份有限公司等传统广电系的资本，还包括了除阿里创投外的国网信息通信产业集团有限公司、深圳市招商局科技投资有限公司、酒泉钢铁（集团）有限责任公司等非广电系资本。换言之，中国广电刚刚面市就已经具有了混改的基因。
+中国广电副总经理吕建杰此前透露，明年开始中国广电才会启动对上市公司的合并，而这一过程存在两大可能：一是用广电股份公司作为上市平台，但前提是要把中国广电认缴的51%实缴到位，之后才能启动IPO；二是将歌华有线作为上市平台。吕建杰强调，只有等到将上市公司全部“吸收”合并完成后，“全国一网”在资本层面上的整合才算画下一个句号。
+能追上三大运营商吗
+虽然中国广电亮相伊始就有了千亿家底，是一家全国性大型运营商，但追赶的道路无疑也是路漫漫其修远兮。工信部数据显示，截至今年8月末，三大运营商的移动电话用户总数已高达15.98亿户。
+据北京日报，当日通信产业专家、融合网创始人吴纯勇表示，中国广电的成立对于已分散经营及发展数十年之久的全国有线电视网络来说是一个重要的里程碑，中国广电借助这次5G发展的重大机遇预计能快速形成产业链，也势必会对现有的中国5G市场格局产生重大影响。
+本期编辑黎雨桐
+(image_address=""https://mmbiz.qpic.cn/mmbiz_jpg/kw2nrMk65sdN7OWOhKQnmQuYv91YCWViaguJqHlp2R9vunCkf7npYC1ttFDrDvCWoGxsGjMOXE3c6CozYovHE0A/640?wx_fmt=jpeg"")
+]article_adlist-->
+沸腾了！中央赋予深圳两大使命，这类人才迎重大利好！
+重磅官宣！华为Mate 40要来了，搭载“绝版”麒麟芯片！iPhone 12也要来了，买哪个？
+雷军“踩雷”？小米副总裁被判赔联想525万违约金，当事人怒提诉讼！曾因低俗营销道歉
+]article_adlist-->
+]article_adlist-->
+扫二维码 3分钟开户 紧抓股市暴涨行情！
+(image_address=""//n.sinaimg.cn/finance/512/w256h256/20200807/333c-ixkvvuc9099771.png"")
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：逯文云",2020-10-12 15:54:11,新浪财经
+2,通富微电：前三季度预盈2.51亿元至3.11亿元 同比扭亏,"10月12日消息，通富微电（002156）10月12日晚间披露前三季度业绩预告，预盈2.51亿元至3.11亿元，同比扭亏。公司2020年第三季度继续保持上半年经营增长趋势，随着经济内循环的发力，国内客户订单明显增加；国际大客户利用制程优势进一步扩大市场占有率，订单需求增长强劲；海外大客户通讯产品需求旺盛，订单饱满。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：逯文云",2020-10-12 15:51:06,新浪财经
+3,汇顶科技：大基金累计减持1%股份 完成减持计划,"10月12日消息，汇顶科技（603160）10月12日晚公告，国家集成电路产业投资基金（大基金）8月3日至10月9日累计减持1%公司股份。截至公告披露日，大基金减持数量已完成，此次减持计划已实施完毕。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：逯文云",2020-10-12 15:39:23,新浪财经
+4,上汽集团：9月份销量同比增长9.5%,"10月12日消息，上汽集团（600104）10月12日晚公告，9月份销量为60.23万辆，同比增长9.5%。1-9月累计销量为361万辆，同比下降18.14%。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陈志杰",2020-10-12 15:37:56,新浪财经
+5,白酒股大放异彩:双节销售超预期 机构预计高端酒三季报双位数增长,"今日直播：
+嘉实基金胡永青：理财圈网红“固收+”是什么？
+华夏基金张帆：新一轮科技周期开启 把握科技股投资机遇
+嘉实基金交易两点钟：理财真心话，买基金要注意什么？
+南方基金骆帅：如何看待四季度市场？怎样精选行业？
+国投瑞银基金：揭开风险管理的神秘面纱
+原标题：白酒股大放异彩，双节销售超预期，机构预计高端酒三季报双位数增长
+来源：财联社
+财联社10月12日讯，今日白酒板块表现亮眼，大涨逾4%。截至发稿，酒鬼酒涨停，洋河股份、今世缘、山西汾酒、五粮液涨超5%。
+(image_address=""//n.sinaimg.cn/finance/crawl/768/w430h338/20201012/06aa-kakmcxe1384100.png"")
+盘面上，今日北向资金开启扫货模式，大幅流入逾100亿元，消费白马股表现亮眼。
+双节旺季白酒消费需求明显回暖 茅台批价坚挺
+“双节”黄金周期间，白酒销售整体超预期，数据显示，10月1日苏宁易购白酒销售量同比增长超过150%。京东超市消费大数据则显示，黄金周期间，白酒礼盒类产品的销量达到去年同期的5倍以上。
+需求回暖之际，高端白酒价格也相当坚挺。茅台批价出现上涨，20年飞天茅台批价2730-2765元左右，飞天散瓶在2390-2460元左右。
+另一方面，白酒企业对今年业绩也是志在必得。近日，五粮液召开重点工作推进会，全面打响“旺季攻势”。五粮液董事长曾从钦提出，加大回款和动销，务必完成全年目标任务100亿。
+机构分析，白酒销售回暖背后，驱动力主要是来自于宴席快速恢复，婚宴喜宴、亲友聚会等场景显著增加，尤其在低线城市更为明显。
+机构：高端酒三季报双位数增长
+中泰证券范劲松（金麒麟分析师）预计，高端酒三季报普遍有双位数增长，且报表端与实际发货较为匹配；二三线酒由于仍有库存去化压力，因此三季报报表增速将慢于实际动销，预计增长中枢在10%-15%左右。
+据中泰证券范劲松梳理，山西汾酒三季度收入增速、净利增速排在各白酒企业首位。考虑其中秋旺季加大投入抢占份额，预计其三季度收入和利润有望取得 25%和 22%的增长。
+(image_address=""//n.sinaimg.cn/finance/crawl/745/w550h195/20201012/6255-kakmcxe1384129.png"")
+展望四季度，国内消费氛围已基本恢复，中泰证券范劲松预计，白酒动销仍将维持良性势头，且按照往年经验在淡季控量之下名酒价格有进一步上行动力，继续看好高端酒淡季价格表现。标的方面，继续重点推荐茅台、五粮液、老窖、古井、今世缘，关注口子窖、洋河股份等公司改善机会。
+扫二维码 3分钟开户 紧抓股市暴涨行情！
+(image_address=""//n.sinaimg.cn/finance/512/w256h256/20200807/333c-ixkvvuc9099771.png"")
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：逯文云",2020-10-12 15:14:07,新浪财经

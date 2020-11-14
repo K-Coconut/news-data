@@ -1,0 +1,188 @@
+,title,content,pub_time,src
+0,华夏幸福半年报：现金流稳健积极拿地 “双城驱动”布局,"视频加载中，请稍候...
+自动播放
+(image_address=""//n.sinaimg.cn/front20200831ac/380/w540h640/20200831/837c-iypetiu8995908.jpg"")
+play
+华夏幸福有logo高清
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 350235266,
+pid:1,
+url: 'https://video.sina.com.cn/p/finance/2020-08-31/detail-iivhvpwy4046308.d.html',
+title:'华夏幸福有logo高清'//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=350235266/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+虽受疫情影响，华夏幸福依然乘风破浪。
+半年报显示华夏幸福杠杆率持续下行，现金流逐步转好。其中上半年公司资产负债率为83.1%，同比下降5个百分点；随着回款力度加大、其他支出严控，公司经营性现金流持续优化。
+现金流持续改善的同时，华夏幸福没有减少拿地规模。华夏幸福2020年逆市投资，上半年新增土储成交金额达到241.52亿元，同比增长96%，拿地能级明显提升，有利于保障企业两年后的利润增长。
+在业务端华夏幸福的产业新城异地复制推进顺利。上半年华夏幸福产业新城新增签约投资额624.6亿元，引入企业176家，平均新签约投资额同比增长10.7%。其中环京之外成绩显著，积极推进高端医药、新能源汽车等诸多产业链布局，上半年引进了特斯拉核心供应商蓝光科技、浙江泰嘉光电超薄玻璃基板深加工项目、施耐德全球供应商瑞奥电气、欧菲光等多个百亿级项目。
+环京之外都市圈的持续布局优化了财务结构，半年报资料显示华夏幸福环京之外收入占比显著提升，达到62.4%；这表明华夏幸福的产业新城模式已摆脱环京区域的地域限制，展现了强大的异地复制、发展能力。
+另一业务支点商业地产方面，华夏幸福立足轻资产方式，上半年首个轻资产落地项目平安幸福中心A座主体结构封顶，成为北京丽泽金融商务区今年实现封顶的首个大型项目；武汉长江中心项目正式动工，意味着华夏幸福新业务发展在开拓“新模式、新领域、新地域”的战略创新道路上更进一步；中标招商银行全球总部大厦项目代建服务，布局深圳湾超级总部基地，开启轻资产运营管理模式华南首秀。
+亮眼的业绩支撑，华夏幸福也受到了资本市场的认可。资料显示华夏幸福上榜《福布斯》“2020全球企业2000强榜单”，位居第473位，比2019年上升71个名次；同时主流券商纷纷给予“买入”评级，看好未来长线价值的释放。
+2分钟读财报|葵花药业实控人：杀妻判11年 泄密致内幕交易
+2分钟读财报|49岁新董事长疑性侵女秘书 ST金花“黑天鹅”不断
+2分钟读财报|博纳再闯A股：黄晓明章子怡持股 净利预降4成
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：常福强",2020-08-31 12:51:14,新浪财经

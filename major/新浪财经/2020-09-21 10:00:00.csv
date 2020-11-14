@@ -1,0 +1,223 @@
+,title,content,pub_time,src
+0,"联想再回应""常程跳槽小米"":已付竞业限制股权对价500余万 须偿还","视频加载中，请稍候...
+自动播放
+(image_address=""//p2.ivideo.sina.com.cn/video/352/993/559/352993559_400_300.jpg"")
+play
+联想再回应常程跳槽小米：限制协议确系常程签字
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 352993559,
+pid:1,
+url: '',
+title:'联想再回应常程跳槽小米：限制协议确系常程签字'//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=352993559/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+针对“前联想副总裁常程跳槽小米”一事，联想集团今日再次回应称，自2017年限制性协议签署之日起，在常程离职前24个月内，联想共计向常程支付了竞业限制的股权对价500余万元。常程离职后，联想亦向其支付了竞业限制经济补偿。联想集团表示，目前，联想已向仲裁庭要求常程返还股权激励金额、支付违反竞业限制义务违约金、并继续履行竞业限制义务。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：薛永玮",2020-09-21 10:21:34,新浪财经
+1,国联证券、国金证券官宣“联姻” 券商股阶段性上涨行情有望开启,"今日直播
+富国绝对收益多策略基金经理于鹏：尊重市场，追求健康的绝对收益
+嘉实基金陈正宪、嘉实基金滕抒含：顺周期复古风能走多久？
+广发基金夏浩洋：滚动的经济，汽车板块投资价值分析。
+贝莱德中国陆文杰、华泰柏瑞基金柳军、华泰证券李晶：A股后市投资机遇、科创医药消费主题、如何配置指数基金
+万家基金莫海波、广发证券陈子坤：如何把握新能源车产业链的投资主线
+原标题：国联证券、国金证券官宣“联姻” ，券商股阶段性上涨行情有望开启
+9月21日开盘，券商股表现活跃，截至发稿，A股市场上，浙商证券涨停，哈高科逼近涨停，第一创业、财通证券、中泰证券、中信建投、中银证券集体高开。港股方面，国联证券港股开盘涨超75%，中资券商股集体走强，中信建投涨逾4%，招商证券涨逾3%。
+(image_address=""//n.sinaimg.cn/sinakd2020921s/743/w389h354/20200921/d505-izmihnt7571405.png"")
+消息面上，昨日，国金证券、国联证券双双公告称，国金证券控股股东长沙涌金与国联证券已于2020年9月18日签署股份转让意向性协议，长沙涌金拟通过协议转让方式将其持有的约7.82%的国金证券股份转让给国联证券。同时，两家公司正在筹划由国联证券向国金证券全体股东发行A股股票的方式换股吸收合并国金证券。双方股票自9月21日起停牌，预计停牌时间不超过10个交易日。
+半年报显示，截至上半年，国金证券总资产为653.58亿元，营业收入28.96亿元；国联证券总资产为369.32亿元，营业收入8.22亿元。
+开源证券表示，券商行业并购趋势得到强化，主题性投资机会增加监管已明确表态鼓励券商市场化合并，国联证券和国金证券合并后，两家公司将实现业务与区域互补，带来“1+1 大于2”的效应，进一步向头部券商靠齐。金融控股公司监管管理办法落地，金控公司监管趋严，后续或有更多金融牌照进行重组、合并，证券行业主题性投资机会增多，维持行业“看好”评级，建议关注国金证券，东方财富；受益标的：中信证券、华泰证券。
+华金证券认为，国联吸收合并国金事件，释放的信号更加强烈，今年以来关于行业合并的传闻不绝于耳，此次重启并购预期，进一步打开行业的想象空间，有望开启阶段性上涨行情。资本市场深改中，头部券商竞争力更强，更容易获取制度红利，依次推荐中信证券、国泰君安、华泰证券、东方财富。
+渤海证券指出，中小券商的横向合并是打造成航母级券商的有效路径，在降低同业竞争的同时有助于实现客户、资源的整合，提升运营效率，进一步助推我国证券行业做大做强。券商板块上涨的驱动因素主要包括资本市场改革、流动性以及A股市场上涨带动的β属性，在资本市场深化改革进程中，以上因素都将得到兑现。政策面上，监管层继续推进资本市场全面改革深化，未来政策利好将延续，拓宽券商业务空间；基本面上，监管宽松周期下券商业绩继续保持高增长，盈利能力改善支撑估值中枢上移。维持对行业的长期看好，龙头券商凭借雄厚的资本实力和风控能力，在资本市场深化改革“扶优限劣”的政策倾斜下将最直接受益。建议关注优质龙头券商的投资价值，推荐中信证券、华泰证券。
+华创证券表示，政策的持续向好、风险偏好的改善、以及市场交投活跃利好经纪和自营业务都是券商行情持续演绎的核心催化要素，新证券法和诸多配套的利好政策出台落地，行业基本面有望不断优化，有利于券商的持续发展。我们维持对行业的长期看好，继续推荐中信证券、中金公司、华泰证券，重点关注中信建投（H）和东方财富，以及估值较低且预期受益于区域市场改革的国泰君安、海通证券、招商证券。
+扫二维码 3分钟开户 稳抓大反弹行情！
+(image_address=""//n.sinaimg.cn/finance/512/w256h256/20200807/333c-ixkvvuc9099771.png"")
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：逯文云",2020-09-21 10:02:35,新浪财经
+2,十四五规划呼之欲出：体育产业站风口 概念股名单来了,"今日直播
+富国绝对收益多策略基金经理于鹏：尊重市场，追求健康的绝对收益
+嘉实基金陈正宪、嘉实基金滕抒含：顺周期复古风能走多久？
+广发基金夏浩洋：滚动的经济，汽车板块投资价值分析。
+贝莱德中国陆文杰、华泰柏瑞基金柳军、华泰证券李晶：A股后市投资机遇、科创医药消费主题、如何配置指数基金
+万家基金莫海波、广发证券陈子坤：如何把握新能源车产业链的投资主线
+来源：财联社
+原标题：十四五规划呼之欲出，体育产业站风口，概念股名单来了
+财联社9月21日讯，体育板块迎来政策利好。
+上周四，国家体育总局经济司在北京组织召开体育产业“十四五”规划编制研讨会。机构认为，我国体育产业还处于初级发展阶段，目前产业发展的最大驱动力在于国家顶层政策的强力助推。果不其然，受此消息影响，上周五莱茵体育拉升封板，雷曼光电涨逾12%，中体产业一度触及涨停，金陵体育、探路者等个股纷纷跟涨。
+据了解，目前总局经济司正在有序推进体育产业“十四五”规划编制工作，此规划将成为未来五年体育产业改革发展工作的行动指南，科学编制好该规划影响深远、意义重大。
+据体育产业十三五规划，到2020年体育产业总规模将超过3万亿。但是，目前我国体育产业增加值占GDP仅约1%，对标发达国家2%-3%成长空间巨大。
+对于产业未来的投资机会，渤海证券研报指出，1）赛事依然是产业的核心内容，因此具备运营能力和商业开发的公司更具价值。2）垂直细分领域是更容易出现具有优势的龙头公司，具备盈利能力、综合运营能力强的中游平台类公司更被市场认可。3）体育生态打法是未来的发展方向，体育+地产、体育+旅游、体育+娱乐等模式使体育产业的盈利模式更加多元化，形成更深厚的综合竞争力。
+财联社梳理相关上市公司：
+雷曼光电：体育业务涵盖中甲、中乙、葡甲的赛事资源运营、球员经纪等细分领域。
+中体产业：主营涵盖赛事服务、体育营销、体育经纪、休闲健身、场馆以及体育彩票等。管理运营环中国国际公路自行车赛、北京马拉松赛、中国高尔夫俱乐部联赛等多项品牌赛事。
+莱茵体育：布局体育赛事、体育空间、体育金融、体育教育、体育传媒、体育网络六大平台。已布局拥有或运营多项赛事IP，包括亚洲职业篮球联赛、世界冰壶冠军巡回赛CCT的赛事视频版权中国区独家代理权。
+英派斯：参与常州新龙体育公园、山西清徐体育公园等18处室外体育场地、公园规划项目，为国家体育总局提供智能健身房产品方案。
+金陵体育：主营体育器材和场馆设施的研发、生产、销售以及体育赛事服务，主要产品包括球类器材、田径器材、其他体育器材、场馆设施等。
+雪人股份：全球制冰设备行业的龙头企业，已完成了鸟巢冰壶馆、 中华世纪坛滑冰馆，唐山南湖薰衣草庄园冰场等多个冰雪项目的建设。
+探路者：主营户外用品、旅行服务。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：逯文云",2020-09-21 10:00:13,新浪财经

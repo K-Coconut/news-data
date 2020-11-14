@@ -1,0 +1,472 @@
+,title,content,pub_time,src
+0,广州浪奇存货离奇消失 股民可做好维权准备,"受损股民可至新浪股民维权平台登记该公司维权：http://wq.finance.sina.com.cn/
+关注@新浪证券、微信关注新浪券商基金、百度搜索新浪股民维权、访问新浪财经客户端、新浪财经首页都能找到我们！
+5.72亿元存货离奇消失！广州浪奇（维权）（000523）9月27日晚间公告，公司与鸿燊公司签订合同，公司将货物储存于鸿燊公司的瑞丽仓仓库。公司与辉丰公司签订合同，约定公司将货物储存于辉丰公司的辉丰仓。但辉丰否认有货物存储在辉丰公司。公司组建了成员包括外聘律师在内的独立的存货清查小组，小组于9月23日、24日前往鸿燊公司、辉丰公司调查了解相关情况。截至公告日，公司及子公司在瑞丽仓、辉丰仓库存货物账面价值合计为5.72亿元。（广州浪奇维权入口）
+2018年1月30日，同样的剧情在st抚钢（抚顺特钢）身上上演，当晚抚顺特钢公告称20多亿的钢材存货不见了，可能会追溯调整以往财务报告。此后公司被证监会立案调查。2019年年底，证监会查实抚顺特钢存在财务报告虚假记载行为而给予行政处罚。
+此后股民开始了诉讼维权路。截止到目前为止，已经有300多名股民向沈阳市中级人民法院提起诉讼。诉请标的超过5，000万元。
+知名股民索赔律师，全国优秀律师事务所合伙人韩友维律师表示，如果存货真的不见了，可能会导致以往财务报告追溯调整。此前不管是抚顺特钢还是獐之岛存货消失事件，都涉及到以往财务报告追溯调整，最终因财务报告虚假记载而被证监会行政处罚。目前我们已经代理了抚顺特刚和獐子岛（维权）的股民几百名股民提起了维权诉讼，沈阳市中级人民法院已经组织了抚顺特钢维权案的开庭。
+此次广州浪奇存货失踪事件，无非是两个原因，一个是存货被盗窃或被非法转移，这就涉及到刑事案件，应该由公安机关来处理。另一个原因就是这批存货根本就不存在，这就涉及到财务报告虚假记载。我们建议作为上市公司，应当向公安机关报案，作为投资者可向证监会进行举报，要求证监会立案调查，彻底查清存货不见的真正原因，给投资者一个交代。一旦查实有财务虚假记载行为，投资者可就投资损失向法院诉讼维权。
+韩友维律师表示：目前我们律师团队已正式向投资者提供维权法律方面的咨询。关于此次广州浪奇存货失踪事件，索赔条件暂定：上市之日至2020年9月25日之间买入广州浪奇股票，并在2020年9月25日收盘后卖出或持有的投资者，可以参与索赔。
+点击新浪股民维权平台
+-->
+扫二维码新浪股民维权平台
+(image_address=""//qr.weibo.cn/inf/gen?api_key=5ce6b247758880d1f71352631f76ea03&data=http%3A%2F%2Ffinance.sina.cn%2Fapp%2FQRtoSFA.shtml%3Fsudatrackvalue%3Dcaitou_inQRcode%26schema%3Dtype%253D20%2526url%253Dhttps%25253A%25252F%25252Fwq.finance.sina.com.cn%25252F&datetime=nocheck&level=H&output_type=img&size=300&type=url&sign=2f1810699d7f34acf7759200c95dbc36"")
+扫二维码 3分钟开户 稳抓股市回调良机！
+(image_address=""//n.sinaimg.cn/finance/512/w256h256/20200807/333c-ixkvvuc9099771.png"")
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陈诗莹",2020-09-28 14:44:55,新浪财经
+1,2分钟读财报|拉夏贝尔半年关店1797家亏10亿 欲卖商标求生？,"视频加载中，请稍候...
+自动播放
+(image_address=""//n.sinaimg.cn/front20200928ac/380/w540h640/20200928/55dd-izrvxmh6704960.jpg"")
+play
+视频|拉夏贝尔
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 354797167,
+pid:1,
+url: 'https://video.sina.com.cn/p/finance/2020-09-28/detail-iivhuipp6944883.d.html',
+title:'视频|拉夏贝尔'//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=354797167/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+新冠疫情阴影下，各行各业日子都不太好过，而服装业更是受挫最大的几个行业之一。
+不久前，女装品牌拉夏贝尔公布了半年报业绩，早在前几年，拉夏贝尔便走上了关店收缩的道路，并因为连续两年亏损在2020年被*ST，疫情使得拉夏贝尔的问题更加严重。
+财务数据显示，2020年上半年，拉夏贝尔实现营业收入14.35亿元，同比减少63.69%，净利润亏损7.08亿元，扣非净利润亏损10.2亿元，同比减少78.48%，上半年拉夏贝尔经营活动净现金流流入1.86亿元，同比减少83.91%。
+拉夏贝尔坦言，公司业绩受新冠肺炎疫情及关闭线下渠道经营网点、货品采购量减少等因素的影响，报告期内公司面临营业收入大幅下降、成本费用率居高不下、流动性压力较大及盈利能力不强的困境，经营状况尚未有实质性的改变。
+2020年上半年，拉夏贝尔继续关店，截至6月30日，公司线下经营网点数量为3667个，较2019年底减少1797个。
+为了自救的拉夏贝尔在9月2日发布一则公告，称将要调整线上业务模式。目前，拉夏贝尔采用“企划设计-自主采购-平台运营-线上销售”的传统模式，2017年-2019年拉夏贝尔线上销售收入占整体营业收入的比例仅为13.65%、14.13%、10.65%。
+转型之后的拉夏贝尔计划将线上业务调整为“品牌授权+运营服务”的新模式，即通俗来说的“卖吊牌”。在这种模式下拉夏贝尔将把旗下品牌系列商标分别授权给供应商、经销商和代理运营商。目前，拉夏贝尔旗下拥有La Chapelle、Puella、Candie‘s、7Modifier等多个品牌。
+A股中另一个靠卖吊牌经营的公司为南极电商，2019年南极人授权品牌产品可统计GMV实现305.59亿元，同比增长48.92%，合作供应商和经销商分别为1113家、4513家，授权店铺5800家。但南极人品牌的产品涵盖床上用品、母婴产品、男女装等多个品类，与拉夏贝尔纯女装赛道有较大差异，拉夏贝尔这次转身，能成功几分，还有待时间检验。
+2分钟读财报|中至科技IPO：毛利率比肩茅台 棋牌游戏原罪难洗
+2分钟读财报|应莹谋求上市公司实控权 徐翔东山再起的筹码？
+2分钟读财报|港股回A割韭菜套路深：君实生物106天股价翻倍
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：常福强",2020-09-28 14:28:35,新浪财经
+2,2分钟读财报|台资企业华利股份冲A股 鞋履代工受疫情拖累,"视频加载中，请稍候...
+自动播放
+(image_address=""//n.sinaimg.cn/front20200928ac/380/w540h640/20200928/4df6-izrvxmh6702959.jpg"")
+play
+视频|华利股份
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 354797202,
+pid:1,
+url: 'https://video.sina.com.cn/p/finance/2020-09-28/detail-iivhvpwy9324447.d.html',
+title:'视频|华利股份'//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=354797202/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+服装代工企业纷纷冲击资本市场，鞋履代工也不甘落后。
+不久前，华利股份递交了招股说明书，拟登陆A股创业板。资料显示，华利股份主要从事运动鞋履的开发、设计、生产与销售，主要为Nike、Converse、Vans、Puma、UGG等全球知名运动品牌提供开发设计和制造服务。2019年公司鞋履产量超过1.8亿双，是全球为数不多的产量超过1亿双的运动鞋专业制造商之一。
+2017年-2019年，华利股份营业收入分别为100.09亿元、123.88亿元、151.66亿元，维持较快的业绩增速，净利润则分别为11.06亿元、15.32亿元、18.21亿元。
+从股权结构来看，华利股份为典型的家族企业。张聪渊家族合计控制公司97.23%股份。值得注意的是，实控人张聪渊家族成员均为境外人士，张聪渊、周美月、张志邦、张文馨、张育维均为中国台湾籍，张志邦、张文馨和张育维还兼有加拿大国籍。
+由于主要为知名运动鞋品牌代工，华利股份的收入来源较为集中。2017年-2019年，公司前五大客户收入占公司营业收入的比重分别为83.01%、84.57%、86.14%，且呈现愈加集中的态势。
+公司的竞争对手裕元集团、丰泰企业、钰齐国际分别在香港和台湾上市，受疫情影响，2020年服装、鞋履行业均遭遇较大冲击。从财务数据来看，裕元集团2020年上半年营业收入同比下降19.49%至292.48亿元，净利润亏损9.68亿元，为上市多年来报告期间首亏，可见遭遇不小困境。这或许也是华利股份开始寻求在A股上市的原因之一。
+招股书显示，2020年上半年公司未经审计的营业收入为69.3亿元，净利润和扣非净利润分别为7.71亿元、7.74亿元，分别占2019年营收、净利润和扣非净利的45.7%、42.34%、44.25%，呈明显的收缩趋势。
+2分钟读财报|银城生活服务中报：低净利率、高负债率
+2分钟读财报|蚂蚁金服造富：58名亿万富翁 人均4000万
+2分钟读财报|舍得酒业暴雷：资金被占4.4亿 Q1净利跌7成
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：常福强",2020-09-28 14:27:26,新浪财经
+3,子公司存储的广州浪奇存货不翼而飞？*ST辉丰：稍后会发公告,"原标题：子公司存储的广州浪奇存货不翼而飞？*ST辉丰：稍后会发公告    来源：新京报
+新京报贝壳财经讯（记者 张泽炎）9月27日，广州浪奇发布公告称，公司无法对存放在江苏鸿燊物流有限公司（下称“鸿燊公司”）及江苏辉丰石化有限公司（下称“辉丰公司”）的货物开展正常盘点及抽样检测工作，相关存货价值为 5.72 亿元。鸿燊公司、辉丰公司均否认保管有公司存储的货物。
+9月28日，新京报贝壳财经记者致电辉丰公司，对方表示，公司披露的电话系项目负责人的电话，具体要与公司商务部对接。
+企查查显示，辉丰公司系上市公司*ST辉丰的全资子公司。9月28日，记者致电*ST辉丰公司相关人员，对方表示，公司稍后会对此事发布公告。
+此外，9月28日，新京报贝壳财经记者联系到鸿燊公司相关负责人，对方告诉记者，“他们的货，现在没有，就这么简单。他们的货没有放到我们这里。”
+记者追问，“但是上市公司怎么发公告说在你们这里的存货丢了？”该负责人对记者表示，“只能是这样，具体情况不方便透露。”
+记者又联系广州浪奇，对方要求发送采访函至邮箱，截至发稿，广州浪奇尚未回复。
+广州浪奇已经引发了监管层的注意。9月28日，深交所火速下发关注函，要求广州浪奇补充披露存货的主要构成及用途，说明公司与鸿燊公司、辉丰公司关于第三方仓储业务的开展情况及公司所有存货存放地点、金额、库龄、第三方仓储业务合作方、近期盘点情况等。
+新京报贝壳财经记者 张泽炎 编辑 赵泽 危卓
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP",2020-09-28 14:21:25,新浪财经
+4,“洗衣液学扇贝”引深交所高度关注 广州浪奇跌停,"(image_address=""//image.sinajs.cn/newchart/new_daily/n/sz000523.gif"")
+热点栏目
+自选股
+数据中心
+行情中心
+资金流向
+模拟交易
+客户端
+原标题：广州浪奇跌停！“洗衣液学扇贝”引深交所高度关注 两月前高管大面积换血 
+广州浪奇（000523.SZ）5.72亿元“洗衣液”不翼而飞事件正在发酵。
+9月28日早盘，深交所高度关注，火速下发关注函，要求说明与鸿燊公司、辉丰公司关于第三方仓储业务的开展情况，要求公司披露“所有存货存放地点、金额、库龄、第三方仓储业务合作方、近期盘点情况等，全面核查是否存在其他存货异常情形”。
+二级市场上广州浪奇“一”字跌停，截至上午收盘，跌停线还压着近30万手卖盘。
+9月27日晚间，广州浪奇公告，公司无法对存放在江苏鸿燊物流有限公司（下称鸿燊公司）及江苏辉丰石化有限公司（下称辉丰公司）的货物开展正常盘点及抽样检测工作，相关存货价值为5.72亿元。
+近年来广州浪奇大量开展化工品贸易业务，公司应收账款、预付账款及存货的金额较大，截至2020年6月底，公司应收账款、预付账款及存货的账面金额分别为36.94亿元、12.46亿元、15.71亿元，合计占总资产的75.35%。广州浪奇近期票据逾期、部分仲裁诉讼事项亦与贸易业务相关。
+深交所要求，补充披露存货的主要构成及用途。同时，说明公司与鸿燊公司、辉丰公司关于第三方仓储业务的开展情况，包括但不限于合同签署时间、双方主要权利义务、合同执行情况及历史合作情况等；说明本次存货异常情况的具体发现过程及最新核查进展。
+同时，深交所要求广州浪奇说明最近三个会计年度对于期末存货的盘点过程，针对第三方仓储业务采取的内部控制措施及执行情况，盘点过程是否发现存在异常状况，如是，说明公司采取的应对措施。
+此外，结合近年来公司贸易业务的业务模式、与主要客户与供应商的业务往来（如购销数量、金额及具体内容，资金往来情况，是否存在关联关系，是否存在供应商与客户重叠情形等）、应收账款及预付账款的账龄及逾期情况、存货库龄与销售情况、票据管理情况等，说明公司贸易业务是否存在商业实质，应收账款、预付账款及存货规模是否与公司业务匹配，你公司收入成本确认过程及依据，信用减值损失及存货跌价准备是否计提充足，是否符合《企业会计准则》的规定。
+此外，深交所要求广州浪奇评估本次存货风险事项对公司生产经营及财务成果的影响。
+此次存货丢失事件年审会计师也被卷入。深交所要求广州浪奇最近三个会计年度的年审会计师说明就公司贸易业务真实性所执行的审计程序和获取的审计证据，对上述问题进行核查并发表明确意见。
+广州浪奇2017年年报审计机构为立信会计师事务所（特殊普通合伙），2018年变更为中审众环会计师事务所（特殊普通合伙）。
+值得注意的是，界面新闻注意到，就在两个月前，广州浪奇刚经历了一次高层震荡。
+先是公司总经理陈建斌4月27日卸任总经理一职，拟调任广州轻工工贸集团有限公司任职。随后7月30日陈建斌卸任副董事长、董事、战略委员会职务，黄强卸任战略委员会、独董职务，王丽娟卸任审计委员会召集人、独董职务，王志刚卸任董秘一职，还有廖健、李云、符荣武、李峻峰等共8人集体去职。
+(image_address=""//n.sinaimg.cn/spider2020928/37/w553h284/20200928/abe7-izrvxmh6141239.jpg"")广州浪奇2个月前多位
+高管
+离职
+近一年多以来，广州浪奇还有关键高管层职位变动。广州浪奇原董事长于2019年5月28日因工作原因辞职，并不再担任任何职务。广州浪奇原财务总监、财务负责人王英杰2019年10月28日因到法定退休年龄而辞职。
+尽管上述高管层卸任多与任期届满相关，但届满后如此多的高管集体变更也难免异常。尤其是，延迟披露半年报、债务逾期事件、库存盘点事件均发生在高管层变更之后。
+存货事件横跨两任董事长、总经理任期，界面新闻致电广州浪奇原副董事长、总经理陈建斌，陈建斌表示，已离职不是公司高管，具体找广州浪奇了解。界面新闻问及广州浪奇是否向其了解情况，陈建斌表示，一切找公司，不方便说。
+一位参与广州浪奇上述事件人士表示，事情不是表面上的那么简单，但他对界面新闻表示，案子还没做完，不方便说。
+扫二维码 3分钟开户 稳抓股市回调良机！
+(image_address=""//n.sinaimg.cn/finance/512/w256h256/20200807/333c-ixkvvuc9099771.png"")
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP",2020-09-28 14:06:49,新浪财经
+5,芒果超媒大动作：45亿定增＋60亿协议转让,"(image_address=""//image.sinajs.cn/newchart/new_daily/n/sz300413.gif"")
+热点栏目
+自选股
+数据中心
+行情中心
+资金流向
+模拟交易
+客户端
+原标题：芒果超媒大动作：45亿定增+60亿协议转让 受让方或为国内产业巨头  
+记者|梅岭
+9月27日晚间，芒果超媒（300413.SZ）发布2020年度向特定对象发行A股股票预案，公司拟以非公开发行方式募资不超过45亿元，拟将40亿元用于采购6部S级影视剧的网络独家版权，并自制（含定制）11部A级影视剧版权、自制18部S级综艺节目版权。
+同时，芒果超媒公司控股股东芒果传媒拟通过公开征集受让方的方式，协议转让0.94亿股，占芒果超媒总股本的5.26%，为公司引入战略投资者，以资本合作推动业务协同，促进公司持续稳定发展。
+有相关知情人士对界面新闻记者表示：本次协议转让规模将超过60亿元，此次受让方极有可能为国内相关领域产业巨头。本次协议转让价格预计不低于66.23元/股，略高于目前市价。
+9月28日开盘，芒果超媒开盘股价稳步上涨，截止记者发稿，芒果超媒报65.89元/股，上涨1.84%。2020年以来，芒果超媒累计上涨87.69%。
+截止2020年上半年，芒果传媒为芒果超媒控股股东，持股比例64.20%。协议转让及定增完成后，芒果传媒预计将持有公司55.99%的股份，仍为芒果超媒控股股东。
+数据显示，上半年，全国电视剧备案数同比下滑16%，电视剧集数同比下滑35%，2020年1-4月共有5328家影视公司注销，是2019年全年注销量的1.78倍，中小型影视公司抗风险能力较弱，不断退出市场。
+今年上半年，芒果超媒实现营收57.74亿元，同比增长4.90%；归属于上市公司股东净利润为11.03亿元，同比增长37.30%。这其中，《乘风破浪的姐姐》为2020年的爆款综艺节目。
+截止上半年末，芒果TV有效会员数达2766万，较年初增长50.57%，会员收入14.18亿元，同比增长80.4%。与此同时，报告期内，芒果超媒销售费用为8.16亿元，较上年同期下滑18.77%，公司方面表示，这主要系广告宣传费用减少所致。
+推出《下一站是幸福》、《锦衣之下》、《我才不要和你做朋友》、《乘风破浪的姐姐》、《朋友请听好》、《明星大侦探》等多部剧集和综艺节目的子公司快乐阳光，在今年上半年实现营业收入42.83亿元，净利润达到10亿元，是芒果超媒最为核心的营收来源。
+股东持股情况来看，截止报告期，香港中央结算有限公司（陆股通）持有股份数量为3084.91万股，持股比例1.73%。在2020年一季度时，香港中央结算公司持有芒果超媒股数为2030.89万股，持鼓比例1.14%。
+这意味着，二季度陆股通增持芒果超媒1054万股。
+6月19日芒果TV发布了下半年储备，综艺包括“姐姐”团综、《披荆斩棘的哥哥》、及《明星大侦探6》等综N代产品。
+而此次45亿定增资金中，40亿元将用于采购6部S级影视剧的网络独家版权，并自制（含定制）11部A级影视剧版权、自制18部S级综艺节目版权。芒果超媒项目储备将进一步加强。
+8月29日芒果超媒接受机构调研时表示：初步预计公司2021年内容预算将增长30%左右，在行业内容成本下降的大环境下，整体内容体量将会有大的增长。影视剧内容用户定位破圈方面，现实题材是一个重要探索方向，规划中的内容约10%-15%是面向男性用户的相关题材。另外，公司还将探索创新精品电视剧制作，用电影手法进行拍摄，强调叙事逻辑和强情节，为用户提供更高质量的优质内容服务。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP",2020-09-28 14:05:48,新浪财经
+6,2分钟读财报|来伊份Q2亏6000万 逆市继续开店合理吗？,"8月28日，刚刚公布半年报的来伊份全天封死跌停，股价报收18.27元/股。
+财务数据显示，2020年上半年公司营业收入21.36亿元，同比微增4.85%，净利润0.12亿元，同比下降72.25%，扣非净利润亏损0.1亿元，同比下滑133.95%。
+和三只松鼠等以线上为主的休闲零食公司不同，来伊份一直以线下渠道为主，近年来才开始发展网店等线上业务。在各行各业都勒紧裤腰带过日子的时候，来伊份依然大肆扩张，推进“万家灯火”计划，导致报告期内三费都明显上升，从而侵蚀了净利润。
+数据显示，截至2020年6月30日，公司连锁门店总数2801家，同比增加84家，其中直营门店增加41家，加盟门店增加43家。对比2019年年报数据，截至2019年12月31日，公司门店总数2792家，也就是说公司门店净增仅9家，关闭门店数为75家。
+净增9家门店，公司的销售费用和管理费用却增长明显。财务数据显示，2020年上半年公司销售费用6.82亿元，同比增长10.23%，销售费用率为31.93%；管理费用为2.26亿元，同比增长0.36%，管理费用率为10.56%。对比来看，公司营收增速仅4.85%，明显低于销售费用增速，付出的销售费用能带来多少业绩，不得不让人质疑。从明细来看，销售费用中的工资及社保费、门店租赁费、材料消耗、运输费、广告宣传费均明显上升，其中广告宣传费由2019年的3774万元上升至2020年的8877万元，翻倍有余。
+值得注意的是，在公布一季报之后，来伊份股价波动走高，120日涨跌幅达52.98%。2020年一季报，公司营业收入为13.14亿元，同比增长10.08%，净利润为0.73亿元，同比增长12.94%。三个月之后，公司反而把一季度赚回来的0.73亿赔回去了84%，也无怪中报次日投资者用脚投票纷纷跑路了。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：常福强",2020-09-28 14:03:31,新浪财经

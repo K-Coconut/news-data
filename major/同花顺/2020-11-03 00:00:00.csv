@@ -1,0 +1,101 @@
+,title,content,pub_time,src
+0,沃尔沃与日本五十铃汽车达成合作,"据瑞典《今日工业报》10月30日报道，卡车巨头沃尔沃与日本五十铃汽车签署合作协议。协议包括五十铃汽车从沃尔沃卡车采购大约200亿瑞典克朗卡车。本次签署的协议是以一年前双方达成的合作意向书为基础的。沃尔沃卡车总裁Martin Lundstedt发表评论称，“我对战略合作有很高期待，沃尔沃与五十铃的合作可以推动双方在各自市场提高竞争力，这是分享投资和互相提高的机会。”
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-11-03 00:59:23,同花顺
+1,“矿池巨头”获区块链服务备案惹争议 此前多家矿池已完成备案,"本报记者邢萌
+10月30日，国家网信办发布第四批境内区块链信息服务备案清单，285项服务在列。此份名单一经发布，引起业内广泛讨论。与以往大多数眼光聚焦于链圈头部传统企业不同，这次上榜的矿圈“币印矿池”掀起不小的风浪。
+作为目前全球最大的比特币矿池之一，币印矿池掌控的比特币算力不可小视。也正是由于名声在外，币印矿池备案通过引来圈内关注。“巨头”的入局，也使圈内传出“挖矿合法化”的声音。
+值得注意的是，矿池服务通过备案，不应过度解读，并不代表着监管机关对其认可。有业内专家表示，对于矿池业务，虽然国家并未明令禁止，但矿池服务的备案仅是做个登记，并不是行政许可。
+三批区块链备案
+均现矿池相关服务
+陀螺研究院院长、深圳市信息服务业区块链协会副会长余维仁对《证券日报》记者解释道，矿池是一种可以将少量算力合并联合运作的方法，在此机制中，矿工通过矿池协议集合，挖矿硬件保持与矿池服务器相连，从而共同的进行挖矿操作，并根据算力分配挖矿所得。
+在币印矿池前，已有矿池的名字出现在前批次的备案名单中。
+《证券日报》记者梳理公开信息发现，在第二批境内区块链信息服务备案清单中，出现“蜜蜂矿池”“大象矿池”“矿池服务”三项矿池服务，申报主体公司分别为武汉趣块科技有限责任公司、上海松华信息科技有限公司、杭州远境互联科技有限公司。在第三批境内区块链信息服务备案清单中，福州博泉网络科技有限公司申报的“BTC/BSV矿池服务”服务上榜。
+可以看出，第二批、第三批、第四批区块链备案中，均有矿池相关服务在列。不过由于相关矿池名声不显，前两批矿池入榜并未在圈里引起过多的关注。
+对此，欧科云链研究院首席研究员李炼炫对《证券日报》记者表示，算力的大小直接决定了比特币网络中话语权的大小，因此这些矿池在整个比特币生态中具有很大的话语权。
+对于此次币印矿池通过备案，余维仁认为，本质而言，矿池类似于一种新兴运用于虚拟数字币交易中金融科技，其主要目的是为交易参与者矿工提供技术服务，矿池屡次通过备案可能是基于这个原因。
+矿池区块链服务备案
+仅是登记
+币印矿池备案将游离于监管之外的矿池业务推上风口浪尖。
+“我国对矿池业务(挖矿)的政策是不鼓励，但是也没有法律或者行政法规禁止公民挖矿。”
+北京路宁律师事务所刑事部主任丁飞鹏对《证券日报》记者表示，矿池业务通过备案，是监管机关在履行《区块链信息服务管理规定》的义务。备案不是行政许可，备案也不代表备案机关的态度，仅仅是登记而已。
+李炼炫认为，根据《区块链信息服务管理规定》要求，区块链信息服务提供者应当在其对外提供服务的互联网站、应用程序等显著位置标明其备案编号。备案仅是对主体区块链信息服务相关情况的登记，不代表对其机构、产品和服务的认可，任何机构和个人不得用于任何商业目的。因此，矿池获得备案并不意味着该行业是完全合法的。
+加密数字币挖矿业在我国一直有很大争议。2019年4月8日，在发改委发布的《产业结构调整指导目录(2019年本，征求意见稿)》中，虚拟币“挖矿”活动被列入淘汰类产业，但目录正式发布时这一条被删除。
+对此，李炼炫表示，这表明国内从事挖矿服务相关企业，只要遵守当地的土地、环境、电力及税收等政策，可以从事正当运营活动。然而，矿池服务的特殊之处在于矿池的部分结算方式可能会有非法集资或非法吸收公众存款的法律风险。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-11-03 00:54:56,同花顺
+2,1-9月哈萨克斯坦原子能工业公司减产10.6%,"国际文传电讯社努尔苏丹11月2日电，据哈萨克斯坦原子能工业公司发布新消息，2020年1-9月，公司生产铀矿15091吨，较上年同期下降10.6%。其中，归属哈原子能工业公司的份额产量8309吨，同比下降15.6%。减产的主要原因是采取防疫措施导致铀矿开采业务收缩和生产人员裁减。
+统计期内，哈原子能工业公司及下属企业铀矿销量9857吨，同比增长23.2%；平均售价为29.59美元/磅，同比上涨7.2%。预计2020年生产铀矿1.9-1.95万吨，份额产量1.05-1.08万吨。
+2019年，哈原子能工业公司生产铀矿22808吨。疫情暴发前，公司原计划2020年生产铀矿2.275-2.28万吨，份额产量1.3-1.35万吨。(驻哈萨克斯坦使馆经商处)
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-11-03 00:54:06,同花顺
+3,哈萨克斯坦将取缔未登记注册小额贷款公司,"哈通社努尔苏丹11月2日电，哈萨克斯坦金融市场监管和发展署署长阿贝尔卡瑟莫娃当天回答议员问询时表示，对未登记注册的小额贷款公司将予以取缔。
+针对议员提出的统一银行和小额信贷机构监管规则的问题，阿表示，为在信贷市场建立统一的监管环境和消费者权益保护体系，自2020年1月1日起，金融市场监管和发展署已将监管范围扩大到所有向居民提供贷款的法人实体，包括网贷公司、典当行和信用合作社等。对上述信贷机构的登记注册截止时限为2020年9月1日。截至目前，金融市场监管和发展署登记注册的信贷机构共1079家(占非银行信贷机构总数的33%)，包括650家典当行、202家信用合作社和227家小额信贷机构。自登记注册之日起，上述信贷机构必须严格遵守审慎监管规则、小额贷款协议要求、利率上限和借款人债务负担水平要求，切实保护消费者权益。目前，全哈共有未注册信贷机构2187家。其中，1196家无经营活动；744家无意继续经营；247家未达到最低注册资本。若未注册信贷机构继续向居民发放贷款，该机构将被强制取缔。(驻哈萨克斯坦使馆经商处)
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-11-03 00:53:55,同花顺
+4,哈能源部长称或将延长柴油进口禁令,"据哈萨克斯坦资本网11月2日报道，哈萨克斯坦能源部部长诺加耶夫当天在巴甫洛达尔州工作考察时表示，哈计划将柴油(冬季使用和高寒地区使用柴油除外)进口禁令延长至2021年4月。
+诺表示，哈政府尚未就此问题作出最终决定，但哈国内柴油市场存在库存积压的可能。得益于政府采取一系列“去库存”的政策措施，哈得以在疫情期间避免石油炼厂停产，保证国内燃油市场供需平衡。
+考察期间，诺参观该州两座热电站和巴甫洛达尔石化厂等企业。(驻哈萨克斯坦使馆经商处)
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-11-03 00:53:49,同花顺
+5,文化产业受疫情打击沉重,"瑞典《晚报》10月28日报道，新冠疫情正在沉重打击文化和创意产业。根据国际作者和作曲者协会Cisac的最新报告，2020年，音乐、电视、电影、艺术、戏剧和文学的收入预计将下降35%，相当于35亿瑞典克朗。瑞典作曲家国际音乐代理商STIM估计，疫情期间瑞典音乐创作者的收入损失将达到约2亿瑞典克朗。Cisac董事长BjrnUlvaeus表示，创意创作者的未来比大流行开始时还要糟糕。数百万的创作者正在失去生计。我们是第一个受到影响的行业，我们将是最后一个复苏的行业。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-11-03 00:53:31,同花顺
+6,银行系电商低调备战“双十一”,"学校室内网球场成为临时快递取件点，成为“双十一”的一道风景线。图据新华社
+11月伊始，“双十一”战火已被点燃。各大电商平台纷纷发力，掀起一轮网购狂欢。而相较于互联网系电商平台的“风生水起”，银行系电商则较为“低调”，在宣传造势方面预热略显不足。
+在分析人士看来，作为延伸银行客户服务的渠道，目前银行系电商在物流、服务、系统、体验等方面相较于电商巨头仍有不足。不过，相较于单纯的竞争关系，二者相互合作被认为更具价值。
+销量表现较为平淡
+“双十一”前夕，相较于互联网系电商平台的密集预热，银行系电商平台则较为低调。其中，工商银行(港股01398)电商平台“融e购”自10月19日起提前启动“11.11”购物节，活动分为预热期、爆发期、冲刺期3个阶段。其中，爆发期为10月26日-11月8日，平台推出超级品类跨店满减、下单抢50元立减优惠等活动。产品类别包括食品饮料、手机数码、家居个护等，同时设置了限量秒杀、消费扶贫等专区。
+建设银行(港股00939)电商平台“善融商务”则在11月1日-8日推出“约惠11.11”活动，针对手机数码、生活家电、美容个护等品类，给出领劵满减折上折、金豆回馈、购物抽奖等优惠。
+此外，依托自身金融机构的特性，银行系电商平台还在“双十一”期间推出了分期免息、积分抵扣等活动。
+虽然商品品类较多，不过，总体来看，相较于互联网系电商平台动辄上万的销售量，银行系电商表现则较为平淡，销量多在数十到数百件，部分商品甚至出现销量挂“零”的情况。
+在金融投资报记者随机采访中，“推广程度不足”“对平台不了解”等成为消费者的普遍反馈。而相较于互联网系电商平台，价格优势不明显，也成为消费者“缺席”的原因之一。
+以“双十一”期间某银行电商平台在售的一款电烤炉不粘锅为例，其商城价格为229元，而同款商品在某互联网电商平台的售价为199元。“如果没有价格优势，相对还是倾向于在互联网电商平台购物。”消费者沈先生向金融投资报记者表示。
+电商领域可合作共赢
+近年来，银行机构纷纷触“电”，客户数量、活跃账户数量、服务网点、移动终端等一系列利好因素，曾让业内人士对银行系电商给予期待。
+根据中国银行(港股03988)业协会数据，截至2018年底，自建电商平台的银行共有23家，2018年银行系电商交易总额为20098.04亿元。包括四大行，及部分股份制银行在内的多家银行均组建了自己的独立电商平台。
+不过，相较于互联网系电商平台的激烈厮杀，银行系电商则显得较为“佛系”。面对购物节点，在优惠活动方面的力度与动力略显不足。
+对此，有业内人士指出，对部分银行来说，推出电商商城并非跟主流电商平台去竞争，而是希望通过电商平台延伸银行客户服务的渠道。在这样的“醉翁之意”下，发展电商平台更多的是为了增强客户体验，提升客户黏性。
+某股份制银行此前表示，其在进一步强化信用卡主营业务的基础上，尝试“开放与融合”，打开数字化大门，重构与用户的连接。为此“创造性构建免息分期、正品保障、官方直营的银行系电商经营新模式，打造一站式品质电商”。根据该行2020年半年报，其新版信用卡APP月活跃用户数达4284.32万户，非金融场景使用率为72.70%。
+与此同时，电商平台也成为银行进行消费扶贫的重要渠道。其中，工商银行在2019年年报中披露，在电商平台上扶贫交易额超6亿元；而农业银行(港股01288)方面，今年以来，通过线上扶贫商城渠道销售贫困地区农产品4.1亿元。
+总体来看，相较于电商巨头，银行系电商在物流、服务、系统、体验等方面仍有不及。不过，相较于单纯的竞争关系，二者相互合作被认为更具价值。“相比自身展业，与成熟电商进行深度合作或成为银行系电商下一步的发展路径。”分析人士指出，而借助成熟电商的线上流量和线下物流资源，也能够提供更好的消费者服务体验。
+(image_address=""http://e.thsi.cn/img/a0e3d67b8eafbeec"")
+来源：金融投资报
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-11-03 00:50:47,同花顺
+7,疫情期间瑞典二手车交易量增加,"《瑞典日报》10月30日报道，尽管越来越多的人选择居家办公，但疫情期间瑞典道路上的汽车数量却有所增加。统计数据显示，今年第三季度瑞典二手车交易数量高达39.3万辆，同比增长超过8%，创历史新高。瑞典二手车交易公司Kvdbil的Daniel Odsberg表示：“在我从业的十年中，从未经历过这样的情况。受疫情影响，许多家庭不得不调整财务计划。为减少病毒传播，许多人选择了使用私家车出行。售出的十辆二手车中有九辆仍然使用汽油或柴油。在统计中，柴油车急剧增加”。新车的销量和疫情前情况差不多。瑞典运输署的统计数据显示，由于二手车市场交易增加，这意味着瑞典道路上的车量在过去一年内增长了5万辆，尽管很多人已经在居家办公。Odsberg认为，这种增长趋势还将持续。因为人一旦习惯了开车，就很难再回头。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-11-03 00:50:29,同花顺
+8,央行：广东江苏浙江前三季度社会融资规模增量居前,"经济日报-中国经济网北京11月2日讯 （记者 陈果静）中国人民银行今日公布的2020年前三季度地区社会融资规模增量统计数据显示，前三季度，广东、江苏、浙江社会融资规模增量位居各省区市前列。
+具体来看，广东前三季度社会融资规模增量为34492亿元；江苏前三季度社会融资规模增量为29592亿元；浙江前三季度社会融资规模增量为27382亿元。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cyf",2020-11-03 00:49:01,同花顺
+9,如何让科技创新更好造福人类？――来自全球科学界“最强大脑”的点评报告,"（在习近平新时代中国特色社会主义思想指引下――新时代新作为新篇章·习近平总书记关切事）
+如何让科技创新更好造福人类？――来自全球科学界“最强大脑”的点评报告
+新华社上海11月2日电 题：如何让科技创新更好造福人类？――来自全球科学界“最强大脑”的点评报告
+新华社记者姜微、周琳、杨有宗
+国家主席习近平近日向第三届世界顶尖科学家论坛（2020）作视频致辞时表示：中国将实施更加开放包容、互惠共享的国际科技合作战略，愿同全球顶尖科学家、国际科技组织一道，加强重大科学问题研究，加大共性科学技术破解，加深重点战略科学项目协作。
+在新冠肺炎疫情肆虐全球、极端气候和环境事件频发、全球经济面临衰退的当下，“科技，为了人类共同命运”，意义更为凸显。第三届世界顶尖科学家论坛（2020）10月30日在上海召开，300多位科学界“最强大脑”齐聚中国，共议共商如何让科技更好造福人类。
+共同需求：全球战“疫”从共识到共治
+经历了14天的隔离期后，世界顶尖科学家协会主席罗杰·科恩伯格如期抵达上海参加论坛。
+以线上与线下相结合的方式举办，全球300多位科学家，包括61位诺贝尔奖得主参会……第三届世界顶尖科学家论坛（2020）不仅如约而至，而且人数有增无减，创造出全球15亿的线上流量。
+独行快、众行远。当下，合作战“疫”正成为全球面临、亟待解决的共性问题，尤其需要打破合作壁垒。多位与会科学家谈到，与其在疫苗研发上竞争，不如鼓励各国合作组成全球疫苗联盟，共享研究成果。
+2009年诺贝尔化学奖得主、英国皇家学会主席文卡·拉马克里希南说，当疫苗和药物被研发出来时，摆在面前的是严峻而共同的话题：如何确保其分配公平？如何让贫穷国家获得成果？如何避免疫苗的使用分发引起政治问题？放眼更远的未来，如何确保各国能够抵御可能更为严重的另一种疫情？我们如何协调全球对此类事件做出快速反应？
+“战胜疫情需要全球合作，而且是比现在更高级别、更紧密的合作。”中国工程院院士钟南山认为，在新冠肺炎疫情和未来可能暴发的其他疫情面前，人类更需要共同面对，“这不是一般的漂亮话，而是需要很认真地切实执行、长久坚持。”
+共谋合作：中国开放为全球科学家“搭台”
+国际协作，可以解决基础研究“最先一公里”和成果转化、市场应用“最后一公里”有机衔接问题。
+通过国际合作以利用资源、达成科学突破的例子不胜枚举。比如，来自世界各地数千名科学家的合作，在欧洲核子研究所发现了希格斯玻色子，使物理学家得到根本问题的答案：质量的基础。
+在全球开放、协同创新的大科学时代，连续三年间，从创始到推进，作为世界顶尖科学家论坛东道主，中国一直以开放舞台推动跨国合作，为科学家们提供更多可以纯粹思考的场所。
+今年论坛期间，上海特别向全球顶尖科学家伸出“橄榄枝”：在上海建立世界顶尖科学家发展基金，为全球前沿研究创造机遇；顶科社区正式启幕，全球科学家无论国界、不分年龄，都可以入驻，在学术交叉和思想碰撞中寻找解决人类共同难题的办法。
+“科学是没有国界的，只有通过国际合作，汇集全人类的智慧一起进行生物医疗的研究，才能生产出成本低廉的治疗方法，让细胞和基因的疗法，以及生物药品在全球范围内为大家所共同使用。”美国斯克利普斯研究所教授雷蒙德·查尔斯·斯蒂文斯说。
+面向未来，中国科技开放合作的步伐只会越迈越大。“这样的跨国论坛交流应该常态化，全球科学界保持开放的沟通生态。”诺贝尔物理学奖得主朱棣文指出，虽然每个国家都有各自的发展计划，也存在竞争，但是在创新技术领域，跨国界的通力合作才可以让科研进步加快，这是造福全人类的事。
+共创未来：传承科学精神为全人类造福
+世界顶尖科学家论坛期间举办的“桌布论坛”上，“小科学家”和诺奖得主们有机会交流探讨。
+来自上海中学的高中生吴君陶，小时候产生了“变化物质”的梦想，在中学时期毫不意外地爱上了化学，如今她已经参与了《废弃电子材料衍生的铜基催化剂用于电化学二氧化碳的还原》项目研究；来自厦门外国语学校的汤杰在《流浪地球》的启发下，跟随厦门大学教授展开《木星与地球之间的洛希瓣双星吸积模拟》研究，以科研实践畅行童年时期关于星际穿越的想象……
+参加本次论坛的科学少年共有55位，来自全国17个省区市，年龄集中在15岁至18岁。交流中，多位诺贝尔奖得主对青少年们的寄语朴实无华：“要有‘不要听我的话’的叛逆”“科学并不有趣，但它一定值得你探索”“坚持和享受热爱”“充满热情、不要放弃、做冒险的事情、勇于犯错误，也要做一个善良的人”……
+“基础科学研究的最终目的并不是为了培养诺贝尔奖得主。相信全世界有数不清的年轻人，以今天与会的很多专家为偶像，但是我们不能满足于此。”钟南山认为，“青年人应多问为什么，让更多潜在的奖项得主真正为人类社会服务，让科学服务大众。”
+大会上，世界顶尖科学家青少年教育联盟正式组建，将积极探索培养青少年科学兴趣的途径、提升科学精神的方法、增强探究能力的手段，目前1024所中小学成为联盟实验基地校。探索未知的科学精神“接力赛”，正在一棒接着一棒传承。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cyf",2020-11-03 00:39:50,同花顺

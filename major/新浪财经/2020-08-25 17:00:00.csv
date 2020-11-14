@@ -1,0 +1,727 @@
+,title,content,pub_time,src
+0,知识产权重磅会议将举办 产业链受关注（附名单）,"【今日直播】
+掘金周期|开源牟一凌：风格已切换，布局新周期
+嘉实基金常蓁、人气主播晓鸥姐姐：七夕节，买点“消费”送给TA！
+光大证券|孔蓉：影院复工逻辑下的投资机会解读
+广发基金李耀柱：新格局下的港股投资展望
+安信证券彭虎（金麒麟分析师）：5G与工业互联
+中信建投张昕帆对话但斌：如何玩转价值投资
+掘金周期|张勋（金麒麟分析师）：周期类核心资产：伟大如何重估
+汇添富李威：国企创新，投资中国绕不开的优质赛道
+建信基金梁洪昀：指数化投资的黄金时代
+原标题：知识产权重磅会议将举办 产业链受关注
+来源：财联社
+国家知识产权局25日宣布，国家知识产权局、辽宁省政府定于2020年11月11日至13日在大连市举办第十二届中国国际专利技术与产品交易会，本届专交会以“知识产权引领经济高质量发展”为主题，促进知识产权与市场、资本、人才、服务等要素对接，加速知识产权转移转化。
+中信证券研报指出，上一部《国家知识产权战略纲要》在2020年即将届满，面向2035年的《国家知识产权战略纲要》编撰工作已经开启。2008年首部《国家知识产权战略纲要》公布，提出到2020年“把我国建设成为知识产权创造、运用、保护和管理水平较高的国家”。2019年4月，国务院知识产权战略实施工作部际联席会议办公室专职副主任龚亚麟在新闻发布会上表示，这一目标已经基本实现，我国具备了向知识产权强国迈进的坚实基础。他还表示，接下来国家知识产权局将启动面向2035年的国家知识产权强国战略纲要的制定工作，进一步营造更加良好的营商环境，更好地满足高质量发展需求。
+相关公司：
+数码科技：第一家通过ChinaDRM LAB安全评估的数字水印产品方案商，也是中国唯一一家同时具备DRM和数字水印两个产品并均通过ChinaDRM LAB 安全评估的方案商。
+掌阅科技：公司主营业务为互联网数字阅读服务及增值服务业务，以出版社、版权机构、文学网站、作家为正版图书数字内容来源，对数字图书内容进行编辑制作和聚合管理，面向互联网发行数字阅读产品（包括漫画、有声内容等）。
+扫二维码 3分钟开户 紧抓创业板2.0大机会！
+(image_address=""//n.sinaimg.cn/finance/512/w256h256/20200807/333c-ixkvvuc9099771.png"")
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：逯文云",2020-08-25 17:58:21,新浪财经
+1,2分钟读财报|暴涨30倍N康泰:业绩多年停滞 安全生产存隐患,"视频加载中，请稍候...
+自动播放
+(image_address=""//n.sinaimg.cn/front20200825ac/380/w540h640/20200825/f314-iyhvyuz6789479.jpg"")
+play
+视频|康泰医学
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 349411882,
+pid:1,
+url: 'https://video.sina.com.cn/p/finance/2020-08-25/detail-iivhuipp0624379.d.html',
+title:'视频|康泰医学'//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=349411882/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+创业板注册制首日，N康泰股价就急涨急跌。
+8月24日下午14：52分，康泰医学迅速拉升，当日涨幅从800%迅速扩大至2000%，至14：56分时股价已飙升至308元，涨幅达2934.5%，随后急速下跌，股价在2分钟的时间里恢复正常，涨幅再次回落至1100%左右，整个过程仅有6分钟。
+根据盘后数据显示，在东财拉萨两营业部、安信证券厦门湖滨路营业部、东财山南香曲东路营业部、中信证券成都天府大道营业部五个营业部的游资总计买入7317万元，在4个机构专用席位及中信证券佛山桂澜中路证券营业部合计卖出2430万元。
+而从其他几只爆炒的创业板新股来看，也都是同一特征，即游资追涨，机构出货，所以明天开盘康泰医学股价能否有支撑，仍然存疑。
+抛开股价层面的争议，康泰医学的业绩已经多年停滞不前。
+康泰医学是一家专业从事医疗诊断、监护设备的研发、生产和销售的企业。产品涵盖血氧类、心电类、超声类、监护类、血压类等多个大类。近三年来，康泰医药境外销售收入持续增长，并占主营业务收入的绝大部分，所占比例分别是67.35%、77.29%及72.82%。
+招股书显示，康泰医学2017年、2018年和2019年实现营业收入分别为3.98亿元、3.63亿元和3.87亿元，同期对应的净利润分别为7705.72万元、6203.10万元和7378.12万元，不论是净利润还是营业收入均未回到2017年的水平。
+此前康泰医学已经两度向资本市场发起了冲击，但都因为种种问题而止步。第三次乘上注册制东风虽然顺利过会，但申报材料存在诸多被质疑的点，比如安全生产风险。
+2017年秦皇岛市安监局在安全生产执法过程中发现康泰医学的日常生产存在很大的安全隐患，但是康泰医学招股书对此只字未提。
+2分钟读财报|光线Q1扣非亏1300万 押宝《姜子牙》和张艺谋
+2分钟读财报|创业板注册制启航 20%涨幅你敢买吗？
+2分钟读财报|秦安股份主业偏离：炒期货大赚2.5亿 股东忙减持
+扫二维码 3分钟开户 紧抓创业板2.0大机会！
+(image_address=""//n.sinaimg.cn/finance/512/w256h256/20200807/333c-ixkvvuc9099771.png"")
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：常福强",2020-08-25 17:53:59,新浪财经
+2,地素时尚IPO闯关：家族企业的夫妻相争之殇,"原标题：家族企业的夫妻相争之殇 | 地素时尚IPO闯关
+来源：家族企业杂志
+高皓 安静 孙子谋 
+在家族企业中，由于企业与家族的双重属性，因家族冲突导致的风险往往无孔不入。而家族中的夫妻、姻亲、兄弟姐妹等亲属关系，往往最容易引发冲突，甚至上升至家族战争，由此也会引发家族企业的系列问题，包括股权之争、控制权之争、财富之争和家族传承等典型问题，甚至会带来毁灭性后果。“家族战争”专题通过解析中国内地、香港、台湾和澳门的华人家族企业案例，在全面呈现跌宕起伏的家族恩怨故事的同时，揭示家族战争引发的隐性和显性的系列风险和难题，本专题从家族和家族企业两大维度，基于双案例研究，进行跨地域的比较分析。栏目致力于从家族企业的企业实务和学术研究双重角度，给中国家族企业以警示与启发，并提供切实有效的建议。
+我们首先从“家族企业的夫妻相争之殇”开始。这些悲情企业家夫妻的恩怨情仇有诸多共同点：他们都曾是联手创业的患难夫妻，将婚姻和事业深度捆绑，荣辱与共；他们都幸运地成为改革开放浪潮中的弄潮儿，公司成功上市，家族财富和企业资产融合成坚实的利益共同体；但如今，当夫妻感情破裂、分道扬镳之时，离婚后产生的破坏性冲突却不断升级，上演了一场场惨烈的“离婚之战”，同时也成为“离婚后时代”的家族企业治理模式的风险隐患。
+在“家族战争-夫妻系列”中，我们选取的三组离婚案例包括：离婚多年后又引爆新冲突的真功夫和地素时尚、葵花药业和沃尔核材的案例，以及处于漫长而痛苦离婚拉锯战中的霸王集团和当当网的案例。
+上期刊载了《真功夫vs地素时尚双案例：离婚股权之争与IPO危机》双案例分析的上篇“真功夫离婚案：蔡达标与潘敏峰离婚股权平分的姻亲冲突战”。本文是双案例分析的下篇，我们将详细分析地素时尚创业夫妻离婚与三次IPO闯关的案例，在此基础上通过与真功夫案例的对比，深入探讨创业夫妻离婚股权分割的机理动因与内在逻辑，并针对创业夫妻、外部投资者和涉入姻亲等多个利益相关方提出应当注意的关键点。
+需要再次说明的是：“离婚”涉及企业家的私人事务及敏感话题，作为研究者的我们无意针对研究的个案窥探家族隐私、评判是非曲直，而是希望通过客观分析婚姻破裂给家族企业带来的巨大伤害及发展过程，反思如何维护创之不易的家族企业，给其他家族企业提供有益的启示。
+对于地素时尚董事长马瑞敏来说，上市是她人生创业路上的“高光时刻”，三度冲击IPO后终于迎来了凤凰涅槃，但付出的代价也是刻骨铭心的：创业夫妻反目，祖孙三代对簿公堂。第一次IPO失败，恰逢2015年9月遭遇股市强震，不得不半路搁浅；第二次IPO失败， 2017年本已过会，但遭遇前夫钱维和前婆婆叶丹雪的举报和诉讼，在“连环狙击”之下再次失之交臂；第三次IPO的关键时刻， 2018年6月前夫再度出手阻挠，但这次终于成功穿越“枪林弹雨”，最终登陆资本市场。开盘当天股价最高达到39.63元，募集资金16.79亿元，首日上涨44%封住涨停板，其后连续斩获两个一字涨停。
+(image_address=""//n.sinaimg.cn/finance/crawl/116/w550h366/20200825/2059-iyhvyuz6854962.jpg"")
+与诸多成功上市的家族企业一样，地素时尚一路过关斩将，终于如愿以偿。婚姻危机是夫妻式家族企业面临的一次“大考”，其实马瑞敏与钱维的婚姻早在2010年便已结束，但离婚五年后，前夫钱维却杀了个回马枪。正是由于“家族企业”和“上市公司”的双重身份，马瑞敏与其前夫从曾经的创业夫妻到分道扬镳数年后，却仍要面对祖孙三代对簿公堂的阵痛。
+地素时尚的前世今生
+复盘钱、马二人的婚姻史及地素时尚的发展史，尤其是离婚前后地素时尚的发展路径、模式转变以及股权变化，我们大致可以追溯到其前夫内心不平衡的根源。如下表所示，地素时尚经历的三个发展阶段可谓泾渭分明，尤其在马钱二人离婚之后更是进入到跨越式发展快车道，仅用五年时间注册资本就从1218万元增长到3.4亿元，成为行业黑马，并开始冲刺上市。
+(image_address=""//n.sinaimg.cn/finance/crawl/792/w550h242/20200825/0406-iyhvyuz6847652.png"")
+第一阶段：夫妻创业，“前地素时代”（1991~2006年）
+第一阶段约为15年。钱维、马瑞敏夫妻共同创业，且早期钱维父母深度涉入企业管理。回首当年，钱维和马瑞敏也不失为创业伴侣。
+上世纪80年代，钱维是温州人民广播电台的记者，马瑞敏从浙江传媒学院毕业后成为温州电视台主持人。1988年，二人走进婚姻殿堂。马瑞敏作为电视主持人，很早就开始关注时尚产业，她对潮流有着敏锐洞察力并擅长服装设计。
+1991年，在温州鹿城区钱家祖屋的天井中，一家以钱维母亲名字“叶丹雪”命名的服装店诞生了，后来钱维辞去原先的工作，转而负责自家公司的全面管理。1997年，钱维夫妇开始考虑公司化运营，成立了温州骊谷服饰有限公司和浙江骊谷服饰有限公司，并正式注册“骊谷”商标。这个阶段的家族企业管理以钱维及其父母为主：钱维担任董事长兼总经理，马瑞敏担任设计总监，钱维的父亲钱淳均负责工厂行政后勤，母亲叶丹雪负责产品销售。
+(image_address=""//n.sinaimg.cn/finance/crawl/100/w400h500/20200825/5ee3-iyhvyuz6847683.jpg"")坐落于温州黎明工业区的浙江骊谷服饰有限公司原厂房。
+随着经营业绩和知名度日渐增长，钱维夫妇不再满足于经营区域性的小店铺，而是将公司迁往上海。2002年5月，地素商贸的前身上海黛若服饰有限公司（以下简称“上海黛若”）成立，叶丹雪以现金出资151.2万元，占注册资本的90%，李赛君以现金出资16.8万元，占注册资本的10%。2004年，马瑞敏的妹妹马丽敏加入，先后担任商品部经理、产品总监等职，此时马瑞敏家族的力量开始崭露头角。
+2005年，地素时尚推出“DAZZLE”品牌，定位于中高端时装，并成为旗舰品牌。根据Euromonitor研究报告，“DAZZLE”品牌2013年度零售额位居中国中高端女装品牌的第四位，市场占有率达到1.42%。
+第二阶段：二人离婚，马瑞敏主导（2006~2010年）
+第二阶段约为五年。2006年，上海黛若开始转型，钱维逐渐淡出，转而投身文化产业，地素时尚开始由马瑞敏主导。2006年6月20日，上海黛若改名为上海地素商贸有限公司（以下简称“地素商贸”）。2007年，公司法人代表由叶丹雪变更为马瑞敏。2006年11月和2009年3月，马瑞敏先后两次以现金增资350万元和700万元，最终持股比例高达86.21%，地素商贸的注册资本由168万元增加到518万元，后再度增加至1218万元。
+(image_address=""//n.sinaimg.cn/finance/crawl/116/w550h366/20200825/bd20-iyhvyuz6847744.jpg"")马瑞敏（中）与歌手那英、超模刘雯出席品牌活动。
+但夫妻二人却渐行渐远。2010年9月28日，钱维和马瑞敏因感情破裂协议离婚并完成离婚登记，双方在股权分割、不动产、现金赔偿以及女儿抚养权等方面均进行了约定。
+第一，关于女儿的抚养权，双方约定女儿马艺芯归马瑞敏抚养。女儿在美国大学毕业到独立生活为止，所有开支均由马瑞敏承担。
+第二，关于地素商贸的股权处置，约定马瑞敏持有地素商贸86.21%的股权，钱维同意放弃股权的所有权利要求，并同意将叶丹雪所持有的股权全部转让给马瑞敏。附加条款特别安排了马艺芯自协议签字之日起五年后，将享有30%的股权权利。2011年1月5日，叶丹雪将持有的12.41%股权按原值转让给马艺芯，完成工商变更登记。
+第三，关于钱维放弃股权的补偿，钱维获得现金赔偿和不动产，马瑞敏承诺自离婚起至2018年9月止每月向钱维支付15万元（2014年9月已经提前支付1800万元执行完毕）。此外，钱维还获得位于上海、北京、成都等地的11处房产，房地产项目收益以及一辆沪牌沃尔沃轿车。
+然而，家族利益之争却就此埋下伏笔。据野马财经报道，2000年公司年收入达到8000多万元。“叶丹雪与马艺芯股权转让纠纷一审民事判决书（2017）沪0106”中显示，2010年12月31日地素商贸财务报表记载公司所有者权益约为3044.36万元，包括高额未分配利润。钱维选择了不动产和现金等低风险资产，放弃了公司股权，这意味着他同时放弃了公司的高成长性以及相应的高风险。
+(image_address=""//n.sinaimg.cn/finance/crawl/215/w550h465/20200825/19fd-iyhvyuz6847799.png"")
+第三阶段：后马瑞敏时代，快速发展并上市（2010~2020年）
+这一阶段约为10年。2010年二人离婚，公司完成股权变更之后，开始正式进入“后马瑞敏时代”，同时进入紧锣密鼓的资本运作期，尤其是2013年5月云锋基金作为外部投资者进入，投资1.8亿元占股10%，成为地素时尚第三大股东。地素时尚借助资本的力量开始飞速发展，逐渐转变成马氏姐妹共同持股的家族企业。
+从品牌发展来看，地素时尚于2010年之后开始实施多品牌策略，先后推出“DIAMOND DAZZLE”以及“d‘zzit”品牌。“d’zzit”品牌2014年度销售收入达到4.9亿元，销售终端从2012年底的590家发展到2015年3月底的1038家。
+(image_address=""//n.sinaimg.cn/finance/crawl/116/w550h366/20200825/9035-iyhvyuz6847872.jpg"")
+根据地素时尚2015年招股说明书和年报数据，自2012年开始展现了迅猛的发展势头。2012年收入约为9.04亿元，净利润约为1.75亿元，所有者权益合计约为2.56亿元。2012~2014年间，净利润增速保持在60%以上。2018年再度冲刺IPO时，年收入已达21亿元，净利润5.7亿元。同时，公司经营活动现金流保持稳健增长， 2014年以来一直保持在4亿~6亿元。
+2018年招股说明书披露，地素时尚在2015~2017年间，净利润合计约为15亿元，主营业务毛利率始终保持在60%左右，扣除非经常性损益后的年度净资产收益率（ROE）分别高达63.23%、51.97%、45.46%，经营业绩非常亮眼。可作为比较的数据是，A股同类服装企业同期ROE仅为10%左右，2017年国内非金融上市公司的平均ROE只有7.5%。
+(image_address=""//n.sinaimg.cn/finance/crawl/424/w550h1474/20200825/a0cb-iyhvyuz6847994.jpg"")
+地素时尚上市后依旧表现不俗，根据公司2019年年报， 2019年度营业收入约23.78亿元，较上年同期增加近10%；净利润6.24亿元，较上年同期增加8.75%；ROE仍高达19.73%。地素时尚的净利润率一直处于行业领先地位，毛利润率更是连续六年在女装企业中保持领先。
+从家族成员涉入来看， 2011年马瑞敏的小妹马姝敏和妹夫江瀛二人加入，马姝敏先后担任总经理特别助理、供应链管理中心总监、董事，江瀛先后担任法务总监、董事会秘书等职。2012年6月马瑞敏分别向妹妹马丽敏和马姝敏转让7.82%和0.48%的股权。2018年招股说明书中披露，第一大股东马瑞敏持股63.52%，第二大股东马艺芯（马瑞敏女儿）持股11.77%，担任商品部总监。马丽敏担任副董事长、副总经理，马姝敏担任董事、供应链管理中心总监等职，分别持股8%和1.39%，妹夫江瀛间接持股4.01%。家族成员合计持有股份高达88.69%。地素时尚从钱维及其父母出资并创办的“钱氏家族企业”，完全转变为马氏家族持股和经营的“马氏家族企业”，想必这也是让钱维愤愤难平的前尘往事。
+(image_address=""//n.sinaimg.cn/finance/crawl/740/w550h190/20200825/3d52-iyhvyuz6855040.jpg"")
+“格拉斯尔冲突升级模型”视角下的家族冲突分析
+在持续长达三年的旧账新算对阵中，马瑞敏和钱维进行了多个回合的交锋，钱维不惜将年已82岁高龄的母亲叶丹雪及刚开始接班的女儿马艺芯卷入其中，还波及家族企业高管及上市保荐人等非家族利益相关方。这场夫妻争斗从企业打到证监会，从法庭打到媒体，从上海打到温州，接连发起了多场诉讼。虽然地素时尚第三度冲击上市终获成功，但上市时间却因此耽搁数年，数场诉讼和举报使其元气损耗，企业形象也受到牵连。地素时尚上市后仍然保持了较强的家族控制，而潜在的家族冲突也备受投资人关。
+在这场旷日持久的拉锯战中，最让钱维耿耿于怀的焦点就是股权转让和离婚赔偿。“我们一家人近20年共同努力拼搏，为地素时尚打下了坚实的基础，马瑞敏却对企业2011年以前的历史闭口不提。人不能忘本，不能不尊重历史和事实。” 钱维在接受野马财经采访时如是说。可见钱维的纠结点既在于对地素时尚后续发展增值的重新分配（即“钱”），也在于对企业和品牌发展历史和贡献的认定（即“名”）。他认为地素时尚从0到1的起步阶段，建基于钱家人早期胼手胝足的奋斗。没有从0到1的创业基础，就不会有离婚后从1到N的巨额财富积累。
+最终引爆祖孙三代对簿公堂的就是股权之争，地素时尚上市时间也因此大为延后。2016~2018年间，叶丹雪/钱维母子对马瑞敏/马艺芯母女就离婚后财产纠纷案向法院共提起四场诉讼，包括“钱维诉马瑞敏离婚后财产纠纷案”、“叶丹雪诉马艺芯股权转让纠纷案”、“钱维诉公司、马瑞敏股东资格确认纠纷案”和“叶丹雪诉钱维、马瑞敏、马艺芯、公司确认合同无效纠纷案”，然而无一胜诉。
+(image_address=""//n.sinaimg.cn/finance/crawl/14/w550h264/20200825/8c10-iyhvyuz6848065.png"")
+（一）错失“双赢”阶段的IPO失败（2015~2017年）
+此案例中钱、马二人冲突的导火索是“钱”与“名”。2014年马瑞敏接连做出了两项重大举动。一是将女儿的名字从“钱沁心”改名为“马艺芯”，想来这应是作为父亲的钱维内心不能接受的一点。因为在中国人的传统观念中，子女跟随父姓天经地义，而改名换姓则是事关个人和家族声誉的重大事件，所谓名不正则言不顺，女儿改姓或许成为对钱维的重击。二是马艺芯发布书面声明，确认除了已经持有的股权之外，自愿放弃父母离婚协议中所约定的股权，这意味着离婚协议中关于五年内女儿持股达到30%的条款无须兑现。女儿的倒戈，不但事关公司股权的分配，而且也给钱维带来了一定的情感打击。
+对簿公堂的苗头最早开始于2015年12月，马艺芯收到奶奶叶丹雪委托律师出具的《律师函》。叶丹雪2016年先后在上海发起两次诉讼，但均以失败告终，之后又转战家乡温州，但最终仍然败诉。2016年6月5日，叶丹雪正式起诉孙女马艺芯，要求撤销双方签署的《股权转让协议》，争议焦点在于地素时尚的股权转让、公司名称、增加注册资本、调整股权结构等多项内容，并非在叶丹雪知情的情况下完成。叶丹雪称自己年逾75岁，她对非本人签署的股权转让协议并不知情，且股权转让金额远低于市场价，且未曾收到转让款。
+马艺芯的代理律师则指出：“在得知公司即将上市之际，在时隔数年之后谎称其签署行为系受欺诈且协议显失公平进而向法院提起撤销之诉，是意图借诉讼来恶意阻碍发行人上市进程，迫使马瑞敏、发行人屈服其压力以谋取巨额不当利益。” 马艺芯辩称，其本人是通过现金方式支付给叶丹雪股权转让款，并由叶丹雪出具了收据。而据2010年在公司注册所在地招商办任职的证人表示，在2010年时叶丹雪、李赛君和马艺芯等人在工商局办理了股权转让手续。
+(image_address=""//n.sinaimg.cn/finance/crawl/18/w550h268/20200825/6ba8-iyhvyuz6855106.png"")
+地素时尚指出，2017年5月，“钱维突然向我方索要巨额资金，几度扬言如不满足其要求，将采取各种手段阻碍我公司上市。” 据野马财经报道，马瑞敏曾委派代表进行谈判，钱维表示：“无非是争口气以及拿到股权的合理对价，没有必要两败俱伤。” 上市前地素时尚的注册资本已经从离婚时的1218万元增至3.4亿元，所有者权益则从3044万元增加至2014年底的超过6.1135亿元。据野马财经报道：“马瑞敏方派出的代表曾向钱维表示，‘1亿元内可谈，建议8800万，数字比较好听’，但随后称改口称‘5000万元内’。而钱维开出的数字是9500万。”但经过多次谈判和博弈，马瑞敏最后推翻了谈判意向。2017年5月19日证监会公布过会，五天后钱维第一次向证监会递交了举报信。
+以“格拉斯尔冲突升级模型”分析，从当时地素时尚的规模来看，无论是钱维提出的9500万元，还是马瑞敏提出的8800万元，都远非天文数字，对马瑞敏和企业都不至于构成太大的压力。如果能够达成和解，第二次IPO就会顺利完成，或许可以避开2017年上市最后一刻的致命一击，从而实现第一阶段的“双赢”。但马瑞敏可能认为，从法理上而言，离婚协议已执行完毕，无须接受额外的高额赔偿。
+(image_address=""//n.sinaimg.cn/finance/crawl/67/w550h317/20200825/d78d-iyhvyuz6848179.png"")
+（二）以“理”“法”为基础的“马方获胜阶段”
+由于马瑞敏在谈判中的拒不妥协，引发了钱维的第一次举报。钱维对公司上市的狙击，导致冲突迅速升级为“格拉斯尔冲突升级模型”第五步“丢面子”阶段。之后一系列诉讼接踵而至，直到钱维发出第二次举报信的2018年6月5日，钱维指称地素时尚仍有三起与股权纠纷、资产纠纷有关的官司没有生效及审结，违规突击恢复上市，企图带病闯关，坑害中小投资者。
+但这次举报最终没能阻挡地素时尚上市。2018年6月22日，地素时尚最终成功上市；6月23日，钱维则与马瑞敏达成案外和解，申请撤回上诉。虽然此后未曾公布最终的赔偿金额，但坊间预计马、钱二人达成利益平衡，最终以补偿方式获得和解。
+钱维以自己和母亲的名义发起的诉讼主要有两类，而从双方争论的核心及法庭判决结果来看，虽然双方各执一词，但最终结果以马瑞敏的压倒性胜利收场，而其他官司最终也以钱维撤诉而收尾。虽然无从得知马瑞敏付出的和解代价，但应可达到钱维满意的标准。
+(image_address=""//n.sinaimg.cn/finance/crawl/116/w550h366/20200825/24de-iyhvyuz6848226.jpg"")
+2017年6月和9月的两次诉讼均以叶丹雪败诉告终。判决依据主要是：其一，法院认为叶丹雪在签署协议时具有完全民事行为能力，在《股权转让协议》中有股权结构等明确记载的内容，叶丹雪称完全不知晓有悖常理；其二，法院认为根据2010年12月31日地素商贸财务报表，公司所有者权益约为3044万元，且当年已经有大额利润等信息可以公开查询。即便是按照未上市公司股权以净资产为基准，按1倍PB定价，叶丹雪当年所持股份的价值应为377万元。而当年可参考的服装行业上市公司PB一般在2倍以上。根据常理判断，叶丹雪最关注的事情应该是股权的实际价值与出让价款是否相适应，签署转让协议被认为是她本人真实意愿的反应。此外，叶丹雪在事隔五年之后才发出律师函，也已超过法律规定的撤销权为1年的期限。
+两次诉讼失败之后，2017年11月5日，叶丹雪转战自己的户籍所在地温州，将儿子钱维也列入被告，要求法院确认离婚协议中的股权转让约定无效，并要求赔偿。2018年5月16日，温州瓯海法院民事判决驳回叶丹雪的诉讼请求，认定上海法院的判决书已生效。
+钱维除了以母亲名义进行股权争夺战之外，自己也以离婚财产和股权纠纷为由，于2016年6月和9月发起诉讼，请求分割马瑞敏位于上海市普陀区的办公房产（面积94.81平方米），以及判令重新分割曾经与马瑞敏共同经营的上海地素商贸有限公司（现为地素时尚股份有限公司）的股权，其中27.38%的股权应归己所有。钱维向法院提交了一份“马瑞敏”签字的《承诺书》：“本人至办理离婚手续前没有任何房产，如发现本人或公司在我们婚姻关系存续期间隐瞒资产，本人及公司愿意除按照我国《婚姻法》相关规定无条件将资产原值一半归还钱维外，另外按照资产原值的2倍予以赔偿，我个人承担无限责任并由目前我出任董事长、法人代表并绝对控股的上海地素贸易有限公司承担连带责任。”《承诺书》还对未来上市事宜进行约定：“如果上海地素今后无论在任何地方、任何板块上市成功以后，我将无条件从我的股份中一次性补偿钱维人民币2000万元整、钱淳均人民币1000万元整、叶丹雪人民币1亿元整（或等价值的股票），上市公司主体承担连带责任。” 
+马瑞敏辩称，《承诺书》中的内容不合常理， 2010年时没人预期到被告地素时尚会上市，否则钱维也不会放弃公司。最终因钱维始终未能明确请求权基础所对应的法条，无法举证持有27.38%股权的法律证据，且有关司法鉴定证明《承诺书》中“马瑞敏”字迹并非本人所写。二审判决驳回了钱维的诉讼请求。
+(image_address=""//n.sinaimg.cn/finance/crawl/70/w550h320/20200825/12d5-iyhvyuz6848286.jpg"")
+从这份离婚协议的细则设计和最终赔付情况来看，马瑞敏进行了严密的法律防范。这得益于马瑞敏妹妹一家强大的法律背景和专业知识，妹妹马姝敏曾任温州市鹿城区法院书记员，妹夫江瀛曾为温州市鹿城区法院法官、浙江海昌律师事务所律师。得益于妹妹妹夫帮助家族企业设置法律风险防范体系，马瑞敏在处理离婚协议的财产分割以及在法庭的申辩中，在法理上都获得了比较完备的专业支持。在面对巨额财富的“情”“理”“法”纠葛之中，最终“法”成为马瑞敏最有力的盾牌。
+弥补“心理所有权”落差，应对“或有负债”
+四场诉讼，历时两年，不仅使昔日夫妻反目成仇、祖孙亲情消失殆尽，还使企业在上市之际承受巨大的危机公关压力，所幸并未对生产经营产生明显的负面影响。这一方面源于马瑞敏的专注经营，另一方面则是由于争夺的核心主要围绕着股权展开，钱维无法涉入企业的治理和管理层面。对于双方而言，在这场纷争中，如何兼顾“情-理-法”和“权-钱-名”，使对方获得心理平衡，但又不过分索求，则需要以更宽的视角审视，以更大的智慧应对。
+从“理”和“情”的角度，钱维及其父母作为地素时尚前身的缔造者和主导者，仍然具有强烈的“心理所有权”。心理所有权是指个体对目标物体产生的占有欲和心理上的拥有感，是对所有权的心理体验和思想状态，认为是“我的”一部分的心理上的联系和状态。心理所有权包括多维度的构念，包括自我效能感、责任感、归属感和认同感等，其产生的主要路径包括对目标物的控制感、亲密接触和持续投入。对家族企业的“心理所有权”体现在创始人对企业进行时间、精力和资金等方面的持续投入，在事实或心理上控制企业，具有强烈的责任感、奉献精神及创业驱动力，还有将企业作为家族资产传承给后代的期望。
+(image_address=""//n.sinaimg.cn/finance/crawl/15/w550h265/20200825/f3d2-iyhvyuz6848346.jpg"")
+叶丹雪、钱维母子在长达20年的时间中勠力创业，对地素时尚的“心理所有权”在他们的意识中根深蒂固。这种拥有感构成了当年强烈的创业驱动力，也在钱维离婚时接受了将企业股权作为家族资产传承给女儿（对于叶丹雪则为孙女）的方案。但当钱维意识到当年放弃的创业企业已经发展成即将上市的大型企业之后，甚至此时女儿也已改随母亲，则极易产生巨大的心理落差，因此想凭借诉讼的法律手段，从“法”和“理”的角度来解决和补偿“心理所有权”的缺失，就很容易理解了。
+即便如此，钱、马二人还是出现了重大的认知冲突，最终升级为证监会举报及法律诉讼冲突。对钱维原生家庭而言，由于此时已经完全退出企业，在这场升级之战中已经没有任何后顾之忧，“光脚的不怕穿鞋的”，因此这是一场只有收益、没有成本的斗争。而马瑞敏最大的失误在于，其在认知上单方面以为在法律上已经切割清楚，因此在事发之后强势应对，但其实作为“穿鞋”（即掌控企业）的一方，在拥有丰厚收益和控制权的同时，也要承担更大的声誉风险、融资风险及经营风险。
+人性幽深，尤其是当企业的发展早已远超预期时，退出企业的一方很可能产生严重的心理不平衡，以至于调转回头来清算旧账，而且极有可能不止一次。不论财产如何分割，一定会存在不公平感。所以，从离婚分家的那一刻起，不要以为一次财产分割就能高枕无忧，而应在思想、心理和财务上做好充分的准备。对于分到企业控股权的那一方而言，应当在自己头脑中建立起“或有负债”的意识，以应对离婚配偶在未来提出新的利益主张。
+(image_address=""//n.sinaimg.cn/finance/crawl/168/w550h418/20200825/c7ee-iyhvyuz6848397.png"")
+作为掌控企业的一方，要在思想及财务上准备一笔“离婚备用金”，而且做好不止一次进行支付的心理准备，因为随着外部环境的变化，退出企业的离婚配偶极有可能再次翻旧账。例如，假设2017年5月IPO前，马瑞敏答应钱维的部分主张，在“格拉斯尔冲突升级模型”第四步骤“关注于形象和联盟”时达成和解，此时双方仍看重维护名誉，决定双方行为的主要是不信任、缺乏尊重和敌意。此时的冲突具有隐蔽性，仍未演变到在公众面前“丢面子”的阶段。如果能够将冲突终止，就可以达到“双赢阶段”，钱维获得一定的经济补偿，地素时尚IPO成功。但即使如此，马瑞敏在支付时，依然要在法与理上均做好充足准备，在“理”上表明态度，在“法”上签订明确的离婚补偿协议，也就是说“本来道理上不应该给你的，但是念在感情上我可以额外给你。”中国人讲究“事不过三”，两三个来回之后，对方心理上便倾向于接受，不再提出新的要求。
+万事皆有因果。对于马瑞敏而言，她的创业成功无疑极大地受益于钱家曾经的支持。从儒家的义利观念出发，对于曾经在创业路上帮助过自己的人怀有感恩之心，做好“吃亏是福”的心理准备，亦有更大可能实现双赢。尤其是，在自己拥有巨额财富之后，给予曾经的配偶一定的超额回报，从道义和心理上坦然面对，也不失为情义之举。
+（作者高皓是清华大学五道口金融学院全球家族企业研究中心主任，兼任世界经济论坛全球未来理事会理事、全国工商联智库委员会委员、中国企业改革与发展研究会理事及研究员、国际信托与资产规划学会 （STEP）中国执委会委员、《家族企业治理》《家族财富传承》 丛书主编。 安静是清华大学五道口金融学院全球家族企业研究中心高级研究专员。孙子谋是清华大学五道口金融学院全球家族企业研究中心研究专员。）
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：张熠",2020-08-25 17:53:34,新浪财经
+3,马云捐出6.1亿股蚂蚁股份做公益 相当于蚂蚁上市后股份2%,"原标题：电报 | 马云捐出6.1亿股蚂蚁股份做公益 相当于蚂蚁上市后股份2%
+来源：科创板日报
+《科创板日报》25日讯，蚂蚁上市招股文件显示，马云将从其个人所持蚂蚁股份中捐出6.1亿股用于公益。这些捐赠将委托杭州云铂未来捐赠给他指定的公益组织，按蚂蚁招股书显示的上市后总股本300.3897亿股计算，马云此次相当于捐出了蚂蚁（上市后）股份的2%。《科创板日报》记者了解到，目前马云本人正在云南昆明，见证蚂蚁集团与云南关于保护野生亚洲象项目的签约，这个公益项目也是马云在阿里内网号召发起。（《科创板日报》记者汪慧）
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：张熠",2020-08-25 17:50:17,新浪财经
+4,2分钟读财报|格兰仕要约收购信息泄漏?惠而浦股价提前涨17.88%,"视频加载中，请稍候...
+自动播放
+(image_address=""//n.sinaimg.cn/front20200825ac/72/w720h952/20200825/df07-iyhvyuz6835586.jpg"")
+play
+格兰仕
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 349414773,
+pid:1,
+url: 'https://video.sina.com.cn/p/finance/2020-08-25/detail-iivhuipp0626644.d.html',
+title:'格兰仕'//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=349414773/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+要约收购惠而浦（维权），微波炉巨头格兰仕拟借壳上市。
+收购的逻辑很简单：一边是业绩持续低迷、又涉嫌财务造假的大家电企业惠而浦；一边是微波炉产品单一、全品类发展不顺的格兰仕。
+如果收购完成，格兰仕不仅实现上市的目的，还能够吃下惠而浦旗下惠而浦、帝都和荣事达等白电品牌，在业务上具有互补性。
+但是这样的利好消息可能提前被泄漏。23日晚间才官宣的消息，惠而浦19日股价就已经高开高走，三个交易日内累计涨幅达到17.88%，8月21日公司股票更是以涨停收盘，资金炒作情绪明显。
+收购消息未公布就提前引来资金进场，这背后是不是有人在泄漏消息、涉及内幕交易呢？
+2分钟读财报|《八佰》《姜子牙》等定档 电影行业复苏提速
+2分钟读财报|创业板注册制启航 20%涨幅你敢买吗？
+2分钟读财报|光线Q1扣非亏1300万 押宝《姜子牙》和张艺
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：常福强",2020-08-25 17:50:04,新浪财经
+5,2分钟读财报|营收下滑 彩生活上半年业绩低迷裁员1322人,"视频加载中，请稍候...
+自动播放
+(image_address=""//n.sinaimg.cn/front20200825ac/380/w540h640/20200825/b0f8-iyhvyuz6806692.jpg"")
+play
+视频|彩生活
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 349413263,
+pid:1,
+url: 'https://video.sina.com.cn/p/finance/2020-08-25/detail-iivhvpwy3001046.d.html',
+title:'视频|彩生活'//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=349413263/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+8月18日，物业第一股彩生活发布2020年中期业绩报告。上半年彩生活实现营业收入18.11亿元，同比下降1.8%，出现了上市以来的首次负增长；实现净利润2.5亿元，同比增长4.8%。
+作为内地在港上市的第一家物业公司，彩生活6年来通过一系列并购维持增长，但近两年彩生活迷失在在互联网+物业的探索中，最终被同行甩在了后面。
+Wind数据显示，29家AH物业股2019年营业收入的平均增速是41%，剔除重组的招商积余，彩生活6.4%的营收增速垫底，与行业背离趋势尤为明显。
+分业态来看，上半年彩生活物业管理服务同比增长3.2%，增值服务及工程服务分别大幅下降29.2%、21.7%，拖累整体营收。公司解释称，主要原因是战略转型导致网上推广服务、设备安装服务等收益减少，同时也受新冠肺炎疫情影响。
+营收下降情况下，彩生活仍能实现净利润增长或许和裁员降成本有关系。上半年彩生活的员工人数从15289名下降到13957名，大幅减少了约1332名员工。自2014年上市以来，彩生活过往只有一次裁员经历，也就是2017年员工人数下降了514名。
+近两年的业绩低迷，再加上碧桂园服务、保利物业的等龙头接连上市，曾经的物业第一股风光不在，以至于市场常常忘记彩生活其实还算是一家头部的物管公司。
+以面积来看，2019年末彩生活359.7百万平方米的在管面积位于港股第一，562百万平方米的合约面积位低于碧桂园服务排在第二。但是以2019年营收排列，彩生活只能排在第7位，相当于碧桂园服务40%的体量。
+加之房企纷纷拆分旗下物业上市，港股物业股标的越来越多，且由于房地产前两年的高速发展，造就了大量的关联面积结转高峰期。对比之下，缺乏强有力的关联方支持也是彩生活不被看好的原因之一。
+2分钟读财报|《八佰》《姜子牙》等定档 电影行业复苏提速
+2分钟读财报|创业板注册制启航 20%涨幅你敢买吗？
+2分钟读财报|光线Q1扣非亏1300万 押宝《姜子牙》和张艺谋
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：常福强",2020-08-25 17:49:04,新浪财经
+6,投行人士：蚂蚁集团最快10月20日前后科创板上市,"8月25日消息，蚂蚁集团向上交所及港交所同步递交上市招股文件，拟在A+H发行的新股数量合计不低于发行后总股本的10%，发行后总股本不低于300.3897亿股（绿鞋前）。本次A股发行可引入绿鞋机制，超额配售权最高不超过15%。
+蚂蚁集团今日披露的招股说明书显示，2017年度、2018年度、2019年度和2020年1-6月，公司分别实现营业收入653.96亿元、857.22亿元、1206.18亿元和725.28亿元。2017年度至2019年度年均复合增长率为35.81%；分别实现净利润82.05亿元、21.56亿元、180.72亿元和219.23亿元。
+蚂蚁集团支付宝的月度活跃用户由2017年12月的4.99亿名增加至2020年6月的7.11亿名，年度活跃10亿+，月度活跃商家8000万，截至2020年6月30日止年12个月，支付宝数字支付交易规模高达118万亿。
+根据招股资料，君瀚、君澳作为蚂蚁的员工持股平台，分别持有蚂蚁29.8%和20.6%的股份，为控股股东。发行完成后，君瀚、君澳合计持股将不低于40%。同时，马云个人持股比例不超过8.8%，他还宣布捐出6.1亿股蚂蚁股份做公益，相当于蚂蚁发行后总股本的2%。
+据悉，蚂蚁集团A股IPO拟融资480亿元人民币。
+对于蚂蚁集团的A+H股上市，资深投行人士王骥跃表示，预计本周给问询函，下周一回复，下周二通知上会，9月10日前后过上市委，14号前后之后申请注册，当周批下来，10月20日前后上市
+扫二维码 3分钟开户 紧抓创业板2.0大机会！
+(image_address=""//n.sinaimg.cn/finance/512/w256h256/20200807/333c-ixkvvuc9099771.png"")
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：逯文云",2020-08-25 17:43:47,新浪财经
+7,松霖科技：公司与荐股事件无任何关联关系,"8月25日消息，松霖科技发布公告，公司收到多位投资者反映，市场上存在有人利用微信群及直播间向股民推荐买入我公司股票的情形。经公司、控股股东、实际控制人、董事、监事及高级管理人自查，各方均未策划、参与该事件，亦未授意他人策划、参与该事件，与该事件无任何关联关系。
+扫二维码 3分钟开户 紧抓创业板2.0大机会！
+(image_address=""//n.sinaimg.cn/finance/512/w256h256/20200807/333c-ixkvvuc9099771.png"")
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：张熠",2020-08-25 17:24:14,新浪财经
+8,一图看懂蚂蚁集团招股文件：支付宝月活7.11亿,"原标题：一图看懂蚂蚁集团招股文件
+来源：科创板日报
+《科创板日报》25日讯，蚂蚁集团招股文件还披露，支付宝APP服务超过10亿用户和超过8，000万商家，合作金融机构超过2000家，为全球最大的生活服务/商业类APP。按规模计，蚂蚁集团是中国最大的数字支付提供商和领先的数字金融平台，截至2020年6月30日的12个月内，在国内的总支付交易规模达到118万亿元，微贷科技平台促成的贷款余额与理财科技平台促成的资产管理规模分别达到2.1万亿元和4.1万亿元。
+(image_address=""//n.sinaimg.cn/finance/crawl/701/w300h2001/20200825/3657-iyhvyuz6685659.jpg"")
+扫二维码 3分钟开户 紧抓创业板2.0大机会！
+(image_address=""//n.sinaimg.cn/finance/512/w256h256/20200807/333c-ixkvvuc9099771.png"")
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：张熠",2020-08-25 17:14:48,新浪财经
+9,道恩股份：上半年净利润同比增641% 拟10派2.46元,"8月25日消息，道恩股份（002838）晚间披露半年报，上半年实现营收22.75亿元，同比增长75.16%；净利润5.85亿元，同比增长640.99%；基本每股收益1.45元。公司拟每10股派发红利2.46元（含税）。公司除聚丙烯熔喷专用料爆发式增长外，其他改性塑料产品保持稳定发展。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：张熠",2020-08-25 17:14:18,新浪财经
+10,长春高新：子公司百克生物IPO申请获上交所受理,"8月25日消息，长春高新（000661）晚间公告，上交所依据相关规定，对公司控股子公司百克生物报送的首次公开发行股票并在科创板上市的申请报告及相关申请文件进行了核对，决定予以受理并依法进行审核。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：张熠",2020-08-25 17:11:10,新浪财经
+11,蚂蚁招股文件披露：员工持股平台占股40% 马云个人持股不超8.8%,"原标题：蚂蚁招股文件披露：员工持股平台占股40%，马云个人持股不超8.8%
+来源：科创板日报
+《科创板日报》25日讯，蚂蚁集团25日傍晚向上交所及港交所同步递交了A+H招股文件。文件披露，君瀚、君澳作为蚂蚁的员工持股平台，分别持有蚂蚁29.8%和20.6%的股份，为控股股东。发行完成后，君瀚、君澳合计持股将不低于40%。同时，马云个人持股比例不超过8.8%，他还宣布捐出6.1亿股蚂蚁股份做公益，相当于蚂蚁发行后总股本的2%。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：张熠",2020-08-25 17:07:29,新浪财经
+12,蚂蚁递交招股文件：A+H发行新股不低于发行后总股本的10%,"原标题：重磅！蚂蚁递交招股文件：A+H发行新股不低于发行后总股本的10%
+来源：科创板日报
+《科创板日报》25日讯，蚂蚁集团向上交所及港交所同步递交上市招股文件，拟在A+H发行的新股数量合计不低于发行后总股本的10%，发行后总股本不低于300.3897亿股（绿鞋前）。本次A股发行可引入绿鞋机制，超额配售权最高不超过15%。2019年，蚂蚁全年营收1206亿元，同比增幅超40%，净利润180.7亿元。
+扫二维码 3分钟开户 紧抓创业板2.0大机会！
+(image_address=""//n.sinaimg.cn/finance/512/w256h256/20200807/333c-ixkvvuc9099771.png"")
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：张熠",2020-08-25 17:06:00,新浪财经
+13,复星医药：上半年净利润17.15亿元 同比增长13.1%,"8月25日消息，复星医药发布2020年半年度报告，公司实现营业收入140.3亿元，同比减少1.02%；实现归属于母公司股东的净利润17.15亿元，同比增长13.1%。一季度疫情因素对本集团医疗服务业务、药品制造与研发板块注射剂业务等造成一定程度的影响，随着有序复工复产，二季度各项生产经营已恢复，二季度当季实现营业收入81.48亿元，较一季度环比增长38.55%。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：张熠",2020-08-25 17:01:38,新浪财经
+14,中信建投：上半年净利润45.78亿元 同比增97%,"8月25日消息，中信建投公告，上半年实现营业收入99.00亿元，同比增长67.63%；实现净利润45.78亿元，同比增长96.54%。报告期内，完成股权融资项目22单，主承销金额人民币693.13亿元，双双位居行业第1名。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：张熠",2020-08-25 17:00:41,新浪财经

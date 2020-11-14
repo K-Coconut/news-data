@@ -1,0 +1,155 @@
+,title,content,pub_time,src
+0,英国植物性肉类公司THIS获380万欧元新一轮融资,"投资界8月13日消息，据36氪报道，英国植物性肉类公司THIS获得了380万欧元融资，超过了其220万欧元的融资目标。此轮融资的投资者包括风险投资公司Backed VC、Five Seasons Ventures、Idinvest Partners、Seedcamp和Manta Ray Ventures，这些投资者也都参与了该公司今年年初的种子轮融资。
+对于新一轮融资的资金，THIS将用来加速其业务的增长速度。该公司要扩展其创新功能，它要向总部位于伦敦的创新中心投资110万欧元，改进加工设备等，从而提高制造能力。
+此外，THIS还要扩大团队的规模，增强团队人员的业务能力。该公司计划在未来3年内，每年在推出10种不同类别的产品。
+2018年10月，位于英国伦敦的THIS，由Andy Shovel和Pete Sharman共同成立。这家初创公司旨在打破食肉者对植物性食品的偏见。经过两年的研究和开发，THIS与世界知名的食物科学家、工程师和调味师合作，模仿了肉类的口味、质地、外观和气味，一起打造了自己的植物性肉类产品。该公司的产品以豌豆和大豆为基础，主要可以作为鸡肉和培根肉的替代品。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-08-13 12:53:06,同花顺
+1,“行云二号”成功验证星间激光链路技术 我国卫星物联网实现星间通信零的突破,"近日，“行云二号”01星、02星之间实现了建链流程完整、遥测状态稳定的双向通信，这意味着“行云二号”卫星搭载的激光通信载荷技术得到成功验证，我国卫星物联网星座实现星间激光通信零的突破。至此，两颗卫星自今年5月12日发射入轨开展在轨技术测试以来，所有核心技术均得到充分验证。
+图1：行云二号01、02星激光通信模拟图
+星间激光通信是一种利用激光束作为载波在空间进行图像、语音、信号等信息传递的通信方式，具有传输速率高、抗干扰能力强、系统终端体积小、质量轻、功耗低等优势，可以大幅降低卫星星座系统对地面网络的依赖，从而减少地面信关站的建设数量和建设成本，扩大覆盖区域、实现全球测控。据悉，“行云二号”01星、02星的激光通信载荷质量6.5千克，在轨功耗80瓦。
+“行云二号”01星、02星由中国航天三江集团有限公司所属航天行云科技有限公司抓总研制，是天基物联网(行云工程)的首发星，于2020年5月12日成功发射入轨，随即展开一系列在轨技术验证及行业示范应用测试。
+目前，星间激光链路技术已成为全球卫星通信系统发展的关键技术。公开资料显示，全球中低轨道星座项目中，仅有美国的Starlink星座、LeoSat星座提出了采用星间激光链路实现空间组网的计划。而在国内，行云公司抓总研制了国内最小的星间激光通信载荷，实现了国内卫星物联网星座激光通信零的突破，打通了卫星物联网星座间信息传输的瓶颈制约。(经济日报记者姜天骄)
+(责任编辑：何欣)
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-08-13 12:40:18,同花顺
+2,专注于工业级VR/AR头显，Varjo获5400万美元C轮融资,"投资界8月13日消息，据映维网报道，工业级虚拟现实/混合现实头显开发商Varjo宣布完成了5400万美元的C轮融资。团队表示，将利用本轮资金加速公司的全球扩张，以及XR硬件与软件产品的开发。
+本轮融资的投资者包括Tesi、NordicNinja、Swisscanto Invest by Zürcher Kantonalbank、Lifeline Ventures、Atomico、EQT Ventures和Volvo Cars Tech Fund。完成C轮融资后，这家公司的总融资额已经达到1亿美元。
+Varjo以其企业级“人眼分辨率”VR/AR头显而闻名，产品包括XR-1Developer Edition、VR-2和VR-2Pro。沃尔沃汽车、波音、奥迪和西门子公司都有将Varjo头显用于自己的工业应用，包括培训和模拟、设计和工程以及研发。
+自2016年成立以来，Varjo已将其全球业务和经销商网络扩展到北美、欧洲、中东和亚太地区的40多个国家，并开始向新加坡、以色列、韩国、澳大利亚和新西兰等市场直接发货产品。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-08-13 12:33:49,同花顺
+3,从招商到签约 第十届北京国际电影节“北京市场”打造全产业链生态,"北京商报讯(记者卢扬郑蕊)8月13日，第十届北京国际电影节对外透露“北京市场”的具体情况，并将分为招商展会、项目创投、行业对话、特约活动、签约仪式等五个板块，打造全产业链生态。
+据北京国际电影节组委会透露，在招商展会方面，今年将全部移至线上，并在国内电影节中第一家采用3D+VR技术搭建虚拟展示系统，向全球电影机构提供免费展位。而在项目创投方面，今年则征集到829个项目，较去年增长13%，质量也有较大提升，并将由知名监制陈国富、柏林影后咏梅以及演员邓超担任终审评委，评选出最具市场潜力、艺术水准的新人新作。此外在行业对话方面，本届“北京市场”首次在怀柔精品民宿举办北京市场行业对话，聚焦“艺人经纪影响力”“中国青年导演崛起之路”等热点话题，为电影发展注入新动力、新活力。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-08-13 12:20:52,同花顺
+4,钟声坚：未来旧改将占到仁恒土地获取的三成,"8月13日，仁恒置地在线上举行2020中期业绩会及投资者会，出席的管理层有董事局主席钟声坚、执行董事钟铭、集团财务副总裁谢学明、集团财务总监陈志伟、投资者关系部主管施嘉萍。
+根据仁恒置地披露，上半年仁恒置业的毛利率为35.9%，较去年同期的46.5%下跌逾十个百分点。
+对此，钟声坚回应称，上半年毛利率较低主要是因为天津、深圳回龙埔等项目的毛利率较低。不过，由于旧改项目的毛利率较高，随着项目的推进，未来毛利率不会出现明显下滑。
+此外，在拿地方面，钟声坚表示，未来旧改会占土地获取的30%，另外30%通过合作，剩余的40%通过竞拍来获取。而针对下半年的卖地计划，钟声坚表示，将根据下半年销售情况，结合负债情况。再来考虑下半年具体的卖地计划。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-08-13 12:19:50,同花顺
+5,邵宇：中国房地产行业未来大概还有15年,"2020博鳌房地产论坛·现场快讯：8月13日早上，东方证券总裁助理、首席经济学家邵宇，在2020博鳌房地产论坛“市场：地产金融资本图景”环节的主题演讲中发表对内循环的看法。
+内循环是以房地产为主吗？邵宇回应到，只会干房地产的经济体是没有未来的，但是不会干房地产的经济体是没有当下的。“我们还有15年的时间做一个切换。”他认为，包括老龄化的问题、区域化的问题、城市化的问题等，中国房地产行业的发展未来大概就是15年。
+邵宇进一步表示，“内循环并不是闭关锁国，究竟怎么样做供给的循环，怎么样做金融系统的再造，包括货币的提升，就如同我们当年提出供给侧，大家都不太明白，因为我们以前讲的都是需求侧，如同现在的内循环。它并不是封闭，而是一种更高的能力。”
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：yqz",2020-08-13 12:14:20,同花顺
+6,吴建斌认为房企规模扩张的度其实就是安全垫设置,"2020博鳌房地产论坛·现场快讯：8月13日，阳光控股执行董事、阳光城集团执行副总裁、全球合伙人吴建斌在2020博鳌房地产论坛资本大会“资本金融篇：万亿奔腾”的主题演讲中表示，其一直认为中国的房地产市场目前还处在青春期，既然是青春期，机会就很多。
+吴建斌进一步指出，房企规模扩张的度，实际上是讲一个安全垫。设定安全垫要分清市场在当下是上行、横盘还是下行；要分清利润的空间到底有多大；最后还要看企业的战略，是机会主义者，还是长期主义者。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：yqz",2020-08-13 12:14:12,同花顺
+7,邵宇：未来将有5个关键的转变,"2020博鳌房地产论坛·现场快讯：8月13日早上，东方证券总裁助理、首席经济学家邵宇，在2020博鳌房地产论坛“市场：地产金融资本风暴”的主题演讲中讲到未来将有5个关键的转变。
+邵宇表示，第一是转内循环为主；第二是全面转到线上；第三是转向消费分层；第四是转向新基建；第五是转向进口替代和自主可控。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：yqz",2020-08-13 12:13:07,同花顺
+8,隆基创始人李振国：光伏开启“一毛钱一度电”时代,"中国网财经8月13日讯(记者李冰岩)“在隆基人和同业伙伴的共同努力下，光伏技术不断革新，促使全球光伏发电成本快速下降，在光照资源丰富的许多国家和地区已经实现一毛钱一度电，当之无愧的成为了最便宜、最清洁的电力资源。光伏+储能将是人类未来的终极能源解决方案，是应对气侯问题的有力武器。”说出这番话时，隆基股份（601012）(601012.SH)创始认兼总裁李振国透出满脸的自豪。
+8月初的上海，因为疫情从3月份推迟到8月份的第十四届SNEC全球光伏大会如期而至。
+在接受中国网财经专访时，李振国再次强调“光伏加上一定比例的储能，在10年之内会成为全球相当多国家和地区最便宜的能源，这意味着光伏能够在经济性上对传统能源实现大规模替代。而10年后，全球年新增光伏装机或将达到1000GW水平(目前为100GW)。”
+这是一个什么概念呢，就是目前每年安装量将有6-7倍以上的增长空间。
+在李振国看来，光伏发电的意义不仅体现在经济性上，他还有更加宏大的目标：让光伏承担起修复地球的责任。作为气候行动的坚定支持者，隆基股份成为首批加入RE100的企业之一，承诺最晚于2028年前实现100%绿电，同时呼吁和影响更多的企业推行100%绿色电力消费，推动中国能源革命，应对全球气候危机。
+李振国的技术格局
+近二十年来，中国经济渡过数次大小周期，国家层面的能源战略历经不同程度的调整进化，以光伏为代表的新能源产业得以加速崛起。得益于技术进步和成本降低的速度，光伏发电在部分国家和地区已成为最便宜的电力能源，相比于传统火电，光伏巨大的价格优势及环境友好的替代作用，未来增量市场巨大。
+根据国际能源署(IEA)报告预测，全球清洁能源(主要为风电、太阳能)将在2021年迎来大幅反弹。
+在光伏这个行业，发展逻辑就是追求度电成本的不断下降，过去十余年里，光伏的技术进步和成本下降速度远超想象，并且仍在持续。作为全球最大的单晶硅产品生产商，隆基股份在引领技术发展的道路上也曾有过失败和教训。但坚持单晶的发展方向随之带来的与多晶产品的竞争，使得隆基股份充分享受到了不同技术成本所带来的利润红利。
+在最大化降低发电成本这件事上，李振国和他带领的团队是认真的。虽然单晶技术最终被证明是能将度电成本降到更低的技术，但彼时的单晶成本远高于多晶技术，这使得几乎整个光伏行业企业都选择了多晶技术的发展路线，而李振国带领的隆基股份坚定的走上了单晶路线。李振国表示，这并不是隆基要与整个行业对着干，更不是赌，而是隆基对多晶、单晶、薄膜等不同的技术路线做了系统深入的研究后，基于度电成本不断降低的底层逻辑，得出了单晶才是未来度电成本能够降到最低的技术路线的结论。
+2013年，隆基股份单晶硅片全球出货量成为第一，但在光伏圈里，单晶的市场份额却在不断下降，究其原因是下游厂商将单晶产品边缘化。2005年开始，光伏行业进入发展的快车道。因为产能短缺，绝大多数光伏企业为了快速扩张，都采用了门槛和成本都相对更低的多晶路线，并在产能上相应做了大量的布局。
+为了扭转局面。李振国团队的做法是将产业链向下游延伸，作出一个示范效应，让市场看到单晶硅片的成本会下降的更快。
+也因为如此，隆基股份开始向下游延伸，由单晶硅片制造商逐渐成为太阳能设备商。
+而在追求技术升级降低成本的路上，隆基从未停止脚步。“隆基股份硅片非硅成本之所以能够大幅下降，得益于金刚线切片技术的引入和规模化。”隆基股份品牌总经理王英歌告诉记者。
+金刚线切割可降低单位硅片对硅料需求，使得硅片切得更薄更快，从而减少硅片单位投资成本。更为重要的是，这一技术的应用，也是隆基股份硅片业务毛利率提升的重要推力。
+截至2019年底，隆基股份单晶硅片、组件产能分别达到42GW、14GW。而根据扩产规划，截至2020年底，隆基的单晶硅片、组件产能将分别超过75GW、30GW。
+成本的快速下降，是单晶能够成功挤压多晶市场份额的重要原因，单晶技术实现了逆袭，隆基股份几乎以一己之力改变了这一发展格局。截至2019 年，单晶产品市占率已接近 70%，预计2020年底超过 90%，可以说，隆基对于整个行业的发展起到了至关重要的作用。也正是因为单晶硅的技术发展、成本的降低和转换率的提升，短短几年时间平价光伏发电才有可能性。
+在追求技术创新不断降低度电成本的同时，隆基股份也在积极拓宽产业链，进行产业升级。8月7日，隆基股份在上海发布了首款建筑光伏一体化(BIPV)产品“隆顶”，作为隆基股份全新产品线，隆顶的发布也正式宣告隆基股份进军建筑光伏一体化市场。这也是隆基股份拓宽产业延伸、完善产品链、进行产业升级的战略之举，无论是对行业还是对公司本身都具有重要意义。
+如今的隆基股份，已经成长为光伏行业的标杆，成为全球市值最高的光伏企业，李振国和他的团队并没有满足于此，他们有更高的追求。就像在被问及是否会继续向下游延伸建设电站时，李振国坚定的告诉中国网记者“不可否认电站是个好生意，门槛低很轻易做起来，但我们把电站定义为一个投资型产业，建电站收钱像收房租一样，这不是我们这个团队所追求的。我们希望能通过团队的努力、技术的进步、商业模式的优化，不断拓宽光伏行业的边界。”
+李振国：气候行动的坚定支持者
+在确定光伏一定会成为人类最便宜的一种电力能源并努力让将其实现之后，李振国和他的团队开始思考光伏如何在人类的能源结构中扮演更重要的角色以及个人和企业怎么推动全球能源清洁化的问题。
+李振国认为，如果地球实现了100%清洁能源的能源结构占比，那么地球和人类社会将迎来零碳排的时代。同时，当光伏具备足够的经济性时，光伏能源还可承担起修复地球生态的责任，也就是隆基提出的“solar for solar(用清洁能源生产清洁能源)”。
+随着光伏成本的逐步下降，储能技术的日趋成熟，光伏将承担起修复地球的责任。李振国对中国网财经进一步解释道“在光伏的制造环节，用清洁能源，比如水电、光伏发电来生产清洁能源。这就是“零碳”。此外，可以利用经济的光伏能源进行大规模的海水淡化，并且对淡化后的海水进行提升和输送到沙漠地区，让沙漠变成绿洲，一旦有了植被，就可吸收空气中的二氧化碳，对碳进行固化，减少大气中的二氧化碳含量，修复过去人类发展带给地球的伤害。这就是一个’负碳’的过程。”
+“如果地球荒漠面积的70%都变成绿洲，那么就可以把自有人类以来，人类活动产生的所有碳排放都可以吸收固化下来。这就是一个地球生态的积极的修复过程。”
+有了明确的路线，李振国和隆基团队也开始付诸行动。
+在SNEC光伏展会上，隆基股份携手远景科技集团、阳光电源（300274）成为首批加入RE100的中国可再生能源企业，联合中国能源研究会可再生能源专业委员会、中国绿色供应链联盟光伏专委会在上海共同发起并签署了“RE100中国倡议”，呼吁更多中国企业推行100%绿色电力消费，推动中国能源革命，应对全球气候危机。
+作为全球最具价值的太阳能科技公司，隆基是气候行动的坚定支持者。隆基股份总裁李振国在接受中国网专访时表示，“我们和气候组织及所有RE100的成员企业们拥有同样的初衷和梦想――建立一个完全使用清洁能源的美好世界，彻底解决全球气候变暖问题。隆基也希望通过自身的探索为更多的企业提供可参照的目标。未来，我们不仅会严格遵守承诺，实现100 %清洁能源目标，也会继续推动清洁能源在全社会的更广泛应用。”
+为了践行诺言，隆基对外发布了RE100的路线图，承诺最晚于2028年前实现100%绿电，2027年中期目标实现70%绿电。未来隆基将通过基础核算、节约电力、能源转换、排放抵消、影响利益相关方这五个步骤实现100%可再生能源的目标。隆基承诺通过购买绿电、购买绿证、建设可生能源电站、未来将工厂建设到绿电丰富的地区等手段不断提升绿电占比；同时，实现100%绿电承诺的征途中，隆基也将通过自己的商业行动，影响利益相关方，共同实现隆基和RE100的愿景，创造一个更加绿色的世界。
+当前，全球以减碳为初衷的绿色新政兴起，已不仅是一个政治意愿，而是技术上可以实现的替代(针对化石能源)方案。
+2019年隆基股份和国家能源研究所、陕西煤业（601225）化工集团在联合国第25届气侯大会发布了《中国光伏展望2050》报告，到2050年，光伏已成为中国的第一大电源，光伏发电总装机规模达到50亿千瓦，占全国总装机的59%，全年发电量约为6万亿千瓦时，占当年全社会用电量的39%。
+在发展路径方面，2020-2025中国光伏将启动加速部署2025-2035中国光伏规模化部署的关键时期。到2050年中国光伏发电总装机规模将达到5000GW，占全社会总用量电的40%。
+在谈到光伏和隆基股份的未来时， 李振国信心十足，他告诉中国网记者：”光伏+储能是人类未来终极能源解决方案，同时也是应对气候问题的有力武器。今年的储能成本是10年前的三分之一，未来有望5年内就能做到2毛钱以下。随着光伏成本的逐步下降，储能技术的日趋成熟，光伏将能承担起修复地球的责任。”
+(责任编辑：赵融)
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：yqz",2020-08-13 12:12:58,同花顺
+9,邵宇：预测今年中国经济增长目标2.5%左右,"2020博鳌房地产论坛·现场快讯：8月13日早上，东方证券总裁助理、首席经济学家邵宇，在2020博鳌房地产论坛“市场：地产金融资本风暴”的主题演讲中讲到后疫情时代经济增长会相对停滞化和结构化。
+邵宇表示，“我们给今年中国经济增长预测的目标大概在2.5%左右，按照IMF的估计只有1.0%，但即便这样的数字，从相对来看也是历史的新高。”
+邵宇提出预测的部分依据是，虽然今年的经济增长没有设定GDP目标，但隐含的是有900万的新增就业，也就意味着大概GDP要有2%到3%的增长，才能完成新增900万就业的目标要求。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：yqz",2020-08-13 12:12:22,同花顺
+10,吴建斌：企业奋斗目标归根结底是优化和提升资产负债表,"2020博鳌房地产论坛·现场快讯：8月13日，在2020博鳌房地产论坛资本大会“资本金融篇：万亿奔腾”的主题演讲中阳光控股执行董事、阳光城集团执行副总裁、全球合伙人吴建斌表示，一个企业的奋斗目标是很多的，但是归根结底核心的目标是优化和提升资产负债表。
+吴建斌进一步指出，财务平衡就是要做到短期、中期、长期的收与支的时点上的平衡，或者是一种动态的弹性平衡。终身为优化与提升资产负债表而奋斗，这是干企业的目的。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：yqz",2020-08-13 12:12:15,同花顺
+11,建设标准厂房助推产业集群集聚发展,"1990年，赣州经开区第一栋标准厂房开工建设，到现如今，多层标准化厂房随处可见，形成了一道亮丽的风景。近年来，赣州国际企业中心、西城科技园、恒科东方产业园、华昌电子及新材料产业园等一批标准厂房建成，助推了产业集群集聚发展，实现了“筑巢引凤、签约落地、开工投产”的效果。
+2016年以来，赣州经开区新建工业标准厂房项目40个，项目总投资182.89亿元，开工总面积449.85万平方米，入驻企业1029户，带动就业近2万人。
+支撑园区招商引资、筑巢引凤
+标准厂房作为承接产业转移有效载体，赣州经开区从建区之初就把标准厂房建设作为一项重要工作来抓，一栋栋拔地而起的现代化标准化厂房正成为园区招商引资、筑巢引凤的强有力支撑。
+赣州经开区充分发挥标准厂房配套完善、投资成本低、转移时间短等优势，抓住“试水转移”企业、急需转移企业以及中小企业投资创业等商机，成功吸引光宝力信、金进实业、研创光电、孚能科技、好朋友科技等一大批企业在金岭科技园、香江科技园标准厂房落户。
+其中，孚能科技、好朋友科技等一批企业租用标准厂房投入生产后，规模迅速扩大，目前已成功“孵化”并逐步成长、壮大，孚能科技被认定为全省首家独角兽企业；好朋友科技被认定为种子独角兽企业。
+与此同时，标准厂房建设也为优化招商引资环境、做大做强实体经济筑牢了坚实基础。2017年11月投产的赣州立德电子有限公司，利用闲置的标准厂房落地投产，曾创造了一年签约投产的记录，并在投产后第一年就实现销售收入13.8亿元，不仅书写了自身发展的加速度，更展现了赣州经开区电子信息产业的发展加速度。
+构筑招商引资和“双创”的有效载体
+随着创新驱动发展战略的深入实施,“大众创业、万众创新”在全国各地蓬勃兴起，赣州经开区按照“筑巢引凤自建一批、腾笼换鸟促建一批、招商引资建设一批、吸引民资建设一批”的要求，把推进标准厂房建设作为提高土地节约集约利用水平、推进园区健康发展的重要手段，着力构筑招商引资和“双创”的有效载体，吸引中小企业集群发展。
+走进赣州国际企业中心，呈现在眼前的不是生产车间，而是一栋栋现代化、个性化、高品位的写字楼，园区内树荫婆娑，花开四季，让工作空间变成“创想公园”，青年创意沙龙、创业咖啡、路演沙龙、产品展示厅、图书馆、研发空间等为创业团队提供全方位服务。
+作为赣州经开区吸引民资建设的一批标准厂房，赣州国际企业中心一直以培育中小企业为核心先导，积极为入园企业搭建一个集聚发展的平台，目前园区已汇聚慧通力合信息技术、九维3D打印、亿洲科技等516家企业共同发展。
+优质“双创”环境，能为青年创业者和创业企业注入活力与动力。2019年，赣州经开区推进金岭科技园整体提升改造，园区超市、智慧食堂相继投入运营，配套功能进一步完善。赣州市智能产业创新研究院、赣州区块链金融产业沙盒园等越来越多的科技企业在这里得到孵化、成长。
+当前，赣州经开区标准厂房建设已经步入快车道，累计建成“梧桐树”计划工业标准厂房200余万平方米，路网、管网、绿化等配套一应俱全，承载力大幅提高。
+赣州经开区相关负责人表示，将坚持加快标准厂房建设，为园区招商引资、快速发展提供有力保障。未来，赣州经开区将建成标准厂房1000万平方米，真正实现“大项目供地，小项目供标准厂房”的目标。
+（中国日报江西记者站）
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：yqz",2020-08-13 12:12:09,同花顺
+12,天猫超市揭秘零食消费：23点是下单最高峰 健康零食增速迅猛,"辣条、瓜子、火腿肠，到底哪一个才是中国的“零食之王”？答案是，以上都不对。
+天猫超市零食消费数据显示，西式糕点的交易金额遥遥领先于其他零食品类，比排名第二的膨化食品还高 26%。最近一年，坚果、橄榄和鸡肉类零食消费增速迅猛，健康零食消费成为趋势。
+西式糕点击败膨化食品，成为中国“零食之王”
+在天猫超市的所有零食品类中，糕点类零食的交易金额排名居前。频频出现在早餐桌上的面包、酥饼都属于这一品类。其中，西式糕点排名第一，中式糕点排名第四。以薯片、虾条、爆米花为代表的膨化食品排名第二。
+肉类的地位不容忽视，鸭肉类、牛肉类、鸡肉类零食抢占了前十名中的三个名额，分别排名第六至第八。在进口零食中，饼干是最受欢迎的品类，也是唯一进入交易金额前十的进口零食品类。
+天猫超市零食品类消费金额排名
+在西式糕点领域，传统品牌和新锐品牌战况激烈。最近一个月，三只松鼠（300783）、达利园、百草味、港荣、OBERA 进入前五名，盼盼、良品铺子（603719）、一麦番、好丽友、泓一等品牌紧随其后。对于消费者来说，品牌之间的争夺大大丰富了可选择的产品范围。
+吃零食不仅能满足口腹之欲，还能解决健康饮食需求。过去一年，健康零食收到大批消费者追捧。其中，鲍鱼果的交易金额增速高达 768%，成为当之无愧的趋势新品。此外，传统零食沙琪玛增速也高达 575%，是白领最喜爱的充能零食之一。
+吃货大省在哪里？广东拿下全国第一，安徽增速最快
+天猫超市数据显示，广东是全国最大的零食消费省，浙江、江苏、上海、北京进入全国前五。值得注意的是，上海与其他上榜省份不同，消费金额最高的零食品类是膨化食品，而非西式糕点。
+在城市方面，新一线城市杭州与北上广深一起占据了全国前五的位置。苏州、武汉、成都、南京、重庆等城市的零食消费需求也很旺盛，分别排名全国第六至第十。
+天猫超市各省市零食消费排名
+数据显示，我国中部、东北部的零食消费潜力也在过去一年中得到释放，年轻用户下单最为频繁。安徽、山东、辽宁、黑龙江、河南零食消费同比增速均超过 10%，在全国各个省份中处于前列。
+23点是零食下单高峰，1小时达成为消费新刚需
+天猫超市零食交易最活跃的时段是每天 23:00 至 次日 00:00。不少用户选择在睡前下单零食，往往天亮就能收到快递。在社交媒体上，有网友对此调侃，“很多人说晚睡容易长胖，今天终于知道原因了。”
+天猫超市零食订单时间分布
+今年夏天，冰品以压倒性的优势超过啤酒，成为人气最高的解暑选择。天猫超市数据显示，啤酒最近 3 个月的交易金额增速为 124%，而冰棍、冰淇淋、冰点蛋糕等品类的同期增速均超过 400%，家庭装冰淇淋的增速更是达到 1655%。
+冰品类消费需求激增，也让小时达配送成为新刚需。据悉，天猫超市在全国数百个城市上线了小时达服务，并配备了 -18℃ 冷链配送箱等设备，保证冰淇淋等商品“到手不化”，显著提升了消费体验。
+(责任编辑：张倩蓉)
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：yqz",2020-08-13 12:12:02,同花顺
+13,青海互助：回归自然 徜徉田间花海,"人民网海东8月13日电（杨玥）近年来，位于青海省海东市互助县班家湾村的“鲁冰花海”成为了人们周末休闲旅游的打卡地，品种各异的大片花田吸引了众多游客纷纷驻足赏花，乡村旅游的热潮为原本贫困的村庄带来了人气。
+据悉，2016年12月，为助力精准扶贫工作，班家湾村引进了“鲁冰花海”项目。2020年，为巩固脱贫成果，扶贫工作队引进互助裕泰花卉种植农民专业合作社，打造班家湾村花海至西山小水库一带景区。班家湾村小水库及湿地是一片未开发的土地，自然条件优越、景色宜人、空气清新，是理想的休闲观光旅游胜地。
+(责编：王红玉、杨阳)
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：yqz",2020-08-13 12:11:02,同花顺
+14,云南：完善退役军人就业创业体系,"(image_address=""//comment.10jqka.com.cn/sourcepic/12/0MK7qs34.png"")昆明8月13日电（记者 杨静）12日，云南省退役军人就业培训创业孵化基地周年工作汇报交流会暨授牌仪式，在云南能投（002053）电力装配工业园举行。
+云南省副省长和良辉表示，退役军人是党和国家的宝贵财富，是社会主义现代化建设不可或缺的重要力量。要拓宽就业渠道，搭建供需平台，努力让退役军人群体实现充分就业、体面就业。
+据介绍，基地成立一年来，已有29家军创企业入驻基地，举办了退役军人专场、线上招聘会，完成了对1000名退役军人的适应性培训。
+经过一年的探索，基地逐步形成了一套符合退役军人需求、满足退役军人期盼的政府主导、市场导向、需求牵引、国企运营的退役军人教育培训创业孵化新模式。
+据了解，云南省退役军人事务厅与云南省能源投资集团成立云南首个退役军人就业培训创业孵化综合型基地。该基地旨在将政府提供公共服务、社会力量补充服务、退役军人自我服务相结合，通过整合内外部资源，为退役军人提供多元化、多样化的就业培训和创业孵化综合服务。（完）
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：yqz",2020-08-13 12:10:38,同花顺
+15,曾粤晖预期经济增速有望逐季向好,"2020博鳌房地产论坛.现场快讯：8月13日早上，建银国际金融有限公司董事总经理曾粤晖，在2020博鳌房地产论坛“道是无晴却有晴——上半年房地产回顾与展望”主题演讲中，分享了近几个月房地产市场总体的行业环境和融资的状态。
+在国际环境方面，他认为，海外的疫情依然严峻和复杂，全年世界经济大概率会出现下滑。“唯一的亮点就是在各大机构的研究结果里面，中国应该是保持了一个正增长”，曾粤晖说到。
+他提出，研究整个房地产的环境可从三个方面看，首先是行业环境，“因为市场机会往往是从中可以得以辨识，行业环境的解读，我称之为天时”，曾粤晖解释。
+其次是从具体到某些城市、区域，去做一个落地的了解，以期了解到发展潜力，进行研判。再而是具体的从房企以及房价、购房者等等整个生态里面的参与个体的关注和分析，从而了解和把握前景趋势。
+“所以大的环境来讲，目前天时应该说对于整个行业充满了挑战。国内的情况应该说相对的较为乐观，经济增速有望逐季向好，全年的疫情仍然承受着比较大的压力。”
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-08-13 12:09:58,同花顺

@@ -1,0 +1,290 @@
+,title,content,pub_time,src
+0,2分钟读财报|“游戏界茅台”吉比特再跌停 买量恐慌情绪蔓延,"视频加载中，请稍候...
+自动播放
+(image_address=""//n.sinaimg.cn/front20201023ac/80/w720h960/20201023/aecc-kavypmq7155835.jpg"")
+play
+视频|吉比特
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 358449719,
+pid:1,
+url: 'https://video.sina.com.cn/p/finance/2020-10-23/detail-iiznezxr7692633.d.html',
+title:'视频|吉比特'//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=358449719/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+游戏股估值杀跌仍在持续。
+23日早盘吉比特开盘跌停，资金出逃情绪明显，而近三个交易日吉比特连续大跌超过20%，带动完美世界等游戏股纷纷走低。
+吉比特被誉为“游戏界的茅台”，因为其股价一直维持在400元/股以上高位，最高点突破670元/股，毛利率也一直超过90%，暴利程度堪比茅台。
+吉比特的营收结构并不健康，过于依赖2006年上线的游戏IP《问道》，单一产品痛点十分凸显，加上储备的游戏《摩尔庄园》等还未上线，并不能及时改善其营收结构。
+游戏股持续杀跌更大程度上是市场担忧游戏买量成本上升，此前券商提出对“买量增长”模式的质疑所引发的行业焦虑进一步延伸。
+2分钟读财报|2年亏11亿、国资入主 唐德作品断档如何自救？
+2分钟读财报|金种子酒渐萎缩：产品升级受阻 四年销量下滑72%
+2分钟读财报|若羽臣IPO：毛利率显著低于同行 品牌议价能力弱
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：常福强",2020-10-23 17:55:23,新浪财经
+1,片仔癀：前三季度净利润同比增长19.83% 拟分拆片仔癀化妆品上市,"10月23日消息，片仔癀公告，董事会拟授权公司及控股子公司片仔癀化妆品经营层启动分拆片仔癀化妆品上市的前期筹备工作。片仔癀化妆品主要从事化妆品的研发、生产和销售，旗下拥有“片仔癀”、“皇后”等品牌，产品覆盖护肤品、清洁洗护等系列，满足不同年龄、偏好的消费者需求。公司前三季度净利润13.29亿元，同比增长19.83%。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陈志杰",2020-10-23 17:47:35,新浪财经
+2,中信建投：前三季度净利润74.91亿元 同比增长96.11%,"10月23日消息，中信建投发布三季报，前三季度净利润74.91亿元，同比增长96.11%。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陈志杰",2020-10-23 17:21:00,新浪财经
+3,长城汽车：前三季度净利润25.87亿元 同比下降11.32%,"10月23日消息，长城汽车公告，前三季度净利润25.87亿元，同比下降11.32%。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陈志杰",2020-10-23 17:11:53,新浪财经
+4,连续八年未盈利 君实生物凭什么成为下一个恒瑞？,"来源：英才杂志
+作者|朱志飞
+中国医药产业正在发生着深刻的变化。今年7月15日正式登陆科创板的君实生物（688180.SH），作为备受瞩目的生物药明星公司，上市后股价较高点跌幅近60%后，市值依然逼近800亿元。
+君实生物成立于2012年，是一家以开发治疗性抗体为主的创新驱动型制药公司，公司研发管线覆盖肿瘤、心血管疾病、自身免疫疾病等领域，专注于创新单克隆抗体药物和其他治疗性蛋白药物的研发与产业化。公司现有唯一上市产品为特瑞普利单抗（商品名：拓益），用于治疗既往标准治疗失败后的局部进展或转移性黑色素瘤，2019年该产品收入7.74亿元。
+作为一家创新药企业，君实生物值得期待吗？
+收入满足不了研发费用 依靠股权融资支持公司发展
+“十年时间，十亿美元”通常被用来形容创新药研发周期长、投入大的特点。在生物制药的赛道上，君实生物用6年的时间，跑出了中国生物制药的新速度。公司核心产品特瑞普利单抗已于2018年12月获批上市，是国内首个获批上市的国产PD-1单克隆抗体注射液，用于治疗既往标准治疗失败后的局部进展或转移性黑色素瘤，此产品于2019年2月起开始实现销售。
+君实生物2019年实现营业收入7.75亿元，较2018年的93.4万元实现跨越式增长，不过由于研发投入大，公司连续几年都在亏损，公司依靠股权融资助力企业持续发展。
+2017年至2020年上半年，其归母净利润分别为-3.17亿元、-7.23亿元、-7.47亿元、-6.00亿元。目前公司仅有1项产品拓益正式上市销售，其余产品尚处于NDA审批阶段、药物研发阶段，尚未开展商业化生产、销售业务，因而并未产生药品销售收入。
+2017年至2020年上半年，公司研发费用投入分别为2.75亿元、5.38亿元、9.46亿元、7.09亿元，研发费用高速增长是由于公司注重自主研发，后续进入临床阶段的品种较多，多个品种的陆续进入临床III期，并在积极拓展拓益的适应症。
+2012年，君实生物成立；2015年，君实生物通过新三板第一次在资本市场露面，股价自挂牌之后持续攀升，挂牌期间，君实生物还通过多次定增的方式进行募资，一度被市场称为“新三板吸金王”；2018年12月，在香港交易所发布IPO新规、放开对未盈利生物科技类公司来港上市的背景下，君实生物选择登陆港股；2020年7月，君生生物采用“第五套标准”正式登陆科创板，成为首家“新三板+H股+科创板”的上市公司。经统计，从2012年成立至今，君实生物共进行了10多轮融资，累计融资金额超过75亿元。
+PD-1单抗市场竞争激烈
+作为当前全球最热的抗肿瘤治疗靶点，PD-1主要是通过克服患者体内的免疫抑制，充分利用人体自身的免疫系统抵御、抗击癌症，具有广谱性和安全性等多重优势。目前国内已形成“4+2”的竞争局面，即4家国产药品以及2家进口药品。
+表1：国产已获批上市 PD-1产品对比
+公司
+产品名称
+获批时间
+获批适应症
+售价
+君实生物
+特瑞普利单抗（拓益）
+2018.12
+黑色素瘤
+240m：
+7，200元
+信达生物
+信迪利单抗（达伯舒）
+2018.12
+霍奇金淋巴瘤
+100mg：
+7，838元
+恒瑞医药
+卡瑞利珠单抗
+（艾瑞卡）
+2019.05
+霍奇金淋巴瘤、肝癌、非小细胞肺癌、食管鳞癌
+200mg：19，800元
+百济神州
+替雷利珠单抗（百泽安）
+2019.12
+霍奇金淋巴瘤、尿路上皮癌
+200mg：10，688元
+在国内已获批上市的PD-1产品中，不管是适应症数量和定价上，君实生物目前似乎都未能占据太多优势。从已获批适应症来看，多家产品已获批超过一项适应症，且已涉足肝癌等患者基数较大的适应症类型，而君实生物产品目前已获批适应症患病率低，对应市场规模较小。有关数据显示，特瑞普利单抗获批适应症的患病人数较少，2019年中国黑色素瘤新发病人数为7，563人，发病率较低，在这些新发黑色素瘤病人中，既往标准治疗失败后的局部进展或转移性黑色素瘤患者仅有2，400人，对应的市场规模较小。
+此外，产品的定价方面，公司产品的价格低于其他PD-1产品。但是在2019年底展开的医保价格谈判中，君实生物的产品并未进入医保谈判目录，而信达生物的信迪利单抗注射液（商品名：达伯舒）成为唯一进入医保谈判目录的PD-1产品。目前，君实生物已提交二线治疗尿路上皮癌和三线治疗鼻咽癌适应症的上市申请，如果能在2020年内获批的话，或许有机会通过三个小适应症来进行医保谈判，从而形成差异化竞争。
+表2：特瑞普利单抗正在和即将进行的关键注册临床试验
+(image_address=""//n.sinaimg.cn/finance/crawl/10/w550h260/20201023/35f5-kavypmq6992838.png"")
+从经营的角度来看，制药企业要想实现商业化变现，核心就在于研发管线是否丰富。因此在接下来的竞争中，谁的PD-1药物能开发更多适应症，谁就更有机会占据先机，公司需要加快进行肺癌、肝癌、食管癌、乳腺癌等多种适应症临床试验，才能扩大市场空间。根据公司预测，多项一线疗法适应症将于2020-2023年陆续上市，进入收获密集期。
+表3：2020年上半年国产PD-1单抗四大药企对比
+单位：亿元
+公司名称
+君实生物
+信达生物
+恒瑞医药
+百济神州
+总资产
+45.54
+89.54
+296.80
+276.33
+营业收入
+5.75
+9.84
+113.09
+8.14
+净利润
+-6.00
+-6.08
+26.62
+-48.19
+研发费用
+7.09
+8.08
+18.63
+40.68
+由上表可知，2020年上半年，恒瑞医药的营业收入和归母净利润均处于领跑地位，远超其他三家企业。君实生物在企业规模、经营情况、研发投入等方面和其他三家还存在差距。
+表4：公司其他疾病的研发管线
+(image_address=""//n.sinaimg.cn/finance/crawl/26/w550h276/20201023/24d8-kavypmq6992914.png"")
+除PD-1单抗外，公司还有21项在研产品，其中13项是自主研发的原创新药，8项与合作伙伴共同开发。在这21个在研品种中，有19个为创新药，2个为生物类似药，涉及肿瘤、代谢疾病、免疫炎症、神经系统和抗感染疾病领域，产品类型包括单抗、融合蛋白、小分子、ADC等，可以说，产品研发管线非常丰富。
+但是，上表也可以看出公司目前已进入或即将上市的产品，均来自对国际市场的快速跟进。包括特瑞普利单抗和修美乐生物类似药TNF-α单抗（UBP1211）在内，竞争激烈。
+以上研发管线中，PCSK9 单抗（JS002），是目前海外关注度最高的靶点之一，预计于2022年获批；公司也在积极布局其他前沿品种，包括JS016为用于治疗新冠肺炎的中和抗体药物、TAB004/JS004为全球首个治疗肿瘤的抗BTLA单抗、JS005为治疗自身免疫性疾病的抗IL-17A单抗、JS108为抗肿瘤ADC抗体偶联剂药物，上述研发的进展与产品上市情况也都会极大的影响公司未来的盈利情况。
+虽然君实生物核心产品具有较大的市场空间、公司也有多条研发管线，但同时也面临着较大的市场竞争，并且其中一部分产品临床试验排名未处于市场第一梯队，后续业绩主要还需看产品能否顺利实现上市。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陈志杰",2020-10-23 17:10:00,新浪财经
+5,同花顺：前三季度净利润为7.72亿元 同比增长68.45%,"10月23日消息，同花顺公告，前三季度净利润为7.72亿元，同比增长68.45%；第三季度净利润为3.33亿元，同比增长71.80%。公司拟投资14亿元建设同花顺未来科技园。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陈志杰",2020-10-23 17:08:59,新浪财经
+6,金银河:银河转债价格较大偏离与股价之间的关联 存在较大估值风险,"10月23日消息，金银河公告，近期，“银河转债”价格较大偏离与公司股价之间的关联，存在较大的估值风险。“银河转债”的价格较高，主要系公司可转换公司债券流通量较少，可转换公司债券价格易受市场资金影响。敬请投资者注意投资风险。经核查，公司、控股股东及实际控制人均不存在关于公司应披露而未披露的重大事项，不存在处于筹划阶段的重大事项。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陈志杰",2020-10-23 17:08:15,新浪财经

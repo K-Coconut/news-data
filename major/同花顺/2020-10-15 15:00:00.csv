@@ -1,0 +1,784 @@
+,title,content,pub_time,src
+0,Nutanix宣布推出首款跨云多数据库管理解决方案Era 2.0,"多数据库管理解决方案Era助力IT人员以任意规模在任何云环境交付数据库即服务，简化操作并降低成本
+HCL Technologies与Nutanix携手推出数据库即服务解决方案
+混合云和多云计算领导者Nutanix今天宣布推出首款跨云 (cloud agnostic) 多数据库管理解决方案Era 2.0，将Nutanix数据库管理解决方案扩展到跨云和集群场景，为IT和数据库团队简化操作并降低成本。Nutanix还宣布扩大对Postgres和SAP HANA的支持，并与全球领先的科技公司HCL Technologies(HCL)合作推出基于Era 2.0的联合解决方案。
+(image_address=""https://e.thsi.cn/img/38d438cfbc229202"")
+通过为数据库置备和生命周期管理带来一键式简单和隐形操作，Era使IT团队能够提供数据库即服务。作为多数据库解决方案，Era除了支持Postgres和SAP HANA外，还支持Oracle、Microsoft SQL Server、MySQL和MariaDB。
+Nutanix高级副总裁兼数据库、关键业务应用和Era事业部总经理Bala Kuchibhotla表示：“企业越来越多地寻求技术解决方案来支持他们的混合云和多云战略，虽然一些供应商提供了应用迁移性，但在多云数据库管理方面还没有出现多少创新。Nutanix Era现在实现了我们的愿景，提供了一个跨云的多数据库管理解决方案，可以真正释放混合云和多云的潜能。”
+HCL副总裁兼IT服务部首席技术官Kalyan Kumar表示：“HCL通过提供安全、可扩展、云就绪的数据库即服务，帮助客户加快其数据和基础架构现代化步伐。在Nutanix Era 和HCI平台的支持下，广受业界赞誉的HCL服务将能够为企业提供世界一流的自动化数据库平台。我们与Nutanix有着长期的合作关系，通过SKALE DB，我们将继续帮助客户优化数据资源，为客户数字化转型提供助力。”
+Era结合了Nutanix超融合基础架构(HCI)软件的可扩展性和高性能以及云端数据库服务的灵活性，从而简化数据库管理。新推出的Era2.0解决方案将实现以下功能：
+简化跨分布式集群和云的数据库管理
+Nutanix Era 2.0使客户能够使用统一的工具、标准和安全策略在多个云中配置和管理数据库，灵活地为每个数据库选择合适的云环境，以提高灵活性并最大限度地降低成本。Era 2.0还提供了跨多个分布式集群和数据中心的简化操作，实现了显著的扩展性，并具有一键式配置、克隆和修补功能。除了通过跨云的无缝数据移动性来简化操作和降低成本外，Era 2.0还支持一些新用例，包括利用公有云进行容量快速扩张、开发/测试、容量修复和数据库性能远程优化等。
+广泛支持SAP HANA Nutanix宣布Era的功能已扩展到领先的关系型数据库引擎SAP HANA上。客户可以享受到SAP HANA部署的一键式管理体验。Nutanix是首批通过SAP HANA扩展和最新扩展认证的HCI平台之一，简化了SAP业务应用和SAP数据仓库解决方案在SAP HANA上的部署。
+在Nutanix平台上提供7x24小时的PostgreSQL支持
+Nutanix宣布对Postgres提供7x24小时支持，帮助客户实施关键任务部署。与竞争对手不同，除了由Nutanix团队提供的基础架构平台和Era管理服务外，支持服务还包括对Postgres数据库引擎的端到端支持体验，从而更加迅速地解决问题。
+与HCL合作提供全托管数据库服务解决方案
+针对寻求全面管理解决方案的客户，Nutanix与全球领先的技术公司HCL合作，共同打造由Era 2.0支持的产品――SKALE DB。这款产品由HCL和Nutanix联合开发，通过提供安全、可扩展的数据库即服务(DBaaS)，帮助企业加速实现数据现代化。
+ESG高级分析师Mike Leone说：“随着数据扩张到当前的规模，数据库管理已变得比以往任何时候都要复杂。各种规模的企业都在寻找简化数据库操作的解决方案，涉及从初期部署到后续管理和维护等方方面面。Era 2.0提供了一个跨云解决方案，可以简化数据库操作，帮助客户发掘所急需的数据移动性价值。”
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cjh",2020-10-15 15:59:01,同花顺
+1,SUSE拟在索菲亚开设创新中心,"保《Moneybg》:德国SUSE公司10月13日宣布将在保菲亚投资建设新的创新研发中心。该中心将专注于开发全新的开源代码解决方案，使客户可以在公司、自家和云环境任意创建、管理工作流程和工作量。该中心计划在未来6个月内全面投入运营，并在未来3年内创造数百个工作岗位。该中心除了作为创新战略中心外，还计划吸引数字营销、项目管理等领域的人才。
+SUSE公司成立于1992年，是一家总部位于德国的跨国开放源代码软件公司，致力于为商业客户开发和销售Linux产品。作为第一家为企业销售Linux的公司，SUSE也是SUSE Linux Enterprise系统的开发者。全球前十大电信运营商、前十大航空公司中的九家以及一半的超级计算机都在SUSE平台上运行。2020财年第三季度，SUSE的收益实现同比增长14%。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-10-15 15:57:43,同花顺
+2,兑吧赋能在线教育企业抓住下沉用户 培养忠诚用户,"在线教育模式使得优质师资能得到最大化利用，规模扩大的同时边际成本增加却有限，有非常好的盈利模式。
+在线教育领域不乏好未来、VIPKID这样的独角兽，也有像51Talk、新东方在线这样的上市公司。在旺盛的市场需求下，没有出现一家独大的垄断局面，而是开启了百家争鸣的智慧教育新时代。
+当前在线教育面临的一大痛点：获客成本水涨船高。2020年暑期，行业竞争更加激烈，大量资本和企业涌入赛道，各家公司为了追求更大规模和市场地位，投放额猛增，外部平台的流量价格顺势猛增，导致行业在外部平台投放的获客成本普遍大涨50%甚至更多，普遍在3000元左右。
+在拉新战场激战的同时，另外两个战场――“忠诚度培养”和“市场下沉”战场也在开打。
+据MobTech大数据显示，当前在线教育下沉用户约2亿量级，三线以下城市用户比例逐年提高，接近60%。并且当前在线教育在日均使用时长上，下沉用户接近或突破1小时，尤其职业教育领域日均突破100分钟。
+在用户忠诚度培养方面，语言学习领域同类别产品基本已经培养起自己的忠诚用户，竞品之间的用户重合度不高，特别是少儿英语培训、词典翻译类重合度都在5%以下。
+比如与兑吧长期合作的某头部在线语言教育APP，其通过积分奖励和积分玩法促进用户持续活跃，培养忠诚度，降低流失率。
+用户可以在APP上通过练习口语、分享录音、参加比赛类活动、打卡签到等形式获得积分。在积分消耗侧，APP运营人员在兑吧积分商城后台上架一些付费课程，用户可通过“积分+现金”的形式兑换，在消耗用户积分，提升课程购买转化率的同时，延长用户生命周期。同时运营人员可根据运营数据选择上架品牌相关的周边产品供用户兑换，提升用户与品牌间的粘性。
+在与该APP合作初期，兑吧根据教育类APP的特性，为其定制契约打卡活动。用户需要消耗积分参与报名，积分汇入本期契约的积分池。活动开始后，用户需要进行连续签到，完成后才可瓜分本期的积分池。中途断签则判定为挑战失败，并损失积分。该玩法利用了用户的投资意向，刺激用户养成签到习惯，可极大的提升用户留存。
+数据显示，契约签到上线期间，用户参与率近90%，连续7天参与的用户超过80%，较普通的日历签到玩法，运营效果更加突出。
+兑吧拥有丰富的积分商城搭建经验和完备的活动运营管理能力，其服务覆盖的经营场景包括线下门店、各大电商平台、微信小程序和品牌自有APP。当下已服务了涵盖互联网、零售、电商、金融、车企等多个行业内的16000+企业，为企业持续提升经营指标，包括用户活跃度、积分互动频率，粉丝转成会员等运营核心数据。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：hmg",2020-10-15 15:57:16,同花顺
+3,郑商所与新交所续签谅解备忘录,"(image_address=""//comment.10jqka.com.cn/sourcepic/12/xtq79cjVsagtsay.png"")网讯(记者谭亚敏)10月15日，郑州商品交易所(以下简称郑商所)与新加坡交易所(以下简称新交所)续签谅解备忘录，旨在进一步加强双方在期货及衍生品领域的交流与合作。
+新交所是亚太地区重要的证券期货交易所之一。自2015年郑商所与新交所首次签署合作谅解备忘录以来，双方持续推动在“一带一路”框架下的交流与合作。本次谅解备忘录的续签，将进一步深化双方在信息共享、高层互访、培训教育、联合活动等方面的交流与合作，加快推进郑商所的国际化发展。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-10-15 15:53:00,同花顺
+4,内蒙古启动实施“‘一湖两海’等典型湖泊水资源综合保障关键技术及示范”国家重点研发计划项目,"9月19日，内蒙古自治区科技厅推荐的国家重点研发计划“内蒙古‘一湖两海’等典型湖泊水资源综合保障关键技术及示范”项目启动会暨实施方案研讨会在呼和浩特举办。该项目属于国家重点研发计划“水资源高效开发利用”重点专项。由内蒙古农业大学牵头，联合北京大学、中国环境科学研究院等9家单位产学研联合，总投入6495万元，其中国拨经费1495万元，实施期为2.5年。
+呼伦湖、乌梁素海、岱海在内蒙古乃至全国生态脆弱区都具有代表性和典型性，“一湖两海”在区域生物多样性保护、生态系统服务功能维持、水源涵养和防风固沙等方面发挥着重要作用。该项目遵循湖泊流域整体治理理念，以“点源—线源—面源—湖体”全过程控污减排为主线，重点解决流域“水资源—水环境—水生态”协同演变机制及气候变化与人类活动影响耦合驱动机理、农牧业高效节水减排与区域污染层级联控动态互馈机制、湖体冰封及生消期冰水泥多介质污染物迁移转化规律与时空多维调控原理三项重大科学问题，研发区域点源全流程分质减排及低温期达标技术、农牧区面源立体防控与水肥盐药耦合提效技术、湖体冰封期污染物靶向移除与非冰封期深度消减技术、基于生态补水的湖泊生物功能组服务价值激发提升技术四大关键核心技术，并集成示范。
+为保证项目的顺利实施，项目成立了以中国工程院康绍忠院士为组长的咨询专家组，对实施方案进行论证，对课题设置、技术路线、实施过程中需要把握的关键技术问题等提出诸多建议和意见，提升项目实施的质量。
+内蒙古自治区科技厅多次组织国家大院大所专家开展专题调研，摸清“一湖两海”生态环境现状和综合治理问题，梳理急需解决的科学难题和重大技术瓶颈，围绕创新需求安排自治区科技重大专项，组织开展技术攻关，为组织实施国家重点研发计划做了大量前期基础工作。自治区科技厅作为地方科技主管部门，将严格按照国家重点研发计划相关管理规定，积极发挥组织、协调、服务作用，确保项目顺利实施并高质量完成，促进先进科技成果在自治区转移转化。同时，在联合实施好国家项目的基础上，进一步加强合作，拓展共建创新平台载体、合作培育科技型企业，加强柔性引进创新团队和人才、推进科技成果转化等合作领域，以科技创新成果服务生态保护、绿色发展和地区经济高质量发展。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-10-15 15:51:48,同花顺
+5,中信证券评9月物价数据：非食品贡献占主导 需求扩张仍持续,"中信证券点评9月物价数据称，9月CPI同比增长1.7%，较前值下降0.7个百分点。环比方面，非食品、核心和服务CPI环比均较前值有所上涨，意味着居民部门需求扩张仍在持续。同时非食品价格对CPI的贡献首次大于食品。猪价环比已开启下行阶段，或延续至明年全年，对通胀上行形成拖累。受国际原油在9月的疲弱表现，PPI环比正增长有所减弱，但黑色、有色、煤炭等产品价格环比维持正增长，意味着工业需求仍不差。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：wm",2020-10-15 15:51:36,同花顺
+6,罗永浩真还传小说出炉 多家公司抢注真还传商标,"近日，一部名为《真还传》小说在网上热传，@罗永浩 被化名为“罗玉龙”，小说情节与现实极其相符。这部小说的作者为睿讲睿道，直言“本小说纯属虚构，不吹不黑。”目前，该小说已连载35章，从标题可以看到“乔布斯传人”“不能坐飞机和高铁”“欠了6个多亿”等与罗永浩关联的信息。
+据天眼查显示，目前有关真还传商标信息15条，申请公司包含广告销售、教育娱乐、金融等多个领域。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：hmg",2020-10-15 15:51:33,同花顺
+7,商务部：已有一批企业签约参展未来三届进博会,"10月15日，商务部新闻发言人高峰表示，今年以来，我们紧紧围绕“越办越好”总要求，统筹推进展会筹办和疫情防控工作，企业商业展总体进展顺利，招展工作已经基本完成，各国企业参展踊跃。世界500强和行业龙头企业积极参展，数量达到往届规模，而且有一批企业签约参展未来三届进博会。(江聃)
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-10-15 15:50:07,同花顺
+8,9月中国汽车消费者口碑指数报告发布,"本报讯 （王 辉）10月13日，中国汽车售后服务质量监测大数据平台（CADA云数聚）发布了《2020年9月中国汽车消费者口碑指数报告》（以下简称《报告》）。9月份，汽车售后服务口碑指数得分为92.82分，环比提升0.76分，同比下滑1.84分；维修时间、维修质量满意度提升较为明显；维修价格满意度略有下降。
+《报告》提出，35.35%的消费者倾向于工作日进店，19.42%消费者只接受休息日进店服务。倾向于工作日进店的消费者更愿意选择9:00之前进店，占比达61.36%；倾向于休息日进店的消费者更愿意选择9:00~12:00之间进店，占比达65.52%。当同一问题发生重复维修时，47.96%的消费者会考虑更换门店，较8月份下降2.79%；无增项时，超出预估价格10%以内，将会有49.07%的消费者考虑更换门店，较8月下降1.07%；超出预估交车时长10分钟以内，将有46.96%的消费者考虑离店，较8月增加0.93%。
+此外，不同消费群体对汽车售后服务满意度存差异。男性消费者对售后服务质量的满意度略高于女性；20岁以下以及1年以下车龄消费者对售后服务的满意度都较低。
+《(image_address=""//comment.10jqka.com.cn/sourcepic/12/1tC5extagtbKwbextagxqAtsaytsay.png"")》
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：jdm",2020-10-15 15:48:13,同花顺
+9,ETC卡冻结需重启？警方提醒收到此类信息要警惕,"信息时报讯（记者 陈绵钦 通讯员 施桂鸿 李彦勇 陈玉敏）广州市公安局新闻办公室10月15日通报：10月12日，越秀区有3名市民遭遇同一类型电信诈骗，他们都是因为点开了手机短信里的不明链接并进行操作，损失数千元。
+10月12日，家住越秀区的事主黄先生报警，称被人诈骗900多元。经了解，黄先生收到一条手机短信，内容显示：“【高速中心】您的高速自助通行ETC卡于10月11日显示已注销，为了您正常出行，请24小时内点击a.ad*****.cn重新启用”。由于担心影响出行，黄先生不假思索便打开了短信里的链接，按页面内的提示填写了银行卡号、密码和手机验证码等信息，提交后页面显示无法连接。但过后不久，黄先生收到了银行发来的信息，显示其账户被支出499.5元。还没反应过来的黄先生按照上述步骤又操作了一次，结果再次被支出了499.5元。发现有问题，黄先生通过银行查询得知，两笔资金是通过POS机消费的。这时，黄先生才意识到自己遭遇了电信诈骗。
+同一天，还有另外两名市民遭遇了与黄先生一样的骗局，都是收到手机短信提醒，提示ETC被冻结的短信，然后点开短信里面的链接进行操作，最后发现银行账户内的钱被转走或通过POS机进行消费。
+据介绍，以办理ETC业务为名的诈骗时有发生，不法分子通过发送手机短信，冒充有关部门以“ETC注销、二次验证和系统升级”等为由，诱导事主打开短信里的钓鱼网址填写银行卡、密码以及验证码等信息，从而盗刷事主银行卡内的资金。
+警方提醒广大市民，收到手机短信提醒，提示要通过点击信息内的链接办理相关业务的，首先要通过官方渠道咨询核实清楚，千万不要轻易点击，不要随意填写自己个人身份信息、银行卡账号、密码以及验证码等重要信息，以防止信息泄露，上当被骗。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cjh",2020-10-15 15:47:20,同花顺
+10,英国最大叉车租赁服务商再次收购一家叉车服务商,"英国最大叉车租赁服务商再次收购一家叉车服务商
+Briggs Equipment acquires Gwynedd Forklifts Briggs Equipment公司高兴地宣布，它已经完成了对Gwynedd叉车公司的收购，这是一家横跨北威尔士和什罗普郡的领先独立物料搬运设备分销商。此次最新收购进一步加强了Briggs Equipment公司作为英国主要资产管理和工程服务专家之一的地位。在康威和奥斯威斯特的站点上，Gwynedd 叉车为广泛的工业和商业客户提供服务，并提供产品，体现BriggsEquipment公司的整体价值主张。这种对资产管理和工程服务支持的共同承诺表明，收购这对两个业务都是一个强有力的战略举措。
+Briggs Equipment集团董事总经理彼得琼斯（Peter Jones）表示：""我们很高兴完成了对Gwynedd叉车的收购。其广泛的地理覆盖范围、强大的客户组合和熟练的员工基础将是BriggsEquipment集团极为宝贵的补充。尽管新冠病毒大流行在几个月内带来了挑战，但此次最新收购显示了我们业务的稳健性，以及不断加强市场地位的持续承诺。我们期待与 Gwynedd 叉车团队密切合作，通过我们独特的行业知识、工程专业知识和多样化的产品组合，为客户提供可观的效益。
+Gwynedd Forklift 的董事总经理 Mark Singleton（右图）评论道：""此次收购将使我们能够继续支持我们忠实的客户群，同时提供进一步拓展业务和建立新的合作伙伴关系的能力。我们两家企业的文化非常一致，特别是 Briggs 多年来表现出的不断改进和发展的明确雄心壮志。
+""这是我们旅程中激动人心的新篇章，我们期待着成为Briggs Equipment设备集团的一员。作为Briggs Equipment的全资子公司，Gwynedd叉车将继续以自己的名义进行业务，所有现有运营人员都将保留。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cjh",2020-10-15 15:45:55,同花顺
+11,58同城发布Q3人才流动数据：京津冀招聘上升超75%、全国各大城市群招聘需求复苏,"随着产业集聚和联动发展,城市群成为影响当今人才就业的重要因素。近日,国民招聘大平台58同城发布2020年Q3人才流动趋势数据,对一二三线城市招聘求职情况进行了刻画。数据显示,京津冀招聘需求同比上升75.31%;青岛招聘需求增幅同比提高24.74%;中原城市群求职投递比去年同期增加16.98%,长江中游城市群求职需求增长16.78%。
+京津冀招聘需求同比上升75.31%,青岛招聘需求比去年提高24.74%
+据58同城招聘研究院数据显示,2020年三季度,京津冀城市群招聘需求相对活跃,招聘需求同比上升75.31%。由于京津冀地区经济发达,也是全国重要的工业基地、交通枢纽,随着企业陆续复工复产,招聘需求大幅度提升,同时受到与往年复工“时间差”影响,因此招聘需求同比上涨较快。
+58同城招聘研究院数据还反映,东北、珠三角、关中平原城市群招聘需求同比增幅也超过55%。由于东北地区应急响应级别调低时间较晚,招聘高峰比往年有所延后,因此招聘需求同比增幅较大。珠三角制造业、高科技产业、服务业发达,良好的营商环境吸引大批企业入驻或创业,因此企业招聘需求也提升较快。
+此外,中原城市群、成渝城市群、长江中游城市群的招聘需求同比增长突破40%,山东半岛城市群、长江三角洲城市群的招聘需求同比增速也达到25%以上。这意味着,随着企业恢复正常运转,全国各大城市群招聘需求普遍复苏。其中,地处山东半岛的青岛招聘需求同比提高24.74%。作为滨海的新一线城市,青岛轻工业和现代服务业发达,三季度旅游、餐饮和零售业有所回暖,因此招聘需求也有较大规模上升。
+中原城市群求职投递同比上升16.98%,长江中游城市群求职需求增长16.78%
+今年三季度,据58同城招聘研究院统计分析,中原、长江中游城市群求职投递同比上升较为明显,分别增加16.98%和16.78%。由于这两大城市群距离湖北较近,一方面受特殊环境影响延迟了求职高峰期到来,另一方面湖北地区众多求职者前往临近城市就业,都造成两大城市群求职需求同比大幅增长。
+此外,京津冀、关中平原、山东半岛城市群求职投递同比也有小幅上升。可见,京津冀既是招聘需求集中的区域,也是求职者热衷的投递城市群,招聘求职相对平衡。关中平原、山东半岛城市群由于受特殊环境影响较小,因此吸纳了西部地区和中部地区大量就业。
+58同城招聘研究院数据还显示,受今年疫情防控影响,部分沿海及一二线城市务工人员选择回乡就业、就近就业,因此不少内陆城市求职热度提升。随着防控日趋常态化,一线和新一线城市求职需求将有所反弹,届时将迎来新一波就业热潮。
+秉持“全力以服”的核心理念,58同城不仅通过丰富的线上招聘活动、便捷的数字化招聘工具,为招聘方和求职者带来优质高效的招聘求职体验。同时,58同城也依托领先的大数据技术和海量客户用户资源,对招聘求职情况予以精准分析,形成指导招才就业的风向标,引领招聘行业朝着更加精细化、科学化的方向前行。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：hmg",2020-10-15 15:45:53,同花顺
+12,江西省南昌市市场监管局发布《关于规范2020世界VR产业大会期间市场价格行为的提醒告诫函》,"(image_address=""//comment.10jqka.com.cn/sourcepic/12/1tC5extagtbKwb/Qws7Fzfgtsay.png"")讯 江西省南昌市市场监管局近日发布《关于规范2020世界VR产业大会期间市场价格行为的提醒告诫函》。
+关于规范2020世界VR产业大会期间市场价格行为的提醒告诫函
+全市各相关经营者及单位：
+2020世界VR产业大会将于2020年10月19日至20日在南昌市召开，为加强会议期间市场价格监管，规范市场价格行为，营造良好的市场价格秩序和消费环境，树立南昌市良好城市形象，现对全市各相关经营者及单位提出如下提醒告诫：
+一、各经营者及相关单位应严格遵守《中华人民共和国价格法》《中华人民共和国反垄断法》和《关于商品和服务实行明码标价的规定》《禁止价格欺诈行为的规定》《反价格垄断规定》等价格法律、法规及政策，自觉增强社会责任感，切实加强价格自律管理。
+二、各经营者及相关单位要遵循公平、合法、诚信的定价原则，为消费者提供价格合理的商品和服务。
+三、各商场、超市等零售商业经营者要认真规范自身的价格行为，做到明码标价。不得有虚构原价、虚假优惠折价、误导性价格标示、不履行价格承诺等价格违法行为。
+四、各客运单位要自觉规范价格行为，杜绝违规上调票价、价外收费、不按规定明码标价等价格违法行为。
+五、各旅行社、旅游景点和景区要做好收费项目、收费标准公示工作，景区门票价格应严格执行政府定价、政府指导价和优惠、减免措施。不得有强行销售联票、强制代收保险费以及其他乱加价、乱收费行为。
+六、各宾馆酒店、餐饮娱乐、停车场等服务行业经营者要做好明码标价、收费公示工作，要严格履行价格承诺，不得价外加价，不得收取任何未予标示的费用。
+七、各经营者不得相互串通，操纵市场价格，扰乱市场价格秩序。
+会议期间，各级市场监管部门将加强市场价格检查，保持12315投诉举报平台畅通，对检查或举报发现的价格违法行为，一经查实，将按照《中华人民共和国价格法》《价格违法行为行政处罚规定》等有关规定，依法从严处罚，性质恶劣的、情节严重的将通过新闻媒体公开曝光。
+附件：《价格违法行为行政处罚规定》的相关政策
+南昌市市场监督管理局
+2020年10月10日
+附件：
+《价格违法行为行政处罚规定》的相关政策：
+第五条 经营者违反价格法第十四条的规定，相互串通，操纵市场价格，造成商品价格较大幅度上涨的，责令改正，没收违法所得，并处违法所得5倍以下的罚款；没有违法所得的，处10万元以上100万元以下的罚款，情节较重的处100万元以上500万元以下的罚款；情节严重的，责令停业整顿，或者由工商行政管理机关吊销营业执照。
+除前款规定情形外，经营者相互串通，操纵市场价格，损害其他经营者或者消费者合法权益的，依照本规定第四条的规定处罚。
+行业协会或者其他单位组织经营者相互串通，操纵市场价格的，对经营者依照前两款的规定处罚；对行业协会或者其他单位，可以处50万元以下的罚款，情节严重的，由登记管理机关依法撤销登记、吊销执照。
+第七条 经营者违反价格法第十四条的规定，利用虚假的或者使人误解的价格手段，诱骗消费者或者其他经营者与其进行交易的，责令改正，没收违法所得，并处违法所得5倍以下的罚款；没有违法所得的，处5万元以上50万元以下的罚款；情节严重的，责令停业整顿，或者由工商行政管理机关吊销营业执照。
+第十三条 经营者违反明码标价规定，有下列行为之一的，责令改正，没收违法所得，可以并处5000元以下的罚款。
+（一）不标明价格的；
+（二）不按照规定的内容和方式明码标价的；
+（三）在标价之外加价出售商品或者收取未标明的费用的；
+（四）违反明码标价规定的其他行为。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：hmg",2020-10-15 15:45:15,同花顺
+13,中国信通院发布《中国宽带发展白皮书（2020年）》,"10月15日，在“2020年‘百城千兆’建设暨未来城市发展高峰论坛”上，中国信通院副院长王志勤发布了《中国宽带发展白皮书(2020年)》。白皮书指出，信息基础设施正面临着新旧动能转换、发展重心调整、运营模式创新的重大变革，其内生动能将从传统网络技术向大数据、人工智能、云计算、物联网等新一代信息技术拓展；发展重心将从带宽、速率等传统网络指标向与城市管理、民生服务等密切相关的生态指标转变。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-10-15 15:42:50,同花顺
+14,白猫不再只是洗洁精的代表了！洗衣新产品--白猫洗衣小方,"白猫洗衣小方，实为固体洗衣剂，属于白猫创新性新品类新产品，并且已于2019年注册企标。
+分量十足，货真价实
+洗白白单块装，包装标注118g，称重实则131g，货真价实，童叟无欺，足见白猫产品人的诚意。
+原料天然纯净
+小方使用了植物来源的天然活性去渍成分，原料纯净、无杂质、无异味，使用小方产品洗涤时香气怡人，洗涤后衣物自然留香，洗涤效果更佳。
+原料：小方(左)，其他普通手洗洗衣产品(右)
+不添加荧光增白剂
+小方不添加荧光增白剂，小孩和贴身衣物都可以安心使用。
+荧光增白剂不但会沾染在衣物上，手接触含有荧光剂的洗衣剂时荧光剂也会沾染在手上，即使手洗干净后还有荧光剂的残留，如果去做饭或抱小孩都会通过手的接触把荧光剂转移到食物或皮肤上，或小孩子啃咬衣物时衣物上残留的荧光剂会吃入体内，所以对于手洗类洗衣产品，推荐选用不含荧光增白剂的白猫洗衣小方系列产品。
+有小方，洗衣不慌
+1 )洗白白
+洗白白——让衣物干净亮白
+白猫独有技术，安全亮白衣物又能有效去除顽渍和多种污渍，不添加荧光增白剂。
+(image_address=""http://e.thsi.cn/img/81687ff9d69e568a"")
+此款香氛用的是天然茉莉净油，在天然香料中，净油属于高级品种，芳香馥郁，令人仿佛置身于浪漫的花园之中。
+2 )洗内内
+洗内内——贴身衣物洗涤的上上之选
+添加了天然的薰衣草精油，有显著的除菌**功效，安全不刺激。
+经专业机构检测，在实验室条件下，能有效去除衣物上的金黄色葡萄球菌、大肠杆菌和白色念珠菌，对金黄色葡萄球菌的除菌率可能达到99%以上。
+金黄色葡萄球菌是一种衣物上非常常见的细菌，是一种致病细菌，具有很强的感染能力，
+可以造成各种类型的感染。
+此款香氛中薰衣草的天然青香恰到好处地融合着柠檬的清新,令人心旷神怡，如徜徉在花海中。
+3 )洗香香
+洗香香——衣物的""固体香水""
+此款香氛灵感来源于国际知名香水，展现出女性的知性温婉、优雅高贵，采用日本留香专利，可以长久保持香味不散。
+日本留香专利函
+经专业机构检测，在实验室条件下，留香长达48小时。
+综上所述，小方就是亲民的价格、贵族的品质，进货的优先选择！
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-10-15 15:41:57,同花顺
+15,2020中国大数据产业发展指数,"日前，由北京大学大数据分析与应用技术国家工程实验室主办，北京大数据研究院等单位协办的数字生态指数（2020）发布会暨数字生态协同创新平台成立仪式在京举行。会上，北京大数据研究院重磅发布2020中国大数据产业发展指数。
+全国数字生态指数2020
+数字生态指数2020客观全面地评估了我国各地数字生态现状，为打造理想的数字生态提供了科学评估依据和实践抓手工具。
+(image_address=""https://e.thsi.cn/img/1272c874ae324a0b"")
+数字生态理论框架
+该指数提出由数字基础、数字能力和数字应用构成的数字生态理论框架，由总指数和15项分指数构成，涉及2019年全国31个省级行政区（不包含港、澳、台地区）以及部分重点城市，能够监测国家、地方、产业等数字化发展与转型进展。
+(image_address=""https://e.thsi.cn/img/860bcf3f53fb796d"")
+四型联动的中国省级数字生态。图片来源数字生态指数2020
+本次指数显示，我国呈现四型联动、多维关联、经济依托的省级数字生态。各个省份根据数字生态特征可划分为全面领先型、赶超壮大型、发展成长型以及蓄势突破型；数字基础、数字能力和数字应用三个维度间相互关联，彼此正向促进，但数字能力是打造理想数字生态的关键；良好的数字生态与发达的经济水平正相关。
+(image_address=""https://e.thsi.cn/img/202c4a47ff194d07"")
+京津冀和长三角城市群数字生态指数对比
+从各个省份来看，北京、上海、浙江、广东属于全面领先型。该组别的主要特征，一是在总指数上国内领先，二是在分指数上没有明显的弱环，已经基本实现省内小幅环的理想数字生态。其中，北京数字生态总指数得分为85分，位居全国第一，三个一级指标也居于领先地位，数字基础得分81分、数字能力得分88分、数字应用得分85分。
+天津、江苏、安徽、福建、山东、河南、湖北、四川属于赶超壮大型。该梯队数字生态水平紧跟全面领先型，但欠缺绝对优势或者存在较为薄弱的分指数生态维度，是制约这些地区实现高效省内小循环的主要因素。例如，山东数字基础和数字能力都比较扎实，如果未来能够成功推动数字应用，将很有可能形成健全的省内数字生态。
+贵州、陕西、湖南、江西、黑龙江、内蒙古、重庆、宁夏、河北属于发展成长型。该类型普遍进入了数字生态发展的成长期。是否能够迅速成长，关键在于对现有生态做精准评估，找出问题所在，寻求突破。例如贵州，是最先响应和落实国家大数据战略的省份之一，已经拥有较为良好的政策和数据基础，然而数字能力仍然较为欠缺，需要提升数字人才的吸引培养和技术创新能力，来推动数字生态的快速升级。
+山西、辽宁、吉林、广西、海南、云南、西藏、甘肃、青海、新疆属于蓄势待发型。虽然这些省份数字生态指数的均值在全国以下，但是往往都有表现相对突出的分指数维度。因此，根据地方的票赋结构因地制宜的设计发展战略和政策，是实现突破的关键。例如海南，政府在数据资源建设方面已有较好的积累，抓住自由贸易港建设的历史机遇，发挥制度集成创新的优势，就非常可能实现理想的数字生态。
+2020中国大数据产业发展指数
+2020中国大数据产业发展指数构建了一套评价各个城市大数据产业发展水平的指标体系，评估指标涵盖产业政策与环境、产业规模与质量、头部企业情况、产业创新能力及产业投资热度5个维度。
+该指数基于北京大数据研究院大数据企业库中收录的6634家大数据企业数据和相关合作方数据，系统地评估了134个城市的大数据产业发展情况。
+(image_address=""https://e.thsi.cn/img/5d626f20a2242d5d"")
+大数据产业发展指数城市排名（前20强）
+指数结果显示，北京、深圳、上海、广州、杭州排名前五，是全国大数据产业发展的第一梯队；南京、武汉、天津、成都、苏州、重庆和合肥等直辖市或省会城市组成第二梯队；厦门、贵阳、郑州、福州等城市紧随其后，位于第三梯队。
+(image_address=""https://e.thsi.cn/img/2f0d68eaf2e6ed63"")
+领先城市分指数对比图
+全国大数据产业形成了区域协同发展的产业生态。目前长三角和珠三角的大数据产业生态图谱较为完善，区域内各个城市之间的产业协同逐步形成。大数据产业生态圈长三角以上海为核心，以杭州、南京、苏州、无锡等重点城市为关键节点；珠三角以深圳为核心，以广州、珠海、佛山、惠州等重点城市为关键节点；京津冀以北京为核心、以天津为重点城市、河北为辅助区域，正在构建联动发展的生态系统。
+研究团队认为，未来大数据发展要优化产业链布局，形成特色大数据产业生态；深化大数据融合应用，促进传统行业数字化转型；吸引高端人才，支持联合研发创新。
+具体内容如下
+(image_address=""https://e.thsi.cn/img/8312a1e91baf7003"")
+(image_address=""https://e.thsi.cn/img/5ae44271aacf9597"")
+(image_address=""https://e.thsi.cn/img/c466cf30543ebb0f"")
+(image_address=""https://e.thsi.cn/img/2e098b014d138e41"")
+(image_address=""https://e.thsi.cn/img/a83d27797b541ca3"")
+(image_address=""https://e.thsi.cn/img/9dbfbe6ffa7ad493"")
+(image_address=""https://e.thsi.cn/img/53419fa32373dcb8"")
+(image_address=""https://e.thsi.cn/img/5957325cd49e74c5"")
+(image_address=""https://e.thsi.cn/img/3c79d5190bf9c964"")
+(image_address=""https://e.thsi.cn/img/cc5c2d0a8185c07e"")
+(image_address=""https://e.thsi.cn/img/bd5df04ddb4967ea"")
+(image_address=""https://e.thsi.cn/img/4c89ad8c852a2921"")
+(image_address=""https://e.thsi.cn/img/57b12a89e8cbbd3b"")
+(image_address=""https://e.thsi.cn/img/63d7110338b99e8c"")
+(image_address=""https://e.thsi.cn/img/6bd4da3c3c39ac62"")
+(image_address=""https://e.thsi.cn/img/49c93fa5a784834d"")
+(image_address=""https://e.thsi.cn/img/3fefdc87827066ef"")
+(image_address=""https://e.thsi.cn/img/5db055b4abfd1855"")
+(image_address=""https://e.thsi.cn/img/24ed64f3ab19d61e"")
+(image_address=""https://e.thsi.cn/img/c252c5d315440065"")
+(image_address=""https://e.thsi.cn/img/eb4cbe1aa021c022"")
+(image_address=""https://e.thsi.cn/img/1f6ce942e4d77719"")
+(image_address=""https://e.thsi.cn/img/565d4935bc0bc38"")
+(image_address=""https://e.thsi.cn/img/cab0015daeb4eabe"")
+(image_address=""https://e.thsi.cn/img/bfb9ec6d179a0194"")
+(image_address=""https://e.thsi.cn/img/8b76aeff15c606c0"")
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cjh",2020-10-15 15:41:04,同花顺
+16,亚马逊将在澳大利亚推出广告平台 已开始内测,"10月15日消息，《(image_address=""//comment.10jqka.com.cn/sourcepic/12/tefJzLGo.png"")》获悉，全球零售巨头亚马逊(Amazon)近日正计划在澳大利亚推出其广告平台(Amazon Advertising)，并已经进入了内测阶段。
+据报道，这家总部位于美国的公司正在与一群在其本地平台amazon.com.au上销售自己商品的澳大利亚人进行beta测试。
+据悉，Beta测试是一种验收测试。验收测试是软件产品完成了功能测试和系统测试之后，在产品发布之前所进行的软件测试活动，它是技术测试的最后一个阶段，通过了验收测试，产品就会进入发布阶段。
+近年来，亚马逊一直在打造自己在澳大利亚的业务，在2017年底推出了澳大利亚本土网站amazon.com.au、开设了大量的物流中心、去年推出了亚马逊Prime。
+虽然亚马逊目前没有发表任何声明，但其网站显示，该公司正在招聘广告销售团队。
+IBISworld的分析师Alen Allday表示，亚马逊广告的推出将使那些通过亚马逊平台销售的本地企业，更容易协调活动、创建显示和视频广告，并推动产品页面的流量。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-10-15 15:40:05,同花顺
+17,青海省科技成果亮相北京科博会,"9月17日，由科技部、国家知识产权局、中国贸促会和北京市人民政府共同主办，北京市贸促会承办的第23届中国北京国际科技产业博览会在中国国际展览中心开幕。青海省科技厅党组书记、厅长莫重明带领省内外相关科研机构、高校及企业参加本次科博会，并出席科技助力青海特色农牧产业发展推介会暨签约仪式。
+北京科博会是经国务院批准的全国性科技交流与合作盛会，是展示最新科技成果、传播前沿科技理念、加快科技成果转化的专业平台。青海省近年来通过组团参加这一活动，有效展示了全省最新科技发展成果，促进了青海与东部地区的科技交流合作，吸引了一批科技成果在青转化。
+为组织好代表团参展工作，青海省科技厅根据有机农畜产品示范省建设总目标，积极与组委会进行对接，将举办科技助力青海特色农牧产业发展推介会暨签约仪式纳入本届科博会推介交易活动之一，并组织省内相关企业、科研机构与省外相关机构进行对接，取得合作意向12项，有7项现代智慧畜牧业、特色农畜产品精深加工、高值化产品开发等领域项目在科技助力青海特色农牧产业发展推介会暨签约仪式上现场签约，2项合作项目纳入科博会科技合作项目推介暨签约仪式进行推介，形成合同成交额2840万元，为依托全国科技力量助力青海省特色产业发展提供了有效途径。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-10-15 15:39:33,同花顺
+18,懋源地产前三季度完成42亿元销售额 提前“撞线”年度目标,"随着“金九银十”来临众多高端楼盘都把9月作为抢收的关键窗口期。10月15日，懋源地产对外披露，随着该公司首届“懋源购房季”收官，公司旗下璟岳、璟玺两项目共实现销售额10亿元。至此，公司前9个月共实现42亿元销售总额，提前3个月完成全年销售目标。
+有分析人士认为，在营销节奏上，受年内楼市形势影响，多数房企上下半年推货的货值配比为3:7。但懋源并未押宝四季度。今年3月，位于丽泽金融商务区的懋源璟岳二期平层产品率先入市，打破了当时北京三环内豪宅市场供应荒；随后在“五一”迎来一波小高潮，实现7天成交2亿元业绩。7月，位于孙河板块的懋源璟玺推出6000万量级林岸墅王新品，开放10天签约4套。9月，首届懋源地产购房季启动，懋源旗下两项目联袂推出5大新品样板间，共取得10亿元销售额。从而实现前9个月42亿元的销售业绩。
+懋源地产副总经理刘强表示，弱市之下考验的是企业的操盘及运管能力，准确把握营销节奏就十分关键。此外，懋源一直专注“定制地产""，产品差异化和丰富的产品线也是公司取得销售佳绩的关键之一。
+据介绍，懋源地产入市新品涵盖了2000万元——1亿元量级产品。分别包括2000万元级的懋源璟岳墅区平层；3000万元——4000万元级的懋源璟玺南北合院，5000万级的懋源璟岳联排别墅，6000万级的懋源璟玺林岸墅王，以及7000万级的懋源璟岳合院。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：jhb",2020-10-15 15:36:23,同花顺
+19,新疆五家渠：籽棉产量增加 质量出现下降,"(image_address=""//comment.10jqka.com.cn/sourcepic/12/1tC5extagsPeu6jNextagAtsaytsay.png"")专讯：金秋十月是农产品收获的季节，眼下新疆棉花正在进入关键采收加工阶段，新疆棉产量、质量、价格等关键信息牵动着市场的神经，为深入了解一线收购市场，(image_address=""//comment.10jqka.com.cn/sourcepic/12/1tC5extagsPeu6jNextagAtsaytsay.png"")记者对全疆展开了深度调研，全景展现新疆棉市最新情况。
+10月14日，记者首站来到了五家渠市，今年六师植棉面积174万亩，和去年面积相比保持稳定，今年亩产均在400公斤以上，预计籽棉产量在20万吨以上，去年亩产在380-400公斤，皮棉产量13万吨。
+今年六师棉花采摘时间较往年提前一周左右，目前籽棉平均收购价格在5.8-5.9元/公斤，今日最新籽棉收购价格在6.3-6.4元/公斤。同时棉籽价格也继续上涨，“十一”期间在2.1元/公斤，现在价格在2.4-2.5元/公斤。现在“双27”皮棉销售价格14600元/吨（毛重）。
+值得注意的是，今年当地棉花质量下降明显，截至目前，新加工的“双28”指标棉花占比在30-40%，去年达到了80%。对于棉花质量下降明显原因，一是种植棉花品种杂；二是棉农过度追求高产，导致棉花其他纤维指标下降；三是多数棉农采用无人机打药的方式，脱叶效果比较差；四是天气干旱，加上全疆缺水，灌溉不及时影响了棉花发育。
+(image_address=""https://e.thsi.cn/img/ffe227d86d9ef178"")
+(image_address=""https://e.thsi.cn/img/2da90c1a633842c3"")
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cjh",2020-10-15 15:35:45,同花顺
+20,商务部：本届进博会展览面积超过上届规模,"商务部表示，本届进博会主要有以下几个特点：一是展览面积更大。本届进博会商业企业展共设置了食品及农产品、汽车、技术装备、消费品、医疗器械及医药保健、服务贸易等六大展区，展览面积已经超过了上届规模。二是展区设置更优。本届进博会结合全球热点和行业发展趋势，新设立了公共卫生防疫专区、节能环保专区、智慧出行专区和体育用品及赛事专区等四大专区，受到广大参展企业的欢迎。三是展商质量更高。世界500强和行业龙头企业积极参展，数量达到往届规模，而且有一批企业签约参展未来三届进博会。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：jhb",2020-10-15 15:35:04,同花顺
+21,优质稻米市场后期或更“出彩”,"虽然今年优质稻产量可能不及预期，但不会改变我国优质大米消费增加的趋势。优质米产量和需求一减一增，供求矛盾也此消彼长，将有利于优质大米市场价格进一步走强。
+金秋十月，稻谷金黄，正是丰收的季节。此时，我国中晚稻也已进入大面积收获期。随着新稻上市步伐进一步加快，季节性供应压力将不断增加，加上双节后大米需求进入淡季，稻米市场上涨动力将有所减弱。受需求旺盛和产量受损等多重因素影响，预计后期优质稻米市场的机会相对更大。
+优质稻米产量或不及预期
+我国一直高度重视粮食安全，今年初还出台了提高籼稻最低收购价等鼓励种植水稻的政策，取得了显著成效。从目前形势看，由于水稻种植面积增加，丰收在望，稻谷产量同比增加的可能性较大，年度将依然产大于需，保障供应无忧。
+同时，在国家优粮工程的持续推动下，我国优质水稻种植面积也逐年扩大，产量持续增加。由于今年灾害性天气频发，早稻和中晚稻均受到不同程度的影响，导致今年水稻苗情不好，单产和质量均有所下降。部分优质稻产区因受到洪涝或连续强降雨，以及寒露风、早霜等因素影响，部分产区出现割青、稻谷发芽、生霉等现象，部分优质稻品质受到影响，优质稻产量可能不及预期，质量好的稻谷产量同比也可能减少，供应状况或不及预期。
+普通稻市场供应较为充足
+在新稻产量总体同比增加可能性较大的情况下，优质稻和质量好的稻谷产量减少，非优质稻总量或质量差的稻谷数量反而会增加，因此，普通稻产大于需的压力或更加沉重。而陈稻供应同比也有所增加，截至9月底，今年共成交政策性稻谷1255万吨，同比增加45万吨，较上年全年累计成交量约少6万吨，今年成交量高于上年应无悬念。成交的政策性稻谷绝大部分为普通稻，普通稻供应同比将有所增加。
+同时，定向销售给大中型饲料企业的超期稻谷已持续展开，计划每周向市场定向投放2015年产粮源100万吨，拍卖底价为1300元/吨，以加快稻谷库存消化。截至9月底已连续投放3周，累计成交量为180万吨。虽然这批稻谷不会流入口粮市场，只是增加了稻谷替代玉米的数量。但从总体上看，将减少之前普通稻谷替代玉米的机会，相应增加普通稻的供应。
+优质大米需求将持续增加
+随着我国居民生活水平持续提升，消费升级不断加快，选择有机、健康、美味等高品质大米的人群也越来越多。因此，国内口粮大米需求虽然逐渐减少，但优质大米需求却快速增加，推动我国优质稻米价格持续上涨和优质稻种植面积快速增加，促进我国大米产业不断向高质量发展。
+虽然今年优质稻产量可能不及预期，但不会改变我国优质大米消费增加的趋势。优质米产量和需求一减一增，供求矛盾也此消彼长，将有利于优质大米市场价格进一步走强。
+同时，对质量好的稻谷的需求也会有所增加。今年，为应对新冠疫情和上半年国际大米价格大涨对国内稻米市场的冲击，国家提前启动了政策性稻谷全面竞价销售，增加了稻谷供应。各地也及时向市场增加了储备稻谷的投放，使得储备补库需求也有所增加。而储备稻谷对质量的要求相对较高，在质量好的稻谷数量将减少的情况下，为补足库存，部分地区不可避免地会出现抬价收购的现象。早稻上市后，因受洪涝灾害影响，导致今年早稻质量下降，各地储备库竞价采购早稻的底价和成交价曾出现持续提高现象，助推了稻米市场的上涨势头。
+当前中晚稻上市高峰逐渐来临，由于生长阶段受到恶劣天气不同程度的影响，东北地区8月底9月初遭受罕见的台风“三连击”，南方部分地区晚稻遭遇“寒露风”，对稻谷产量和质量造成不同程度的影响，中晚稻可能出现优质稻或质量较好的普通稻受“追捧”的现象。
+农户惜售心理预计将增强
+由于今年稻米市场行情总体较好，经过一段时间的上涨，当前主产区稻谷收购价格大多已高于最低收购价，市场化程度同比明显提高。
+在国家更加重视粮食安全和市场化收购提升的大背景下，农户惜售心理同比将会增强。而持粮待价的肯定是优质粮或质量好的稻谷，那些出米率低、发芽或生霉等质量差的稻谷一般都会被生产者优先出售，导致在稻谷上市初期市场上质次稻谷供应增加，优质稻谷供应偏紧。与此同时，大米加工企业和贸易商却对优质中晚籼稻青睐有加，采购意愿较高，将助推优质稻市场走强。因而，优质大米价格走强的机会更大。
+无论是从大米需求的长远角度看，还是从当前稻米供求形势看，优质稻米市场的发展前景相对较好，后市价格走势可能更强。
+（原文刊登于2020年10月15日(image_address=""//comment.10jqka.com.cn/sourcepic/12/wbjTzcrQs6GxqAtsaytsay.png"")三版）
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cjh",2020-10-15 15:34:31,同花顺
+22,工信部将明确氢燃料电池汽车发展目标、重点任务,"上证报中国证券网讯 据工业和信息化部10月15日消息，工信部在关于政协十三届全国委员会第三次会议第1438号（经济发展类105号）提案答复的函中表示，工信部将加快推进《新能源汽车产业发展规划（2021–2035年）》报批发布工作，明确氢燃料电池汽车发展目标、重点任务，促进氢燃料电池汽车产业高质量发展。
+下一步，发展改革委将会同有关部门加快制定国家氢能产业有关规划，避免因多种交通用能技术路线并行造成重复建设和无序竞争。发展改革委将统筹推进加氢网络体系建设，加快布局建设加氢站。
+科技部将结合国家中长期科技发展规划研究和“十四五”国家重点研发计划重点专项凝炼等工作，加快开展氢燃料电池技术研发部署，特别是在氢能燃料电池汽车关键瓶颈技术方面，将重点攻克重载长途燃料电池商用车动力系统平台技术、低铂催化剂技术、高性能膜电极和长寿命超薄双极板等关键基础技术以及高能量密度车载储氢技术、制氢技术等关键核心技术，加快提升氢燃料电池技术成熟度，打造产学研用一体化研发体系，形成规模产业化的基础和能力，为我国在该技术领域追赶世界先进水平提供强有力技术支撑。
+同时，工信部将配合财政部等部门尽快组织开展燃料电池汽车示范应用工作。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：yqz",2020-10-15 15:34:14,同花顺
+23,陕西推行“两提升一保障”当好就业创业“总客服”,"新华社西安10月15日电题：陕西推行“两提升一保障”当好就业创业“总客服”
+新华社记者薛天
+近年来，通过推行“提升就业创业能力、提升公共就业服务水平、保障劳动者合法权益”，陕西省持续深化“放管服”改革，优化营商环境，当好就业创业“总客服”。
+为了增强企业吸纳就业的能力，陕西省首先通过“减、返、补”手段，通过减少企业税费600亿元、实施失业保险返还政策、安排惠及75.7万人的就业补贴资金28.1亿元，2019年、2020年推动全省新增市场主体数超150万。
+通过强化创新创业，陕西省实施高校毕业生就业创业促进计划。陕西省教育厅介绍，2020年陕西省普通高校毕业生有34.2万人，为做好应对疫情影响稳就业工作，陕西多数高校通过线上网络招聘推动就业工作。截至5月底，全省已累计举办各类网络招聘活动7700余场。
+而在解决贫困地区的群众就业问题时，陕西省一方面加强人员培训、扶持“品牌”，创造出“紫阳修脚师”“宝鸡技工”“秦巴茶艺”等一批具有地方特色和竞争优势的劳务品牌。
+主营修脚业务的陕西远元集团董事长郑远元告诉记者，在各级人社部门的帮助下，陕南地区的政府部门成立专门的培训机构，为集团长期输送务工人员。“目前集团在全国拥有30家分公司，开设6241家门店，拥有员工56169人，大部分员工都来自秦巴山区。”
+对于无法外出就业的贫困地区人员，陕西省健全五级公共就业服务体系，开展“百县千镇”标准化创业中心创建行动，让更多企业和劳动者就地就近对接用工、务工需求。
+在安康市汉滨区，能够有效就近解决群众就业的社区工厂，散落在各个社区里。汉滨区的社区工厂共有87家，在群众的家门口解决就业7831人，其中贫困人口2527人。
+汉滨区委书记王孝成表示，就业是最有效的脱贫手段。“我们就是要通过‘保姆式’服务、订单式培训，大力培育社区工厂，让车间变教室，让新社区工厂变成就业脱贫的主抓手，力争实现全区每个社区建成一个社区工厂。”
+此外，陕西省多渠道保障劳动者合法权益，坚持依法行政，主动排查化解矛盾纠纷，最大限度增加劳动关系和谐因素，最大限度减少不和谐因素，着力营造公平的就业环境。
+据陕西省人社厅介绍，近年来陕西积极破除妨碍劳动力社会性流动、制约广大劳动者就业创业的体制机制障碍。同时畅通依法维权渠道，健全仲裁与诉讼衔接协调机制，开展“互联网+调解”试点，提高争议处理效能。通过实现“一点投诉举报、全省联动处理”，陕西推进失信联合惩戒制度建设，将一批拖欠农民工工资的企业列入了“黑名单”。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-10-15 15:34:13,同花顺
+24,永州冷水滩：用好用活“1+5+N”机制 改革创新优化消费环境,"时刻新闻 ―分享―
+(image_address=""https://e.thsi.cn/img/4806451c2d4626ef"")
+“凝聚你我力量”消费年主题宣传。 (image_address=""//comment.10jqka.com.cn/sourcepic/12/uuzNextagAtsaytsay.png"")时刻记者 李俊杰 成文杰 通讯员 郭实武 永州报道
+消费者权益保护事关人民群众的切身利益，如何及时有效化解消费纠纷、保障消费安全，是维护社会和谐稳定的重要任务之一。
+近年来，永州市冷水滩区从地方实际出发，充分发挥调解在消费维权工作中的优势，通过强化组织领导、严格落实责任、畅通调解纠纷渠道、创新工作举措、加固维权基础及指导、引导维权站培育维权新生力量等方式，坚持把非诉讼纠纷解决机制挺在前面，全面加速推进“1+5+N”矛盾多元化解工作机制工作常态化，打造市域社会治理现代化的“冷水滩模式”。
+认真履职 畅通调纠渠道
+“1+5+N”工作模式中，“1”是成立区联合人民调解委员会，“5”是实现与主要职能部门的5个对接（诉调对接、公调对接、检调对接、信调对接、仲调对接），“N”是吸收社会团体和志愿者力量建立的专业性、行业性的调解组织。冷水滩区市场监督管理局、冷水滩区消费者委员会设立消费纠纷调解委员会，健全完善消费纠纷和解、消费侵权赔偿、经营者首问责任等制度，及时解决消费纠纷。
+从加强学习消费纠纷调解法律法规、调解工作方法入手，调解委员会强化自身综合素质和专业水平，提升调解工作质量，认真履职，畅通调纠渠道，提高为民服务的本领。经营者自行受理、各市场监管所消委分会受理、调解委员会调解室受理，冷水滩区建立起辖区内三级消费纠纷调解机制，为全区消费纠纷的解决拓宽了途径，提供了有效的机制保障。
+2020年6月4日，冷水滩区消委联合区市场监督管理局组织辖区大型超市、酒店等企业代表、消费者权益保护站工作人员，开展了“凝聚你我力量，让消费更温暖”活动暨消费维权业务培训会。
+此外，定期通报投诉情况分析、不定期发布消费提示，尽可能地把消费维权由事后补救转为事前防范，保护消费者权益。
+创新举措 保证调纠效果
+2020年，调解委员会与区法院建立调解员结对机制，明确规定对事实清楚、争议不大的消费纠纷等案件先行调解处理，实现诉讼和人民调解对接。截至目前，共处理法院交办案件2起，联合调解案件2起，无一起转化为恶性事件。
+敏锐察觉群体动态，积极调解案件。邓某华等190户消费者投诉某房产公司和物业管理公司的案件，经积极调解达成双方满意结果。某健身会所“预付卡”未兑现承诺服务，遭消费者386人集体投诉，虽经调解达成协议，但该健身会所在期限届满后仍拒不履行协议内容，主管部门依法拟处高额罚款。
+新冠肺炎疫情暴发以来，积极开展涉疫情矛盾纠纷排查工作，坚持源头治理、预防为主、就地化解原则，多方联动，配合开展疫情防控和纠纷化解。截至目前，排查与疫情有关的矛盾纠纷41件，成功化解41件，稳定了市场秩序。
+1月至9月，全区共受理投诉举报1002件，调处并成功调解各类消费纠纷298件，接待来访和接受咨询近260人次，为消费者挽回经济损失近32.46万元。通过调解、立案查处，加强执法联动，强化消费维权事中、事后监管等方式，让矛盾化解在萌芽状态、化解在当地基层，维护了社会稳定，在全区营造了良好消费环境。
+“关爱老人、爱心义剪”消费维权志愿服务活动。
+加强宣传 稳固维权基础
+为适应消费转型升级新趋势，冷水滩区加强宣传，以送法送温暖、消费维权志愿服务、消费体察等系列活动为载体，高质量开展消费教育引导，稳固维权基础，助力营造安全有序的市场消费环境。
+4月16日，区消委、肖家园市场监管所与活龙井社区一道开展“关爱老人、爱心义剪”消费维权志愿服务活动。在防控新冠肺炎疫情的关键时期，为老人们送去了温暖与爱心，同时普及疫情防控、涉疫消费维权知识，引导老年消费者科学理性消费，提醒老年人远离消费陷阱。
+9月15日至17日，区消委先后在湖南希尔天然药业有限公司、湖南奔腾文化创意股份有限公司两家企业开展“让消费更温暖”消费体察活动。支持市场主体后疫情时期复工复产，增强居民消费信心，动员广大消费者和经营者践行社会责任，在特殊时期引领形成温暖和谐的消费氛围，充分发挥消费在经济发展中的引擎作用。
+9月29日，为宣传2020年“凝聚你我力量”消费年主题，永州市消委、冷水滩区市场监督管理局、区消委组织开展“中秋国庆前夕‘双节’送法送温暖”主题活动，向建都超市和蔡市镇敬老院赠送宣传资料，对常见的保健食品、理疗仪等消费陷阱进行剖析和讲解，并重点强调预防措施和补救方法，还普及了金融理财、旅游出行、养老生活识骗防骗知识。
+遵循“政企共建、和解优先、加强指导、有序推进”的原则，冷水滩区以群众日常生活“衣食住行游购娱”等消费领域为主线，以线上网购平台和线下销售服务企业为重点对象，指导市场主体、政企共建具有消费维权服务功能的站点，并进行规范统一，强化动态管理和业务指导。在下阶段将继续发挥市场监管、司法行政、消委和人民调解在消费维权工作中的综合优势，引导广大消费者科学、理性消费，营造和谐有序消费环境，维护经济社会稳定发展。
+来源：(image_address=""//comment.10jqka.com.cn/sourcepic/12/uuzNextagAtsaytsay.png"")
+作者：李俊杰 成文杰 郭实武
+编辑：王杨
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cjh",2020-10-15 15:32:29,同花顺
+25,台州市2020年第41周生活必需品市场运行情况,"据台州市生活必需品系统监测，第41周（10月2日―10月9日）我市受监测的160种商品中，67种商品价格上涨，占41.8%，60种商品价格下跌，占37.5%，33种商品价格持平，占20.6%。本周正值国庆中秋黄金周，水果、蔬菜、水产品等农副产品需求旺盛，价格整体小幅上涨。具体情况如下：
+一、蔬菜批零价涨跌互现
+本周批发市场受监测的蔬菜品种零售均价为5.24元/公斤，环比上涨1.35%。超市零售均价为7.05元/公斤，环比下跌1.95%。批发市场监测的8种蔬菜中5种上涨3种下跌，其中茄果和叶菜涨幅靠前，分别环比上涨5.13%、2.61%。整个节日期间，市内“菜篮子”供应总体充足，市场供销两旺状态持续，价格以稳中略涨的态势运行。
+二、粮油零售价本周微涨
+节日期间温岭三和、台州华联等各大超市采用各种促销方式刺激消费，营造了良好的节日氛围。受此影响，本周市局监测的粮食品种中，大米零售均价5.05元/公斤，环比下跌1.56%；面粉零售均价4.81元/公斤，环比上涨2.56%，粮食零售均价整体环比上周上涨0.41个百分点。本周监测的食用油零售价格18.63元/公斤，环比上涨4.08%。其中大豆油9.04元/升，环比上涨1.23%；花生油31.29元/升，环比上涨6.57%；菜籽油14.99元/升，环比下跌4.64%。
+三、水产品价格总体平稳
+国庆八天长假，海鲜成为亲朋好友聚餐的首选。叠加节假期间天气良好因素影响，本周鱼获上市数量多，种类丰富，水产市场购销两旺，价格整体稳中略涨。据监测，本周水产零售均价44.29元/公斤，环比上涨1.67%；批发市场价格46.5元/公斤，价格与上周持平。
+四、水果零售均价小幅上涨
+本周超市水果零售均价为11.05元/公斤，环比上涨11.06%。其中香蕉6.12元/公斤，环比上涨1.49%，梨5.24元/公斤、西瓜7.21元/公斤，环比分别上涨3.76、9.74个百分点。目前果市市场供应充足，运行平稳。
+五、猪肉、禽蛋价一涨一跌
+节日期间禽蛋类产品市场需求量增加，价格上涨明显。据监测，本周蛋类零售均价为10.08元/公斤，环比上涨7.58%，禽肉类零售均价为19.63元/公斤，环比上涨5.94%。随着生猪产能不断恢复，目前猪肉市场供应充足，价格总体小幅下跌。据系统监测，本周超市猪肉零售均价57.41元/公斤，价格环比下跌0.13个百分点。
+六、后期趋势
+粮油类方面：下周，随着节日消费效应的逐渐减弱，大米、面粉等市场价格将小幅下跌。猪肉方面：“双节”之后，猪肉需求量会降低，同时随着下游养殖企业产能不断恢复，市场供需矛盾将不断趋缓，生猪价格后期将以稳为主。鸡蛋方面：下周随着天气逐渐转凉，蛋鸡产蛋率将不断增长，同时随着节日对鸡蛋终端需求的提振效应逐渐减弱，鸡蛋价格后期将有所回落。蔬菜方面：十月秋高气爽的天气适合蔬菜生产，蔬菜上市量将持续增长。随着后期蔬菜生产和运输成本的降低，蔬菜整体价格将呈稳中趋跌的态势。水产品方面：双节假期收尾，休渔期全面结束，渔船正式开渔，市场里各类鱼获数量将逐渐增多，同时随着节后市场需求下降，价格整体将有所回落。水果方面：双节过后，桔子、苹果、火龙果等大量秋季水果轮番上市，市场供应仍将处于高位，市场价格将呈稳中趋跌态势。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cjh",2020-10-15 15:32:12,同花顺
+26,突发！淘宝台湾宣布年底退出岛内市场,"联商快讯：据台湾媒体报道，淘宝台湾今日（15日）发表声明，宣布忍痛决议于今年12月31日23:59 正式停止在台湾的营运。
+淘宝台湾（克雷达台湾分公司）在声明中指出，2019年开始在岛内服务以来，受到消费者、入驻卖家及合作伙伴的支持，也持续积极努力的沟通和探索新的发展可能性，但经本公司慎重诸多评估后，考量市场环境仍存在许多不确定因素，忍痛决议于今年12月31日23:59正式停止在台湾的营运。
+淘宝台湾平台自今日上午11:00起，关闭平台下单、卖家入驻与商品上架等功能，并全力协助卖方尽速履行已成立的交易订单，同步保障消费者与卖家双方的权益。
+这是继爱奇艺后，台当局对大陆企业的第二次“追杀”。
+此前的8月24日，台湾“经济部投审会”判定淘宝台湾为陆资，罚淘宝台湾41万元新台币，并限期6个月内撤资或改正。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cjh",2020-10-15 15:32:03,同花顺
+27,大唐移动发布5G车路协同解决方案：助力交通强国动能升级,"【(image_address=""//comment.10jqka.com.cn/sourcepic/12/zajQxbL60rXNextagAtsaytsay.png"")讯】2020年10月15日，大唐移动战略市场部总经理廖镭鸣应邀出席“5G+车联网生态发展高峰论坛”，并发表了题为《5G车路协同，助力交通强国动能升级》的演讲，与业内专家分享了大唐移动在5G+车联网商用建设中的成果及经验，同时在现场正式发布了大唐移动5G车路协同系统解决方案。
+(image_address=""http://e.thsi.cn/img/cfd84da2611cf67b"")
+五大融合创新方案促进车路协同发展
+作为中国信科集团旗下无线移动通信产业的核心主导企业，大唐移动在5G标准制定初期就将车联网作为公司战略发展方向之一。在演讲中，廖镭鸣介绍了当前车联网的产业进展，并针对当前行业面临的痛点问题，重点介绍了大唐移动的5大融合创新方案。
+1.网络融合：实现三网互联互通
+鉴于传统单车智能感知成本高、感知范围小的特点，大唐移动提出了车内网、车际网、车云网三网融合方案，实现5G、C-V2X网络之间的互联互通，支持根据业务需求灵活配合，同时保障通信的安全可靠。
+2.边云融合：构建本地特色服务
+为实现精准的车路协同服务，车辆、路端都将产生海量数据（603138），同时对每个业务交互响应时延异常敏感，为缓解网联设备计算存储压力，同时减少海量数据回传造成的网络高负荷，大唐移动提出边云融合方案，可为车辆及路口提供本地特色的高质量服务。
+(image_address=""http://e.thsi.cn/img/efc851d0825611ce"")
+3.感知融合：支撑信息实时交互
+随着道路侧基础设施的智能化升级，并结合大唐移动自研的融合感知算法，将行人、车辆、道路、交通事件、天气状况等信息进行融合，不断完善道路侧信息的感知范围和精度。
+4.定位融合：提供精准位置信息
+大唐移动基于北斗、GPS等卫星导航技术，结合差分定位、5G网络等多种定位技术，可提供实时厘米级高精度定位，为当前车路协同的场景应用以及后续演进的无人驾驶提供技术支撑与安全保障。
+5.安全融合：保障可信可靠传输
+车联网的安全至关重要。大唐移动牵头CA国内行业标准制定，并积极参与国际5GAA和3GPP中车联网安全相关的标准化工作，可以提供车路协同安全认证平台系统方案。
+车联网应用遍地开花
+车联网作为5G最大规模的单体行业应用，能够实现自主环境感知、网联信息服务相结合的主动安全驾驶。中国信科大唐移动携手车企及合作伙伴，在厦门、杭州、重庆、雄安、郑州、天津、南京等地，积极开展智慧公交、物流编队、远程驾驶等丰富的车路协同应用示范。尤其是在智慧公交应用方面，大唐移动可以提供成熟的方案，目前在厦门、杭州的智慧公交项目已在实际道路正式开通运营。
+(image_address=""http://e.thsi.cn/img/88f0d4777cd23852"")
+1.首个BRT快速公交车路协同系统
+早在2018年，大唐移动便在厦门开展了国内首个BRT快速公交车路协同系统，并发布了四项应用：安全精准停靠、实时车路协同、超视距防碰撞、最优车速策略。目前已完成50辆BRT车辆的智能网联应用交付，并完成1万公里的稳定性交付。未来大唐移动将与厦门当地一起共推业务创新，共创商业模式。
+2.首个开放道路5G智慧公交系统
+大唐移动与大唐信通共同在杭州开展首个开放道路智慧公交出行系统，包括“聪明的车、智慧的路、全能的站”。2019年12月5日正式发布6大应用，受到浙江省当地政府和业主部门的高度认可目前，杭州的智慧公交车辆已经正式上路运营。
+同时，大唐移动开发出具有完全自主知识产权的5G车载融合网关和路侧融合网关，目前两款设备均已实现规模化量产，并在杭州和厦门等实际项目中规模部署应用。
+为车联网产业发展持续贡献力量
+车联网是5G高可靠低时延通信场景的最重要应用之一。5G带来的低时延和更高稳定性，支持5G-V2X在智慧交通领域中扮演重要角色。
+中国信科于2013年率先提出LTE-V2X车联网概念及关键技术，可提供业界领先的车联网自研芯片、模组、终端及平台等全系列产品。中国信科旗下大唐移动将车联网应用到城市公共交通领域，采用5G、融合感知、群体智能、车辆线控平台和高精度定位等领先技术，形成5G智能网联车路协同系统，打造了新型智慧公交系统，包括智慧路口(感知行人和获取路口信息)、网联公交车(改造不同类型的公交车辆)、公交站台(提供智能、人性化服务)以及交通运管平台(服务于交管中心并提供后台数据管理系统)，让“聪明的车”驶上“智慧的路”。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-10-15 15:30:54,同花顺
+28,9月车企销量TOP 10：合资大混战 自主抢四席,"日前，乘联会公布了9月国内汽车市场销量表现情况，9月车市批发销量实现了同比环比双增长，共计售车206.1万辆，较之去年同期增长8.5%，环比8月增长18.7%。1-9月，国内车市累计批发销量为1310.7万辆，同比下降12.5%。针对近期国内车市良好的回升态势，乘联会分析指出，2020年以来，国内乘用车市场走势呈现V型反转态势，自2月探底后迅速反转，为不少国际车企化解了市场压力，维持了产业链的良好运转。对不少国际车企而言，中国市场既是增量的机遇，也是抵御国际不确定风险的避风港。当然，随着整体大势向好，自主车企也普遍交出了不错的销量表现。
+与国内乘用车市场整体持续回升保持一致，主流车企的市场表现也已经基本稳定。较之8月，9月狭义乘用车批发销量排名前十的车企变化不大，依旧是8月份的十家车企，只不过个别车企的前后排名出现了小幅度的改变。
+(image_address=""https://e.thsi.cn/img/4cd57f21568780db"")
+“三巨头”地位依旧牢靠
+一汽-大众、上汽大众和上汽通用依旧是车企销量TOP10中的前三名。一汽-大众是9月国内乘用车市场上唯一一家销量突破20万辆的车企，以22.4万辆的销量成绩继续蝉联销冠，9月一汽-大众实现了3.9%的同比增长。上汽大众紧随其后，以17.5万辆的月度销量拿下了9月车企TOP10的第二名。不过，上汽大众9月销量出现了1.2%的同比降幅，其也是9月TOP10阵营中仅有的出现销量下滑的车企。季军“选手”也没有意外，上汽通用凭借15.3万辆的销量表现拿下了9月车企TOP10的第三名，销量增幅达到9.3%。
+一汽-大众近期能够一直霸占国内乘用车市场销量冠军的位置，与其密集投放新车的产品策略关系密切。特别是在探影、探岳、探歌等SUV车型陆续投放市场之后，一汽-大众缺少SUV车型这个唯一的市场短板也被补齐了，随着一众新车型逐渐完成销量爬坡，再加上终端市场上舍得让利，一汽-大众旗下的大众品牌迅速就跨入了市场强势期。再加上有奥迪品牌把守中高端车市场，捷达品牌下探中低端市场，一汽-大众已经构建了完善的市场体系。不出意外的话，短时间内很难有车企能挑战一汽-大众的冠军地位。
+进入2020年之后，上汽大众的市场表现一直不算太理想，长期处于同比销量下滑的态势。从2020年投放的新车情况看，斯柯达品牌方面缺少高光时刻，大众品牌方面新polo和新凌度等算是中规中矩，备受期待的全新MPV――威然还没有真正打开局面，而且从这款车的市场定位看，短时间内迅速走量的可能性不大。当然，也有好消息，在持续的终端让利之后，最近几个月，上汽大众的销量表现有向好趋势，降幅已经明显收窄，环比来看也在持续提升。接下来，让利营销之外，如果能再带来几款走量的新车，上汽大众的市场表现依旧可期。
+(image_address=""https://e.thsi.cn/img/f41db2c2bb9ee9c8"")
+大众威然，图片来源：上汽大众官图
+在家庭用车市场上强推三缸发动机车型被看做是上汽通用市场表现上的重要转折点，而随着近期逐渐放弃三缸机车型，上汽通用的市场表现迅速就开始恢复，9月更是实现了接近10%的同比正增长。市场表现虽然在逐步好转，但对上汽通用而言还有另外一个问题亟待解决，此前为了冲销量，上汽通用旗下各大品牌都在大打价格战，价格体系已经全面失守。未来该如何重构价格体系，是上汽通用高层需要重点考虑的问题。
+中国品牌四强并进
+从销量表现上看，吉利、长安和长城是自主车企的三大销量担当，9月三家车企再次齐头并进，均有不俗表现。如果再算上虽然身份是合资车企但却是以销售自主产品为主的上汽通用五菱，9月车企销量TOP10阵营中，自主品牌再次占到4个席位。
+吉利仍是自主乘用车市场上的“老大”。9月吉利汽车交出了12.6万辆的销量表现，同比增长了11%。这几年，吉利汽车的品牌向上战略效果显著，市场营销上也屡有惊艳表现，当前的品牌口碑已经不输主流合资品牌。在品牌形象有了显著提升之后，吉利汽车明显加快了新车攻势，仅是2020年前9个月，吉利旗下推出的全新车型就有豪越、ICON、领克05、领克06、几何C等。有品牌号召力，又能持续投放新车保持市场热度，吉利汽车的成功，为自主车企提供了很好的一个范本。
+(image_address=""https://e.thsi.cn/img/16db5ed89ad9459a"")
+以前瞻性的战略目光锁定一个潜力市场发力，靠爆款车型迅速激活新的细分市场，上汽通用五菱带来的是自主车企另一个成功范本。因为没能持续打造新的市场“神车”，上汽通用五菱此前挺长一段时间都没能进入到乘用车销量TOP10阵营，但在今年8月，随着新车宏光MINIEV引爆国内小型电动车市场，上汽通用五菱重新归队，再次成为车市TOP10。9月宏光MINIEV的市场表现再攀新高（单月销量已经突破2万辆），上汽通用五菱的销量排名也得到提升，由8月的第七名升到了第六名。宏光MINIEV之外，上汽通用五菱的另一款新车凯捷目前看来也已经具备了成为爆款的潜质。官方公布的消息显示，9月28日凯捷开启预售的当天，订单量就超过了2000辆，累计订单总量更是突破万辆大关。很显然，五菱的神车“体质”，又回来了。
+(image_address=""https://e.thsi.cn/img/c983471e2194de8"")
+宏光MINI EV，图片来源：上汽通用五菱官图
+长安汽车（000625）同样在持续的制造惊喜。9月长安汽车交出了10.2万辆的销量表现，同比增幅高达46.9%，是销量前十车企中增速最快的一个。从去年9月新车长安CS75 PULS投放市场之后，长安汽车的市场表现就在节节攀升。进入2020年之后，长安汽车投放的新车型UNI-T和逸动PLUS也逐步站稳了脚跟，特别是逸动PLUS已经是最畅销的自主轿车。吉利汽车之后，中国车企中又多了一个在轿车和SUV两大细分市场都能持续走量的品牌，就是长安。按照当前的发展态势看，长安重新做回自主老大，绝非不可能的事情。
+聚焦于SUV市场的长城汽车（601633）也已经恢复到了增长通道中，8、9两个月，长城汽车已经连续闯入车企销量TOP10榜单，8月是第十名，9月提升到了第九名。发布三大技术平台吸引了整个行业的目光之外，近期长城汽车最大的变化就是营销上更加接地气了。主要表现在新产品的命名上，大狗、坦克、黑猫、白猫、初恋等，每一款新车的名字都算不上传统意义上的“高大上”，但却都收获了不错的关注度。其中大狗已经率先交出了抢眼的市场表现，官方公布的9月销量数据显示，9月25日完成上市的哈弗大狗，5天时间里就交出了3054辆的销量成绩。接下来就要看长城汽车的这波市场热度能够持续多久了。
+(image_address=""https://e.thsi.cn/img/b63717ed50ae071e"")
+哈弗大狗，图片来源：长城汽车官图
+日系三个席位是保底
+两本两丰加一个日产，日系五大合资车企此前一直是车企销量TOP10榜单中的常客。不过，8、9两个月，一汽丰田和广汽丰田均掉出了TOP10阵营，倒不是一汽丰田和广汽丰田销量上出现了大波动，事实上，按照企业官方公布的销量数据，二者9月销量都在8万辆以上，仅是以微弱的销量差距（可能只是几百辆）没能进入榜单而已。
+东风日产9月销量为12.8万辆，同比增长了8.2%，创下最佳9月历史销量纪录。东风日产9月销量能够破纪录，主要得益于轩逸这款车的单月销量破了纪录，东风日产公布的销量数据显示，9月轩逸系列销量达到57438辆，同比大增51.4%。从当前的市场势头看，2020年轿车市场全年销量冠军的悬念已经非常小，轩逸夺魁基本没有难度。一个换代轩逸就让东风日产销量大增，随着逍客和奇骏等重量级车型换代日期的临近，东风日产未来的市场表现令人期待。
+(image_address=""https://e.thsi.cn/img/92548f2a836cb195"")
+轩逸，图片来源：东风日产官图
+9月东风本田交出了9.5万辆的销量成绩单，同比增长了22.6%。东风本田手里有两张王牌，CR-V和思域，一个是国内SUV市场上的鼻祖车型，另一个是性能家轿的代名词，两款车的销量通常就占了东风本田整体销量的一半以上。这些年竞争对手换了一批又一批，CR-V和思域的市场表现基本都没有受到太大的影响，少有的波动也主要是因为自身产品出现了质量隐患。换言之，只要守住了CR-V和思域的市场份额，东风本田的市场表现就不会差。此外，东风本田月销量能够稳定在万辆以上的还有一款小型SUV――XR-V。
+雅阁、缤智和凌派，在皓影出现之前，广汽本田的看家车型也基本是老三样。随着皓影的上市，广汽本田在紧凑级SUV市场上多了一个新的销量支柱。目前，皓影的月销量还不太稳定，近期有过月销超两万的表现，但并没有持续保持，未来，皓影这款车的表现如何，会直接影响广汽本田销量排名。广汽本田的9月销量是8.5万辆，同比增长20.8%。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：yqz",2020-10-15 15:30:08,同花顺
+29,工信部：将引导国家制造业转型升级基金支持动力电池领域,"上证报中国证券网讯 据工业和信息化部10月15日消息，工信部在关于政协十三届全国委员会第三次会议第0725号（工交邮电类104号）提案答复的函中表示，工信部将积极引导基金对动力电池领域符合国家战略、具有优势的重点项目和骨干企业给予关注和支持。工信部将继续引导企业用足用好现有政策，进一步释放政策红利，支持动力电池产业链企业加快创新发展。
+同时，人民银行将继续加强宏观信贷政策指导，完善绿色债券支持项目和范围，鼓励金融机构结合汽车产业发展特点，积极创新金融产品和服务方式，拓宽融资渠道，扩大资金来源，支持新能源汽车产业和消费发展。银保监会将推动银行保险机构在风险可控、商业可持续的前提下，结合新能源汽车产业发展特点，创新金融产品和服务模式，为新能源汽车产业技术攻关、品牌培育、商业模式创新和市场推广提供金融服务保障，全面助力汽车产业国际竞争力提升和战略性新兴产业加速发展。
+此外，人民银行将不断完善信贷支持政策，加大对汽车个人消费信贷支持力度，支持合理扩大汽车消费。
+同时，工信部在关于政协十三届全国委员会第三次会议第1543号（工交邮电类187号）提案答复的函中表示，将支持湖北加强国家新型工业化产业示范基地建设，加快培育发展有国际竞争力的汽车产业先进制造业集群，推动汽车产业高质量发展。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：yqz",2020-10-15 15:29:52,同花顺
+30,走进长三角“北大门”徐州：从“五省通衢”到国际港,"(image_address=""//comment.10jqka.com.cn/sourcepic/12/0MK7qs34.png"")南京10月15日电(庞雪汀)“老百姓乘坐车辆的档次提高了，票价比原来降低了40%，行程时间大大缩短……经过这样的毗邻公交改造，我们往安徽萧县的日发客流量从900多人达到9000人左右，有了近10倍的提升！”10月14日，徐州市交通运输管理处副处长吕燕燕满怀自豪，向“潮涌长三角.共建进行时”主题网络传播活动采访团介绍了徐州毗邻公交改造给当地百姓带来的获得感和幸福感。
+等待发车的毗邻公交
+近年来，徐州在淮海经济区各城市间探索开通了毗邻地区间的城际公交，打破了原有行政壁垒，为毗邻地区百姓到徐州购物、就医，以及城际间的文化旅游交往提供了方便快捷的服务。据吕燕燕介绍，目前徐州已经开通了前往安徽萧县、安徽宿州的城际公交，未来这样的城际公交还将覆盖到徐州周边100公里范围内的城市，真正的体现徐州作为淮海经济区中心城市的重要地位。
+实际上，毗邻公交的大胆探索正是徐州与淮海经济区城市协同发展、携手共进的一个缩影。在这个小缩影背后，正是徐州作为长三角地区“北大门”，努力打造东西双向开放的内陆型国际中转枢纽港的宏图大志。
+(image_address=""http://e.thsi.cn/img/619e7e46c785ab8c"")
+徐州路网中心监控大屏
+今年7月30日，徐州淮海国际港务区正式成立，志在发挥徐州作为“一带一路”重要节点城市、淮海经济区中心城市的双重优势。铁路方面，徐州位于京沪和陇海两个“十”字型国家铁路动脉的交汇处；公路方面，徐州境内高速公路里程465公里，在全国地级市中位居第一；水运方面，徐州港是全国28个内河主要港口之一，吞吐量位居全国内河港口前十位、省内第一位……昔日“五省通衢”，今日仍是地位显要的全国综合性交通枢纽。
+中欧班列，则是淮海国际陆港的核心载体，也为为徐州“枢纽经济”的发展添上了浓墨重彩的一笔。
+据统计，中欧班列自今年年初以来至9月底累计开行268列，带动全市进出口增幅位居全省前列。徐工、卡特、淮海控股等重点企业通过中欧班列平台开辟了新的市场，物流成本较以往运输方式节约了三分之一左右。进口班列以俄罗斯木材货品为主，为徐州周边地区已形成的千亿级木材加工、家具生产等产业注入了强劲动力，已促成10余家贸易及供应链公司在徐州注册落地。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-10-15 15:25:08,同花顺
+31,海南：提供科技型中小企业、专精特新企业集合信贷机制,"证券时报e公司讯，中共海南省委办公厅、海南省政府办公厅印发《海南省创一流营商环境行动计划(2020-2021年)》。行动计划提出，实施政银保联动授信担保提供科技型中小企业、专精特新企业集合信贷机制。在旅游业、现代服务业、高新技术产业等重点产业领域，探索以大保小、以强保弱的产业链担保贷款模式，提升金融服务水平，缓解企业资金困难。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-10-15 15:24:36,同花顺
+32,特区迎来40周年“大礼包” 平安银行助力深圳“再出发”,"近日，中共中央办公厅、国务院办公厅印发了《深圳建设中国特色社会主义先行示范区综合改革试点实施方案（2020－2025年）》（下文简称“《方案》”）。《方案》提出，将赋予深圳在重点领域和关键环节改革上更多自主权，支持深圳在更高起点、更高层次、更高目标上推进改革开放，率先完善各方面制度，构建高质量发展体制机制，推进治理体系和治理能力现代化，加快形成全面深化改革、全面扩大开放新格局，推动更高水平深港合作，增强在粤港澳大湾区建设中的核心引擎功能，努力创建社会主义现代化强国的城市范例。
+(image_address=""https://e.thsi.cn/img/9fc4cd8c37295cbd"")
+支持深圳在资本市场建设上先行先试。如推进创业板改革并试点注册制，试点创新企业境内发行股票或存托凭证（CDR）、建立新三板挂牌公司转板上市机制、优化私募基金市场准入环境、探索优化创业投资企业市场准入和发展环境、依法依规开展基础设施领域不动产投资信托基金试点等。在中国人民银行数字货币研究所深圳下属机构的基础上成立金融科技创新平台，支持开展数字人民币内部封闭试点测试，推动数字人民币的研发应用和国际合作等。
+同时，《方案》提出，要加快完善技术成果转化相关制度。如探索政府资助项目科技成果专利权向发明人或设计人、中小企业转让和利益分配机制，健全国有企业科研成果转化利益分配机制。完善技术成果转化公开交易与监管体系。
+《方案》还要求加快培育数据要素市场：率先完善数据产权制度，探索数据产权保护和利用新机制，建立数据隐私保护制度。试点推进政府数据开放共享。支持建设粤港澳大湾区数据平台，研究论证设立数据交易市场或依托现有交易场所开展数据交易。开展数据生产要素统计核算试点。
+无疑，随着《方案》的落实，深圳必将实现新一轮的腾飞。而金融科技领域的创新发展，深圳一直走在全国前列，而且在全球数字经济中担当重要角色。
+在国家高端智库中国（深圳）综合开发研究院与英国智库Z/Yen集团共同编制的第27期“全球金融中心指数”（GFCI27）报告显示，香港与北上广深四大超一线城市再度全部跻身综合竞争力排名前20的金融中心榜单。其中，深圳排名第11，广州为第19。
+近日，深圳市罗湖区开展数字人民币红包试点，又打响了数字人民币落地第一枪。
+作为一家诞生于深圳，成长于深圳的银行，传承深圳创新基因的平安银行也早有所行动――几年前，平安银行便确立了深化“金融+科技”、探索“金融+生态”的战略规划，以人工智能、区块链、云计算、大数据和安全等五大核心技术为基础，深度聚焦金融科技领域。
+“平安银行的核心宝藏，是科技。” 平安集团总经理兼联席CEO、平安银行董事长谢永林在今年的中期业绩发布会上依也如是道。
+(image_address=""https://e.thsi.cn/img/249b839fd26e2112"")
+自2016年平安银行新领导班子上任，正式拉开零售转型序幕开始，平安银行便建立了一套互联网发展机制。如今的平安银行，与其说是金融公司，其实更像是互联网公司。
+据去年年报显示，2019 年平安银行IT资本性支出及费用投入同比增长35.8%，其中用于创新性研究与应用的科技投入10.91亿元；科技人员（含外包）超过7500人，较上年末增长超过34%。
+今年以来，为顺应数字化时代趋势,平安银行在零售上更强化四化策略:数字化经营、线上化运营、综合化服务、生态化发展,在疫情之下打造持续的获客能力,不断扩大有效客户群体。
+“为了让知识库更好地支持智能客服机器人，平安银行专门成立了一个200人的坐席团队，每天处理数万笔客户电话记录，将客户录音信息整理成知识条目，录入系统成为训练样本，包括营销、陪练、审批等机器人都是一样的模式，这样的投入平安银行坚持做了四年。” 谢永林在中期业绩发布会中透露。
+在这样的坚持之下，平安银行打造出产品、客户、知识、人员、案例五大基础数据库。营销、客服、陪练、审批四类机器人正式上岗。目前AI客服占比90%，AI客服月均服务客户量是去年同期5倍，节约坐席人力3000人，客均运营成本下降了38%。
+四年以来，平安银行不断升级优化其口袋银行，通过AI算法实现千人千面；用互联网思维优化流程；通过主账户功能，引流生态客户。截止到2020年6月末，平安口袋银行APP注册用户数突破1亿户，月活跃用户数3192万户，客户数是四年前的4倍，月活数是四年前的近5倍。
+近日，国际权威媒体《欧洲货币》揭晓了“2020年度卓越大奖”评选结果，平安银行荣获“全球最佳数字银行”大奖，在中资银行中，率先获得该奖项。《欧洲货币》评委会十分认可平安银行在数字化资金投入、团队建设和口袋银行App等方面的亮眼表现，认为“平安银行树立了属于自己的数字化银行全新标准”。
+科技能力的提升直接助力于平安银行零售业务的突飞猛进，从2018年开始，其零售业务便为全行贡献超半壁江山的利润。与此同时，其资产质量反而在逐步转好：不良率和逾期60天和90天以上占比持续下降。而拨备覆盖率从2018年的155%上升到2020年1季度的215%，逾期90天覆盖率从159%提升到267%。
+这主要得益于平安银行的智慧风控平台。该平台为平安银行自主研发，开创业内先例，通过创新风控模式、深度应用AI技术、卓越的系统性能和显著的风控成效，全面整合信用卡、借记卡的金融、非金融交易和客户行为数据，在网络金融安全领域表现优异。平台对接全量银行卡交易及用户网络行为数据，涵盖五百多个渠道数据，整合网络安全数据，建立了多层次、全方位、立体化的反欺诈监控和拦截体系，颠覆过去借记卡或信用卡单一卡产品维度的反欺诈管理模式，真正做到保障了客户的核心利益。因此，平安银行的零售客户级反欺诈统一管理平台获得《亚洲银行家》最佳网络安全项目。
+(image_address=""https://e.thsi.cn/img/2dce14bfcdefd4ca"")
+为加快粤港澳大湾区金融基础设施的互联互通，2019年，平安银行还承接了由深圳人行发起、数研所统筹规划的“湾区贸易金融区块链平台”，旨在打造一个“一级与二级市场兼备、境内外打通、商业与监管兼顾、线上与线下相衔接”的全功能区块链贸易金融商业服务平台。
+“区块链技术在金融领域的应用，将有利于推动大湾区内贸易和货物流动，带动区内科技和金融创新，促进粤港澳金融机构的互助和互信，从而建立区内良好的金融生态。” 平安银行行长胡跃飞认为，该平台“立足湾区，辐射全球”，不但有助于构建与国际接轨的开放式贸易生态，打造2019年7月，深圳市供应链金融协会率先在粤港湾大湾区成立，的贸易融资服务平台，而且还将在“沙盒监管”的大框架下发挥更大作用。
+2019年7月，深圳市供应链金融协会率先在粤港湾大湾区成立，平安银行深圳分行当选为首届会长单位。与此同时，平安银行依托20多年的供应链金融经验注入，由平安集团的科技实力保驾护航，倾力打造了平安好链SAS平台。
+从经济一体化不断深入，到政府顶层设计，以及金融监管机构切实的政策实施，深圳乃至粤港澳大湾区正积极抢抓新一轮技术革命和产业变革机遇，而以平安银行为代表的金融力量又助推大湾区成长为国际一流湾区和世界级城市群，成为中国最具开放活力的地区之一。
+机遇与挑战并存。面向未来，谢永林表示，科技依然是平安银行重点投入的领域。“布局科技就是布局未来，未来三年，我们在业务上的目标就是要重塑资产负债表，打造数字银行、生态银行、平台银行三张名片。平安银行有信心在新的三年，借助集团科技优势，依托现有科技能力，在下一个发展周期中助力特区及粤港澳大湾区稳健起飞。”
+而与此同时，“作为有担当的银行，平安银行也将主动作为，防风险、促投放，同时大幅降低贷款利率，让利客户，支持实体经济恢复发展。”平安银行副行长郭世邦表示。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：yqz",2020-10-15 15:24:35,同花顺
+33,潮州用创新延续千年窑火,"广东省潮州市广济楼前摆放的两个近3米高的陶瓷大花瓶。新华社记者卢汉欣摄
+新华社广州10月15日电（记者詹奕嘉、毛鑫）刚过去的国庆中秋长假，位于南海之滨的广东省潮州市广济楼前，两个近3米高的陶瓷大花瓶摆放在城楼两旁，引来不少游客驻足观赏留影。
+这座拥有上千年历史的古城数百年来因出产大量瓷器闻名。潮州北关古窑址、南关古窑址和笔架山宋代窑址等地的考古发掘显示，早在公元7世纪中后期的唐代时期，当地已有较大规模的陶瓷生产，到了宋代更成为中国东南沿海最大的瓷器产地之一。
+千年窑火绵延至今，从传统瓷瓶到现代生活用瓷再到电子陶瓷，陶瓷业已发展成潮州第一支柱产业，年产值超过500亿元人民币。
+“光纤陶瓷插芯”“氧化铝陶瓷基板”“手机锆材料陶瓷后盖”……潮州三环（集团）股份有限公司董事长张万镇在公司展厅熟练地介绍外人听起来相当拗口陌生的陶瓷技术和陶瓷产品。有人问“手机陶瓷后盖会不会容易摔碎时”，这位70多岁的老人会笑着拿起样品从一米多高的地方往地上扔，结果连刮痕都没有。
+潮州三环（集团）股份有限公司生产的手机陶瓷后盖。新华社记者卢汉欣摄
+张万镇的自信源自对产品和技术的专注。从1998年建立广东省电子陶瓷工程技术研究中心到2013年成立三环集团（300408）研究院，三环集团坚定走自主创新之路，不断聚焦陶瓷行业新材料、新技术的开发利用。
+这家新型陶瓷企业也尝到了自主创新的甜头。公司连续31年入选中国电子元件百强企业。
+然而，潮州5000余家陶瓷生产企业中，规模以上企业仅有350家左右，还有大量中小企业散落于各镇村之间，整体经济效益不高。
+为让更多陶瓷中小企业实现转型升级，潮州加快智能制造步伐，推动互联网、大数据、人工智能与陶瓷制造业深度融合，通过推广3D打印、机器人、数字化车间等先进技术，不断提升陶瓷产业的信息化、智能化水平。
+潮州市源润科技有限公司的工作室内，一排3D打印机正按照系统设置的样式打印着各式各样的瓷器。一些传统工艺短时间做不出来的镂空瓷器，在精密的打印机“手中”也不在话下。公司总经理郑晓卫在手机App中向记者演示如何通过设置直径、斜度、坡度等参数来打印个性化瓷器。
+潮州三环（集团）股份有限公司生产的陶瓷劈刀。新华社记者卢汉欣摄
+“通过3D打印，原本需要10多道工序的花瓶简化成3道工序就可以完成，时间也从原来的几十至上百小时缩短到3至5小时，且不产生污染。”郑晓卫说。
+同时，潮州已有20多家卫浴企业引进智能化生产线，使用自动化喷釉智能机械手作业，产品损伤率下降到0.6‰。2019年，潮州智能坐便器年总产量约100万套，年产值约24亿元人民币。
+“未来，将有更多的陶瓷生产过程向自动化、智能化、清洁化迈进，产品结构不断优化，向着精细化、高附加值方向发展。”潮州市陶瓷行业协会秘书长柳茂春说。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：yqz",2020-10-15 15:24:18,同花顺
+34,筑牢严禁耕地“非农化非粮化”的坚实屏障,"日前，国务院办公厅印发《关于坚决制止耕地“非农化”行为的通知》，明确提出严禁耕地“非农化”的六种行为，即严禁违规占用耕地绿化造林、严禁超标准建设绿色通道、严禁违规占用耕地挖湖造景、严禁占用永久基本农田扩大自然保护地、严禁违规占用耕地从事非农建设、严禁违法违规批地用地。闻此消息，作为一名长期从事粮食流通管理的基层工作者和粮食经济政策法规、理论研讨的业余爱好者，笔者禁不住为此点赞叫好。
+粮食是重要的生活商品和战略战备物资，而耕地又是粮食生产的必备前提和重要基础。改革开放以来，特别是党的十八大、十九大以来，我国粮食生产能力持续稳定发展，粮食安全上升为国家战略。习近平总书记强调“中国人的饭碗要装中国粮，牢牢掌握粮食工作主动权”，李克强总理指出要“守住管好‘天下粮仓’”。在党和国家的坚强领导下，我国粮食生产、流通、消费和进出口等重点领域，粮食流通体制改革、粮食产业发展等关键环节都取得了一系列显著成就，筑牢了保障国家粮食安全的根基。但也存在一些不容忽视的新情况、新问题、新矛盾，突出表现是弱化了粮食商品的特殊属性和重要地位，放大了粮食商品的一般属性和价值特征。受此影响，各级各地不同程度存在放松或削弱国内粮食生产有效供给的倾向，尤其是近几年来，随着乡村振兴战略全面实施和“三农”建设、新农村建设全面加快，土地流转非农化非粮化现象比较明显，优质耕地被违法违规占用现象屡禁不绝，还不同程度存在土地抛荒、撂荒等现象，这给大力发展国内粮食生产、增加优质粮食有效供给带来了巨大压力和严峻挑战。
+面对这些复杂形势和艰巨任务，党和国家适时出台 这“六个严禁”，既是主动顺应形势发展，高端规划布局、顶层设计决策的重大举措、工作部署，又是坚决制止各类耕地“非农化非粮化”行为、坚决守住耕地红线、筑牢严禁耕地“非农化非粮化”“防火墙”的正确选择和必由之路，必须坚定不移地抓紧抓好，抓出成效，筑牢严禁耕地“非农化非粮化”的坚实屏障。
+应当看到，耕地，尤其是可利用的种粮用地和口粮用地，既是发展粮食生产的必备基础，更是关乎粮食安全的可靠保障。如何实现粮食安全，是摆在中国面前的一项刻不容缓的战略议题，这也决定了中国要把耕地作为最宝贵资源的战略定位，必须实行最严格的耕地保护制度。习近平总书记多次强调，粮食生产根本在耕地，必须牢牢守住耕地保护红线。国务院明确的这六种严禁行为，犹如“六个负面清单”，既为占用耕地行为划上了一道不可逾越的红线，又为日常监管装上了一条带电高压线，同时为在新形势下进一步做好耕地保护工作提供了重要遵循。各级各地更要深入学习领会，全面贯彻执行，坚持确保耕地、种粮用地、口粮用地“三条红线”不动摇，筑牢严禁耕地“非农化非粮化”的坚实屏障。
+不容否认，我国耕地分布与发展不平衡、不充分。粮食生产属于弱质、低效产业，投入多、见效慢、周期长。农村城镇化、农业现代化和产业结构调整步伐加快，土地开发利用和耕地保护力度不足，粮食种植面积调减过大，土地流转“非农化非粮化”现象比较明显。地方政府财力有限，各种扶持发展粮食生产的配套政策措施未能有效落实到位，急需引起重视并采取措施加以解决。贯彻落实国务院办公厅通知精神，筑牢严禁耕地“非农化非粮化”的坚实屏障，要严格按照国务院《关于建立粮食生产功能区和重要农产品生产保护区的指导意见》规定，加快粮食生产功能区和重要农产品保护区“两区”建 设步伐，做到“两区”地块全部建档立卡、上图入库，实现信息化和精准化管理。要做好耕地轮作休耕和土壤地力修复保护，加大土地抛荒、撂荒等行为的查处力度，开源节流并举，保证充足的耕地供应量。要大力发展优质粮食生产，做好优质农田示范区建设，稳定稻谷、小麦、玉米、大豆等主要粮食品种种植面积，推广优质、高产、高效、适销对路品种，发展集约化、规模化、机械化经营，努力提高粮食单产，增加总产和有效供给，大力推进粮食供给侧结构性改革，确保有限的耕地得到充分利用，全面提高粮食产出能力，加快振兴“三农”建设步伐。确保“谷物基本自给，口粮绝对安全”，实现由“种粮卖得出，吃粮买得到”向“种粮有效益，吃粮保安全”转变。
+贯彻落实《通知》精神，严格落实“六个严禁”，筑牢严禁耕地“非农化非粮化”的坚实屏障，还需要建立健全党委领导、政府负责、部门协同、公众参与、上下联动的共同责任机制。针对六种严禁的耕地“非农化非粮化”行为，要严格明确日常监管责任主体，层层压实责任，发动群众参与监督，加强问题发现，形成监管合力，把问题制止在苗头。要严格明确整改责任，对在禁令前已经成为事实的问题，明确由谁来监督纠正以及整改时限。要严格明确查处责任，对违反禁令，违规占用耕地的行为，明确谁来调查查处，对履职不力、监管不严、失职渎职的领导干部，依纪依规追究责任。要做到敢较真、碰硬、动真格。在认定农用地与非农用地、耕地与基本农田的边界上敢较真，坚决遏制新增问题发生，严控增量；在纠正打着城乡美化、绿色生态建设旗号随意圈占耕地、改变耕地性质的行为上敢碰硬，对违反禁令的行为立即纠正，解决存量；在查处违反禁令，破坏耕地保护的行为上敢动真格，确保落到实处，取得实效。
+（作者单位：山东省青岛市即墨区发改局，原文刊登于2020年10月13日(image_address=""//comment.10jqka.com.cn/sourcepic/12/wbjTzcrQs6GxqAtsaytsay.png"")B03版）
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：yqz",2020-10-15 15:24:09,同花顺
+35,忽米网李泯汉：希望形成跨地域、跨行业的平台,"【(image_address=""//comment.10jqka.com.cn/sourcepic/12/zajQxbL60rXNextagAtsaytsay.png"")讯】10月14日，主题为“网融万物，智向未来”的2020年中国国际信息通信展览会在北京国家会议中心开幕。作为亚洲规模最大、最具影响力的通信盛会之一，通信展被视为信息通信技术演进的“风向标”、行业发展的“晴雨表”。
+通信产业报全媒体作为通信展的官方合作媒体，组织了多场总裁在线访谈。
+重庆忽米网市场总监李泯汉在采访中讲到，忽米工业互联网平台在工业制造业这个领域发展有30年制造历史，在中小型发动机动力连续12年获得第一，连续10年在摩托车市场领域销量排行第一，在动摩这个产业领域已经走到了行业龙头的位置，市场也是覆盖了全球155个国家和地区，总资产是超过230个亿。
+(image_address=""http://e.thsi.cn/img/ca09274c41d334d0"")
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-10-15 15:22:40,同花顺
+36,央行回应近期宏观杠杆率为何持续上升,"(image_address=""//comment.10jqka.com.cn/sourcepic/12/0MK7qs34.png"")北京15日电（游苏杭）14日，在央行2020年三季度金融统计数据发布会上，人民银行调查统计司司长兼新闻发言人阮健弘表示，当前面临的是特殊情况，应该允许宏观杠杆率有阶段性的上升。
+事实上，这并非央行今年首次回应宏观杠杆率提升的问题。
+今年一季度，受疫情冲击影响，我国宏观杠杆率有显著的上升，提升了14.5个百分点。此后，央行官网在5月12日发布《人民银行调查统计司有关负责人就4月份金融统计数据情况答记者问》，进行了回应。
+“一季度宏观杠杆率的回升，是逆周期政策支持实体经济复工复产的体现。在疫情防控常态化前提下，逆周期政策的制定应对疫情防控和经济社会发展做统筹考虑，把更好支持实体经济恢复发展放到更加突出位置，同时，做好金融风险防控。”央行相关负责人表示，在这个过程中，当前应当允许宏观杠杆率有阶段性的上升，扩大对实体经济的信用支持，这主要是为了有效推进复工复产，这实际上为未来更好地保持合理的宏观杠杆率水平创造了条件。
+此后随着复工复产的有序进行，宏观杠杆率再度攀升。不过对此，阮健弘在7月10日的央行新闻发布会上表示，应看到宏观杠杆率上升背后的机理，当前宏观杠杆率上升是逆周期政策调节，支持实体经济复工复产、复商复市，在这个过程中应当允许宏观杠杆率有阶段性上升，这种阶段性上升是金融扩大对实体经济的信用支持。
+“这实际上是为了未来更好的保持合理的宏观杠杆率水平，是为未来合理宏观杠杆率的水平创造条件。”阮健弘表示，“要看到逆周期政策支持实体取得了显著的成效，应该说金融逆周期调节向实体经济传导的效果都在体现。我们对全国1万家实体企业调查显示，截至6月15号，工业企业设备利用率已经达到或者是超过去年二季度的平均水平。服务业的开工率已经回升到了90.7%。所以，逆周期政策提供信用支持已经在实体经济方面取得效果，当前宏观杠杆率阶段性上升是允许的。”
+而昨日，央行对于宏观杠杆率走高的再度回应，主要是基于三季度信贷和社融的增速的不断走高的背景。
+不过，关于前三季度信贷和社融的增速过快的说法，阮健弘并不认同，“前三季度信贷和社融的增速还是合理增长，还没有到偏快增长的状况。”
+与此同时，阮健弘还强调，看宏观杠杆率要看一个很关键的年份，就是2017年。2017年提出的稳杠杆政策取得了明显成效，宏观杠杆率过快上升的势头得到遏制。在宏观杠杆率过快上升势头得到遏制的同时，存量债务风险也得到了有效和有序的释放。
+阮健弘解释，2017年到今年，年均的宏观杠杆率增幅是8.1个百分点。2008年到2016年，宏观杠杆率的年均增幅是11.4个百分点，对比发现，8.1个百分点还是明显低于11.4个百分点的增幅。
+“宏观杠杆率的回升是宏观政策支持疫情防控和国民经济恢复的一个体现，应该允许宏观杠杆率有阶段性的上升，扩大对实体经济的信用支持。应该说这个政策现在已经取得了显著的成效，而且它向实体经济传导的效率已经明显得到了提升。突出的体现就是国民经济稳步恢复。二季度当季GDP已经实现了正增长，我们预计三季度GDP的增速会进一步提升，这也为未来更好的保持合理的宏观杠杆率的水平创造了条件。”阮健弘表示。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：yqz",2020-10-15 15:22:19,同花顺
+37,共建共享！生态环境部对外合作与交流中心“牵手”成都,"(image_address=""//comment.10jqka.com.cn/sourcepic/12/y8S0qNDCzsXNextagAtsaytsay.png"")成都10月15日讯（记者 张宇）10月14日，生态环境部对外合作与交流中心与成都市生态环境局在成都签署战略合作框架协议。
+成都市生态环境局主要负责人表示，今年7月22日，在对外合作与交流中心的悉心指导下，成都市生态环境局成功加入“一带一路”绿色发展国际联盟。此次战略合作，双方必将以服务打好污染防治攻坚战、绿色“一带一路”建设为宗旨，以“加强合作、优势互补、互利共赢”为指导原则，在加强咨询服务，促进科技成果转化，推动生态环境理念与知识传播，服务基层生态环境污染防治等领域，深入开展合作。
+生态环境部对外合作与交流中心相关负责人表示，“一带一路”绿色发展国际联盟是生态环境部部署的重点工作，联盟吸纳了43个国家，150余家国际国内组织，同时搭建了生物多样性、气候变化、海洋治理等10个专题伙伴关系。希望成都市能深入把握联盟宗旨，深刻践行联盟合作，一是发挥好“一带一路”绿色发展国际联盟作用，提升成都市生态环保国际声誉；二是共建“一带一路”大数据服务平台分平台建设，服务成都市污染防治攻坚战；三是发挥合作机制作用，服务水气土工业园区环境管理及绿色供应链管理等工作，为全球环境质量改善作出积极贡献。
+据悉，生态环境部对外合作与交流中心与成都市生态环境局将围绕“一带一路”绿色发展国际合作、建设“一带一路”大数据服务平台分平台、探索并完善产业功能区环境管理及绿色供应链体系建设、中日服务贸易示范区生态环保合作及资源共享等多个方面展开合作。
+签约仪式后，双方就有关合作事宜进行了深入交流。
+“成都市生态环境局将同对外合作与交流中心勠力同心，深化务实举措，始终携手并进，打造一系列合作平台、合作品牌；推动优势互补，锐意创新突破，在生态环境大数据应用、产业功能区环境管理等方面取得更大成绩；集聚优质资源，共建一流智库，争取举办生态领域国际高端会务及活动。”成都市生态环境局主要负责人表态说。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cjh",2020-10-15 15:21:56,同花顺
+38,任泽平：9月金融数据和货币政策呈七大新特点及趋势,"解读
+1、9月金融数据和货币政策呈七大新特点及趋势：
+1）2020年上半年货币政策总量超宽松，但并未引发通胀。M2和社会融资规模存量同比增速重回两位数，分别由2019年末的8.7%和10.7%回升至2020年9月的10.9%和13.5%。9月CPI同比1.7%，核心CPI持续低迷，PPI同比-2.1%。一方面是疫情后就业低迷、消费需求恢复缓慢、货币流通速度下降、外需不振；另一方面基建尤其新基建、资产市场吸纳了剩余流动性。财政部门加杠杆，居民和企业杠杆相对稳定。
+5-6月份以来，随着疫情控制住和经济恢复，货币政策开始回归正常化，下半年结构性宽松与结构性收紧并存。
+下一步货币政策引导货币流向新基建和实体经济，社融、信贷和M2的回升，表明经济开始逐步弱恢复，从宽货币走向宽信用。
+2）货币政策将趋于正常化，加强传导渠道的疏通；鼓励财政部门加杠杆，加强对新基建的投入。
+3-9月主要是财政部门加杠杆，财政投放节奏和力度加大，企业和居民部门杠杆基本保持稳定。
+3）社融层面，9月存量社融增速13.5%再创新高，政府债券、信贷为主力。信贷方面，居民和企业中长期贷款仍是主要支撑。但随着地产调控政策边际收紧，居民中长期贷款占新增信贷比重已由7月的年内高点61%下降至9月的34%。
+4）M2增速环比大幅回升0.5个百分点，财政投放节奏和力度明显加大，财政存款环比大幅减少1.4万亿元，提振M2。M1增速环比提升0.1个百分点，实体经济活跃度继续上升。
+5）流动性层面，9月公开市场操作资金投放力度高于去年同期。但超储率低位，监管压降结构性存款，银行负债端承压，资金面紧平衡。
+6）展望未来，当前经济形势可以概括为，经济逐步弱恢复，但基础不牢，中美贸易摩擦、疫情反复、就业低迷等不确定性仍存。
+从货币政策取向看，总量层面，结构性宽松和结构性收紧并存，长期货币政策趋于正常化。结构层面，流动性精准投向新基建和实体经济，尤其受疫情影响严重的行业、中小微、民企、制造业、高新技术等领域。
+2020年货币政策表现值得肯定，把握住了力度、节奏和结构。
+7）双循环的三大抓手：新基建、城市群和放开生育。
+新基建是实现稳增长、宽信用和促创新的重要抓手。当前中国经济面临的主要矛盾是总需求不足，对于扩大内需、实现双循环，财政政策和货币政策应相互配合。中央加快启动以“新基建”领衔的一揽子宏观对冲方案，新基建兼顾短期扩大有效需求和长期扩大有效供给，兼具稳增长、稳就业、调结构、促创新、惠民生的综合性重大作用，我们长期旗帜鲜明倡导“新基建”（参考《是该启动“新”一轮基建了》《中国新基建研究报告》以及专著《新基建》）。
+2、总量层面，9月存量社融增速13.5%再次超预期。
+9月社融增速13.5%，环比提升0.2个百分点，再创新高，为2018年1月以来最高点。
+9月新增社会融资规模3.48万亿元，同比大幅多增9630亿元，同比增速13.5%，环比提升0.2个百分点。
+供给端，货币政策强调精准导向直达实体，同时加强与财政协同、促进政府债顺利发行。
+需求端，经济持续恢复，生产和需求均稳步回升。PMI连续7个月位于荣枯线以上，地产韧性仍强，出口持续超预期，制造业投资和消费同比首次转正，实体投资及居民消费需求继续恢复。
+(image_address=""https://e.thsi.cn/img/5728478cb3b20270"")
+3、结构层面，财政部门加杠杆，政府债券放量发行、人民币贷款延续多增。
+(image_address=""https://e.thsi.cn/img/ae52edf6d2bbf9d6"")
+其他融资方面，9月政府债券同比大幅多增6326亿元。9月新增政府债券融资1.01万亿元，同比大幅多增6326亿元，地方政府专项债及一般国债放量发行。专项债剩余额度约3000亿元将在10月发行完毕，一般国债及地方政府一般债券剩余额度超1.1万亿元将在10-12月发行，叠加去年同期低基数效应，四季度政府债券仍将是社融最主要的支撑项。
+表内融资方面，信贷同比延续多增，实体经济需求继续恢复。9月新增人民币贷款1.9万亿元，同比多增1580亿元，企业及居民中长期贷款仍是主要支撑。
+表外融资方面，非标同比多增1151亿元，信托压降，主要是未贴现银行承兑汇票多增。9月表外融资新增26亿元，同比多增1151亿元。其中，未贴现承兑汇票、信托贷款、委托贷款分别同比多增1933亿元、多减487亿元、多减295亿元。一方面，信托贷款及委托贷款压降节奏加快，9月同比多减量创年内新高。另一方面，在监管层规范票据发行背景下，表外票据连续数月多增，或印证实体经济活跃度上升、企业开票需求回升。监管整治金融乱象态度明确，叠加四季度信托到期量大，预计四季度非标压降节奏将有所加快，构成社融主要的拖累项。
+直接融资方面，股票融资维持高位，企业债券融资同比环比均现回落。9月新增企业债券融资1422亿元，同比、环比分别少增1009亿元、少增2211亿元。9月资金面紧平衡、银行负债端承压背景下信用债利率继续上行，企业债发行利率已接近去年末水平，对企业债券融资形成压制。9月新增股票融资1140亿元，同比大幅多增851亿元，股市月内回调，但前期创业板注册制落地、股市交易热度仍存，带动股票融资继续维持高位。
+4、信贷扩张节奏平稳，金融机构贷款继续小幅多增。
+9月金融机构口径信贷同比多增2047亿元。9月金融机构口径新增人民币贷款1.9万亿元，同比多增2047亿元，延续6月以来的小幅多增态势。1-9月，金融机构口径信贷合计新增16.26万亿元，同比大幅多增2.63万亿元。
+一方面，宽信用力度边际放缓，央行维持资金面紧平衡状态，金融机构在超储率低位、压降结构性存款背景下负债端承压，多重因素制约信用派生节奏，信贷同比仅小幅多增。另一方面，季末银行加大信贷投放力度，信贷环比明显回升。
+四季度新增信贷月均值或保持在1.3万亿元左右，低于上半年的月均2万亿元，延续下半年以来的平稳增长态势。
+5、信贷结构层面，企业和居民杠杆基本平稳，企业和居民中长期贷款仍是主要支撑，票据延续6月以来的压降态势。
+企业贷款层面，货币政策强调直达实体，监管打击套利，银行负债端承压，票据继续缩减，企业中长期贷款大幅新增1.1万亿元创年内次高，占比保持高位。9月新增企业贷款9458亿元，同比少增655亿元。短期贷款、中长期贷款、票据融资分别少增1276亿元、大幅多增5043亿元、大幅多减4422亿元。监管层压降结构性存款、规范票据发行，银行负债端压力上升，票据继续缩减，延续6月以来的压降态势。企业中长期贷款大幅新增1.1万亿元创年内次高，占新增信贷比重保持高位，信贷结构延续改善。一方面，季末考核压力加大，另一方面，基建项目带动中长期配套贷款增加，制造业投资单月同比增速由负转正，实体经济投融资需求继续回暖。
+居民贷款层面，短期与中长期贷款均为多增，居民消费继续恢复、购房需求维持高位但边际有所回落。9月新增居民贷9607亿元，同比多增2057亿元。其中，短期贷款新增3394亿元，同比多增687亿元，社会消费品零售总额同比增速8月首次由负转正，乘用车零售维持高位，线下消费活跃度继续上升。中长期贷款新增6362亿元，同比多增1419亿元。但值得注意的是，随着地产调控政策边际收紧，银行控制涉房信贷，9月房地产销售市场热度较8月回落，居民中长期贷款占新增信贷比重已由7月的年内高点61%大幅回落至9月的34%。
+(image_address=""https://e.thsi.cn/img/e87397fa3d9e61d8"")
+6、M2增速环比大幅回升0.5个百分点，财政加杠杆，财政存款环比大幅减少1.4万亿元，提振M2。M1增速环比提升0.1个百分点，实体经济活跃度继续上升。
+9月M2同比增速10.9%，环比大幅回升0.5个百分点。银行信贷投放平稳增长，虽然政府债继续放量发行，但9月为财政投放大月，财政支出效率明显提升，财政存款环比大幅多减1.4万亿元，提振M2增速。从结构来看，1）企业存款增加1万亿元，同比多增5201亿元，居民存款增加1.9万亿元，同比多增4004亿元。一方面，季末财政支出节奏和力度加大，财政存款向居民企业存款转化。另一方面，季末为应对考核，银行将理财转化为一般存款，非银存款向居民企业存款转化。2）财政存款减少8317亿元，同比多减1291亿元，环比大幅多减1.4万亿元。9月为财政投放大月，支出节奏加快，带动财政存款同比环比均多减。3）非银金融机构存款减少3177亿元，环比多减565亿元，或受季末考核影响。
+M1同比增速8.1%，环比提升0.1个百分点，交易性需求持续恢复，实体经济活跃度继续上升。
+(image_address=""https://e.thsi.cn/img/a72623cae373df8c"")
+(image_address=""https://e.thsi.cn/img/63bb371e4c845d70"")
+7、流动性层面，9月公开市场操作资金投放力度高于去年同期。但超储率低位，银行负债端承压，资金面紧平衡，流动性分层加剧。
+公开市场操作（不含降准）来看，9月央行净投放流动性3718亿元，高于2019年同期水平（净投放8亿元）。1）9月央行加大公开市场操作力度及频次，熨平政府债放量发行带来的资金面波动，累计净投放流动性3718亿元，高于去年同期水平。2）9月18日央行重启14天逆回购，助力金融机构平稳跨季跨双节，9月15日，在超储率低位、银行负债端压力上升背景下，MLF再次超量续作，助力同业存单利率企稳。3）公开市场操作（包含降准）来看，9月央行净投放流动性3718亿元，低于2019年同期水平（净投放8008亿元）。
+超储率低位，银行负债端承压，资金面紧平衡。DR007保持稳定，但流动性分层加剧，同业存单利率上行斜率放缓。9月公开市场资金投放力度加大，但政府债券大量发行，金融机构超储率处于低位，资金面整体处于紧平衡状态。1）DR007月均值保持稳定，围绕7天逆回购利率波动。但超储率低位、监管压降结构性存款、银行负债端承压背景下，中小银行减少对非银融出，流动性分层加剧，R007与DR007利差在9月下旬最高上行至62BP。2）1年期、10年期国债收益率月均值分别上行约26BP、12BP，受制于资金面压力，短端利率上行幅度更大，收益率曲线呈现熊平。3）1年期同业存单到期收益率上行约12BP，上行斜率较6-8月明显放缓，MLF超量续作助力存单利率企稳。
+(image_address=""https://e.thsi.cn/img/5c8ca6c816f55404"")
+8、展望未来，货币政策长期正常化，鼓励财政部门加杠杆。
+10月10日易纲行长在《中国金融》发文，我们认为需要关注以下四点：其一，货币政策将在长期内维持正常化，将经济保持在潜在产出区间，减少经济波动；其二，把好货币总闸门，坚决不搞超低利率和量化宽松，维持物价稳定、汇率稳定，不让百姓手中的钱变“毛”；其三，流动性精准滴灌，加大对制造业、中小微企业和民营企业的信贷支持力度，降低实体融资成本；其四，坚决守住不发生系统性金融风险的底线。
+展望未来，总量层面，货币政策长期正常化，结构向宽松与结构性收紧并存，加强货币政策传导机制的疏通。结构层面，鼓励财政部门加杠杆，加强对新基建的投入，引导货币投向实体经济，尤其受疫情影响严重的行业、中小微、民企、制造业、高新技术等领域。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：hmg",2020-10-15 15:21:36,同花顺
+39,海南：支持社会资本与农村集体经济组织深度合作 用活用好集体经营性建设用地入市政策,"中共海南省委办公厅、海南省人民政府办公厅印发《关于大力发展农村市场主体壮大农村集体经济的十八条措施》。措施提出，放宽社会资本进入农村的限制，制定社会资本下乡市场准入负面清单，清单外领域全面取消许可和审批，实行“承诺即入制”。鼓励村级集体经济组织以资源资产作价入股、资产托管、租赁、承包经营等多种经营模式与社会资本合作，共建农业产业园、创新创业园、农业科技园和乡村旅游示范区。支持农村集体经济组织将村庄内零星、分散的集体建设用地先行组织复垦为农用地后，将腾挪出的建设用地指标调整到其他适宜地区入市。 
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：jhb",2020-10-15 15:20:59,同花顺
+40,河北省成立体育标委会推进产业高质量发展,"本报讯 （毛延锋 李 璐）近日，河北省体育标准化技术委员会（以下简称委员会）成立大会暨第一届委员代表大会在河北省质检研究院隆重召开。据悉，2019年11月，河北省市场监管局批复成立河北省体育标准化技术委员会，秘书处设在河北省质检研究院所属国家体育用品质量监督检验中心。
+河北省市场监管局副局长王普增指出，委员会是河北省成立的第22家专业化标准委员会，是质量强省和标准化战略推进的需要，是实施体育强国、体育强省战略的重要内容，是体育事业、体育产业发展的需要，是河北省体育产业标准化技术工作的需要，将有力服务冬奥会和河北省冰雪产业发展。委员会要加强学术建设，研制出一批高水平标准化成果，运用到竞技体育、群众体育、智慧体育等领域，不断推进河北省体育产业高质量发展。
+据悉，委员会批准成立后，将在标准制定、宣贯、推广及业务合作交流等方面开展工作。目前，委员会正在主持制定《滑雪场所游乐设施服务规范》《仿真冰摩擦系数测量规范》《冰雪项目运动人员损伤康复服务规范》《仿真冰场地技术要求和实验方法》等4项河北省地方标准，此外，委员会还承担河北省冰雪装备产品系列技术标准创新研制工作，参与制定体育相关的5项国家标准、18项行业标准、4项省地方标准和5项团体标准。
+此次会议上，还颁发了委员证书和顾问委员聘书，审议通过了技术委员会章程、细则及工作计划。
+《(image_address=""//comment.10jqka.com.cn/sourcepic/12/1tC5extagtbKwbextagxqAtsaytsay.png"")》
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cjh",2020-10-15 15:19:40,同花顺
+41,苏格兰的海上风电产业与机遇,"北极星风力发电网讯:2020年10月14日，在2020北京国际风能大会暨展览会（CWP 2020）国际风电市场投资机会分论坛上，苏格兰国际发展局投资部中国区总监赵莉发表了《苏格兰的海上风电产业与机遇》的主题演讲。以下为发言实录：
+赵莉：非常荣幸今天能有机会向大家分享有关苏格兰海上风电产业和机遇的介绍。我主要从三方面介绍，第一介绍苏格兰总的能源产业，第二重点介绍海风产业，第三介绍目前苏格兰海上风电存在的一些商业机遇。
+首先，看一下苏格兰的能源产业，谈到苏格兰的能源产业，一定要谈苏格兰设立的零排放的目标，今天早上英国驻华大使馆的贸易使节提到了英国的零排放的目标是在2050年实现零排放，而苏格兰又把这个目标提高了5年，我们将在2045年实现100%的零排放，也是基于我们设立的这个零排放的目标，苏格兰在可再生能源的供电、供暖、能源产能，综合再生能源的目标包括减少汽油车和柴油车的方面，都设立了高于英国还有高于很多欧洲国家的。比如到今年年底，苏格兰就可以实现100%的电力需求都是由可再生能源来满足的。其中海上风能占了很大的比重。苏格兰也创造了很多世界领先的可再生能源项目，尤其从2003年到2018年。
+接下来看一下苏格兰的这个海上风电的情况。这是英国的海上风电行业协议， 是2019年英国政府刚刚发布的，这个海上风电协议主要是在促进跟海上风电相关的创新建议，商业环境以及供应链的发展和基础设施、人才、集群。同时在这个协议里边，很重要的一点就是为英国设立了海上风电装机的容量的目标，到2030年将实现40GW的海上装机容量，这一点吴乔文先生也提到过，政府也将投入720亿英镑来搭建基础设施，苏格兰当然肯定是整个英国协议中的一部分，刚才提到40个GW，其实苏格兰也大概占了将近一半的比例。
+苏格兰的海上风电为什么这么发达？首先是因为苏格兰拥有丰富的海上风电资源，将近25%欧洲的海上风电资源来自苏格兰，可利用的海风资源达到了169GW，刚才也提到了可再生能源创造的成果，去年2019年是创新高的一年，90%的电力消耗来自可再生能源，今年是实现100%。另外就是现在的一些海上风电项目建设的情况，到现在为止，有2.2GW的项目已经在运营和在建，7GW的项目已获批，有待开发，另外新一轮，新一轮海上风电海船租赁项目将产生10GW的装机容量，所有的这些都是与苏格兰有很优秀的人才和团队离不开的。
+说到了苏格兰的海风产业，一定要谈到产业里几个很有名的也是很强大的产业集群，第一个是苏格兰的深海风电协会，第二个是苏格兰的海上风电协会，最后一个苏格兰海上风电能源协会。苏格兰的深海风电协会，其实是主要集中了苏格兰北部的范围，这也是苏格兰大部分海上风电集中的区域，它的成员主要也是来自于北部，目前有452个成员，这个协会成立的时间并不长，是去年才成立的，也是在我们政府和资金支持之下，目的是为了促进整个北部海风行业的发展，它的成员包括了22家海风开发商，一家OEM风机的厂商和其他协会、大学、港口、协会，还有包括375个供应链公司，目前还有很多公司正在申请加入这个协会，所以这个数字其实也是一直在增长。
+第二个协会是苏格兰海上风电协会，刚才的这个深海协会主要指的是北部地区，那么这个协会主要是集中于东部地区，尤其是苏格兰东部地区的三个很有名的海上风电项目，也代表了苏格兰的一部分海风开发商，政府机构，相关的教育机构和供应链公司。
+第三个协会是苏格兰海上风电能源协会，这个协会完全是由政府来主导的，也是政府和企业联合成立的，它主要职能是做项目的开发以及发展深水项目来促进苏格兰的供应链。
+接下来介绍一下浮式风电，17个地点，5个百分之百要做浮式风电，其他地区也将会浮式和固定的相结合的方式来进行，就是将来一定是朝着这个浮式风电的这个领域去发展的，目前苏格兰在这一领域也是遥遥领先于世界。刚刚提到的Hywind scatiand，第一个浮式风电项目，这个项目已经做完了，30兆瓦，已经运营三年，产能大概达到56%，第二个风电项目是今年准备要开始开发了，但是因为疫情，可能稍有延误。
+不管是政府还是产业，投入了很多的人力物力财力来保持这个行业的创新，同时也希望能够和各方各界人士合作，解决一些现在浮式风电面临的一些难题，比如说电力系统的一些研发创新和系统的建设，包括物流体系的开发。
+这是一个浮式风电的一个成本大概一个下降趋势图，大家可以看到，大家可以从图上看到这个成本从预商用项目到首批商用项目的成本预计是会一直下降的，预估到2027年，度电成本将可以从每兆瓦2000英镑降至85英镑，那么随着装机容量到2031年达到6个GW，浮式风电的成本预计将会和固定的这个风电持平。
+接下来介绍一下供应链的机遇。右边这个图是目前苏格兰供应链的企业在不同领域供应链企业占比的情况。大家可以看到各个部件和其所占的花费比例，以及苏格兰在这方面的地位是属于缺乏还是已经能够满足，包括现在企业的数量和目前主要在从事相关部件制造的公司，我也希望这些信息能给大家提供一些机会。
+最后我们作为苏格兰发展局，能够做什么呢？就是如果您对苏格兰海上风电项目感兴趣，不管从哪个维度，我们都很愿意协助您来看一看如何在苏格兰展开业务，我们可以提供一些相关的市场信息，推介当地的合作伙伴以及可以提供跟中国企业相关的一些潜在项目信息，包括后期如果需要到苏格兰去设立公司和开展业务，也是我们服务的范畴之一。
+（根据速记整理，未经本人审核）
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：yqz",2020-10-15 15:19:22,同花顺
+42,丽江要建鲜花港总投资约6亿元,"刚刚过去的国庆中秋，秋天里的丽江花田收割了一波粉丝，打卡古城周边的各色花海成为出游热门。12日，古城区传来好消息，将在开南街道建丽江鲜花港，项目包含郁金香主题公园等内容，丽江花海未来可期。
+记者了解到，12日，古城区政府与上海花卉园艺（集团）有限公司签订合作框架协议，拟共同打造上海花卉集团云南丽江鲜花港项目。据合作框架协议，丽江鲜花港项目计划总投资约6亿元，选址于古城区开南街道，规划用地约800亩，建设内容包括现代化玻璃温室、郁金香主题公园及相关配套设施等。
+近年来，古城区以花卉产业作为“一县一业”主打产业，通过政府引导、企业带动、农户参与的发展模式，推进花卉产业向规模化、品质化、产业化方向发展。开南街道，距离三义机场不到20公里，关坡立交近在咫尺，距离火车货运站十余公里，交通便捷，为发展鲜切花提供了有力的区位优势。
+本报记者木晓雯
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cjh",2020-10-15 15:17:27,同花顺
+43,海南发布大力发展农村市场主体壮大农村集体经济的十八条措施,"据海南省政府网15日消息，中共海南省委办公厅、海南省人民政府办公厅印发《关于大力发展农村市场主体壮大农村集体经济的十八条措施》的通知。通知提出，允许主要从事科技创新或科技创新成果转化工作的高校、科研院所等事业单位专业技术人员离岗下乡领办、创办、兴办农村集体经济项目，可以知识产权、资金等要素入股、参股，获取股份收益。支持社会资本与农村集体经济组织深度合作。此外，用活用好集体经营性建设用地入市政策。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-10-15 15:16:54,同花顺
+44,华为卢毅权：品质专线2.0 打造无处不在的品质联接,"在10月15日华为召开的“光联万物，智启未来”发布会上，华为传送网领域总裁卢毅权详细解读品质专线2.0解决方案。
+“新基建”已然按下加速键，数字化转型已成为千行百业的普遍共识，快速推动着传统产业向智能化、云化方向发展。企业对承载其生产业务的网络提出更高的诉求：高品质入云、行业专网、任意带宽粒度的接入、自助式的体验、更多的增值服务等等，这迫切要求运营商网络再升级。基于此，华为推出系列化方案推进OTN品质专线迈向2.0时代。
+以“专网+云网”突破业务边界：华为推出光切片专网(OVPN)方案，可以实现波长、子波长、OSU等多维度的资源硬隔离，灵活适配各类行业诉求，实现从卖专线到卖专网的转变。同时通过云网管控协同，提供云网一站式服务，将OTN专线从点到点专线转变点到多云的云网联接，实现“入网即入云”。华为还致力于通过全光网打造边到边、边到云、云到云的3个1ms时延圈，从而实现“一张网一毫秒，通达任意地方”。
+以“Liquid OTN”突破用户边界：由于OTN自身的技术特性，使得运营商一般仅针对带宽诉求大的高价值企业，才提供高品质的OTN专线。而华为推出Liquid OTN技术，将带宽颗粒度从1Gbps精细化到2Mbps，实现网络联接数得到100倍提升，从而以更优的成本将OTN品质专线惠及海量中小企业，让OTN专线的用户无限延伸。
+以“全流程自动化”突破体验边界：引入基于AI的网络云化引擎iMaster NCE实现网络集中管控，实时感知网络动态，进而支撑业务发放、网络运维的全流程自动化，实现专线天级发放；同时开放自助式Portal，企业用户可自助订购、自助查看SLA性能、自助提速等，10倍提升用户体验感知。华为目前已与超过10家业界主流OSS厂商合作并验证，在BSS/OSS集成领域积累了丰富的经验。
+以“差异化服务”突破商业边界：品质专线2.0时代将以差异化增值服务，打造更丰富的商业变现手段。OTN专线本身具备E2E可保证的毫秒级时延，结合iMaster NCE实现专线时延的实时可视，以差异化的低时延获得证券、OTT等行业认可。同时，基于设备、单板、光纤等各部件的故障率，能够准确计算OTN专线可用率，以差异化的可用率来满足千行百业的不同诉求。
+卢毅权表示：“体验是企业用户最好的感知标准，华为品质专线2.0的目的就是要向千行百业提供高品质的专线、专网和入云等联接服务，助力运营商以体验赢得政企市场，从而走向更大的商业成功。”
+网络基础设施已经成为和水、电一样关系国计民生的基础设施。未来，华为将持续打造无处不在的高品质光联接，为千行百业带来高品质网络服务和极致体验，推动各行业的数字化转型，助力数字经济发展。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-10-15 15:16:23,同花顺
+45,医鹿发布报告：近75%的用户愿意向三甲医院专家付费咨询,"10月15日消息，阿里健康医鹿APP发布《夜间问诊报告》，报告显示，在晚上21点至次日7点的夜间问诊时段，近75%的用户愿意向三甲医院专家付费咨询。夜间问诊用户主要来自北京、上海、广州、深圳和杭州等一线城市，其中，有65%用户是90后。阿里健康医鹿APP负责人吴嘉透露，接下来，医鹿APP还将从专业健康内容搜索、智能匹配专家、快速问诊咨询等多方面进行升级。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cjh",2020-10-15 15:15:32,同花顺
+46,生僻字系统上线运行,"本报讯 近日，随着中信银行（601998）生僻字开关的打开，相关系统改造全部成功上线，目前系统稳定运行，生僻字姓名客户可正常办理业务。
+中信银行成为金融行业首个解决生僻字问题的银行，生僻字在该行核心系统、柜面及手机银行等电子渠道畅通无阻。生僻字问题涉及范围广泛，包括字符集、编码、国家（国际）标准、操作系统、数据库或其他外购软件等，还存在生僻字临时编码不公开、存储格式、内外部接口与交换、应用系统内部的处理逻辑，以及用户端字库、输入法、显示、打印等问题。
+根据生僻字姓名客户的需求，中信银行率先启动攻关方案，经多方共同努力，生僻字系统最终上线，为全社会各行业解决生僻字难题提供可行的“中信银行方案”。
+中信银行致力金融科技创新。解决生僻字问题，展现了该行在相关领域的科技实力及领先优势。因生僻字相关的部分业务涉及跨银行、跨行业，中信银行下一步将与各行业通力协作，加快系统改造进度，以全面解决生僻字问题。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：hmg",2020-10-15 15:15:21,同花顺
+47,一加刘作虎：未来一加将在产品线、渠道、生态三个方向做“大”,"一加
+刘作虎
+(image_address=""//comment.10jqka.com.cn/sourcepic/12/x/22r9bQufotsay.png"")2020年10月15日消息 时隔一年，一加手机在北京线下举行一加8T新品发布会，这也是一加手机今年首场线下发布会，发布会一开始一加CEO刘作虎，向外界正式透露了一加手机这么多年在旗舰之旅的努力和成绩。
+(image_address=""https://e.thsi.cn/img/53a180d59e92c89f"")
+一加8系列1分钟销售额破亿，一加8 Pro位于5000-5999元高端5G安卓手机销量No.1印，在出海路上，一加位于印度高端市场第一，成为为一个和三星苹果掰手腕的国内厂商，在西欧高端市场第三，2020 BrandZ 中国品牌出海 50 强排名第八，这些都无疑证明了一加对旗舰精品的追求。
+(image_address=""https://e.thsi.cn/img/ddc6e82fbc70542a"")
+一加对高端的理念是，高端是对追求完美的平衡，高端源于细节。好产品驱动着一加不断进步；未来一加将在产品线、渠道、生态三个方向做“大”。继续不忘初心，做出高端旗舰精品。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cjh",2020-10-15 15:14:56,同花顺
+48,新华国际时评：中国经济展现领跑之势的大逻辑,"新华社北京10月15日电题：中国经济展现领跑之势的大逻辑
+新华社记者乔继红
+国际货币基金组织日前发布最新《世界经济展望报告》，预计今年中国经济将增长1.9%，成为疫情打击之下唯一一个实现正增长的主要经济体。后疫情时代，全球经济复苏面临诸多考验，中国经济展现领跑之势，彰显了巨大韧性和活力，也将为全球经济重新走上正轨注入信心和动力。
+疫情冲击下，中国经济率先重启，首先得益于快速打赢疫情阻击战。面对疫情，中国政府始终把人民生命安全和身体健康放在第一位，采取坚定果断措施防控疫情，取得了抗疫斗争重大战略成果，为经济复苏奠定了坚实基础。下半年以来，中国在消费、工业生产、出口等领域的指标不断向好。刚刚过去的黄金周假期，中国亮眼的旅游和消费数据令世界瞩目。事实证明，中国科学统筹常态化疫情防控和经济社会发展，取得显著成效，经济复苏态势愈加稳固。美国有线电视新闻网认为，严格的疫情防控措施帮助中国经济相对较快复苏。根据国际货币基金组织预测，中国经济增速明年将加快至8.2%。
+面对疫情考验，中国保持强大政策定力，扩大开放的步伐坚定不移。从广交会到服贸会，再到即将举行的进博会，从外商投资法和优化营商环境条例正式施行到不断扩大金融开放，再到设立新的自贸试验区……中国一次次架起扩大对外合作的桥梁，一次次释放追求更高水平对外开放的信号。以深圳经济特区建立40周年为契机，中国将在更高起点上推进改革开放，努力谱写更多“春天的故事”，创造让世界刮目相看的新的更大奇迹。
+如今，中国正在加紧推动形成以国内大循环为主体、国内国际双循环相互促进的新发展格局。这不是封闭的国内循环，而是开放的国内国际双循环。复苏的“中国工厂”和中国市场必将助益全球产业和贸易。今年第二季度，遭受疫情重创的全球汽车产业，在中国市场逆势恢复销量增长。得益于中国的重要贡献，全球贸易自6月份起复苏。二十国集团工商峰会主席优素福.贝尼安说，中国经济快速“回暖”，“将为促进世界经济复苏作出重大贡献”。
+一花独放不是春，百花齐放春满园。人类是休戚与共的命运共同体。率先复苏的中国，将始终顺应历史的潮流，坚持互利共赢，坚持以更高水平开放促进更高质量发展，让中国发展更好惠及世界。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-10-15 15:14:51,同花顺
+49,生产的蛋奶土司净含量不合格 四季工坊食品被处罚,"信网10月14日讯近日，信网(0532-80889431)获悉，青岛四季工坊食品配送有限公司(以下简称“四季工坊食品”) 生产的标注净含量为330g、 生产日期为2020.06.11的蛋奶吐司在市市场监管局组织的2020年定量包装商品净含量监督抽查中被判为不合格产品，该行为违反了《山东省计量条例》相关规定。依据该法，城阳区市场监督管理局依法对四季工坊食品进行了处罚，给予警告，没收违法所得,，并处四季工坊食品罚款壹仟元整。
+据悉，2020年 7 月14 日，接市局移交四季工坊食品检验不合格报告，该公司生产的标注净含量为330g、 生产日期为2020.06.11的蛋奶吐司在市市场监管局组织的2020年定量包装商品净含量监督抽查中被判为不合格产品。四季工坊食品该行为违反了《山东省计量条例》第四十六条第(二)项相关规定。
+参照《山东省市场监督管理行政处罚裁量基准(试行)》第四百一十五条【较轻】处罚标准，城阳区市场监督管理局于9月10日依法对四季工坊食品下达了青城市监处字〔 2020 〕200号行政处罚决定书，给予警告，没收违法所得肆拾元伍角，并处四季工坊食品罚款壹仟元整。
+据国家企业信用信息公示系统显示，四季工坊食品成立于2013年5月21日，经营范围包括批发、零售：蔬菜、水果、农副产品(不含粮油)、鲜活水产品、生肉;货物仓储(不含国家违禁品及易燃易爆物品);商业管理服务，营销服务，策划服务等，由青岛维客商业连锁有限公司100%持股。
+四季工坊食品工厂负责品控的工作人员告诉信网，此前被处罚是由于产品的平均净含量不合格，标注净含量为330g，但检测结果为326.7g。目前该司已将罚款缴纳，也进行了整改，并在近日申请复查，“复查报告我们还没去拿，但是已经接到复查结果通过的电话了”
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：jdm",2020-10-15 15:11:03,同花顺
+50,我国服务认证市场潜力巨大,"服务认证机构和发放证书数量4年间平均增幅分别达到86.82%和135.06%
+我国服务认证市场潜力巨大
+截至今年8月底，我国具备服务认证资质的认证机构已有337家，发放服务认证证书3.6万余张，分别较去年同期增长51.8%和80.6%；分别占认证机构（681家）和认证证书数（2742437张）的49%和1.3%；从2016年至2019年，4年间平均增幅分别达到86.82%和135.06%。在服务认证领域划分的22个大类中，已经有20个领域实施了认证工作并发放认证证书，覆盖率达到90.9%。经过十几年的沉淀和发展，我国服务认证行业已经初具规模。
+据市场监管总局认证监管司有关负责人介绍，认证具有“保底线、拉高线、加强全面质量管理”的特有作用。服务认证的定位是对服务质量“拉高线”的高品质认证。服务认证对提升优质服务供给、推动服务业高质量发展、增强我国服务国际竞争力发挥着越来越重要的作用。市场监管总局成立以来，在一系列政策举措助推和宣传推广下，服务认证行业呈现出快速发展的态势，服务认证规模和质量提升明显，服务认证的地位和作用逐步凸显。在行业规模逐步扩大的同时，服务认证“拉高线”作用稳步提升。近几年，“服务认证体验周”所选取的数字建筑、公共机构绿色数据中心、数字版权管理、航空客运、验光配镜等服务认证体验项目，充分体现了服务认证对服务业供给侧的“拉高线”作用。
+与此同时，服务认证的市场认可度不断提高。市场是检验一项制度生命力的最好标准。截至今年8月底，服务认证证书数量最多的领域为银行营业网点服务认证，为1.45万张；其次是商品售后服务认证，达8700张。这些与人民生活息息相关的服务认证已经初具市场规模，为提高银行营业网点服务质量，强化商品售后服务保障发挥着积极推动作用。
+服务认证发展和实践日新月异。原因来源于两个方面，一是服务消费升级助推行业发展。人民对于高质量的服务需求日益增长，认证对服务业高质量发展的引领和支撑作用得到更大的发挥。健康养老、航空客运、非学历教育、物业、商品售后和银行营业网点等服务认证项目，就是为满足服务消费升级进行的良好实践。二是产业融合发展提供良好契机。近年来，新一轮科技革命和产业变革孕育兴起，带动了数字技术强势崛起，促进了产业深度融合，引领了服务经济蓬勃发展。服务认证与先进制造业、高技术服务业耦合共生、融合发展，充分发挥服务认证在制造业质量提升和高技术服务业改革创新中的催化剂作用。数字建筑、公共机构绿色数据中心、数字版权管理等服务认证项目，就是服务认证跨界融合发展的良好实践。
+业内人士表示，我国服务认证的需求和市场潜力巨大。一是服务认证发展有坚实的基础。2019年，我国第三产业增加值比重为53.9%。与我国服务业规模和认证行业规模相比，服务认证发展仍有较大发展空间和潜力。二是地方和行业有较强发展意愿。服务认证作为推动服务业高质量发展的有效工具，正日益受到行业和地方的青睐，表现出发展服务认证的较强意愿。三是服务认证发展正逢政策机遇期。国务院《关于加强质量认证体系建设 促进全面质量管理的意见》《国务院办公厅关于推进养老服务发展的意见》《国务院办公厅关于促进家政服务业提质扩容的意见》等重要文件，均对服务认证发展提出明确要求，为行业发展注入政策强心剂。
+《(image_address=""//comment.10jqka.com.cn/sourcepic/12/1tC5extagtbKwbextagxqAtsaytsay.png"")》
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cjh",2020-10-15 15:10:21,同花顺
+51,相城因案施策维持餐企正常运营,"本报讯 近日，苏州市相城区法院在审理一起房屋租赁纠纷案时，因案施策，通过多次调解，双方当事人达成协议，最终原告撤诉，合同得以继续履行，维持了餐饮企业的正常运营。
+徐某于2018年盘下某饭店做餐饮生意，但由于刚起步运营，饭店并没有太多盈利，至2019年年底，便已拖欠118万余元的租金。本想着快过年了，饭店生意即将迎来春天，谁知道年初却遇上了疫情，饭店生意一下子跌入谷底。原本想放弃的徐某，看着店里一个个指望这份工资的员工们，辛苦支撑着。然而2月底，饭店房屋的出租方以徐某拖欠房租为由将其告到了法院。原本这是一起简单的房屋合同租赁纠纷，案件承办法官只要判决双方解除合同，便可快速结案。但是考虑到今年以来受疫情影响，徐某经营的饭店生意确实受到了巨大冲击，如果判决双方解除合同，势必引发连锁效应，徐某的饭店将无法继续经营，且需要立即支付百万元的拖欠租金，从而导致无法支付供货商的货款及工人工资，引发更多矛盾纠纷。为保障疫情下的经济秩序，承办法官魏丽玲通过电话与双方进行了多次沟通和调解。因徐某未聘请律师，为查明案件事实，法官分别于4月和5月进行了开庭，向双方进行释法析理，告知徐某应当积极履行还款义务，并提供已还款的相关证明材料。按照最高院相关指导意见的要求，积极引导当事人协商和解、共担风险、共渡难关。在此期间，徐某也多方筹款、积极还款，在第一次开庭前就分两次支付租金近20万元，第二次开庭时又支付了50万元，充分表达了还款诚意，有效减少了双方之间的矛盾。在承办法官的多次工作下，租赁方也慢慢减轻了敌对情绪，愿意接受调解，最终撤回了对徐某的起诉。徐某也向租赁方出具承诺书，承诺今年10月结清欠款。（方 芳）
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：yqz",2020-10-15 15:10:12,同花顺
+52,赋能供应商 凹凸出行推“银河计划”解决国内租车需求持续猛增,"今年年初受疫情影响，中国经济生活各领域都受到了强烈冲击，然而自5月份开始，国内租车市场全面复苏，尤其中秋、国庆双节迎来了爆发性增长。作为最早提出汽车即服务（Car as a Service ，CaaS）这一概念的凹凸出行，立足过往沉淀下来的精细化运营经验和深度服务体系，自2019年下半年开始进一步深化平台赋能能力，开展凹凸城市伙伴项目，在全国范围内招募供应商，从赋能私家车主延伸到赋能租车供应商。
+凹凸出行成立于2013年，2014年6月APP上线，公司业务覆盖城市近150个，注册用户近1000万，注册车辆近30万，车型逾万种，凭借颠覆性的私家车车源供给，为用户提供更个性化的出行体验；秉持精细化的运营理念，让用户体验足不出户便可享受用车上门的便捷服务。截止2020年9月，凹凸城市伙伴项目已经拓展超140座城市，近500家供应商，致力于为国内万千租车供应商提供一个集合订单赋能、供给赋能、运营赋能、服务赋能等全维度赋能平台。
+小微租赁商遇瓶颈 急需平台多维度赋能
+近几年，移动互联网的快速发展一定程度上提升了用户的租车体验，降低了成本，促进了整体汽车租赁行业服务的提高，但行业目前依旧面临长尾效应明显，区域性车商规模小、采购议价能力弱、金融成本高、获客能力差，以及发展目前不明确、管理能力低下等一系列困境。
+针对当前典型问题，广东汽车租赁行业协会会长黄小伟指出：“今年5月份以来，各大租车平台纷纷推出各类指导性政策，从小微车商生存和管理的实际问题出发，他们更需要通过平台增加订单流量、优化租赁产品、对接优质资源，进一步降低企业的经营成本。尤其在业务管理方面，希望各大平台能够提供信息化的管理工具与标准化的流程管理方案，输出管理技术啊和人才培训等，带动小微租赁商提高自身水平。”
+启动“银河计划” 四大核心优势全面赋能
+“‘银河计划’旨在助力国内千万家租车供应商产品及服务的成长升级，提升用户消费体验”，凹凸出行联合创始人&CEO陈韦予表示，“希望我们能与合作伙伴携手，助力国内出行行业服务新体验，全力迎接当下市场爆发性增长所释放的红利。”
+据了解，此次“银河计划”中凹凸城市伙伴核心优势主要体现在四个方面：首先，凹凸出行专业SaaS系统一步链接租车公域流量，凹凸车行家系统已经完成与凹凸APP、携程、同程、飞猪、支付宝、微信、京东、去哪儿、租租车等30+渠道的对接，供应商开通车行家后，可以一步获取来自所有流量渠道的订单；其次可实现高质量错峰订单，租车全年无淡季，凹凸代步车服务已与国内各大厂商、保险公司达成深度合作，为其用户提供代步车服务，这一服务将会为供应商带来全年无淡季的订单收益；第三，行业最低入驻门槛标准，零加盟费+零保证金+零系统使用费，并实行不高于行业平均的订单佣金政策；第四，业内率先实现门店层运营指导，凹凸将会继续秉持精细化运营的核心策略，实现供应商门店维度的运营指导，提高供应商的核心竞争。
+大批需求流量 租车消费结构再升级
+文化和旅游部的数据统计显示，今年五月份以来，省内周边自驾游成为新兴主流，呈现“报复性旅游”的趋势，屡创新高，带动了旅游业的全面恢复。
+从凹凸租车平台了解到，中秋国庆长假期间国内租车业务增长迅猛，总预订单同比增长200%，并持续推高。尤其以二线城市为例，凹凸出行在过去6年积累的大批用户流量，使得人车需求比达12：1，意味着供应商只要加入“银河计划”，便可实现订单承接。
+同时，凹凸租车平台内的整体租车订单的客单价，为行业平均水平2-3倍，在车型的选择上，75%的凹凸租车用户选择中高端车型，SUV车型、舒适型、商务车及个性车、跑车类等的车型组更受欢迎。这些数据表明，我国租车消费结构正在快速升级，这势必将反推租车乃至整个旅游行业服务标准的快速升级变革，并催生更多元化、体验更好的新产品和服务。
+陈韦予表示，凹凸出行将运用成本优势、资源优势和议价优势，链接与凹凸深度合作的整车厂、经销商、险司、车后服务商等，通过资源赋能和运营赋能，为更多车商伙伴实现多渠道订单全年无淡季，季节性车辆迁徙调度以及私域流量激活，降低，车辆采购、保养、保养成本。最终，希望通过“银河计划”，吸引更多优秀供应商加入凹凸平台，推动行业产品服务的多样化发展，给用户提供更多的选择，实现与供应商和用户的多边共赢，推动行业的快速发展。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：hmg",2020-10-15 15:09:36,同花顺
+53,民生证券解运亮：短期内猪肉价格将继续拉低CPI,"中证网讯（记者 胡雨）国家统计局10月15日发布数据显示，9月CPI同比上涨1.7%，涨幅比上月回落0.7个百分点。PPI同比下降2.1%，降幅比上月扩大0.1个百分点。15日民生证券首席宏观分析师解运亮解读指出，CPI回落且低于预期，主要源于食品价格尤其是猪肉价格走弱，预计年内CPI将降至1%下方，PPI温和上行趋势不改。
+解运亮表示，9月CPI同比上涨1.7%，低于市场预期的1.9%。从结构看，9月非食品价格环比上涨0.2%，连续3个月上行，涨幅与去年同期持平，对CPI不构成拖累；而食品价格环比上涨0.4%，明显弱于季节性，其中随着生猪生产持续恢复，猪肉供给增多，猪肉价格由涨转跌，可见食品价格尤其是猪肉价格构成主要拖累。
+解运亮强调，在食品价格偏弱之外，CPI出现了两个积极信号：一是核心CPI同比连续3个月保持在0.5%不变，筑底且底部已经夯实；二是9月服务价格环比上涨0.3%，连续两个月上涨，表现好于过去两年同期。“这两个信号，与PMI、信贷社融超预期一致，佐证了中国经济需求端回暖。”
+解运亮指出，9月PPI同比下降2.1%，降幅比上月扩大0.1个百分点，低于市场预期的1.8%，主要是受油价拖累。受国际原油价格变动影响，石油相关行业价格由涨转降，其中，石油和天然气开采业价格环比下降2.3%，石油、煤炭及其他燃料加工业价格环比下降0.5%。
+解运亮预计，在猪肉价格走低和CPI高基数的共同影响下，短期内CPI同比增速将继续走低，预计年内将降至1%下方，明年2月后可能重新上行。10月以来CRB价格不断上涨，叠加PPI基数处于低位，预计PPI仍处于温和上行趋势中。“总体看，目前经济复苏和低通胀构成一个不错的组合，结合央行有关负责人表态‘允许宏观杠杆率阶段性上升’，当前货币政策基调有望延续更长时间。”
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cdl",2020-10-15 15:08:46,同花顺
+54,前三季度兰州市公积金业务逆势增长 发放个人住房贷款超三十亿元,"今年以来，面对新冠疫情对经济和房地产市场的双重影响，兰州住房公积金管理中心积极作为，全力抗击疫情，前三季度我市住房公积金业务逆势增长，归集额达48.06亿元，同比增长9.82%；发放个人住房贷款30.95亿元，同比增长6%。
+支持企业复工复产成效显著
+疫情期间，该中心全力做好疫情防控期间服务保障工作，落实企业减负举措。受理28家企业降低公积金缴存比例申请和97家企业缓缴申请，为企业减负1.03亿元。受理缓缴公积金单位的职工贷款46笔1600余万元。同时，为包括疫情防控一线医务工作者、参与疫情防控工作的一线工作人员、新冠肺炎患者和隔离人员、受疫情影响暂时失去收入来源人员的33人减免了公积金贷款逾期罚息，涉及贷款余额1093.18万元，应还未还贷款本金额13.17万元。
+住房公积金归集额逆势增长
+今年前三季度，兰州住房公积金管理中心积极克服新冠疫情带来的不利影响，结合我市实际，不断促进归集扩面工作，扩大住房公积金规模，实现归集额逆势增长。前三季度，归集住房公积金48.06亿元，新增缴存职工39126人，缴存余额212.23亿元。
+贷款受益人群进一步扩大
+严格按照“房住不炒”定位，认真执行“保一限二禁三”政策，落实差别化信贷政策，营造公平健康贷款环境，全面推出住房公积金+商业银行组合贷款业务，保障惠民政策落实，持续扩大公积金贷款受益面。前三季度，发放个人住房贷款30.95亿元，贷款余额达到198.81亿元。
+网上政务服务能力进一步提升
+在大力推广“网上办、掌上办”等办事模式工作中，该中心实现了与婚姻信息、工商企业注册登记信息的数据共享，积极推进网上业务大厅、微信公众号、手机APP线上办理业务。前三季度，线上业务日查询量达到1万余笔，公积金业务线上汇补缴约7.5万笔，各类线上业务达到约80万笔。自筹资金和公积金冲还贷款业务离柜率分别达到了73%和85%，微信公众号关注人数突破38万人。
+兰州日报社全媒体记者 薛晓霞
+来源： (image_address=""//comment.10jqka.com.cn/sourcepic/12/wLzW3dDCzsXNextagAtsaytsay.png"") 兰州日报
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cjh",2020-10-15 15:06:56,同花顺
+55,河南举办2020食品安全与发展论坛,"守住食品安全底线 促进产业转型升级
+河南举办2020食品安全与发展论坛
+本报讯 （宋晓霞 记者孙中杰）近日，由河南省市场监管局主办，河南省食品工业协会和大河健康报社承办的2020食品安全与发展论坛在郑州市举办。专家学者、食品监管部门工作人员及食品、餐饮企业代表共聚一堂，就食品安全治理、推动食品产业高质量发展等议题展开热烈讨论。河南省市场监管局局长马林青、中国食品科技学会理事长孟素荷、河南省食品工业协会常务副会长陈振杰等出席论坛。
+近年来，河南省按照“预防为主、风险管理、全程控制、社会共治”的基本原则，大力实施食品安全战略，深入推进食品安全省建设，全省食品安全形势呈现出整体稳定向好的局面。目前，与人民群众日常消费密切相关的粮食加工品、食用油及其制品、肉制品、蛋制品、乳制品等大宗消费类食品合格率分别达到99.7%、99.5%、98.9%、99.5%和99.9%。全省160个县（市、区）积极申报创建省级食品安全县（市、区），占县（市、区）总数的85%以上，已命名省级食品安全县(市、区)81个，示范效应凸显。截至2019年，河南省食品生产企业1.03万家，规模以上食品工业企业3200余家，成为全省两个万亿级产业之一，名列全国前茅，培育出千亿级产业集群和10多个百亿级产业园区，形成了全国最大的肉类、面及面制品、速冻食品、调味品、饼干和休闲五大特色食品产业集群；涌现出双汇、三全、思念、好想你（002582）、华英、花花牛等一大批全国知名品牌，吸引太古、顶新、伊利、蒙牛、益海嘉里、旺旺等国内外知名企业来河南，“中原大粮仓”逐步向“国人大厨房”迈进。
+马林青指出，受所处经济社会发展阶段的影响，河南省乃至全国食品安全面临的形势依然严峻。下一步，该省将继续加强源头监控，把好种养殖、食品加工两个准入关口，聚焦学校、农村等重点区域，创新监管方式方法，着力构建党委政府负总体责任、企业负主体责任、监管部门负监管责任、相关部门负协管责任、社会各方负共治责任的食品安全“五位一体”责任体系，形成齐抓共管合力，守住食品安全底线。
+郑州市、驻马店市、汤阴县市场监管部门分别就食品安全监管的先进经验进行了交流。郑州市市场监管局党组书记吴凤军介绍说，郑州市将食品安全监管纳入政府年度目标考核内容，全域落实党政同责制度，同时引入信息化监管手段，做好“互联网+食品监管”文章，并在全国首创食品行业“6S”标准化现场管理法，掀起“车间革命”“货架革命”“厨房革命”，有效解决“三小”脏乱差难题，为高质量建设食品安全省作出贡献。
+孟素荷指出，近两年，尤其是后疫情时代，中国食品工业正处于转型与价值提升的关键节点。其中最重要的是转型，食品行业从“价格战”到“价值战”的竞争，从规模效益向健康品牌效应的升级，从单一的产品竞争向支撑这一产品竞争背后的企业研发实力的较量。
+陈振杰介绍说，受疫情影响，上半年食品工业固定资产投资增速明显回落，行业集中度继续提高，食品产业结构不断优化，食品工业竞争格局发生变化，产业发展方向趋向安全、健康、价值型。河南省食品工业在转型升级过程中，要着力实现从要素驱动向创新驱动转变，从低端规模优势向质量效益优势转变，从粗放制造向精品制造转变，从生产型企业向制造服务型企业转变。
+河南双汇投资发展股份有限公司总裁马相杰、好想你健康食品股份公司董事长石聚彬、郑州思念食品公司CEO王鹏、阿五黄河大鲤鱼创始人樊胜武等在企业家对话环节的交流，也再次印证了安全是食品、餐饮企业的生命线。几位企业家一致认为，食品行业发生深刻变化的当下，企业应该坚持以质量为核心的企业文化，完善质量管理体系，整合品牌、技术、管理等资源优势，寻求新常态下的新突破、新发展。
+《(image_address=""//comment.10jqka.com.cn/sourcepic/12/1tC5extagtbKwbextagxqAtsaytsay.png"")》
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：jdm",2020-10-15 15:05:56,同花顺
+56,湘潭熊孩子充值花光外公4万存款 涉及腾讯与乐堂动漫,"中国经济网北京10月14日讯（记者 徐自立 马先震）“用父母的账号登录，反复充值数十次，退款审核取证难”……“熊孩子”大量“氪金”、家长退款维权不易的消费乱象今年以来层出不穷。据芒果都市消息，家住湘潭雨湖区的刘先生今年57岁，两年前他已经退休，有着6万多元的存款，加上每个月还有2000多元的退休工资，刘先生不仅养老没太大压力，而且买了医保还能给孩子们减轻负担。由于和单位是直接买断，前两天他正想着去补齐并买好医保，可到了办事点把银行卡一刷，里面就剩5分钱了。
+面对这一状况时，刘先生回想起来，就在这三天前，他11岁的外孙有一件事让他感到很意外。刘先生说：“孩子那天快生日了，我就要他妈妈给他买双鞋子，结果他说他自己买，然后他就拿着我的手机搞，到了以后我就下面去接快递，结果那个鞋子不要钱，我说怎么不要钱呢，我以为是那种到付的。”即使外孙用他卡里的钱买了一双鞋，也不至于花了4万多呀，越想越不对劲的刘先生赶紧去银行打了流水账单，拿回来给女婿一看，这才明白是怎么回事。
+刘先生总算搞清，这4万多元全被外孙玩游戏拿去充值了。刘先生的外孙小胖回忆起支付功能当初如何开通的，他说他仗着外公不懂手机操作，耍了点小手段。小胖介绍，从今年9月份以来，他在和平精英、王者荣耀、奥特曼传奇英雄等游戏内不断充值，而充值金额最大的，就是华为游戏公司旗下的奥特曼传奇英雄，据初步统计达到了3万7千多元。华为消费者热线回复，让小胖家属提供相关的资料佐证，并承诺将尽快处理这一诉求，家属目前也正在收集资料中。
+据中国经济网记者查询发现，和平精英、王者荣耀为腾讯游戏旗下游戏品牌。腾讯游戏是全球领先的游戏开发和运营机构，也是国内最大的网络游戏社区，隶属于腾讯互动娱乐。腾讯互动娱乐，全球领先的综合互动娱乐服务品牌，旗下涵盖腾讯游戏、腾讯文学、腾讯动漫等多个互动娱乐业务平台，致力为用户提供包括网络游戏、文学、动漫、戏剧、影视等在内的多元化、高品质综合互动娱乐体验。
+奥特曼传奇英雄是由合肥乐堂动漫信息技术有限公司开发的游戏。合肥乐堂动漫信息技术有限公司（简称“乐堂动漫”）是一家立志以互联网游戏社区门户为发展起点，集各种手机动漫、手机游戏、网页游戏、社交游戏的研发、运营、销售为一体的高新技术企业。该公司为合肥乐堂文化传媒有限公司全资子公司：合肥乐堂文化传媒有限公司第一大股东为安徽乐堂控股集团有限责任公司，持股比例为75%：芮阿骥持有安徽乐堂控股集团有限责任公司78.25%的股份。
+5月15日最高人民法院出台了《关于依法妥善审理涉新冠肺炎疫情民事案件若干问题的指导意见（二）》（法发〔2020〕17号）。其第一项关于合同案件的审理中的第9条显示，限制民事行为能力人未经其监护人同意，参与网络付费游戏或者网络直播平台“打赏”等方式支出与其年龄、智力不相适应的款项，监护人请求网络服务提供者返还该款项的，人民法院应予支持。
+《中华人民共和国民法典》第十九条规定：八周岁以上的未成年人为限制民事行为能力人，实施民事法律行为由其法定代理人代理或者经其法定代理人同意、追认。
+《民法典》第二十条规定：不满八周岁的未成年人为无民事行为能力人，由其法定代理人代理实施民事法律行为。
+按照上述规定，八周岁以上的孩子为游戏充值的，需要经家长的同意，追认，充值行为才有效的，所以孩子为游戏充值后，如果家长不追认的，游戏公司就需要退还充值的款项。如果是8周岁以下孩子为游戏充值的，需要由家长实施，孩子自己充值是无效的，游戏公司也要退款。
+（责任编辑：关婧）
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cdl",2020-10-15 15:05:48,同花顺
+57,淘宝台湾：将于年底正式停止在台运营,"10月15日消息，今日上午，淘宝台湾发布“淘宝台湾营运计划调整公告”，决定将于10月15日11时起，陆续关闭淘宝台湾前台功能，并于今年12月31日23时59分正式停止在台营运。据了解，淘宝台湾于去年10月开站，目前平台上的商品数量约3000多万项。去年双11档期过后，淘宝台湾下载量突破200万，每月业绩成长幅度约有15％～20％左右。今年9月，淘宝台湾成交订单总数相较618年中庆成长280％。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cjh",2020-10-15 15:05:43,同花顺
+58,“e窗通”系统再升级 市场准入更加便捷,"近日，吉林省市场准入e窗通系统进行了优化升级，新出台了企业开办2.0系统，与原有e窗通系统并行使用。新系统增加了银行开户、刻制公章、涉税服务、社保登记和公积金缴存模块，申请人线上“一表填报”“一次验证”、企业开办环节“一网通办”、所有手续线下“一窗领取”，让市场准入环节更加便捷。
+(image_address=""https://e.thsi.cn/img/73356d3c18d2b942"")
+企业开办2.0系统在设立审核通过后，数据会自动推送到其他相关部门。同时会提供两种优惠模式――银行优惠和政务大厅优惠，选择银行优惠，申请人可到选定的银行网点进行“一窗领取”；选择政务大厅优惠，可以到选定的政务大厅企业开办服务专区“一窗领取”，同时政务大厅会提供免费刻章等服务。也可以选择不使用优惠，通过线下办理或邮寄的方式领取。
+(image_address=""https://e.thsi.cn/img/16e9a9691c08ccb8"")
+2.0系统上线后，朝阳市场监管分局第一时间组织审核人员学习掌握操作手册，并对政务大厅的指导人员进行了集中培训，保证政务大厅自助服务区的每个指导人员都能熟练掌握新系统的操作方法，为申请人提供优质服务。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cjh",2020-10-15 15:05:26,同花顺
+59,最高200万元奖励！《珠海市促进实体经济高质量发展专项资金（工业节能与工业循环经济用途）管理实施细则》印发,"为推动工业和信息化领域节能与循环经济发展，规范资金管理，10月13日，珠海市工业和信息化局正式印发《珠海市促进实体经济高质量发展专项资金（工业节能与工业循环经济用途）管理实施细则》。该实施细则自2020年11月14日开始实施，有效期至2022年12月31日。
+(image_address=""https://e.thsi.cn/img/de4902992d6f1d8b"")
+（网页部分截图）
+珠海市促进实体经济高质量发展专项资金（工业节能与工业循环经济用途）（以下简称“工业节能资金”）是指市级财政预算安排，专项用于推进工业和信息化领域节能与循环经济发展的资金。
+该通知主要明确了
+工业节能资金管理、支持范围和标准、
+项目申报就评审流程
+以及监督检查等内容。
+下面跟小编一起来看看吧。
+资金管理
+一、工业节能资金采用补助、以奖代补等支持方式。
+二、工业节能资金对符合条件的项目或单位按政策择优予以支持，已享受过同类别市级财政资金扶持的项目不在本资金支持范畴。每年资金支持方向及具体安排以当年申报通知为准。
+三、工业节能资金逐步实行项目库管理，可提前一年启动项目库的申报、入库、排序、审批等工作。符合项目库管理要求的项目，实行滚动支持或分期实施。
+四、项目承担单位是项目经费管理使用的责任主体，负责项目经费的日常管理和监督。项目承担单位应建立项目经费内部管理制度，合理合规使用项目经费，自觉开展和接受经费管理监督检查，对项目经费的使用负责；项目负责人负责项目的具体实施并接受项目承担单位的管理和监督。
+支持范围和支持标准
+一、工业节能资金的支持对象为在珠海市依法登记注册、具有独立法人资格、经营状态正常、信用记录良好的生产经营单位及其他有关单位。申报扶持资金的项目和单位还应当符合当年申报指南规定的其他条件和要求。
+二、工业节能资金的支持范围包括：
+（一）支持工业和信息化领域节能与循环经济示范，包括示范工业园、示范基地等。
+（二）支持工业和信息化领域节能环保产业示范项目、示范基地及产业化示范。
+（三）支持工业和信息化领域节能与循环经济公共管理服务平台。
+（四）支持企业开展能源管理体系、能源管理中心和能效对标的“三能”体系建设。
+（五）支持淘汰落后产能、蓝天保卫战以及散乱污整治工作。
+（六）支持我市工业和信息化企业建成的节能技改工程项目和清洁生产技术改造项目以及其它资源节约工程，包括电机能效提升工程、节能技改工程（含合同能源管理方式）、节能信息化工程、节能示范推广工程，工业“三废”、矿产资源综合利用、再生资源回收利用等；开展清洁生产技术改造，资源节约和循环利用新技术、新工艺、新设备推广应用等示范；开展节水型企业创建、一般工业固体废物资源利用示范项目以及配套支持国家节能循环经济试点示范、绿色数据中心试点示范项目。
+（七）省工信厅或者市委市政府要求开展工作的项目。
+三、对符合第九条所规定的范围及条件的单位或项目，经审核合格，按以下标准予以奖励：
+（一）获得省级及以上工信部门认定的节能、清洁生产、循环经济、资源综合利用示范项目、企业或园区，并已完成项目完工评价的，给予最高不超过50万元的奖励。
+（二）通过市级清洁生产审核评估验收被认定为市级清洁生产企业的企业，每次奖励不超过10万元，同一企业同时被认定为省级清洁生产企业的再一次性奖励不超过10万元。
+（三）对列入国家级工信部门公布的节能技术、设备（产品）推荐目录的企业，给予一次性不超过10万元的奖励，对列入省级工信部门公布的节能技术、设备（产品）推荐目录的企业，给予一次性不超过5万元的奖励。
+（四）对获评国家绿色制造体系建设示范的绿色工厂给予一次性不超过30万元的奖励，绿色园区、绿色供应链管理示范单位给予一次性不超过50万元的奖励。
+（五）对获评国家绿色设计产品的企业给予每个型号产品一次性不超过5万元的奖励，每年单个企业奖励最高不超过30万元。
+（六）对建立能源管理中心并接入市能源管理信息系统平台的单位，按照能源管理中心验收综合评价结果，对验收等级为“甲级”、“乙级”、“丙级”的项目分别给予20万、15万、10万元的奖励。
+（七）对获得能源管理体系认证并取得成效的企业给予一次性不超过5万元的奖励；
+（八）对获评市级节水型企业的单位给予不超过5万元的奖励，对获评省级级节水型企业的单位给予不超过8万元的奖励。
+（九）对建成工业和信息化节能技术改造工程和清洁生产技术改造工程，并具有一定节能、清洁生产效果的项目，按不超过项目设备（含系统）投资额的20%，对项目投资方予以奖励，最高奖励额200万元。
+项目申报及评审
+（一）申报通知。市工业和信息化局根据工业节能与工业循环经济工作需要，编制发布年度项目申报通知和指南，明确申报要求、申报时间、受理地点等具体信息，在珠海市财政专项资金申报和管理平台中受理项目申报。
+（二）项目申报。申报单位按照年度项目申报通知和指南的要求，在规定时间内申报项目。申报单位对申报材料的真实性负责。
+（三）项目评审。市工业和信息化局组织专家根据申报通知和指南要求对申报项目进行入库评审。
+（四）项目公示。市工业和信息化局确认拟入库项目名单，并将名单公示，公示期为5天。
+（五）项目入库。公示后没有异议的项目予以进入项目库。
+（六）支持计划。市工业和信息化局根据项目库项目情况以及工业节能资金预算情况，经综合平衡后编制拟支持项目资金计划。
+（七）项目下达。由市工业和信息化局报市政府审批后下达项目资金计划。
+监督检查
+一、市工业和信息化局不定期对获得工业节能资金的单位进行检查，发现问题及时解决。被检查的单位应主动配合检查人员做好相关工作，提供相应的文件、资料，不得阻碍检查工作的正常进行。
+二、项目申报单位应当保证申报材料的真实性、准确性、完整性，如有弄虚作假、挪用、不按规定使用财政资金等行为，将收回财政资金。对提供虚假材料骗取财政资金的企业、机构及工作人员，将在珠海市信用信息管理系统中列入黑名单，三年内不得申报各级工业和信息化领域的专项资金。涉嫌刑事犯罪的，移交司法机关追究刑事责任。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cjh",2020-10-15 15:05:14,同花顺

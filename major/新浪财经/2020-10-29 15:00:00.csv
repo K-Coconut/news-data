@@ -1,0 +1,713 @@
+,title,content,pub_time,src
+0,2分钟读财报|大发地产高息发债:票面利率超12% 现金无法覆盖短债,"视频加载中，请稍候...
+自动播放
+(image_address=""//n.sinaimg.cn/front20201029ac/380/w540h640/20201029/60f3-kcaeqzy0994001.jpg"")
+play
+视频|大发地产
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 359303379,
+pid:1,
+url: 'https://video.sina.com.cn/p/finance/2020-10-29/detail-iiznctkc8340596.d.html',
+title:'视频|大发地产'//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=359303379/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+10月21日，大发地产发布公告，称公司额外发行的1.3亿美元优先票据于联交所上市。这笔优先票据到期日为2022年7月30日，票面利率为12.375%。根据Wind数据统计，下半年以来，内地房企发行海外债的票面利率中位数为7.25%，大发地产融资利率远超中位数。
+2019年以来，公司发行的海外债利率就居高不下，最低为11.5%。较高的融资成本带来大量的利息支出，上半年利息总额高达6.63亿元，超过2019年净利润。截至上半年，公司109.65亿元有息负债中，银行贷款仅占35%。一年内（或按要求）偿还的有息负债金额为48.71亿元，而公司账面现金为28.26亿元，现金不足以覆盖短债。
+大发地产总部位于上海，业务主要位于长三角区域。在克而瑞上半年全口径销售额排行榜上，大发地产位列第87名。
+上半年，大发地产连同合营及联营企业录得合同销售金额约112.08亿元，同比增长57.6%。累计合同建筑面积80.08万平方米，增长35.9%。
+上半年公司销售主要位于温州、宁波、杭州、合肥、常州等二三线城市，其中温州、宁波、杭州三个城市加起来占到销售额的52%。确认的销售收益同样主要来自舟山、嘉兴、温州等长三角城市。平均售价13996元每平方米，比去年的13550元每平方米增加446元。
+大发地产土地储备一直不算充裕，2019年拥有土地储备500万平方米，按照当年155万平方米的销售面积估算，仅够开发两三年。 2019年公司新增土储270万平方米，今年上半年再度增加190万平方米土储。
+自身规模较小的大发地产，目前既面临不断补充土储带来的资金需求，又面临融资压力。截至上半年，公司109.65亿元有息负债中，低息的银行贷款仅占35%，发行的海外债票面利率则高达11%以上。在监管“三条红线”出台后，公司高速扩张的打法或难以持续。
+2分钟读财报|新通联实控人姐弟闹翻 恐冲击10.15亿收购案
+2分钟读财报|荣信教育增收不增利 IPO能解造血不足困局吗？
+2分钟读财报|优胜教育疑卷款跑路 5个月前曾欲借壳闯A股
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：常福强",2020-10-29 15:55:24,新浪财经
+1,全聚德三个季度亏损2亿 总经理周延龙称已经到了非改不可的地步,"原标题：全聚德三个季度亏损2亿 总经理周延龙称已经到了非改不可的地步
+中国网财经10月29日讯（记者 贾玉静）据全聚德（002186.SZ）日前披露的最新财报数据显示，今年前三季度，公司净亏损逾2亿元。对此，全聚德解释称系疫情影响营业收入和利润总额大幅减少所致。
+全聚德在财报中表示，公司第三季度全力推进复工复产工作，餐饮门店通过提升出品质量，转变服务模式，加强线上线下市场联动等措施，业务逐步回升，第三季度营业收入较上一季度环比增长53.4%，整体亏损额有所收窄。
+即便如此，全聚德仍身陷业绩泥潭。数据显示，公司前三季度营收5.16亿元，同比减少56.71%；归母净利润亏损2.02亿元，同比下滑484.4%；经营活动产生的现金流净额为-1.02亿元，同比下滑220.43%。值得注意的是，这已经是全聚德业绩停滞不前的第8年，也是公司上市以来净利表现最差的一年。
+百年老号全聚德因疫情雪上加霜
+公开资料显示，全聚德创建于1864年，以传统挂炉烤鸭而闻名；1994年，中国全聚德股份有限公司成立，主营餐饮服务及食品加工销售等；2007年11月，全聚德登陆深交所，成为首家A股上市的老字号餐饮企业。
+上市之初，全聚德凭借“国宴”标签一路高歌猛进，连续五年业绩直线上升，直到2013年，随着外部环境变化，全聚德营收开启下滑趋势，盈利能力也于2018年亮起红灯。财报显示，2017年公司营业利润、利润总额、归母利润分别为2.01亿元、2.05亿元、1.36亿元，2018年该指标骤降为1.19亿元、1.20亿元、7304.22万元，几近腰斩。
+此后，全聚德连续两个财年录得“营收净利双降”。2018-2019年，公司营业收入分别为17.77亿元、15.66亿元，同比下降4.48%、11.87%；净利润分别为7304.22万元、4462.79万元，同比下降46.29%、38.90%。彼时全聚德解释称，受餐饮行业，尤其是中式正餐竞争加剧影响，公司年度接待人次同比减少，导致营收和利润出现下滑。
+对此，中国食品产业分析师朱丹蓬却认为，全聚德面临的是整个体制和运营机制的严重硬伤，此外还存在品牌老化、产品老化、场景老化、运营模式老化以及服务体系老化等多方面问题。
+2020年，业绩承压的全聚德再遭疫情重创，财报数据显示，公司前三季度净亏损达2.02亿元，相当于亏光2017-2019三年净利之和。全聚德表示，新冠疫情使公司经营受到巨大冲击。
+分析师称“升级后仍未达到市场需求”
+为了降低疫情影响，今年以来全聚德已从经营策略、产品、服务等多方面着手采取一系列自救措施。
+线上方面，北京门店2月起全部上线饿了么、美团等外卖平台，并通过线下外摆业务，建立社区微信群，重点打造社群私域流量，不仅如此，这家老字号还尝试通过直播带货等销售新模式，唤醒店铺粉丝促成购买转化；线下方面，北京直营门店改变原有“一店一菜单”模式，推出最新版统一菜单，将47道经典菜、新京菜、新鲁菜作为统一菜品，实行出品统一、盘饰统一、价格统一，同时全面统一门店堂食、外卖烤鸭价格，将菜价整体下调10%到15%，取消所有门店大厅服务费。目前来看，全聚德第一季度、第二季度及第三季度营收分别为1.8亿元、1.33亿元、2.03亿元。
+“上一次我去北京的时候，也去观摩和感受了一下全聚德升级后的服务，相对来说有改善，但是整体来说还没达到市场需求。”朱丹蓬指出，从产品多元化、品牌多元化以及整体运营上，全聚德都不能满足与匹配新生代消费群体对于餐饮行业的诉求，主流消费群体对老字号的品牌积淀也并不买账。
+对于市场反馈，公司并非全然不顾，此前不久，总经理周延龙曾对媒体表示，“全聚德确实已经到了非改不可的地步，我们不能成为消费者的敌人。”
+当下，全聚德是否能在传承与创新之间重获市场认可，仍需拭目以待。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陈志杰",2020-10-29 15:48:30,新浪财经
+2,2分钟读财报|茅台集团发债150亿购买贵州高速 财务数据首公开,"视频加载中，请稍候...
+自动播放
+(image_address=""//n.sinaimg.cn/front20201029ac/380/w540h640/20201029/8dd3-kcaeqzy0960341.jpg"")
+play
+视频|茅台
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 359303383,
+pid:1,
+url: 'https://video.sina.com.cn/p/finance/2020-10-29/detail-iiznctkc8338585.d.html',
+title:'视频|茅台'//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=359303383/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+不差钱的茅台集团，也要巨额发债。
+近日茅台母公司茅台集团申请在上交所发行不超过150亿的债券项目已经获得上交所受理，所得资金将全部用于对贵州高速的股权收购。
+资料显示贵州高速负债累累，2017年-2019年营收分别为145.9亿、167.4亿、201.1亿，归母净利润3.4亿、5.6亿、3.2亿。今年上半年贵州高速出现亏损，营收仅78.6亿，净利润亏19.2亿。
+茅台此举也被解读为帮助贵州当地化解债务风险，但同时也首次披露了茅台集团的财务数据，其、2019年、2020年上半年营收分别为1003.1亿和528.7亿；净利润分别为471.9亿元和259.3亿元，盈利能力十分强悍。
+对于茅台集团持续为贵州地方债务输血的行为，你怎么看？
+2分钟读财报|茅台闪崩5%：Q3业绩不及预期 北向资金大幅减持
+2分钟读财报|养元饮品Q3业绩双降幅度扩大 理财难救产品老化
+2分钟读财报|华晨10亿债券违约 华泰资管受波及大跌6%
+扫二维码 领开户福利！
+(image_address=""//n.sinaimg.cn/finance/512/w256h256/20200807/333c-ixkvvuc9099771.png"")
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：常福强",2020-10-29 15:48:10,新浪财经
+3,诺泰生物：部分原材料采购额逻辑不成立 相关产品销售额真假莫辨,"诺泰生物：部分原材料采购额逻辑不成立 相关产品销售额真假莫辨
+来源：证券市场周刊
+尽管已完成两轮问询回复，但诺泰生物仍有不少信披疑问待解——1，3，5-三氟苯和4-氟-2-甲氧基苯胺的采购额竟不及相关供应商所提供的采购额，逻辑何在；2019年，自主选择产品中的依替巴肽、比伐卢定和兰瑞肽的销售额各说各话，真假莫辨。
+本刊研究员 刘俊梅/文
+10月12日，在科创板申请IPO的江苏诺泰澳赛诺生物制药股份有限公司（下称“诺泰生物”）完成了第二轮问询回复。
+从招股说明书披露的信息来看，诺泰生物是一家聚焦多肽药物及小分子化药进行自主研发与定制研发生产相结合的生物医药企业，其主营业务收入构成包括自主选择产品收入、定制类产品和技术服务收入，2017-2019年及2020年上半年，诺泰生物实现主营业务收入2.28亿元、2.55亿元、3.71亿元和2.15亿元，其中，定制类产品和技术服务收入占比分别为93.08%、92.59%、79.13%和71.04%。可见，报告期内，诺泰生物的主营业务收入以定制类产品和技术服务收入为主，同时，自主选择产品收入的占比在逐年增加。
+不过，研读招股说明书及问询回复发现，诺泰生物仍有一些信披问题令人迷惑不解：1，3，5-三氟苯和4-氟-2-甲氧基苯胺的采购额竟不及相关供应商所提供的采购额；2019年，自主选择产品中的依替巴肽、比伐卢定和兰瑞肽销售额各说各话。
+原材料采购额和供应商采购额相互矛盾
+诺泰生物在首轮问询问题14的回复中表示，由于公司产品种类较多、品种较为丰富，报告期各期采购的原材料种类也较多，各类原材料的采购金额及其占总采购额比重相对不大。因此，在招股说明书中，诺泰生物只根据重要性原则披露了各期采购占比较高的原材料，其中包括1，3，5-三氟苯和4-氟-2-甲氧基苯胺。
+但梳理1，3，5-三氟苯和4-氟-2-甲氧基苯胺的相关信息发现，首轮问询回复中披露的这两种原材料采购额和相关供应商的采购额并不匹配。
+招股说明书显示，4-氟-2-甲氧基苯胺是诺泰生物采购的主要原材料之一，相关采购只发生在2018年和2019年，采购额分别为213.71万元和213.37万元。
+(image_address=""//n.sinaimg.cn/finance/crawl/773/w550h223/20201029/f789-kcaeqzy1054990.png"")
+但首轮问询问题14关于供应商的回复中详细披露了前五名供应商的采购金额和采购内容，其中2018年新增的供应商浙江科聚生物医药有限公司（下称“科聚生物”）是4-氟-2-甲氧基苯胺供应商，2018年和2019年，诺泰生物对科聚生物的采购额分别为396.87万元和375.11万元，分别位列诺泰生物的第三和第五大供应商。
+(image_address=""//n.sinaimg.cn/finance/crawl/215/w550h465/20201029/f6e9-kcaeqzy1055062.png"")
+这意味着，2018年和2019年，诺泰生物仅向科聚生物采购4-氟-2-甲氧基苯胺的金额就比原材料采购中披露的4-氟-2-甲氧基苯胺采购额分别超出了183.16万元和161.74万元。
+此外，2017年，原材料1，3，5-三氟苯的采购额也出现了类似的问题。
+招股说明书显示，2017年，诺泰生物采购1，3，5-三氟苯的金额为1209.23万元。
+但首轮问询问题14回复则显示，2017年，诺泰生物对第一大供应商浙江永太科技股份有限公司的采购内容为1，3，5-三氟苯，采购额为1226.24万元，这比原材料采购中所披露的1，3，5-三氟苯采购额多了17.01万元。
+(image_address=""//n.sinaimg.cn/finance/crawl/738/w550h188/20201029/facb-kcaeqzy1055135.png"")
+无论是4-氟-2-甲氧基苯胺，还是1，3，5-三氟苯，对供应商的采购额竟超过其全部采购额，这样的信披逻辑成立吗？
+依替巴肽、比伐卢定和兰瑞肽的销售收入各说各话
+招股说明书显示，2017-2019年及2020年上半年，诺泰生物自主选择产品实现的销售收入分别为1557.82万元、1886.9万元、7736.5万元和6236.72万元，在主营业务收入中的占比分别为6.92%、7.41%、20.87%和28.96%。可见，报告期内，诺泰生物自主选择产品的收入规模呈现了快速增长态势，在主营业务收入中的占比逐年上升。而且，诺泰生物在招股说明书中声称，未来，随着诺泰生物以多肽为主的原料业务快速发展，以及多个制剂产品将陆续获批上市，自主选择产品将成为公司未来重要的收入增长点。
+但在梳理自我选择产品的收入数据时发现，2019年，诺泰生物招股说明书为自主选择产品中的依替巴肽、比伐卢定和兰瑞肽提供了两组完全不同的收入数据。
+招股说明书“主要产品销售收入及收入构成情况”中在披露自主选择产品的销售构成时披露，2019年，诺泰生物依替巴肽、比伐卢定和兰瑞肽的销售收入分别为489.32万元、79.76万元和936.08万元。
+(image_address=""//n.sinaimg.cn/finance/crawl/764/w550h214/20201029/042b-kcaeqzy1055200.png"")
+但招股说明书“营业收入分析”在分析自主选择产品的销售收入时却又披露，2019年，诺泰生物依替巴肽、比伐卢定和兰瑞肽的销售收入分别为645.71万元、86.93万元和772.52万元。
+(image_address=""//n.sinaimg.cn/finance/crawl/750/w550h200/20201029/0def-kcaeqzy1055247.png"")
+而且，在首轮问询问题19.1关于自主选择产品收入变动情况的回复中再次显示，2019年，诺泰生物依替巴肽、比伐卢定和兰瑞肽的销售收入分别为645.71万元、86.93万元和772.52万元。
+至此，自然会问，诺泰生物在招股说明书中提供的这两组依替巴肽、比伐卢定和兰瑞肽的销售收入，究竟哪一组是真的？
+(image_address=""//n.sinaimg.cn/finance/crawl/735/w550h185/20201029/7d16-kcaeqzy1055297.png"")
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陈志杰",2020-10-29 15:45:23,新浪财经
+4,2分钟读财报|联储证券2.88亿资管计划踩雷 合规性依然成问题,"视频加载中，请稍候...
+自动播放
+(image_address=""//n.sinaimg.cn/front20201029ac/380/w540h640/20201029/0d27-kcaeqzy0985843.jpg"")
+play
+视频|联储证券
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 359303381,
+pid:1,
+url: 'https://video.sina.com.cn/p/finance/2020-10-29/detail-iiznezxr8757192.d.html',
+title:'视频|联储证券'//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=359303381/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+联储证券再踩雷，中小券商风险合规能力再受质疑。
+近日联储证券发布公告称，因融资方违约，未能按资产合同约定兑付，南海农商行将联储证券诉讼至佛山市中级人民法院。
+此前南海农商行投资2.88亿元，认购了由联储证券发行的聚成7号集合资产管理计划（简称“聚成7号”），该资管计划募集的资金用于认购陕西省国际信托股份有限公司集合资金信托计划，通过信托贷款给融资方亿阳集团股份有限公司。
+资料显示亿阳集团成立于1994年，曾是中国民营企业500强，被国家科技部首批认定的全国重点高新技术企业和全国创新型企业，但是自2017年以来，亿阳集团旗下上市公司亿阳通讯被证监会立案调查，亿阳集团亦陷入债务危机，于2018年第一季度开始连续亏损至今。
+2019年3月法院裁定亿阳集团破产重整，整个公司陷入到停滞状态，联储证券的聚成7号自然难以追回损失。
+事实上这不是联储证券第一次踩雷。早在2017年以来，联储证券陆续出现大量的上市公司信用贷类的非标资管产品逾期。
+2018年，联储证券资管就曾拿下一年踩雷八家上市公司的惊人“记录”。2016年到2017年期间发行的聚成1号、聚成5号、聚成9号、聚成15号、聚成16号、聚成20号、中弘1号、众城13号产品等皆出现问题。其中涉及到的中弘股份、凯迪生态、东方金钰、盛运环保宏图高科等多家债台高筑的上市公司，堪称当年的券商之最。
+一系列踩雷背后，是联储证券资管业务的合规和内控薄弱，也反映了当下中小券商资管业务急需建立更加完善的合规制度。
+2分钟读财报|6亿欠债已还4亿 罗永浩或将现身A股翻身
+2分钟读财报|590元/粒的片仔癀股价闪崩 涨价10%毛利率仍降
+2分钟读财报|三只松鼠Q3增收不增利 依赖电商砍掉300SKU欲自救
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：常福强",2020-10-29 15:43:46,新浪财经
+5,京东方A：巨资收购是赌博还是布局？警惕产品更新换代,"京东方A：巨资收购是赌博还是布局？
+来源：证券市场周刊
+在一个技术快速变化的行业进行巨资收购，一帆风顺往往并不容易。
+本刊记者  启凡/文
+10月20日，京东方A（000725.SZ）发布关于拟收购南京中电熊猫平板显示科技有限公司部分股权的进展公告。早在9月24日，京东方A就公告称，公司拟以自有资金和外部融资收购南京中电熊猫平板显示科技有限公司（下称“南京平板显示”）80.83%股权、成都中电熊猫显示科技有限公司（下称“成都显示”）51%股权，收购价格预计不低于121亿元。
+本次收购完成后，京东方A将成为两家公司的实际控制人，因此将为标的提供不超过140亿元的担保。
+标的资产均仍处于亏损状态
+根据公告，南京平板显示80.83%股权已于9月7日公开挂牌转让，挂牌价为55.91亿元，而京东方A表示将以不低于挂牌价收购其股权；至于成都显示，截至2020年6月30日的评估基准日，公司51%股权对应评估值为65.26亿元，京东方A则将以不低于评估价溢价收购成都显示股权。也就是说，收购上述两家公司的部分股权，京东方A将至少拿出121.16亿元的资金，或为中国显示屏领域最大的并购案之一。
+南京平板显示成立于2012年，主要产品为液晶显示屏，拥有金属氧化物IGZO TFT制造、铜布线及光配向等三大核心技术，产品主要应用于手机、笔记本、显示器、TV产品；2018-2019年及2020年上半年，南京平板显示的收入分别为49.97亿元、44.35亿元、25.17亿元，对应净利润-149.98亿元、-95亿元、-9.97亿元。
+成都显示成立于2015年12月，主营业务及主要产品为大尺寸、高分辨率液晶面板，产品主要应用在显示屏、电视等领域；2018-2019年及2020年上半年，成都显示分别实现营业收入5.97亿元、36.03亿元、32.74亿元，对应净利润3341万元、-9.65亿元、-12.91亿元。
+也就是说，两家公司两年半的时间累计亏损超过277亿元。
+这两家公司均于2018年实现量产，但是即便是在量产之后的2019年，收购标的仍然处于大幅亏损状态。
+如此巨亏的资产，京东方A却愿花费超过121亿元收购，还提供不超过140亿元的担保，可见京东方A对于此次收购的期望和信心非常之高。
+然而，在收购后，京东方A究竟有多大把握使得收购标的扭亏为盈呢？
+潜在的资金压力
+2020年上半年末，京东方A的货币资金为566.65亿元，短期借款为39.05亿元，一年内到期的非流动负债为195.38亿元，两者合计为234.43亿元，京东方A目前的货币资金完全可以覆盖公司即将到期的负债。从短期来看，京东方A似乎并没有什么资金压力。
+但需警惕的是，2020年上半年末，京东方A的长期借款为1083.26亿元，其中21.76亿元为质押借款，746亿元为抵押借款，9.4亿元为保证借款，306.11亿元为信用借款。
+由此可见，短期无虞的京东方A仍然存在长期资金压力，再加上此次以不低于121亿元收购，并提供不超过140亿元的担保，京东方A的资金压力又会进一步增大。
+如前所述，目前两家公司均处于大幅亏损状态，假设收购后不能尽快实现扭亏为盈，那么京东方A势必会经历更加严峻的考验。
+京东方A主要的业务是显示器，但目前的显示器行业正在经历严峻的时刻。近几年，上市公司净利润不断下降，2017-2019年及2020上半年分别为78.6亿元、28.8亿元、-4.76亿元、1.21亿元，盈利能力不断下滑。
+盈利能力下降、高价收购亏损资产以及未来的经营隐忧，京东方A未来可能面临较大的考验和挑战。
+警惕产品更新换代
+一直以来，显示器业务都是京东方A的核心业务。2017-2019年，公司的显示器业务收入占比从88%上升到92%。
+目前在显示器业务领域，京东方A的出货量已经是全球第一。
+根据技术特点进行划分，现代显示技术主要分为阴极射线管（CRT）和平板显示技术（PRD），而平板显示技术（PRD）主要包括液晶显示（LCD）、等离子体显示（PDP）、有机发光二极管显示（OLED ）等。
+回顾显示器行业发展历史，技术变化非常迅速。1922年，Apple I用阴极射线管（CRT）组装成了历史上的第一台显示器。之后由于技术问题，技术上的发展陷入停滞。
+自1994年开始，索尼、LG、三星、Philips等各大公司都进入了显示行业并不断改进CRT显示的技术，力求抢先推出更好的CRT显示器。在此期间，CRT显示器品类是市场的主导者。
+而此时的液晶显示技术（LCD）已经问世，但由于CRT显示技术发展更为成熟，有许多液晶显示器无法比拟的优势，如响应时间极短、色彩还原度高、分辨率更高等。
+正因这些优势，CRT显示器得到了更为广泛的应用。
+虽然CRT显示器的发展领先，但其技术原理要求显像管电子枪发出的电子束偏转不能大于90度，这使得显示器的厚度要与屏幕的对角线一样长，即使有厂商开发出广角偏转线圈技术，使电子束的最大偏转角度达到100度或更高，但仍无法解决CRT显示器的一个根本弊病：屏幕做的越大，显示器就越厚，这制约了CRT显示器技术的发展，也给了LCD显示器机会。 
+回顾LCD显示器的历史，1968年，美国无线电公司开发出了第一台液晶显示器。1973年，夏普公司首次将它运用于制作电子计算器的数字显示。
+虽然液晶显示器迅速发展，依靠轻便、美观的优势在普通用户群体中迅速打开市场，但由于早期技术的不成熟，以及技术上的种种缺陷，一度限制了LCD显示器的发展速度。
+直到2009年，明基（BenQ）打造了一款电竞显示器XL2410T，凭借2ms的响应时间和120hz的刷新率，这款产品攻破了之前的技术缺陷，让LCD显示器有了突破式发展。到了2010年，液晶显示器已经成为所有计算机的主要显示设备。
+随着材料技术的发展和科技的不断创新，CRT显示设备在不断减少，PRD显示技术已取代CRT成为全球主流，目前在显示器领域LCD市场占比约65%，OLED 市场占比约28%，激光显示占比约6%。
+自1922年以来，显示器行业发生过多次技术变化，CRT显示技术和LCD显示技术先后引领市场，而这一切都伴随着技术创新。
+毫无疑问，在LCD占主导的显示器市场中，京东方A 是最大的受益者。但毕竟，显示器行业是一个技术变化迅速的行业，产品容易过时，这对公司持续的创新是一个巨大的考验。
+在一个产品更新换代非常迅速的行业中，规模巨大的存货是把双刃剑。2017-2019年及2020年上半年末，京东方A的存货分别为89.58亿元、119.85亿元、123.96亿元、168.03亿元。在近四年的时间中，公司存货不断增加。如果未来新的技术出现，或者京东方A不能持续保持技术的领先，那么京东方A的未来就可想而知。
+计提存货跌价损失是未雨绸缪？
+2019年，京东方A的营业收入为1161亿元，其中端口器件产品收入为1065亿元，占比为91.75%；智慧物联收入167.31亿元，占比14.42%；智慧医工收入135.75亿元，占比1.17%。分地区来看，中国内地贡献营收594.44亿元，占比51.22%。
+京东方A大部分收入均来自于端口器件产品，而端口器件产品绝大部分为TFT-LCD产品。
+2017-2019年，京东方A 的TFT-LCD生产量分别为31921K㎡、42548K㎡、50118K㎡，TFT-LCD销售量分别为31840K㎡、42232K㎡、50316K㎡，TFT-LCD的期末库存量分别为1576K㎡、2229K㎡、2427K㎡。从销售量来看，公司基本是以销定产，产品非常畅销。
+但令人不解的是，2017-2019年及2020上半年，京东方A计提的存货跌价损失分别为19.04亿元、12.02亿元、19.86亿元、16.43亿元。
+在2019年年报中，京东方A称，“2019年，半导体显示行业处于产业发展史下行时间最长、下探幅度最深的低谷期，供过于求情况加剧，行业竞争日趋激烈。与此同时，全球范围内经贸摩擦此起彼伏，贸易保护主义愈演愈烈，地缘政治动荡等不稳定因素也为全球经济带来了较大下行压力。”
+由此可见，2019年正在经历行业寒冬，2020年由于疫情影响，并未有明显好转。京东方A每年计提如此大金额的存货跌价损失，是未雨绸缪还是感觉到了危机？
+《证券市场周刊》记者已经向京东方A发去采访函，截至发稿公司没有回复。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陈志杰",2020-10-29 15:42:34,新浪财经
+6,张志旺律师：证监会对辅仁药业处罚开了先河 罚金120万元,"受损股民可至新浪股民维权平台登记该公司维权：http://wq.finance.sina.com.cn/
+关注@新浪证券、微信关注新浪券商基金、百度搜索新浪股民维权、访问新浪财经客户端、新浪财经首页都能找到我们！
+10月27日辅仁药业（ST辅仁，600781）公告，公司及控股股东、实际控制人收到证监会《行政处罚决定书》及《市场禁入决定书》。（*ST辅仁 维权入口）
+引人注目的是，证监会这次对辅仁药业作出了120万罚金的处罚，似乎破了60万罚金的上限。
+原《证券法》，即2005年《证券法》第一百九十三条规定：发行人、上市公司或者其他信息披露义务人未按照规定披露信息，或者所披露的信息有虚假记载、误导性陈述或者重大遗漏的，责令改正，给予警告，并处以三十万元以上六十万元以下的罚款。
+这规定常被人诟病，原因是上市公司信息披露违法违规行为，尤其是动辄上亿元的财务造假或上市公司巨额资金被控股股东非经营性占用的行为，严重破坏了证券市场秩序，损害了广大投资者的合法权益，但受到的行政处罚结果最高就是罚金60万，这与违法行为的严重性不符。为此2019年新修订的《证券法》对上述违法行为的处罚提高到“处以一百万元以上一千万元以下的罚款”。但今年3月1日之前存在的信批违法行为，仍然适用2005年《证券法》，即罚金最高是60万，包括今年证监会对市场熟知的康美药业，康得新，獐子岛（维权）等公司做出的处罚，罚金均是60万元。
+多年从事股民维权工作的北京德恒（宁波）律师事务所张志旺律师认为，证监会对辅仁药业作出120万罚金的行政处罚合法有据。
+证监会查明辅仁药业有三项违法行为，即辅仁药业2015 年、2016 年年度报告存在虚假记载、重大遗漏；辅仁药业重大资产重组文件中存在虚假记载；及辅仁药业2017 年、2018 年年度报告存在虚假记载、重大遗漏，2018年未及时披露关联担保。
+张志旺律师认为，辅仁药业2015-2018年年度报告均存在虚假记载、重大遗漏，虽然是连续的违法行为，但实际是各自独立实施的，可以分别予以处罚。好比在这个路口闯了红灯，在下一个路口又闯红灯，或者今天闯了红灯，明天在同一路口又闯红灯，这都是两起交通违章行为。而辅仁药业重大资产重组文件中存在虚假记载，则更是独立违法行为。既然是独立的违法行为，那么就可以分别进行处罚。这次证监会对辅仁药业定期报告存在虚假记载、重大遗漏，以及未及时披露关联方担保的行为，处以 60  万元的罚款，又对辅仁药业报送和披露的重大资产重组文件中存在虚假记载的行为，处以 60 万元的罚款。合计处罚120万，这没有违背“一事不再罚”的行政处罚原则。
+对辅仁药业信息披露违法行为，从9月17日公告《行政处罚事先告知书》到10月27日公告《行政处罚决定书》，只隔了一个月多，并且证监会作出了120万元的罚款，体现了证券市场监管零容忍和从严的政策。
+点击新浪股民维权平台
+-->
+扫二维码新浪股民维权平台
+(image_address=""//qr.weibo.cn/inf/gen?api_key=5ce6b247758880d1f71352631f76ea03&data=http%3A%2F%2Ffinance.sina.cn%2Fapp%2FQRtoSFA.shtml%3Fsudatrackvalue%3Dcaitou_inQRcode%26schema%3Dtype%253D20%2526url%253Dhttps%25253A%25252F%25252Fwq.finance.sina.com.cn%25252F&datetime=nocheck&level=H&output_type=img&size=300&type=url&sign=2f1810699d7f34acf7759200c95dbc36"")
+扫二维码 领开户福利！
+(image_address=""//n.sinaimg.cn/finance/512/w256h256/20200807/333c-ixkvvuc9099771.png"")
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陈诗莹",2020-10-29 15:23:00,新浪财经
+7,比亚迪跃居中小板总市值首位 年初至今累计涨幅达245%,"原标题：比亚迪跃居中小板总市值首位，年初至今累计涨幅达245%
+10月29日午后，比亚迪继续走强，一度拉升封板，总市值达4500亿元，超越立讯精密和海康威视，成为中小板总市值第一。截至收盘，涨幅收窄，涨4.47%，报158.38元。港股比亚迪股份午后同样直线拉升，现涨超5%，报157.3港元。
+今年以来，比亚迪A股涨幅已超245%，港股比亚迪股份累计涨幅也已超120%。
+(image_address=""//n.sinaimg.cn/sinakd20201029s/148/w1178h570/20201029/d1cf-kcaeqzy0957224.png"")
+(image_address=""//n.sinaimg.cn/sinakd20201029s/149/w1185h564/20201029/79b2-kcaeqzy0957223.png"")
+值得注意的是，比亚迪即将于今日披露业绩。
+比亚迪此前披露了前三季度业绩预告修正公告，净利润由原来的预增77.86%-90.56%，修正为预增115.97%-128.67%，即前三季度净利润由28亿元-30亿元修正为34亿元~36亿元。
+比亚迪表示，2020年第三季度，国内新冠肺炎疫情防控形势持续向好，汽车板块业务恢复性增长，尤其新能源汽车销量实现快速触底反弹。公司新能源汽车销量快速增长。手机部件及组装业务方面，比亚迪主要客户份额持续提升，成功导入新的手机及其他智能产品全球领导厂商，玻璃陶瓷及新型智能产品出货量增长迅猛，推动业务规模进一步扩大。
+国泰君安此前的研报指出，新能源汽车销量快速回升以及手机组装业绩的放量推动公司业绩快速增长，随着后续新车型的陆续上市和手机业务新客户的开拓，公司整体业绩仍将持续增长。上调2020-2022年EPS至1.81（+0.36）、2.17（+0.43）、2.66（+0.25）元，参考2021年行业平均估值水平65X PE，考虑公司行业龙头地位和后续资产分拆上市后的价值重估从而给予一定溢价，给予2021年75X PE，给予目标价162.8 元（原目标价为116 元）。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陈志杰",2020-10-29 15:17:19,新浪财经
+8,员工体检出肺结节？股价两天下跌近15% 常熟银行回应来了,"来源：财联社
+财联社10月29日讯，近日常熟银行走势反常，两天跌近15%，网传与常熟农商银行群体性肺结节事件有关，今日，常熟银行官方就此事做出回应。
+继昨日股价一度跌停后，常熟银行今日延续弱势，该股早盘低开后持续下探，跌幅一度超过7%，截至发稿，常熟银行的股价为每股7.02元，跌幅为4.23%。
+(image_address=""//n.sinaimg.cn/finance/crawl/768/w550h218/20201029/48c6-kcaeqzy0923756.png"")
+实际上，从10月21日起，常熟银行股价便持续走弱，目前较局部最高点8.89元已经跌去20%，股价表现十分反常。
+(image_address=""//n.sinaimg.cn/finance/crawl/37/w550h287/20201029/5d49-kcaeqzy0923797.png"")
+10月28日晚间，一张名为“常熟农商银行群体性肺结节事件”的截图在微博上曝光，并配文“今天常熟银行大跌和这个事件有关系？”。疑似解释近日常熟银行的大跌系常熟农商银行群体性肺结节事件有关。
+对于此事，10月29日上午，常熟银行的官网发布了一则公告《关于体检中有员工查出肺结节的情况说明》，对“10月28日晚，微博上有用户发布微博提到常熟银行体检中有员工查出肺结节”事件作出说明。
+常熟银行称，将成立专门工作小组，由纪委书记任组长并邀请员工代表参与，聘请第三方机构对办公环境进行第三次全面检测。欢迎员工随时与该行积极沟通并反映问题，共同解决健康关切。
+以下为常熟银行回应原文：
+关于体检中有员工查出肺结节的情况说明
+2020年10月28日晚，我行关注到有微博用户发布微博提到我行例行体检中有员工查出肺结节，现就相关内容说明如下：
+2019年7月，我行金融科技总部入驻苏州工业园区2.5产业园。办公场所投用前，我行已委托第三方环境检测公司——苏州工业园区建设工程质量检测咨询服务有限公司进行室内环境检测，检测结果为合格，报告编号E05230711900002。2020年6月起，我行分批组织员工例行体检。考虑到今年新冠肺炎疫情以来员工更为关注肺部健康，我行在今年例行体检中加入肺部CT项目。驻苏州工业园区2.5产业园有员工在体检中发现存在肺部结节情况，发帖人怀疑与办公环境有关。
+本着为员工健康高度负责的原则，我行积极进行调查及时与员工沟通，回应员工关切。与员工共同选定江苏海尔森检测技术服务有限公司再次进行现场环境检测，于2020年9月8日出具的检测结果为合格，报告编号HES-P202009107。支持员工根据体检结果进行复查，费用由我行承担。及时邀请专业医生为员工提供咨询和解答。添置空气净化设备，增加绿植。
+我行始终坚持“员工第一”理念，高度重视并关心员工健康。我行将成立专门工作小组，由纪委书记任组长并邀请员工代表参与，倾听员工意见和心声，聘请第三方机构对办公环境进行第三次全面检测。欢迎员工随时与我行积极沟通并反映问题，共同解决健康关切。感谢社会各界对我行的关心。
+(image_address=""//n.sinaimg.cn/finance/crawl/51/w358h493/20201029/9ee6-kcaeqzy0923833.png"")
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：逯文云",2020-10-29 15:07:22,新浪财经

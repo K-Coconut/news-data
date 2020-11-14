@@ -1,0 +1,5 @@
+,title,content,pub_time,src
+0,哥伦比亚累计新冠肺炎确诊病例近87万,"央视新闻消息，哥伦比亚卫生部6日宣布新增7650例新冠肺炎确诊病例和173例死亡病例，全国累计确诊病例869808例，死亡病例27017例。哥卫生部强调，有研究显示新冠肺炎病毒可在皮肤表面存留9到10个小时，现阶段防疫主要依靠个人注重卫生防疫，勤洗手、保持安全社交距离仍然是最主要的防疫手段。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：cdl",2020-10-07 10:59:39,同花顺

@@ -1,0 +1,694 @@
+,title,content,pub_time,src
+0,绿地164亿夺武汉黄陂7幅核心地块投建会展城项目 预计总投资500亿,"原标题：绿地164亿拿下武汉黄陂7幅核心地块投建会展城项目，预计总投资500亿
+来源：国际金融报
+8月21日，绿地控股摘得武汉黄陂临空经济区7幅核心地块，总地价逾164亿元。
+据绿地方面介绍，该项目拟投建武汉绿地天河国际会展城项目，这是武汉有史以来单次供地规模最大的项目，将建成全球已披露的室内净展面积最大的会展项目。该项目总计容建筑面积超过400万平方米，预计总投资约500亿元。
+湖北疫后重振已按下加速键。近日，《湖北省疫后重振补短板强功能“十大工程”三年行动方案（2020—2022年）》印发，为抢抓中央支持湖北发展重大政策机遇，启动疫后重振“十大工程”，聚焦包括交通、新基建、产业园区提升等十大领域，总投资约2.3万亿元。
+武汉绿地天河国际会展城率先践行该行动方案，聚焦会展新经济、空港交通枢纽、产业园新基建等关键领域，成为湖北加速疫后重振的重大综合性标杆项目。
+打造全球顶级会展标杆项目，武汉具有得天独厚的优势。武汉是特大省会城市、中部地区中心城市，作为中国经济地理中心，素有“九省通衢”之称，是中国内陆最大的水陆空交通枢纽和长江中游航运中心，高铁网辐射大半个中国，是华中地区唯一可直航全球五大洲的城市。《武汉市城市总体规划（2017-2035年）》提出，大力主推会展业发展，全力打造国际会展之都，明确提出建设百万方新会展中心。
+(image_address=""//n.sinaimg.cn/spider2020821/520/w1280h840/20200821/d49d-iyaiihk7712232.jpg"")
+武汉绿地天河国际会展城位于依托武汉天河机场发展的武汉黄陂临空经济区核心，距离天河机场仅5公里，轨道交通密集，包括5条地铁线的7个轨交站点，以及汉孝城轨盘龙城站和规划中的高铁站——天河北站，正在形成“机场+高铁+地铁+城铁”的最强空轨一体化TOD国家级交通枢纽。
+绿地控股董事长、总裁张玉良介绍，该项目将建成世界级综合性会展中心，弥补武汉作为国家中心城市现有会展体量与城市能级不匹配，作为连接武汉与世界的窗口，成为武汉国家中心城市、国家发展战略的重要平台和战略支点。该项目不止于会展，将以百万方会展会议为核心、创新型国际贸易港为载体，依托武汉临空经济区的枢纽优势和产业集群，全力打造集聚展览、贸易、会议、商务、文化、旅游、居住等功能为一体的国际会展商务新城。
+(image_address=""//n.sinaimg.cn/spider2020821/445/w1280h765/20200821/191f-iyaiihk7712236.jpg"")
+根据规划，项目总用地3634亩，总计容建面积426万平方米，包括会展中心90万平方米，其余为商服、居住等产业综合及新型城镇化配套，计划引入绿地自有高端酒店铂瑞、铂骊品牌，绿地主力商业品牌缤纷城等。
+其中，会展中心建成后将成为中部最大、全国前三的会展中心，室内净展面积45万平方米。绿地通过与国际会展业巨头——汉诺威会展公司战略合作，成立合资公司运营该项目，包括引入进口博览会、国际车展、国际论坛、政府会议等大型会展，以及文化交流会、文化活动、大型文体赛事等文体活动。
+截至目前，绿地在湖北已经开发了武汉绿地中心、武汉绿地城、绿地光谷中心城等24个项目，布局武汉、襄阳等7座城市，累计开发面积逾2100万平方米，总投资额逾1500亿元。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：张熠",2020-08-21 16:54:05,新浪财经
+1,2分钟读财报|中恒电气实控人多次减持违规，被证监会调查,"视频加载中，请稍候...
+自动播放
+(image_address=""//n.sinaimg.cn/front20200821ac/72/w720h952/20200821/56e5-iyaiihk8059083.jpg"")
+play
+视频|中恒电气
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 348830807,
+pid:1,
+url: 'https://video.sina.com.cn/p/finance/2020-08-21/detail-iivhuipn9921502.d.html',
+title:'视频|中恒电气'//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=348830807/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+新证券法实施后，中恒电气成处罚首案。
+近日中恒电气称公司董事长、董事朱国锭因涉嫌操纵上市公司股价、拒不配合国务院证券监督管理机构依法履行职责，违反相关证券法律法规，已被证监会开展立案调查。
+作为中恒电气的创始人和实控人，朱国锭以及一致行动人多减持上市公司股份，今年8月12-17日期间，朱国锭及包晓茹减持563.56万股，合计套现8225.40万元，而中恒电气上市10年以来朱国锭及其一致行动人已累计减持超过3亿元
+去年11月朱国锭夫妇还因违规减持收到监管罚单，对于这样一家频繁违规的公司，你支持证监会严罚吗？
+2分钟读财报|董事会三高管请辞 莱茵体育转型后4年亏3年
+2分钟读财报|光线Q1扣非亏1300万 押宝《姜子牙》和张艺谋
+2分钟读财报|格力老将望靖东辞职 曾被视为董明珠接班人之一
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：常福强",2020-08-21 16:53:26,新浪财经
+2,养元饮品：上半年净利同比下降44%,"8月21日消息，养元饮品公告，上半年公司营收为17.84亿元，同比下降48.40%；净利为7.07亿元，同比下降44.22%。报告期内，受新冠肺炎疫情的影响，公司产品的市场需求受到了一定冲击。公司拥抱直播带货，构建电商全渠道营销体系，一方面与薇娅、辛巴团队建立合作关系，快速实现线上用户导流及销售转化；另一方面自主培养品牌主播，开展公域及私域的品牌直播活动。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：逯文云",2020-08-21 16:51:32,新浪财经
+3,新产业：上半年净利同比增40.57% 海外业务收入大增,"8月21日消息，新产业（300832）晚间披露半年报，上半年，实现营业收入9.7亿元，同比增长31.06%，净利润4.76亿元，同比增长40.57%；基本每股收益1.2061元。在全球遭受新冠疫情影响的背景下，公司积极组织研发团队攻坚，成为国内首家推出新冠抗体化学发光检测试剂并获得CE认证的企业，报告期内为欧洲、美洲多个疫情严重国家持续提供抗体检测试剂，带动海外业务收入同比增长235%。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：逯文云",2020-08-21 16:49:14,新浪财经
+4,宜安科技：上半年净利降73.05%至763.91万元,"8月21日消息，宜安科技披露2020年半年度报告，实现营业收入4.19亿元，同比下降20.09%；归属于上市公司股东的净利润763.91万元，同比下降73.05%；归属于上市公司股东的扣除非经常性损益后的净利润618.05万元，同比下降67.77%；基本每股收益0.0111元。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：逯文云",2020-08-21 16:44:31,新浪财经
+5,捷顺科技：上半年净利降46.72%至2734.66万元,"8月21日消息，捷顺科技披露2020年半年度报告，报告期内，公司在稳定传统业务的基础上，重点拓展城市停车、智慧停车运营、停车场云托管、行业解决方案等新业务，上半年共实现新签合同订单6.07亿元，较去年同期增长20%，为公司全年的业务发展奠定了良好的基础。但因受疫情影响，项目交付周期增长、速度放缓，报告期内公司实现收入3.99亿元，较上年同期4.25亿元，下降6.18%。同时，由于公司对新产品、新技术研发投入的增加，以及对新业务市场推广力度的加大，整体费用增速快于收入增速，所以报告期内归属于上市公司股东的净利润2734.66万元，较上年同期5132.65万元，下降46.72%。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：逯文云",2020-08-21 16:43:45,新浪财经
+6,万东医疗：半年度净利润升137.25%至1.05亿元,"8月21日消息，万东医疗布2020年半年度报告，实现营业收入5.03亿元，同比增长33.03%；归属于母公司股东的净利润1.05亿元，同比增长137.25%；归属于上市公司股东的扣除非经常性损益的净利润9925.96万元，同比增长152.64%；基本每股收益0.195元。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：逯文云",2020-08-21 16:42:31,新浪财经
+7,2分钟读财报|董事会三高管请辞 莱茵体育转型后4年亏3年,"视频加载中，请稍候...
+自动播放
+(image_address=""//n.sinaimg.cn/front20200821ac/380/w540h640/20200821/dd9f-iyaiihk7988395.jpg"")
+play
+视频|莱茵体育
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 348828161,
+pid:1,
+url: 'https://video.sina.com.cn/p/finance/2020-08-21/detail-iivhvpwy2293450.d.html',
+title:'视频|莱茵体育'//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=348828161/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+上市公司高管变动原则上来说是公司治理的大忌，而莱茵体育一变就变三个。8月17日，莱茵体育公告称收到公司董事长蒋蔚炜、副董事长曾赴辽、副总经理何恩东三人的辞职报告，辞职后蒋蔚炜、曾赴辽、何恩东均不在公司担任任何职务。在新任董事长选举产生前，暂由公司董事刘晓亮先生代行董事长职责。
+据悉，上述三人均未持有公司股份。
+几大重要管理人员一起辞职，公司的治理必然出现了不小的问题。从业绩来看，莱茵体育陷入了亏损的泥淖。财务数据显示，2017年-2019年，公司营业收入分别为13.24亿元、7.02亿元、1.38亿元，增速分别为-65.15%、-46.95%、-80.38%，净利润分别为0.29亿元、-0.61亿元、0.26亿元。
+2020年一季度，莱茵体育的经营状况进一步恶化，营业收入同比下滑21.71%至0.18亿元，净利润亏损0.15亿元，扣非净利润亏损0.18亿元，经营活动净现金流流出0.16亿元。
+虽然业绩一团乱麻，但莱茵体育近期的股价表现却很强势，公司60日涨跌幅达23.44%，20日涨跌幅为10.49%。资料显示，莱茵体育前身为莱茵置业，主营房地产，2015年莱茵置业宣布向体育产业转型发展，随即变更了公司名称和证券简称。
+但转型并不顺畅，自2016年以来，公司的体育业务如同坐上过山车，板块营收分别为0.18亿元、0.7亿元、0.43亿元、0.19亿元，在2017年之后非但未挑起大梁，反而一路下滑，2019年板块营收水平已跌至转型首年，基本可以宣告转型失败。扣非净利润来看，2016年-2019年分别为0.14亿元、-0.56亿元、-0.9亿元、-1.26亿元，仅2016年一年盈利，其余均为亏损；毛利方面，2016年-2019年体育板块毛利分别为-545万元、112万元、-3404万元、-2152万元。
+业绩“凉凉”之下，莱茵体育控股股东也发生了变更。2019年，莱茵达控股集团将持有的3.85亿股转让给成都体投集团，实际控制人随即变更为成都市国资委。原实控人莱茵达集团的持股比例则一路走低，2018年年报莱茵达尚持股47.7%，2020年7月13日莱茵达集团持股比例已降至15.89%。
+2分钟读财报|格力老将望靖东辞职 曾被视为董明珠接班人之一
+2分钟读财报|众望布艺IPO：外销占8成受影响大 产品单价连降
+2分钟读财报|《八佰》《姜子牙》等定档 电影行业复苏提速
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：常福强",2020-08-21 16:40:49,新浪财经
+8,万泰生物：新冠病毒核酸检测试剂盒列入WHO应急使用清单,"8月21日消息，万泰生物（603392）晚间公告，公司的新型冠状病毒（2019-nCoV）核酸检测试剂盒（PCR-荧光探针法）于近日被列入世界卫生组织（WHO）应急使用清单，对公司销售及国际业务拓展具有积极的作用。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：逯文云",2020-08-21 16:39:37,新浪财经
+9,香飘飘：上半年净利亏损6388万元,"8月21日消息，香飘飘（603711）晚间披露半年报，上半年，公司营收为9.91亿元，同比下降28%；净利为亏损6388万元，上年同期盈利2353万元。上半年受新冠肺炎疫情影响，公司收入、净利润均同比下降。二季度公司实现主营销售收入5.54亿元，同比增长3.58%，实现净利润2169万元，同比增加5012万元（去年同期亏损2843万元），二季度收入及利润情况环比均明显改善。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：逯文云",2020-08-21 16:27:43,新浪财经
+10,2分钟读财报|光线Q1扣非亏1300万 押宝《姜子牙》和张艺谋,"视频加载中，请稍候...
+自动播放
+(image_address=""//p2.ivideo.sina.com.cn/video/348/825/612/348825612_400_300.jpg"")
+play
+视频|光线传媒
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 348825612,
+pid:1,
+url: '',
+title:'视频|光线传媒'//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=348825612/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+8月18日晚，光线传媒发布2020年半年报。
+在新冠疫情黑天鹅的影响下，影视行业日子属实不太好过。半年报显示，光线传媒上半年实现营业收入2.59亿元，同比减少77.86%，实现归母净利润0.21亿元，同比减少80.46%，扣非归母净利润亏损0.13亿元，同比下降119.22%。上半年公司经营活动净现金流、投资活动净现金流、筹资活动净现金流分别流出4.77亿元、5.34亿元、1.47亿元，上半年现金净减少11.57亿元。
+半年报中光线称，受疫情影响，原定于春节档、情人节档上映的热门影片《姜子牙》《荞麦疯长》等影片已撤档，公司参与投资、发行的已于2019年上映并有部分票房计入本报告期的影片包括《误杀》《两只老虎》《南方车站的聚会》，总票房为3.77亿。
+从明细来看，光线传媒上半年影视剧挑起营收大梁，贡献1.53亿元营收，电影及衍生品板块营收不足亿元，为9180万元，经纪业务则贡献1441万元收入。
+随着电影院复工，传媒板块也在缓慢复苏中。《姜子牙》《夺冠》《我和我的家乡》等大片纷纷定档国庆档，预计电影市场将在国庆期间迎来一波小高潮。从半年报来看，光线的主推项目为《姜子牙》，参投的《八佰》《荞麦疯长》等也陆续上映。目前，光线传媒的电影储备还包括张艺谋的《坚如磐石》、参投的《我的女友是机器人》《人潮汹涌》等，制作中的电影包括《大鱼海棠2》《魁拔》《深海》《西游记之大圣闹天宫》等。
+从储备来看，《姜子牙》和张艺谋的《坚如磐石》为光线的重中之重，而后者暂未定档，光线传媒全年业绩更倚赖于《姜子牙》。《姜子牙》被视为《哪吒》的姐妹篇，但从市场情况来看，《姜子牙》想要斩获《哪吒》的高票房实属难上加难，《哪吒》于2019年暑期档上映，同期并无可抗衡的影片，但《姜子牙》则在国庆档直接遭遇《夺冠》《我和我的家乡》等大片对手，市场竞争激烈程度不可同日耳语，此外电影院的上座率也对票房形成了一大限制。
+对比连亏的华谊兄弟、或者1年半亏损63亿的万达电影，光线传媒相对比较乐观，靠着非经常性损益勉强实现上半年归母净利润盈利，股价更是在年初至今获得24.64%的涨幅，在整个传媒板块位居前列。但不久前子公司另一部动画电影《妙先生》的票房表现平平，被寄予厚望的《姜子牙》，究竟会成为另一个《哪吒》还是另一个《妙先生》呢？
+2分钟读财报|卖房不如卖酱油 海天5300亿市值超过万科+保利
+2分钟读财报|美庐生物IPO：奶粉注册制重挫业绩 经销商连降3年
+2分钟读财报|秦安股份主业偏离：炒期货大赚2.5亿 股东忙减持
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：常福强",2020-08-21 16:26:59,新浪财经
+11,3700亿大牛股摊上事 立讯精密146亿巨额“代持门”牵出IPO往事,"3700亿大牛股摊上事！146亿巨额“代持门”牵出IPO往事：女富豪或涉隐瞒关联交易
+来源： 21世纪经济报道
+导读：如果王来春股权代持行为被坐实，或给立讯精密带来严重的负面影响，首当其冲的便是立讯精密上市之初的收购行为。
+陷股权代持纠纷，涉隐瞒关联交易，Iphone生产计划搁置……
+“大牛股”立讯精密近来祸不单行。
+早在2019年6月13日，立讯精密的股权代持纠纷案就已拉开序幕。
+彼时，中岳联拓总经理、原立讯精密集团管理中心高管吴政卫向深圳中院起诉王来春、立讯精密、立讯有限公司，要求法院判令王来春、立讯有限公司向吴政卫支付部分股权价款人民币4.18亿元，以及立讯有限公司8%股权所享有立讯精密自上市后至2017年期间的股息红利余额人民币2572万元，共计人民币4.44亿元。
+同年7月4日，深圳中院正式立案。
+一年后，深圳中院向立讯精密送达本案相关材料，但公司迄今尚未公告。
+8月10日，有媒体报道吴政卫在受访时出示了一份由王来春签名的《股权承诺声明书》，文件签署日期是2011年3月23日，直指王来春曾代持吴政卫所持立讯精密股份。
+但公司果断回应称：王来春女士未签署过媒体报道的《股权承诺声明书》，并表示公司严格按照相关规则履行信息披露义务，不存在应披露而未披露信息。
+这场“罗生门”最新进展是，原定于8月14日开庭的案件，因文件准备不足取消，开庭时间待定。
+8月18日至20日，21世纪经济报道的记者曾多次就开庭时间和案件进展致电立讯精密证券部，但均未接通，公司也未做出任何回应。
+而这场闹剧的另一面是，自本案立案一年多来，立讯精密股价飙升，自2019年6月13日收盘价12.94元/股，直飙到2020年8月21日收报53.52元/股，总市值达3745亿元，股权纠纷案涉及金额高达146亿元。
+(image_address=""//n.sinaimg.cn/finance/crawl/392/w550h642/20200821/663f-iyaiihk7898616.jpg"")
+值得一提的是，如果此次股权纠纷案坐实王来春存在代持行为，立讯精密或将涉嫌动用上亿IPO募集资金进行关联交易。
+146亿巨额“代持门”起因
+故事得从立讯精密登陆资本市场开始讲起。
+吴政卫表示，立讯精密成功上市，他功不可没。
+据吴政卫公开讲述，2007年，经时任正崴集团旗下富港电子（天津）有限公司（下称“富港电子”）负责人郑宁郎引荐，其与王来春相识，吴政卫时任富港电子财务主管。
+当时，立讯精密正筹划IPO，但因此前的账务管理混乱并不满足上市要求，在与吴政卫进行多次沟通后，王来春力邀其以经营者身份加入立讯精密，尽快搭建起立讯精密合规的财务体系，以期实现成功上市。
+吴政卫称，当年的王来春为IPO求贤若渴，开出的“入职”条件十分诱人，年薪200万港币或人民币，外加持有立讯集团股份。
+这就是整个股权纠纷案的起因。
+值得注意的是，吴政卫2008年春节前后自富港电子离职，并未“实质性”加盟立讯精密，也未直接持有立讯精密股份。
+具体而言，吴政卫并未在立讯精密公开任职，而是在一家王来春新成立的看似与立讯精密没有关系的“关联企业”——博硕科技（江西）有限公司任法人代表和总经理。
+但据吴政卫所说，其实际主要工作地点是在深圳的立讯精密公司，负责财税规划、协助公司上市等工作。
+同时，根据其叙述，王来春担心吴政卫台湾人身份直接持有立讯精密股份较为敏感，可能影响公司上市进程，经合议由王来春暂时为吴政卫代持承诺的有关股权。这一决定，为十年后的百亿巨额股权代持纠纷案埋下了伏笔。
+2010年9月15日，立讯精密成功上市，吴政卫功成身退，要求王来春履行承诺，并进行股权代持登记。第二年3月23日，双方达成统一意见，签署了《股权声明承诺书》。
+《股权声明承诺书》显示，吴政卫通过王来春代持香港立讯有限公司8%的股权；按香港立讯有限公司控股比例66.7%计算，吴政卫持有立讯精密5.336%的股权，代持股权经换算对立讯精密拥有约5.336%的股权。
+2011年下半年，吴政卫彻底离开立讯精密，双方“友好分手”。
+此后，立讯精密分别在2014、2016年经过两次增发，吴政卫持有股份相对应下滑至4.08%，按照8月20日盘收51.31元/股、总市值3583亿元计算，这部分股权市值约146亿元。
+据吴政卫方讲述，近年来，其曾多次要求王来春按承诺支付有关股权对价，却屡遭拖欠。直至2018年，王来春突然对此代持事项矢口否认，案件就此一触即发，吴政卫决定与王来春对簿公堂，于2019年6月13日一纸诉状将王来春、立讯精密、立讯有限公司告上法庭，7月4日正式立案。
+立案一年多来，此案并未引发大范围关注。
+反而是由于立讯精密的经营情况一片大好，2019年营业收入625.16亿元，同比增长74.38%，净利润47.14亿元，同比增长73.13%；今年一季度营收和净利也双双增长，分别同比增长83.1%和59.4%，公司股价翻了4倍有余，从12.94元/股飙升至51.31元/股。
+(image_address=""//n.sinaimg.cn/finance/crawl/116/w550h366/20200821/a9c4-iyaiihk7898703.jpg"")
+图/视觉中国
+“罗生门”背后的并购“谜团”
+而近期，该纠纷案愈演愈烈，或受此影响，公司股价出现小幅下滑。
+中国人民大学商法研究所所长刘俊海告诉记者：“该案件要关注三点：核心是股权代持合同的效力问题；二是股权代持合同的性质究竟是信托合同，还是委托合同，或者借用协议、代理合同、无名协议，要搞清楚；三是本案当中股权代持的证据中有无股权代持关系，包括出资证据、隐名股东和名义股东之间有无股权代持协议和授权委托、股权代持里是否存在隐名股东实际行使股东权利的证据，概括起来就是出资+合议+行权，三方面证据都有就证明隐名股东存在。”
+刘俊海还表示，即便股权代持合同无效，也涉及一个无效财产的返还问题，以及无效股权代持产生的收益分配问题。
+在事件的另一端，立讯精密却矢口否认了吴政卫的指控，一口咬定吴政卫的叙述“子虚乌有”。
+8月10日，立讯精密证券部表示，控股股东与吴政卫不存在任何关联关系，也不存在股份代持情况。立讯精密上市以来，一直没有名为吴政卫的高管存在。
+双方各执一词背后，究竟事实如何尚不得而知。
+但可以确定的是，如果王来春股权代持行为被坐实，或给立讯精密带来严重的负面影响，首当其冲的便是立讯精密上市之初的收购行为。
+据吴政卫所说，其在“加盟”立讯精密时，王来春为掩人耳目，成立了博硕科技（江西）有限公司（下称“博硕科技”），由吴政卫任法定代表人和总经理一职。
+立讯精密披露的公开信息显示，博硕科技成立于2008年3月20日，注册资本为1446万美元，由在香港成立的法人公司ASAPINTERNATIONAL CO．，LIMITED（下称“ASAP”）持股75%，华硕子公司和硕联合在开曼群岛的全资子公司ASLINK PRECISION CO．，LTD（下称“ASKINK”）持股25%。
+巧合的是，2010年12月中旬，IPO挂牌还不到三个月的立讯精密宣布的上市以来第一起资本运作，便是收购博硕科技75%的股权。
+当时公布的收购案显示，立讯精密最终以1.68亿元现金成功收购ASAP持有的博硕科技的75%全部股权，而这1.68亿元收购金完全来源于其IPO所募资金。
+值得注意的是，立讯精密招股书中所述的IPO募投计划并没有这个项目，博硕科技的收购是将原本募投于“线缆加工生产项目”的7000万元IPO资金和部分超募资金9800万元“挪”为此用。对此，立讯精密则称“本次股权交易不构成关联交易”。
+原本此交易并未引人注意，但随着上述股权代持纠纷案细节的不断披露，该并购案则陷入了涉嫌隐瞒关联关系的疑云中。
+吴政卫在股权纠纷案中提供的信息显示，博硕科技在被立讯精密收购之前很可能就是由王来春和立讯精密所实际控制。吴政卫称，在2008年，立讯精密与华硕子公司ASLINK通过香港ASAP公司转投资成立了博硕科技。
+如上述情况属实，那么当年立讯精密收购博硕科技75%股权明显构成了关联交易，而公告中，立讯精密也一直未进行真实披露。
+刘俊海表示，如果关联交易当中有虚假陈述，误导陈述，从而误导股民，给股民造成损害，那就应当在行政处罚之外，对受害的投资者承担损害赔偿责任。
+立讯精密“往事”
+事实上，IPO阶段股权代持纠纷案件并非鲜有，为何立讯精密的这一案件会炒的沸沸扬扬？
+主要源于立讯精密作为我国内地首家iPhone手机代工厂，其成长历程及近期动作都备受外界关注。
+可以说，立讯精密是王来春白手起家的一个“传奇”，其最大的关注点就是成为苹果明星供应链公司的历程。
+上世纪80年代，20岁出头的王来春只是富士康的一个“打工妹”，仅初中学历。直到1997年，她离职创业，模仿富士康创办立讯精密。
+立讯精密创立四五年后，富士康连续多年成为其最主要的客户，立讯精密可以说是富士康中的“富士康”。后来，受金融危机影响，立讯精密被迫转型，走自主品牌道路成为其不得不选择的生存方式。立讯精密开始“去富士康化”，并向富士康发起挑战，进攻苹果公司供应链。
+2011年，立讯精密收购昆山联滔电子60%股权，首次进入苹果供应链，成为iPad连接线的供应商；2016年，立讯精密收购声学企业苏州美特，抓住近年来最重要的摇钱树苹果耳机AirPods；2017年，立讯精密获得苹果AirPods代工资格，其产品良率让苹果大为夸赞，此后也成为AirPods最大的代工厂，为其自身装上了发展新引擎。
+近年来，立讯精密无疑是资本市场最“闪耀”新兴蓝筹之一。自成立以来，立讯精密从PC连接器起家，通过收购昆山联滔进入苹果供应链，随后围绕大客户，开拓天线、无线充电、线性马达、声学器件等模组产品，并在2017年后进入整机制造，产品线不断扩张，逐步成长为电子制造巨头。
+公司营收从2007年的3.51亿元增长至2019年的625.16亿元，年均复合增速高达54.01%；归母净利润从2007年的0.32亿元增长至2019年的47.14亿元，年均复合增速高达51.60%。
+公司在2020年继续保持着快速的增长势头，2020年一季度的营收达到165.13亿元，同比增长83.10%，实现归母净利润9.82亿元，同比增长59.40%。
+2019年以来，在5G加速商用的催化之下，立讯精密股价连创新高，2019年、2020年（截至8月21日午间收盘），立讯精密股价分别上涨238.20%、93.12%。
+截至目前，立讯精密总市值已突破3745亿元。
+但是，立讯精密一直没有进入到iPhone手机代工这一核心领域。直至今年7月17日，立讯精密发布公告称，拟出资33亿元全资收购台湾纬创资通在江苏昆山的两家苹果手机装配厂，由此取得苹果手机的代工业务。
+据悉，纬创是全球仅有的三家iPhone手机代工商之一，另外两家是和硕科技和富士康。纬创是三家代工商中规模最小的一家，仅为5%。
+招商证券认为，一方面，当前iPhone组装主要为鸿海、和硕与纬创三家，鸿海占据7成多份额一家独大，和硕2成多份额，纬创最新份额低于5%，而整体台资组装厂近年来在新品研发、投资意愿和配合效率上逐渐退步，和耳机、手表、平板一样，苹果意欲引入大陆厂商作为供应链鲢鱼来提效；而立讯凭借优秀的管理和自动化能力，以及在耳机、手表组装上的成功经验，有望明显提升纬创份额（长线2成以上）并改善其盈利能力，即使在并表前上市公司也能通过投资收益分享盈利成长；另一方面，掌握手机组装出海口后，也将有利于上市公司的零部件深度垂直整合，包括既有连接器、无线充电、天线、声学、马达等，以及Sip和诸多潜在新业务布局，协同效应将较为明显。
+而在市场看来，这场尚未落幕的巨额股权代持风波或成为埋藏在立讯精密“内控”中的“雷”，而本案的最终走向将如何？21世纪经济报道将持续关注。
+扫二维码 3分钟开户 紧抓牛市回调良机！
+(image_address=""//n.sinaimg.cn/finance/512/w256h256/20200807/333c-ixkvvuc9099771.png"")
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陈志杰",2020-08-21 16:17:47,新浪财经
+12,福耀玻璃：上半年净利同比下降35.97%,"8月21日消息，福耀玻璃（600660）晚间披露半年报，上半年，公司营收为81.21亿元，同比下降21.06%；净利为9.64亿元，同比下降35.97%。报告期，汽车玻璃毛利率32.58%，比上年同期减少1.90个百分点，主要由于疫情影响，汽车行业持续负增长，导致汽车玻璃销售收入下降，折旧、摊销占收入比重增加，影响公司合并毛利率比上年同期减少2.54个百分点。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：逯文云",2020-08-21 16:14:12,新浪财经
+13,保龄宝：上半年实现净利润4339.3万元 同比增长78.21%,"8月21日消息，保龄宝晚间披露半年报，今年上半年实现净利润4339.3万元，同比增长78.21%。在全球低糖减糖趋势的带动下，及国内以元气森林等为代表的无糖低糖饮品热销的影响，公司赤藓糖醇以天然、零热值、不参与血糖代谢、较高耐受量及酸热性能稳定等特点，受到市场的高度关注，产品销售连续多年保持了高速增长。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：逯文云",2020-08-21 16:09:52,新浪财经
+14,东吴证券：上半年净利同比增长37%,"8月21日消息，东吴证券（601555）晚间披露半年报，上半年，公司营收为35.89亿元，同比增长34.2%；净利为10.3亿元，同比增长37.33%。报告期内，公司经纪及财富管理业务实现营业收入8.23亿元，同比增长16.87%。控股子公司东吴期货新开客户数2751户，同比增长65.03%，实现营业收入8.55亿元，实现净利润0.24亿元。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：逯文云",2020-08-21 16:05:55,新浪财经
+15,科大讯飞：上半年实现净利润2.58亿元 同比增长36.28%,"8月21日消息，科大讯飞晚间披露半年报，今年上半年实现净利润2.58亿元，同比增长36.28%。报告期内，公司人工智能核心技术不断取得技术突破，在智能语音、计算机视觉、认知智能等AI核心技术领域持续保持国际领先。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：逯文云",2020-08-21 16:03:46,新浪财经

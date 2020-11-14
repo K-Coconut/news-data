@@ -1,0 +1,146 @@
+,title,content,pub_time,src
+0,区块链技术正向平台化组件化集成化演进,"李鸣
+随着IT向DT转换，数据已经成为数字经济的核心要素，软件工程也在向数据工程转换，区块链等新一代信息技术将成为数据工程的主要工具，来“加工”数据形成基于数据的服务，从而加速数据要素的市场化进程，最大化释放数据要素的价值，形成数字经济的主要活动。在“数字经济”、“新基建”、“数据要素市场化”等相关政策的引导下，区块链技术正在从小规模应用探索向大规模应用实践转变，大规模应用实践将区块链技术带入到更广阔的产业空间，更多资源的注入和真实需求的挖掘将推动区块链技术向平台化、组件化和集成化演进，形成城市联网、组件服务网络和数字科技操作系统，以满足规模化、个性化和价值化的产业需求。
+一是平台化将推动形成城市链网。大规模应用实践将推动形成通用型区块链底层平台，其表现形式可以是城市链或行业链，这将大幅降低应用实践的学习和试错成本，最大化产业资源效率。城市/行业链上的应用繁荣将推动不同城市/行业链上应用间的互联互通，从而形成城市或行业链网，最终可以演进成为区块链应用支撑网络体系。当前，主流企业还在争夺大平台的市场，微众BCOS、华为BCS、腾讯TBASS、阿里蚂蚁链、京东JDChain、百度超级链已经逐步建立自身的生态，BSN、DIDA、CTS等平台也正在从不同方式切入区块链产业。相信未来会有更多“赣州链”等优秀的城市/行业区块链平台满足客户的真实需求，形成针对特定需求、特定区域用户的城市链网。
+二是组件化将推动形成组件服务网络。平台化的成熟会催生更大规模的应用，应用的深化将带来复杂的个性化应用需求。个性化需求将推动区块链关键技术“脱离”通用底层平台，形成可以支撑个性化需求的技术组件体系。从软件工程的视角来看，组件化程度代表技术的成熟度。在构建系统或服务的过程中，可以将KYC、智能合约、共识机制等关键技术单独封装，形成可复用的技术服务组件，通用技术服务组件可以相互支撑，形成组件服务网络。这不仅可以极大降低系统和应用的开发成本，也可以用灵活的组件服务适应个性化的用户需求。当前，区块链技术、平台和应用的成熟度还不足以形成组件化的产业形态，但是智能合约、身份识别、预言机等组件化产品的雏形已经出现，以满足监管合规、身份验证、数据源等特定场景的需求。
+三是集成化将推动形成数字科技操作系统。大规模个性化应用将促进区块链、人工智能、大数据、云计算、物联网等新一代信息技术融合发展，形成数字科技融合架构，加速数据要素服务化、市场化和价值化进程。在集成过程中，新一代信息技术的算力、网络、通信等通用基础资源下沉，区块链的共识机制、人工智能深度学习算法、大数据分析、物联网标识解析等特征性技术可抽象成专用的技术引擎，形成可以支撑融合技术的数字科技操作系统，以更通用的平台灵活的支撑更个性化的应用实践，形成更丰富的基于数据的服务。虽然数字科技操作系统还没出现，但是从某些应用中可以看到明确的需求。在客流量识别的场景中，采集数据的摄像头是物联网，采集后进行分析处理的是大数据、承载数据的是云计算、识别人像的是人工智能，保障终端安全或数据存证的是区块链，这个简单常见的场景中，融合了大部分新一代信息技术。
+标准是发现世界基本规律以加速社会进步的基石，可以引导和规范区块链技术和产业创新发展。因此，需要加快推动建立包括基础、技术、应用、数据、资产、服务等方向的区块链标准体系，联合产业相关方优先研制关键技术组件、区块链系统和集成操作系统的参考架构标准，重点研制链间互操作、组件间服务协议和集成架构的应用接入标准，加快研制区块链在各领域的应用实践标准。同时，应加强区块链监管与合规、安全和隐私保护、测评与治理等保障相关的标准研究。
+为此，中国电子技术标准化研究院将积极履行ISOTC307区块链国际标准化组织国内对口单位、IEEE计算机协会区块链和分布式记账标准化委员会主席单位、全国区块链和分布式记账技术标准化技术委员会(筹)秘书处单位、中国区块链技术和产业发展论坛理事长单位的职责，持续推动标准宣贯、人才培养、试验检测、咨询评估等标准化服务，建立集企业、系统、人才、服务等方面的综合评价和产业服务体系，整合多方资源共建区块链联合实验室、标准示范中心、应用创新基地等载体，进一步以中国区块链开发大赛推动分布式应用账本开源社区建设。同时，加快推进区块链公共服务平台和区块链产业测试床建设，推动形成促进区块链产业高质量发展的产业生态。
+(作者为中国电子技术标准化研究院区块链研究室主任、IEEE计算机协会区块链和分布式记账技术委员会主席)
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-08-20 02:41:35,同花顺
+1,总投资超50亿元 南京牛首山打造金陵小镇PPP项目,"(image_address=""//comment.10jqka.com.cn/sourcepic/12/1tC5extagr2ty9XNextagAtsaytsay.png"")讯（记者 颜霏） 近日，记者获悉，中建八局联合南京城建控股、无锡拈花湾文投、天津拈花湾设计中标南京牛首山金陵小镇PPP项目，项目总投资额50.44亿元,合作期25年，其中建设期5年，运营期20年。
+据悉，南京牛首山金陵小镇PPP项目位于南京市江宁区牛首山风景区，项目主要打造文化主题体验场馆、街区、景点，并进一步完善配套设施建设，使得牛首山景区从单纯的旅游观赏体验到文化历史全方位体验，为顺利创建5A级景区奠定基础。
+中建八局相关负责人介绍，金陵小项目高定位、高品质、高格局，总体规划形成“一街、一水、一禅、一堂、一馆、两湖”的景点脉络，创建可沉浸、可体验、可亲近式文旅场景，给予游客多维度、深层次、立体化的文旅体验，突破现状文旅小镇市场。
+据了解，金陵小镇项目采用PPP模式实施，项目建筑品质标准高，运营内容丰富，专业化需求强。中建八局联合行业头部资源，充分发挥各自优势，为景区全生命周期内注入活力，提升效率，助力文旅行业创新发展。金陵小镇项目是中建八局第一个全生命周期参与的文旅项目，项目建设标准要求高，运营内容丰富，参与本项目是中建八局实现营建一体化的重要举措，对提升中建八局核心竞争力具有重要意义。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：lg",2020-08-20 02:34:19,同花顺
+2,石家庄：创新举措推进县城建设取得新成效,"近年来，石家庄市对标先进、自我加压，乘势而上、争创一流，县城建设取得显著成效，全市县城建设工作整体排名跃升至全省第3名，县城建设整体水平进入全省前列。
+2020年是县城建设品质提升的开局之年。石家庄市组织13个市直相关部门和18个县（市、区），高标准制定年度工作方案，严格落实“月指导、季通报、半年观摩、年度考评”，建立重大工程项目台账，逐县明确3个精准对标学习对象，确保任务完成。上半年，组织召开四个片区现场观摩调度会，在省市主流媒体上先后刊发8篇报道，辑印简报通报7期，下发督办函22期，形成强力推进的良好氛围。按照2019年省、市县城建设考核排名，对9个县（市、区）奖励资金2000万元，激发了全市比学赶超强劲动力。8月4日，组织召开全市县城建设工作推进会，加速推进全市县城建设高质量发展。
+石家庄市住房和城乡建设局组织18个县（市、区）和市直相关部门克服疫情影响，以“五城同创”为抓手，以品质提升“六大行动”为重点，强力开展县城建设品质提升行动，截至7月底，已完工项目121个，开工建设项目314个；完成投资140.1亿元，同比增加51%；774项考核指标达标523项。
+下一步，石家庄市将组织各县（市、区）对标对表，加快重大工程项目，紧抓重点和短板，打造特色亮点，努力争当全省县城建设排头兵。(编辑：郭晓丽，供稿单位：石家庄市住房和城乡建设局)
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：lg",2020-08-20 02:32:50,同花顺
+3,加拿大《环球邮报》编译版： 7月加拿大年通胀率下降至0.1%,"加拿大《环球邮报》（The Globe and Mail）8月19日报道，加拿大统计局周三的报告显示，因汽油价格下跌近15%，7月消费者价格指数从6月的同比增长0.7%下降至0.1%，此前经济学家预测值为0.5%。如扣除汽油价格变化因素，7月通胀率同比上升0.7%，6月则为1.2%。
+此外，7月航空旅行价格下降8.6%，为2015年12月以来首次出现下降。报告称，尽管许多航班因疫情被取消或暂停，但航空公司为鼓励人们出行仍提供了诸多激励措施。同样，由于加拿大人多选择在国内度假，旅行住宿价格同比下降27%，为连续第三个月下降。7月肉类价格上涨速度低于6月，主要是由于工人感染率飙升导致工厂关闭后，当月产能再次恢复。
+加拿大核心通胀三项指标（CPI-trim, CPI-median and CPI-common）的平均值为1.6%，自4月份以来一直保持相对稳定。这些指标被认为更便于衡量潜在的价格压力，受到加拿大央行的密切跟踪。相关数据低于加央行设定的2%通胀目标，但央行警告称，今明两年物价指数将处于低位。加央行行长蒂夫麦克莱姆（Tiff Macklem）此前表示，在通胀率重新回到该行的目标区间前，央行将维持基准利率在0.25%的下限。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：lg",2020-08-20 02:32:30,同花顺
+4,郑州半年税费 减免近87亿元,"本报讯（记者 侯爱敏）记者昨日从市发改委获悉，今年以来，我市全面积极落实为企业降本减负各项政策措施，有效助推实体企业恢复正常生产运营，上半年仅各种税费一项减免达86.93亿元。
+今年以来，我市严格执行小微企业普惠性税收减免和增值税改革政策，延长阶段性下调企业养老保险费率，免征中小微企业3项社保费用，上半年，累计减免税费86.93亿元。其中今年新出台支持疫情防控和经济社会发展的税费优惠政策新增减税25.93亿元；阶段性减免企业社会保险费政策惠及我市参保单位9万余家，减征社保费49.32亿元。
+企业生产经营成本持续降低。落实降低工商业电价5%政策，提前实行天然气淡季价格，落实中小微企业房租“两免三减”政策，上半年，为全市工商业企业减免电费3.27亿元、燃气费7800余万元，市管企业减免中小微企业房租1600余万元，驻郑银行为全市企业累计授信及发放贷款257.8亿元；全市稳岗返还补贴合计审批企业7505家，涉及资金19.3亿元，完成拨付13.78亿元，稳岗人数52.3万人。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：lg",2020-08-20 02:30:33,同花顺
+5,北京市城管委主任孙新军：北京家庭厨余垃圾日分出量增长470%,"北京商报讯（记者 陶凤 刘瀚琳）8月19日，北京市政协提案委、市政务服务局联合主办的“市民对话一把手·提案办理面对面”直播访谈节目播出。北京市城管委主任孙新军就“加强垃圾分类 促进生活垃圾减量”对话市政协委员王兰、郝金明。据孙新军介绍，《北京市生活垃圾管理条例》（以下简称《条例》）落地3个多月来，全市厨余垃圾分出量明显增多，截至8月18日，全市家庭厨余垃圾日分出量已达3200吨，远超2000吨目标量。
+据介绍，自《条例》实施以来，北京垃圾分类情况整体呈现“6升2降”的态势。具体而言，家庭厨余分出数量大幅提升，7月家庭厨余垃圾日均分出量较4月下旬增长470%；厨余垃圾分出质量逐步提升，全市达标桶站数达75.3%；桶站设置达标率进一步提升，分类容器设置率达93.2%；指导员值守率明显提升，从5月的20%升至7月下旬的56.2%；宣传动员覆盖率明显提升，市民知晓率普遍在80%以上；同时，随着执法检查力度持续提升，7月本市其他垃圾清运量同比降26%，问题率不同程度下降，执法检查和市级抽查的问题率均呈下降趋势。
+“3个月以来，全市厨余垃圾分出质量和数量稳步提升，桶站指导员功不可没。”孙新军说。据统计，北京全市共有2万余名桶站指导员。然而，对于全市10万个桶站而言，指导员数量远远不够。“人力数量不够，除了固定值守人员，我们鼓励大家流动值守并号召全社会志愿者加入指导员队伍。”
+在垃圾分类过程中，厨余垃圾桶容纳超10%其他垃圾即被视作无效分类。日前，全市出台《北京市厨余垃圾分类质量不合格不收运管理暂行规定》。该规定明确，若分类的垃圾没有达到标准，相关的部门可拒收，并在交付点或垃圾桶盖上张贴《厨余垃圾分类质量不合格不收运告知单》，注明改正要求和改正期限，拍照留证，改正期限一般不超过3天。
+孙新军透露，截至目前，全市执法部门已发现并查处99起垃圾混装混运行为。“其中有部分企业存在多次混装混运行为且不听劝阻，这些企业将被逐出北京市场。”
+值得注意的是，在此前走访过程中，多位社区居民及桶站志愿者曾向北京商报记者表达关于“厨余垃圾破袋”的顾虑：夏天天气炎热，厨余垃圾极易变质发臭，在倾倒过程中也易沾染汤汁。对此，孙新军回应，对于后端处理而言，厨余垃圾破袋实属必要。“一方面可以维护后端机器；另一方面，可以更好监测厨余垃圾的分出质量。”
+而如何打消市民的顾虑？部分社区因地制宜打造了帮助破袋的厨余垃圾桶，解决厨余垃圾拆袋过程中存在的不便。例如，在海淀区北下关街道，每个厨余垃圾桶都配备了自制破袋器，居民将废旧钢管改装成锯齿固定在桶沿，倾倒垃圾时借助破袋器即可完成厨余垃圾破袋投放。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：lg",2020-08-20 02:29:18,同花顺
+6,中小外贸企业利好连连,"随着国际疫情持续蔓延，国际经济形势依然复杂严峻，国际需求持续疲软，我国不少外贸企业依然没有走出困境，未来发展举步维艰。为进一步稳住外贸主体，近日，国务院办公厅发布《关于进一步做好稳外贸稳外资工作的意见》（以下简称《意见》）。值得关注的是，该《意见》较大程度关照了受疫情冲击影响最大的中小外贸企业，为中小外贸企业保订单、拓市场以及破解融资难题等带来实实在在的好处。为中小外贸企业带来利好天眼查数据显示，我国有超过546万家企业名称或经营范围含“外贸、进出口、外销”，且状态为在业、存续、迁入、迁出的外贸企业，有限责任公司占比超九成。以工商登记为准，截至8月13日，我国今年1月至7月共新增近52万家外贸相关企业，较去年同比增长7%。其中，我国今年第二季度新增超过27万家外贸企业，同比增长21%。海关总署8月7日公布的数据显示，今年前7个月，我国货物贸易进出口总值17.16万亿元人民币，降幅较上半年收窄1.5个百分点。其中，出口9.4万亿元；进口7.76万亿元。7月份，外贸进出口2.93万亿元，增长6.5%。其中，出口1.69万亿元，增长10.4%；进口1.24万亿元，增长1.6%。这一系列数据都表明，我国外贸企业数量逆势增加，且进出口贸易也呈现逐渐向好态势。我国作为进出口大国，外贸潜力巨大，即使是受到国际疫情和复杂经济环境的影响，也一直在为全球产业链稳定贡献力量，7月份进出口数据也体现出下半年我国外贸也正在向好发展。值得关注的是，外贸企业中数量最多的群体是中小外贸企业，它们不仅面临着一般中小企业的融资难等问题，同时也面临着国际市场不确定风险下的订单、通关等一系列问题。业内人士表示，此次《意见》较大程度关照了受疫情冲击影响最大的中小外贸企业，如“及时雨”一般为正在向好发展的中小外贸企业带来了政策利好。助融资、保订单解企业燃眉之急融资难、融资贵一直是困扰中小外贸企业发展的难题之一。其中，融资成本高、贷款手续繁杂，是阻碍企业融资的重要因素。中国社会科学院大学经济学院副教授王微微对(image_address=""//comment.10jqka.com.cn/sourcepic/12/1tC7qrmkyczKsbGo.png"")记者表示，毫无疑问，当前世界经济复杂多变，我国外贸外资面临复杂严峻形势的背景下，印发稳外资稳外贸的《意见》可以起到积极的提振作用。《意见》提出要更好发挥金融支持作用，进一步加大对中小微外贸企业的出口信贷投放，缓解融资难、融资贵问题。鼓励有条件的地方支持政府性融资担保机构参与风险分担，对出口信用保险赔付额以外的贷款本金进行一定比例的担保，商业银行在“信保+担保”条件下，合理确定贷款利率。这对缓解外贸企业经营困难、帮助中小外贸企业加速融资等方面发挥不可替代的作用。除了融资以外，受疫情影响，今年以来，不少外贸企业普遍面临订单取消或延期等诸多问题。网易有道信息科技（北京）有限公司有道政府事务部副总监严晋坦言，网易有道的海外业务主要为在线教育产品如UDictionary、UClass等。目前，受国际复杂环境的影响，一些过去增长较快营收较丰厚的产品在部分国家的营销策略受到了重创，例如在部分国家的营销策略一度为暂停扩张型宣传活动，营销成本增加，订单丢失风险较大。国务院近日印发的《意见》，从政策上给了企业大力拓展外贸业务的信心，让企业更有动力继续带领团队，开展国际层面非政府间的各种类型合作，积极争取签更多订单，切实发挥作为一家科技教育上市公司的国际优势。王微微认为，《意见》提出要支持中小外贸企业开拓市场，参加线上线下展会，发挥好国内商协会、驻外机构、海外中资企业协会作用，积极对接国外商协会，帮助出口企业对接更多海外买家。此外，《意见》还提到，中国出口信用保险公司在风险可控前提下，积极保障出运前订单被取消的风险，2020年底前，中国出口信用保险公司根据外贸企业申请，可合理变更短期险支付期限或延长付款宽限期、报损期限等。这些举措无疑为外贸企业拓展客户、保住订单和盈利提供了强有力的支撑。提升通关效率助企业“拓市场”《意见》印发之后，记者注意到，各地海关也在以往工作的基础上，进一步采取措施加快了外贸企业的通关效率，为稳外贸跑出“海关速度”。“除了疫情扩散导致国际市场阻力加大以外，通关效率也一直受中小外贸企业关注的一个重要方面。”法雨科技创始人张润泽认为，《意见》提出要进一步提升通关便利化水平，持续优化口岸营商环境，继续巩固压缩货物整体通关时间成效，进一步推动规范和降低进出口环节合规成本，在有条件的口岸推广口岸收费“一站式阳光价格”，提升口岸收费透明度和可比性。这为外贸企业开拓国际市场提供了保障。“通关效率比过去有了较大提升，我们申报出口的货物在‘抵港直装’模式下，能把货物在港口堆存时间降为零，无需等待吊装，可以直接装船，实现了出口货物通关零等待。”中国外运（601598）华南有限公司广东江门分公司报关人员表示。据了解，“抵港直装”模式是海关近期推出的又一快捷通关方式，企业可根据自身生产计划与码头“预约”抵港时间，灵活安排装货出厂，按照“提前申报-货到验放-抵港直装”的流程，实现企业物流“零库存”。对外贸企业而言，“抵港直装”模式大幅缩短了出口货物通关时间，尤其为时效性强的货物提供了更为快捷的通关选择。此外，近期“经认证的经营者”（AuthorizedEconomicOperator，以下简称AEO）资质也备受外贸企业关注，湖北宜昌人福药业有限责任公司国际部副部长曹博表示，企业会高质量做好准备工作，争取早日通过海关认证获取AEO资质，把产品出口到更广阔的国际市场；安琪酵母（600298）股份有限公司国际事业部副部长周玉容也表示，目前已经成为海关AEO认证企业，正在享受更加高效便捷的通关优惠措施，内部管理效能和国际竞争力都得到大幅提升。张润泽表示，《意见》提出要让更多符合认证标准的外贸综合服务企业成为海关“经认证的经营者”（AEO）。随着政策红利的持续释放，将有力助推外贸稳增长。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：lg",2020-08-20 02:29:09,同花顺
+7,施罗德投资：未来以估值还是盈利为主驱动股市仍有待观察,"新冠疫情以来的这波市场行情，估值持续上升是主要驱动因素。从过去五年全球市场表现数据来看，美国股市受盈利增长驱动，在所有市场中表现最佳。展望未来，施罗德投资认为，此前带动美国盈利向上的一次性支持措施（如削减企业税）将不会再出现。事实上，若美国民主党总统候选人拜登于今年11月份当选，这种政策更有可能逆转，届时，若没有这些提升盈利的利好因素，美国股市的估值将较易受到调整的影响。从新兴市场看，受估值主导的市场前景也相对不稳定。不过，考虑到占新兴市场指数约60%的中国、韩国等市场已重启大部份经济活动，如果这一趋势持续，盈利应有望向上反弹。对于英国及欧洲市场，在盈利增长的支持下，股息为英国及欧洲股票回报提供了稳固的基础，但需要注意的是有不少企业已因为全球经济衰退而被迫下调股息20%或以上，分析师也下调了长远的盈利预测。不过，施罗德投资认为，英国及欧洲股票现在的估值已在很大程度上反映了上述情况，因此应存在回升的空间。就日本而言，由于经济迅速复苏的预期已显著上升，分析师对未来几年的企业盈利持乐观态度。 金放
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：lg",2020-08-20 02:27:29,同花顺
+8,拉脱维亚巴士公司称爱沙尼亚没有自由竞争,"近日，在拉脱维亚和立陶宛运营客运巴士的B-Bus公司表示，该公司尝试进入爱沙尼亚市场已有四年，但尚未取得成功，并认为该市场不接受外国运营者的自由竞争。
+B-BUS公司董事会主席Komars对媒体表示：“在过去的四年中，B-Bus定期参加爱沙尼亚地方政府的采购，但是地方政府在评估过程中过分追究细枝末节，并因一些偏狭的要求使外国运营者难以进入市场”，“看起来这样做的目的不是寻找最好和最优惠的服务提供商，而是寻找微不足道的错误将竞标人从招标中剔除。”
+Komars认为，地方政府组织采购的评估标准不是保证质量，而是基于个人好恶的主观意见，因此其他承运人没有在公平竞争中获胜的机会。
+他说：“我们参与爱沙尼亚客运采购的经验表明，地方政府总在寻找各种不影响服务价格的细小错误并以此为由将竞标人从采购中驱逐出去。”他补充说：“另一种最常见的方法是，如果被内定的竞标人没有获胜的机会，则会在没有结果的轻快下中止采购。”
+据该公司称，B-Bus在过去三年中参与了爱沙尼亚的六项客运运输采购活动：分别是塔尔图市、派尔努市、派尔努县、瓦尔加县、萨列马县和东维鲁县。目前，B-Bus正在参与一项哈留县的定期公交运输采购。
+B-Bus集团目前在拉脱维亚和立陶宛提供区域和城市间巴士服务，并经营里加和维尔纽斯的客运。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：lg",2020-08-20 02:27:20,同花顺
+9,冰岛加强对口罩市场的监管,"据《雷克雅未克葡萄藤报》8月19日报道，由于近期冰岛疫情反弹，冰岛市场对口罩的需求空前高涨。冰岛三个机构正在密切关注冰岛的口罩市场：冰岛消费者管理局（Neytendastofa），负责监管日常消费者的口罩（非医用口罩）销售情况；冰岛药品管理局（Lyfjastofnun）负责监管医用口罩的销售，冰岛职业安全与健康管理局（Vinnueftirlitid）则监管工商企业口罩的销售。最近，市场上出现了一些不满足阻止COVID病毒最低要求的口罩情况。消费者委员会表示：绝对不希望消费者戴上不满足安全要求的劣质口罩。称该机构正在检查市场上口罩的认证。
+另据冰岛劳工联合会（ASI）进行的价格调查，三层一次性口罩的单价差异很大。最低价格49 ISK/只，而最高价格为298ISK/只。价格调查中未评估口罩的质量。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：lg",2020-08-20 02:26:41,同花顺
+10,今年上半年拉脱维亚外国直接投资增长1%,"拉通社7月8日报道，根据拉脱维亚权威数据统计企业Lursoft公司统计数据，今年上半年对拉脱维亚企业的外国直接投资增长1%，至72.2亿欧元。
+今年上半年共有414个新的外国投资者在拉脱维亚注册，去年上半年为761个。
+同期，塞浦路斯投资额增长最快，至8207万欧元；荷兰投资下降最多，共下降3870万欧元。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：lg",2020-08-20 02:26:17,同花顺
+11,6月拉脱维亚零售额同比上升4.6%,"拉通社7月29日报道，根据拉脱维亚中央统计局数据，按照固定价格计算，今年6月拉脱维亚零售贸易额同比增长4.6%。其中，食品销售额同比增长5%，非食品（不包含汽车燃料）销售额同比增长3.3%，汽车燃料销售额同比增长7.2%。
+与2019年6月相比，零售业增长最显著的是家用电器专卖店销售额（同比增长36%）、文化和娱乐产品（27.7%）、医药产品（16.3%），下跌最严重的是商场或者市场销售额（同比下降25.5%）。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：lg",2020-08-20 02:26:12,同花顺
+12,2020年上半年拉脱维亚空中交通管制局处理的航班数量下降50.2%,"拉通社7月8日报道，拉脱维亚空中交通管制局表示，今年上半年该局共处理72350次航班，较2019年同期下降50.2%。其中，往返里加的航班数量为18692次，同比下降54.9%；过境航班数量为53658次，同比下降48.3%。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：lg",2020-08-20 02:26:06,同花顺
+13,银行经济专家：第二季度拉脱维亚GDP可能下跌8.5%至15%,"拉通社7月30日报道，多名银行专家表示，今年第二季度拉脱维亚GDP可能下降8.5%至15%。
+北欧斯安银行宏观经济专家丹尼斯表示，第二季度是拉脱维亚经济最艰难的时刻，防疫措施导致经济活动锐减。第二季度拉脱维亚GDP可能下跌10%至15%。
+瑞典银行拉脱维亚分行首席经济学家利娃表示，第二季度拉脱维亚艺术、娱乐、交通、旅游、餐饮相关产业、制造和贸易等多数产业出现下滑，下滑程度也高于第一季度。然而，农业和公共管理行业可能出现增长。现在仍然很难判断第二季度拉脱维亚经济受打击的程度，GDP可能会下降10%。
+Luminor 银行经济学家皮特里斯表示，第二季度拉脱维亚多数产业下滑，拉脱维亚GDP可能同比下降8.5%。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：lg",2020-08-20 02:25:56,同花顺
+14,拉脱维亚财政部：上半年拉脱维亚税收收入较预期目标少9.3%,"拉通社7月29日报道，拉脱维亚财政部表示，今年上半年拉脱维亚税收收入为55.2亿欧元，较预期目标少9.3%。拉脱维亚财政部代表指出，税收的减少不仅由经济活动减少导致，还受政府为受疫情打击的企业免税影响。根据拉脱维亚国家税务局数据，拉脱维亚拖欠税款由今年1月的8.65亿欧元增长至6月底的10.14亿欧元。
+拉脱维亚财政部表示，今年上半年不仅餐饮住宿、交通物流等疫情影响严重行业的税收减少，建筑及其他产业的税收也出现下降。然而，信息技术和健康及社保行业的税收实现了增长。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：lg",2020-08-20 02:25:50,同花顺
+15,自8月1日起 拉脱维亚允许500人以下的室内活动及3000人以下的室外活动,"拉通社8月1日报道，根据拉脱维亚内阁《关于防治新冠肺炎传播安全措施条例》规定，自8月1日至8月31日，在小于1000平米的室内场所可举办不多于250人的活动，在大于1000平米的室内场所可举办不多于500人的活动，在可为每人提供不少于4平米空间的室外场所可举办不多于3000人的活动。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：lg",2020-08-20 02:25:44,同花顺
+16,尼日利亚2020年7月CPI上涨12.82%,"尼日利亚统计局发布《2020年7月CPI报告》显示，7月尼日利亚总体CPI上涨12.82%，高于上月0.26个百分点，继续维持上涨态势。城市地区CPI上涨13.40%，农村地区上涨12.28%，均略高于上月增幅。除农产品价格波动因素，7月核心CPI涨幅为10.1%，较上月下降0.03个百分点。
+7月食品价格指数上涨15.48％，高于上月0.3个百分点，主要由面包谷物、马铃薯山药等茎类、肉类、水果、食用油和鱼类价格上涨导致。（陈明智）
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：lg",2020-08-20 02:25:29,同花顺
+17,养一头牛 纯赚5000元！牛肉价格连涨9周 达历史高位！还会再涨吗,"牛肉蛋白质含量高、脂肪低、味道鲜美，是百姓餐桌上的常客。作为牛肉消费的淡季，往年夏季的牛肉价格会出现一定的回落，但是今年的牛肉却一反常态，出现连续上涨。
+淡季不淡 全国牛肉价格连续9周上涨
+在北京市朝阳区的一家大型超市，这里的牛肉既有新西兰、乌拉圭、巴西进口的冷冻品，也有山东、东北地区的国产冷鲜肉。前来采购的消费者说，这个夏天，牛肉价格明显比去年要高。
+北京消费者：所有肉类涨得都挺多的，牛肉的话，给孩子买一块做辅食，一小块50多元。
+超市负责人介绍，近年来我国肉类消费结构也在发生变化，牛肉消费量显著增加，牛肉在红肉消费中的占比，从此前的4%左右上升到现在的11%左右。
+而近期牛肉价格上涨一个是因为受国际疫情影响，牛肉进口速度有所放缓，另一个是国内疫情好转，餐饮行业恢复，牛肉需求增加，也是导致牛肉价格上涨的因素。
+盒马鲜生采购经理 刘小雨：牛腩去年应该在32元一斤，今年在39元左右一斤，有百分之二十的增长。西冷和外脊对比去年应该有百分之四五十的增长，一斤在70元左右。
+记者随即走访北京的农产品批发市场发现，牛肉价格的上涨，同样也提高了餐饮企业的成本。
+北京某餐饮企业开发经理 熊仁利：受牛肉价格上涨的影响，我们也会多元化推出其它的食材产品，例如在鸡肉方面，辣子鸡、时令性的蔬菜等，去引导顾客消费。
+根据农业农村部对全国500个集贸市场的监测，自6月份以来，牛肉价格已经连续9周环比上涨。
+农业农村部肉牛监测预警专家组首席专家 王明利：牛肉价格环比连续上涨，到目前为止已经处于一个历史上的高位，最近一周牛肉价格达到83.5元每公斤，同比上涨15%以上，牛肉市场显示出淡季不淡的状态。
+肉牛养殖效益提升
+“架子牛”成紧俏品
+牛肉价格出现上涨，对于肉牛养殖户来说是一件好事。近年来，伴随着我国的牛肉消费越来越多，我国各地肉牛养殖也持续增加，那么，目前肉牛养殖的效益如何？在生产端又受到哪些因素影响？
+白万玉是河北省张北县肉牛养殖户，目前养殖规模150头。白万玉告诉记者，今年肉牛养殖效益不错，他已经打算扩大养殖规模。
+白万玉表示，今年牛的出栏价格是17元一斤，去年是15元一斤， 一头牛纯挣利润是5000元左右。
+白万玉说，最近，和他有同样想法的养殖户不在少数，这也让架子牛（6到18个月的育成牛）在当地就成了紧俏货。这天，白万玉听说市场刚从内蒙古进了一批架子牛，他不顾雨天路滑，第一时间赶往交易市场。
+河北省张北县架子牛中介交易员马福清说，一般中小肉牛养殖户都是购买架子牛，进行8到10个月的育肥，然后出栏销售，往往一头牛就可以赚到5000元左右。
+而在牛肉的生产环节中，繁殖端需要较高资金和技术、较长的周期、大量中小肉牛养殖户不能，也不愿意自繁自养，加上过去基础母牛不足，这也造成了 目前架子牛供应增长较慢，肉牛市场供给量偏紧的情况。
+扩大规模化养殖 保障牛肉供应
+记者在采访中了解到，现阶段肉牛产能仍处于振荡恢复期，产量增长相对缓慢，牛肉价格正在逐渐趋于平稳。减少这种振荡的幅度，保证牛肉价格在合理区间的关键又是什么？
+在河北张家口宣化区，袁亚青正在指挥工人加快建设现代化牛舍，她说，合作社二期工程总投入2000万元， 未来自动化的喂料系统和种养结合的模式，将会大大提升肉牛的生产能力。
+河北省张家口市宣化区佳溢肉牛养殖合作社总经理袁亚青表示，二期工程年底完成，可实现年出栏9000头，是现在生产能力的10倍。
+河北省张家口市宣化区农业农村局畜牧站站长 梁杰：通过自繁自养节约成本、种养循环、粪污资源化利用、集中饲喂、分阶段精准饲料配方等措施，肉牛的出栏率提高了大约30%以上。
+梁杰介绍，目前宣化区一些肉牛养殖的散户正在加快退出，发展适度规模化养殖已经超过95%，自繁自养达到80%以上。
+同样是在肉牛养殖地区，山东临清市这家肉牛养殖企业，运用新型养殖方式。这里的肉牛听音乐、做按摩、膳食结构精粗搭配，提升产量和品质，每年可以提供470吨黑牛肉。
+山东省临清市君博食品有限公司总经理 马伟民：现在肉牛养殖行业，一个是从肉牛的品种上进行提升、改良，第二就是从延伸产业链上来提高利润。
+业内专家表示， 通过建设标准化的养牛场，进行统一管理、统一技术、统一销售，人工成本大幅降低、规模效益得以体现。 随着我国规模化肉牛养殖比重的增加，牛肉质量和产能都能更加可控，国内牛肉的供给问题将得到更好的解决。
+中国畜牧业协会副秘书长 刘强德：在很长一段时间，牛的数量是下滑的，由于散户的退出、役用的退出，但是我们监测，在很多主产区，适度规模的牛群在增加，包括母牛群、育肥群，几十头、上百头、几百头的规模，品种改良效果比较好，出栏牛体重、出肉率、出栏率都比较高。
+监
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：lg",2020-08-20 02:25:09,同花顺
+18,深圳上半年为企业减负近530亿,"疫情发生以来，深圳减税降费政策全面落实落地，覆盖面广泛。政策大力支持企业减税降费据了解，今年上半年深圳全面落实中央减税降费政策，扎实做好“规定动作”。全市落实中央减税降费政策为企业减负近530亿元。其中，实施减税政策为企业减负185亿元；实施降费政策为企业减负超过340亿元，最大限度争取有利于企业的地方执行口径，减免社保费约230亿元、减免医保费约62亿元，其他政策减免社保费50亿元。深圳财政积极出台落实减税降费政策帮扶企业渡过难关工作方案，联合税务、社保、卫健、工信等部门，自身加压，精准“自主动作”，出台“惠企16条”，上半年为企业减负超230亿元。其中，减免税费超90亿元。对全市企业免征一季度房产税和土地使用税15亿元；为企业发放稳岗返还资金48.9亿元；对市区两级政府和国企物业免除2个月租金约13.8亿元；对物业服务企业实施财政补贴5.2亿元；减轻工商企业用水用电成本，为22.3万户企业发放污水处理费补贴1.1亿元，代缴基本电费5.7亿元；减免文化事业建设费和港口建设费3.5亿元。同时，缓缴税费超140亿元。包括，为企业办理延缴社保费和医保费近72亿元，困难企业缓缴住房公积金约12亿元，为4000多户企业办理延期缴税约60亿元。今年上半年，深圳市对提供公共交通运输服务、生活服务，以及为居民提供必需生活物资快递收派服务取得的收入免征增值税政策，为企业减负7亿元。该政策是落实“六稳”“六保”的重要举措，在保障基本民生不受影响等方面发挥了重要作用。社保费减免力度远超去年同期。据了解，社保费减免是今年减税降费的“主菜”，社保费减免力度远超去年同期，充分体现了保就业、保市场主体的特点，特别是对抗风险能力较弱的中小微企业作用明显，切实减少中小微企业经营成本，鼓励中小微企业持续经营，稳定中小微企业主预期，有力保障了居民就业。此次减税政策更加倾向小微企业。加大对小微企业与个体工商户的支持是落实“保居民就业”“保市场主体”的必要条件，在缓解企业的经营困难，促进复工复产，激发市场微观主体活力等方面起到重要作用。以光明招待所为例，这家以“光明乳鸽”闻名的餐厅申报享受了免征增值税税额110万元，餐厅财务告诉记者，“在经营最困难的时刻，减税让我们店得以喘息，5月份还新开了分店。”据悉，今年上半年，对小微企业及个体工商户减免增值税政策为深圳企业减负9亿元，在政策支持下，深圳“小店经济”生机勃发，实现“V字”反弹的小店数量排名全国前五。资金回流到外贸出口企业据悉，在疫情防控常态化的形势下，深圳市疫情防控重点保障物资生产企业增值税留抵退税政策已为企业减负2亿元，疫情防控捐赠税前全额扣除政策已为企业减负3亿元，提高出口退税率政策已为企业减负2.16亿元。与此同时，出口退税速度也加快。自4月份起，深圳出口退（免）税已连续3个月实现正增长，出口退税额404.1亿元，占全国8.37%，巨量资金回流到外贸出口企业，为深圳外贸基本盘的稳定和增长提供了强劲助力。深圳市还最大力度出台地方性政策。出台减免3个月房产税与城镇土地使用税政策，直接减少了各行业企业的经营成本，对于重资产的行业，尤其是在本次疫情中受影响较大的住宿、旅游等行业，起到了明显的减负作用。“线上化”办理让企业快速受益财政资金促金融“输血”，“入池”贷款逾3000亿。针对中小微企业融资难、融资贵问题，深圳财政还从财政角度大力度帮助企业增信用、降成本。一方面，扩大中小微企业银行贷款风险补偿资金池的覆盖范围，将政策受益面从中小微企业扩大到小微企业主和个体工商户，并提高对银行的补偿比例。据悉，目前“入池”贷款已从去年底的1028亿元增长到逾3000亿元，充分发挥了财政资金促进金融“输血”的作用。另一方面，优化政府性融资再担保体系，将政府风险分担比例从50%提高到60%，并免收再担保费用。据悉，疫情发生以来，深圳市财政局再担保中心已受理807家企业、42亿元贷款的再担保申请，免收费用830万元，为资金链紧张的企业带来“及时雨”。惠企政策深入实施让企业快速获益。此外，针对疫情期间企业普遍存在租金、经营成本压力问题，主动协调各部门出台有针对性的财政资金补贴政策，并通过“线上化”“去审批化”办理，让企业快速受益。随着各项惠企政策措施深入实施，深圳市场主体活力整体快速恢复。深圳全市350万户纳税人的增值税发票数据显示，上半年深圳总体销售收入已全面恢复至上年同期水平，整体复产率达100%。其中：4、5、6月全市销售收入同比分别增长17.9%、12.8%、20.4%，呈现快速回升态势。上半年全市新增纳税登记户数23.8万户，其中，新增企业15万户，同比增长8.6%，充分体现了各项惠企政策的实施效果，也显示出深圳经济发展的韧性。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：lg",2020-08-20 02:02:00,同花顺
+19,亚洲开发银行为孟加拉国贷款5000万美元支持PPP基建项目,"据孟加拉国《金融快报》8月19日报道，亚洲开发银行为孟提供贷款5000万美元，用于为部分公私合营方式（PPP）基建项目提供资金。这笔贷款将增强孟基础设施融资基金有限公司的能力，该公司由孟政府成立，专门用于为基础设施项目提供本地货币长期贷款。亚洲开发银行是孟政府基础设施融资基金有限公司的长期合作伙伴，还帮孟制定了PPP法案和孟政府PPP机构框架。亚洲开发银行还将为孟提供65万美元的无偿技术援助，用于支持孟基础设施基金有限公司进行战略审核和升级，同时帮助其提高运营和项目执行能力。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();
+责任编辑：lg",2020-08-20 02:01:42,同花顺

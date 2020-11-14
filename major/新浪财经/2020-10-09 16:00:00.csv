@@ -1,0 +1,710 @@
+,title,content,pub_time,src
+0,长城汽车：9月汽车销量同比增长17.79%,"10月9日消息，长城汽车公告，2020年9月公司汽车销量总计11.78万辆，同比增长17.79%；9月汽车产量11.9万辆，同比增长18.89%。9月新能源车销售6731台，1-9月累计销售24，846台。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陈志杰",2020-10-09 16:56:06,新浪财经
+1,2分钟读财报|2年亏11亿、国资入主 唐德作品断档如何自救?,"视频加载中，请稍候...
+自动播放
+(image_address=""//p.ivideo.sina.com.cn/video/356/345/513/356345513.jpg"")
+play
+视频| 唐德影视
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 356345513,
+pid:1,
+url: 'https://video.sina.com.cn/p/finance/2020-10-09/detail-iivhuipp8709128.d.html',
+title:'视频| 唐德影视'//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=356345513/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+9月25日晚，唐德影视发布一则公告，宣布公司实控人发生变更。
+公告显示，吴宏亮与浙江易通的股份转让事项已完成过户登记手续，过户时间为2020年9月23日，过户数量为2094.6万股，占总股本的5%。同时，吴宏亮将所持公司9865.41万股股份的表决权委托给浙江易通行使，后者合计拥有公司1.2亿股股份的表决权，成为公司控股股东。
+天眼查显示，浙江易通成立于2006年，由浙江广播电视传媒集团100%持股，因此交易完成后，浙江广播电视集团为唐德影视实控人。
+另外，同日范冰冰也退出了无锡爱美神影视文化有限公司，爱美神大股东由范冰冰变更为周海国。
+爱美神和唐德影视关系匪浅。2016年，唐德影视曾拟以现金方式收购爱美神51%股权，但随后终止，后唐德影视与爱美神宣布共同设立子公司。其中唐德影视认缴注册资本1470万元，占49%，爱美神认缴1530万元，占51%。
+但范冰冰“阴阳合同”事件爆发，唐德影视顿时陷入经营泥潭。《巴清传》播出遥遥无期，范冰冰的深入绑定也无法为公司带来更多收益。2018年，唐德影视对《巴清传》计提坏账准备4.96亿元，当年资产减值损失达6.75亿元，直接导致2018年公司巨亏9.52亿元。2019年，作品断档的唐德影视再度亏损1.27亿元，连续两年亏损。
+2020年上半年，唐德影视实现营业收入1.31亿元，同比减少40.11%，归母净利润亏损0.71亿元，亏损小幅缩窄。从半年报来看，公司正在发行阶段的电视剧包括《北部湾人家》《东宫》《因法之名》等，电影仅《狂怒沙暴》在后期制作和预收洽谈过程中，无其他电影作品，后续发展显得有些乏力。
+此外，公司还涉及23项诉讼，其中包括诉高云翔、北京艺璇文化经济有限公司演出合同纠纷案，涉案金额达6382.4万元，目前此案尚在审理中。
+2分钟读财报|净利暴跌200% 黑芝麻天花板难破50亿营收成空谈
+2分钟读财报|与合作书法家闹掰 华夏万卷IPO前实控人狂揽6900万
+2分钟读财报|蚂蚁金服IPO：手握支付宝、余额宝 估值2万亿
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：常福强",2020-10-09 16:52:50,新浪财经
+2,2分钟读财报|金种子酒渐萎缩:产品升级受阻 四年销量下滑72%,"视频加载中，请稍候...
+自动播放
+(image_address=""//n.sinaimg.cn/front20201009ac/380/w540h640/20201009/57fe-kaaxtfp1763026.jpg"")
+play
+视频|金种子酒
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 356345507,
+pid:1,
+url: 'https://video.sina.com.cn/p/finance/2020-10-09/detail-iivhvpwz1088313.d.html',
+title:'视频|金种子酒'//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=356345507/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+金种子酒是A股17家上市白酒公司中是唯一亏损的，也是正在“失去市场”的中小酒企的代表。
+财报资料显示，金种子酒上半年实现营收4.1亿元，同比下滑19.1%；亏损5436.4万元，上年同期为亏损3178.3万元。
+这已经不是金种子酒业绩第一次不达标。从2013年到2019年，除2018年外其余年份金种子酒营收均为负增长。7年中，金种子酒营收从20.8亿萎缩到2019年的9.1亿元。毛利率则从66%一路下滑到29%。
+其销量萎缩更严重，2015年白酒销量21591千升，到了2019年已经不到6000千升，四年间下滑了72%。
+安徽有四家白酒上市公司，竞争异常激烈。根据招商证券研报说法“徽酒企业在20-100元价格带之间密集交错，激烈竞争，基本上每20元就能形成一个清晰的价格带，每个价格带都有强势品牌主导。”
+古井贡酒与口子窖是省内强势品牌，占据100-200元价格带，这也是省内的主流价格带。迎驾贡酒占据70-100元价格带。迎驾贡酒往下还有高炉、宣酒等区域品牌。再往下是金种子酒、文王贡酒等第三梯队酒企。
+在这种情况下，酒企想要突破价格带或者突破地域扩张，难度非常大。
+金种子酒以县级市场为主，2013年以来营收不断萎缩。在2016年行业复苏的大背景下，仍没有止跌。
+2016年公司对渠道和产品进行梳理，突出徽蕴和柔和系列，试图借此实现突破。徽蕴终端售价在100元左右，柔和系列则在70元左右。从近几年来看，这两款产品销量并不理想。
+根据年报披露，2016年中高档酒（柔和与徽蕴）实现营收8.2亿元，同比下滑17%；2017年下滑13.6%至7亿元；2018年下滑9.8%至6.4亿元；2019年下滑39.9%至3.8亿元。
+低端酒市场逐渐萎缩，产品升级受阻，100元以上产品无法打开局面，销量与营收额不断下滑，这就是金种子酒目前面临的困境。
+2分钟读财报|稳健医疗欲借疫情IPO：全棉时代担重任质量存疑
+2分钟读财报|1825亿解禁潮来袭，科创板短期值得投资吗？
+2分钟读财报|手机壳第一股杰美特IPO 重要客户流失隐忧何解
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：常福强",2020-10-09 16:52:13,新浪财经
+3,2分钟读财报|若羽臣IPO:毛利率显著低于同行 品牌议价能力弱,"视频加载中，请稍候...
+自动播放
+(image_address=""//n.sinaimg.cn/front20201009ac/380/w540h640/20201009/5704-kaaxtfp1760310.jpg"")
+play
+视频|若羽臣
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 356345509,
+pid:1,
+url: 'https://video.sina.com.cn/p/finance/2020-10-09/detail-iivhuipp8708474.d.html',
+title:'视频|若羽臣'//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=356345509/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+不久前，若羽臣成功过会，并于9月25日登陆深交所。
+资料显示，若羽臣主要为母婴、个护、美妆等来自全球的消费品品牌客户提供互联网整合营销、店铺运营、客户服务、仓储配送等全方位电子商务综合服务。业务上有些类似的丽人丽妆也于9月底登陆了A股。
+2017年-2019年若羽臣的营业收入分别为6.71亿元、9.31亿元、9.59亿元，营收增速2019年放缓至个位数；净利润分别为0.58亿元、0.77亿元、0.86亿元，净利润增速也明显下滑。
+通俗来讲，若羽臣的业务包括线上代运营业务、渠道分销业务和品牌策划业务。线上代运营即基于授权帮助品牌方运营淘宝、京东等店铺；渠道分销可以简单理解为品牌的供应商；品牌策划业务即提升品牌热度、提供营销服务。
+值得注意的是，若羽臣的毛利率显著低于行业其他可比公司，2019年若羽臣毛利率为34.25%，而公司所列行业可比公司宝尊电商、丽人丽妆、壹网壹创的毛利率分别为61.88%、36.73%、43.04%，若羽臣的毛利率明显低于平均水平。而2020年上半年，公司毛利率更是进一步下降至30.58%，由于主营业务依托品牌授权，毛利率的走低或意味着公司对品牌的议价能力不及从前。
+另外，公司依赖返利也是一大经营隐患。2017年-2019年，公司供应商采购返利金额分别2429.38万元、3975.39万元、5920.64万元，销售返利金额分别为6561.82万元、1.17亿元、1.56亿元。通常来说，采购规模和销售规模越大，返利越高。对比公司2017年-2019年的净利润，若供应商的返利政策发生变动，在供应商处话语权较弱的若羽臣业绩将受到较大影响。
+若羽臣还和曾经的第一大客户闹掰。2014年和2015年祛痘护肤品牌比度克为若羽臣第一、第二大客户，但据中国裁判文书网显示，比度克曾起诉若羽臣，要求后者支付拖欠的货款2199.82万元及逾期付款利息163.16万元。此案最终若羽臣败诉，二者的合作关系也随即中止。
+2分钟读财报|境外收入占比超9成 天元宠物IPO信批频违规
+2分钟读财报|稻草熊赴港IPO：刘诗诗赵丽颖持股 曾卖身A股失败
+2分钟读财报|贝因美年报遭问询：摘帽立亏1亿 股东半年频套现
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：常福强",2020-10-09 16:51:18,新浪财经
+4,格力电器：已耗资近52亿元回购公司1.57%股份,"10月9日消息，格力电器（000651）10月9日晚间公告，截至9月30日，公司以集中竞价方式累计回购公司股份9418.47万股，占公司总股本的1.57%，最高成交价为57元/股，最低成交价为53.01元/股，支付总金额为51.82亿元。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：逯文云",2020-10-09 16:48:24,新浪财经
+5,锡商银行二股东所持3.7亿股将被拍卖 接盘者需满足7大条件,"记者|张晓云
+开业仅5个月，锡商银行部分股权即将遭拍卖。
+阿里拍卖网信息显示，11月10日，锡商银行将有37笔1000万股股份进行拍卖，共计3.7亿股。每笔起始价为1000万元，评估价为1428万元，较认购价估值增加了42.8%，标的所有人均为江阴澄星实业集团有限公司（下称“澄星集团”）。
+因澄星集团未自动履行生效法律文书确定的义务，江苏省无锡市中级人民法院裁定，拍卖、变卖澄星集团所有的质押给无锡东弘园林景观工程有限公司的锡商银行3.7亿股权。
+对此，锡商银行方面表示，锡商银行与全部股东在资产、业务、人员、财务等方面均保持独立性。锡商银行与澄星集团均是各自独立经营的市场主体，双方亦无任何关联交易。此次澄星集团所持锡商银行股份遭司法拍卖不会对锡商银行正常经营等产生任何影响。
+天眼查App显示，锡商银行注册资本20亿元，法定代表人为周海江，其同时为红豆集团董事局主席兼CEO。本次拍卖标的所有人澄星集团为锡商银行第二大股东，持股比例为24%，仅次于第一大股东红豆集团。股权出质信息显示，除质押给东弘园林的3.7亿股权外，澄星集团在2020年4月质押给兴达投资集团锡商银行股权1.1亿股。
+作为江苏无锡的石化巨头企业，澄星集团创立于1984年，产品涉及精细磷化工、精细煤化工、石油化工（PET、PTA）等领域，拥有独资和控股的子公司50余家，总资产规模超500亿元，员工一万多名，旗下拥有一家上市公司澄星股份（维权）（600078，SH）。
+目前，澄星集团正陷入困境中，除了不得不拍卖持有的银行股权外，其所持有的上市公司澄星股份的全部股权也遭到司法冻结。9月25日，澄星股份公告称，控股股东澄星集团所持澄星股份占总股本25%股权全部被司法轮候冻结，冻结原因包括仓储合同纠纷、合同纠纷、债权转让合同纠纷等。
+今年4月16日，锡商银行正式开业，成为我国第19家、江苏省内第二家民营银行。开业仪式上，江苏省省长吴政隆以及各金融监管部门负责人、无锡市和锡山区领导、各兄弟银行行长均到场祝贺。为全力支持企业复工复产，锡商银行还与朝阳集团、泰信机械、华精新材、大经供应链、中恒大耀等企业举行授信签约。
+根据相应转让规定，锡商银行对接盘澄星集团所持锡商银行股权的股东提出了至少7大要求，具体为：
+1、发起人注册地必须在江苏省内；
+2、资本属性要求必须为纯民营企业，股东中不得有国资和外资成分；
+3、发起人主要业务要求：不能为限制性行业和企业的投资人；
+4、发起人财务指标要求包括：最近3个会计年度连续盈利、资产负债率低于70%、权益性投资余额不超过净资产50%；
+5、实控人为中国公民，不得有绿卡或外国永久居留权；
+6、发起人及实际控制人最近3年未出现违法违规情况，也没有出现证券市场相关行政处罚、刑事处罚或涉及经济纠纷有关的重大民事纠纷；
+7、符合“两参一控”监管要求，即同一发起人入股银行业金融机构不得超过2家，如取得控制权只能投1家。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陈志杰",2020-10-09 16:45:34,新浪财经
+6,"""1元更香节""来袭:淘宝特价版有望催生国内新品牌 这些公司已卡位","炒股就看金麒麟分析师研报，权威，专业，及时，全面，助您挖掘潜力主题机会！
+来源：财联社
+原标题：“1元更香节”来袭 淘宝特价版有望催生国内新品牌 这些公司已卡位
+财联社10月9日讯，传统“双十一”购物节尚未到来之时，淘宝特价版于今日宣布，将在明日启动“1元更香节”，1亿件厂货每件只要1块钱包邮到家，活动将一直持续到双十一结束。据官方介绍，淘宝特价版此次联合了145个产业带、120万产业带商家、50万工厂。
+(image_address=""//n.sinaimg.cn/finance/crawl/36/w550h286/20201009/7a77-kaaxtfp1747302.png"")
+淘宝特价版是阿里巴巴于年初推出以C2M产业带为核心供给的购物APP，平台8月的月活跃用户达到5500万。今年以来，下沉市场净增的特价用户已有30.9%流向了淘宝特价版。数据机构易观的报告更指出，淘宝特价版连续保持两位数以上的超高速增长，“在月活千万级以上的App中是绝无仅有的”。
+除淘宝外，京东、拼多多、苏宁等电商平台也都先后推出C2M战略。根据艾瑞咨询数据，随着中产阶级崛起，消费进入“去品牌化”发展阶段，预计2022年中国C2M市场潜在容量超过一万亿元，但从电商平台的工厂扶持计划数据来看，截至2018年C2M交易规模约为175亿元，渗透率仅为4.1%，增长空间广阔。
+开源证券观点认为，长期来看，C2M模式构建了可持续发展的生态体系，实现了消费者、制造商、平台方的三方共赢。尤其疫情之后，中信观点认为，疫情将低线用户对电商消费快速从“接触—熟悉—依赖”推进，因此主打低线性价比消费的淘宝特价版和京喜才能迅速起量。
+国金证券认为，电商巨头间在下沉市场的战争，从前两年的用户流量的拉取，正在进一步向供给侧资源的争夺而升级。
+国金证券认为淘宝特价版有望催生一批国内新品牌的诞生。从品牌商角度来看，品牌存在的意义主要在于“降低搜索成本”或者“彰显消费者身份”，C2M战略并不会令品牌消失，而是有望为具有强大供应链能力的工厂提供更多流量，助力其成长为国内新品牌。推荐标的：阿里巴巴、南极电商、珀莱雅、丸美股份、壹网壹创等。
+扫二维码 3分钟开户 紧抓股市暴涨行情！
+(image_address=""//n.sinaimg.cn/finance/512/w256h256/20200807/333c-ixkvvuc9099771.png"")
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：逯文云",2020-10-09 16:43:00,新浪财经
+7,嘀嗒出行IPO发招股书：纯利率48.6% 顺风车这么挣钱？,"原标题：嘀嗒出行IPO发招股书：纯利率48.6%，顺风车这么挣钱？
+(image_address=""//n.sinaimg.cn/sinakd2020109s/682/w883h599/20201009/6b27-kaaxtfp1640536.png"")
+国内出行市场各玩家IPO传言多时，最后嘀嗒出行捷足先登。
+10月8日，嘀嗒出行向港交所递交招股书，海通国际资本有限公司及野村国际（香港）有限公司为联席保荐人。
+专注于顺风车与出租车业务的嘀嗒出行成立于2014年。公司自2019年起已实现盈利，2019年及2020年上半年经调整利润净额分别为人民币1.72亿元及人民币1.51亿元，而同期经调整纯利率则分别为29.7%及48.6%。
+顺风车业务是嘀嗒出行的主营业务。2020年上半年，顺风车平台产生的营收人民币2.73亿元。此外顺风车平台的平均服务费率为8.3%。
+嘀嗒出行创始团队约有34.43%股权，占有投票权50%。蔚来资本、IDG为前两大机构股东，上市前持股比例分别为21.60%、10.23%。此外，高瓴资本、京东、携程均有股权。蔚来汽车董事长李斌为嘀嗒出行非执行董事，主要负责就业务及投资策略、整体市场趋势等提供意见。
+占顺风车66.5%的份额
+为中国最大的顺风车平台
+10月8日，嘀嗒出行向港交所递交招股书，共享出行将迎来第一股。根据弗若斯特沙利文最新报告，按2019年顺风车搭乘次数计算，嘀嗒出行占据66.5%的市场份额，为中国最大的顺风车平台。
+2014年，嘀嗒出行起家于顺风车业务，原名嘀嗒拼车。2018年1月，嘀嗒拼车对外宣布正式完成品牌升级，从嘀嗒拼车升级为嘀嗒出行，从一个专注顺路拼车的出行平台，升级为一个出租车、顺风车兼具的移动出行平台。
+顺风车是共享经济的典型代表，与网约车相比更具有社会属性。2015年，滴滴出行也入局顺风车业务。一年后，滴滴顺风车大约占到中国拼车市场69%的市场份额。然而2018年滴滴顺风车两起安全事件令顺风车业务处于生死边缘。当时滴滴顺风车下线、高德顺风车暂停、嘀嗒顺风车关闭深夜服务。
+滴滴顺风车下线令顺风车市场洗牌。此后，哈啰出行、曹操出行在全国上线顺风车业务，高德恢复顺风车业务，首汽约车也试水顺风车业务。面对行业生变，滴滴顺风车决定全国试运营。
+顺风车业务是嘀嗒出行的主营业务。招股书显示，截至 2020年6月30日，嘀嗒出行在366个城市提供顺风车服务，拥有约1920万名注册私家车主， 包括约980万名认证私家车主。成立以来，为约3670万名顺风车乘客提供服务。 
+招股书显示，2017年、2018年、2019年、2020年截至上半年，嘀嗒出行顺风车平台分别产生约2360万次、4820万次、1.79亿次及5930万次搭乘，同期交易总额分别约为人民币7亿元、人民币19亿元、人民币85亿元及人民币33亿元。
+2017年-2019年，嘀嗒出行顺风车平台产生的营收分别为人民币2770万元、 人民币7790万元及人民币5.33亿元，分别占同期总营收的56.6%、66.3%及91.9%。 截至2019年上半年及2020年上半年，顺风车平台产生的营收分别为人民币1.64亿元及人民币2.73亿元，分别占同期总营收的88.0%及87.8%。 
+嘀嗒出行的营收来自于向私家车主收取服务费，公司营收的提升也意味着顺风车平台服务费率随之上涨。招股书显示，嘀嗒出行可能会每月审阅当地城市的经济状况及战略因素并据此调整费用水平。服务费通常包括最低起步价及基于预期行程距离按分级基准计算的预定固定金额。服务费不论行程距离均有一定上限。2017年-2019年及2020年上半年，平均服务费率分别为3.7%、4.1%、6.3%及8.3%。 
+2019年起已实现盈利
+2020年上半年实现净利1.51亿元
+招股书显示，按经调整利润净额计算，嘀嗒出行自2019年起已实现盈利。2019年及2020年上半年经调整利润净额分别为人民币1.72亿元及人民币1.51亿元，而同期经调整纯利率则分别为29.7%及48.6%。
+除了顺风车业务外，嘀嗒出行另一大业务为出租车网约服务。2017年10月，嘀嗒出行推出出租车网约服务。 根据弗若斯特沙利文报告显示，截至2020年6月30日，嘀嗒出行拥有合共逾73.5万名认证出租车司机，占全国所有出租车司机约26.4%。2019年，按搭乘次数计算，嘀嗒出行在中国出租车市场的出行平台中排名第二。
+嘀嗒出行介绍，截至2020年6月30日，已在86个城市提供了出租车网约服务，与17个城市的市级或区级出租车协会建立合作。与西安地方交通部门及出租车协会开展智慧出租车合作，并准备将合作模式复制至沈阳、徐州及南京等其他城市。 
+此外，为提高中国传统出租车打车管理的效能，2018年8月，嘀嗒出行推出凤凰出租车云平台 ，该平台为一种面向出租车公司的基于云端的出租车管理软件。截至目前，嘀嗒出行为55个城市中的698家出租车公司提供凤凰出租车云平台服务。 
+2019年8月，嘀嗒出行出租车开始变现。招股书显示，2019年及2020年上半年，嘀嗒出行智慧出租车服务产生的营收分别为人民币 630万元及人民币1560万元，分别占同期总营收的1.1%及5.0%。 
+广告服务费也是嘀嗒出行的一大营收来源。招股书显示，2017年-2019年，嘀嗒出行从广告及其他服务分别产生营收人民币2120万元、人民币3970万元及人民币4100万元，分别占同期总营收的43.4%、33.7%及7.0%。2019年上半年及2020年上半年，广告及其他服务分别产生营收人民币2250万元及人民币2240万元，分别占同期总营收的12.0%及7.2%。 
+综上所述，2017年-2019年的营收分别为人民币4890万元、人民币1.18亿元及人民币5.81亿元，其中截至2019年上半年与2020年上半年，营收分别为人民币1.87亿元及人民币3.11亿元。
+蔚来资本为第一大外部股东
+高瓴、京东等参与
+嘀嗒出行IPO早有传言。2019年9月，嘀嗒出行CEO宋中杰接受采访时表示，公司有广告业务、增值业务，已实现盈利。
+从那时起，嘀嗒出行就相继传出在IPO前一轮融资中筹资至多3亿美元。今年9月，有消息称，嘀嗒出行考虑在香港进行5亿美元IPO。当时，嘀嗒出行表示，“针对这则信息不予评论，没有相关信息可以披露。”
+招股书显示，从2014年起嘀嗒出行共完成5轮融资，前4轮完成3.5亿美元融资。最近一轮融资封闭期为今年8月，其中，E2轮融资金额近3.5亿美元。
+嘀嗒出行运营主体北京畅行的登记股东宋中杰、朱敏、李金龙、李跃军及段剑波分别拥有60.58%、10.54%、10.54%、10.54%及7.82%的股权。
+股权方面，嘀嗒出行5位联合创始人拥有已发行股份总数约34.43%的权益，占有投票权50%。 机构股东包括蔚来资本、IDG、崇德投资、易车、高瓴资本、京东、携程等，在嘀嗒出行上市前持股比例分别为21.60%、10.23%、7.15%、4.95%、4.14%、4.14%、2.86%。
+蔚来资本李斌与嘀嗒出行渊源颇深。2015年2月起，李斌就担任嘀嗒出行董事。2018年4月，在摩拜单车“卖身”美团之后，嘀嗒出行CEO宋中杰透露，已邀请蔚来资本、蔚来汽车董事长和CEO李斌出任嘀嗒出行的董事长。
+实际上，李斌并未出任嘀嗒出行董事长，董事长一职仍为宋中杰。招股书显示，李斌为嘀嗒出行非执行董事，主要负责就业务及投资策略、整体市场趋势， 以及其他需董事会指导及批准的事宜提供意见。 
+“出行教父”李斌看好顺风车市场，根据弗若斯特沙利文报告，中国顺风车市场的交易总额预计将由2019年的人民币140亿元增加至2025年的人民币1139亿元，复合年增长率将为41.8%， 而按交易总额计算，预期2025年顺风车的潜在市场总规模将达到人民币5229亿元。
+事实上，顺风车发展也难一帆风顺，因顺风车与网约车易混淆，也常面临行政罚款。招股书显示，“有关机关的依据指称基于网约车服务的发牌制度，平台目前并无相关执照。顺风车平台累计曾接获77宗行政罚款，每宗罚款金额由人民币5千元至人民币3万元不等，截至最后实际可行日期合共为人民币270万元。 ”
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陈志杰",2020-10-09 16:40:48,新浪财经
+8,前瑞信董事总经理林世伟履职小米CFO 操盘多家小米系公司IPO,"原标题：前瑞信董事总经理林世伟履职小米CFO 操盘多家小米系公司IPO
+(image_address=""//n.sinaimg.cn/spider2020109/283/w650h433/20201009/41d4-kaaxtfp1642331.jpg"")
+10月9日，小米集团（01810）副总裁兼CFO林世伟正式履职。公开资料显示，林世伟此前在瑞信亚太区投资银行与资本市场部任董事总经理及科技、媒体与电信业务主管，今后将负责小米集团财务工作的全面统筹与管理，向小米集团CEO雷军和集团总裁王翔双线汇报。截至发稿，小米股价21港元，总市值2066.7亿港元。
+此前林世伟先后供职于摩根士丹利和瑞信，曾完成阿里巴巴、拼多多、网易、小鹏汽车等公司的IPO，还完成了小米香港IPO、金山云美国IPO、华米美国IPO等项目。
+2019年11月29日，小米集团宣布集团执行董事、高级副总裁、原CFO周受资轮岗出任国际部总裁，并继续担任执行董事、高级副总裁，由集团总裁王翔担任代理CFO。2020年8月26日，小米集团发布公告，宣布新任CFO人选和正式履职日期，至此完成了CFO的遴选工作。
+小米任命邮件内容表示，林世伟将加强集团经营规划、预算管理等财务相关工作，协力推动公司整体运营效率的提升，并进一步加强投资者关系的拓展和维护。
+小米集团最新财报显示，今年上半年小米营收达1032亿元，同比增长7.9%，经调整净利润达到了56.74亿元。此前瑞信发布研报称，小米旗下智能手机业务在中国市场的市占率持续上升，印度市场也在持续复苏。如果华为出售荣耀品牌，一些投资者可能会担心荣耀品牌复兴，但该行认为这不会对小米构成威胁，因为这将使荣耀的原有核心竞争力受到破坏，例如新管理团队的执行风险以及渠道能力减弱。
+该行补充称，市场对小米集团副董事长林斌出售股票过度反应，因为之后会有5年禁售期，股权结构和其管理角色将维持不变。因此，该行认为股价回调提供了更好的切入点，并维持对其“跑赢大市”评级，目标价31港元。
+美银美林则在研报中称，在华为出货量下降的情况下，如果小米能在华为手中获得约20%至30%销量，预计其2021至2022年出货量将有望翻倍增加至约7000万至8000万部。考虑到小米内地互联网销售未来将快速增长，该行将2021至2022年经调整盈测分别上调5%，目标价由22港元上调至26港元。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陈志杰",2020-10-09 16:08:39,新浪财经
+9,热闹的国庆档 遇冷的影视股？,"原标题：热闹的国庆档，遇冷的影视股？
+八天小长假结束，影视国庆档也随之落下帷幕，近40亿票房位列国庆档影史第二。
+影片集中释放，影院上座率提升至75%，加上观影者的报复性消费心理，这个刚刚过去的国庆档也算热热闹闹。
+作为今年最受关注、最长也是最后的一个假期，投资者也对国庆档充满了期待，期待影视公司股价能够逆风翻盘，但在10月9日假期后的第一个交易日，《姜子牙》出品方光线传媒开盘股价跌超12%，《我和我的家乡》出品方北京文化开盘股价震动较明显，截至发稿，股价跌幅超过3%。
+近40亿票房，国庆档收官
+受疫情影响，原定于春节档的《夺冠》、《急先锋》和动画电影《姜子牙》选择在国庆档前后上映，同时，《我和我的家乡》、《一点就到家》等多部影片也出手抢滩国庆档。影片集中释放，影院的上座率提升至75%，加上观影者的报复性消费心理，国庆档热热闹闹收官。
+据国家电影专资办初步统计，2020年国庆档（10月1日至8日），全国电影票房共产出39.52亿元，吸引近1亿人次观影，其中《我和我的家乡》斩获18.7亿元票房，反超《姜子牙》成为国庆档票房冠军；《姜子牙》以13.84亿元位居第二名；《夺冠》票房3.6亿元位居第三名；《急先锋》《一点就到家》等分列其后。
+相较去年，截至2019年10月8日，电影国庆档激战的三部主旋律影片影片《我和我的祖国》、《中国机长》和《攀登者》票房合计超过50亿元，创历史新高。今年的国庆档票房有所回落。
+利好出尽，股价遇冷，光线传媒跌超10%
+10月9日开盘，《姜子牙》出品方光线传媒股价大跌引起了资本市场的关注，光线传媒在节后第一个交易日低开，开盘仅两分钟股价下跌16.15%，此后稍有回升，截至发稿时，光线传媒跌幅超过10%，总市值约为436亿元。
+《我和我的家乡》出品方之一的北京文化股价也遭遇了下跌，截至发稿，跌幅为3.59%。
+从影视板块来看，Wind数据显示，截至发稿，影视指数上涨0.85%，18家上市公司股价上涨，10家上市公司股价下跌。光线传媒跌幅最大，其次是北京文化及万达电影、上海电影、横店影视等。
+一些行业内人士对于国庆档影片主要出品方在节后出现股价下跌的情况并不意外。业内人士对新京报贝壳财经记者表示，“大家都知道国庆档票房会不错，利好出尽，国庆之后光线传媒及北京文化等公司股价下跌并不值得意外。”
+去年，在国庆档票房最佳的年份，同样也出现了利好出尽的情况。在上证、深证指数均上涨的情况下，节后首日截至收盘，影视股整体下跌2.67%，仅6家影视类上市公司股价上涨，23家影视类上市公司股价出现了不同程度的下跌，上海电影跌停收盘，幸福蓝海、北京文化、中国电影、万达影视、光线传媒、华谊兄弟、金逸影城和横店影视跌幅均超过5%。
+上半年亏损 高票房仍是影视公司“保命符”
+虽然股价不振，但国庆档的高票房仍是影视上市公司的利润来源。
+《姜子牙》以13.84亿元斩获国庆档票房亚军，虽然观影者对影片褒贬不一，但作为《哪吒之魔童降世》的姊妹篇，高预期将观众带到了电影院。此前西部证券研报显示，业内预计《姜子牙》的票房在15亿元-20亿元之间，现在看来或能够达成。
+《姜子牙》也将成为拯救光线传媒的救命稻草，光线传媒此前发布的半年报数据显示，报告期内，光线传媒实现营业收入2.59亿元，同比下降77.86%，归属于上市公司股东的净利润为2057.20万元，同比下降80.46%，扣非后的归属净利润为-1318.76万元，同比下降119.22%。《姜子牙》将会为光线传媒带来业绩反转。
+今年国庆档票房冠军《我和我的家乡》背后出品方北京文化也急需输血。2020年上半年，北京文化实现营业收入564.85万元，净亏损6429.83万元。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：逯文云",2020-10-09 16:07:21,新浪财经
+10,假期海外光伏龙头大涨 板块价值重估或开启新一轮“泡沫化”行情,"炒股就看金麒麟分析师研报，权威，专业，及时，全面，助您挖掘潜力主题机会！
+原标题：【研报掘金】假期海外光伏龙头大涨 板块价值重估或开启新一轮“泡沫化”行情
+国庆假期海外光伏龙头股价全线大涨，涨幅最高的福莱特玻璃期间涨幅达到48%，涨幅最小的阿特斯涨幅达到20%，平均涨幅高达36%。机构指出，海外光伏龙头标的全线大涨主要原因在于近期各国对碳减排和可再生能源提高到一个重要的战略高度，提出的规划目标赋予了光伏中长期的成长性，打开了未来十年的黄金发展周期，此外近期国内外频出的光伏利好消息，以及玻璃连续涨价印证了行业高景气度，进一步增强需求端和龙头业绩的确定性。
+核心逻辑
+1、光伏制造板块业绩表现较好，行业前景明朗。上半年，受新冠疫情影响，国内外光伏市场需求偏淡，但在单晶替代多晶、组件集中度提高、双面双玻渗透率提升、逆变器加速出海等结构性趋势之下，光伏制造板块整体业绩表现较好，硅片、组件、光伏玻璃、胶膜、逆变器等环节的头部企业在上半年取得了较高的业绩增速，电池片、背板等环节的业绩表现相对偏弱。随着各国对气候问题重视度提高以及光伏发电经济性的不断提升，光伏行业未来发展前景越趋明朗，光伏终端需求有望在较长时间内呈现增长趋势；从供给端看，未来产业链各环节的竞争格局以及技术发展趋势值得重点关注。
+2、玻璃涨价印证需求强劲，高景气度下龙头公司业绩确定性强。三季度玻璃上涨主要因为龙头产能释放受疫情影响迟滞，同时国内、海外需求均超预期带来短期供需错配。明年看，考虑到产能释放年度均匀分布，且玻璃产能需要爬坡，有效产能增加预计不到20%，而明年预计全球需求增速在30-40%，远超供给增速，预计玻璃价格继续维持高位。玻璃行业龙头公司未来将持续受益于双玻渗透率提升+龙头格局优化。
+3、全球能源革命大势所趋。1）国内看：广东、河北、云南、四川近期出台十四五规划。四省截至2020年6月底合计装机28.44GW，占全国装机13%，若假设到十四五末该比例提升至18%，四省能预计按照各自规划完成装机计划，则反算全国累计装机达到586GW，新增装机年化约70GW+。2）国外看：GE宣布退出煤电市场，专注可再生能源投资；海外部分国家光伏规划及招标进行中；多个海外上市的光伏公司筹划回A。
+4、短期看，三季度淡季不淡需求强劲，光伏板块普遍超预期。7月硅料事故加速硅料供给收缩，硅料价格暴涨，供给短缺下引发全产业链价格普涨，同时三季度需求强劲，龙头组件厂排产排满，辅材厂玻璃、胶膜接连涨价侧面印证。从产业链各环节毛利来看，硅料反弹最明显，硅片跟涨硅料毛利持稳，电池片7、8月份盈利强，大尺寸盈利分化，组件端前期签订低价单有一定压力，但受益海外增长及重新议价，毛利仍有不错表现。总体来看，光伏各环节普遍超预期，三季度同比均大幅增长。
+5、长期看，全球范围看，碳排放趋严，利好可再生能源发展。全球对于碳排放、气候变化的关注和重视程度逐渐提高，大国均提出近5-10年碳排放目标，强调未来30年内的可再生能源发电占比目标，带动全球向“碳中和”方向发展。
+利好公司
+中金公司指出，中、美、欧三大能源消费体（占2019年全球能源消费55%）可再生能源发展目标的提升，将有望加速未来10年光伏新增装机。看好光伏制造产业链全面受益光伏装机加速增长：1）其中扩产难度大、周期长的硅料、玻璃环节将率先受益，看好通威股份、福莱特；2）看好各环节龙头凭借成本优势保持份额领先、持续扩大规模，看好福斯特、阳光电源、隆基股份、中环股份，提示关注晶澳股份、天合光能；3）看好运营商在平价时代迎来系统性重估，户用开发商受益需求加速，看好龙源电力，提示关注正泰电器。
+东吴证券指出，光伏板块长期成长性突出，短期龙头业绩高增长低估值，强烈推荐隆基股份、通威股份、阳光电源、锦浪科技、晶澳科技、福斯特、爱旭股份、福莱特、林洋能源，关注固德威、中信博、信义光能、大全新能源、晶科能源、阿特斯、亚玛顿、捷佳伟创、东方日升、太阳能、大唐新能源等。
+华金证券指出，重点推荐：隆基股份、晶盛机电、通威股份、爱旭股份、福斯特。建议积极关注：福莱特、中环股份、迈为股份、东方日升、锦浪科技。
+财信证券指出，平价时代下，随着市场内中小企业的逐渐淘汰和退出，行业集中度将不断提升，建议关注具有一体化优势的龙头公司，包括：产能扩张较早的低成本电池片龙头隆基股份和低成本硅料龙头通威股份，尤其是近期隆基和通威达成的战略合作，以及光伏玻璃制造商福莱特和逆变器制造商阳光电源。风电企业建议关注风塔制造商天顺风能、叶片制造商中材科技、风机龙头金风科技。
+本文内容精选自以下研报：
+平安证券《光伏产业链格局梳理，把握细分景气环节》
+华金证券《国产Model3再降价，光伏玻璃紧缺价格继续上涨》
+财信证券《电力行业点评：“十四五”规划期间光伏和风电装机预测》
+东吴证券《光伏行业点评：海外光伏大涨，新能源革命黄金时代已来》
+中金公司《电力电气设备、公用事业行业：碳中和目标全球化，带来海外新能源板块新行情》
+扫二维码 3分钟开户 紧抓股市暴涨行情！
+(image_address=""//n.sinaimg.cn/finance/512/w256h256/20200807/333c-ixkvvuc9099771.png"")
+新浪声明：此消息系转载自新浪合作媒体，新浪网登载此文出于传递更多信息之目的，并不意味着赞同其观点或证实其描述。文章内容仅供参考，不构成投资建议。投资者据此操作，风险自担。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：逯文云",2020-10-09 16:01:39,新浪财经

@@ -1,0 +1,6 @@
+,title,content,pub_time,src
+0,洛钼集团三道沟尾矿库开始试运行,"11月24日，智通财经获悉，近日，洛钼集团三道沟尾矿库按照试运行计划准时打浆，开始对尾矿库进行试运行调试，截至21日，尾矿库输尾系统正常运行，公司新尾矿库投入试运行。
+洛钼集团表示，三道沟尾矿库工程是集团公司2016年重点建设项目之一。该项目由湖南长沙设计研究院有限公司设计，2014年10月14日正式开工建设，堆积最终标高为1540米，总坝高297米。其中设计一期堆积标高1410米，总坝高167米，总库容1788.73*104m3，有效库容1613.73*104m3，坝体长164米，坝顶宽4米，为二等库;按照选矿厂10000吨/日生产规模，该尾矿库一期可服务7.3年。
+此外，该公司称，三道沟尾矿库顺利实现试运行，标志着该公司系统建设迈上新台阶，为全面推进集团公司2017年安全生产经营目标的实现和可持续发展奠定了坚实的基础。
+关注同花顺财经（ths518），获取更多机会
+(function(){var obj = null;if(document.getElementById('arctTailMark')) {obj = document.getElementById('arctTailMark');}if(obj!=null){var str = '(image_address=""http://i.thsi.cn/images/article/logo.jpg"")  返回首页';var showed = 0;try{var oo = obj.previousSibling;while(oo.nodeType!=1 || oo.innerHTML.replace(/\s|\u3000/g,'').length==0){oo = oo.previousSibling;}if(oo.nodeType==1 && oo.tagName.toLowerCase()=='p') {var span = document.createElement('span');span.innerHTML =str;oo.appendChild(span);showed = 1;}}catch (e){}if(showed == 0){obj.innerHTML =str;}}})();",2020-08-23 00:00:22,同花顺

@@ -1,0 +1,440 @@
+,title,content,pub_time,src
+0,创业板低价股全面熄火、逾30只个股跌停 白马股强势回归,"视频加载中，请稍候...
+自动播放
+(image_address=""//n.sinaimg.cn/front20200910ac/200/w640h360/20200910/142a-iyywcsz1498314.jpg"")
+play
+监管发声整治“歪风” 创业板“炒小炒差”就此刹车？
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 351827930,
+pid:1,
+url: 'https://video.sina.com.cn/p/finance/2020-09-10/detail-iivhvpwy5944019.d.html',
+title:'监管发声整治“歪风” 创业板“炒小炒差”就此刹车？'//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=351827930/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+今日直播：
+嘉实基金周宇航、吴奇卉：港股低估，陷阱还是馅饼
+新华基金陈谦：从衣食住行看投资机会
+上投摩根陈圆明 、猫头鹰基金矫健：如何应对理财收益率下滑？绝对收益投资优势解析
+华夏基金荣膺、周克平：科技吹响攻关号角
+国泰基金黄岳：新上证综指未来投资价值如何？
+原标题：创业板低价股全面熄火，多股跌停，白马股强势回归丨牛熊眼
+9月10日，创业板个股午后分化加剧，截至发稿， 有逾30只个股跌停。创业板低价股全面熄火，低价股指数现跌超15%，德威新材（维权）、蒙草生态等多股跌停，合计23只个股跌超15%。
+(image_address=""//n.sinaimg.cn/finance/crawl/76/w294h582/20200910/9267-iyywcsz1470858.png"")
+与此同时，白马龙头再度崛起，康泰生物、智飞生物、片仔癀、中国中免、山西汾酒、绝味食品、金域医学、中炬高新等多股强势上涨。
+分析人士表示，短期来看，市场风险偏好扰动较大，但流动性环境并未明显恶化。板块方面，预计板块间的高低位切换仍将延续。
+9月9日，被热炒近半月的天山生物（维权）、长方集团、豫金刚石（维权）停牌核查。深交所正全面排查天山生物等公司的交易情况，发现有些交易可能涉嫌新型股价操纵。
+对此，新华社评论文章指出，随着注册制试点改革的落地，创业板正朝着越来越市场化的方向发展，也为市场功能的发挥打开越来越多的空间。对市场“不干预”的同时，监管一定会对市场乱象保持“零容忍”的高压态势，交易所密集出手已经释放出了鲜明的信号。
+对于投资者来说，价值投资、长期投资才是参与创业板交易的制胜法宝。面对脱离公司业绩的炒作，应该树立风险意识，切忌炒小炒差，避免遭受不必要的投资损失，依法合规参与交易，共同维护市场秩序，促进市场健康稳定发展。
+专家表示，深圳证券交易所着力强化对创业板炒小、炒差的监管，有利于维护市场正常运行秩序，投资者正常的交易行为不会受影响。同时，价值投资仍是市场主线，建议投资者树立风险意识，秉持价值投资理念，通过持有优质股票应对市场波动。
+值得注意的是，低价股的暴涨引发了股东减持浪潮。9日晚，沪深两市共13家上市公司披露股东减持计划，涉及重要股东26名，以最新收盘价计算，合计拟减持金额约72.58亿元。
+其中亚光科技公告称，公司控股股东太阳鸟控股、股东嘉兴锐联、股东天通控股、股东浩蓝瑞东及其一致行动人浩蓝铁马拟合计减持不超过25.08%股份，拟减持金额约53.46亿元。
+普利制药重要股东综合制药也计划清仓式减持，其中通过集中竞价减持不超过870万股，不超过公司总股本的2%；通过大宗交易减持不超过1740万股，不超过公司总股本的4%；合计拟减持数量不超过2104万股，即不超过公司总股本的4.83%。拟减持金额约9.63亿元。天海防务、惠伦晶体、易尚展示等股重要股东拟减持金额也均在5000万元以上。
+财信证券策略分析师罗琨表示，风险偏好收缩，低价股逻辑不可持续。往后看，市场将逐步回归理性，低价股炒作逻辑给市场带来的波动对市场中长期影响较小。
+对于当前市场，粤开证券表示，短期市场还未止跌企稳，震荡行情预计仍将持续，前期涨幅巨大的板块或个股谨慎追高，新一轮上攻行情料待外围扰动平稳之后出现。
+开源证券认为，当下市场调整中，适当回避实际利率下行周期中外资收益较高的“核心资产”，重点配置低估值+顺周期，如房地产、银行、煤炭、建筑等。
+扫二维码 3分钟开户 布局创业板火爆行情
+(image_address=""//n.sinaimg.cn/finance/512/w256h256/20200807/333c-ixkvvuc9099771.png"")
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：逯文云",2020-09-10 14:57:31,新浪财经
+1,消灭低价股行情告终：创业板老股第二日批量杀跌 34只股跌幅超15%,"原标题：“消灭低价股”行情告终！创业板老股第二日批量杀跌 34只创业板个股跌幅超15%
+来源：21世纪经济报道
+以天山生物（维权）等三只领涨龙头停牌为界，创业板存量老股的博弈正式转向。
+9月10日，创业板“低价股”第二日大跌。
+至11：10时，天海防务、西部牧业等5只个股封死20%顶格跌停价位，另有腾邦国际、科融环境（维权）等29只个股跌幅超过10%。
+反观市场的另一面，同日除上市新股继续大涨外，存量老股顶格涨停仅有中科信息一只。
+显然，此前被认为是“消灭低价股”的行情已经明显降温。
+需要指出的是，这类低价股并非只具备股价绝对值小的特点，公司本身市值也不大。
+据统计，8月至今，涨幅排名靠前的天山生物、长方集团、豫金刚石（维权），8月1日总市值均在30亿元以下，同时长方集团、豫金刚石股价低于3元。
+(image_address=""//n.sinaimg.cn/spider2020910/319/w700h419/20200910/4cd0-iyywcsz1068169.jpg"")
+涨幅紧随其后的也多是创业板个股，普遍具备低股价、低市值的特点。
+但是，随着昨日上述三只“带头大哥”的停牌，尤其是天山生物的二次停牌，消灭低价股行情的拐点随之确立。
+当日，创业板涨跌幅超过10%的个股达123只，要知道当日处在交易的创业板个股尚不过850只，前一交易日跌幅超过10%的个股也仅有4只。
+至此，消灭低价股行情阶段性告终，市场就此转向。
+与之相伴的是，在低价股熄火后，部分权重板块开始止跌回升，9月10日休闲服务、食品饮料、房地产板块开始反弹。
+只是由于市场仍然处于相对弱势状态，这部分个股反弹幅度相对有限，仅有世茂股份、阳光城等少数地产股出现涨停。
+进一步追溯到6月末A股市场反弹起点，则可以看出权重蓝筹股前期积累了可观涨幅，在以消费股为代表的蓝筹股大幅回落后，二级市场资金端将火力集中到了低价股身上，并不断强化相关个股的上涨趋势。
+如今，随着三只龙头股的停牌，以及创业板存量老股的批量跌停，二级市场再次进入到了方向、标的选择的十字路口……
+扫二维码 3分钟开户 布局创业板火爆行情
+(image_address=""//n.sinaimg.cn/finance/512/w256h256/20200807/333c-ixkvvuc9099771.png"")
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：逯文云",2020-09-10 14:55:40,新浪财经
+2,康希诺朱涛：与陈薇团队联合研发重组新冠疫苗无严重不良反应,"康希诺生物肯定了腺病毒载体新冠疫苗的安全性。
+9月9日，康希诺生物股份公司（康希诺生物，06185.HK，688185.SH）首席科学官朱涛博士在中信证券举办的投资者论坛上发表演讲时表示，由军科院陈薇院士团队和康希诺生物联合研发的重组新型冠状病毒疫苗（Ad5-nCoV）具有良好的安全性和可及性。
+康希诺生物与军科院生物工程研究所联合开发的重组新型冠状病毒疫苗是国内唯一使用重组载体技术路线进行研发的新冠疫苗。值得一提的是，该疫苗与9月8日主动暂停试验的牛津大学-阿斯利康在研新冠疫苗属同类作用机理，两者研发进展类似，也常常被放在一起对比。
+澎湃新闻从康希诺生物了解到，两者采用的技术路线虽然相同，但是载体的选择不同，康希诺生物采用的腺病毒是人体本身就存在的，人体对其的耐受性会更强。而牛津大学与阿斯利康采用的是黑猩猩病毒载体，人体免疫系统在初次识别时会产生相应的耐受反应。
+对于Ad5-nCoV疫苗不良反应高，安全性不够理想的问题，朱涛博士在此次论坛上表示，这其实是一种对数据结果的误读，准确来说是无严重不良反应，“截止到昨天，还没有严重不良反应。”
+至于个别报道提及的9%不良反应，朱涛博士表示，这指的是“三级不良反应”，而根据已公布的二期临床数据，三级不良反应只出现1例。
+朱涛博士在演讲中透露，Ad5-nCoV疫苗的效期预计2年，2摄氏度至8摄氏度保存，采用方式是肌肉注射或者黏膜给药，可以单次给药，二次给药也是可以进一步加强，目前的数据支持单次给药，目标人群是18岁以上，最终目标是覆盖更广的人群，主要是学校人群，6岁至18岁的青少年人群。
+朱涛博士在演讲中回应了Ad5-nCoV疫苗中和抗体数据不理想的说法，他表示，中和抗体数值与检测方法的相关性非常大，“每个厂家现在用的是不同的方法，病毒的毒株也不一样，而且做这个实验的时候实验的条件，都会影响这个数值”，而Ad5-nCoV疫苗研发团队在对其他检测方法的结果进行对比后，发现这款候选疫苗“单次给药”便已“达到灭活疫苗两针的中和水平。”
+对于Ad5预存中和抗体会显著降低疫苗功效的问题，朱涛博士认为：“小动物不能完全预测人的反应，很多因素影响预存免疫对疫苗功效的干扰程度，比如说剂量，增加剂量可以降低预存免疫，接种的程序，还有表达，这个载体疫苗关键是要在人体表达，它表达的效率，还有免疫方式，是肌肉注射、皮下和黏膜免疫，都会影响预存免疫对它的影响。”
+(本文来自澎湃新闻，更多原创资讯请下载“澎湃新闻”APP)
+]article_adlist-->
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：逯文云",2020-09-10 14:38:48,新浪财经
+3,玉米相关中下游期货品种加快研发 产业链公司受益明显,"视频加载中，请稍候...
+自动播放
+(image_address=""//p.ivideo.sina.com.cn/video/351/824/053/351824053_220_124.jpg"")
+play
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 351824053,
+pid:1,
+url: 'https://finance.sina.com.cn/stock/s/2020-09-10/doc-iivhvpwy5938234.shtml',
+title:''//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=351824053/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+今日直播：
+嘉实基金周宇航、吴奇卉：港股低估，陷阱还是馅饼
+新华基金陈谦：从衣食住行看投资机会
+上投摩根陈圆明 、猫头鹰基金矫健：如何应对理财收益率下滑？绝对收益投资优势解析
+华夏基金荣膺、周克平：科技吹响攻关号角
+国泰基金黄岳：新上证综指未来投资价值如何？
+原标题：玉米相关中下游期货品种加快研发，产业链公司受益明显丨牛熊眼
+预计玉米价格维持偏强走势 10-12月可能存在收割低点|大宗商品
+9月10日午后，玉米概念大幅拉升，截至发稿，金健米业、万向德农涨逾6%，登海种业涨逾3%，农发种业、丰乐种业、苏垦农发等多股均不同程度上涨。
+(image_address=""//n.sinaimg.cn/sinakd2020910s/580/w298h282/20200910/a30a-iyywcsz1359699.png"")
+据证券时报报道，大连商品交易所党委书记、理事长冉华今日在“2020中国玉米产业大会”上表示，为促进玉米产业更高质量发展，将进一步丰富玉米产业链衍生产品体系，积极稳妥推动生猪期货上市，加快研发相关中下游期货品种。同时，紧紧围绕聚焦服务产业企业，推动汇聚产业龙头企业等参与建设大商所场外市场，打造大宗商品的生态圈，建设大宗商品价格信息中心、交易中心，满足包括玉米产业链在内的不同客户多样化需求。
+全国畜牧总站站长、中国饲料工业协会秘书长王宗礼表示，今年玉米供应整体有保障，今年我国饲用玉米消耗量将维持在2019年的1.8亿吨左右的水平，玉米产需形势将与2019年相当。王宗礼表示，尽管猪肉产量大幅下降，但是禽肉、禽蛋、牛奶产量分别逆市增长，基本实现了稳产保供，有力的保障了我国人民群众对肉蛋奶等动物性食品的基本需求。
+此前，农业农村部表示，当前玉米市场供应总体有保障，后期价格将逐步趋稳。前期拍卖的临储玉米将陆续出库，目前全社会库存能够满足秋粮上市前后市场消费需求。随着新玉米陆续上市，加上全球玉米总体宽松，我国玉米及大麦等替代品进口增加。预计全年玉米市场供给总量充足，价格有望趋于平稳。
+数据显示，今年以来，玉米期货价格累计上涨28.58%，目前已攀至5年多以来的高位。
+业内一致认为，供需缺口扩大是今年玉米价格上涨的主要推手。从生产情况来看，全国玉米产量较去年相比可能会有所下降。在玉米涨价背景下，分析人士指出，上游较下游更容易充分享受价格上涨带来的收益，种植玉米的农户收益有望增加，但收益波动问题仍需关注。
+东北为我国玉米主产区，目前，东北玉米正处于灌浆成熟后期，暴风雨天气极易导致倒伏大面积发生，产量和品质上可能受到一定程度的影响。华西证券认为，我国种植产业链已经处于景气上行周期，极端的暴风雨天气可能导致供给进一步收紧，建议关注后续东北玉米收获情况。标的选择方面，依次推荐农发种业、隆平高科、荃银高科、大北农、苏垦农发等，登海种业、万向德农等也有望充分受益。
+扫二维码 3分钟开户 布局创业板火爆行情
+(image_address=""//n.sinaimg.cn/finance/512/w256h256/20200807/333c-ixkvvuc9099771.png"")
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：逯文云",2020-09-10 14:17:43,新浪财经
+4,源达信息被清华大学五道口授予教育贡献奖,"(image_address=""//n.sinaimg.cn/finance/crawl/116/w550h366/20200910/6203-iyywcsz1324605.jpg"")
+9月9日，河北源达信息技术股份有限公司在清华大学五道口金融学院的开学典礼上被授予教育贡献奖的荣耀，在中国银行党委书记、董事长刘连舸、中国人民银行研究局局长王信等现场嘉宾的见证下，公司董事长郝旭作为五道口的校友，出席典礼并领取了奖项。
+源达信息创立于1997年，以自主研发的股票信息终端为载体，23年品牌积淀，以专业的产品、优质的服务，不断赢得社会的认可与用户的信赖。2015年，公司成功改制，原全国人大财经委办公室副主任、《基金法》起草小组组长、华夏基金原独立董事、被业内誉为“中国基金业之父”的王连洲出任源达信息董事。
+注册国际投资分析师协会（ACIIA）主席、原中国证券业协会副会长、天相投资顾问有限公司董事长林义相，原财达证券总经理助理、研究所所长、明蓝投资董事长尚国明等权威人士，以及中投金信等专业机构投资者陆续成为源达的股东，为源达注入强大的力量，开启源达未来发展的新征程。
+一直以来，五道口金融学院始终围绕金融学科和商学院高等教育的模式办学，借助清华百年教学资源赋能金融科技，不断向市场输出全方位发展的金融精英。（cis）　
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陈悠然 SF104",2020-09-10 14:02:21,新浪财经

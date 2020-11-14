@@ -1,0 +1,481 @@
+,title,content,pub_time,src
+0,2分钟读财报|果汁茶收入跌40%成成拖累 香飘飘H1亏损近亿,"视频加载中，请稍候...
+自动播放
+(image_address=""//n.sinaimg.cn/front20200910ac/380/w540h640/20200910/6286-iyywcsz2026840.jpg"")
+play
+香飘飘
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 351844091,
+pid:1,
+url: 'https://video.sina.com.cn/p/finance/2020-09-10/detail-iivhuipp3597297.d.html',
+title:'香飘飘'//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=351844091/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+香飘飘似乎遇见了2017年上市以来的最大危机。
+不久前，香飘飘发布2020年中报。半年报显示，上半年公司实现营业收入9.91亿元，同比减少28%，归母净利润亏损0.64亿元，同比下滑371.5%，扣非净利润亏损0.93亿元。经营活动净现金流上半年大幅流出，总计流出7.35亿元。
+疫情期间，线下奶茶店因客观原因不得不关闭，本以为主做冲泡奶茶的香飘飘能因此迎来一段红利期，但从经营数据来看，曾经一年卖出三亿多杯绕地球N圈的香飘飘，经典冲泡类奶茶销量持续下滑，走创新路线的Meco果汁茶耗费巨资推广之后，销量仍是扶不起的阿斗。
+2020年上半年，香飘飘冲泡类产品销售收入为5.5亿元，去年同期为7.11亿元，同比下滑22.69%；即饮类产品中液体奶茶销售额微增，由6259万元增至6867万元，而果汁茶品类上半年卖出3.57亿元，去年同期为5.88亿元，同比下滑39.25%，为各品类中最大跌幅。
+另外，香飘飘的经销商也有小幅下降，截至2020年6月30日经销商数量为1478个，净减少3家。
+曾经靠“一年卖出三亿多杯、绕地球N圈”这一广告语深入人心的香飘飘，如今依然倚重营销，但效果却不尽如人意。2020年上半年，公司销售费用为3.48亿元，销售费用率为35.11%，2017年-2019年销售费用率则在24%左右波动。
+2018年起，为了改善产品老化问题，香飘飘切入即饮细分赛道，推出果汁茶、兰芳园液体奶茶等新品，并寄予厚望，试图通过双轮驱动业绩。但2020年上半年业绩表现来看，果汁茶和液体奶茶并未担起重任。对于果汁茶业绩下滑，香飘飘解释称主要因疫情原因对饮料消费的影响较大，学校延迟开学，特别是大学开学时间严重低于预期，以及聚集性文化、旅游及体育活动未能正常开展等因素影响所致。
+但疫情并不能完全背起业绩下滑这口锅，统一中报显示，上半年阿萨姆奶茶较去年同期增长3.0%。对比来看，香飘飘果汁茶和液体奶茶定价偏高，一方面要面临喜茶、奈雪、茶颜悦色等奶茶实体点的冲击，另一方面也很难撬动传统品牌的奶茶市场份额。
+2分钟读财报|紫燕百味鸡IPO：夫妻肺片年售16亿 食品安全存疑
+2分钟读财报|卖男装不如炒股 雅戈尔抛售宁波银行大赚13.7亿
+2分钟读财报|农夫山泉暴利经：水价贵过原油 取水成本不足2%
+扫二维码 3分钟开户 做好抄底反弹准备
+(image_address=""//n.sinaimg.cn/finance/512/w256h256/20200807/333c-ixkvvuc9099771.png"")
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：常福强",2020-09-10 17:42:05,新浪财经
+1,转基因发展驶入快车道：种业有望借其东风 关注产业龙头,"今日直播：
+嘉实基金周宇航、吴奇卉：港股低估，陷阱还是馅饼
+新华基金陈谦：从衣食住行看投资机会
+上投摩根陈圆明 、猫头鹰基金矫健：如何应对理财收益率下滑？绝对收益投资优势解析
+华夏基金荣膺、周克平：科技吹响攻关号角
+国泰基金黄岳：新上证综指未来投资价值如何？
+原标题：转基因发展驶入快车道 种业有望借其东风 关注产业龙头
+财联社9月10日讯，今日午后，农业转基因板块大幅上涨，万向德农拉升封板，登海种业随后涨停。农发种业、丰乐种业等大幅跟涨。
+(image_address=""//n.sinaimg.cn/finance/crawl/494/w335h159/20200910/c843-iyywcsz2013443.png"")
+消息面上，首先，从中报业绩看，上半年种业相关个股业绩分化显著。其中玉米种企受益于行业整体复苏，业绩拐点明显，玉米种企登海种业扣非净利润同比大幅增长2372%；水稻种子企业因行业仍处于去库存阶段，相对而言，整体业绩仍承压。
+而从转基因发展的历史上看，转基因进程加速往往还与病虫害有关。2020年为虫灾大年，沙漠飞蝗+草地贪夜蛾肆虐，主要农作物生产受冲击。从需求端分析，平安证券观点认为，随着非瘟常态化，生猪产能、存栏量见底回升带动玉米、大豆饲料需求，种植业景气度向上，此外虫灾肆虐有望加快转基因品种审定。
+从行业角度来看，若转基因顺利推进，有望加速种业升级和加速集中。其一，转基因将显著抬升种子附加值，有望推升种子价格及利润率；其二，转基因育种技术壁垒高、研发投入大，将使得头部企业的品种竞争优势进一步凸显，加速行业集中度提升。
+目前，全球转基因技术研发势头强劲，发达国家或地区都在抢占技术制高点。在我国，自2009年的中央一号文件第一次正式确定了转基因技术在国家层面的政策基调。此后2010-2019的十年间，有7年的中央一号文件都对种业相关技术的推进、研发做出了要求。粮食安全和基因安全作为我国的“底线”，必须牢牢把控在自己手里。
+据国际种植经验来看，转基因作物增产、减成本、方便规模化种植、经济效益良好，华泰证券观点认为，我国种业有望借助转基因之风加速发展，建议关注转基因技术研发实力强、专利技术储备丰富的龙头标的。
+个股方面，多家机构均推荐关注隆平高科（转基因技术储备丰富，且持有杭州瑞丰25%的股权）、大北农（国内领先转基因育种企业）、荃银高科（背靠中化和先正达）、登海种业（玉米种业龙头）。
+扫二维码 3分钟开户 做好抄底反弹准备
+(image_address=""//n.sinaimg.cn/finance/512/w256h256/20200807/333c-ixkvvuc9099771.png"")
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：逯文云",2020-09-10 17:33:28,新浪财经
+2,创业板低价牛股两天暴跌36%：减持利空压顶 顶级游资却大买,"今日直播：
+嘉实基金周宇航、吴奇卉：港股低估，陷阱还是馅饼
+新华基金陈谦：从衣食住行看投资机会
+上投摩根陈圆明 、猫头鹰基金矫健：如何应对理财收益率下滑？绝对收益投资优势解析
+华夏基金荣膺、周克平：科技吹响攻关号角
+国泰基金黄岳：新上证综指未来投资价值如何？
+创业板低价牛股两天暴跌36%！减持利空压顶，顶级游资却大买
+财联社 姚辉
+财联社（上海，研究员 姚辉）讯，短短两周多累计暴涨超3倍的创业板低价大牛股天海防务遭遇滑铁卢，最近两个交易日较最高点股价跌去近四成。公司自身昨晚遭利空突袭，因控股股东股票质押违约，拟被动减持不超4.71%。盘后公布的最新龙虎榜数据显示，顶级游资章盟主竟逆势抄底超2200万元。
+继昨日创业板低价股尾盘暴露风险后，今日低价股续遭重挫，跌停板即跌幅20%个股数量由早盘11只扩大到下午收盘49只，跌幅超过10%的创业板个股有343只。
+(image_address=""//n.sinaimg.cn/finance/crawl/252/w391h661/20200910/ce73-iyywcsz1999822.png"")创业板部分低价股收盘涨跌情况
+中航信托宏观策略总监吴照银向财联社记者表示，最近创业板炒低价股、绩差股比较盛行，违背了价值投资的原则，也与股市优化资源配置的基本功能不相符。理性的投资者、监管层对这种炒作行为都比较反感，媒体也发声呼吁股市要良性发展、优化资源配置，摒弃脱离基本面的短线投机行为。这种背景下，一些最近涨幅较大的绩差股跌停。经过这种市场、监管层、媒体的良性互动，正确的投资理念会更深入地被投资者接受，市场的价值投资逻辑得以强化，股市运行会更健康。
+天海防务此前2个星期股价由4元出头，一度涨到了9月9日最高的12.9元，随即大幅下跌，9月10号跌停，股价只剩下8.24元，也就是短短2天时间，股价自高位已经跌去了36%。
+(image_address=""//n.sinaimg.cn/finance/crawl/287/w517h570/20200910/67f1-iyywcsz1999859.png"")天海防务股价走势图
+天海防务昨晚公告，因控股股东股票质押违约，拟被动减持不超4.71%。具体公告显示，近日，刘楠先生接到质权人国泰君安、国元证券的通知，因刘楠先生股票质押合约发生违约，国泰君安、国元证券拟对刘楠先生的质押标的证券及其所产生的权益通过违约处置卖出方式实现其债权。为归还国泰君安、国元证券股票质押融资借款，控股股东所持公司部分股票存在强制平仓风险，拟被动减持不超过4.71%。
+(image_address=""//n.sinaimg.cn/finance/crawl/46/w550h296/20200910/2e12-iyywcsz1999906.png"")天海防务龙虎榜
+天海防务盘后公布的一日榜数据显示，龙虎榜资金净流入近800万元。买一顶级游资章盟主逆势大笔扫货超2200万元，卖一顶级游资卖出超1400万元。值得注意的是，“散户大本营”东方财富证券拉萨两家营业部现身主买主卖多家席位，佐证近期散户扎堆参与创业板低价股炒作的事实。
+天海防务拥有军工概念，旗下的金海运具备齐全的军工资质证书，其主要产品覆盖六大高新技术领域，包括防务船艇、蛙人两栖装备等。
+扫二维码 3分钟开户 做好抄底反弹准备
+(image_address=""//n.sinaimg.cn/finance/512/w256h256/20200807/333c-ixkvvuc9099771.png"")
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：张熠",2020-09-10 17:29:11,新浪财经
+3,鹏博士100万甩卖长城宽带 交易方疑空壳遭问询,"视频加载中，请稍候...
+自动播放
+(image_address=""//n.sinaimg.cn/front20200910ac/380/w540h640/20200910/9d59-iyywcsz1929167.jpg"")
+play
+鹏博士
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 351841235,
+pid:1,
+url: 'https://video.sina.com.cn/p/finance/2020-09-10/detail-iivhuipp3591483.d.html',
+title:'鹏博士'//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=351841235/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+除了联通、移动、电信外，曾经长城宽带作为民营宽带老大，从三巨头手中抢下不少市场份额，依靠的是低价策略，然而，几年过去，长城宽带却由叱咤一时沦落到被甩卖，母公司鹏博士的日子也是一日不如一日。
+不久前，鹏博士发布公告称，拟转让全资子公司长城宽带网络服务有限公司、河南省聚信网络信息服务有限公司、沈阳鹏博士网络服务有限公司、浙江鹏博士网络服务有限公司100%股权，转让价格合计100万元。据悉，本次交易完成后，公司仍将保留在北京、上海、深圳三个城市的互联网接入业务。
+数据显示，截至上半年长城宽带负债总额为38.3亿元、所有者权益为1.33亿元，上半年长城宽带营业收入为8.01亿元，净利润亏损5715万元。
+几年前，鹏博士总计斥资约17亿元收购长城宽带，如今作价仅100万，“贱卖”程度令人咋舌。而接盘方为中安实业投资有限公司，从数据来看也不甚阔绰，截止2020年6月，中安实业资产总额为10.6万元，负债总额为316.07万元，所有者权益为-305.42万元，2019年公司资产总额则为124.57万元。2020年上半年，中安实业营收为0，亏损113万元。接盘方似乎为一家空壳公司，而交易所也因此提出了问询，要求鹏博士方补充披露中安实业方与公司、公司控股股东及实际控制人之间是否存在关联关系、协议安排或者其他可能影响本次交易公允性的情形。
+100万元的作价，对于鹏博士开始只是寥胜于无，因此这笔交易的主要目的还是甩掉亏损包袱。不久前，鹏博士刚刚发布半年报，上半年公司营收28.51亿元，同比减少7.27%，净利润3.25亿元，同比增长517.03%，净利润的迅速增长主要来源于转让股权，4月28日，鹏博士公告以23亿元的交易价格转让数据中心业务，此交易预计增加2020年度9.5亿净利润。
+而一度为顶梁柱的长城宽带，营收持续下降，2017年-2019年宽带业务营收分别为67.1亿元、52.8亿元、41.6亿元，2019年营收距2016年最高值已跌去44.3%。
+核心业务数据中心已为了偿还债务出让，此次再甩卖长城宽带，欲断臂求生的鹏博士，手里还有多少棋可下？
+2分钟读财报|赚钱给电商交保护费 三只松鼠半年净利跌3成
+2分钟读财报|绝味食品上市首次业绩双降 大股东欲减持34亿
+2分钟读财报|鸡肉价格大跌：肯德基疯狂促销 鸡企净利大降
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：常福强",2020-09-10 17:21:37,新浪财经
+4,保利地产：8月实现签约金额439.05亿元 同比增加44.91%,"9月10日消息，保利地产晚间公告，2020年8月，公司实现签约面积282.16万平方米，同比增加42.56%；实现签约金额439.05亿元，同比增加44.91%。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：张熠",2020-09-10 17:14:00,新浪财经
+5,商务部积极推动加快数字贸易发展 关注跨境电商受益股,"今日直播：
+嘉实基金周宇航、吴奇卉：港股低估，陷阱还是馅饼
+新华基金陈谦：从衣食住行看投资机会
+上投摩根陈圆明 、猫头鹰基金矫健：如何应对理财收益率下滑？绝对收益投资优势解析
+华夏基金荣膺、周克平：科技吹响攻关号角
+国泰基金黄岳：新上证综指未来投资价值如何？
+9月10日，商务部新闻发言人高峰表示，商务部会同有关部门，积极推动加快数字贸易发展。一是抓紧完善顶层设计。今年以来，商务部会同中央网信办、工业和信息化部等部门，研究数字贸易制度框架，提出数字贸易工作计划，推动组建数字贸易专家工作组。二是研究数字贸易政策。作为新兴贸易形态，会同有关部门，就数字贸易政策问题开展深入研究，设计好政策框架和具体举措，为数字贸易发展创造良好的政策环境。三是深化数字贸易实践。
+中国信通院指出，伴随着全球贸易数字化发展，人类社会正迈入以数字贸易为突出特征的第四次全球化浪潮，对全球供应链、产业链、价值链产生了巨大影响，国家间经济分工、贸易利益分配面临巨大挑战，新的国际规则、国际治理挑战正在到来。国际贸易呈现出高度数字化的特征，一是贸易方式的数字化，信息技术与国际贸易各领域深度融合渗透，电商平台成为国际贸易的重要枢纽，信息展示、贸易洽谈、支付结算、税收通关等环节向线上迁移，国际贸易的固定成本大幅降低、效率显著提升；二是贸易对象的数字化，互联网为国际间数据流通提供了高效便捷的传输渠道，数据和以数据形式存在的商品和服务可贸易程度大幅提升，成为重要的贸易商品，对各国生活、生产等诸多领域的影响不断扩大。
+相关受益股，焦点科技（002315）：公司志在打造跨境电商B2B全链路综合服务平台，直接受益于疫情催化下的全球商业线上化，公司半年报业绩已显示了一些端倪。
+跨境通（002640）：跨境电商领军企业，品牌及供应链管理能力行业领先。公司B2C出口跨境电商交易规模市场第一，两大自营网站位居出海品牌前25强，并培育了一系列具备跨境电商领导地位的品牌。
+扫二维码 3分钟开户 做好抄底反弹准备
+(image_address=""//n.sinaimg.cn/finance/512/w256h256/20200807/333c-ixkvvuc9099771.png"")
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：逯文云",2020-09-10 17:09:42,新浪财经
+6,宋城演艺：演艺龙头的求生之路 业绩大变实控人忙减持,"宋城演艺 演艺龙头的求生之路
+来源： 英才杂志
+作者 | 孙栋
+2020年对于服务类企业来说是个灾难的一年，由于新冠疫情的影响，使得大多数企业无法开工，严重影响了收入和利润，文旅行业更是成为了重灾区。宋城演艺（300114.sz）作为旅游演艺的龙头股，自然也受到了不小的冲击。
+在宋城演艺中报相当难看的当下，实控人及一致行动人选择减持来回应市场，不得不引发投资者深思：演艺界的龙头股还能保持多久？
+业绩大变 实控人忙减持
+意外而匆忙的减持，让宋城演艺的市值大跌近百亿。
+2020年8月，宋城演艺披露了半年度报告。报告显示公司上半年实现营业收入2.83亿元，同比下降80.04%；归属于上市公司股东的净利润3984.83万元，同比下降94.92%；归属于上市公司股东的扣非净利润1998.01万元，同比下降96.77%；经营活动产生的现金流量净额-1.24，同期减少112.43%。据了解，受制于疫情局势影响和安全考虑，宋城演艺旗下各景区于今年年初停运，直到6月中旬才恢复运行。
+虽然利润降幅将近九成五的落差，让投资者的心头蒙上阴影，但考虑疫情的影响，情有可原。可时隔仅仅四天，宋城演艺的实控人及一致行动人，却拟通过大宗交易减持合计不超过公司总股本的4%的股份。
+根据公开资料显示，宋城演艺的实际控制人黄巧灵及其一致行动人合计持有宋城演艺13.08亿股，占公司总股本的50.03%。虽然宋城演艺在公告中表示，减持计划实施完成后，公司实际控制人黄巧灵及其一致行动人合计持有股份不低于46.03%，仍为公司控股股东、实际控制人，不会导致公司控制权发生变更，但显然会突破原有50%的持股比例。
+在披露减持计划之后仅8天，实控人及一致行动人，便急不可耐的完成了近2%的大宗交易，据深交所数据显示，实控人及一致行动人当天套现金额高达8.32亿元。
+受实控人减持的影响，结合业绩变脸给市场的反应，接连几日宋城演艺的市值跌去近百亿。
+成长性受限 营收增速显疲态
+纵观宋城演艺，自2014年以来，就以三年间收入增速不低于30%，利润增速不低于25%的高成长性，持续获得投资者青睐。然而查阅宋城演艺近些年财报，却发现一些问题。自2017年开始，宋城演艺的收入和利润增速就开始直线下滑，甚至出现负增长态势。
+(image_address=""//n.sinaimg.cn/finance/crawl/83/w550h333/20200910/f866-iyywcsz1905398.png"")
+宋城演艺收入利润对比图
+2017年至2019年，宋城演艺分别实现营收30.24亿元、32.11亿元、26.12亿元，同比增长14.36%、6.20%、-18.67%。分别实现归属于母公司扣除非经常性损益净利润11.07亿元、12.80亿元、12.22亿元，同比增长24.77%、15.62%、-4.50%。于2019年，收入利润双双呈现负增长。通过上半年的财报可以推测宋城演艺2020年的财务数据，无疑将是晴天霹雳般的下滑。
+在2019年年报中，宋城演艺自述由于公司数字娱乐平台重组出表导致收入大幅下滑，查阅公司剔除互联网演艺部分的收入，也同样得出了增速放缓的趋势。
+(image_address=""//n.sinaimg.cn/finance/crawl/617/w550h67/20200910/41ed-iyywcsz1905456.png"")
+剔除互联网演艺的收入
+轻重资产运营转换
+自杭州的首家宋城景区开园至今，宋城演艺以“主题公园+旅游演艺”的模式，打造出一系列宋城和千古情品牌，即在旅游城市景点旁建造规模不大的宋城主题公园，在主题公园基础上加入其特色开发的“千古情”系列的现场演艺。而宋城演艺的宋城主题公园大多都是其以自有资金买地和施工建设主题公园，据相关数据显示，其在即将开业的西安、上海的宋城项目中持股比例分别为80%和88%，其余宋城项目持股比例均为100%。
+这显然属于重资产经营模式了，虽然截至2020年中报，宋城演艺的货币资金还有超过13亿在账，但前期资金投入大且投资回报期较长模式仍然存在着诸多风险。据相关专业人士表示，整个国内主题公园行业都处在重资产发展阶段，但宋城演艺显然已经意识到些许问题，开始探索轻资产模式。
+2016年6月宋城演艺签约湖南宁乡县炭河古城项目，由其提供“千古情”品牌授权、剧本创作、规划概念性方案设计、互动项目概念性设计、协助建设、开业筹备等一系列服务，收取签约服务费2.6亿元。此外，宋城演艺还参与项目的日常经营管理，以景区经营收入的20%收取管理费。尝到甜头的宋城演艺于2017年再次签下了西樵镇听音湖片区旅游演艺项目、宜春明月情景区项目以及郑州竹桂园黄帝千古情旅游景区项目，分别收取了一揽子服务费2.6亿元、2.7亿元、2.6亿元。
+但无论哪种模式，“千古情”品牌下的剧本创作才是吸引观众的核心，如果吸引力不足，号召力下降，随之而来的可能就是衰退。但目前剧本创作受制于创作灵感、排练时间和各种各样的成本影响，进行特色的创作和更新较为困难，宋城演艺也有诸如泰山项目关停的案例。
+所以在一台节目反复演出的背景下，宋城景区的复游率可能会持续下降。而受到疫情这种减少客源的公共事件，对企业简直就是毁灭性的打击。
+并购剥离倒手忙 转型艰难探索
+虽然宋城演艺的“千古情”系列已经成为比肩“印象”系列、“山水”系列、长隆系列的业界翘楚，但在演艺行业，企业之间竞争的永远是产品及体验差异化而非价格，所以上市以来，宋城演艺屡屡想以并购的形式来为自己的产品差异化谋划其他的来路。
+2013年12月，宋城演艺曾以1.23亿元获得大盛国际传媒集团有限公司（以下简称“大盛国际”）35%的股权，涉足影视行业。收购时雄心壮志，但最终由于大盛国际的业绩对赌未完成，以1.6亿脱手收场。
+然而宋城演艺在业务差异化上还是不遗余力，2015年3月，宋城演艺的六间房收购案成为当时投资者津津乐道的话题。从线下演艺进军互联网演艺，向年轻群体靠拢，成了宋城演艺转型的方向。受此消息影响，宋城演艺市值也曾飙涨到530亿元。
+六间房以不足四千万元的净资产获得了宋城演艺26亿元的报价，过高的期望却因种种原因而没有达到预期只得再度黯然收场。2018年因证监会的一纸问询，六间房也被爆出未完成业绩承诺，宋城演艺也因此面临着高额商誉减值带来的危机。为了解决困境，宋城演艺选择与花椒直播母公司共同重组六间房，降低其持股比例至30%以下，将其剥离出报表以外，以避免带来的大额商誉减值。
+如果说大盛国际倒手仅为保本收益，那么六间房重组可谓获利颇丰、一举多得，不仅转移了商誉风险，而且还溢价出售获利超过5亿元。但这些终究是为人称道一时的资本事件，难以转化为宋城演艺持续的竞争力。
+靠宋城游乐园和“千古情”品牌起家，至今近500亿市值的宋城演艺，因为接连资本运作“失利”而身陷差异化困境，究竟该怎样继续深耕原有业务？我们拭目以待。
+免责声明：自媒体综合提供的内容均源自自媒体，版权归原作者所有，转载请联系原作者并获许可。文章观点仅代表作者本人，不代表新浪立场。若内容涉及投资建议，仅供参考勿作为投资依据。投资有风险，入市需谨慎。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陈志杰",2020-09-10 17:02:25,新浪财经
+7,招商银行：董事会选举缪建民为董事长,"9月10日消息，招商银行（600036）9月10日晚公告，公司9月10日召开董事会，会议审议通过了以下事项：因工作变动原因，李建红辞任公司董事长职务，会议选举缪建民担任公司第十一届董事会董事长，缪建民担任公司董事长的任职资格尚需报中国银行（维权）保险监督管理委员会核准，任期自中国银保监会核准之日起生效，至第十一届董事会届满之日止。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陈志杰",2020-09-10 17:02:16,新浪财经

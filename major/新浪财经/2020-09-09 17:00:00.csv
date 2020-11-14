@@ -1,0 +1,436 @@
+,title,content,pub_time,src
+0,2分钟读财报|蓝思科技被曝高管贪腐 董事长助理受贿550万,"视频加载中，请稍候...
+自动播放
+(image_address=""//n.sinaimg.cn/front20200909ac/72/w720h952/20200909/7c11-iyywcsy8578324.jpg"")
+play
+蓝思科技
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 351704388,
+pid:1,
+url: 'https://video.sina.com.cn/p/finance/2020-09-09/detail-iivhuipp3412284.d.html',
+title:'蓝思科技'//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=351704388/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+苹果新产品发布之际，其在国内的重要供应商蓝思科技被爆出高管涉贪腐。
+判决书资料显示2014年2月至2019年5月，郑秋丽利用先后担任蓝思科技采购部经理、中央采购部总监等职务便利，先后收受六家供应商财物共计5541460元。
+资料显示，蓝思科技是一家以研发、生产、销售高端视窗触控防护玻璃面板、触控模组及视窗触控防护新材料为主营业务的上市公，而郑秋丽曾任董事长助理一职，是名副其实的企业高管。
+在蓝思科技任职期间，郑秋丽数次获得蓝思科技股权激励，对于这样一位公司核心人员涉及贪腐，暴露出蓝思科技在企业内控方面的缺陷。
+2分钟读财报|中至科技IPO：毛利率比肩茅台 棋牌游戏原罪难洗
+2分钟读财报|宗庆后涉“原始股”骗局 娃哈哈回应已终止商标授权
+2分钟读财报|此红牛非彼红牛 养元饮品H1业绩腰斩股价收2连板
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：常福强",2020-09-09 17:52:23,新浪财经
+1,2分钟读财报|农夫山泉暴利经:水价贵过原油 取水成本不足2%,"视频加载中，请稍候...
+自动播放
+(image_address=""//n.sinaimg.cn/front20200909ac/380/w540h640/20200909/bd77-iyywcsy8618476.jpg"")
+play
+农夫山泉 - 有片尾大
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 351702566,
+pid:1,
+url: 'https://video.sina.com.cn/p/finance/2020-09-09/detail-iivhuipp3414335.d.html',
+title:'农夫山泉 - 有片尾大'//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=351702566/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+9月8日，万众瞩目的“水中茅台”农夫山泉正式登陆港交所。
+农夫山泉首日报收33.1港元/股，涨幅最终为53.95%，对应公司市值为3703亿港元（约人民币3263亿元）。早盘开盘农夫山泉一度高开85.12%，总市值达4453亿港元，实控人钟睒睒持有农夫山泉84.4%股权，以此推算，钟睒睒身价一度达3436亿元。
+虽然午后农夫山泉涨幅回落，钟睒睒的首富地位并未稳住，但投资者对农夫山泉的追捧可见一斑，前日暗盘农夫山泉最高价一度高达55港元，收盘价为44.05港元/股，涨幅为104.88%。同时，农夫山泉也已超过百威亚太成为港股食品饮料第一股。
+招股书显示，2017年-2019年，农夫山泉包装饮用水产品的毛利率分别为60.5%、56.5%、60.2%。按550ml瓶装水每瓶2元的售价计算，农夫山泉每卖出一瓶矿泉水就能收获1.2元的毛利。目前国际油价约为38美元/桶（WTI纽约原油CFD），粗略计算可知原油价格约1.63元/升，即一瓶550ml的原油仅需约9毛钱，比一瓶农夫山泉便宜一倍有余。
+农夫山泉的净利率同样不菲，2017年-2019年，农夫山泉的净利率分别为19.31%、17.59%、20.55%。
+良好的盈利能力支撑了农夫山泉漂亮的业绩。2017年-2019年，农夫山泉营业收入分别为175.31亿元、205.36亿元、241.05亿元，2018年和2019年的增速分别为17.14%、17.38%，三年来的净利润分别为33.8亿元、36.06亿元、49.49亿元，2019年净利润增速达37.23%。
+从成本来看，暴利的卖水生意取水成本极低，占比最大的成本为塑料瓶PET成本，2017年-2019年，PET成本分别为22.3亿元、30.4亿元、33.8亿元，占销售成本总额的29%、31.9%、31.6%，取水和处理成本仅为1.16亿元、1.31亿元、1.35亿元，占比分别为1.5%、1.37%、1.26%。
+2分钟读财报|森马遭少林寺维权 上半年关店近千家净利降97%
+2分钟读财报|中至科技IPO：毛利率比肩茅台 棋牌游戏原罪难洗
+2分钟读财报|宗庆后涉“原始股”骗局 娃哈哈回应已终止商标授权
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：常福强",2020-09-09 17:50:31,新浪财经
+2,红星美凯龙董事长:光鞠躬倒茶不叫服务 要能预判消费者想法,"原标题：红星美凯龙董事长：光鞠躬倒茶不叫服务 要能预判消费者想法
+“中国家居品牌的主要问题是观念落后和不认识消费者，他们对消费者的想象力不够，不会预判消费者喜欢什么。” 9月8日，红星美凯龙董事长车建新出席了红星美凯龙2020秋季大会时谈到行业痛点。
+(image_address=""//n.sinaimg.cn/finance/crawl/639/w864h575/20200909/792f-iyywcsy8623361.png"")红星美凯龙董事长车建新
+“消费者的水平提高了，愿意花更多钱去买进口产品，但我们国内的工厂没有跟上消费者的步伐，一是舍不得花钱，不能迎合当代消费者的需求；二是我们的工厂的观念还没有提高，认为消费者的消费水平还不够。” 车建新说。
+车建新指出现在行业内创新水平不够，对原材料和工艺水平的提升也不够。“消费者在10年内买房的价格可能涨了2-3倍，但我们家居的品质和价格没有涨上去，主要原因在于款式没有跟上，还是使用普通的皮、普通的布，工艺没有太多的提升。”
+“不是说鞠个躬，倒杯茶叫为消费者服务，而是能预判消费者脑海中模糊的想法，把他们满意的产品做出来，这才叫服务。”车建新还表示。
+“红星美凯龙走到今天，靠的就是危机感，不创新就要被淘汰。” 车建新提醒必须加快行业创新，要通过1到2年的时间完成产品创新、观念创新甚至是发展模式创新，为家居行业快速迭代发展指出道路。
+大会现场还首度官宣了由家居、家装、爱琴海、地产、新零售、美凯龙爱家、红星云共同布局的红星美凯龙“七大家居生活美学产业链”。
+2019年4月，红星美凯龙就成立了家装产业集团，制定了“新零售变革增强主业竞争力，家装业务打造第二增长曲线”的战略部署。2020年，红星美凯龙更是将家装业务提高到第一业务的地位。近期在红星美凯龙投资者开放日活动上，车建新还强调要把家装当作第一业务，做成中国最大家装公司。
+9月8日，红星美凯龙家居集团总裁兼装修产业集团CEO谢坚现场表示，截至8月31日，装修产业集团已开152家直营门店、180家合作装企、全国覆盖达200余个城市，加速全国规模化布局。
+除了进军家装、地产等行业，自2019年与阿里巴巴达成了战略合作后，红星美凯龙还加快了在同城新零售领域的发展。
+2019年5月，红星美凯龙获得阿里巴巴的战略入股，根据当时的公告，双方将在家具建材及家居商场、购物中心及其他业务领域开展业务合作。公开资料显示，红星美凯龙完成与阿里融合的同城站业务已累计上线22个城市，覆盖56个商场和9，800余个品牌。
+9月8日，天猫家装业务发展部总经理冬一在会场上谈到了一年多以来的合作进展，称已经“完成了围绕卖场搭建数字化基础能力、依托本地业务构建线上线下同城化体系以及新内容导购（如淘宝直播等）这三件事。未来，阿里将携手红星美凯龙完成零售端、工厂供应链端以及服务交付端的数字化升级，为实现家居新零售的全面落地保驾护航。”
+8月27日，红星美凯龙发布2020年半年度报告，公司上半年实现营业收入60.24亿元，扣非后归属于上市公司股东的净利润为7.01亿元。
+相较于受疫情影响的一季度，红星美凯龙二季度多项核心财务数据环比大幅增长。其中，2020年Q2实现营收34.68亿元，环比提升35.7%；实现扣非后归母净利润4.96亿元，环比提升142.1%；经营性现金流净流入为21.26亿元。
+截至报告期末，红星美凯龙共经营了87家自营商场，247家委管商场，通过战略合作经营12家家居商场注，此外还以特许经营方式授权开业50家特许经营家居建材，共包括430家家居建材店/产业街。
+新时代证券研究认为，疫情延后家居零售端需求，随着疫情对线下渠道影响减弱，下半年家居零售市场需求将逐步释放，加上2020年竣工回暖已经得到印证，预计下半年将维持地产回暖趋势，房屋竣工面积增速好转将直接带动下游家装产业需求释放，逐步转至零售端价值回归。而中长期来看，精装修红利释放以及消费升级将重塑产业链利益分配格局，龙头企业在竞争中优势明显。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陈志杰",2020-09-09 17:50:06,新浪财经
+3,康泰生物：临床三期可能会成为各疫苗企业的重要门槛,"据外媒报道，英国药企阿斯利康于9月8日宣布，暂停其冠状病毒疫苗临床试验，原因是一名英国志愿者患有无法解释的疾病。
+受此影响，国内拿到阿斯利康中国内地市场独家授权合作的康泰生物，股价于今日早间大幅低开，盘中几近跌停，并最终收跌16.57%。
+据了解，今年8月初，康泰生物便公告称，与阿斯利康签署中国内地市场独家授权合作框架协议，通过技术转让获得阿斯利康与牛津大学合作的腺病毒载体新冠疫苗AZD1222在中国内地市场的研发、生产、供应和商业化。
+如今，阿斯利康暂停疫苗的相关试验，令市场开始担忧双方的合作还能否继续。对此，康泰生物于今日午间召开电话会议表示，公司和阿斯利康的合作依然在紧锣密鼓的推进，没有任何影响。
+“目前双方的合作还是比较顺利的，我们已经按照合同正在推进，车间的建设也在推进，预计年底之前完成2亿剂量的产能建设。”康泰生物方面称。
+此外，康泰生物方面判断，阿斯利康三期临床试验的涉及全球人群的规模庞大，出现个别异常案例应该是正常情况，与疫苗相关的概率较低，并不会对试验造成颠覆性的影响。
+“阿斯利康现在全球研发是最靠前的，涉及的国家和人员也多，我们认为是正常的，不是一个特别的事件。”康泰生物方面透露，国内以前三期临床试验最多有1-2万人，阿斯利康的是5万人，规模非常大。
+据悉，目前全球进入临床试验阶段的新冠疫苗超过了30种，进入三期临床试验的有9种。
+据康泰生物方面介绍，国内现在整体做三期临床的不是特别多，三期可能会成为各家疫苗企业比较重要的门槛。一方面是因为国外不好找受试者，另一方面是因为三期的相关成本提升的很快。
+“现在我们初步了解的最便宜的受试者在2-3万/人，一般的在4-5万/人。所以开展1万人试验最少就要2-3亿。康泰生物方面表示，公司和阿斯利康合作，可以直接借用他们的三期，进度快速提高，成本大幅降低。
+除了与阿斯利康合作，据康泰生物介绍，公司目前还有两个自主研发的技术路线：灭活疫苗和VSV疫苗。公司方面认为，国内灭活疫苗的成功概率时非常高的，会最先批出来。
+“目前进度还可以，我们在深圳南山有政府给了地建车间，产能应该是1个多亿，旁边还有备用车间，扩大之后是2-3亿的产能，现在基本上土建和设备安装在9-10月底就能顺利完成。”康泰生物称，临床前的工作已经做完了，这个月底估计能够拿到临床批件，临床拿到之后，一二期做完，就可以应急性的使用。
+不过，虽然康泰生物方面认为英国志愿者的疾病大概率与疫苗没有关系，但公司方面仍然表示，具体的结果还是需要等阿斯利康的详细评估。（文/陈矿然）
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陈志杰",2020-09-09 17:46:11,新浪财经
+4,两连板东宝生物：要求核实股价短期内涨幅较大的原因,"9月9日消息，两连板东宝生物收关注函，深交所要求公司结合公众媒体报道、投资者咨询等涉及的内容，核实公司股价短期内涨幅较大的原因，并说明是否存在对公司股票交易价格可能产生较大影响的未公开重大信息、市场传闻、热点概念等。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：张熠",2020-09-09 17:43:07,新浪财经
+5,蚂蚁集团：近期金融新规不会对公司持续经营能力造成重大不利影响,"9月9日消息，上交所官网披露蚂蚁科技集团第二轮审核问询函的回复：最新法律法规或政策性文件降低民间借贷利率的司法保护上限、实施金融控股公司准入管理、规范商业银行互联网贷款业务等新变化，可能增加公司的合规难度和提高合规成本，但是不会对公司的持续经营能力造成重大不利影响。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陈志杰",2020-09-09 17:32:10,新浪财经
+6,国发股份收购标的身价突增显蹊跷 诸多经营风险潜藏惹人忧,"原标题：国发股份收购标的身价突增显蹊跷 诸多经营风险潜藏惹人忧
+来源：红刊财经
+9月4日， 国发股份 发布了收购草案，其拟以发行股份及支付现金的方式购买广州高盛生物科技股份有限公司（以下简称“高盛生物”或“标的公司”）99.98%的股权，交易价格为3.56亿元。《红周刊》记者翻看草案发现，标的公司在不足一个月的时间内身价猛增，十分蹊跷。此外，标的公司下游主要客户不稳定，上游则存在依赖大供应商的情况，经营风险暗涌。
+身价突增显蹊跷
+国发股份此次收购的标的公司为高盛生物，该公司成立于2007年，此后历经过多次增资与股权变动，其中，2018年8月，其分别实施了一次增资及股权集合竞价转让；2019年12月，其又实施了两次股权集合竞价转让。据草案显示，上述增资及股权转让中，标的公司整体估值分别为9000万、2.04亿元、2.02亿元、2.45亿元。然而，在本次交易中，以2019年12月31日为评估基准日，高盛生物的整体评估值为3.60亿元，这意味着在不足一个月的时间里，高盛生物的估值竟增加了1亿元。为何标的公司的交易对手变为上市公司后，其身价便猛增呢？这着实让人摸不着头脑。
+截至评估基准日，高盛生物的账面净资产为7326.20万元，本次标的公司评估增值2.87亿元，评估增值率达391.81%。而高溢价也意味着将给上市公司带来不少的商誉，据交易完成后的备考审阅报告显示，截至2020年6月30日，上市公司备考合并报表中形成的商誉金额为2.79亿元，占备考合并报表归属于母公司所有者权益的比例为32.87%。
+值得注意的是，上市公司近年来盈利微薄，其中，2017年至2019年，其净利润分别为235.27万元、-2161.11万元、577.29万元，不是处于亏损状态，就是仅盈利几百万元。如此情况下，倘若日后标的公司数亿元的商誉一旦出现减值，对于上市公司的净利润来说，影响无疑是巨大的。
+暗藏经营风险
+高盛生物不仅估值骤增的谜团待解，其存在的经营风险也需要投资者警惕。
+据草案显示，2018年、2019年度，高盛生物分别实现营业收入为1.09亿元、1.48亿元，实现净利润1631.55万元、2323.12万元。其中，2019年其营业收入、净利润分别增长了35.44%、42.39%，可见，其在2019年交出了一份亮眼的成绩，然而，其业绩高速增长背后却暗含诸多风险。
+具体来看，高盛生物主要业务类别包括DNA检测仪器及配套耗材产品、DNA测序及数据库建库业务、司法鉴定业务等，其主要客户为公安单位。然而，查看其下游客户情况后发现，其大客户变化非常大，具体来看，2019年前五大客户中，除了第一大客户东莞市公安局尚在2020年上半年前五大客户名单中，其余均不在名单之列。上市公司对此解释为下游客户自身需求变化所致。令人担忧的是，标的公司下游客户不稳定，就意味着其高速增长的业绩恐怕难以持续，一旦没有开发出新的大客户，其业绩恐怕会有下滑的风险。
+此外，高盛生物的供应商似乎也过于集中，其中2018年、2019年、2020年上半年，其向前五名供应商采购额占其总采购额的比重分别为77.29%、64.88%、64.88%。而标的公司供应商集中实则与其行业特性密切相关，上市公司在草案中解释称，由于基因测序服务对检测结果的准确性要求较高，相应对采购设备质量性能的先进性、稳定性和准确性要求也较高，因此，国内外基因测序设备的行业龙头供应商集中度较高。而这也代表着标的公司短期内难以改变供应商集中的问题。
+不仅如此，高盛生物的第一、二名供应商均为境外企业，而依赖境外供应商的风险在于，倘若日后贸易政策或供应商供应能力等因素发生变化，导致采购成本大幅提高甚至境外供应商无法供应相关产品，在其供应商十分集中的情况下，恐怕会对标的公司的生产经营产生重大不利影响。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：逯文云",2020-09-09 17:19:32,新浪财经
+7,证监会同意山科智能和熊猫乳品2家企业创业板IPO注册,"9月9日消息，近日，证监会按法定程序同意以下企业创业板首次公开发行股票注册：杭州山科智能科技股份有限公司、熊猫乳品集团股份有限公司。上述企业及其承销商将分别与深圳证券交易所协商确定发行日程，并陆续刊登招股文件。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：逯文云",2020-09-09 17:08:35,新浪财经

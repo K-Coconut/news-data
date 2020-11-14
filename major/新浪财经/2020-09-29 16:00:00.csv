@@ -1,0 +1,463 @@
+,title,content,pub_time,src
+0,2分钟读财报|知识付费是好生意?“罗辑思维”营收扣非双降,"视频加载中，请稍候...
+自动播放
+(image_address=""//n.sinaimg.cn/front20200929ac/380/w540h640/20200929/5f52-izwfpys6481300.jpg"")
+play
+视频|罗辑思维
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 354963565,
+pid:1,
+url: 'https://video.sina.com.cn/p/finance/2020-09-29/detail-iivhuipp7157676.d.html',
+title:'视频|罗辑思维'//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=354963565/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+罗永浩刚刚因为6亿债务还清4亿上了热搜，另一个老罗罗振宇带着得到APP冲击创业板。
+不久前，思维造物递交招股说明书。思维造物为罗振宇得到APP的主体公司，主要通过得到APP、罗辑思维公众号等平台提供课程、听书及电子书产品，线下则通过“得到大学”“时间的朋友”跨年演讲等形式，提供通识教育及职业技能培训。
+位处知识付费赛道的思维造物，业绩稳定性并不算理想。
+招股书显示，2017年-2019年，思维造物的营业收入分别为5.56亿元、7.38亿元、6.28亿元；净利润分别为0.62亿元、0.53亿元、1.17亿元，营收和净利润的波动均较大，扣非净利润三年分别为0.5亿元、0.33亿元、0.31亿元，连续两年下滑。
+知识服务一直被认为是一片蓝海，但其中的佼佼者思维造物似乎陷入了营收净利双降的困局。2018年，思维造物斥资4717万元赞助《最强大脑》，导致当年销售费用高达1.25亿元，虽然营业收入达到了近年峰值——7.38亿元，但并未换来对应的净利润，2018年净利润为4764.41万元，对比去年同期下降22.3%，扣非净利润更是由2017年的4990万元下降至3280.9万元。
+高额的销售费用无法带来利润，而减小营销的投入，公司更是直接面临营收、扣非净利双降的窘境。2019年，思维造物销售费用回到均值水平，而营收随即下滑14.91%，扣非净利润下滑6.5%。目前来看，这一困局罗振宇仍未找到解决办法，而上半年疫情本是在线教育行业的一次发展红利期，思维造物表现也谈不上优异。
+2020年一季度，线上知识服务业务收入占比由2019年的66.26%下降至54.7%，反而是线下知识服务业务占比上升至34.02%。公司在招股书中并未提及线上线下业务发展差异的原因。
+另外，公司对单个专家的依赖也需要引起足够的关注。得到官网显示，吴军的《硅谷来信》《谷歌方法论》、香帅的《北大金融学课》、薛兆丰的《经济学课》都是平台头部的畅销课程，对应的学者吴军、薛兆丰、唐涯都曾位列公司前五大供应商，其中2019年向吴军采购1171万元、2018年向唐涯和薛兆丰分别采购1476万元和1321万元。一旦公司与这些学者专家的合作发生变动，业绩将会明显受到不利影响。
+2分钟读财报|男装卖不动，七匹狼实业+投资的模式能走多远？
+2分钟读财报|科创板数家公司花式减持百亿 仍有300亿在路上
+2分钟读财报|口罩股欣龙控股业绩大增 董事长涨薪16倍
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：石秀珍 SF183",2020-09-29 16:56:44,新浪财经
+1,深交所:长方集团22日复牌至今累跌46.39% 中小投资者累买占70.43%,"9月29日消息，深交所最新披露，长方集团9月22日复牌至今累计下跌46.39%，自然人期间累计买入55.9亿元，占比97.6%；其中，中小投资者期间累计买入40.3亿元，占比70.43%。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陈志杰",2020-09-29 16:55:49,新浪财经
+2,2分钟读财报|木瓜移动科创板折戟后冲创业板 存误导性陈述之嫌,"视频加载中，请稍候...
+自动播放
+(image_address=""//n.sinaimg.cn/front20200929ac/380/w540h640/20200929/ee2a-izwfpys6479671.jpg"")
+play
+视频|木瓜移动
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 354963622,
+pid:1,
+url: 'https://video.sina.com.cn/p/finance/2020-09-29/detail-iivhuipp7157573.d.html',
+title:'视频|木瓜移动'//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=354963622/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+在注册制以真实、准确、完整的信披为重点引导方向时，木瓜移动在折戟科创板转道创业板过程中，2份招股书出现重大差异。
+其中木瓜移动向科创板递交的旧版招股书显示，“发行人是一家依靠自主研发技术进行大数据处理分析的公司，主要利用全球大数据资源和大数据处理分析技术为国内企业提供海外营销服务，具体包括搜索展示类服务和效果类服务。”
+从上述内容分析，木瓜移动俨然将自己定位为一家大数据处理分析公司。但从商业模式角度分析，公司是一家互联网营销公司。
+木瓜移动将自己定位为“大数据处理分析公司”的定位也遭到上交所的问询。上交所要求木瓜移动补充披露行业定位为大数据行业的商业合理性，是否存在误导性陈述，并要求保荐机构就发行人定位准确性发表明确核查意见。
+虽然木瓜移动及其保荐人进行了回复，但并不能消除质疑。其实，木瓜移动自己也清楚自己业务与技术的关系。在旧版的招股书中，公司多次称“主要利用全球大数据资源和大数据处理分析技术为国内企业提供海外营销服务”等。那为何公司仍执着于定位大数据行业？
+从A股IPO发行市盈率角度分析，大数据等具有高科技属性的企业，较文化传媒类公司有更高的估值。具体到木瓜移动而言，多家媒体认为，定位大数据行业符合科创板上市要求，而定位互联网营销则不一定符合要求。
+今年，在木瓜移动向创业板递交的新版招股书中，公司删除了“大数据处理公司”的定位，称“主营业务是为中国企业提供互联网海外营销服务”，定位变得准确、清晰。
+由此可见，木瓜移动对公司定位的认识较准确，那旧版招股书中关于公司“大数据行业”的定位是否属于“误导性陈述”？
+2分钟读财报|三湘印象业绩下滑：多年未拿地 演艺业务难撑大局
+2分钟读财报|明月镜片IPO：经销商流失加快 关联交易依赖难解
+2分钟读财报|万科24亿伸援 能拯救负债500亿的泰禾吗？
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：公司观察",2020-09-29 16:55:27,新浪财经
+3,江山欧派：不存在对单一客户依赖情况,"9月29日消息，江山欧派公告，公司关注到近期有媒体对公司合作的工程客户及大宗业务发展进行了报道。公司不存在对单一客户依赖的情况，公司现有销售渠道多样化，合作工程客户多元化，且现有客户均能按照合同的约定开展业务合作，同时积极拓展客户渠道，目前公司生产经营一切正常。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陈志杰",2020-09-29 16:53:29,新浪财经
+4,深交所：天山生物22日复牌至今累跌44% 中小投资者买入占比74.41%,"9月29日消息，深交所披露，天山生物（维权）在9月22日到9月29日涨幅严重异常期间，获自然人买入61.2亿元，占比96.93%。其中，中小投资者累计买入超46亿元，占比74.41%。机构投资者买入占比3.07%。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陈志杰",2020-09-29 16:49:28,新浪财经
+5,证监会同意1家企业科创板IPO注册,"9月29日消息，近日，证监会按法定程序同意以下企业科创板首次公开发行股票注册：大连豪森设备制造股份有限公司。上述企业及其承销商将与上海证券交易所协商确定发行日程，并刊登招股文件。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陈志杰",2020-09-29 16:44:46,新浪财经
+6,证监会同意1家企业创业板IPO注册,"9月29日消息，近日，证监会按法定程序同意以下企业创业板首次公开发行股票注册：广东科翔电子科技股份有限公司。上述企业及其承销商将与深圳证券交易所协商确定发行日程，并刊登招股文件。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陈志杰",2020-09-29 16:41:19,新浪财经
+7,复星医药：公司董事拟减持股份,"9月29日消息，复星医药（600196）9月29日晚间公告，公司执行董事、联席董事长姚方拟自2020年11月2日至2021年4月30日期间以集中竞价交易方式减持不超过34.17万股公司A股股份。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陈志杰",2020-09-29 16:35:49,新浪财经
+8,亚玛顿:前三季度净利预增约40倍,"9月29日消息，亚玛顿公告，预计前三季度实现净利润7100万元-7600万元，同比增长3995.76%至4284.19%。第三季度实现净利润3052.17万元-3552.17万元，同比增长220.34%-272.82%。报告期受益于双玻组件市场渗透率不断地提升，光伏玻璃需求量大幅增长，使得公司主营业务收入、销售规模以及持续盈利能力继续平稳增长，公司经营业绩进一步稳健提升。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陈志杰",2020-09-29 16:34:09,新浪财经
+9,广州浪奇超5亿存货消失 公司纪委介入调查指向内控失效,"广州浪奇（维权）（002523.SZ）没有能等到“援兵”到来，就先“卧倒”了。
+9月27日晚间，广州浪奇公告，存放在两家公司的5.72亿存货，被两家公司否认。
+消息一出，广州浪奇28日跌停，29日股价至发稿时一直处于一字跌停状态。
+广州浪奇十年前开始，由消费者熟知的日化行业，向上游化工品贸易产业链延伸，而据第一财经记者调查，消失的近6亿存货，应该属于贸易用存货。
+据第一财经记者了解，广州浪奇公司纪委已经介入调查，此事很可能涉内控失效。
+在“存货消失”案发之前，广州浪奇在多家银行的账户被冻结，债务逾期，这条日化之船早已处于到处漏水的状态。然而，广州浪奇因在广州旧城区的老厂房拆迁，有望带来超过20亿元的巨额土地补偿款——这笔补偿，在近一两年内，就有可能让公司现有净资产翻倍。
+公章被指造假，公司纪委介入
+广州浪奇称，公司存放在江苏鸿燊物流有限公司（下称“江苏鸿燊”）有4.5亿元；存放在江苏辉丰石化有限公司（下称“江苏辉丰”）的存货，共有1.19亿元。
+第一财经记者致电江苏鸿燊老板黄勇军，黄勇军告诉记者，他与广州浪奇确实签订过仓储保管协议，但并没有收到货物。
+在记者追问下，黄勇军告诉记者，他是与广州浪奇的“贸易市场部”签的仓储保管合同。
+广州浪奇1993年即已上市，是广州轻工工贸集团旗下唯一上市公司，后者隶属广州国资委。十年前，广州浪奇开始涉入化工品贸易业务，但其年报和中报从未披露公司化工品贸易和日化用品生产销售业务各占几何。
+公司2019年年报发布后，在交易所的追问下，投资者方才得以一窥这家销售额超过120亿元的公司，营业收入的大概面貌。
+根据公司回复，公司贸易业务的内容，主要为洗涤品制造所需的中间品或原材料和其他化工原料等货物，2019年和2018年贸易业务收入占营业收入的比重分别为74.23%和76.00%，毛利率分别只有1.48%和1.66%。洗衣粉、液体洗涤剂及肥皂等产品的生产与销售，不超过公司总销售收入的16%。
+存货消失案涉事的另一家公司江苏辉丰，是*ST辉丰（维权）002496.SZ）的子公司。*ST辉丰相关人员告诉第一财经记者，他们对比过广州浪奇派来的律师出示的“仓储合同“，所加盖合同系假合同章，目前，*ST辉丰石化正着手向公安机关报案，请求公安机关立案侦查。
+另据第一财经记者了解，广州浪奇纪委方面也已经与律师共同介入此案的调查。第一财经记者向广州浪奇核实此事，截至发稿，对方未回复电话及邮件。
+有资深审计师对记者称，此事由律师和公司纪委出面调查，而没有审计师出面，表明案件很可能指向内部控制。
+“内部控制失效了的公司，财务报表也不可信了。”该人士称。
+2019年5月至今，广州浪奇董、监、高层面频繁发生人事变动。2019年5月董事长傅勇国辞职；9月，公司更换财务总监；2020年4月，公司总经理陈建斌辞职。从履历来看，傅勇国与陈建斌同于2014年，由广州轻工工贸集团另一家公司下属公司广州双鱼体育用品集团有限公司调任广州浪奇。
+净资产或将翻倍
+近5年来，广州浪奇资产负债率持续走高，由58%陡然上升至79%。
+具体来看，短期借款由2017年末的6.6亿元，上升到2019年的23亿元。
+2014年新董事长和总经理上任以来，广州浪奇经营净现金流持续为负，6年间，公司合计经营现金流接近-20亿元。
+而净利润6年来基本维持在1年3000万左右（2019年净利润为7000万），但是近3年财务费用却分别达到了5900万、8500万和1.36亿元。而应收账款却从2013年年报的6亿元，上升为2019年的34亿元。
+可以说，广州浪奇6年来20亿元现金净现金流缺口，全部系因应收账款上升，也即经营性应收项目所占据。
+经营净现金流持续为负，广州浪奇又哪来那么多钱来被上游占用？从短期借款上升的数据来看，被占用的款项，来自包括短期借款在内的负债不断攀升。也就是说，广州浪奇自己背债，来补贴上游，扩充营收规模。
+但广州浪奇从未公布前五大客户和前五大应收账款客户的名称，到底广州浪奇在为谁垫付资金，从公开信息难以得出判断。
+广州浪奇手上有一块位于广州天河区的旧厂区地块，自2014年透露相关土地要被收储时起，即因地处繁华地段，而被投资者寄予厚望。
+该地块位于广州市天河区黄埔大道东128号地块占地面积 11.9 万平方米，土地使用性质为工业用地，2017年，平安证券的研报中称，按容积率为3.0计算，公司这块地价值60.7亿元。
+到了2019年底，广州浪奇才签下国有土地使用权收储补偿协议。最近确定的补偿价，与市场期望相比，大打折扣——容积率按2.5算，同时按商业用途市场评估价的50%给予补偿，最终补偿价格为21.56亿元。
+截至9月25日，广州浪奇已收到土地补偿款近13亿元，占补偿款总额60%。其中2019年收到1.18亿元，今年三季收到的5亿元，还未反映在公开的财务报表中。
+那么广州浪奇拿 到这么多土地补偿款，是不是将增加企业的利润呢？答案是否定的。一位资深审计师告诉记者，根据相关会计准则要求，广州浪奇将收到的土地收储补偿，将确认为一项负债。发生搬迁，职工安置，以及资本性支出时，会将部分的负债抵销，从而无论是搬迁还是安置，还是收到补偿款，都不会影响当期的利润，也不会影响经营现金流。
+待到全部拆迁补偿款到位，搬迁安置结束后，企业将结余资金，扣除所得税的部分，全部计入资本公积，这笔补偿款将不通过利润口径，而是直接迅速增加企业的所有者权益。
+早在2013 年，广州浪奇已将主要生产经营活动转移至南沙生产基地。发生的职工安置补偿费3200余万元。也就是说，
+按照协议，如果广州浪奇在签署协议后12个月内按照要求交付全部土地的话，还可以额外获得4.31亿元的奖励。
+以此计算，广州浪奇在扣除3000多万元安置费后，不考虑所得税影响，很有可能入账25.5亿元现金，并计入资本公积。而广州浪奇目前总市值29亿元，2020年中报显示归母净资产是17.8亿元，计入拆迁补偿款后，广州浪奇净资产很有可能翻倍。如果内控无忧，广州浪奇每股内含现金，可能超过每股股价；而每股净资产，也很有可能超过每股股价。
+不过，目前广州浪奇多个银行账户被冻结，债务逾期。资深财务人士告诉记者，考虑到广州浪奇近两年新增的短期借款，有相当一部分来自于质押借款，很有可能公司已经在一定程序上透支了这部分土地补偿款的融资能力，未来即便所有者权益增加，广州浪奇的资产负债率直线下降，也并不代表有很大的融资空间。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陈志杰",2020-09-29 16:25:19,新浪财经
+10,*ST康得可能被强制退市 律师：请等待中介机构处罚结果,"原标题：*ST康得（维权）行政处罚落地，可能被强制退市，律师：请等待中介机构处罚结果
+(image_address=""//n.sinaimg.cn/spider2020929/298/w700h398/20200929/9bc0-izwfpys6313112.jpg"")图片来源：视觉中国
+记者 | 陈祺欣
+证监部门对康得新财务造假案的调查已结束。9月28日晚，*ST康得（002450.SZ）公告收到证监会的《行政处罚决定书》和《市场禁入决定书》。康得新自2019年7月8日停牌至今，已经一年多。
+根据行政处罚决定书的认定，康得新可能存在触及《深圳证券交易所上市公司重大违法强制退市实施办法》第四条第（三）项规定的重大违法强制退市情形，公司股票可能被实施强制退市。
+2015年1月至2018年12月，康得新通过虚构销售业务、虚构采购、生产、研发、产品运输费用等方式，虚增营业收入、营业成本、研发费用和销售费用，导致2015年至2018年年度报告虚增利润总额分别为22.43亿元、29.43亿元、39.08亿元、24.36亿元，分别占各年度报告披露利润总额的136.22%、127.85%、134.19%、711.29%，康得新2015年至2018年年度报告中披露的利润总额存在虚假记载。
+根据康得集团与北京银行西单支行签订的《现金管理业务合作协议》，康得新及其合并财务报表范围内3家子公司在北京银行西单支行账户组的资金被实时、全额归集到康得集团北京银行西单支行的账户，康得新北京银行账户组各年末实际余额为0。康得新2015年至2018年年度报告中披露的银行存款余额存在虚假记载。
+康得新2019年年度股东大会上，公司现任管理层表示已向监管部门提出希望免于行政处罚。根据行政处罚决定书，康得新提出的申辩意见未获采纳。证监会认为，康得新案是系统性财务造假案件，除上市公司管理层参与外，还有经营层，甚至大量员工参与造假，是上市公司与实际控制人一起实施的违法行为。康得新自收到立案调查通知书至今 ，未就财务造假行为进行整改，也未就赔偿投资者等相关事项采取任何行动，不存在《行政处罚法》第二十七条第二款之不予行政处罚的情形 。
+关于康得新中小股东颇为关注的北京银行在上市公司财务造假案中的责任问题，归集派股东此前向界面新闻记者表示，北京银行曾出具付息单和企业对账单以及银行账户余额等单据，证明康得新在银行确实是有存款的，只是根据现金管理协议，存款被归集划分到集团帐户，已经脱离了上市公司的控制，账户资金的丢失责任就在于康得集团和北京银行。非归集股东同样认为北京银行的函证存在问题，间接导致上市公司的信息披露存在问题，从而误导了投资者。
+根据决定书的认定，证监会的调查结果是康得新的银行存款余额为虚假记载。依据2005年《证券法》相关规定，证监会决定对康得新复合材料集团股份有限公司责令改正，给予警告，并处以60万元罚款。
+江苏剑桥颐华律师事务所韩友维律师向界面新闻记者表示，投资者此时仅起诉康得新没有实际意义，即使打赢官司也得不到实质赔偿，请耐心等待监管部门对北京银行、券商、会计师事务所等中介机构的处罚。
+据归集股东此前向界面新闻记者表示，其正讨论落实直接起诉北京银行和康得集团，而非上市公司，待行政处罚决定颁布后，将利用新证券法的代表人诉讼。
+界面新闻记者获得的一份银保监会北京监管局的举报调查意见书显示，北京银行作为康得新发行债券主承销商未督导其如实披露信息，未密切关注发行人募集资金运用，存在管理不到位的情况；北京银行存在向会计师事务所针对康得新及其子公司账户询证函的回函未反映账户实际余额为零的问题，函询业务管理不力，银监会将依法就核查中发现的违规问题采取监管措施。
+(image_address=""//n.sinaimg.cn/spider2020929/158/w700h1058/20200929/7897-izwfpys6313114.jpg"")图片来源：受访者供图
+此外，相关当事人钟玉、徐曙、张丽雄、肖鹏等人亦提出申辩意见。其中，钟玉表示愿意承担全部责任，徐曙表示对案涉财务造假事项不知情也没参与，张丽雄表示自己是执行者而不是组织者，请求减轻处罚。
+从证监会的认定来看，其采纳了张丽雄、吴炎的申辩意见。证监会决定，对钟玉、王瑜分别处以90万元和30万元罚款，并采取终身证券市场禁入措施，对徐曙处以20万元罚款并采取10年证券市场禁入措施，对张丽雄处以15万元罚款并采取10年证券市场禁入措施。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陈志杰",2020-09-29 16:13:57,新浪财经

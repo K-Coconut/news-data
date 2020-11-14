@@ -1,0 +1,224 @@
+,title,content,pub_time,src
+0,解读二季度中国上市公司财报 高估值下的两条投资线索,"视频加载中，请稍候...
+自动播放
+(image_address=""//n.sinaimg.cn/front20200911ac/400/w1280h720/20200911/a2b7-iyywcsz4643256.jpg"")
+play
+解读二季度中国上市公司财报 高估值下的两条投资线索
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 351973387,
+pid:1,
+url: 'https://video.sina.com.cn/p/finance/2020-09-11/detail-iivhvpwy6115332.d.html',
+title:'解读二季度中国上市公司财报 高估值下的两条投资线索'//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=351973387/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+今日直播：
+嘉实基金陈正宪、滕抒含：有稳赚不赔的投资吗？
+华夏基金张千洋：互联网科技买什么？
+汇丰晋信李媛媛：股市震荡，如何让投资路更平稳？
+银河证券资黄若晴：买基金还是跟投顾 震荡市谁能帮散户赚钱？
+星石投资副总经理易爰言：火爆服贸会，重点是啥？
+原标题：大咖录丨解读二季度中国上市公司财报，高估值下的两条投资线索
+二季度财报季结束，中国上市公司是否摆脱疫情影响，财报透露了哪些投资线索？《大行其道》对话华兴证券首席经济学家兼首席策略分析师庞溟。
+核心观点：
+1．新经济公司盈利和估值有明显修复，而能源、工业等旧经济板块二季度财报表现落后，预计三季度旧经济板块将有盈利反弹。
+2．消费升级和产业自主升级是未来投资主线，新经济板块最为受益。
+3．首选龙头股，推荐板块
+新经济：电商、在线游戏、物流、O2O、教育、软件服务
+旧经济：材料、房地产、金融
+4．目前市场仍是情绪驱动，短期维持横盘状态，中长期看好中国股票投资价值。
+第一财经：二季度财报已经过去，从财报当中是否显示出中国上市公司已经彻底的从疫情当中恢复了？
+庞溟：对的，现在我们看到二季报和上半年年报的情况显示，从盈利的恢复来看，基本上中国的股票可以看出来有一个修复和复苏的情况。然后主要来看还是新经济的板块，他们是领涨，估值修复和盈利修复的势头，主要还是新经济的板块。
+那么从MSCI中国指数来说，我们可以看到就是说从板块上来讲，主要就是说信息科技还有消费，还有通讯服务这几个板块，它们的2020年上半年的盈利是同比的增长的，那么相比来说有一些旧经济的板块，比如说能源、工业，还有材料这几个板块，他们的2020年上半年的盈利同比还是一个负的增长。那么从A股来讲，盈利恢复的比较好的板块主要还是可选消费，另外还有地产、金融和材料这么几个板块。
+另外我们可以看到就是说在过去的两个月里面，也就是在过去的中报季当中，卖方分析师对MSCI中国指数的每股盈利增长的一致性的预期，今年来说它是往上调了0.3个百分点到1.9%，而明年是下修了0.2个百分点到19.4%，可以说今年明年的加一块增长，大家是预期它是不变的，只不过是往上修了一下今年，认为修复的复苏的步伐会加快一些，主要是这么一个情况。
+第一财经：您提到二季度表现比较落后的板块，能源还有工业，那么这些落后的板块的话，您觉得未来他们需要多长时间来从疫情当中来恢复？
+庞溟：是这样子，我们如果看一些宏观的数据来看，比如说你看发电量还有一些高频的数字，其实这些板块基本上他们的工业企业的盈利来看，旧经济的板块其实也在逐渐恢复当中，我们预计其实是在三季度你看到比较明显的复苏和盈利上面的反弹。
+不过我们提醒从单纯的宏观数据上来看，从规模以上工业企业的角度来看，要警惕企业用负债的规模往上长，负债率的上升来导致他盈利的复苏，这个风险点是要注意的。
+第一财经：新旧经济出现了比较明显的分化，那么从财报当中包括A股和港股的上市公司，您觉得带来了哪些投资线索呢？
+庞溟：我们可以看到其实今年比较有意思的，就是说在中报之后，大家可以看到其实像信息科技，还有说像医疗，其实它们是有一个获利离场的情况。在过去的两个月当中，我们可以看到，彭博数据显示，400多支中国股票的 ETF当中，在8月份是接近200亿美元的净流出的，但是我们可以看到很多情况下是一些短期的可以说是一些做战术盘的外资，它们进行了一些调仓，但是长期配置的资金它们依然无论是南向也好，北向也好，主要还是这种像医疗健康，还有消费板块，它们还是比较喜欢，偏好一直是没有变化的。
+另外就是说我们认为从经济转型还有经济增长转型情况来看，国家在未来无论是疫情的修复，还是长期存在双循环的格局，肯定是继续会重视消费的升级，还有产业的自主升级这么两条线索，那么受益的股票在中长期来说依然是新经济的板块，我们认为这个观点是不会变的。
+其实如果你看过去的一段时间，新经济股票其实2019年以来它的成长，估值的上涨有一部分原因是低利率的环境底下，它的的模型估值的方式，因为它是以现金流贴现的模型来做，那么低的利率可以把它的估值放大，相对来说旧经济股票不怎么采取这么一些估值的方式，所以就是说它在估值方面是有压力的。那么我们认为这种低利率的情况，在美联储宣布了新的通胀目标以后，我们预期在相当长一段时间当中，这种接近零息的环境是长期存在的，那么也就说新经济单纯从估值来说，这方面的利好它是继续会存在的。
+第一财经：新经济公司未来的估值还是会持续的成长，但是旧经济股仍然是中国经济的一个重要的支撑的力量。 那么新经济和旧经济分开来看，您更加看好哪些公司呢？
+庞溟：从旧经济来看，我们可以看到就是说市场在过去的几个月当中，它的主线是疫情的恢复和经济增长当中会不会有政策刺激的获益的板块，主要的是材料，一个是房地产，还有说其实金融类的细看也有一些公司是可以的，那么这个是旧经济的一个估值的逻辑。新的来说我们认为我们还是继续关注，一个是电商，在线的游戏和物流板块，还有O2O、教育、软件服务，这些我们认为是一方面受益于疫情更加往线上走的这么一个倾向，另外其实疫情只是加速了原先就具有的一些趋势，它并不是无中生有的改变了一些趋势，而这些板块本来就受益于线上的渗透率更高的这么一个趋势，我们认为这个是可以进一步去关注的。
+第一财经：那么投资者是应该选择一些龙头股，还是选择中小盘？
+庞溟：我个人认为龙头股在这种不确定的情况下，它同时具备了成长性和确定性，所以他应该是更加值得去关注的。
+而且在市场比较剧烈的这么一种外部环境当中，龙头股它在一个市场的行业整合当中，它具有一定的优势，而且它有一定的议价能力，那么综合来看，龙头股的应该可以获得更高的一个溢价。
+第一财经：为什么您认为短期中国股票会保持横盘的状态？
+庞溟：这是因为我们的分析就显示现在市场的走势，主要还是情绪驱动为主的市场的形态。港股以外，其他的中国股票其实估值已经不算便宜了，比如说MSCI中国和上证综指，它的前瞻市盈率大概是17.4倍和16.2倍，分别高于它的5年平均值大概是3.3个标准差和2.4个标准差，这是非常高的一个区间。那么恒生指数前瞻市盈率应该是12倍，是低于它的5年平均值0.5个标准差的，所以相对来说它的估值相对便宜一些。那么我们认为这种以纯粹以估值和情绪驱动的市场，它其实是不稳定的情况，如果碰到一些负面的消息，可能市场出现波动的情况。
+第一财经：既然港股的估值比较低，但是在香港上市的内地公司股票，它的基本因素因素和在A股上市的公司是一样的，那么能否说明港股是更值得配置的一块资产？
+庞溟：我们更新了一个我们的独家的情绪指数，情绪指数来看，可以看到在过去的一个月当中， A股市场的情绪指数基本上是有所恢复，但港股还是相对来说是低迷，甚至是有点走弱的，主要表现在一个是卖空期权市场的隐含波动，还有回购，还有期权交易的认沽认购比例来说，其实港股还是有点低迷，这个原因是什么？我们认为在过去的几年当中，其实在沪港开通以来，现在AH股的溢价来说，A股的溢价是接近最高的情况。
+那么这个说明是什么？ A股享受了流动性溢价，它是处于比较高的一个水平，那么我们如果预期下半年的流动性扩张，它是边际递减的这么一个情况下，其实应该是较为看好港股的，这是第一个。
+那么第二个就是我们一直也说港股在下半年会迎来更多的新股上市，还有中概股的一个第二上市这么一个热潮，那么对市场的情绪还有对市场的关注来说都是一个利好是吧。但是港股其实也有自己的一些风险点所在，如果在地缘政治风险抬升的情况下，港股会相比A股来说，它受到的冲击和波动会更大一点，这可能要引起大家的一个关注。
+第一财经：所以您的结论是虽然港股的估值比较低，但是不等于它比A股更加值得配置？
+庞溟：就是不能有结构性的机会，你需要去选比较好的股票，不能够说我从纯主题或者纯板块我全部去不加分析去购买，我觉得这个是有风险的。
+第一财经：从您刚才的判断来说，整体上中长期您是仍然看好中国股票的前景？
+庞溟：我觉得中国股票来说，因为第一个从增长来讲，从整个经济体的复苏和增长来讲，我们预计今年在主要经济当中，中国应该是唯一的保持GDP增长的经济体，然后上市公司的盈利它是领先的，可以说上市公司当中优质的标的，它的增长和复苏是更强劲的，这第一点。
+第二就是说中长期来说，在美元走弱周期的这么一个情况下，人民币资产的配置价值是体现出来的，它的回报率也是更高的。那么我们认为从全球投资者的配置的需求来说，他们也会更多地去关注和选择中国股票，所以长中长期来说我们还是看好中国股票配置的。
+第一财经：您对于中国股票有没有一个数字上的目标？
+庞溟：11月份之前我们刚刚说过，其实还是一个横盘，我认为顶多5%的涨幅，但11月之后，风险是消除或者减弱的话，我觉得可以到10%甚至更高的一个升幅是有可能的。
+扫二维码 3分钟开户 做好抄底反弹准备
+(image_address=""//n.sinaimg.cn/finance/512/w256h256/20200807/333c-ixkvvuc9099771.png"")
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：逯文云",2020-09-11 12:58:17,新浪财经

@@ -1,0 +1,94 @@
+,title,content,pub_time,src
+0,鹏博士转让长城宽带100%股权：坐拥千万用户的长城宽带只要100万,"坐拥千万用户的长城宽带，如今只要100万就能买下。。。
+差评
+今天看到一个很刺激的新闻：鹏博士转让长城宽带 100% 股权。
+有些差友可能没有接触过长城宽带，但是没有关系，只需要知道这哥们是全国最大的民营宽带运营商，有 1450 万用户就够了。
+面对御三家这些年靠卖流量赚得盆满钵满，在宽带服务领域，仅次于他们的长城宽带而今却落到卖身的地步，简直是凄凉爆炸。
+然而更凄凉的是，这哥们居然只卖了 100 万。
+(image_address=""//n.sinaimg.cn/finance/crawl/102/w550h352/20200905/37a0-iytwsca1028757.jpg"")
+其实，长城宽带会走向今天这个凉凉的局面，差评君倒毫不意外。
+(image_address=""//n.sinaimg.cn/finance/crawl/63/w33h30/20200905/c6d3-iytwsca1028826.png"")
+有人买了 100 兆的宽带，但实际速度只能跑到几十 KB/S 。
+不知道这哥们有没有种年轻了十几岁的感叹？毕竟重温了十几年前的网速。。。
+(image_address=""//n.sinaimg.cn/finance/crawl/39/w550h289/20200905/ec56-iytwsca1028890.png"")
+(image_address=""//n.sinaimg.cn/finance/crawl/700/w550h150/20200905/ef69-iytwsca1029193.png"")
+(image_address=""//n.sinaimg.cn/finance/crawl/670/w550h120/20200905/a35e-iytwsca1029250.png"")
+当用户因为这些问题打电话给客服，要么敷衍不管。。
+(image_address=""//n.sinaimg.cn/finance/crawl/662/w550h112/20200905/cb92-iytwsca1029336.png"")
+要么没人接，打了八次终于有人接，接起来就直接给挂断了。。。
+(image_address=""//n.sinaimg.cn/finance/crawl/211/w549h462/20200905/d9ba-iytwsca1029375.png"")
+大家应该都逛过贴吧，作为同好交流的地方，各路贴吧的一般简介都会表达诸如欢迎同好交流的意思。
+(image_address=""//n.sinaimg.cn/finance/crawl/779/w550h229/20200905/6a9c-iytwsca1029440.png"")
+你可能会好奇，为啥网上清一色的差评，还有这么多用户买单？
+一来，很多人办宽带的时候，也不会特地跑来网上看评价，不知道有坑。
+价格特么真的很便宜啊！！！
+你看，同样是一年的 100M ，长城宽带 668 还送一个月，而移动要 1280 大洋。
+我还特地点进链接里看了，的确是这个价▼
+(image_address=""//n.sinaimg.cn/finance/crawl/22/w550h272/20200905/6da2-iytwsca1029508.png"")
+移动宽带资费▼
+(image_address=""//n.sinaimg.cn/finance/crawl/30/w550h280/20200905/e115-iytwsca1029568.jpg"")
+这差不多便宜了一倍的价格，你说香不香？
+(image_address=""//n.sinaimg.cn/finance/crawl/65/w33h32/20200905/ad8d-iytwsca1029621.png"")
+他们打出了一计骚操作，骚遍天下无敌手。
+去年差评君也给大家讲过一次，这套骚操作很关键，所以带大家温习下，还记得的，可以直接往后跳。
+(image_address=""//n.sinaimg.cn/finance/crawl/587/w550h37/20200905/feff-iytwsca1029700.png"")
+首先，长城宽带是‘ 二级宽带 ’，不能搭建骨干网线（ 城市之间 ），只能搭建大型局域网（ 把附近的几个区县的小区用网线连起来 ）。
+(image_address=""//n.sinaimg.cn/finance/crawl/63/w33h30/20200905/ae12-iytwsca1029733.png"")
+跟御三家租用带宽。
+大概就是它在小区里铺好网线，然后跟用户收钱；再把这笔从用户那众筹的钱交给御三家，从御三家再拉一根网线，让小区里的各位都有网上。
+(image_address=""//n.sinaimg.cn/finance/crawl/20/w550h270/20200905/5d7f-iytwsca1029776.jpg"")
+不过，就算有什么批发价，也不会这么便宜对不？不然谁还去买御三家的东西啊。。。
+(image_address=""//n.sinaimg.cn/finance/crawl/70/w30h40/20200905/7125-iytwsca1028717.png"")
+它把通了长城宽带的小区连接到鹏博士的数据中心，这样就相当于两张局域网处在一个大的内网里，而互为内网之间的数据传输不需要通过御三家骨干网，这部分传输也就跟它们从御三家租的宽带没关系了。
+还因为内网配置不正确出现过安全漏洞▼
+(image_address=""//n.sinaimg.cn/finance/crawl/36/w550h286/20200905/d61b-iytwsca1028761.png"")
+(image_address=""//n.sinaimg.cn/finance/crawl/64/w33h31/20200905/b341-iytwsca1028816.png"")
+它们在鹏博士数据中心里搞了一个‘ 热门内容缓存 ’。
+就好比说网上一些热门的视频和软件安装包，长城宽带先从网上把这些把这些内容下载到这个缓存系统中。
+之后如果检测到有宽带用户在访问这些内容的话，就会把这部分流量从原本要访问的地址劫持到长城宽带的这个缓存服务器里。
+(image_address=""//n.sinaimg.cn/finance/crawl/5/w550h255/20200905/cb8d-iytwsca1028886.jpg"")
+这就是为什么，长城宽带的用户下热门电影飞快，但是一遇到要联机吃个鸡什么的，就立马扑街了。
+(image_address=""//n.sinaimg.cn/finance/crawl/74/w43h31/20200905/876d-iytwsca1028952.png"")
+(image_address=""//n.sinaimg.cn/finance/crawl/563/w550h13/20200905/b2fa-iytwsca1029033.png"")
+这套骚操作跟前面网友们的抱怨一结合，相信大家也看明白了：长城宽带从御三家租来的宽带能够卖这么便宜，是因为他们用骚操作在疯狂注水，他们卖的 100M 宽带跟御三家的 100M 根本不是一个东西。
+靠着这样的骚操作，日子紧巴紧巴也能过，甚至还有钱赚，但从去年开始长城宽带开始亏钱了。
+哎，为啥疯狂注水以后，还会亏钱呢？
+(image_address=""//n.sinaimg.cn/finance/crawl/382/w198h184/20200905/9930-iytwsca1029061.png"")
+虽然长城宽带只拿了一部分收入去租用了不足量的带宽。
+但他还有营运支出，比如小区里的通信设备是他们自己的，这就会带来后续的线路维护等其他烧钱的地方。
+用户多的时候，利润能够覆盖掉费用，现在用户变少，但是线路维护等仍然每个月要花那么多钱，收入无法维持基本的营运支出，当然要开始亏钱了。
+而用户很难越变越多的，因为你提供的是注水服务！现在都快在互联网上坑名远扬了，直接是一种恶性循环。
+其实前年开始，长城宽带就开始亏损了。。。
+(image_address=""//n.sinaimg.cn/finance/crawl/718/w550h168/20200905/0687-iytwsca1029140.jpg"")
+(image_address=""//n.sinaimg.cn/finance/crawl/64/w33h31/20200905/b341-iytwsca1028816.png"")
+说长城宽带要战略转型，放弃家用宽带业务，把家庭用户交割给御三家，自己给御三家提供装维、代维服务。
+(image_address=""//n.sinaimg.cn/finance/crawl/648/w550h98/20200905/b56d-iytwsca1029219.png"")
+(image_address=""//n.sinaimg.cn/finance/crawl/645/w550h95/20200905/c032-iytwsca1029278.png"")
+但这个时候，似乎已经为时已晚。。。
+今年年中，长城宽带的母公司鹏博士公布了 2019 年年报，净利润亏出了一个让我看了虎躯一震的数字：57.51 亿元。
+亏损的主要原因是大额资产减值，商誉减值 19.99 亿元，固定资产减值 30.75 亿元。
+(image_address=""//n.sinaimg.cn/finance/crawl/91/w52h39/20200114/af3b-imztzhn5969197.png"")
+(image_address=""//n.sinaimg.cn/finance/crawl/56/w550h306/20200905/0f5b-iytwsca1029353.png"")
+这一波逼得鹏博士显然心态直接爆炸了，今年 4 月他们以 23 亿元的交易价格，转让了相当赚钱的核心业务‘ 数据中心 ’的相关资产。
+(image_address=""//n.sinaimg.cn/finance/crawl/66/w33h33/20200905/8fdd-iytwsca1029387.png"")
+(image_address=""//n.sinaimg.cn/finance/crawl/191/w550h441/20200905/21bf-iytwsca1029429.png"")
+(image_address=""//n.sinaimg.cn/finance/crawl/82/w52h30/20200905/424b-iytwsca1029477.png"")
+但，面对最大的赔钱货长城宽带，鹏博士肯定是要选择壮士断烂臂的。至于为啥只卖了 100 万这种白菜价嘛。。。
+一来这玩意现在每年越赔越多，以后估计也没啥搞手，二来在完成减值后，长城宽带的净资产还是负的。。。负的。。。
+(image_address=""//n.sinaimg.cn/finance/crawl/563/w263h300/20200905/a0da-iytwsca1029532.png"")
+目测现在鹏博士已经找到买主了，是中安实业，这哥们是做物联网、互联网信息、计算机软硬件的，差评君一下子也没想到，他买长城宽带要干嘛，只能等子弹飞一会儿了。。。
+(image_address=""//n.sinaimg.cn/finance/crawl/161/w550h411/20200905/44bd-iytwsca1029627.png"")
+10 年前用重金买下长城宽带的鹏博士，走到今天用这个白菜价脱手的局面，差评君感觉，是历史的必然。
+早年长城宽带靠 “ 低价 ” 牌迎来了辉煌的时期，但随着三大运营商‘ 提速降费 ’政策直接被逼入了绝路。
+也许在无力正常运营的时候，长城宽带就该卖掉了，这样也不会留下一堆债务。
+以及满互联网的 “ 骗子公司 ” 的骂名。
+(image_address=""//n.sinaimg.cn/finance/crawl/708/w550h158/20200905/d068-iytwsca1029710.png"")
+(image_address=""//n.sinaimg.cn/finance/crawl/608/w550h58/20200905/7758-iytwsca1029742.png"")
+(image_address=""//n.sinaimg.cn/finance/crawl/697/w524h173/20200905/ca0e-iytwsca1028716.png"")
+参考资料、图片来源：
+微博、贴吧、北京商报
+相关报告等均出自鹏博士集团官网
+免责声明：自媒体综合提供的内容均源自自媒体，版权归原作者所有，转载请联系原作者并获许可。文章观点仅代表作者本人，不代表新浪立场。若内容涉及投资建议，仅供参考勿作为投资依据。投资有风险，入市需谨慎。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：常福强",2020-09-05 10:43:07,新浪财经

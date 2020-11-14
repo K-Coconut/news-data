@@ -1,0 +1,285 @@
+,title,content,pub_time,src
+0,政策利好+科创板上市！恒大汽车将冲击万亿市值,"原标题：政策利好+科创板上市！恒大汽车将冲击万亿市值
+21世纪商业评论
+备受全球资本热捧的新能源汽车产业，再迎重磅利好。
+10月9日，国务院常务会议通过了《新能源汽车产业发展规划》，明确引导新能源汽车产业有序发展，推动建立全国统一市场，提高产业集中度和市场竞争力。
+(image_address=""//n.sinaimg.cn/spider20201011/223/w641h382/20201011/c861-kakmcxc7902629.jpg"")
+分析人士认为，当前中国新能源汽车产业进入新的发展周期，产销量、保有量连续四年居世界首位，但随着补贴逐渐退坡，新能源汽车也亟待转换发展动力。此次《规划》的通过，为新能源汽车行业迎来新一轮高速发展期提供新的动力，行业格局有望迎来巨大改变。
+尽管目前特斯拉在国内市场占据明显优势，但领先地位并非牢不可破。尤其是一路高举高打完成全产业链布局的恒大汽车（0708，HK），被视为特斯拉的最强劲敌。
+实际上，无论是产品研发还是产能规模，恒大汽车都已具备超越特斯拉的巨大潜力：
+产品研发PK：恒大正同步研发14款新车型，在技术性能上全面对标特斯拉，特斯拉成立17年仅有4款车型。
+产能规模PK：恒大按照工业4.0标准在上海、广州等地建设全球十大智能制造基地，每个基地的首期产能为10万辆/年，3-5年规划总产量为100万辆/年，10-15年的规划总产能为500万辆/年，产能规模上远超特斯拉。
+(image_address=""//n.sinaimg.cn/spider20201011/173/w641h332/20201011/8293-kakmcxc7902628.jpg"")
+与之相对，今年来特斯拉股价持续飙升，市值一举突破3.1万亿港元，稳坐全球市值第一车企宝座。而恒大汽车市值仅1772亿港元，约特斯拉的1/18，显然被严重低估。
+值得一提的是，近来恒大汽车在资本运作方面捷报频传：成功引入“二马”及滴滴等巨头40亿港元投资，并申请在科创板上市，资本实力得到进一步充实，从而更好地进行产品研发及量产。
+(image_address=""//n.sinaimg.cn/spider20201011/268/w641h427/20201011/5c2b-kakmcxc7902675.jpg"")
+一位投行人士认为，随着恒驰明年下半年陆续量产，恒大汽车有望超越特斯拉成为新任行业“一哥”，加上科创板上市等一系列利好，都将成为恒大汽车股价上涨的催化剂，冲刺万亿市值。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：张恒星 SF142",2020-10-11 13:56:18,新浪财经
+1,美团五年来首次职级大调整 薪酬与晋升“解绑”,"视频加载中，请稍候...
+自动播放
+(image_address=""//p.ivideo.sina.com.cn/video/356/611/469/356611469_220_124.jpg"")
+play
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 356611469,
+pid:1,
+url: 'https://finance.sina.com.cn/roll/2020-10-11/doc-iivhuipp9020884.shtml',
+title:''//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=356611469/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+原标题：美团五年来首次职级大调整，薪酬与晋升“解绑”
+封面新闻记者 张越熙
+10月9日，美团内网发布全员信，宣布进行职级体系调整，从明年初起，原有的“M+P”双职级线、“1-2 至 3-3”等专业序列被取消，取而代之的是以“L+数字”命名的单职级线。
+(image_address=""//n.sinaimg.cn/spider20201011/250/w600h450/20201011/50e4-kakmcxc7890400.jpg"")
+这是五年来美团首次职级大调整。据了解，美团现有的职级体系从 2016 年开始启用至今，分为“P”（专业序列）和“M”（管理序列），其中，P 序列涵盖了技术/产品/运营/设计等大部分岗位。在调整之后，美团“M+P”序列被取消，取而代之是新的 6 个职级（L4-L9），此前的 P 序列也有多个职级被折叠。
+美团表示，新职级与激励体系将更加提倡业绩导向，可以说新体系推行后，薪酬激励与职级晋升一定程度上实现了“解绑”。
+这并不是美团近期来的第一次大动作，就在同日，美团发布公告称，已采纳中文名称“美团”作为公司双重外文名称。这意味着，曾经的那个大众点评已经被放弃。而在国庆假期之前，美团也正式官宣了在离杭州不远的上海落户总部的消息。
+撕掉“外卖”标签的美团和阿里与携程之间的硝烟愈加浓厚。在这样一个档口宣布人才激励模式的调整颇有点来势汹汹的气势，让人不免对本地生活与旅游消费领域的日后发展高度关注。
+在美团宣布一系列调整后，截至到10月10日，美团的市值为15879． 15 亿港元，是继阿里、腾讯之后，市值排名第三的中国互联网公司。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：张恒星 SF142",2020-10-11 13:46:45,新浪财经
+2,地产富豪家的“百亿资产”争夺战,"来源：地产风声  
+文|内幕君
+最是无情帝王家，豪门一样纷争多。
+1
+南朝时第一个朝代刘宋，是个短命王朝，传国才59年，比爱新觉罗·玄烨在位时间还短2年。
+没法控制生命长度的刘宋，倒是很好把握住了生命的宽度，不到60年历经9个皇帝。
+刘宋第五位皇帝叫刘骏，他上位那一年，皇权更迭了三次。
+原本他父亲刘义隆把持着龙椅，他的异母哥哥刘劭坐拥东宫，表面还算一团和气。谁想，暗地里刘劭却伙同另一个弟弟，试图通过巫蛊咒死亲爹。
+当爹的知道后火冒三丈，决定废太子。话传到太子耳边，这位储君一不做二不休，先行起兵把亲爹杀了。这出弑父夺权的戏码在当时及后世都引起了极大的震动，近代史学家夏曾佑说：
+此事为中国自孔教通行以来，人伦至大之祸。
+仅过三个月，刘劭龙椅还没坐热，就被弟弟刘骏借着讨伐的名义杀了。
+刘骏死后，王朝延续的15年里，又换了四个皇帝。四人里头，只有一个因病致死，另外三个要么被废要么被禅让，结局都是个“死”字。
+有时手足相残，有时叔侄互屠。江山得来，腥风血雨。
+刘子业接过父亲刘骏的权杖时15岁，用今天的话来说：他还是个孩子。不过是个狠心的孩子。
+亲娘病重喊他去谈话，这孩子回，“病人间多鬼，可畏，不能去。”气得他妈让侍卫拿刀，说要“剖开肚子看看，怎么会生这种儿子”。
+刘子业有个异母弟弟叫刘子鸾，极受父亲宠爱，刘子业对此十分“羡慕嫉妒恨”，所以上位不久便赐死弟弟。年仅十岁的刘子鸾死前，说出了很多皇家子弟的心声：
+愿后身不复生王家。
+现实告诉我们，出生没得选择。如果能选，狗蛋说他一定远离开皮革厂的。
+江河万古奔流，历代王朝已作历史的尘埃，而豪门继承“宫斗”的衣钵，依然让看得人目瞪口呆。
+地产商李贵斌离世三年多，假如他泉下有知，一定很惆怅，因为：
+他弟弟和他老婆为争夺“百亿家产”，闹到全国人民都知道了。
+2
+今年八月，北京一项目办公地，有员工家属为讨薪自我剖腹。据《中国经营报》描述，这位家属用自带的刀子捅入腹部10公分，并且拒绝救治，直到神志不清。
+被讨薪的是光耀东方系的项目，光耀东方系是李贵斌生前创办的，2017年李离世时，集团持有大型物业22处，包括北京9处。保守估计，光耀东方系的资产过百亿。
+(image_address=""//n.sinaimg.cn/finance/crawl/122/w550h372/20201011/2a30-kakmcxc7891690.jpg"")
+北京光耀东方中心
+家业庞大，为什么会导致员工走到“剖腹讨薪”的极端？两种看法泾渭分明。
+有人认为，弟弟李贵杰窃取亲哥家业，抛售、贱卖公司资产，而所获资金去向不明，把企业推入经营窘境。
+也有人认为，李贵斌妻子徐珺（原名徐君）不择手段争遗产，起诉李家人，并向光耀东方各子/分公司所在地法院提起诉讼，同时发函给金融机构提醒诉讼风险，从而造成企业账户被封、金融机构抽贷、项目停工、员工薪资滞发等一系列连锁反应。
+公说公有理，婆说婆有理。
+三年多前，李贵斌迷离之际，“叔嫂之争”就摆上了桌面。
+2016年10月，李贵斌因癌症复发入院治疗，此后身体每况愈下。2017年1月份时病情危重。
+2月3日，医院下达病危通知，10天之后李贵斌离世。叔嫂从下达通知这天就开始斗法。
+根据李贵杰方所述，2月3日那天，李贵斌召集大家开了股东会，在场的有李贵杰、李烨东（李贵斌大儿子、前妻所生）、两名法律顾问、李家亲属等10人。此时，李贵斌持公司六成股权，李贵杰和李烨东各持两成。
+这次“股东会”，他们进行了全程拍摄。
+所拍视频中，法律顾问杨学昌咨询李贵斌：名下的公司股权如何安排？李贵斌断断续续说出“授权”“贵杰”“持有”等字眼。他们拿来纸质版授权委托书让李贵斌签字。
+当天，李贵斌签了旗下8家企业的股东会文件，把名下股权转给了李贵杰。
+这让不在场的徐珺极度恼火。
+作为李贵斌的妻子，又是第一顺序继承人，徐珺无法接受这个“安排”。她觉得，李家人“编造虚假股东会”抢了自己的正当权利。
+于是徐珺在涉事分公司所在地发起诉讼，要求确认股权变更无效。徐珺方认为视频不能作为证据，因为：
+那时候的李贵斌患有器质性精神障碍，属于限制民事行为能力。
+北京中衡司法鉴定所做出了这一鉴定。2018年法院一审判决徐珺胜诉。
+这回轮到李贵杰一方不服上诉。李烨东跟媒体表示，父亲脑梗后嘴巴歪，去掉假牙说话不方便，但意思表达得很清楚，他说：
+把股权交给贵杰，对价1000万，全家都听贵杰的。
+还说“股权是我一个人的，不是徐君的。”
+3
+双方据“利”力争。
+二审宣判之前，他们在网上展开舆论攻防战，水军、媒体各为其主。狗蛋记得曾在微博热搜看到相关话题。
+昨天中国最大金矿——紫金矿业63岁董事长大婚的话题冲上热搜，38岁的二婚妻子坦言自己嫁给了爱情。此前赌王离世，何家几房也轮流“热搜”。狗蛋说，看来豪门弟子门儿清，知道得吃瓜群众者得天下。
+话说回来，双兔傍地走，有人站叔子也就有人站嫂子。
+“站叔”的认为，徐珺利用身份操纵舆论，营造孤儿寡母形象博同情，干预了司法裁定。
+她是CCTV-12社会与法频道《法治视界》的主持人。
+“站嫂”的人眼里，你们就是欺负人家孤儿寡母。徐珺对外称，一审胜诉后自己遭遇过“死亡威胁”。
+其实小叔子只是代言人，真正的争夺双方是：
+继子和继母。
+徐珺是李贵斌的二婚妻子，而李烨东为李贵斌与前妻所生。这个家庭本就充满天然的敌对。
+(image_address=""//n.sinaimg.cn/finance/crawl/29/w550h1079/20201011/efd4-kakmcxc7891725.jpg"")
+二审期间徐珺发微博怼继子：自你父亲去世后，你从未来看过弟弟妹妹一眼，更没给过一分钱……抢起弟弟妹妹的财产来毫不心软！
+李家的问题成为法律题之前，曾是个道德题。
+徐珺和李贵斌是聊城老乡，男方大13岁。两人结合的时候，李贵斌是已婚人士，有老婆有孩子。后来原配离世，李贵斌和徐珺扯了结婚证。
+一审时法院认定了这样的事实：
+徐君与李贵斌系夫妻，双方于2010年8月17日登记结婚，于2009年8月27日生有一子，于2016年1月6日生有一女。
+也就是说徐珺未婚先孕，时年25岁的独生子李烨东“喜当哥”。
+2019年3月，二审维持原判，但纷争似乎没有落幕。
+最近舆论又有新风向了，依然是两种声音掐架：一说徐珺“重婚上位、鉴定造假、官司存疑”；另一说“知名女主播百亿家产疑遭贱卖”、“李贵杰涉嫌套取国资”。我问狗蛋怎么看，狗蛋说：
+谁也没有错，都是月亮惹的祸。
+4
+狗蛋说得对。
+斯人已逝，评判无益。但把“风流债”全算到女人头上duck不必。
+徐珺在整理遗产时看到一叠转账单，她对完发现：过去的5年里，他丈夫给另一个女人转了至少1250万。
+对方也是主持人，所在的单位名头和她的一样响。不同的是，这位女主持曾经是个模特，获得过世界旅游小姐中国总冠军。
+徐珺把这件事捅给对方单位纪委，要求归还这笔“夫妻共有财产”，女主持解释：我们是男女朋友关系。光耀东方替女主持出具“情况说明”，说她“为集团的外聘高级策划顾问”。也就是说，这笔钱是顾问费。
+狗蛋感慨，这爱情多元化的世界里，真是一山更比一山高。
+李贵斌生前在银行待了20多年，“下海”前位至中国农业银行聊城兴华支行行长。2003年，43岁的李贵斌投身地产，在聊城收购改造烂尾楼起家，不久后转战北京。盘活位于世纪坛南、烂尾十年的海天广场，让他名声大噪，为此还获得一个称号：
+烂尾楼之王。
+搞定很多烂尾楼的李国斌，最终给自己人留下了一个烂摊子。
+爱也恨也帝王家，道是无情却有情。
+免责声明：自媒体综合提供的内容均源自自媒体，版权归原作者所有，转载请联系原作者并获许可。文章观点仅代表作者本人，不代表新浪立场。若内容涉及投资建议，仅供参考勿作为投资依据。投资有风险，入市需谨慎。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：张恒星 SF142",2020-10-11 13:44:10,新浪财经

@@ -1,0 +1,493 @@
+,title,content,pub_time,src
+0,半年净赚30亿却惨遭机构、北向大笔卖出 双汇发展还能买入吗？,"视频加载中，请稍候...
+自动播放
+(image_address=""//n.sinaimg.cn/front20200812ac/200/w640h360/20200812/e598-ixreehp2045959.jpg"")
+play
+多家猪肉企业披露7月经营情况 生猪销售收入大增
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 347532239,
+pid:1,
+url: 'https://video.sina.com.cn/p/finance/2020-08-12/detail-iivhvpwy0660445.d.html',
+title:'多家猪肉企业披露7月经营情况 生猪销售收入大增'//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=347532239/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+原标题：业绩净赚30亿却惨遭机构北向资金大笔卖出，双汇发展还能买入吗？丨热公司
+8月12日，双汇发展全天走低，截至收盘，跌9.03%，52.08元，总市值1729亿元。
+盘后数据显示，北向资金、机构资金主力卖出。具体来看，北向资金位居买一、卖一席位，买入1.67亿元并卖出3.96亿元，净卖出2.29亿元。三个机构席位合计买入9703万元，另有三个机构席位合计卖出1.66亿元。华泰证券上海牡丹江路买入1.11亿元。
+(image_address=""//n.sinaimg.cn/sinakd2020812s/558/w876h482/20200812/d057-ixreehp1969812.png"")
+双汇发展11日披露财报显示，公司上半年实现营业收入363.48亿元，同比增长43.01%；实现净利润30.41亿元，同比增长26.74%。
+公司表示，今年上半年面对新冠肺炎疫情、非洲猪瘟疫情、肉类价格通胀等压力和挑战，公司累计屠宰生猪327.4万头，同比下降61.83%，屠宰业营业收入约为239.1亿元，同比增长58.96%，占总营收的65.77%；鲜冻肉及肉制品外销量（含禽类产品外销）为149.6万吨，同比下降3.79%，肉制品业务营业收入为139.99亿元，同比增长18.02%，占总营收的38.51%。
+屠宰量、肉制品销量下降，收入却有较大提升，双汇发展在报告中解释称，报告期内产品价格较同期上升，影响营业收入同比增加。不过，原料肉价格较同期上升，也使得该公司营业成本增长。其上半年营业成本为301.82亿元，同比增长47.76%。
+今年5月中旬，双汇发展接受机构调研时表示，目前国家政策支持生猪养殖，各养殖企业加大养殖规模，将会提升生猪出栏量，降低生猪价格。按照目前的形势，预计今年下半年猪价将会有所回调。同时，随着生猪供应量的回升，预计公司后期的屠宰量将持续恢复。
+方正证券指出，公司肉制品盈利大增，猪价高位屠宰继续承压。肉制品提价贡献业绩，净利润创新高。猪价高位运行，屠宰量下降明显，扩大进口补充国内生猪不足。预计公司2020-2022年EPS分别为1.85元、2.00元和2.17元，对应PE分别为31、29和26。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：张熠",2020-08-12 17:53:36,新浪财经
+1,半年度利润分配预案陆续出炉 三湘印象股息率暂居首,"视频加载中，请稍候...
+自动播放
+(image_address=""//p.ivideo.sina.com.cn/video/347/532/237/347532237.jpg"")
+play
+半年度利润分配预案陆续出炉，三湘印象股息率暂居首，掘金高分红潜力股
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 347532237,
+pid:1,
+url: 'https://video.sina.com.cn/p/finance/2020-08-12/detail-iivhuipn8285370.d.html',
+title:'半年度利润分配预案陆续出炉，三湘印象股息率暂居首，掘金高分红潜力股'//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=347532237/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+【今日直播】
+温冠麟：香港除了正股外的快速投资机会
+掘金大消费|长江农业余昌：拥抱成长—长江农业2020年度中期投资策略
+掘金大消费|长江李俐璇：破晓——长江纺服2020年度中期投资策略
+掘金大科技|招商余俊：精选新基建四大赛道，在变革中寻求确定性投资机会
+联海资产佟思雨：如何布局核心资产
+华夏基金徐漫：免税行业新时代
+新华基金周晓东：搞懂军工 投资不慌
+易方达成曦、 兴业证券徐佳熹：详解科创板下的创新药投资机会
+广发基金霍华明：上海金投资价值分析
+华宝基金曾豪：如何抓住未来市场的投资大趋势？
+天弘杨超、国泰君安王聪：电子行业的重构与创新
+原标题：半年度利润分配预案陆续出炉，三湘印象股息率暂居首，掘金高分红潜力股
+半年报披露进入高峰期，截至8月12日，沪深两市共披露434家上市公司中报。据Wind数据显示，目前A股共有14家公司披露半年度利润分配预案，按8月11日收盘价计算，股息率最高的是三湘印象，股息率达到8.1%。
+如何从尚未披露半年报的公司中挑选出股息率可观的标的？据统计，有55家公司年内尚未实施过现金分红、最新一期报告中每股未分配利润大于1元、上半年净利润预计盈利并同比增长，这其中更有13家公司上半年净利润有望翻倍增长。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：张熠",2020-08-12 17:53:10,新浪财经
+2,新冠疫苗实验数据相继披露 前期热门上市公司或不及预期,"炒股就看金麒麟分析师研报，权威，专业，及时，全面，助您挖掘潜力主题机会！
+文/卜小雅 理逻
+据美国约翰斯·霍普金斯大学实时统计数据显示，截止8月11日全球新冠肺炎确诊病例超2000万例，死亡病例超73万例。其中，美国确诊超530万，死亡超17万人。巴西和印度紧随其后，分别有超300万和220万人确诊。
+而在8月11日当天，俄罗斯总统普京公开宣布，俄罗斯已在当日上午成功注册全球首款新冠病毒疫苗，并且他还表示，自己的女儿已经试种新冠疫苗，目前感觉良好。
+不过，由于在3月中美同时宣布开启新冠疫苗临床试验时俄罗斯并无动静，再加上目前尚无俄罗斯疫苗的相关测试数据，外界对于俄新冠疫苗的安全性多有质疑，世卫组织发言人11日在记者会上表示，将评估其疫苗的安全性。一石激起千层浪，这一重磅消息的推出让人们对于新冠疫苗研究的最新进展又热议纷纷。
+据世卫组织8月6日召开的新冠肺炎例行发布会上的最新消息，目前全球约有165种疫苗处于试验阶段，26种进入临床试验阶段，6种处于Ⅲ期临床试验阶段，其中3种来自中国。
+新浪财经调查发现，一位名为伊洛牧的微博网友在就已披露疫苗数据进行对比后认为，科兴于8月10日在medRxiv上先行披露的Ⅱ期临床数据的中和抗体产生似乎不甚理想。从结果来看，虽然科兴的疫苗接种后不良反应表现轻微，但在免疫原性方面，3ug组在28天血清阳转率为97.4%，在两次接种28天后，中和抗体水平（GMT）在23.8 ~ 65.4，比一般康复患者的160多的水准要低出许多。
+先前进展迅速的灭活疫苗被抱有率先上市的巨大期待，但就目前来看，灭活疫苗的表现结果并不如意。同时，作为国内疫苗的领先军，康希诺/陈薇团队的腺病毒载体疫苗也曾风头强劲，自2019年上市以来康希诺的股价累计涨幅甚至超过10倍。但WHO所公布的进入Ⅲ期试验的疫苗中，并无康希诺的身影。
+除开国内的三款灭活疫苗，另外三种进入Ⅲ期临床试验的疫苗则分别为阿斯利康与牛津大学詹纳研究所的AZD1222、美国Moderna的mRNA-1273以及BioNTech和辉瑞的BNT162b1。其中，前一种为腺病毒载体疫苗，后两种为mRNA。
+腺病毒载体疫苗和核算疫苗均能同时引起体液免疫和细胞免疫，并且相较于传统路径的灭活疫苗，技术更为新型。载体疫苗是将抗原基因通过无害的微生物载入人体内，诱导机体的免疫系统做出免疫应答。核酸疫苗则是将含有编码S蛋白的DNA或mRNA片段注入体内，通过其表达的蛋白诱导免疫应答，相比于其他种类的疫苗，核算疫苗免疫原性更好。
+7月20日，康希诺/陈薇团队和阿斯利康/牛津分别在《柳叶刀》上公布了各自的腺病毒载体疫苗的Ⅱ期临床试验结果。虽然陈薇院士在28日的对外通报上表示，康希诺/陈薇团队所研发的Ad5-nCoV各项不良反应指标优于牛津的AZD1222以及Moderna和BioNTech的mRNA，但其所披露的中和抗体转阳率仅有50%左右，T细胞水平也并不算高。
+总体来看，从中和抗体产生的角度，康希诺的腺病毒载体以及我国灭活疫苗的两条路径所披露的数据相较其他产品确有差距。
+有业内专家向新浪财经表示，康希诺在墨西哥的Ⅲ期试验8月11日才开始启动，比预期迟了很多，或许表明出其之前的进展不太顺利。考虑到接下来阿斯利康和Moderna的结果在八九月可能会相继出来，所以在Ⅲ期结果还未披露之前，新冠疫苗花落谁家仍需静待。
+目前，全球公认的新冠疫苗研发路径主要为以下五种：灭活疫苗、腺病毒载体、重组蛋白疫苗、减毒流感病毒载体疫苗、核酸疫苗（包括mRNA疫苗、DNA疫苗），而此次进入Ⅲ期临床试验阶段的3种中国疫苗均是灭活疫苗，分别为武汉所、北京所和科兴研制。
+灭活疫苗是将病毒通过用化学的方法使其灭活后再注入人体，从而使接种者产生免疫功能。作为最传统的疫苗途径，灭活疫苗具有较高的安全性并且它的产业化能力高，工艺成熟，制备起来相对简单。不过，由于它的免疫原性弱，因而往往需要助剂加强效果，所以注射次数也相对较多。
+6月23日，国药中生全球首个灭活疫苗的Ⅲ期临床试验已在阿联酋正式启动。并且6月16日国药武汉所研制的新冠病毒灭活疫苗的Ⅰ/Ⅱ期临床试验盲态审核结果显示，疫苗接种后的安全性较好，无一例严重不良反应。
+而作为全球首个发表新冠疫苗动物试验结果的科兴，其5月6日在《Science》上公布的结果显示灭活疫苗在恒河猴模型中安全有效。并且其披露显示PiCoVacc诱导产生的S蛋白特异性抗体滴度约为康复期患者的10倍，在不同的毒株中，中和作用均表现良好。
+扫二维码 3分钟在线开户 佣金低福利多
+(image_address=""//n.sinaimg.cn/finance/512/w256h256/20200807/333c-ixkvvuc9099771.png"")
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陈志杰",2020-08-12 17:38:43,新浪财经
+3,中基协：7月末存续私募证券投资基金规模3.09万亿 环比增16.65%,"8月12日消息，中国基金业协会披露数据显示，截至2020年7月末，存续私募基金88051只，存续基金规模14.96万亿元，较上月增加6085.36亿元，环比增长4.24%。其中，存续私募证券投资基金46973只，存续规模3.09万亿元，环比增长16.65%；存续私募股权投资基金28814只，存续规模9.16万亿元，环比增长1.77%；存续创业投资基金9054只，存续规模1.43万亿元，环比增长5.54%。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：张熠",2020-08-12 17:11:18,新浪财经
+4,宁德时代拟200亿投资产业链上下游 哪些上市公司可能获垂青？,"【今日直播】
+温冠麟：香港除了正股外的快速投资机会
+掘金大消费|长江农业余昌：拥抱成长—长江农业2020年度中期投资策略
+掘金大消费|长江李俐璇：破晓——长江纺服2020年度中期投资策略
+掘金大科技|招商余俊：精选新基建四大赛道，在变革中寻求确定性投资机会
+联海资产佟思雨：如何布局核心资产
+华夏基金徐漫：免税行业新时代
+新华基金周晓东：搞懂军工 投资不慌
+易方达成曦、 兴业证券徐佳熹：详解科创板下的创新药投资机会
+广发基金霍华明：上海金投资价值分析
+华宝基金曾豪：如何抓住未来市场的投资大趋势？
+天弘杨超、国泰君安王聪：电子行业的重构与创新
+原标题：宁德时代拟200亿投资产业链上下游，哪些上市公司可能获垂青？
+中国最大动力电池企业宁德时代（300750.SZ），正在提速布局上下游产业链。
+8月11日晚间，宁德时代发布公告称，宁德时代将围绕主业，以证券投资方式对境内外产业链上下游优质上市企业进行投资，投资总额不超过2019年末经审计净资产的50%，即不超过190.67亿元。
+根据公告，其投资范围具体包括境内外产业链上下游相关上市公司的股票、可转换债券以及其他权益类投资品种。
+证券投资方式包括但不限于：新股申购、二级市场证券买入、集合竞价、协议转让、大宗交易、参与定向增发等法律法规允许的方式。
+宁德时代称，上述投资是为了推进全球化战略布局，进一步加强产业链合作及协同，保障行业关键资源的供应，提高资源利用效率，提升公司市场竞争力。
+据界面新闻不完全统计，宁德时代的材料供应商包括恩捷股份（002812.SZ）、宏发股份（600885.SH）、石大胜华（603026.SH）、星源材质（300568.SZ）、科达利（002850.SZ）、当升科技（300073.SZ）、璞泰来（603659.SH）、格林美（002340.SZ）、威华股份（002240.SZ）、先导智能（300450.SZ）等。
+在下游领域，国外汽车客户包括宝马、大众、梅赛德斯-奔驰、特斯拉、本田、捷豹路虎等一线车企；国内汽车客户有上海大众、一汽大众、北汽集团、蔚来（NIO）、吉利汽车、广汽集团（601238.SH）、上海通用、小鹏汽车等。
+一位新能源分析师对界面新闻记者称，宁德时代希望像车企入股电池零部件企业那样，撒网式布局产业链。
+此前，宁德时代已经拥有较完整的产业链。
+上游矿产资源方面，宁德时代持有澳洲锂矿Pilbara Minerals 8.24%股份；持有北美锂业43.59%股份；持有镍矿North Amrican Nickel 25.38%股份。
+此外，宁德时代与广东邦普循环科技有限公司、格林美、青山钢铁等合资投建印尼镍矿；与全球最大的钴供应商嘉能可达成四年（2016年-2020年）2万吨钴供货协议。
+为布局正极材料，宁德时代去年投资91.3亿元建设10万吨正极材料项目，并成立了合资公司宁波邦普时代新能源有限公司，持股比例为49%。
+下游应用领域，宁德时代今年与国家电网有限公司说合作，先后在福建和新疆成立储能合资公司，且进军了充电桩、无人矿山和机器人领域。
+上述分析师认为，宁德时代像车企一样布局产业链，是由于市场竞争激烈。
+今年上半年，LG化学已超越宁德时代成为全球最大动力电池制造商。
+LG化学装机量大增，主要得益于雷诺、奥迪等车型在欧洲市场增长强劲，以及国产特斯拉Model 3的销量持续向好。
+8月3日，韩国锂电资讯机构SNE Research发布的数据显示，LG化学上半年总装机量为10.5 GWh，同比上涨82.8%，市场份额为24.6%；宁德时代排名第二，总装机量为10 GWh，同比下降28.1%，市场份额为23.5%。
+2017年-2019年，宁德时代一直是全球动力电池装机量霸主。
+除与外资头部企业正面交锋外，二线厂商也在步步跟近。
+根据恒大研究院的报告，2018年前高度依赖宁德时代供货的一线车企，出于供应链安全以及成本考虑，自2019年开始引入了其他电池供货商，为二线电池厂提供了向高端渗透的机会。
+此外，特斯拉开始自建电池产线，将对行业格局造成影响，进一步挤压电池厂的市场份额。
+兴业电新的研究报告认为，按照目前发展形势，未来将形成宁德时代和LG化学双寡头局面。LG化学今年产能规划为120 GWh，宁德时代为77.4 GWh。
+宁德时代还于8月11日宣布，其控股子公司时代吉利动力电池有限公司（下称时代吉利），拟在四川宜宾市临港经济技术开发区投资建设动力电池项目，项目投资额不超过80亿元。
+时代吉利是宁德时代和浙江吉润汽车有限公司（下称浙江吉润）的合资公司，注册于2019年4月，注册资本为10亿元，宁德时代持股51%，浙江吉润持股49%。
+据恒大研究院发布的报告，宁德时代为了完成产能扩张，采取与车企深度绑定的方式，不断巩固市场地位。
+2019年，在中国销量前八位的车企中，宁德时代为其中五家提供了超过50%的动力电池，装机量从2016年的8 GWh 激增至2019年的60 GWh，四年间产能增长了7.1倍。
+截至8月12日收盘，沪市大盘收报3319.27，较前一交易日下跌0.63%。宁德时代股价收报195.73元，较前一交易日下跌1.36%。
+与宁德时代相关的概念股，则有升有降。
+其中，宏发股份收报47.98元，上涨0.86%；星源材质收报18.4元，上涨3.6%；璞泰来收报104.93元，上涨0.31%；格林美收报5.34元，上涨3.69%；先导智能收报48.89元，上涨2.39%。
+下跌的股票包括：恩捷股份收报77.81元，较前一交易日下降5.1%；石大胜华收报35.91元，下跌3.7%；科达利收报64.96元，下跌2.61%；当升科技收报39.78元，下跌0.43%；威华股份收报14.11元，下跌1.12%。
+扫二维码 3分钟在线开户 佣金低福利多
+(image_address=""//n.sinaimg.cn/finance/512/w256h256/20200807/333c-ixkvvuc9099771.png"")
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：逯文云",2020-08-12 17:09:38,新浪财经
+5,中来股份“易主”背后：资金“疲态”与押注新赛道,"原标题：深度分析丨中来“易主”背后：资金“疲态”与押注新赛道
+来源：21世纪经济报道
+作者：曹恩惠 实习生成万吉
+是一场资本游戏还是会形成产业合力？
+在不到两个月的时间里，光伏公司中来股份（300393.SZ）控制权的归属迎来了变数。
+今年6月份，中来股份宣布贵州国资委旗下乌江能源投资公司拟入主后，该公司近期表示终止股份转让，并由杭锅股份（002534.SZ）“接替”。
+而此举也引来深交所的关注，要求中来股份说明实际控制人林建伟夫妇短时间变更股权转让交易对手方的原因。
+近些年来，中来股份一直在谋求业务上的转型，从早前的单一光伏辅材龙头厂商的角色，向集成产品制造商转型。而其最重要的动作便是进军电池组件领域，并押注N型TOPCon电池技术。
+但新技术的投入持续考验着该公司的资金实力。与此同时，此番股权转让也一度引发外界对实际控制人林建伟夫妇是否套现离场的质疑。
+而更为外界所关注的是，杭锅股份以战投方身份入主中来股份，究竟是一场资本游戏还是会形成产业合力？
+押注N型电池显资金“疲态”
+当原有背板业务发展遭遇盈利瓶颈时，中来股份延伸产业链，涉足光伏电池、组件。
+在光伏电池业务上，该公司选择了N型赛道，并计划为此投入大量资金。
+根据行业媒体统计，近三年来，中来股份先后公布总规模达13.6GW的高效太阳能电池投资计划，投资金额累计超过230亿元。
+但21世纪经济报道记者梳理发现，中来股份在N型高效电池扩产项目方面给外界“雷声大、雨点小”的感觉，多个项目进展未能达到预期效果——从2016年的“年产2.1GW N型单晶双面电池项目”、2017年4月“衢州10GW N型单晶IBC与双面太阳能电池生产基地”到2019年的“年产1.5GW N型单晶双面TOPcon电池项目”，这些项目大部分施工进度低于预期计划。
+而截至目前，中来股份的N型电池组件产能初见成效，形成了2.1GW产能。
+事实上，中来股份所选择的N型电池技术虽然被业内认为是新一代高效电池技术路线，但却面临着激烈的竞争。
+一位分析人士告诉21世纪经济报道记者，虽然中来股份的N型电池组件已经得到了多家央企客户的认可，在行业细分领域里拥有相对领先的出货量，但其距离产线大规模化还有差距，并且还受到了P型PERC技术以及N型异质结技术的竞争。
+值得一提的是，2019年，中来股份还进行了产线升级，将N型所有N-PERT产线升级改造成N型TOPcon电池产线。据悉，N-PERT电池相比主流P型PERC电池性价比并不明显，较难形成大规模的产业占比。
+在今年SNEC光伏展会期间，中来股份展示应用了最新一代的N型TOPcon电池技术组件产品，最高功率可达615W，组件效率22.1%。
+根据行业机构PVInfoLink的观察，今年展会期间，应用N型TOPcon技术的组件展商依旧以中来股份和晶科能源为主，且相较于去年厂家数量有所减少。
+不过，即便技术路线正确，中来股份目前最紧迫的是要实现产能的跟进。但面对动辄数十亿的投资，中来股份面临着较大的资金压力。
+截至今年一季度末，中来股份期末现金及现金等价物余额为12.02亿元，难以覆盖其公布的产能计划投资金额。
+与此同时，因频繁质押，实控人林建伟夫妇的股权质押率较高。截至今年6月初，林建伟与其一致行动人张育政、苏州普乐投资管理有限公司所持有的中来股份已有96.82%处于被质押状态。
+新的白衣骑士出现？
+为缓解资金压力，中来股份一直在寻找战略投资合作方。
+21世纪经济报道记者发现，在乌江能源投资和杭锅股份之前，中来股份一度有望迎来华君实业（中国）有限公司（下称华君实业）的战略入股。
+2019年1月7日，中来股份发布公告称与华君实业签订了战略合作框架协议，将通过股权转让的方式引入华君实业为产业战略投资者，同时，后者尽可能为中来股份提供融资支持，并承诺将为中来股份N型高效光伏产业扩充提供融资支持，融资支持总额不超过25亿元。
+然而，时隔数月，双方合作未能有实质性进展，并终止协议。
+乌江能源的出现，可算得上是一场“及时雨”。
+今年6月份，中来股份实际控制人林建伟夫妇拟将其直接持有的中来股份约1.47亿股份及公司16.0587%表决权分次协议转让给乌江能源。这场接近12亿元的交易，让外界一度以为中来股份将获得贵州国资入主。
+但两个月未到，该项交易生变，双方终止协议。在接受媒体采访时，中来股份表示双方因在太阳能电池投资方面存在分歧，才导致合作未落定。
+杭锅股份的出现，让中来股份的“易主”大戏升温。
+根据协议，杭锅股份将以支付现金的方式购买林建伟夫妇持有中来股份的股份以及受让表决权委托，实现对中来股份的控制。
+本次受让将分两次完成。其中，杭锅股份在第一次股权转让中拟购买中来股份9.58%股份，转让价格9.9元/股，股份转让款合计7.38亿元。以中来股份8月12日收盘价为参考，溢价达34.88%。
+公开资料显示，杭锅股份主营传统能源设备，近些年来也有参与新能源产业投资。其中，该公司参股浙江中控太阳能技术有限公司涉足光热发电及储能核心技术等。
+不过，光热与光伏属于不同领域，在技术上存在差异。也因此，在本次协议中，中来股份的核心管理团队不会发生重大变化。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：张熠",2020-08-12 17:02:06,新浪财经

@@ -1,0 +1,225 @@
+,title,content,pub_time,src
+0,永辉超市回应工作人员脚踩冷冻鱼虾：该柜台产品已全数下架销毁,"视频加载中，请稍候...
+自动播放
+(image_address=""//p.ivideo.sina.com.cn/video/359/752/530/359752530_220_124.jpg"")
+play
+向前
+向后
+/*自动播放1*/
+var AUTOPLAY = 1;
+/*连播1*/
+var CONTIPLAY = 1;
+/*处理自动播放选项和cookie*/
+(function() {
+var Tool = CommonTool;
+var chk = Tool.byId('J_Video_Autoplay');
+var ua = navigator.userAgent.toLowerCase();
+var isIOS = /\((iPhone|iPad|iPod)/i.test(ua);
+if (isIOS) {
+console.log(chk.parentNode.style.display);
+chk.parentNode.style.display = 'none';
+return;
+}
+chk.parentNode.style.display = '';
+var clickCookie = function() {
+Tool.bindEvent(chk, 'change',
+function() {
+var chked = chk.checked;
+Tool.writeCookie('ArtiVAuto', (chked ? 1 : 0), 24 * 365 * 10, '/', '.sina.com.cn');
+});
+}
+var byCookie = function() {
+var coo = Tool.readCookie('ArtiVAuto');
+if (coo) {
+if (parseInt(coo) == 0) {
+chk.checked = false;
+AUTOPLAY = 0;
+}
+}
+};
+clickCookie();
+byCookie();
+})();
+/*获取第一个视频vid*/
+var firstItem = CommonTool.byClass('J_Play_Item', 'J_Play_List')[0];
+var fInfo = firstItem.getAttribute('play-data').split('-');
+var fVid = fInfo[0];
+var fPid = fInfo[1];
+var sinaBokePlayerConfig_o = {
+container: ""J_Article_Player"", //Div容器的id
+width: 525,
+height: 430,
+playerWidth: 525, //宽
+playerHeight: 430, //高
+autoLoad: 1, //自动加载
+autoPlay: AUTOPLAY, //自动播放
+as: 0, //广告
+pid: fPid,
+tjAD: 0, //显示擎天柱广告
+tj: 0, //片尾推荐
+continuePlayer: 1, //连续播放
+casualPlay: 1, //任意拖动视频
+head: 0, //播放片头动画
+logo: 0, //显示logo
+share: 0,
+thumbUrl: """"
+};
+(function() {
+var toggle = function(id, hide) {
+var e = CommonTool.byId(id);
+var par = e.parentNode;
+if (hide) {
+CommonTool.addClass(par, e.className + '_disabled');
+} else {
+CommonTool.removeClass(par, e.className + '_disabled');
+}
+}
+var scroll = new ScrollPic();
+scroll.scrollContId = ""J_Play_List""; //内容容器ID
+scroll.arrLeftId = ""J_Player_Prev""; //左箭头ID
+scroll.arrRightId = ""J_Player_Next""; //右箭头ID
+scroll.listEvent = ""onclick""; //切换事件
+scroll.frameWidth = 532; //显示框宽度 **显示框宽度必须是翻页宽度的倍数
+scroll.pageWidth = 133 * 3; //翻页宽度
+scroll.upright = false; //垂直滚动
+scroll.speed = 10; //移动速度(单位毫秒，越小越快)
+scroll.space = 15; //每次移动像素(单位px，越大越快)
+scroll.autoPlay = false; //自动播放
+scroll.autoPlayTime = 5; //自动播放间隔时间(秒)
+scroll.circularly = false;
+scroll._move = scroll.move;
+scroll.move = function(num, quick) {
+scroll._move(num, quick);
+toggle(scroll.arrRightId, scroll.eof);
+toggle(scroll.arrLeftId, scroll.bof);
+};
+scroll.initialize(); //初始化
+toggle(scroll.arrLeftId, scroll.bof);
+})();
+var autoPlayCheck = $(""#J_Video_Autoplay"")[0].checked;
+var autoPlayFlv = 0;
+var autoPlayH5 = false;
+if(autoPlayCheck){
+autoPlayFlv = 1;
+var autoPlayH5 = true;
+}
+var flashConfig = {
+url: """",	// flash播放器地址,
+container : ""J_Article_Player"",
+id: ""myMovie"",
+width: 525,
+height: 430,
+params : {
+allowNetworking : ""all"",
+allowScriptAccess : ""always"",
+wmode : ""opaque"",
+allowFullScreen : ""true"",
+quality : ""high""
+},
+attributes: {},
+flashvars: {
+autoPlay: autoPlayFlv,  //是否自动播放
+loop: 0,		
+autoLoad: 1,
+thumbUrl: '',
+tj: 0,
+as: 0
+},
+h5attr: {
+autoPlay: autoPlayH5,  //是否自动播放
+controls: true, //是否显示控制条
+loop: false,		
+poster: '', //视频加载前欲加载的图片地址，即播放器一开始显示的截图
+preload: 'auto'
+}
+};
+var videoList = [
+{
+video_id: 359752530,
+pid:1,
+url: 'https://finance.sina.com.cn/wm/2020-11-01/doc-iiznezxr9303457.shtml',
+title:''//,
+//swfOutsideUrl:""http://you.video.sina.com.cn/api/sinawebApi/outplayrefer.php/video_id=359752530/s.swf""
+},
+]
+(function($){
+var Play = {
+init: function(flashConfig, videoList){
+this.flashConfig = flashConfig;
+this.videoList = videoList;
+this.playVideo = playVideo;
+this.prev = this.current = 0;
+this.length = this.videoList.length;
+this.contNode = $(""#J_Video_Autoplay"");
+this.titleNode = $(""#J_Video_Source"");
+this.playListNode = $(""#J_Play_List .J_Play_Item"");
+if(videoList.length!==1){
+//显示小图
+CommonTool.byId('J_Play_List_Wrap').style.display='';
+}
+if(videoList.length= this.length - 1){
+return;
+}
+this.current++;
+this.play(this.prev, this.current);
+},
+play: function(prev, current){
+this.player.playVideo(this.videoList[current]);
+this.titleNode.html(this.videoList[current].title);
+this.playListNode.eq(prev).removeClass(""selected"");
+this.playListNode.eq(current).addClass(""selected"");
+}
+}
+Play.init(flashConfig, videoList);
+})(jQuery);
+来源：21财闻汇
+据中新网，有网友近日反映福建永辉三明万达店“有超市销售人员直接脚踩冻货上行走”，对此，福建永辉超市官方1日向中新网记者回应表示，门店己将该柜台产品全数下架销毁处理，同时也对涉事员工进行了严肃处理。
+10月30日，有网友发视频反映福建永辉三明万达店“有超市销售人员直接脚踩冻货上行走”，引发热议。视频中，该工作人员先是坐在食品冷冻柜上，继而起身，穿鞋脚踩在冷冻鱼虾上整理商品。　　
+福建永辉超市在10月31日发布的官方声明中表示，门店己将该柜台产品全数下架销毁处理，并完成了柜台的全方位清洗消毒，同时也对涉事员工进行了严肃处理。　　
+该声明表示，永辉超市将加强对门店员工的管理，确保销售人员在进行产品工作陈列时合乎规范，杜绝因操作不当引起的食品安全隐患。
+网友评论:
+(image_address=""//n.sinaimg.cn/sinakd2020111s/24/w629h195/20201101/a522-kcieyvz3229518.png"")
+(image_address=""//n.sinaimg.cn/sinakd2020111s/150/w641h309/20201101/0e48-kcieyvz3229519.png"")
+免责声明：自媒体综合提供的内容均源自自媒体，版权归原作者所有，转载请联系原作者并获许可。文章观点仅代表作者本人，不代表新浪立场。若内容涉及投资建议，仅供参考勿作为投资依据。投资有风险，入市需谨慎。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陈志杰",2020-11-01 17:56:43,新浪财经
+1,上海国企申能集团拟砸150亿：入股新疆民企广汇集团 事关恒大,"突发！上海国企拟砸150亿，入股新疆民企巨头！事关恒大
+恒大集团再度回收近150亿资金。
+两年前，恒大集团斥资逾百亿元入股新疆民企广汇集团，合计取得40.964%股权，双方拟在能源、汽车、物流、地产等四大领域建立全方位战略合作。彼时来看，通过合作，广汇集团财务压力得以缓解，借助广汇集团的汽车分销渠道优势，恒大集团也在筹划着自己的造车梦。
+然而，计划赶不上变化，11月1日，恒大集团与申能集团以及广汇集团实际控制人孙广信签署股权转让协议书，恒大集团将其持有的广汇集团40.964%股权转让予申能集团，转让总金额为148.5亿元，申能集团将取代恒大集团成为广汇集团第二大股东。
+关于此番退出，很容易让人联想到恒大集团9月份的舆论风波，先是一份有关恒大地产重组情况的文件在网络流传，随后中国恒大（3333.HK）发布《严正声明》予以驳斥。9月底，中国恒大与持有恒大地产总额863亿人民币的战略投资者签订补充协议，风波暂告一段落。
+上海国资上位广汇集团第二大股东
+11月1日晚间，广汇能源（600256）发布公告称，恒大集团与申能集团以公司及实际控制人孙广信于当日签署了关于广汇集团之股权转让协议书，据此恒大集团将其持有的广汇集团40.964%股权转让予申能集团，转让总金额为148.5亿元。
+(image_address=""//n.sinaimg.cn/finance/crawl/142/w550h392/20201101/0d6b-kcieyvz3265609.png"")
+申能集团将受让恒大集团于2018年入股广汇集团时的全部对应股权比例，成为广汇集团第二大股东。
+回顾恒大集团入股广汇集团的过程，2018年9月，广汇集团、孙广信与恒大集团签署了《战略合作协议》和《投资协议》。由恒大集团以自广汇集团原有股东受让股权并向目标公司增资的方式对广汇集团进行投资，投资总金额为144.9亿元。 
+2018年10月，广汇集团办理完毕上述交易所涉及的工商变更，恒大集团合计持有广汇集团40.964%的股权，成为广汇集团第二大股东。
+根据彼时协议内容，恒大集团与广汇集团计划在汽车销售、能源、地产、物流等领域开展全面战略合作，充分发挥双方的资源优势进行资源整合，共同推动相关产业的发展。
+资料显示，广汇集团现已形成“能源开发、汽车服务、现代物流、置业服务”等产业并进的发展格局，拥有广汇能源、广汇汽车、广汇宝信、广汇物流4家上市公司。2018年末数据显示，广汇集团总资产2637.47亿元，完成营业收入1889.42亿元，实现净利润50.43亿元。
+再看此次交易的受让方，申能集团创建于1987年，1996年经上海市政府批准成立集团公司，注册资本100亿元，是上海市国资委出资监管的国有独资有限责任公司。
+主营业务方面，申能集团作为上海市重大能源基础设施的国资投资建设主体，依据市政府能源发展规划进行市场化运作，主要从事电力、城市燃气等能源基础设施项目的投资、建设和经营管理，是保障上海市能源供应安全的重要主体。
+申能集团还从事金融企业股权的投资与资产管理业务，截至2019年末，申能集团拥有申能股份、上海燃气等14家一级控股子公司。同时，作为发起人股东，申能集团及其下属子公司持有中国太保、东方证券、海通证券、上海电气、光大银行等上市公司股权，为东方证券第一大股东，基本形成""电气并举、产融结合""的产业发展格局，发展成为一家涉足电力、燃气、金融、 线缆、能源服务与贸易等领域的综合性能源企业集团。
+恒大集团加快资金回笼
+两年前，恒大集团以144.9亿元的成本入股广汇集团，两年后的退出之时，恒大集团收回的资金为148.5亿元，两年间增值了3.6亿元，年化收益率仅为1.3%左右。如此急切退出背后，让人联想到围绕恒大地产上市的一系列舆论风波。
+风波的核心是，网上传闻，在恒大地产最初筹备借壳上市之际，恒大集团与相关战投签订了对赌协议，然而如今，借壳上市遥遥无期，战投所持股权即将面临巨资回购，一时间，有关恒大集团资金面紧张的传闻四起。
+面对网上传闻，恒大也迅速回击，在港上市的中国恒大发布声明称，近日，网上流传有关公司重组情况的谣言，相关文件和截图凭空捏造、纯属诽谤，对公司造成严重的商誉损害。公司强烈谴责，已向公安机关报案，坚决用法律武器维护公司合法权益。
+一天后的9月25日晚间，中国恒大再度公告，目前，公司经营正常健康、财务稳健。
+截至2020年9月24日，中国恒大有息负债较2020年3月末已下降约534亿元，融资成本下降2.24个百分点，提前归还9月25日以后到期借款435亿元，各项降负债成效积极显著。公司成立24年来，共计借款20523笔，从未出现利息晚付、本金逾期归还的情况。
+对于恒大而言，至关重要的事件同样发生在9月底，中国恒大9月29日晚间公告，公司近日与持有恒大地产总额1300亿人民币的战略投资者进行商谈。已于今日与持有恒大地产总额863亿人民币的战略投资者签订补充协议。
+(image_address=""//n.sinaimg.cn/finance/crawl/704/w550h154/20201101/ce21-kcieyvz3265649.png"")
+补充协议明确，战略投资者已同意不要求进行回购并继续持有恒大地产权益，且在恒大地产的股权比例保持不变。中国恒大已与持有恒大地产总额155亿人民币的战略投资者商谈完毕，该等战略投资者正在办理审批手续。中国恒大还表示，公司正与剩余持有恒大地产总额282亿人民币的战略投资者进行商谈。
+据悉，上月29日，恒大与战投举行了《恒大地产集团增资协议》补充协议签字仪式，恒大集团董事局主席许家印与苏宁控股董事长张近东、正威国际董事局主席王文银、广田控股董事长叶远西、安信信托董事长邵明安、嘉寓集团董事长田家玉等全体1300亿战略投资者高管出席签字仪式。
+从恒大当前的资产腾挪来看，其正从多个方面加速资金回笼，并优化资金结构。首先是加快房产销售，截至10月8日，恒大年内累计实现销售额5922.5亿，完成全年6500亿销售目标91%。按上半年近90%回款率计算，恒大全年回款将达到7200亿。
+其次就是清理投资项目，例如此次撤出对广汇集团的投资。最后，推动旗下板块上市也是恒大集团优化自身资金结构的重要途径，一方面，恒大物业集团有限公司已经向港交所提交上市申请，另一方面，恒大汽车已与海通证券签署上市辅导协议，并在深圳证监局备案登记，拟在上海证券交易所科创板挂牌上市。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陈志杰",2020-11-01 17:50:49,新浪财经
+2,梦网集团：中标中移互联网消息聚合平台运营支撑框架公开比选项目,"11月1日消息，梦网集团(002123)11月1日晚间公告，全资子公司深圳市梦网科技发展有限公司中标“中移互联网有限公司2020-2021年消息聚合平台运营支撑框架公开比选项目”。本次中选5G消息聚合平台，将对公司聚焦5G消息战略目标落地形成积极影响，基于5G消息开发和聚合能力，公司这一新的商业模式将在金融、互联网、电商、商业连锁、公共事业等领域快速渗透，与运营商一道加快推进5G消息的应用。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陈志杰",2020-11-01 17:39:49,新浪财经
+3,金证股份：与腾讯云计算相关业务对公司经营和业绩影响较小,"11月1日消息，金证股份(600446)11月1日晚间公告，10月30日，公司与腾讯云计算(北京)有限责任公司签订了战略合作协议，在平台共研、产品集成以及生态互惠等方面进行合作。经公司核实，2019年、2020年前三季度腾讯云计算及其控股子公司向公司及控股子公司采购的总金额为977.80万元、266.07万元，占当期公司营业总收入的比例分别为0.20%、0.07%，相关业务对公司经营和业绩影响较小。
+(image_address=""//n.sinaimg.cn/finance/cece9e13/20200514/343233024.png"")
+海量资讯、精准解读，尽在新浪财经APP
+责任编辑：陈志杰",2020-11-01 17:39:06,新浪财经
